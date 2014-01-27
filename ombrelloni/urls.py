@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.conf.urls.i18n import i18n_patterns
+from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib.gis import admin
@@ -20,4 +21,11 @@ urlpatterns += i18n_patterns(
     '',
     # Bagni urls
     url(r'^', include('bagni.urls')),
+)
+
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += patterns('',
+    url(r'^__debug__/', include(debug_toolbar.urls)),
 )
