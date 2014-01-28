@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block main_content %}
+{% block content %}
     <ul>
         {% for district in object_list %}
             <li>
@@ -12,7 +12,7 @@
             <li>{% trans 'No districts' %}</li>
         {% endfor %}
     </ul>
-{% endblock main_content %}
+{% endblock content %}
 
 {% block title %}{% trans 'Districts' %}{% endblock title %}
 

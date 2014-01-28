@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block main_content %}
+{% block content %}
     {% with object.bagni.all as bagni %}
         <ul>
         {% for bagno in bagni %}
@@ -12,7 +12,7 @@
         {% endfor %}
         </ul>
     {% endwith %}
-{% endblock main_content %}
+{% endblock content %}
 
 {% block title %}{% trans "Municipality" %} {{ object.name }}{% endblock title %}
 

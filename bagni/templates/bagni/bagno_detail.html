@@ -2,7 +2,7 @@
 
 {% load l10n i18n thumbnail %}
 
-{% block main_content %}
+{% block content %}
     {% if object.description %}
         <h2>{% trans "Description" %}</h2>
         {{ object.description|safe }}
@@ -47,7 +47,7 @@
     <p>{{ object.fax }}</p>
     <p>{{ object.site }}</p>
     <div id="bagno_map" style="width: 600px; height: 400px"></div>
-{% endblock main_content %}
+{% endblock content %}
 
 {% block specific_js %}
     {% if object.point.x and object.point.y %}

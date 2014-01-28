@@ -2,7 +2,7 @@
 
 {% load l10n i18n query_string %}
 
-{% block main_content %}
+{% block content %}
     {% comment %}
         TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
@@ -164,7 +164,7 @@
                     var marker = L.marker(p).addTo(map);
                     markerBounds.extend(p);
                     marker.bindPopup("<strong><a href={{ bagno.get_absolute_url }}>{{ bagno.name }}</a></strong> <em>{{ bagno.address }}</em><br>").openPopup();
-                                    
+
                 {% endif %}
             {% endfor %}
             map.fitBounds(markerBounds);

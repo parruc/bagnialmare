@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block main_content %}
+{% block content %}
     <ul>
         {% for service_category in object_list %}
             <li>
@@ -21,7 +21,7 @@
             <li>{% trans 'No service categories' %}</li>
         {% endfor %}
     </ul>
-{% endblock main_content %}
+{% endblock content %}
 
 {% block title %}{% trans 'Service categories' %}{% endblock title %}
 

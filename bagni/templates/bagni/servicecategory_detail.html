@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block main_content %}
+{% block content %}
     {% with object.services.all as services %}
         <ul>
         {% for service in services %}
@@ -20,7 +20,7 @@
         {% endfor %}
         </ul>
     {% endwith %}
-{% endblock main_content %}
+{% endblock content %}
 
 {% block title %}{{ object.name }}{% endblock title %}
 

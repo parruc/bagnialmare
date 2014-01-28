@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block main_content %}
+{% block content %}
     <table>
         {% for service in object_list %}
             {% for bagno in service.bagni.all %}
@@ -15,7 +15,7 @@
             {% endfor %}
         {% endfor %}
     </table>
-{% endblock main_content %}
+{% endblock content %}
 
 {% block title %}{% trans 'Vista Bagni VS Servizi' %}{% endblock title %}
 
