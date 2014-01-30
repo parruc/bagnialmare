@@ -5,10 +5,10 @@ from models import Manager
 class ManagerSignupForm(ModelForm):
     class Meta:
         model = Manager
-        fields = ['bagno', 'privacy']
+        fields = ['bagni', 'privacy']
     def save(self, user):
         m = Manager.objects.create()
         m.user = user
-        m.bagno = self.cleaned_data['bagno']
+        m.bagni = self.cleaned_data['bagni']
         m.privacy = self.cleaned_data['privacy']
         m.save()

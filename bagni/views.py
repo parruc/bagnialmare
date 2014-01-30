@@ -5,10 +5,13 @@ from django.views.generic.list import ListView
 from django.views.generic import TemplateView
 from django.contrib import messages
 from django.contrib.gis.geos import Point
-from geopy import geocoders
 from django.utils.translation import ugettext as _
 
+from geopy import geocoders
+from permission.decorators import permission_required
+
 from models import Bagno, Service, District, Municipality, ServiceCategory
+from forms import BagnoForm
 from search import search
 
 import logging
@@ -34,6 +37,19 @@ class BagnoView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(BagnoView, self).get_context_data(**kwargs)
         return context
+
+@permission_required('auth.change_permission')
+class BagnoEdit(DetailView):
+    """ Edit a single bagno
+    """
+    model = Bagno
+    template_name = "bagni/bagno_edit.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(BagnoEdit, self).get_context_data(**kwargs)
+        context['form'] = BagnoForm(instance=self.object)
+        return context
+
 
 class ServiceCategoryView(DetailView):
     """ Detail view for a single service category
@@ -204,13 +220,14 @@ class SearchView(TemplateView):
 #        return context
 
 
-class Benve2View(ListView):
-    """ Simple view for Service listing everyone with his bagni
-        TODO: Will soon be removed
-    """
-    template_name = "bagni/benve2.html"
-    queryset = Bagno.objects.filter(mail="")
-
-    def get_context_data(self, **kwargs):
-        context = super(Benve2View, self).get_context_data(**kwargs)
-        return context
+#class Benve2View(ListView):
+#    """ Simple view for Service listing everyone with his bagni
+#        TODO: Will soon be removed
+#    """
+#    template_name = "bagni/benve2.html"
+#    queryset = Bagno.objects.filter(mail="")
+#
+#    def get_context_data(self, **kwargs):
+#        context = super(Benve2View, self).get_context_data(**kwargs)
+#        return context
+#

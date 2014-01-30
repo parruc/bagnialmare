@@ -2,6 +2,9 @@
 from django.core.urlresolvers import reverse
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
+
+from permission import add_permission_logic
+from permission.logics import CollaboratorsPermissionLogic
 from sorl.thumbnail import ImageField
 import autoslug
 
@@ -165,6 +168,16 @@ class Bagno(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ("bagno", [self.slug, ])
+
+    def get_edit_url(self):
+        return ("bagno-edit", [self.slug, ])
+
+add_permission_logic(Bagno, CollaboratorsPermissionLogic(
+        field_name='managers',
+        any_permission=False,
+        change_permission=True,
+        delete_permission=False,
+    ))
 
 
 class Service(models.Model):

@@ -9,5 +9,5 @@ from bagni.models import Bagno
 
 class Manager(models.Model):
     user = models.OneToOneField(User, null=True, blank=True)
-    bagno = models.ForeignKey(Bagno, null=True, blank=True)
+    bagni = models.ManyToManyField(Bagno, null=True, blank=True)
     privacy = models.BooleanField(default=True, help_text=_(u"Termini della privacy da inserire"))
