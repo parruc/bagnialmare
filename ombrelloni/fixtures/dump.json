@@ -272,6 +272,14 @@
   }
 },
 {
+  "pk": "u85xqbqfwtfhvwat0oi925pr8d3q9za7", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-02-13T01:30:23.470Z", 
+    "session_data": "NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ=="
+  }
+},
+{
   "pk": "wkdtmyqqv7tju7waf3tfene33h6g5kcy", 
   "model": "sessions.session", 
   "fields": {
@@ -46481,6 +46489,24 @@
   }
 },
 {
+  "pk": 2, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "testuser", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-01-30T01:30:06.272Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$rjz2Mz70Gt9l$GIF8lKtNDvDsjkgcRlHHQxgQ1sV3G3JrLVQEkTJgquM=", 
+    "email": "", 
+    "date_joined": "2014-01-30T01:30:06.076Z"
+  }
+},
+{
   "pk": 1, 
   "model": "admin.logentry", 
   "fields": {
@@ -46608,6 +46634,15 @@
     "change_message": "domain e name modificato/a.", 
     "user": 1, 
     "content_type": 16
+  }
+},
+{
+  "pk": 1, 
+  "model": "managers.manager", 
+  "fields": {
+    "bagno": null, 
+    "user": 2, 
+    "privacy": true
   }
 }
 ]
