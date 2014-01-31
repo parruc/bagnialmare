@@ -161,15 +161,18 @@ class SearchView(TemplateView):
         loc = self.request.GET.get('l', "")
         place = point = None
         if loc:
-            g = geocoders.GoogleV3()
+            g = geocoders.GoogleV3(domain='maps.google.it')
             try:
                 matches = g.geocode(loc, exactly_one=False)
                 place, (lat, lng) = matches[0]
                 point = Point(lng, lat)
-            except geocoders.google.GQueryError as e:
+            except geocoders.googlev3.GeocoderQueryError as e:
                 messages.add_message(self.request, messages.INFO,
                                      _("Cant find place '%s', sorting by relevance" % loc))
                 logger.warning("cant find %s, error %s" % (loc, e))
+            except geocoders.googlev3.GeocoderQuotaExceeded as e:
+                logger.warning("abbiamo sforato il numero massimo di richieste a google per il geocoding")
+                #TODO: falback to another backend
             except Exception as e:
                 messages.add_message(self.request, messages.ERROR,
                                      _("Error in geocoding"))
