@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib.gis import admin
@@ -16,14 +17,15 @@ urlpatterns = patterns(
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    # Authentication initial path
-    url(r'^accounts/', include('allauth.urls')),
 )
 
 urlpatterns += i18n_patterns(
     '',
     # Bagni urls
     url(r'^', include('bagni.urls')),
+
+    # Authentication initial path
+    url(_(r'^accounts/'), include('allauth.urls')),
 )
 
 
