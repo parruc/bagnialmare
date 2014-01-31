@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.core import paginator
 from django.views.generic.detail import DetailView
+from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
 from django.views.generic import TemplateView
 from django.contrib import messages
@@ -38,8 +39,8 @@ class BagnoView(DetailView):
         context = super(BagnoView, self).get_context_data(**kwargs)
         return context
 
-@permission_required('auth.change_permission')
-class BagnoEdit(DetailView):
+@permission_required('change_permission')
+class BagnoEdit(UpdateView):
     """ Edit a single bagno
     """
     model = Bagno
