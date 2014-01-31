@@ -1,5 +1,230 @@
 [
 {
+  "pk": 1, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "permission", 
+    "name": "permission", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 2, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "group", 
+    "name": "group", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 3, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "user", 
+    "name": "user", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 4, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "contenttype", 
+    "name": "content type", 
+    "app_label": "contenttypes"
+  }
+},
+{
+  "pk": 5, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "session", 
+    "name": "session", 
+    "app_label": "sessions"
+  }
+},
+{
+  "pk": 6, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "logentry", 
+    "name": "log entry", 
+    "app_label": "admin"
+  }
+},
+{
+  "pk": 7, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "migrationhistory", 
+    "name": "migration history", 
+    "app_label": "south"
+  }
+},
+{
+  "pk": 8, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "kvstore", 
+    "name": "kv store", 
+    "app_label": "thumbnail"
+  }
+},
+{
+  "pk": 9, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "bagno", 
+    "name": "Bagno", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 10, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "service", 
+    "name": "Service", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 11, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "image", 
+    "name": "Image", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 12, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "district", 
+    "name": "District", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 13, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "municipality", 
+    "name": "Municipality", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 14, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "language", 
+    "name": "Language", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 15, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "servicecategory", 
+    "name": "Service Category", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 16, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "site", 
+    "name": "site", 
+    "app_label": "sites"
+  }
+},
+{
+  "pk": 17, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "emailaddress", 
+    "name": "email address", 
+    "app_label": "account"
+  }
+},
+{
+  "pk": 18, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "emailconfirmation", 
+    "name": "email confirmation", 
+    "app_label": "account"
+  }
+},
+{
+  "pk": 19, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "manager", 
+    "name": "manager", 
+    "app_label": "managers"
+  }
+},
+{
+  "pk": 20, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "socialapp", 
+    "name": "social app", 
+    "app_label": "socialaccount"
+  }
+},
+{
+  "pk": 21, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "socialaccount", 
+    "name": "social account", 
+    "app_label": "socialaccount"
+  }
+},
+{
+  "pk": 22, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "socialtoken", 
+    "name": "social token", 
+    "app_label": "socialaccount"
+  }
+},
+{
+  "pk": 23, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "openidstore", 
+    "name": "open id store", 
+    "app_label": "openid"
+  }
+},
+{
+  "pk": 24, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "openidnonce", 
+    "name": "open id nonce", 
+    "app_label": "openid"
+  }
+},
+{
+  "pk": 25, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "manager", 
+    "name": "manager", 
+    "app_label": "authauth"
+  }
+},
+{
   "pk": "1lisn3cupls44worzvkwb9kxn9xd5dor", 
   "model": "sessions.session", 
   "fields": {
@@ -77,186 +302,6 @@
   "fields": {
     "expire_date": "2014-02-12T22:57:45.636Z", 
     "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
-  }
-},
-{
-  "pk": 1, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 1, 
-    "action_time": "2013-11-21T12:25:35.108Z", 
-    "object_repr": "Italiano", 
-    "object_id": "1", 
-    "change_message": "", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "language"
-    ]
-  }
-},
-{
-  "pk": 2, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 1, 
-    "action_time": "2013-11-21T12:26:09.096Z", 
-    "object_repr": "Inglese", 
-    "object_id": "2", 
-    "change_message": "", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "language"
-    ]
-  }
-},
-{
-  "pk": 3, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-11-21T12:26:39.705Z", 
-    "object_repr": "Bagno da Gigi", 
-    "object_id": "5315", 
-    "change_message": "description_en e languages modificato/a.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "bagno"
-    ]
-  }
-},
-{
-  "pk": 4, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-11-21T12:26:51.142Z", 
-    "object_repr": "Bagno Dino", 
-    "object_id": "5314", 
-    "change_message": "description_en e languages modificato/a.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "bagno"
-    ]
-  }
-},
-{
-  "pk": 5, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-11-21T12:27:01.449Z", 
-    "object_repr": "Bagno Crociati", 
-    "object_id": "5313", 
-    "change_message": "description_en e languages modificato/a.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "bagno"
-    ]
-  }
-},
-{
-  "pk": 6, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-12-16T00:17:33.290Z", 
-    "object_repr": "discoteque", 
-    "object_id": "2050", 
-    "change_message": "Changed name_en and slug_en.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "service"
-    ]
-  }
-},
-{
-  "pk": 7, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-12-18T20:36:57.057Z", 
-    "object_repr": "Bagno Solaris", 
-    "object_id": "12913", 
-    "change_message": "Changed name_en, name_it, description_en, slug_en, slug_it, mail, cell and site.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "bagno"
-    ]
-  }
-},
-{
-  "pk": 8, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-12-18T20:49:53.509Z", 
-    "object_repr": "Bagno Alberto", 
-    "object_id": "13475", 
-    "change_message": "Changed name_en, name_it, description_en, mail, tel and site.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "bagno"
-    ]
-  }
-},
-{
-  "pk": 9, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2013-12-18T20:54:35.044Z", 
-    "object_repr": "Bagno Alcide Spiaggia", 
-    "object_id": "13423", 
-    "change_message": "Changed name_en, name_it, description_en, slug_en, slug_it, address_en, address_it and tel.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "bagni", 
-      "bagno"
-    ]
-  }
-},
-{
-  "pk": 10, 
-  "model": "admin.logentry", 
-  "fields": {
-    "action_flag": 2, 
-    "action_time": "2014-01-29T23:48:02.129Z", 
-    "object_repr": "bagnialmare.com", 
-    "object_id": "1", 
-    "change_message": "domain e name modificato/a.", 
-    "user": [
-      "admin"
-    ], 
-    "content_type": [
-      "sites", 
-      "site"
-    ]
   }
 },
 {
@@ -45712,6 +45757,928 @@
     "name_en": "pizzeria", 
     "slug": "pizzeria", 
     "description": ""
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_bagno", 
+    "name": "Can add Bagno", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_bagno", 
+    "name": "Can change Bagno", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_bagno", 
+    "name": "Can delete Bagno", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 4, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_service", 
+    "name": "Can add Service", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_service", 
+    "name": "Can change Service", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 6, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_service", 
+    "name": "Can delete Service", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 7, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_image", 
+    "name": "Can add Image", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 8, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_image", 
+    "name": "Can change Image", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 9, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_image", 
+    "name": "Can delete Image", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 10, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_contenttype", 
+    "name": "Can add content type", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 11, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_contenttype", 
+    "name": "Can change content type", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 12, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_contenttype", 
+    "name": "Can delete content type", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 13, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_session", 
+    "name": "Can add session", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 14, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_session", 
+    "name": "Can change session", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 15, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_session", 
+    "name": "Can delete session", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 16, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_logentry", 
+    "name": "Can add log entry", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 17, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_logentry", 
+    "name": "Can change log entry", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 18, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_logentry", 
+    "name": "Can delete log entry", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 19, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_migrationhistory", 
+    "name": "Can add migration history", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 20, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_migrationhistory", 
+    "name": "Can change migration history", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 21, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_migrationhistory", 
+    "name": "Can delete migration history", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 22, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_kvstore", 
+    "name": "Can add kv store", 
+    "content_type": 8
+  }
+},
+{
+  "pk": 23, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_kvstore", 
+    "name": "Can change kv store", 
+    "content_type": 8
+  }
+},
+{
+  "pk": 24, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_kvstore", 
+    "name": "Can delete kv store", 
+    "content_type": 8
+  }
+},
+{
+  "pk": 25, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_bagno", 
+    "name": "Can add Bagno", 
+    "content_type": 9
+  }
+},
+{
+  "pk": 26, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_bagno", 
+    "name": "Can change Bagno", 
+    "content_type": 9
+  }
+},
+{
+  "pk": 27, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_bagno", 
+    "name": "Can delete Bagno", 
+    "content_type": 9
+  }
+},
+{
+  "pk": 28, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_service", 
+    "name": "Can add Service", 
+    "content_type": 10
+  }
+},
+{
+  "pk": 29, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_service", 
+    "name": "Can change Service", 
+    "content_type": 10
+  }
+},
+{
+  "pk": 30, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_service", 
+    "name": "Can delete Service", 
+    "content_type": 10
+  }
+},
+{
+  "pk": 31, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_image", 
+    "name": "Can add Image", 
+    "content_type": 11
+  }
+},
+{
+  "pk": 32, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_image", 
+    "name": "Can change Image", 
+    "content_type": 11
+  }
+},
+{
+  "pk": 33, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_image", 
+    "name": "Can delete Image", 
+    "content_type": 11
+  }
+},
+{
+  "pk": 34, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_permission", 
+    "name": "Can add permission", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 35, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_permission", 
+    "name": "Can change permission", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 36, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_permission", 
+    "name": "Can delete permission", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 37, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_group", 
+    "name": "Can add group", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 38, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_group", 
+    "name": "Can change group", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 39, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_group", 
+    "name": "Can delete group", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 40, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_user", 
+    "name": "Can add user", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 41, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_user", 
+    "name": "Can change user", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 42, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_user", 
+    "name": "Can delete user", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 43, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_district", 
+    "name": "Can add District", 
+    "content_type": 12
+  }
+},
+{
+  "pk": 44, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_district", 
+    "name": "Can change District", 
+    "content_type": 12
+  }
+},
+{
+  "pk": 45, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_district", 
+    "name": "Can delete District", 
+    "content_type": 12
+  }
+},
+{
+  "pk": 46, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_municipality", 
+    "name": "Can add Municipality", 
+    "content_type": 13
+  }
+},
+{
+  "pk": 47, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_municipality", 
+    "name": "Can change Municipality", 
+    "content_type": 13
+  }
+},
+{
+  "pk": 48, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_municipality", 
+    "name": "Can delete Municipality", 
+    "content_type": 13
+  }
+},
+{
+  "pk": 49, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_language", 
+    "name": "Can add Language", 
+    "content_type": 14
+  }
+},
+{
+  "pk": 50, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_language", 
+    "name": "Can change Language", 
+    "content_type": 14
+  }
+},
+{
+  "pk": 51, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_language", 
+    "name": "Can delete Language", 
+    "content_type": 14
+  }
+},
+{
+  "pk": 52, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_servicecategory", 
+    "name": "Can add Service Category", 
+    "content_type": 15
+  }
+},
+{
+  "pk": 53, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_servicecategory", 
+    "name": "Can change Service Category", 
+    "content_type": 15
+  }
+},
+{
+  "pk": 54, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_servicecategory", 
+    "name": "Can delete Service Category", 
+    "content_type": 15
+  }
+},
+{
+  "pk": 55, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_site", 
+    "name": "Can add site", 
+    "content_type": 16
+  }
+},
+{
+  "pk": 56, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_site", 
+    "name": "Can change site", 
+    "content_type": 16
+  }
+},
+{
+  "pk": 57, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_site", 
+    "name": "Can delete site", 
+    "content_type": 16
+  }
+},
+{
+  "pk": 58, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_emailaddress", 
+    "name": "Can add email address", 
+    "content_type": 17
+  }
+},
+{
+  "pk": 59, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_emailaddress", 
+    "name": "Can change email address", 
+    "content_type": 17
+  }
+},
+{
+  "pk": 60, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_emailaddress", 
+    "name": "Can delete email address", 
+    "content_type": 17
+  }
+},
+{
+  "pk": 61, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_emailconfirmation", 
+    "name": "Can add email confirmation", 
+    "content_type": 18
+  }
+},
+{
+  "pk": 62, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_emailconfirmation", 
+    "name": "Can change email confirmation", 
+    "content_type": 18
+  }
+},
+{
+  "pk": 63, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_emailconfirmation", 
+    "name": "Can delete email confirmation", 
+    "content_type": 18
+  }
+},
+{
+  "pk": 64, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_manager", 
+    "name": "Can add manager", 
+    "content_type": 19
+  }
+},
+{
+  "pk": 65, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_manager", 
+    "name": "Can change manager", 
+    "content_type": 19
+  }
+},
+{
+  "pk": 66, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_manager", 
+    "name": "Can delete manager", 
+    "content_type": 19
+  }
+},
+{
+  "pk": 67, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_socialapp", 
+    "name": "Can add social app", 
+    "content_type": 20
+  }
+},
+{
+  "pk": 68, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_socialapp", 
+    "name": "Can change social app", 
+    "content_type": 20
+  }
+},
+{
+  "pk": 69, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_socialapp", 
+    "name": "Can delete social app", 
+    "content_type": 20
+  }
+},
+{
+  "pk": 70, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_socialaccount", 
+    "name": "Can add social account", 
+    "content_type": 21
+  }
+},
+{
+  "pk": 71, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_socialaccount", 
+    "name": "Can change social account", 
+    "content_type": 21
+  }
+},
+{
+  "pk": 72, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_socialaccount", 
+    "name": "Can delete social account", 
+    "content_type": 21
+  }
+},
+{
+  "pk": 73, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_socialtoken", 
+    "name": "Can add social token", 
+    "content_type": 22
+  }
+},
+{
+  "pk": 74, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_socialtoken", 
+    "name": "Can change social token", 
+    "content_type": 22
+  }
+},
+{
+  "pk": 75, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_socialtoken", 
+    "name": "Can delete social token", 
+    "content_type": 22
+  }
+},
+{
+  "pk": 76, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_openidstore", 
+    "name": "Can add open id store", 
+    "content_type": 23
+  }
+},
+{
+  "pk": 77, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_openidstore", 
+    "name": "Can change open id store", 
+    "content_type": 23
+  }
+},
+{
+  "pk": 78, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_openidstore", 
+    "name": "Can delete open id store", 
+    "content_type": 23
+  }
+},
+{
+  "pk": 79, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_openidnonce", 
+    "name": "Can add open id nonce", 
+    "content_type": 24
+  }
+},
+{
+  "pk": 80, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_openidnonce", 
+    "name": "Can change open id nonce", 
+    "content_type": 24
+  }
+},
+{
+  "pk": 81, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_openidnonce", 
+    "name": "Can delete open id nonce", 
+    "content_type": 24
+  }
+},
+{
+  "pk": 82, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_manager", 
+    "name": "Can add manager", 
+    "content_type": 25
+  }
+},
+{
+  "pk": 83, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_manager", 
+    "name": "Can change manager", 
+    "content_type": 25
+  }
+},
+{
+  "pk": 84, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_manager", 
+    "name": "Can delete manager", 
+    "content_type": 25
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "admin", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-01-25T15:12:46.873Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$D3t1UKcn15zf$feya3fde6JbnujijqjexGYDsilxwBTGxBiHI6uQJs00=", 
+    "email": "admin@sddas.de", 
+    "date_joined": "2013-08-25T07:29:29.331Z"
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "testuser", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-01-30T01:30:06.272Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$rjz2Mz70Gt9l$GIF8lKtNDvDsjkgcRlHHQxgQ1sV3G3JrLVQEkTJgquM=", 
+    "email": "", 
+    "date_joined": "2014-01-30T01:30:06.076Z"
+  }
+},
+{
+  "pk": 1, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2013-11-21T12:25:35.108Z", 
+    "object_repr": "Italiano", 
+    "object_id": "1", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 14
+  }
+},
+{
+  "pk": 2, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2013-11-21T12:26:09.096Z", 
+    "object_repr": "Inglese", 
+    "object_id": "2", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 14
+  }
+},
+{
+  "pk": 3, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-11-21T12:26:39.705Z", 
+    "object_repr": "Bagno da Gigi", 
+    "object_id": "5315", 
+    "change_message": "description_en e languages modificato/a.", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 4, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-11-21T12:26:51.142Z", 
+    "object_repr": "Bagno Dino", 
+    "object_id": "5314", 
+    "change_message": "description_en e languages modificato/a.", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 5, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-11-21T12:27:01.449Z", 
+    "object_repr": "Bagno Crociati", 
+    "object_id": "5313", 
+    "change_message": "description_en e languages modificato/a.", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 6, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-12-16T00:17:33.290Z", 
+    "object_repr": "discoteque", 
+    "object_id": "2050", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 7, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-12-18T20:36:57.057Z", 
+    "object_repr": "Bagno Solaris", 
+    "object_id": "12913", 
+    "change_message": "Changed name_en, name_it, description_en, slug_en, slug_it, mail, cell and site.", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 8, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-12-18T20:49:53.509Z", 
+    "object_repr": "Bagno Alberto", 
+    "object_id": "13475", 
+    "change_message": "Changed name_en, name_it, description_en, mail, tel and site.", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 9, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2013-12-18T20:54:35.044Z", 
+    "object_repr": "Bagno Alcide Spiaggia", 
+    "object_id": "13423", 
+    "change_message": "Changed name_en, name_it, description_en, slug_en, slug_it, address_en, address_it and tel.", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 10, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-01-29T23:48:02.129Z", 
+    "object_repr": "bagnialmare.com", 
+    "object_id": "1", 
+    "change_message": "domain e name modificato/a.", 
+    "user": 1, 
+    "content_type": 16
   }
 }
 ]
