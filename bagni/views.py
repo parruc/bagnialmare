@@ -4,12 +4,12 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
 from django.views.generic import TemplateView
+from django.shortcuts import redirect
 from django.contrib import messages
 from django.contrib.gis.geos import Point
 from django.utils.translation import ugettext as _
 
 from geopy import geocoders
-from permission.decorators import permission_required
 
 from models import Bagno, Service, District, Municipality, ServiceCategory
 from forms import BagnoForm
@@ -39,7 +39,6 @@ class BagnoView(DetailView):
         context = super(BagnoView, self).get_context_data(**kwargs)
         return context
 
-@permission_required('change_permission')
 class BagnoEdit(UpdateView):
     """ Edit a single bagno
     """
@@ -50,6 +49,16 @@ class BagnoEdit(UpdateView):
         context = super(BagnoEdit, self).get_context_data(**kwargs)
         context['form'] = BagnoForm(instance=self.object)
         return context
+
+    def dispatch(self, request, *args, **kwargs):
+        """Controllo che il manager possa modificare il bagno
+        """
+        obj = self.model.objects.get(**kwargs)
+        manager = getattr(request.user, "manager", None)
+        import ipdb; ipdb.set_trace()
+        if not manager or manager not in obj.managers.all():
+            return redirect("account_login")
+        return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
 
 
 class ServiceCategoryView(DetailView):
