@@ -249,6 +249,14 @@
   }
 },
 {
+  "pk": "d88w6zq1rrqq454sxqsu3qacotzpvwn8", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-02-14T17:20:10.078Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
   "pk": "f5mf0qdryolj2djzvjkpktbnlbf1oifz", 
   "model": "sessions.session", 
   "fields": {
@@ -45098,16 +45106,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "grigiate-di-pesce", 
-    "name_it": "grigiate di pesce", 
-    "name": "grigiate di pesce", 
+    "slug_en": "grigliate-di-pesce", 
+    "name_it": "grigliate di pesce", 
+    "name": "grigliate di pesce", 
     "image": "", 
-    "slug_it": "grigiate-di-pesce", 
-    "description_en": null, 
+    "slug_it": "grigliate-di-pesce", 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "grigiate di pesce", 
-    "slug": "grigiate-di-pesce", 
+    "description_it": "", 
+    "name_en": "grigliate di pesce", 
+    "slug": "grigliate-di-pesce", 
     "description": ""
   }
 },
@@ -46525,10 +46533,10 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-01-25T15:12:46.873Z", 
+    "last_login": "2014-01-31T17:20:10.005Z", 
     "groups": [], 
     "user_permissions": [], 
-    "password": "pbkdf2_sha256$10000$D3t1UKcn15zf$feya3fde6JbnujijqjexGYDsilxwBTGxBiHI6uQJs00=", 
+    "password": "pbkdf2_sha256$12000$K9qn7bZj1p4O$Jo4paAjpyQ04/8fiDH3Ua9n38/dedibHvmIBOCxvo8k=", 
     "email": "admin@sddas.de", 
     "date_joined": "2013-08-25T07:29:29.331Z"
   }
@@ -46679,6 +46687,19 @@
     "change_message": "domain e name modificato/a.", 
     "user": 1, 
     "content_type": 16
+  }
+},
+{
+  "pk": 11, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-01-31T17:21:18.364Z", 
+    "object_repr": "grigliate di pesce", 
+    "object_id": "2263", 
+    "change_message": "name_en, name_it, slug_en e slug_it modificato/a.", 
+    "user": 1, 
+    "content_type": 10
   }
 }
 ]
