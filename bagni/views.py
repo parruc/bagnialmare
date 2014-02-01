@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.core import paginator
+from django.core.exceptions import PermissionDenied
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
 from django.views.generic import TemplateView
-from django.shortcuts import redirect
 from django.contrib import messages
 from django.contrib.gis.geos import Point
 from django.utils.translation import ugettext as _
@@ -55,10 +55,10 @@ class BagnoEdit(UpdateView):
         """
         obj = self.model.objects.get(**kwargs)
         manager = getattr(request.user, "manager", None)
-        import ipdb; ipdb.set_trace()
-        if not manager or manager not in obj.managers.all():
-            return redirect("account_login")
-        return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
+        if manager and manager.can_edit(obj):
+            return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
+        raise PermissionDenied
+
 
 
 class ServiceCategoryView(DetailView):
