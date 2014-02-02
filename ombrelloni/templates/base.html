@@ -26,6 +26,9 @@
             <link type="text/css" href="{{ STATIC_URL }}css/leaflet.css" rel="Stylesheet" />
             <link type="text/css" href="{{ STATIC_URL }}css/bagni.css" rel="Stylesheet" />
         {% endcompress %}
+        {% block extrahead %}
+            {{ form.media }}
+        {% endblock %}
     </head>
     <body>
         <div id="header"></div>

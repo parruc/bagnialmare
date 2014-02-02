@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.core import paginator
+from django.core.exceptions import PermissionDenied
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
@@ -9,7 +10,6 @@ from django.contrib.gis.geos import Point
 from django.utils.translation import ugettext as _
 
 from geopy import geocoders
-from permission.decorators import permission_required
 
 from models import Bagno, Service, District, Municipality, ServiceCategory
 from forms import BagnoForm
@@ -39,7 +39,6 @@ class BagnoView(DetailView):
         context = super(BagnoView, self).get_context_data(**kwargs)
         return context
 
-@permission_required('change_permission')
 class BagnoEdit(UpdateView):
     """ Edit a single bagno
     """
@@ -50,6 +49,16 @@ class BagnoEdit(UpdateView):
         context = super(BagnoEdit, self).get_context_data(**kwargs)
         context['form'] = BagnoForm(instance=self.object)
         return context
+
+    def dispatch(self, request, *args, **kwargs):
+        """Controllo che il manager possa modificare il bagno
+        """
+        obj = self.model.objects.get(**kwargs)
+        manager = getattr(request.user, "manager", None)
+        if manager and manager.can_edit(obj):
+            return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
+        raise PermissionDenied
+
 
 
 class ServiceCategoryView(DetailView):
@@ -161,15 +170,18 @@ class SearchView(TemplateView):
         loc = self.request.GET.get('l', "")
         place = point = None
         if loc:
-            g = geocoders.GoogleV3()
+            g = geocoders.GoogleV3(domain='maps.google.it')
             try:
                 matches = g.geocode(loc, exactly_one=False)
                 place, (lat, lng) = matches[0]
                 point = Point(lng, lat)
-            except geocoders.google.GQueryError as e:
+            except geocoders.googlev3.GeocoderQueryError as e:
                 messages.add_message(self.request, messages.INFO,
                                      _("Cant find place '%s', sorting by relevance" % loc))
                 logger.warning("cant find %s, error %s" % (loc, e))
+            except geocoders.googlev3.GeocoderQuotaExceeded as e:
+                logger.warning("abbiamo sforato il numero massimo di richieste a google per il geocoding")
+                #TODO: falback to another backend
             except Exception as e:
                 messages.add_message(self.request, messages.ERROR,
                                      _("Error in geocoding"))

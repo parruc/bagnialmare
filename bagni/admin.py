@@ -4,25 +4,25 @@ from modeltranslation.admin import TranslationAdmin
 import models
 
 
-class BagnoAdmin(TranslationAdmin, GeoModelAdmin):
+class BagnoAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class DistrictAdmin(TranslationAdmin, GeoModelAdmin):
+class DistrictAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class MunicipalityAdmin(TranslationAdmin, GeoModelAdmin):
+class MunicipalityAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class ServiceAdmin(TranslationAdmin, GeoModelAdmin):
+class ServiceAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class ServiceCategoryAdmin(TranslationAdmin, GeoModelAdmin):
+class ServiceCategoryAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class LanguageAdmin(TranslationAdmin, GeoModelAdmin):
+class LanguageAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class ImageAdmin(TranslationAdmin, GeoModelAdmin):
+class ImageAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
 
