@@ -54,11 +54,13 @@ class BagnoEdit(UpdateView):
         """Controllo che il manager possa modificare il bagno
         """
         obj = self.model.objects.get(**kwargs)
-        manager = getattr(request.user, "manager", None)
+        try:
+            manager = getattr(request.user, "manager", None)
+        except:
+            manager = None
         if manager and manager.can_edit(obj):
             return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
         raise PermissionDenied
-
 
 
 class ServiceCategoryView(DetailView):
