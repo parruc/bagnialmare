@@ -59,7 +59,7 @@ class BagnoEdit(UpdateView):
         try:
             manager = request.user.manager
             can_edit = manager.can_edit(obj)
-        except ObjectDoesNotExist:
+        except (ObjectDoesNotExist, AttributeError):
             can_edit = False
         if is_staff or can_edit:
             return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
