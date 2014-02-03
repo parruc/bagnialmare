@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.core import paginator
 from django.core.exceptions import PermissionDenied
+from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
@@ -54,8 +55,13 @@ class BagnoEdit(UpdateView):
         """Controllo che il manager possa modificare il bagno
         """
         obj = self.model.objects.get(**kwargs)
-        manager = getattr(request.user, "manager", None)
-        if manager and manager.can_edit(obj):
+        is_staff = request.user.is_staff
+        try:
+            manager = request.user.manager
+            can_edit = manager.can_edit(obj)
+        except ObjectDoesNotExist:
+            can_edit = False
+        if is_staff or can_edit:
             return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
         raise PermissionDenied
 
