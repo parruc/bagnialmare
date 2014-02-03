@@ -4,4 +4,3 @@ visible in the first level of the test package thus we need to import
 everything with:
     from test_module import *
 """
-from basic_tests import *

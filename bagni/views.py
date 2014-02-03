@@ -66,7 +66,6 @@ class BagnoEdit(UpdateView):
         raise PermissionDenied
 
 
-
 class ServiceCategoryView(DetailView):
     """ Detail view for a single service category
     """
