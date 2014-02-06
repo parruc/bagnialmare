@@ -26,10 +26,10 @@ class CheckboxInput(forms.widgets.SubWidget):
     def __init__(self, name, value, attrs, choice, index):
         self.name, self.value = name, value
         self.attrs = attrs
-        self.choice_value = force_unicode(choice[1])
-        self.choice_label = force_unicode(choice[2])
+        self.choice_value = force_unicode(choice[0])
+        self.choice_label = force_unicode(choice[1])
 
-        self.attrs.update({'cat_name': choice[0]})
+        self.attrs.update({'cat_name': choice[2]})
 
         self.index = index
 
@@ -103,8 +103,10 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
     def get_renderer(self, name, value, attrs=None, choices=()):
         """Returns an instance of the renderer."""
 
-        choices_ = [ast.literal_eval(i[1]).iteritems() for i in self.choices]
-        choices_ = [(a[1], b[1], c[1]) for a, b, c in choices_]
+        choices_ = [(c.pk, c.name, c.category.name) for c in self.choices.queryset]
+
+#        choices_ = [ast.literal_eval(i[1]).iteritems() for i in self.choices]
+#        choices_ = [(a[1], b[1], c[1]) for a, b, c in choices_]
 
         if value is None: value = ''
         str_values = set([force_unicode(v) for v in value]) # Normalize to string.
@@ -124,6 +126,10 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
             id_ += '_0'
         return id_
 
+    def value_from_datadict(self, data, files, name):
+        value = super(CheckboxSelectMultipleIter, self).value_from_datadict(data, files, name)
+        return value
+
 
 class TranslationModelFormReversed(forms.ModelForm):
     """
@@ -134,6 +140,7 @@ class TranslationModelFormReversed(forms.ModelForm):
         super(TranslationModelFormReversed, self).__init__(*args, **kwargs)
         trans_opts = translator.get_options_for_model(Bagno)
         untranslated = trans_opts.fields.keys()
+        self.multilingual_fields = {}
         for f in self._meta.model._meta.fields:
             if f.name not in self.fields and f.name in trans_opts.fields:
                 # Removes translated fields not present in fields (in excluded?)
@@ -141,19 +148,19 @@ class TranslationModelFormReversed(forms.ModelForm):
                     if trans_f.name in self.fields:
                         del self.fields[trans_f.name]
             if f.name in self.fields:
-                if f.name in untranslated:
-                    # Removes the fields with a translation
-                    del self.fields[f.name]
                 if isinstance(f, TranslationField):
                     # Adjusts translated fields
                     css_class = "field-trans-%s" % f.name
                     setattr(self.fields[f.name], "css_class", css_class)
+                if f.name in untranslated:
+                    # Removes the fields with a translation
+                    del self.fields[f.name]
 
 
 # Create the form class.
 class BagnoForm(TranslationModelFormReversed, ModelForm):
     services = forms.ModelMultipleChoiceField(
-        queryset=Service.objects.all().values('slug', 'name', 'category__name'),
+        queryset=Service.objects.select_related("category__name").all(),
         widget=CheckboxSelectMultipleIter,
         required=False,
     )
