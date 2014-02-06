@@ -37,13 +37,13 @@
             <div id="container" class="row">
                 <div id="content" class="col-lg-12">
                     {% if messages %}
-                        <ul class="messages">
+                        <div id="messages">
                             {% for message in messages %}
-                                <li class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %}">
+                                <div class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %}">
                                     {{ message }}
                                 </div>
                             {% endfor %}
-                        </ul>
+                        </div>
                     {% endif %}
                     <form action="{% url 'set_language' %}" method="post"
                         class="navbar-form pull-right">

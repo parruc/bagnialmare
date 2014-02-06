@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block content %}
-<form method="post">{% csrf_token %}
+<form action="{% url 'bagno-edit' object.slug %}" method="post">{% csrf_token %}
     {% for field in form %}
         <div class="{{ field.field.css_class }}">
             {% if field.name == 'services' %}
@@ -33,25 +33,33 @@
 {% block specific_js %}
     <script type="text/javascript">
         $(function(){
-            target_elements = []
+            var field, lang;
+            var target_elements = []
             $("div[class^='field-trans-']").each(function(){
-                field_class = $(this).attr('class')
-                trans = field_class.replace("field-trans-", "").split("_");
-                field = trans[0];
-                lang = trans[1];
-                target_id = 'tabs-'+field;
-                target_element = $("#"+target_id);
+                var field_class = $(this).attr('class')
+                var trans = field_class.replace("field-trans-", "").split("_");
+                var field = trans[0];
+                var lang = trans[1];
+                var target_class = 'tabs-'+field;
+                var target_element = $(target_class);
                 if(target_element.length == 0){
-                    target_element = $('<div class="tabs" id="'+target_id+'"/>');
-                    ul = target_element.append('<ul/>');
-                    $("#content-body form").prepend(target_element);
+                    target_element = $('<div class="'+target_class+'"/>');
+                    target_element.append('<ul/>');
+
+                    append('<li/>').append('<a href="#'+field+'-'+lang+'">'+lang+'</a>');
+                    target_element.append('<div id="'+field+'-'+lang+'"></div>').append($(this));
+                    $("form").prepend(target_element);
                 }
-                field_id = field+'-'+lang;
-                $("ul", target_element).append('<li><a href="#'+field_id+'">'+lang+'</a></li>');
-                target_element.append('<div id="'+field_id+'"></div>');
-                $("#"+field_id, target_element).append($(this));
+                else{
+                    target_element = target_element[0]
+                }
+                $("ul", target_element).append('<li/>');
+                $("li", target_element).append('<a href="#'+field+'-'+lang+'">'+lang+'</a>');
+
+                target_element.append('<div id="'+field+'-'+lang+'">').appendTo($(this))
+                    ;
+                }
             });
-            $(".tabs").tabs();
         });
     </script>
 {% endblock specific_js %}
