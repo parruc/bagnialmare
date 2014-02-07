@@ -13,9 +13,23 @@ from modeltranslation.translator import translator
 
 
 class OmbrelloniOLWidget(OSMWidget):
-    #TODO: this thing does not work ... shit
+    """
+    Just Inherits from standard widget in contrib in order to load js files from local static folder
+    """
+
+    default_lon = 5
+    default_lat = 10
+    #template_name = 'gis/openlayers-osm.html'
+
     class Media:
-        js = ('http://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/OpenLayers.min.js',)
+        extend = False
+        js = ('/static/js/OpenLayers-2.11.js',
+              '/static/js/OpenStreetMap.js',
+              '/static/js/olsetup.js',
+              'gis/js/OLMapWidget.js')
+        css = {
+                'all' : ('/static/css/openlayers.tidy.css',),
+              }
 
 
 class CheckboxInput(forms.widgets.SubWidget):
@@ -160,4 +174,5 @@ class BagnoForm(TranslationModelFormReversed, ModelForm):
     class Meta:
         model = Bagno
         exclude = ['slug']
-        widgets = {'point' : OSMWidget(),}
+        #widgets = {'point' : OSMWidget(),}
+        widgets = {'point' : OmbrelloniOLWidget(),}
