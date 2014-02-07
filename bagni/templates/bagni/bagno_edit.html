@@ -7,20 +7,22 @@
     {% for field in form %}
         <div class="{{ field.field.css_class }}">
             {% if field.name == 'services' %}
-                {% with field|dictsort:"attrs.cat_name" as options %}
-                    {% regroup options by attrs.cat_name as groups %}
-                    <ul class="service-groups">
+                {{ field.label_tag }}
+                <div class="accordion">
+                    {% with field|dictsort:"attrs.cat_name" as options %}
+                        {% regroup options by attrs.cat_name as groups %}
                         {% for group in groups %}
-                            <li class="service-group">{{ group.grouper }}
+                            <h3 class="service-group">{{ group.grouper }}</h3>
+                            <div>
                                 <ul class="services">
                                     {% for option in group.list %}
-                                        <li class="service">{{ option }} </li>
+                                        <li class="service col-lg-4">{{ option }}</li>
                                     {% endfor %}
                                 </ul>
-                            </li>
+                            </div>
                         {% endfor %}
-                    </ul>
-                {% endwith %}
+                    {% endwith %}
+                </div>
             {% else %}
                 {{ field.label_tag }} {{ field }}
             {% endif %}
@@ -52,8 +54,7 @@
                 $("#"+field_id, target_element).append($(this));
             });
             $(".tabs").tabs();
+            $(".accordion").accordion({'heightStyle': 'content'});
         });
     </script>
 {% endblock specific_js %}
-
-

@@ -1,4 +1,6 @@
 from django.utils.datastructures import MultiValueDict, MergeDict
+from django.utils.translation import ugettext_lazy as _
+
 from django import forms
 
 from .models import Manager
@@ -24,3 +26,12 @@ class ManagerSignupForm(forms.ModelForm):
         m.bagni = self.cleaned_data['bagni']
         m.privacy = self.cleaned_data['privacy']
         m.save()
+
+    def clean_privacy(self):
+        data = self.cleaned_data['privacy']
+        if not data:
+            raise forms.ValidationError(
+                _(u'You must accept the terms and conditions'),
+                code='privacy'
+            )
+        return data
