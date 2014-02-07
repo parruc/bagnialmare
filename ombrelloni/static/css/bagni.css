@@ -32,3 +32,8 @@ img.hp-form-image
 {
     font-style: italic;
 }
+.services li
+{
+    display: inline;
+    float: left;
+}

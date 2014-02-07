@@ -26,10 +26,10 @@ class CheckboxInput(forms.widgets.SubWidget):
     def __init__(self, name, value, attrs, choice, index):
         self.name, self.value = name, value
         self.attrs = attrs
-        self.choice_value = force_unicode(choice[1])
-        self.choice_label = force_unicode(choice[2])
+        self.choice_value = force_unicode(choice[0])
+        self.choice_label = force_unicode(choice[1])
 
-        self.attrs.update({'cat_name': choice[0]})
+        self.attrs.update({'cat_name': choice[2]})
 
         self.index = index
 
@@ -103,8 +103,9 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
     def get_renderer(self, name, value, attrs=None, choices=()):
         """Returns an instance of the renderer."""
 
-        choices_ = [ast.literal_eval(i[1]).iteritems() for i in self.choices]
-        choices_ = [(a[1], b[1], c[1]) for a, b, c in choices_]
+        choices_ = [(c.pk, c.name, c.category.name) for c in self.choices.queryset]
+#        choices_ = [ast.literal_eval(i[1]).iteritems() for i in self.choices]
+#        choices_ = [(a[1], b[1], c[1]) for a, b, c in choices_]
 
         if value is None: value = ''
         str_values = set([force_unicode(v) for v in value]) # Normalize to string.
@@ -153,7 +154,7 @@ class TranslationModelFormReversed(forms.ModelForm):
 # Create the form class.
 class BagnoForm(TranslationModelFormReversed, ModelForm):
     services = forms.ModelMultipleChoiceField(
-        queryset=Service.objects.all().values('slug', 'name', 'category__name'),
+        queryset=Service.objects.select_related("category__name").all(),
         widget=CheckboxSelectMultipleIter,
         required=False,
     )

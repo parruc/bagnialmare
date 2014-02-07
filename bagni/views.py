@@ -45,11 +45,7 @@ class BagnoEdit(UpdateView):
     """
     model = Bagno
     template_name = "bagni/bagno_edit.html"
-
-    def get_context_data(self, **kwargs):
-        context = super(BagnoEdit, self).get_context_data(**kwargs)
-        context['form'] = BagnoForm(instance=self.object)
-        return context
+    form_class = BagnoForm
 
     def dispatch(self, request, *args, **kwargs):
         """Controllo che il manager possa modificare il bagno
