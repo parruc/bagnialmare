@@ -1,3 +1,4 @@
+import ast
 from itertools import chain
 
 from django import forms
@@ -41,7 +42,9 @@ class CheckboxInput(forms.widgets.SubWidget):
         self.attrs = attrs
         self.choice_value = force_unicode(choice[0])
         self.choice_label = force_unicode(choice[1])
+
         self.attrs.update({'cat_name': choice[2]})
+
         self.index = index
 
     def __unicode__(self):
@@ -100,10 +103,23 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
     """
     renderer = CheckboxRenderer
 
+    def __init__(self, *args, **kwargs):
+        # Override the default renderer if we were passed one.
+        renderer = kwargs.pop('renderer', None)
+        if renderer:
+            self.renderer = renderer
+        super(CheckboxSelectMultipleIter, self).__init__(*args, **kwargs)
+
+    def subwidgets(self, name, value, attrs=None, choices=()):
+        for widget in self.get_renderer(name, value, attrs, choices):
+            yield widget
+
     def get_renderer(self, name, value, attrs=None, choices=()):
         """Returns an instance of the renderer."""
 
         choices_ = [(c.pk, c.name, c.category.name) for c in self.choices.queryset]
+#        choices_ = [ast.literal_eval(i[1]).iteritems() for i in self.choices]
+#        choices_ = [(a[1], b[1], c[1]) for a, b, c in choices_]
 
         if value is None: value = ''
         str_values = set([force_unicode(v) for v in value]) # Normalize to string.
@@ -114,6 +130,14 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
         final_attrs = self.build_attrs(attrs)
         choices = list(chain(choices_, choices))
         return self.renderer(name, str_values, final_attrs, choices)
+
+    def render(self, name, value, attrs=None, choices=()):
+        return self.get_renderer(name, value, attrs, choices).render()
+
+    def id_for_label(self, id_):
+        if id_:
+            id_ += '_0'
+        return id_
 
 
 class TranslationModelFormReversed(forms.ModelForm):
