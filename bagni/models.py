@@ -171,6 +171,20 @@ class Bagno(models.Model):
         return ("bagno-edit", [self.slug, ])
 
 
+class Telephone(models.Model):
+    """ List of telephone numbers of the bagno
+    """
+    class Meta:
+        verbose_name = _('Telephone number')
+        verbose_name_plural = _('Telephone numbers')
+
+    name = models.CharField(max_length=25)
+    number = models.CharField(max_length=100)
+    bagno = models.ForeignKey(Bagno, related_name="telephones", verbose_name=_("Bagno"),)
+    def __unicode__(self):
+        return self.name
+
+
 class Service(models.Model):
     """ The model for Service object
     """

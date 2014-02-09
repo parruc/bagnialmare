@@ -39,6 +39,12 @@ class LanguageTranslationOptions(TranslationOptions):
 translator.register(models.Language, LanguageTranslationOptions)
 
 
+class TelephoneTranslationOptions(TranslationOptions):
+    fields = ('name', )
+
+translator.register(models.Telephone, TelephoneTranslationOptions)
+
+
 class ImageTranslationOptions(TranslationOptions):
     fields = ('name', 'description', 'slug',)
 
