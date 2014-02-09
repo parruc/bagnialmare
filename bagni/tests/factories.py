@@ -1,14 +1,14 @@
 import factory
 from factory import fuzzy
-import bagni.models as bagni
-import django.contrib.auth.models as auth
-import authauth.models as authauth
+#import bagni
+from django.contrib import auth
+#import authauth
 from django.contrib.gis.geos import Point
 
 DEFAULT_PASSWORD = "password"
 
 class BagnoFactory(factory.DjangoModelFactory):
-    FACTORY_FOR = bagni.Bagno
+    FACTORY_FOR = 'bagni.Bagno'
     name = factory.Sequence(lambda n: "bagno%03d" % n)
     mail = factory.Sequence(lambda n: "bagno%03d@example.com" % n)
     number = factory.Sequence(lambda n: "%03d" % n)
@@ -16,13 +16,13 @@ class BagnoFactory(factory.DjangoModelFactory):
     description = fuzzy.FuzzyText(length=50)
 
 class UserFactory(factory.DjangoModelFactory):
-    FACTORY_FOR = auth.User
+    FACTORY_FOR = auth.models.User
     username = factory.Sequence(lambda n: "user%03d" % n)
     email = factory.Sequence(lambda n: "user%03d@example.com" % n)
     password = factory.PostGenerationMethodCall('set_password', DEFAULT_PASSWORD)
 
 class ManagerFactory(factory.DjangoModelFactory):
-    FACTORY_FOR = authauth.Manager
+    FACTORY_FOR = 'authauth.Manager'
     user = factory.SubFactory(UserFactory)
     privacy = True
 

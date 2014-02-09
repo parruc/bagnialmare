@@ -1,1 +1,1 @@
-./manage.py test fts --settings=ombrelloni.settings_test
+./manage.py test fts --liveserver=localhost:9999 --settings=ombrelloni.settings_test -v 2
