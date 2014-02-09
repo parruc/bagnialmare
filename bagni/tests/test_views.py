@@ -47,6 +47,8 @@ class BagnoEditPage(TestCase):
         self.bagno = BagnoFactory()
         self.manager_user = ManagerFactory.create(bagni=(self.bagno,))
         self.wrong_manager = ManagerFactory.create(bagni=(BagnoFactory(),))
+        #self.admin = UserFactory()
+        #self.admin.is_staff = True
 
     def test_edit_without_login(self):
         resp = self.client.get(self.bagno.get_absolute_url() + "edit/", follow=True)
@@ -69,3 +71,10 @@ class BagnoEditPage(TestCase):
                 password = DEFAULT_PASSWORD)
         resp = self.client.get(self.bagno.get_absolute_url() + "edit/", follow=True)
         self.assertEqual(resp.status_code, 403)
+
+    #def test_admin_attempt_edit(self):
+    #    self.client.login(username = self.admin.username,
+    #            password = DEFAULT_PASSWORD)
+    #    resp = self.client.get(self.bagno.get_absolute_url() + "edit/", follow=True)
+    #    self.assertEqual(resp.status_code, 200)
+
