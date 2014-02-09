@@ -5,6 +5,7 @@ doc/_*
 .coverage
 htmlcov
 ombrelloni/whoosh_index
+ombrelloni/whoosh_index_test
 ombrelloni/settings.py
 ombrelloni/settings_test.py
 uwsgi.ini
