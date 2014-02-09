@@ -115,10 +115,6 @@ class Bagno(models.Model):
     # TODO: A regime mettere  obbligatorio municipality
     municipality = models.ForeignKey(Municipality, blank=True, null=True, related_name='bagni', verbose_name=_("Municipality"), )
     mail = models.EmailField(max_length=50, blank=True)
-    tel = models.CharField(max_length=125, blank=True)
-    cell = models.CharField(max_length=125, blank=True)
-    winter_tel = models.CharField(max_length=75, blank=True)
-    fax = models.CharField(max_length=125, blank=True)
     site = models.URLField(max_length=75, blank=True)
     point = models.PointField(null=True, blank=True)
 

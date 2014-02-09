@@ -43,8 +43,9 @@
     <h2>{% trans Contacts %}</h2>
     <p>{{ object.address }} - {{ object.municipality.name }}</p>
     <p>{{ object.mail }}</p>
-    <p>{{ object.tel }}</p>
-    <p>{{ object.fax }}</p>
+    {% for tel in object.telephones.all %}
+        <p>{{ tel.name }}: {{ tel.number }}</p>
+    {% endfor %}
     <p>{{ object.site }}</p>
     <div id="bagno_map" style="width: 600px; height: 400px"></div>
 {% endblock content %}
