@@ -10,3 +10,4 @@ ombrelloni/settings.py
 ombrelloni/settings_test.py
 uwsgi.ini
 wsgi.py
+ghostdriver.log
