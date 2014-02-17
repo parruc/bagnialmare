@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import time
 import random
+import os
 
 from django.core.urlresolvers import reverse
 from django.contrib.gis.db import models
@@ -226,11 +227,11 @@ class Image(models.Model):
         verbose_name_plural = _('Images')
 
     def _define_filename(self, filename):
-        upload_path = "images/bagni/"
-        extension = filename.strip().split('.')[-1] or "jpg"
-        file_prefix = str(int(time.time()))
-        postfix = str(int(random.randint(0,100))).rjust(3, '0')
-        return upload_path + file_prefix + '_' + postfix + '.' + extension
+        upload_base_path = "images/bagni"
+        upload_path = "%s/%s/%s" % (upload_base_path,
+                                    self.bagno.slug,
+                                    filename)
+        return upload_path
 
 
     name = models.CharField(max_length=50)
@@ -240,6 +241,5 @@ class Image(models.Model):
                                   verbose_name=_("Slug"),
                                   unique=True,
                                   editable=True,)
-    #image = ImageField(upload_to="images/bagni", verbose_name=_("Image"),)
     image = ImageField(upload_to=_define_filename, verbose_name=_("Image"),)
     bagno = models.ForeignKey(Bagno, related_name="images", verbose_name=_("Bagno"),)
