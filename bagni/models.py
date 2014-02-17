@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
+import time
+import random
+
 from django.core.urlresolvers import reverse
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from sorl.thumbnail import ImageField
 import autoslug
+
 
 
 class District(models.Model):
@@ -221,6 +225,14 @@ class Image(models.Model):
         verbose_name = _('Image')
         verbose_name_plural = _('Images')
 
+    def _define_filename(self, filename):
+        upload_path = "images/bagni/"
+        extension = filename.strip().split('.')[-1] or "jpg"
+        file_prefix = str(int(time.time()))
+        postfix = str(int(random.randint(0,100))).rjust(3, '0')
+        return upload_path + file_prefix + '_' + postfix + '.' + extension
+
+
     name = models.CharField(max_length=50)
     description = models.TextField(max_length=2000, blank=True)
     slug = autoslug.AutoSlugField(max_length=50,
@@ -228,5 +240,6 @@ class Image(models.Model):
                                   verbose_name=_("Slug"),
                                   unique=True,
                                   editable=True,)
-    image = ImageField(upload_to="images/bagni", verbose_name=_("Image"),)
+    #image = ImageField(upload_to="images/bagni", verbose_name=_("Image"),)
+    image = ImageField(upload_to=_define_filename, verbose_name=_("Image"),)
     bagno = models.ForeignKey(Bagno, related_name="images", verbose_name=_("Bagno"),)

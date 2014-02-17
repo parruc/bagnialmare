@@ -5,8 +5,6 @@ import models
 
 #TODO: Mettere le foreignkeys come fields inline
 
-class BagnoAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
-    pass
 
 class DistrictAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
@@ -26,8 +24,20 @@ class LanguageAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
 class TelephoneAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
+class TelephoneInline(admin.StackedInline):
+    model = models.Telephone
+
 class ImageAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
+
+class ImageInline(admin.TabularInline):
+    model = models.Image
+
+class BagnoAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
+    inlines = [
+            ImageInline,
+            TelephoneInline,
+            ]
 
 
 admin.site.register(models.Bagno, BagnoAdmin)
