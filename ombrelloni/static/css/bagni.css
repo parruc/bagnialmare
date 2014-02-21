@@ -39,8 +39,13 @@ body {
   margin-top: 150px;
 }
 
+.search-button {
+  background-color: #0097D5;
+  border-color: #0097D5;
+}
+
 .homepage-box-wrapper {
-  background: none repeat scroll 0% 0% rgba(57, 60, 61, 0.9);
+  background: none repeat scroll 0% 0% rgba(57, 60, 61, 0.8);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px 5px 5px 5px;
 }
@@ -107,8 +112,12 @@ img.hp-form-image
 
 
 
+
+
+
 h1 {
-    font-family: 'Crete Round', Georgia, Times, serif;
+    font-family: 'Raleway', Georgia, Times, serif;
+    font-weight: 900;
 }
  
 p {
@@ -117,4 +126,22 @@ p {
 
 a {
     font-family: 'ABeeZee', Helvetica, Arial, sans-serif;
+}
+
+button {
+    font-family: 'ABeeZee', Helvetica, Arial, sans-serif;
+}
+
+
+.navbar-default {
+    background-color: rgb(255, 255, 255);
+    border-color: #F9BF16;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #0097D5;
+}
+
+.navbar-default .navbar-brand {
+    color: #0097D5;
 }
