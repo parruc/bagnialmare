@@ -30,7 +30,7 @@ class TelephoneInline(admin.StackedInline):
 class ImageAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
-class ImageInline(admin.TabularInline):
+class ImageInline(admin.StackedInline):
     model = models.Image
 
 class BagnoAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):

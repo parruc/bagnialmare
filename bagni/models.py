@@ -227,10 +227,12 @@ class Image(models.Model):
         verbose_name_plural = _('Images')
 
     def _define_filename(self, filename):
+        extension = filename.split('.')[-1] or 'jpg'
+        upload_filename = self.bagno.slug + '.' + extension
         upload_base_path = "images/bagni"
         upload_path = "%s/%s/%s" % (upload_base_path,
                                     self.bagno.slug,
-                                    filename)
+                                    upload_filename)
         return upload_path
 
 
