@@ -3,6 +3,10 @@
 {% load l10n i18n thumbnail %}
 
 {% block content %}
+    {% if object.name %}
+        <h1>{{ object.name|safe }}</h1>
+    {% endif %}
+
     {% if object.description %}
         <h2>{% trans "Description" %}</h2>
         {{ object.description|safe }}
@@ -75,9 +79,4 @@
     {{ object.name }}
 {% endblock pagetitle %}
 
-{% block title %}
-    {% if object.number %}
-        {{ object.number }} -
-    {% endif %}
-    {{ object.name }}
-{% endblock title %}
+
