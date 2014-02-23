@@ -2,11 +2,13 @@ from itertools import chain
 
 from django import forms
 from django.forms.util import flatatt
+from django.forms.models import inlineformset_factory, ModelFormMetaclass, BaseModelForm
 from django.utils.html import conditional_escape
 from django.utils.encoding import StrAndUnicode, force_unicode
 from django.utils.safestring import mark_safe
-from bagni.models import Bagno, Service
+from bagni.models import Bagno, Service, Image, Telephone
 from django.contrib.gis.forms import ModelForm, OSMWidget
+from django.utils import six
 from modeltranslation.fields import TranslationField
 from modeltranslation.translator import translator
 
@@ -29,7 +31,6 @@ class OmbrelloniOLWidget(OSMWidget):
         css = {
                 'all' : ('/static/css/openlayers.tidy.css',),
               }
-
 
 class CheckboxInput(forms.widgets.SubWidget):
     """
@@ -115,6 +116,13 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
         choices = list(chain(choices_, choices))
         return self.renderer(name, str_values, final_attrs, choices)
 
+class TranslationModelFormMetaclass(ModelFormMetaclass):
+    def __new__(cls, name, bases, attrs):
+        new_class = super(TranslationModelFormMetaclass, cls).__new__(cls, name, bases, attrs)
+        return new_class
+
+class TranslationModelForm(six.with_metaclass(TranslationModelFormMetaclass, BaseModelForm)):
+        pass
 
 class TranslationModelFormReversed(forms.ModelForm):
     """
@@ -125,9 +133,25 @@ class TranslationModelFormReversed(forms.ModelForm):
         super(TranslationModelFormReversed, self).__init__(*args, **kwargs)
         trans_opts = translator.get_options_for_model(Bagno)
         untranslated = trans_opts.fields.keys()
+        #translations = trans_opts.fields
         for f in self._meta.model._meta.fields:
+        #    #if this attribute must be translated and must be included in the form
+        #    if f.name in translations and f.name in self.fields:
+        #        #save position of this field in the form
+        #        position = self.fields.keyOrder.index(f.name)
+        #        #remove base fields for translations
+        #        #del self.fields[f.name]
+        #        #add tanslated fields
+        #        for t_field in translations[f.name]:
+        #            #add custom class to the field for javascript visualization
+        #            css_class = "field-trans-%s" % f.name
+        #            t_field.css_class = css_class
+        #            # add the translated field in the form in the correct position
+        #            # self.fields is an instance of django.utils.SortedDict
+        #            self.fields.keyOrder.insert(position, t_field.name)
+        #            self.fields[t_field.name] = t_field
             if f.name not in self.fields and f.name in trans_opts.fields:
-                # Removes translated fields not present in fields (in excluded?)
+                # Removes translated fields not present in fields
                 for trans_f in trans_opts.fields[f.name]:
                     if trans_f.name in self.fields:
                         del self.fields[trans_f.name]
@@ -143,6 +167,8 @@ class TranslationModelFormReversed(forms.ModelForm):
 
 # Create the form class.
 class BagnoForm(TranslationModelFormReversed, ModelForm):
+#class BagnoForm(TranslationModelForm):
+
     services = forms.ModelMultipleChoiceField(
         queryset=Service.objects.select_related("category__name").all(),
         widget=CheckboxSelectMultipleIter,
@@ -150,6 +176,10 @@ class BagnoForm(TranslationModelFormReversed, ModelForm):
     )
     class Meta:
         model = Bagno
-        exclude = ['slug']
-        #widgets = {'point' : OSMWidget(),}
+        fields = ['name', 'name_en', 'name_it',
+                'description', 'description_en', 'description_it',
+                'number',
+                'address', 'address_en', 'address_it',
+                'languages', 'services',
+                'municipality', 'mail', 'site', 'point']
         widgets = {'point' : OmbrelloniOLWidget(),}
