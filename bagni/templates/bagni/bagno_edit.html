@@ -46,7 +46,8 @@
                 if(target_element.length == 0){
                     target_element = $('<div class="tabs" id="'+target_id+'"/>');
                     ul = target_element.append('<ul/>');
-                    $("#content-body form").prepend(target_element);
+                    //$("#content-body form").prepend(target_element);
+                    $(".container form").prepend(target_element);
                 }
                 field_id = field+'-'+lang;
                 $("ul", target_element).append('<li><a href="#'+field_id+'">'+lang+'</a></li>');
