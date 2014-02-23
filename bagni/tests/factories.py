@@ -1,5 +1,5 @@
 import string
-from random import random, sample, choice
+import random
 
 import factory
 from factory import fuzzy
@@ -17,7 +17,9 @@ class BagnoFactory(factory.DjangoModelFactory):
     name = factory.Sequence(lambda n: "bagno%03d" % n)
     mail = factory.LazyAttribute(lambda o: o.name + "@example.com")
     number = fuzzy.FuzzyText(length=3, chars=string.digits)
-    point = factory.LazyAttribute(lambda o: Point([50+random()*10, 30+random()*10]))
+    point = factory.LazyAttribute(lambda o: Point(
+        [50+random.random()*10, 30+random.random()*10])
+        )
     description = fuzzy.FuzzyText(length=50)
 
 class UserFactory(factory.DjangoModelFactory):
@@ -100,11 +102,11 @@ def setUpTestFactory(test_dimension=10):
     for i in xrange(test_dimension):
         bagno = BagnoFactory()
         bagno.municipality = municipalities[i]
-        bagno.services = sample(services, 4)
+        bagno.services = random.sample(services, 4)
         bagni.append(bagno)
         bagno.save()
     normal_user = UserFactory()
-    manager = ManagerFactory(bagni = [choice(bagni)])
+    manager = ManagerFactory(bagni = [random.choice(bagni)])
     return dict(
             districts = districts,
             municipalities = municipalities,

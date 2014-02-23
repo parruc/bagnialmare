@@ -19,8 +19,12 @@ class BagniPage(TestCase):
     """
 
     def setUp(self):
+        setUpTestFactory()
         for i in xrange(20):
             BagnoFactory.create()
+
+    def tearDown(self):
+        tearDownTestFactory()
 
     def test_view_params(self):
         self.assertTrue(len(Bagno.objects.all()) > 10) #false if fixtures
@@ -29,7 +33,11 @@ class BagniPage(TestCase):
 
 class Login(TestCase):
     def setUp(self):
+        setUpTestFactory()
         self.user = UserFactory()
+
+    def tearDown(self):
+        tearDownTestFactory()
 
     def test_registered_user_login(self):
         logged_in = self.client.login(username = self.user.username,
@@ -43,12 +51,14 @@ class Login(TestCase):
 
 class BagnoEditPage(TestCase):
     def setUp(self):
-        self.normal_user = UserFactory()
-        self.bagno = BagnoFactory()
-        self.manager_user = ManagerFactory.create(bagni=(self.bagno,))
+        data = setUpTestFactory()
+        self.normal_user = data['normal_user']
+        self.manager_user = data['manager']
+        self.bagno = self.manager_user.bagni.first()
         self.wrong_manager = ManagerFactory.create(bagni=(BagnoFactory(),))
-        #self.admin = UserFactory()
-        #self.admin.is_staff = True
+
+    def tearDown(self):
+        tearDownTestFactory()
 
     def test_edit_without_login(self):
         resp = self.client.get(self.bagno.get_absolute_url() + "edit/", follow=True)
@@ -72,9 +82,4 @@ class BagnoEditPage(TestCase):
         resp = self.client.get(self.bagno.get_absolute_url() + "edit/", follow=True)
         self.assertEqual(resp.status_code, 403)
 
-    #def test_admin_attempt_edit(self):
-    #    self.client.login(username = self.admin.username,
-    #            password = DEFAULT_PASSWORD)
-    #    resp = self.client.get(self.bagno.get_absolute_url() + "edit/", follow=True)
-    #    self.assertEqual(resp.status_code, 200)
 

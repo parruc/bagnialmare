@@ -11,7 +11,11 @@ class BagnoModelTest(TestCase):
         """
         This already tests wether we can create a new object or not
         """
+        setUpTestFactory()
         self.added = BagnoFactory()
+
+    def tearDown(self):
+        tearDownTestFactory()
 
     def test_basic_retrival(self):
         """
