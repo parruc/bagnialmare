@@ -60,15 +60,23 @@ body {
 
 .homepage-headline {
   font-size: 300%;
+  /*color: #F9BF16;*/
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 
 .homepage-sub-headline {
   font-size: 120%;
-  color: rgb(255, 255, 255);
+  color: #F9BF16;
 }
 
+.border-right-2 {
+  border-right: 1px solid rgb(226, 226, 226);
+}
+
+.filter-result {
+  background-color: rgb(247, 247, 247);
+}
 
 .hp-form
 {
