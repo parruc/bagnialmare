@@ -7,7 +7,7 @@
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
-    <div class=""><div class="row search search-page-search-row">
+    <div class="search-page-search-row-wrapper-div"><div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
                     <div class="col-xs-5">
                         <label for="search_q">{% trans 'What' %}:</label>
@@ -22,7 +22,7 @@
                     </div> 
             </form>
     </div></div>
-    <hr>
+
     {% if has_get %}
         <div class="row result-wrapper-div">
             <div class="col-xs-3">
@@ -80,7 +80,7 @@
                         {% trans "near" %} <span class="hits-query">{{ place }}</span>
                     {% endif %}
                 </p>
-                <ul class="nav nav-tabs" id="myTab">
+                <ul class="nav nav-tabs search-page-tabs" id="myTab">
                     <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                     <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
                 </ul>
