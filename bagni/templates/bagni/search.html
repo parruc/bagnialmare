@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
 {% load l10n i18n query_string %}
+{% load batch from custom_filters %}
 
 {% block content %}
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
-    <div class="row search search-page-search-row">
+    <div class=""><div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
                     <div class="col-xs-5">
                         <label for="search_q">{% trans 'What' %}:</label>
@@ -20,11 +21,10 @@
                         <button type="submit" id="search_submit" class="btn btn-primary" value="search">{% trans "Search" %}</button>
                     </div> 
             </form>
-    </div>
+    </div></div>
     <hr>
-
     {% if has_get %}
-        <div class="row">
+        <div class="row result-wrapper-div">
             <div class="col-xs-3">
                 <div class="well filter-result-box">
                     {% for facet in active_facets %}
@@ -69,6 +69,17 @@
                 </div>
             </div>
             <div class="col-xs-9">
+                <p>
+                    <span class="hits-count">{{ count }}</span>
+                    {% if q %}
+                        {% trans "results for" %} <span class="hits-query">{{ q }}</span>
+                    {% else %}
+                        {% trans "results" %}
+                    {% endif %}
+                    {% if place %}
+                        {% trans "near" %} <span class="hits-query">{{ place }}</span>
+                    {% endif %}
+                </p>
                 <ul class="nav nav-tabs" id="myTab">
                     <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                     <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
@@ -83,58 +94,41 @@
                     </div>
                     <div class="tab-pane active" id="listTab">
                         {% if hits %}
-                            <p>
-                                <span class="hits-count">{{ count }}</span>
-                                {% if q %}
-                                    {% trans "results for" %} <span class="hits-query">{{ q }}</span>
-                                {% else %}
-                                    {% trans "results" %}
-                                {% endif %}
-                                {% if place %}
-                                    {% trans "near" %} <span class="hits-query">{{ place }}</span>
-                                {% endif %}
-
-                                <span class="per-page">
-                                    {% trans "Show" %}
-                                    <a href="{% query_string 'pp=10' 'pp' %}">10</a>
-                                    <a href="{% query_string 'pp=25' 'pp' %}">25</a>
-                                    <a href="{% query_string 'pp=50' 'pp' %}">50</a>
-                                    <a href="{% query_string 'pp=100' 'pp' %}">100</a>
-                                    {% trans "results per page" %}
-                                </span>
-                            </p>
                             {%  for hit in hits %}
                                 <div class="">
-                                    <div class="">
-                                        <h2>
-                                            <a href="{{ hit.get_absolute_url }}">{{ hit.name }}</a>
-                                            {% if hit.distance %}
-                                                <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
-                                            {% endif %}
-                                        </h2>
-                                        <p>{% trans "Number" %}: {{ hit.number }}</p>
-                                        <p>{{ hit.address }}, {{ hit.municipality }}</p>
+                                    <div class="row">
+                                         <div class="col-xs-12">
+                                            <h2>
+                                                <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.neighbourhood}}, {{hit.municipality}}</a>
+                                                {% if hit.distance %}
+                                                    <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
+                                                {% endif %}
+                                            </h2>
+                                        </div>
                                     </div>
+                                    <a href="{{ hit.get_absolute_url }}"><p>{{ hit.address }}, {{ hit.municipality }}</p></a>
                                     {% if hit.services.all %}
                                         {% with hit.services.all|dictsort:"category" as services %}
                                             {% regroup services by category as categorized_services %}
-                                            <h3>{% trans "Services" %}</h3>
-                                            <ul>
                                             {% for categorized_service in categorized_services %}
-                                                <li>{% trans categorized_service.grouper.name %}
-                                                <ul>
-                                                    {% for service in categorized_service.list %}
-                                                      <li>{% trans service.name %}</li>
+                                                <div class="row">
+                                                    <div class="col-xs-12"><h4>{% trans categorized_service.grouper.name %}</h4></div>
+                                                </div>
+                                                {% for service_batch in categorized_service.list|batch:4 %}
+                                                <div class="row">
+                                                    {% for service in service_batch %}
+                                                    <div class="col-xs-3">
+                                                        <p><span class="glyphicon glyphicon-ok service-glyphicon"></span>  {% trans service.name %}</p>
+                                                    </div>
                                                     {% endfor %}
-                                                </ul>
-                                                </li>
+                                                </div>
+                                                {% endfor %}
                                             {% endfor %}
-                                            </ul>
                                         {% endwith %}
                                     {% else %}
                                         <div>{% trans "No service available" %}</div>
                                     {% endif %}
-                                </div>
+                                </div><hr>
                             {% endfor %}
                             <div class="pagination">
                                 <span class="step-links">

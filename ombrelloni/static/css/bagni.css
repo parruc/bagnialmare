@@ -74,6 +74,10 @@ body {
   border-right: 1px solid rgb(226, 226, 226);
 }
 
+.result-wrapper-div {
+  border: 1px solid rgb(226, 226, 226);
+  padding-top: 15px;
+}
 
 .filter-result {
     padding-bottom: 10px;
@@ -132,13 +136,26 @@ img.hp-form-image
     padding-left: 15px;
 }
 
+
 .search-page-search-row{
     position: relative;
+}
+
+.search-page-search-row-wrapper-div{
+    border: 1px solid rgb(226, 226, 226);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px
 }
 
 
 .search-page-search-button-div{
     position: absolute; bottom: 0; left: 83%; 
+}
+
+
+.service-glyphicon{
+    color: green;
 }
 
 .full-width{
