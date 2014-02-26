@@ -12,6 +12,9 @@ from django.utils import six
 from modeltranslation.fields import TranslationField
 from modeltranslation.translator import translator
 
+import logging
+logging.getLogger(__name__)
+
 
 class OmbrelloniOLWidget(OSMWidget):
     """
@@ -116,70 +119,56 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
         choices = list(chain(choices_, choices))
         return self.renderer(name, str_values, final_attrs, choices)
 
+
 class TranslationModelFormMetaclass(ModelFormMetaclass):
     def __new__(cls, name, bases, attrs):
-        new_class = super(TranslationModelFormMetaclass, cls).__new__(cls, name, bases, attrs)
-        return new_class
+        meta = attrs.get('Meta', None)
+        #if the class has an inner class called Meta
+        if meta:
+            #we store the names of translated attributes in the inner class Meta
+            setattr(meta, 'translations', [])
+            #if the inner class Meta defines a fields attribute
+            meta_fields = getattr(meta, 'fields', None)
+            if meta_fields:
+                trans_opts = translator.get_options_for_model(meta.model)
+                translations = trans_opts.fields.keys()
+                # if the attribute is listed in Meta.fields (must be added to the form)
+                for field in meta_fields:
+                    #if this attribute supports translation
+                    if field in translations:
+                        #save the position of this field in the form
+                        position = meta_fields.index(field)
+                        #remove base field before adding its translations
+                        meta_fields.pop(position)
+                        #add tanslated fields
+                        for t_field in trans_opts.fields[field]:
+                            meta_fields.insert(position, t_field.name)
+                            meta.translations.append(t_field.name)
+        return super(TranslationModelFormMetaclass, cls).__new__(cls, name, bases, attrs)
 
-class TranslationModelForm(six.with_metaclass(TranslationModelFormMetaclass, BaseModelForm)):
-        pass
 
-class TranslationModelFormReversed(forms.ModelForm):
-    """
-    Exactly like from modeltranslation.forms.TranslationModelForm
-    but hides base field instead of translated ones.
-    """
+class TranslationModelForm(six.with_metaclass(TranslationModelFormMetaclass, ModelForm)):
     def __init__(self, *args, **kwargs):
-        super(TranslationModelFormReversed, self).__init__(*args, **kwargs)
-        trans_opts = translator.get_options_for_model(Bagno)
-        untranslated = trans_opts.fields.keys()
-        #translations = trans_opts.fields
-        for f in self._meta.model._meta.fields:
-        #    #if this attribute must be translated and must be included in the form
-        #    if f.name in translations and f.name in self.fields:
-        #        #save position of this field in the form
-        #        position = self.fields.keyOrder.index(f.name)
-        #        #remove base fields for translations
-        #        #del self.fields[f.name]
-        #        #add tanslated fields
-        #        for t_field in translations[f.name]:
-        #            #add custom class to the field for javascript visualization
-        #            css_class = "field-trans-%s" % f.name
-        #            t_field.css_class = css_class
-        #            # add the translated field in the form in the correct position
-        #            # self.fields is an instance of django.utils.SortedDict
-        #            self.fields.keyOrder.insert(position, t_field.name)
-        #            self.fields[t_field.name] = t_field
-            if f.name not in self.fields and f.name in trans_opts.fields:
-                # Removes translated fields not present in fields
-                for trans_f in trans_opts.fields[f.name]:
-                    if trans_f.name in self.fields:
-                        del self.fields[trans_f.name]
-            if f.name in self.fields:
-                if f.name in untranslated:
-                    # Removes the fields with a translation
-                    del self.fields[f.name]
-                if isinstance(f, TranslationField):
-                    # Adjusts translated fields
-                    css_class = "field-trans-%s" % f.name
-                    setattr(self.fields[f.name], "css_class", css_class)
+        super(TranslationModelForm, self).__init__(*args, **kwargs)
+        for field_name, field in self.fields.iteritems():
+            if field_name in self.Meta.translations:
+                # This field is relative to a translation.
+                # You can add your code here to customize the translated fields.
+                css_class = "field-trans-%s" % field_name
+                setattr(field, "css_class", css_class)
 
 
-# Create the form class.
-class BagnoForm(TranslationModelFormReversed, ModelForm):
-#class BagnoForm(TranslationModelForm):
+class BagnoForm(TranslationModelForm):
 
     services = forms.ModelMultipleChoiceField(
         queryset=Service.objects.select_related("category__name").all(),
         widget=CheckboxSelectMultipleIter,
         required=False,
     )
+
     class Meta:
         model = Bagno
-        fields = ['name', 'name_en', 'name_it',
-                'description', 'description_en', 'description_it',
-                'number',
-                'address', 'address_en', 'address_it',
-                'languages', 'services',
+        fields = ['name', 'description', 'number', 'address', 'languages', 'services',
                 'municipality', 'mail', 'site', 'point']
         widgets = {'point' : OmbrelloniOLWidget(),}
+
