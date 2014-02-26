@@ -4,25 +4,21 @@
 
 {% block content %}
     {% comment %}
-        TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
+ html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
-    <div class="row search">
+    <div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
-                <div class="col-xs-4">
-                    <div class="form-group">
-                        <label class="sr-only" for="search_q">{% trans 'What' %}</label>
-                        <input class="form-control input-lg" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{% trans 'What' %}" />
+                    <div class="col-xs-5">
+                        <label for="search_q">{% trans 'What' %}:</label>
+                        <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
+                     </div>
+                     <div class="col-xs-5">
+                        <label for="search_q">{% trans 'Where' %}:</label>
+                        <input class="form-control col-xs-4" type="text" id="search_l" name="l" value="{{ l }}"  />
                     </div>
-                </div>
-                <div class="col-xs-4">
-                   <div class="form-group">
-                        <label class="sr-only" for="search_q">{% trans 'Where' %}</label>
-                        <input class="form-control input-lg" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{% trans 'Where' %}" />
-                   </div>
-                </div>
-                <div class="col-xs-2"> 
-                    <button type="submit" id="search_submit" class="btn btn-primary btn-lg" value="search">{% trans "Search" %}</button>
-                </div>
+                    <div class="col-xs-2 search-page-search-button-div">
+                        <button type="submit" id="search_submit" class="btn btn-primary" value="search">{% trans "Search" %}</button>
+                    </div> 
             </form>
     </div>
     <hr>
@@ -30,7 +26,7 @@
     {% if has_get %}
         <div class="row">
             <div class="col-xs-3">
-                <div class="well filter-result">
+                <div class="well filter-result-box">
                     {% for facet in active_facets %}
                         {% if forloop.first %}
                             <div class="panel active-filters">
@@ -47,7 +43,7 @@
                         </div>
                         {% endif %}
                     {% endfor %}
-                    <h3>{% trans "Filter result" %}</h3>
+                    <h3 class="filter-result">{% trans "Filter result" %}:</h3>
                     {% for facet_group, facet_values in facets.items %}
                         {% if facet_group %}
                             <div class="">
@@ -76,6 +72,7 @@
                 <ul class="nav nav-tabs" id="myTab">
                     <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                     <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
+                    <li class="pull-right"><div><p>Pippo</p></div></li>
                 </ul>
                 <div id="content" class="tab-content">
                     <div class="tab-pane" id="mapTab">

@@ -74,8 +74,14 @@ body {
   border-right: 1px solid rgb(226, 226, 226);
 }
 
+
 .filter-result {
+    padding-bottom: 10px;
+}
+
+.filter-result-box {
   background-color: rgb(247, 247, 247);
+  padding-top: 0px;
 }
 
 .hp-form
@@ -118,12 +124,29 @@ img.hp-form-image
     float: left;
 }
 
+.display-inline{
+    display: inline-block;
+}
+
+.search-page-label{
+    padding-left: 15px;
+}
+
+.search-page-search-row{
+    position: relative;
+}
 
 
+.search-page-search-button-div{
+    position: absolute; bottom: 0; left: 83%; 
+}
+
+.full-width{
+    width: 100%;
+}
 
 
-
-h1 {
+h1, h2, h3, h4 {
     font-family: 'Raleway', Georgia, Times, serif;
     font-weight: 900;
 }
