@@ -82,7 +82,7 @@
                 </p>
                 <ul class="nav nav-tabs search-page-tabs" id="myTab">
                     <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
-                    <li><a href="#mapTab" data-toggle="tab" id="fooMap">{% trans "Map View" %}</a></li>
+                    <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
                 </ul>
                 <div id="content" class="tab-content">
                     <div class="tab-pane" id="mapTab">
@@ -98,7 +98,7 @@
                                 <div class="single-bagno-result-box">
                                     <div class="row">
                                          <div class="col-xs-12">
-                                            <h2>
+                                            <h2 class="single-result-header">
                                                 <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.neighbourhood}}, {{hit.municipality}}</a>
                                                 {% if hit.distance %}
                                                     <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
@@ -126,7 +126,7 @@
                                             {% endfor %}
                                         {% endwith %}
                                     {% else %}
-                                        <div>{% trans "Facilities not available" %}</div>
+                                        <p><em>{% trans "Facilities information not available" %}</em></p>
                                     {% endif %}
                                 </div><hr>
                             {% endfor %}

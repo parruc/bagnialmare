@@ -1,57 +1,87 @@
 {% extends "base.html" %}
 
 {% load l10n i18n thumbnail %}
+{% load batch from custom_filters %}
 
 {% block content %}
-    {% if object.name %}
-        <h1>{{ object.name|safe }}</h1>
-    {% endif %}
-
-    {% if object.description %}
-        <h2>{% trans "Description" %}</h2>
-        {{ object.description|safe }}
-    {% endif %}
-
-
-    {% with object.images.all|first as bagno_image %}
-        {% thumbnail bagno_image.image "200x200" crop="center" as thumb %}
-            <img class="bagno-image"
-                width="{{thumb.width}}"
-                height="{{thumb.height}}"
-                src="{{ thumb.url }}"
-                alt="{{ bagno_image.image.title }}" />
-        {% endthumbnail %}
-    {% endwith %}
-
-
-    {% if object.services.all %}
-        {% with object.services.all|dictsort:"category" as services %}
-            {% regroup services by category as categorized_services %}
-            <h2>{% trans "Services" %}</h2>
-            <ul>
-            {% for categorized_service in categorized_services %}
-                <li>{% trans categorized_service.grouper.name %}
-                <ul>
-                    {% for service in categorized_service.list %}
-                      <li>{% trans service.name %}</li>
-                    {% endfor %}
-                </ul>
-                </li>
-            {% endfor %}
-            </ul>
-        {% endwith %}
-    {% else %}
-        <div>{% trans "No service available" %}</div>
-    {% endif %}
-
-    <h2>{% trans Contacts %}</h2>
-    <p>{{ object.address }} - {{ object.municipality.name }}</p>
-    <p>{{ object.mail }}</p>
-    {% for tel in object.telephones.all %}
-        <p>{{ tel.name }}: {{ tel.number }}</p>
-    {% endfor %}
-    <p>{{ object.site }}</p>
-    <div id="bagno_map" style="width: 600px; height: 400px"></div>
+    <div class="bagno-detail-wrapper-div">
+        <div class="row">
+            <div class="col-xs-12">
+                {% if object.name %}
+                    <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="bagno-detail-address">{{ object.address }} - {{ object.municipality.name }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                {% with object.images.all|first as bagno_image %}
+                    {% thumbnail bagno_image.image "200x200" crop="center" as thumb %}
+                        <img class="bagno-image"
+                            width="{{thumb.width}}"
+                            height="{{thumb.height}}"
+                            src="{{ thumb.url }}"
+                            alt="{{ bagno_image.image.title }}" />
+                    {% endthumbnail %}
+                {% endwith %}
+            </div>
+            <div class="col-xs-6">
+                <div id="bagno_map" class="well pull-right" style="width: 450px; height: 350px"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="bagno-detail-sub-header">{% trans "Contacts" %}</h2>
+                {% if object.telephones.all %}
+                    <p><strong>{% trans "Telephone numbers" %}: </strong>
+                    {% for tel in object.telephones.all %}
+                    {{ tel.name }} {{ tel.number }}
+                    {% if forloop.last %}
+                    {% else %}
+                     -
+                    {% endif %}
+                    {% endfor %}</p>
+                {% else %}
+                    <p><strong>{% trans "Telephone numbers" %}: </strong><em>{% trans "not yet available" %}</em></p>
+                {% endif %}
+                {% if object.site %}
+                    <p><strong>{% trans "Website" %}: </strong><a href="{{ object.site }}">{{ object.site }}</a></p>
+                {% else %}
+                    <p><strong>{% trans "Website" %}: </strong><em>{% trans "not yet available" %}</em></p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="bagno-detail-sub-header">{% trans "Facilities" %}</h2>
+                {% if object.services.all %}
+		            {% with object.services.all|dictsort:"category" as services %}
+		                {% regroup services by category as categorized_services %}
+		                {% for categorized_service in categorized_services %}
+		                    <div class="row">
+		                        <div class="col-xs-12"><h4 class="text-underlined">{% trans categorized_service.grouper.name %}</h4></div>
+		                    </div>
+		                    {% for service_batch in categorized_service.list|batch:4 %}
+		                    <div class="row">
+		                        {% for service in service_batch %}
+		                        <div class="col-xs-3">
+		                            <p><span class="glyphicon glyphicon-ok service-glyphicon"></span>  {% trans service.name %}</p>
+		                        </div>
+		                        {% endfor %}
+		                    </div>
+		                    {% endfor %}
+		                {% endfor %}
+		            {% endwith %}
+		        {% else %}
+		            <p><em>{% trans "Facilities information not available" %}</em></p>
+		        {% endif %}
+            </div>
+        </div>
+    </div>        
 {% endblock content %}
 
 {% block specific_js %}
