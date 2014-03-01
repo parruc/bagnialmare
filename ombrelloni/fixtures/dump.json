@@ -234,6 +234,14 @@
   }
 },
 {
+  "pk": "06gyca3ioma99w0r6yarvjlgiff40g2b", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-14T10:44:40.843Z", 
+    "session_data": "OTNlMWI0OTNjNzA4OWQ0NzMwYWM3MDg5NTVmNTlmNDA1NTQ3NjdlZTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoxfQ=="
+  }
+},
+{
   "pk": "1lisn3cupls44worzvkwb9kxn9xd5dor", 
   "model": "sessions.session", 
   "fields": {
@@ -262,6 +270,14 @@
   "model": "sessions.session", 
   "fields": {
     "expire_date": "2014-02-14T17:20:10.078Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "f5at6y82rxgnef6lmlq967so5bsbnvxr", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-14T11:39:10.523Z", 
     "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
   }
 },
@@ -295,6 +311,14 @@
   "fields": {
     "expire_date": "2013-12-05T11:36:23.842Z", 
     "session_data": "OTg1MzNkY2M1ZmI5ZjFiYmRmYjAwMDdkNDU1ZTBhNTkxNDllY2YzYTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": "qgs46u4o6b78yf7an6n98yrhddgat7f6", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-14T11:36:33.150Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
   }
 },
 {
@@ -42344,7 +42368,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-01-31T17:20:10.005Z", 
+    "last_login": "2014-02-28T11:39:10.478Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$K9qn7bZj1p4O$Jo4paAjpyQ04/8fiDH3Ua9n38/dedibHvmIBOCxvo8k=", 
@@ -42511,6 +42535,32 @@
     "change_message": "name_en, name_it, slug_en e slug_it modificato/a.", 
     "user": 1, 
     "content_type": 10
+  }
+},
+{
+  "pk": 12, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-02-28T11:39:53.928Z", 
+    "object_repr": "aaa", 
+    "object_id": "13826", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 13, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 3, 
+    "action_time": "2014-02-28T11:40:55.718Z", 
+    "object_repr": "aaa", 
+    "object_id": "13826", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 9
   }
 }
 ]
