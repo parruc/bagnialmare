@@ -80,8 +80,8 @@
                         {% trans "near" %} <span class="hits-query">{{ place }}</span>
                     {% endif %}
                 </p>
-                <ul class="nav nav-tabs search-page-tabs" id="myTab">
-                    <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
+                <ul class="nav nav-t//abs search-page-tabs" id="myTab">
+                    <li class="activ//e"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                     <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
                 </ul>
                 <div id="content" class="tab-content">
@@ -161,8 +161,11 @@
 {% block additionaljs %}
     <script type="text/javascript">
 	$('#myTab a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
+            e.preventDefault();
+            $(this).tab('show');
+            //TODO: the following should be done only if tab == map
+            map.invalidateSize(false);
+            map.fitBounds(map_markerBounds);
         });
     </script>
 {% endblock additionaljs %}
@@ -170,6 +173,7 @@
 {% block specific_js %}
         <script type="text/javascript">
         var map
+        var markerBounds;
         $(function() {
             map = L.map('bagno_map');
             L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
@@ -177,19 +181,17 @@
                 subdomains: ['otile1','otile2','otile3','otile4'],
                 maxZoom: 18
             }).addTo(map);
-            var markerBounds = new L.LatLngBounds();
+            map_markerBounds = new L.LatLngBounds();
             {% for bagno in hits %}
                 {% if bagno.point.x and bagno.point.y %}
                     var p = new L.LatLng({{ bagno.point.y|unlocalize }}, {{ bagno.point.x|unlocalize }})
                     var marker = L.marker(p).addTo(map);
-                    markerBounds.extend(p);
+                    map_markerBounds.extend(p);
                     marker.bindPopup("<strong><a href={{ bagno.get_absolute_url }}>{{ bagno.name }}</a></strong> <em>{{ bagno.address }}</em><br>").openPopup();
 
                 {% endif %}
             {% endfor %}
-            map.fitBounds(markerBounds);
-            map.invalidateSize(false);
-            map.fitBounds(markerBounds);
+            map.fitBounds(map_markerBounds);
         });
         </script>
 {% endblock specific_js %}
