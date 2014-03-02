@@ -99,7 +99,7 @@
                                     <div class="row">
                                          <div class="col-xs-12">
                                             <h2 class="single-result-header">
-                                                <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.neighbourhood}}, {{hit.municipality}}</a>
+                                                <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.municipality}}, {{hit.municipality.district}}</a>
                                                 {% if hit.distance %}
                                                     <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
                                                 {% endif %}
