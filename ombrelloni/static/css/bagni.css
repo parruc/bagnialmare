@@ -75,6 +75,7 @@ body {
 
 .homepage-headline {
   font-size: 300%;
+  font-weight: 700;
   /*color: #F9BF16;*/
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
@@ -103,11 +104,13 @@ body {
 }
 
 .single-result-header{
+    font-weight: 700;
 }
 
 .filter-result-header {
     margin-bottom: 20px;
-    margin-top: 0px; 
+    margin-top: 0px;
+    font-weight: 700;
 }
 
 .filter-result-box {
@@ -131,8 +134,12 @@ body {
 }
 
 
+.my-bold{
+    font-weight: 700;
+}
+
 .bagno-detail-header{
-    
+    font-weight: 700;
 }
 
 .bagno-detail-sub-header{
@@ -249,6 +256,11 @@ h1, h2, h3, h4 {
 }
  
 p {
+    font-family: Arial, sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+span {
     font-family: Arial, sans-serif;
     color: rgb(102, 102, 102);
 }

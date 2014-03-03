@@ -44,7 +44,7 @@
                         {% endif %}
                     {% endfor %}
                     {% if facets.items %}
-                        <h3 class="filter-result-header"><strong>{% trans "Filter by facility" %}:</strong></h3>
+                        <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
                     {% endif %}
                     {% for facet_group, facet_values in facets.items %}
                         {% if facet_group %}
@@ -97,7 +97,7 @@
                                         <div class="row">
                                              <div class="col-xs-12">
                                                 <h2 class="single-result-header">
-                                                    <a href="{{ hit.get_absolute_url }}"><strong>{{ hit.name }} - {{hit.municipality}}, {{hit.municipality.district}}</strong></a>
+                                                    <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.municipality}}, {{hit.municipality.district}}</a>
                                                     {% if hit.distance %}
                                                         <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
                                                     {% endif %}
@@ -184,7 +184,7 @@
                     var p = new L.LatLng({{ bagno.point.y|unlocalize }}, {{ bagno.point.x|unlocalize }})
                     var marker = L.marker(p).addTo(map);
                     map_markerBounds.extend(p);
-                    marker.bindPopup("<strong><a href={{ bagno.get_absolute_url }}>{{ bagno.name }}</a></strong> <em>{{ bagno.address }}</em><br>").openPopup();
+                    marker.bindPopup('<span class="my-bold"><a href={{ bagno.get_absolute_url }}>{{ bagno.name }}</a></span> <em>{{ bagno.address }}</em>').openPopup();
 
                 {% endif %}
             {% endfor %}
