@@ -132,12 +132,11 @@ body {
 
 
 .bagno-detail-header{
-    color: #08689B;
+    
 }
 
 .bagno-detail-sub-header{
     border-bottom: 1px solid rgb(249, 191, 22);
-    color: #08689B;
     padding-bottom: 5px;
 }
 
@@ -234,28 +233,33 @@ img.hp-form-image
     width: 100%;
 }
 
+
+.my-yellow{
+    background-color: rgb(249, 191, 22);
+    border-color: rgb(249, 191, 22);
+}
+
 .my-grey{
     color: rgb(102, 102, 102);
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Raleway', Georgia, Times, serif;
-    font-weight: 500;
-    color: rgb(0,0,0);
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(74, 74, 74);	
 }
  
 p {
-    font-family: 'ABeeZee', Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: rgb(102, 102, 102);
 }
 
 a {
-    font-family: 'ABeeZee', Helvetica, Arial, sans-serif;
+    /*font-family: 'Droid Sans', sans-serif;*/
     color: #0097D5;
 }
 
 button {
-    font-family: 'ABeeZee', Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 
