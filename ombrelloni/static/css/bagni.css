@@ -240,6 +240,30 @@ img.hp-form-image
     width: 100%;
 }
 
+.modal-wheel {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/static/img/spinning-wheel.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal-wheel {
+    display: block;
+}
+
 
 .my-yellow{
     background-color: rgb(249, 191, 22);
@@ -256,12 +280,16 @@ h1, h2, h3, h4 {
 }
  
 p {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
     color: rgb(102, 102, 102);
 }
 
+label {
+    font-family: Helvetica Neue, sans-serif; 
+}
+
 span {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
     color: rgb(102, 102, 102);
 }
 
@@ -271,7 +299,7 @@ a {
 }
 
 button {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
 }
 
 

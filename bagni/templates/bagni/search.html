@@ -27,22 +27,6 @@
         <div class="row result-wrapper-div">
             <div class="col-xs-3">
                 <div class="filter-result-box">
-                    {% for facet in active_facets %}
-                        {% if forloop.first %}
-                            <div class="panel active-filters">
-                                <div class="panel-heading">
-                                    <h3>{% trans "Active filters" %}</h3>
-                                </div>
-                                <ul class="list-group">
-                        {% endif %}
-                            <li class="list-group-item">
-                                <a href="?{{ facet.url }}">{% trans facet.group %}: {% trans facet.name %}</a>
-                            </li>
-                        {% if forloop.last %}
-                            </ul>
-                        </div>
-                        {% endif %}
-                    {% endfor %}
                     {% if facets.items %}
                         <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
                     {% endif %}
@@ -58,7 +42,11 @@
                                     {% endif %}
                                     <li class="list-unstyled">
                                         <div class="checkbox">
-                                           <label><input type="checkbox">{{ facet.name }}</label>
+                                           {% if facet in active_facets %}
+                                           <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked>{{ facet.name }}</label>
+                                           {% else %}
+                                           <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox">{{ facet.name }}</label>
+                                           {% endif %} 
                                         </div>
                                     </li>
                                     {% if forloop.last %}
@@ -89,7 +77,7 @@
                     </ul>
                     <div id="content" class="tab-content">
                         <div class="tab-pane" id="mapTab">
-                           <div id="bagno_map" style="width: 100%; height: 300px"></div>
+                           <div id="bagno_map" style="width: 100%; height: 500px"></div>
                         </div> 
                         <div class="tab-pane active" id="listTab">      
                                 {%  for hit in hits %}
@@ -152,6 +140,7 @@
                 {% endif %}
             </div>
         </div>
+        <div class="modal-wheel"><!-- Place at bottom of page --></div>
     {% endif %}
 {% endblock %}
 
@@ -166,6 +155,13 @@
             //this also results in a nice transition in my opinion (Barto)
             map.zoomOut();
         });
+        function checkboxChanged(cb) {
+            var bodyTag = $("body") 
+            bodyTag.addClass("loading");
+            $("#rootContainer").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #rootContainer", function() {
+                    bodyTag.removeClass("loading");
+            });
+        };
     </script>
 {% endblock additionaljs %}
 
