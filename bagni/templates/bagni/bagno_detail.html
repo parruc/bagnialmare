@@ -37,7 +37,7 @@
             <div class="col-xs-12">
                 <h2 class="bagno-detail-sub-header">{% trans "Contacts" %}</h2>
                 {% if object.telephones.all %}
-                    <p><strong>{% trans "Telephone numbers" %}: </strong>
+                    <p><span class="bagno-detail-label">{% trans "Telephone numbers" %}: </span>
                     {% for tel in object.telephones.all %}
                     {{ tel.name }} {{ tel.number }}
                     {% if forloop.last %}
@@ -46,12 +46,12 @@
                     {% endif %}
                     {% endfor %}</p>
                 {% else %}
-                    <p><strong>{% trans "Telephone numbers" %}: </strong><em>{% trans "not yet available" %}</em></p>
+                    <p><span class="my-bold">{% trans "Telephone numbers" %}: </span><em>{% trans "not yet available" %}</em></p>
                 {% endif %}
                 {% if object.site %}
-                    <p><strong>{% trans "Website" %}: </strong><a href="{{ object.site }}">{{ object.site }}</a></p>
+                    <p><span class="my-bold">{% trans "Website" %}: </span><a href="{{ object.site }}">{{ object.site }}</a></p>
                 {% else %}
-                    <p><strong>{% trans "Website" %}: </strong><em>{% trans "not yet available" %}</em></p>
+                    <p><span class="my-bold">{% trans "Website" %}: </span><em>{% trans "not yet available" %}</em></p>
                 {% endif %}
             </div>
         </div>
@@ -96,7 +96,7 @@
                 maxZoom: 18
             }).addTo(map);
             var marker = L.marker([{{ object.point.y|unlocalize }}, {{ object.point.x|unlocalize }}]).addTo(map);
-            marker.bindPopup("<strong>{{ object.name }}</strong> <em>{{ object.address }}</em><br>").openPopup();
+            marker.bindPopup('<span class="my-bold">{{ object.name }}</span><br><em>{{ object.address }}</em>').openPopup();
         });
         </script>
     {% endif %}
