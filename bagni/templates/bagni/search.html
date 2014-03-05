@@ -158,7 +158,7 @@
         function checkboxChanged(cb) {
             var bodyTag = $("body") 
             bodyTag.addClass("loading");
-            $("#rootContainer").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #rootContainer", function() {
+            $("#rootContainer").load("{% url 'search' %}" + cb.getAttribute('data-facet-url'), function() {
                     bodyTag.removeClass("loading");
             });
         };
