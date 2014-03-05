@@ -3,7 +3,8 @@
 {% load i18n %}
 
 {% block content %}
-<form method="post">{% csrf_token %}
+
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
     {% for field in form %}
         <div class="{{ field.field.css_class }}">
             {% if field.name == 'services' %}
@@ -27,6 +28,28 @@
                 {{ field.label_tag }} {{ field }}
             {% endif %}
         </div>
+    {% endfor %}
+    {{ telephone_formset.management_form }}
+    {% for telephone_form in telephone_formset %}
+        {% for telephone_field in telephone_form %}
+                <div class="{{ telephone_field.field.css_class }}">
+                    {% if not telephone_field.is_hidden %}
+                        {{telephone_field.label_tag}}
+                    {% endif %}
+                    {{ telephone_field }}
+                </div>
+        {% endfor %}
+    {% endfor %}
+    {{ image_formset.management_form }}
+    {% for image_form in image_formset %}
+        {% for image_field in image_form %}
+                <div class="{{ image_field.field.css_class }}">
+                    {% if not image_field.is_hidden %}
+                        {{image_field.label_tag}}
+                    {% endif %}
+                    {{ image_field }}
+                </div>
+        {% endfor %}
     {% endfor %}
     <input type="submit" value="Submit" />
 </form>
