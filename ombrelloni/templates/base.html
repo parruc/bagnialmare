@@ -69,6 +69,15 @@
               </div><!--/.nav-collapse -->
             </div>
           </div>
+          {% if messages %}
+              <ul class="messages">
+              {% for message in messages %}
+                  <li class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %}">
+                      {{ message }}
+                  </li>
+              {% endfor %}
+              </ul>
+          {% endif %}
           <div class="container" id="rootContainer">
               {% block content %}
               {% endblock %}
