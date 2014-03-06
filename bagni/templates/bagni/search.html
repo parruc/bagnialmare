@@ -43,7 +43,7 @@
                                     <li class="list-unstyled">
                                         <div class="checkbox">
                                            {% if facet in active_facets %}
-                                           <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked>{{ facet.name }}</label>
+                                           <label class="filter-result-selected-checkbox"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked>{{ facet.name }}</label>
                                            {% else %}
                                            <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox">{{ facet.name }}</label>
                                            {% endif %} 
@@ -135,9 +135,11 @@
                                         {% endif %}
                                     </span>
                                 </div>
-                {% else %}
+                    {% else %}
                     <div>{% trans "No results for the given search" %}</div>
-                {% endif %}
+                    {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modal-wheel"><!-- Place at bottom of page --></div>
@@ -152,8 +154,6 @@
             //TODO: the following should be done only if tab == map
             map.invalidateSize(false);
             map.fitBounds(map_markerBounds);
-            //this also results in a nice transition in my opinion (Barto)
-            map.zoomOut();
         });
         function checkboxChanged(cb) {
             var bodyTag = $("body") 
@@ -188,6 +188,7 @@
             {% endfor %}
             map.fitBounds(map_markerBounds);
         });
+
         </script>
 {% endblock specific_js %}
 

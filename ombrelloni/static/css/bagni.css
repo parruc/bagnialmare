@@ -125,6 +125,10 @@ body {
   padding: 0px 15px 0px 15px;
 }
 
+.filter-result-selected-checkbox {
+     color: green;
+}
+
 .bagno-detail-wrapper-div{
     border: 1px solid rgb(226, 226, 226);
     border-radius: 4px 4px 4px 4px;
