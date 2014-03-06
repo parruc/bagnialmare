@@ -154,6 +154,7 @@
             //TODO: the following should be done only if tab == map
             map.invalidateSize(false);
             map.fitBounds(map_markerBounds);
+            map.zoomOut();
         });
         function checkboxChanged(cb) {
             var bodyTag = $("body") 
