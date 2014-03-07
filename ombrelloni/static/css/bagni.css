@@ -294,7 +294,7 @@ body.loading .modal-wheel {
 
 h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
-    color: rgb(74, 74, 74);	
+    color: #6A4A3C/*rgb(74, 74, 74)*/;	
 }
  
 p {
@@ -320,18 +320,18 @@ button {
     font-family: Helvetica Neue, sans-serif;
 }
 
-
 .navbar-default {
-    /*background-color: #0097D5;*/
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#08689B), to(#0a6698)); 
+    background-color: #00A0B0;
+    /*background-image: -khtml-gradient(linear, left top, left bottom, from(#08689B), to(#0a6698)); 
      background-image: -moz-linear-gradient(top, #0097D5, #08689B); 
      background-image: -ms-linear-gradient(top, #0097D5, ##08689B); 
      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #08689B), color-stop(100%, #08689B)); 
      background-image: -webkit-linear-gradient(top, #0097D5, #08689B); 
      background-image: -o-linear-gradient(top, #0097D5, #08689B); 
-     background-image: linear-gradient(#0097D5, #08689B);
-    border-color: rgb(249, 191, 22);/*rgb(249, 191, 22);*/
+     background-image: linear-gradient(#0097D5, #08689B);*/
+    border-color: rgb(249, 191, 22);
 }
+
 
 .navbar-default .navbar-nav > li > a {
     color: rgb(255, 255, 255);
@@ -342,6 +342,12 @@ button {
 }
 
 .btn-primary { 
+     background-color: #00A0B0;
+     border-color: #00A0B0;
+}
+
+
+/*.btn-primary { 
      background-color: hsl(201, 87%, 32%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1aa4ef", endColorstr="#0a6698"); 
      background-image: -khtml-gradient(linear, left top, left bottom, from(#0a6698), to(#1aa4ef)); 
      background-image: -moz-linear-gradient(top, #0a6698, #1aa4ef); 
@@ -352,4 +358,4 @@ button {
      background-image: linear-gradient(#1aa4ef, #0a6698); 
      border-color: #0a6698 #0a6698 hsl(201, 87%, 27%); color: #fff !important; 
      /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33); -webkit-font-smoothing: antialiased;*/ 
-}
+}*/
