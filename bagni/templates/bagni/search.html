@@ -34,10 +34,11 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="text-underlined">{% trans facet_group %}</h4>
+                                    <h4 class="text-underlined filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% trans facet_group %}</h4>
                                 </div>
                                 {% for facet in facet_values %}
                                     {% if forloop.first %}
+                                    <div id="collapse{{ forloop.parentloop.counter }}" class="collapse in" >
                                         <ul class="list-group">
                                     {% endif %}
                                     <li class="list-unstyled">
@@ -51,6 +52,7 @@
                                     </li>
                                     {% if forloop.last %}
                                         </ul>
+                                    </div>
                                     {% endif %}
                                 {% endfor %}
                             </div>
@@ -122,27 +124,32 @@
                 </div>
             </div>
         </div>
-
+        <div class="modal-wheel"><!-- Place at bottom of page --></div>
     {% endif %}
 {% endblock %}
 
 {% block additionaljs %}
     <script type="text/javascript">
-	$('#myTab a').click(function (e) {
+	$("#myTab a").click(function (e) {
             e.preventDefault();
             $(this).tab('show');
             //TODO: the following should be done only if tab == map
             map.invalidateSize(false);
             map.fitBounds(map_markerBounds);
-            map.zoomOut();
         });
         function checkboxChanged(cb) {
             var bodyTag = $("body") 
             bodyTag.addClass("loading");
-            $("#rootContainer").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #rootContainer", function() {
+            $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function() {
                     bodyTag.removeClass("loading");
             });
         };
+        $(".collapse").on("shown.bs.collapse", function () {
+             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
+        });
+        $(".collapse").on('hidden.bs.collapse', function () {
+             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
+        });
     </script>
 {% endblock additionaljs %}
 
