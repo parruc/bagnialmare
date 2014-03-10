@@ -10,11 +10,11 @@
     <div class="search-page-search-row-wrapper-div"><div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
                     <div class="col-xs-5">
-                        <label class="" for="search_q">{% trans 'What' %}:</label>
+                        <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
                         <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
                     </div>
                     <div class="col-xs-5">
-                        <label class="" for="search_q">{% trans 'Where' %}:</label>
+                        <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
                         <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
                     </div>
                     <div class="col-xs-2 search-page-search-button-div">
@@ -34,7 +34,7 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="text-underlined filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% trans facet_group %}</h4>
+                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
                                 </div>
                                 {% for facet in facet_values %}
                                     {% if forloop.first %}
@@ -42,13 +42,16 @@
                                         <ul class="list-group">
                                     {% endif %}
                                     <li class="list-unstyled">
-                                        <div class="checkbox">
-                                           {% if facet in active_facets %}
-                                           <label class="filter-result-selected-checkbox"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked>{{ facet.name }}</label>
-                                           {% else %}
-                                           <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox">{{ facet.name }}</label>
-                                           {% endif %} 
+		                                {% if facet in active_facets %}
+                                        <div class="checkbox filter-result-selected-checkbox-div">    
+	                                        <label class="filter-result-selected-checkbox-label"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked><div class="">{{ facet.name }}</div></label>
+                                         </div>
+		                                {% else %}
+                                        <div class="checkbox filter-result-checkbox-div">
+		                                    <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox"><div class="">{{ facet.name }}</div></label>
                                         </div>
+		                                {% endif %} 
+                                        
                                     </li>
                                     {% if forloop.last %}
                                         </ul>
@@ -142,14 +145,18 @@
             bodyTag.addClass("loading");
             $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function() {
                     bodyTag.removeClass("loading");
+                    registerCollapseEvents();
             });
         };
-        $(".collapse").on("shown.bs.collapse", function () {
-             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
-        });
-        $(".collapse").on('hidden.bs.collapse', function () {
-             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
-        });
+        function registerCollapseEvents(){
+            $(".collapse").on("shown.bs.collapse", function () {
+                 $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
+            });
+            $(".collapse").on('hidden.bs.collapse', function () {
+                 $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
+            });
+        };
+        registerCollapseEvents();
     </script>
 {% endblock additionaljs %}
 
