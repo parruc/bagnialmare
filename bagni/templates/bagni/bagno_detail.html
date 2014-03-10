@@ -63,7 +63,7 @@
 		                {% regroup services by category as categorized_services %}
 		                {% for categorized_service in categorized_services %}
 		                    <div class="row">
-		                        <div class="col-xs-12"><h4 class="text-underlined">{% trans categorized_service.grouper.name %}</h4></div>
+		                        <div class="col-xs-12"><h4 class="">{% filter capfirst %}{% trans categorized_service.grouper.name %}{% endfilter %}</h4></div>
 		                    </div>
 		                    {% for service_batch in categorized_service.list|batch:4 %}
 		                    <div class="row">
