@@ -26,7 +26,7 @@
         {% endcompress %}
 
         <link type="text/css" href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" />
-        <link href="//fonts.googleapis.com/css?family=Droid+Sans|Open+Sans" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Droid+Sans|Open+Sans" rel="stylesheet" type="text/css"/>
         {% compress css %}
             <link type="text/css" href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
             <link type="text/css" href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
@@ -69,6 +69,15 @@
               </div><!--/.nav-collapse -->
             </div>
           </div>
+          {% if messages %}
+              <ul class="messages">
+              {% for message in messages %}
+                  <li class="alert{% if message.tags %} alert-{{ message.tags }}{% endif %}">
+                      {{ message }}
+                  </li>
+              {% endfor %}
+              </ul>
+          {% endif %}
           <div class="container" id="rootContainer">
               {% block content %}
               {% endblock %}

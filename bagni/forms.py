@@ -9,6 +9,7 @@ from django.utils.safestring import mark_safe
 from bagni.models import Bagno, Service, Image, Telephone
 from django.contrib.gis.forms import ModelForm, OSMWidget
 from django.utils import six
+
 from modeltranslation.fields import TranslationField
 from modeltranslation.translator import translator
 
@@ -158,6 +159,36 @@ class TranslationModelForm(six.with_metaclass(TranslationModelFormMetaclass, Mod
                 setattr(field, "css_class", css_class)
 
 
+class TelephoneForm(TranslationModelForm):
+    class Meta:
+        model = Telephone
+        fields = ['name',
+                  'number',
+                  ]
+
+
+class ImageForm(TranslationModelForm):
+    class Meta:
+        model = Image
+        fields = ['name',
+                  'description',
+                  'image',
+                  ]
+
+
+# These two are used with extra_views package
+#class TelephoneInline(InlineFormSet):
+#    model = Telephone
+#    form_class = TelephoneForm
+#
+#class ImageInline(InlineFormSet):
+#    model = Image
+#    form_class = ImageForm
+
+# These two are used by our own defined BagnoEdit view
+TelephoneFormSet = inlineformset_factory(Bagno, Telephone, form=TelephoneForm)
+ImageFormSet = inlineformset_factory(Bagno, Image, form=ImageForm)
+
 class BagnoForm(TranslationModelForm):
 
     services = forms.ModelMultipleChoiceField(
@@ -168,7 +199,22 @@ class BagnoForm(TranslationModelForm):
 
     class Meta:
         model = Bagno
-        fields = ['name', 'description', 'number', 'address', 'languages', 'services',
-                'municipality', 'mail', 'site', 'point']
+        # the order matters here!
+        fields = [
+                  'name',
+                  'description',
+                  'number',
+                  'address',
+                  'languages',
+                  'services',
+                  'municipality',
+                  'mail',
+                  'site',
+                  'point',
+                  ]
+
         widgets = {'point' : OmbrelloniOLWidget(),}
+
+
+
 

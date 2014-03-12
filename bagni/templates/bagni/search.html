@@ -10,15 +10,15 @@
     <div class="search-page-search-row-wrapper-div"><div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
                     <div class="col-xs-5">
-                        <label class="" for="search_q">{% trans 'What' %}:</label>
-                        <input class="form-control input-lg"  type="text" id="search_q" name="q" value="{{ q }}" />
+                        <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
+                        <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
                     </div>
                     <div class="col-xs-5">
-                        <label class="" for="search_q">{% trans 'Where' %}:</label>
-                        <input class="form-control input-lg" type="text" id="search_l" name="l" value="{{ l }}"  />
+                        <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
+                        <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
                     </div>
                     <div class="col-xs-2 search-page-search-button-div">
-                        <button type="submit" id="search_submit" class="btn btn-lg btn-primary search-page-button" value="search">{% trans "Search" %}</button>
+                        <button type="submit" id="search_submit" class="btn btn-primary search-page-button" value="search">{% trans "Search" %}</button>
                     </div> 
             </form>
     </div></div>
@@ -34,23 +34,28 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="text-underlined">{% trans facet_group %}</h4>
+                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
                                 </div>
                                 {% for facet in facet_values %}
                                     {% if forloop.first %}
+                                    <div id="collapse{{ forloop.parentloop.counter }}" class="collapse in" >
                                         <ul class="list-group">
                                     {% endif %}
                                     <li class="list-unstyled">
-                                        <div class="checkbox">
-                                           {% if facet in active_facets %}
-                                           <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked>{{ facet.name }}</label>
-                                           {% else %}
-                                           <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox">{{ facet.name }}</label>
-                                           {% endif %} 
+		                                {% if facet in active_facets %}
+                                        <div class="checkbox filter-result-selected-checkbox-div">    
+	                                        <label class="filter-result-selected-checkbox-label"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked><div class="">{{ facet.name }}</div></label>
+                                         </div>
+		                                {% else %}
+                                        <div class="checkbox filter-result-checkbox-div">
+		                                    <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox"><div class="">{{ facet.name }}</div></label>
                                         </div>
+		                                {% endif %} 
+                                        
                                     </li>
                                     {% if forloop.last %}
                                         </ul>
+                                    </div>
                                     {% endif %}
                                 {% endfor %}
                             </div>
@@ -81,40 +86,20 @@
                         </div> 
                         <div class="tab-pane active" id="listTab">      
                                 {%  for hit in hits %}
+                                    <hr class="search-result-separator">
                                     <div class="single-bagno-result-box">
                                         <div class="row">
                                              <div class="col-xs-12">
                                                 <h2 class="single-result-header">
-                                                    <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.municipality}}, {{hit.municipality.district}}</a>
+                                                    <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.municipality}}</a>
                                                     {% if hit.distance %}
                                                         <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
                                                     {% endif %}
                                                 </h2>
+                                                <p class="single-result-address">{{ hit.address }} - {{ hit.municipality }}, {{ hit.municipality.district }}</p>
                                             </div>
                                         </div>
-                                        <a href="{{ hit.get_absolute_url }}"><p>{{ hit.address }}, {{ hit.municipality }}</p></a>
-                                        {% if hit.services.all %}
-                                            {% with hit.services.all|dictsort:"category" as services %}
-                                                {% regroup services by category as categorized_services %}
-                                                {% for categorized_service in categorized_services %}
-                                                    <div class="row">
-                                                        <div class="col-xs-12"><h4 class="text-underlined">{% trans categorized_service.grouper.name %}</h4></div>
-                                                    </div>
-                                                    {% for service_batch in categorized_service.list|batch:4 %}
-                                                    <div class="row">
-                                                        {% for service in service_batch %}
-                                                        <div class="col-xs-3">
-                                                            <p><span class="glyphicon glyphicon-ok service-glyphicon"></span>  {% trans service.name %}</p>
-                                                        </div>
-                                                        {% endfor %}
-                                                    </div>
-                                                    {% endfor %}
-                                                {% endfor %}
-                                            {% endwith %}
-                                        {% else %}
-                                            <p><em>{% trans "Facilities information not available" %}</em></p>
-                                        {% endif %}
-                                    </div><hr class="my-yellow">
+                                    </div>
                                 {% endfor %}
                                 <div class="pagination">
                                     <span class="step-links">
@@ -135,9 +120,11 @@
                                         {% endif %}
                                     </span>
                                 </div>
-                {% else %}
+                    {% else %}
                     <div>{% trans "No results for the given search" %}</div>
-                {% endif %}
+                    {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modal-wheel"><!-- Place at bottom of page --></div>
@@ -146,22 +133,30 @@
 
 {% block additionaljs %}
     <script type="text/javascript">
-	$('#myTab a').click(function (e) {
+	$("#myTab a").click(function (e) {
             e.preventDefault();
             $(this).tab('show');
             //TODO: the following should be done only if tab == map
             map.invalidateSize(false);
             map.fitBounds(map_markerBounds);
-            //this also results in a nice transition in my opinion (Barto)
-            map.zoomOut();
         });
         function checkboxChanged(cb) {
             var bodyTag = $("body") 
             bodyTag.addClass("loading");
-            $("#rootContainer").load("{% url 'search' %}" + cb.getAttribute('data-facet-url'), function() {
+            $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function() {
                     bodyTag.removeClass("loading");
+                    registerCollapseEvents();
             });
         };
+        function registerCollapseEvents(){
+            $(".collapse").on("shown.bs.collapse", function () {
+                 $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
+            });
+            $(".collapse").on('hidden.bs.collapse', function () {
+                 $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
+            });
+        };
+        registerCollapseEvents();
     </script>
 {% endblock additionaljs %}
 
@@ -188,6 +183,7 @@
             {% endfor %}
             map.fitBounds(map_markerBounds);
         });
+
         </script>
 {% endblock specific_js %}
 
