@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-import time
-import random
-import os
-
 from django.core.urlresolvers import reverse
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -53,6 +49,29 @@ class Municipality(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ("municipality", [self.slug, ])
+
+    def __unicode__(self):
+        return self.name
+
+
+class Neighbourhood(models.Model):
+    """The model for the Neighbourhood object
+    """
+    class Meta:
+        verbose_name = _('Neighbourhood')
+        verbose_name_plural = _('Neighbourhoods')
+
+    name = models.CharField(max_length=100)
+    description = models.TextField(max_length=2000, blank=True)
+    municipality = models.ForeignKey(Municipality, related_name='neighbourhoods', verbose_name=_("Municipality"), )
+    slug = autoslug.AutoSlugField(max_length=50,
+                                  populate_from='name',
+                                  verbose_name=_("Slug"),
+                                  unique=True,
+                                  editable=True,)
+    @models.permalink
+    def get_absolute_url(self):
+        return ("neighbourhood", [self.slug, ])
 
     def __unicode__(self):
         return self.name
@@ -117,7 +136,8 @@ class Bagno(models.Model):
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni')
     services = models.ManyToManyField("Service", blank=True, related_name='bagni')
     address = models.CharField(max_length=100, blank=True)
-    # TODO: A regime mettere  obbligatorio municipality
+    # Da togliere blank e null appena popolato
+    neighbourhood = models.ForeignKey(Neighbourhood, blank=True, null=True, related_name='bagni', verbose_name=_("Neighbourhood"), )
     municipality = models.ForeignKey(Municipality, blank=True, null=True, related_name='bagni', verbose_name=_("Municipality"), )
     mail = models.EmailField(max_length=50, blank=True)
     site = models.URLField(max_length=75, blank=True)

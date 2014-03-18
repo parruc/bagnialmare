@@ -14,8 +14,8 @@ from django.utils.translation import ugettext as _
 
 from geopy import geocoders
 
-from models import Bagno, Service, District, Municipality, ServiceCategory
-from forms import BagnoForm, TelephoneFormSet, ImageFormSet#, TelephoneInline, ImageInline
+from models import Bagno, Service, District, Municipality, Neighbourhood, ServiceCategory
+from forms import BagnoForm, TelephoneFormSet, ImageFormSet
 from search import search
 
 import logging
@@ -164,6 +164,26 @@ class ServicesView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(ServicesView, self).get_context_data(**kwargs)
+        return context
+
+
+class NeighbourhoodView(DetailView):
+    """ Detail view for a single neighbourhood
+    """
+    model = Neighbourhood
+
+    def get_context_data(self, **kwargs):
+        context = super(NeighbourhoodView, self).get_context_data(**kwargs)
+        return context
+
+
+class NeighbourhoodsView(ListView):
+    """ List view for the neighbourhoods
+    """
+    model = Neighbourhood
+
+    def get_context_data(self, **kwargs):
+        context = super(NeighbourhoodsView, self).get_context_data(**kwargs)
         return context
 
 
