@@ -2,7 +2,7 @@
 *.mo
 /scripts/scraping/html_dump/*.html
 /doc/_*
-/dbutils/
+/dbutils/*
 /.coverage
 /htmlcov
 /ombrelloni/whoosh_index
