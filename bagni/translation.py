@@ -26,6 +26,10 @@ class MunicipalityTranslationOptions(TranslationOptions):
 
 translator.register(models.Municipality, MunicipalityTranslationOptions)
 
+class NeighbourhoodTranslationOptions(TranslationOptions):
+    fields = ('name', 'description', 'slug',)
+
+translator.register(models.Neighbourhood, NeighbourhoodTranslationOptions)
 
 class NeighbourhoodTranslationOptions(TranslationOptions):
     fields = ('name', 'description', 'slug',)
