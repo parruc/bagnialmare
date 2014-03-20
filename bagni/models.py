@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.core.urlresolvers import reverse
 from django.contrib.gis.db import models
+from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 
 from sorl.thumbnail import ImageField
@@ -137,8 +138,8 @@ class Bagno(models.Model):
     services = models.ManyToManyField("Service", blank=True, related_name='bagni')
     address = models.CharField(max_length=100, blank=True)
     # Da togliere blank e null appena popolato
-    neighbourhood = models.ForeignKey(Neighbourhood, blank=True, null=True, related_name='bagni', verbose_name=_("Neighbourhood"), )
-    municipality = models.ForeignKey(Municipality, blank=True, null=True, related_name='bagni', verbose_name=_("Municipality"), )
+    neighbourhood = models.ForeignKey(Neighbourhood, blank=True, null=True, related_name='bagni', verbose_name=_("Neighbourhood"), on_delete=django_models.SET_NULL)
+    municipality = models.ForeignKey(Municipality, blank=True, null=True, related_name='bagni', verbose_name=_("Municipality"), on_delete=django_models.SET_NULL)
     mail = models.EmailField(max_length=50, blank=True)
     site = models.URLField(max_length=75, blank=True)
     point = models.PointField(null=True, blank=True)
@@ -151,13 +152,15 @@ class Bagno(models.Model):
     def index_text(self):
         """ Text indexed for fulltext search (the what field)
         """
-        municipality_name = district_name = ""
-        if self.municipality:
-            municipality_name = self.municipality.name
-            if self.municipality.district:
-                district_name = self.municipality.district.name
-        elems = (self.name, self.index_services(), municipality_name, district_name)
-        return unicode("%s %s %s %s" % elems)
+        neighbourhood_name = municipality_name = district_name = ""
+        if self.neighbourhood:
+            neighbourhood_name = self.neighbourhood.name
+            if self.municipality:
+                municipality_name = self.neighbourhood.municipality.name
+                if self.municipality.district:
+                    district_name = self.neighbourhood.municipality.district.name
+        elems = (self.name, self.index_services(), neighbourhood_name, municipality_name, district_name)
+        return unicode("%s %s %s %s %s" % elems)
 
     def index_services(self, sep="#"):
         """ Returns a string representing all the bagno services separated by
