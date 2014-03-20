@@ -5,17 +5,11 @@ from optparse import make_option
 import requests
 import json
 import logging
-<<<<<<< HEAD
 import hashlib
 
 logging.basicConfig()
 logger = logging.getLogger("bagni.console")
 logger.setLevel(logging.WARNING)
-=======
-
-logging.basicConfig()
-logger = logging.getLogger("bagni.console")
->>>>>>> a56eefc0fb1a9f782b96cc6e8bad8c66acfac3fc
 
 class Command(BaseCommand):
     option_list = BaseCommand.option_list + (
@@ -25,16 +19,10 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-<<<<<<< HEAD
         logger.warning("Restoring Neighbourhood Municipalities Districts")
         Municipality.objects.all().delete()
         District.objects.all().delete()
         Neighbourhood.objects.all().delete()
-=======
-        logger.info("Restoring Municipalities and Districts")
-        Municipality.objects.all().delete()
-        District.objects.all().delete()
->>>>>>> a56eefc0fb1a9f782b96cc6e8bad8c66acfac3fc
         bagni = []
         cities = ["cervia", "cesenatico", "ferrara", "ravenna", "rimini", "riccione", "bellaria-igea-marina"]
         for city in cities:
@@ -43,19 +31,14 @@ class Command(BaseCommand):
                     bagni += json.load(output_file)
             except IOError:
                 raise CommandError("cannot open 'scripts/scraping/output_" + city + ".json' Have you generated it?")
-<<<<<<< HEAD
         with open("restore_cities.json", 'r') as outfile:
             cache = json.load(outfile)
         base_url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={}&sensor=true"
-=======
-
->>>>>>> a56eefc0fb1a9f782b96cc6e8bad8c66acfac3fc
         if 'limit' in options and options['limit'] > len(bagni):
             bagni = bagni[:options['limit']]
         for bagno in bagni:
             n = m = d = None
             text_point = ",".join(bagno['coords'])
-<<<<<<< HEAD
             point = Point([float(coord) for coord in reversed(bagno['coords'])])
             try:
                 name = bagno['name'].strip("- 82 ")
@@ -104,64 +87,19 @@ class Command(BaseCommand):
             if not m:
                 logger.warning("creating municipality %s" % m_name)
                 m = Municipality(name=m_name)
-=======
-            base_url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={}&sensor=true"
-            url = base_url.format(text_point)
-            try:
-                r = requests.get(url)
-                result = json.loads(r.content)
-                point = Point([float(coord) for coord in reversed(bagno['coords'])])
-                b = Bagno.objects.filter(point__distance_lte=(point, 5))[0]
-                if len(b) != 1:
-                    import ipdb; ipdb.set_trace()
-            except Exception as ex:
-                import ipdb; ipdb.set_trace()
-                pass
-
-            politicals = []
-            for address_part in result['results'][0]['address_components']:
-                if "political" in address_part['types']:
-                    politicals.append(address_part["long_name"])
-            if len(politicals) < 3:
-                import ipdb; ipdb.set_trace()
-
-            d = District.objects.filter(name=politicals[2])
-            if not d:
-                logger.info("creating district %s" % politicals[2])
-                d = District(name=politicals[2])
-                d.save()
-            else:
-                d = d[0]
-            m = Municipality.objects.filter(name=politicals[1])
-            if not m:
-                logger.info("creating municipality %s" % politicals[1])
-                m = Municipality(name=politicals[1])
->>>>>>> a56eefc0fb1a9f782b96cc6e8bad8c66acfac3fc
                 m.district = d
                 m.save()
             else:
                 m = m[0]
 
-<<<<<<< HEAD
             n = Neighbourhood.objects.filter(name=n_name)
             if not n:
                 logger.warning("creating neighbourhood %s" % n_name)
                 n = Neighbourhood(name=n_name)
-=======
-            n = Neighbourhood.objects.filter(name=politicals[0])
-            if not n:
-                logger.info("creating neighbourhood %s" % politicals[0])
-                n = Neighbourhood(name=politicals[0])
->>>>>>> a56eefc0fb1a9f782b96cc6e8bad8c66acfac3fc
                 n.municipality = m
                 n.save()
             else:
                 n = n[0]
             b.neighbourhood = n
-<<<<<<< HEAD
             logger.warning("assigning neighbourhood %s municipality %s city %s to bagno %s" % (n.name, m.name, d.name, b.name, ) )
             b.save()
-=======
-            b.save()
-
->>>>>>> a56eefc0fb1a9f782b96cc6e8bad8c66acfac3fc
