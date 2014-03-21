@@ -12,6 +12,9 @@ class DistrictAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
 class MunicipalityAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 
+class NeighbourhoodAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
+    pass
+
 class ServiceAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
 

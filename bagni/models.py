@@ -136,9 +136,7 @@ class Bagno(models.Model):
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni')
     services = models.ManyToManyField("Service", blank=True, related_name='bagni')
     address = models.CharField(max_length=100, blank=True)
-    # Da togliere blank e null appena popolato
-    neighbourhood = models.ForeignKey(Neighbourhood, blank=True, null=True, related_name='bagni', verbose_name=_("Neighbourhood"), on_delete=django_models.SET_NULL)
-    municipality = models.ForeignKey(Municipality, blank=True, null=True, related_name='bagni', verbose_name=_("Municipality"), on_delete=django_models.SET_NULL)
+    neighbourhood = models.ForeignKey(Neighbourhood, null=True, related_name='bagni', verbose_name=_("Neighbourhood"), on_delete=django_models.SET_NULL)
     mail = models.EmailField(max_length=50, blank=True)
     site = models.URLField(max_length=75, blank=True)
     point = models.PointField(null=True, blank=True)
