@@ -9,17 +9,20 @@ import hashlib
 
 logging.basicConfig()
 logger = logging.getLogger("bagni.console")
-logger.setLevel(logging.WARNING)
+#logger.setLevel(logging.WARNING)
 
 class Command(BaseCommand):
     option_list = BaseCommand.option_list + (
         make_option("-l", "--limit",
                     action="store", type="int",
                     dest="limit"),
-        )
+        make_option("-s", "--startfrom",
+                    action="store", type="int",
+                    dest="startfrom"),
+    )
 
     def handle(self, *args, **options):
-        logger.warning("Restoring Neighbourhood Municipalities Districts")
+        logger.info("Restoring Neighbourhood Municipalities Districts")
         Municipality.objects.all().delete()
         District.objects.all().delete()
         Neighbourhood.objects.all().delete()
@@ -34,15 +37,25 @@ class Command(BaseCommand):
         with open("restore_cities.json", 'r') as outfile:
             cache = json.load(outfile)
         base_url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={}&sensor=true"
-        if 'limit' in options and options['limit'] > len(bagni):
+        if 'limit' in options and options['limit'] < len(bagni):
             bagni = bagni[:options['limit']]
-        for bagno in bagni:
+        if 'startfrom' in options and options['startfrom'] < len(bagni):
+            bagni = bagni[options['startfrom']:]
+        tot = len(bagni)
+        for count, bagno in enumerate(bagni):
             n = m = d = None
+            n_name = m_name = d_name = None
             text_point = ",".join(bagno['coords'])
             point = Point([float(coord) for coord in reversed(bagno['coords'])])
             try:
-                name = bagno['name'].strip("- 82 ")
-                b = Bagno.objects.get(name=name, point=point)
+                name = bagno['name'].replace("- 82 ", "")
+                if name in ["Alcide Spiaggia", "Alberto"]:
+                    name = "Bagno " + name
+                b = Bagno.objects.filter(name=name)
+                if len(b) == 1:
+                    b = b[0]
+                else:
+                    b = b.get(point=point)
             except:
                 import ipdb; ipdb.set_trace()
             h = hashlib.sha224(bagno['name'].encode('ascii', errors='ignore') + text_point).hexdigest()
@@ -62,30 +75,47 @@ class Command(BaseCommand):
                     ex
                     pass
 
-                politicals = []
                 for address_part in result['results'][0]['address_components']:
-                    if "political" in address_part['types']:
-                        politicals.append(address_part["long_name"])
-                if len(politicals) < 3:
-                    import ipdb; ipdb.set_trace()
-                    pass
-                d_name = politicals[2]
-                m_name = politicals[1]
-                n_name = politicals[0]
+                    if "locality" in address_part['types']:
+                        json_neighbourhood = bagno.get("neighbourhood", None)
+                        if json_neighbourhood and json_neighbourhood != address_part["long_name"]:
+                            n_name = json_neighbourhood
+                        else:
+                            n_name = address_part["long_name"]
+                    elif "administrative_area_level_3" in address_part['types']:
+                        m_name = address_part["long_name"]
+                    elif "administrative_area_level_2" in address_part['types']:
+                        d_name = address_part["long_name"]
+                if not (n_name and m_name and d_name):
+                    if not n_name:
+                        if "neighbourhood" in bagno and bagno["neighbourhood"]:
+                            n_name = bagno['neighbourhood']
+                        elif bagno['address'] == "Fontanelle Abissinia":
+                            n_name = "Riccione"
+                        else:
+                            import ipdb; ipdb.set_trace()
+                    elif n_name == "Torre Pedrera":
+                        m_name = d_name = "Rimini"
+                    else:
+                        import ipdb; ipdb.set_trace()
+                if bagno['address'] == "Via Spazzoli Tonino, 3":
+                    b.address = "Via Giovanni Spallazzi, 1"
+                    b.save()
+                if n_name == "Casalborsetti":
+                    n_name = "Casal Borsetti"
                 cache[h] = (n_name, m_name, d_name)
                 with open("restore_cities.json", 'w') as outfile:
                     json.dump(cache, outfile)
-
             d = District.objects.filter(name=d_name)
             if not d:
-                logger.warning("creating district %s" % d_name)
+                logger.info("creating district %s" % d_name)
                 d = District(name=d_name)
                 d.save()
             else:
                 d = d[0]
             m = Municipality.objects.filter(name=m_name)
             if not m:
-                logger.warning("creating municipality %s" % m_name)
+                logger.info("creating municipality %s" % m_name)
                 m = Municipality(name=m_name)
                 m.district = d
                 m.save()
@@ -94,12 +124,12 @@ class Command(BaseCommand):
 
             n = Neighbourhood.objects.filter(name=n_name)
             if not n:
-                logger.warning("creating neighbourhood %s" % n_name)
+                logger.info("creating neighbourhood %s" % n_name)
                 n = Neighbourhood(name=n_name)
                 n.municipality = m
                 n.save()
             else:
                 n = n[0]
             b.neighbourhood = n
-            logger.warning("assigning neighbourhood %s municipality %s city %s to bagno %s" % (n.name, m.name, d.name, b.name, ) )
+            logger.info("[%d/%d]assigning neighbourhood %s municipality %s city %s to bagno %s" % (count, tot, n.name, m.name, d.name, b.name, ) )
             b.save()
