@@ -19,7 +19,7 @@
                     </div>
                     <div class="col-xs-2 search-page-search-button-div">
                         <button type="submit" id="search_submit" class="btn btn-primary search-page-button" value="search">{% trans "Search" %}</button>
-                    </div> 
+                    </div>
             </form>
     </div></div>
 
@@ -43,15 +43,15 @@
                                     {% endif %}
                                     <li class="list-unstyled">
 		                                {% if facet in active_facets %}
-                                        <div class="checkbox filter-result-selected-checkbox-div">    
+                                        <div class="checkbox filter-result-selected-checkbox-div">
 	                                        <label class="filter-result-selected-checkbox-label"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked><div class="">{{ facet.name }}</div></label>
                                          </div>
 		                                {% else %}
                                         <div class="checkbox filter-result-checkbox-div">
 		                                    <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox"><div class="">{{ facet.name }}</div></label>
                                         </div>
-		                                {% endif %} 
-                                        
+		                                {% endif %}
+
                                     </li>
                                     {% if forloop.last %}
                                         </ul>
@@ -75,7 +75,7 @@
                         {% trans "near" %} <span class="hits-query">{{ place }}</span>
                     {% endif %}
                 </p>
-                {% if hits %} 
+                {% if hits %}
                     <ul class="nav nav-tabs search-page-tabs" id="myTab">
                         <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                         <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
@@ -83,20 +83,20 @@
                     <div id="content" class="tab-content">
                         <div class="tab-pane" id="mapTab">
                            <div id="bagno_map" style="width: 100%; height: 500px"></div>
-                        </div> 
-                        <div class="tab-pane active" id="listTab">      
+                        </div>
+                        <div class="tab-pane active" id="listTab">
                                 {%  for hit in hits %}
                                     <hr class="search-result-separator">
                                     <div class="single-bagno-result-box">
                                         <div class="row">
                                              <div class="col-xs-12">
                                                 <h2 class="single-result-header">
-                                                    <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.municipality}}</a>
+                                                    <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.neighbourhood.name}}</a>
                                                     {% if hit.distance %}
                                                         <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
                                                     {% endif %}
                                                 </h2>
-                                                <p class="single-result-address">{{ hit.address }} - {{ hit.municipality }}, {{ hit.municipality.district }}</p>
+                                                <p class="single-result-address">{{ hit.address }} - {{ hit.neighbourhood.name }}, {{ hit.neighbourhood.municipality.name }} - {{ hit.neighbourhood.municipality.district.name }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@
             map.fitBounds(map_markerBounds);
         });
         function checkboxChanged(cb) {
-            var bodyTag = $("body") 
+            var bodyTag = $("body")
             bodyTag.addClass("loading");
             $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function() {
                     bodyTag.removeClass("loading");

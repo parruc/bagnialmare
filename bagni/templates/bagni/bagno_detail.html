@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <p class="bagno-detail-address">{{ object.address }} - {{ object.municipality.name }}</p>
+                <p class="bagno-detail-address">{{ object.address }} - {{ object.neighbourhood.name }}</p>
             </div>
         </div>
         <div class="row">
@@ -62,7 +62,7 @@
                         <img class ="thumbnail" src="{{ STATIC_URL }}img/no_images.png" alt="{% trans "No images available for" %} {{ object.name|safe }}">
                         <span class="no-images-text"><a href="#">{% trans "No photos available. Add one now" %}.</a></span>
                     </div>
-                {% endif %}  
+                {% endif %}
             </div>
             <div class="col-xs-5 col-xs-offset-2">
                 <div id="bagno_map" class="well" style="width: 100%; height: 350px"></div>
@@ -116,7 +116,7 @@
 		        {% endif %}
             </div>
         </div>
-    </div>        
+    </div>
 {% endblock content %}
 
 {% block specific_js %}

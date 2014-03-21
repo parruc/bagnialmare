@@ -206,7 +206,7 @@ class BagnoForm(TranslationModelForm):
                   'address',
                   'languages',
                   'services',
-                  'municipality',
+                  'neighbourhood',
                   'mail',
                   'site',
                   'point',
