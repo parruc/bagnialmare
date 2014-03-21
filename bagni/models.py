@@ -152,9 +152,9 @@ class Bagno(models.Model):
         neighbourhood_name = municipality_name = district_name = ""
         if self.neighbourhood:
             neighbourhood_name = self.neighbourhood.name
-            if self.municipality:
+            if self.neighbourhood.municipality:
                 municipality_name = self.neighbourhood.municipality.name
-                if self.municipality.district:
+                if self.neighbourhood.municipality.district:
                     district_name = self.neighbourhood.municipality.district.name
         elems = (self.name, self.index_services(), neighbourhood_name, municipality_name, district_name)
         return unicode("%s %s %s %s %s" % elems)
