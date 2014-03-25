@@ -74,7 +74,6 @@ body {
 }
 
 .homepage-headline {
-  font-size: 300%;
   font-weight: 700;
   /*color: #F9BF16;*/
   color: rgb(255, 255, 255);
@@ -185,7 +184,7 @@ body {
 }
 
 .no-images-text{
-    top: 50%;
+    top: 10%;
     left: 10%;
     position: absolute;
 }
