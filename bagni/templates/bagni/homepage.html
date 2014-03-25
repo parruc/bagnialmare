@@ -22,6 +22,7 @@
                     <label class="sr-only" for="search_l">{% trans 'Where' %}</label>
                     <input class="form-control input-lg homepage-input" type="text" id="search_l" style="width:320px;"
                             name="l" value="{{ l }}" placeholder="{% trans 'Where' %}" />
+                    <div class="ui-front"></div>
                 </div>
                 <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{% trans "Search" %}</button>
             </form>
@@ -32,6 +33,26 @@
 {% block additionaljs %}
     <script type="text/javascript">
         $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
+        function currentPosition(position)
+        {
+            position.coords.latitude;
+            position.coords.latitude;
+        }
+        if(navigator.geolocation)
+        {
+            navigator.geolocation.getCurrentPosition(currentPosition);
+
+        }
+        $("#search_l").autocomplete({
+            source: function (request, response) {
+                jQuery.get("/it/json/places", {
+                query: request.term
+            }, function (data) {
+            response(data);
+        });
+    },
+    minLength: 3
+}).attr('autocomplete', 'on');
     </script>
 {% endblock %}
 
