@@ -7,7 +7,7 @@
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
-    <div class="search-page-search-row-wrapper-div"><div class="row search search-page-search-row">
+    <div class="search-page-search-row-wrapper-div hidden-xs"><div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
                     <div class="col-xs-5">
                         <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
@@ -25,7 +25,7 @@
 
     {% if has_get %}
         <div class="row result-wrapper-div">
-            <div class="col-xs-3">
+            <div class="col-sm-3 hidden-xs">
                 <div class="filter-result-box">
                     {% if facets.items %}
                         <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
@@ -63,7 +63,7 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="col-xs-9">
+            <div class="col-xs-12 col-sm-9">
                 <p>
                     <span class="hits-count">{{ count }}</span>
                     {% if q %}
@@ -79,6 +79,7 @@
                     <ul class="nav nav-tabs search-page-tabs" id="myTab">
                         <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                         <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
+                        <li class="visible-xs"><a href="#filterTab" data-toggle="tab">{% trans "Filter Result" %}</a></li>
                     </ul>
                     <div id="content" class="tab-content">
                         <div class="tab-pane" id="mapTab">
@@ -123,6 +124,42 @@
                     {% else %}
                     <div>{% trans "No results for the given search" %}</div>
                     {% endif %}
+                    </div>
+                    <div class="tab-pane visible-xs" id="filterTab">
+                    {% if facets.items %}
+                        <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
+                    {% endif %}
+                    {% for facet_group, facet_values in facets.items %}
+                        {% if facet_group %}
+                            <div class="">
+                                <div class="">
+                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
+                                </div>
+                                {% for facet in facet_values %}
+                                    {% if forloop.first %}
+                                    <div id="collapse{{ forloop.parentloop.counter }}" class="collapse in" >
+                                        <ul class="list-group">
+                                    {% endif %}
+                                    <li class="list-unstyled">
+		                                {% if facet in active_facets %}
+                                        <div class="checkbox filter-result-selected-checkbox-div">
+	                                        <label class="filter-result-selected-checkbox-label"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked><div class="">{{ facet.name }}</div></label>
+                                         </div>
+		                                {% else %}
+                                        <div class="checkbox filter-result-checkbox-div">
+		                                    <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox"><div class="">{{ facet.name }}</div></label>
+                                        </div>
+		                                {% endif %}
+
+                                    </li>
+                                    {% if forloop.last %}
+                                        </ul>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                     </div>
                 </div>
             </div>
