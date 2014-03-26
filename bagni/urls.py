@@ -50,6 +50,9 @@ urlpatterns = patterns(
     url(_(r'^districts/$'),
         views.DistrictsView.as_view(),
         name="districts"),
+    url(_(r'^json/places$'),
+        views.JsonPlaces.as_view(),
+        name="json-places"),
 
     # VISTE TEMPORANEE
 #    url(_('^globalmap/$'),

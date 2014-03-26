@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
+import json
+from geopy import geocoders
+
+from django import http
 from django.core import paginator
 from django.core.exceptions import PermissionDenied
 from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic.detail import DetailView
+from django.views.generic.detail import BaseDetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
 from django.views.generic import TemplateView
@@ -10,13 +15,10 @@ from django.contrib import messages
 from django.contrib.gis.geos import Point
 from django.utils.translation import ugettext as _
 
-#from extra_views import UpdateWithInlinesView
-
-from geopy import geocoders
-
-from models import Bagno, Service, District, Municipality, Neighbourhood, ServiceCategory
-from forms import BagnoForm, TelephoneFormSet, ImageFormSet
-from search import search
+from .models import Bagno, Service, District, Municipality, Neighbourhood, ServiceCategory
+from .forms import BagnoForm, TelephoneFormSet, ImageFormSet
+from .search import search
+from .constants import MY_POSITION
 
 import logging
 logging.basicConfig()
@@ -253,7 +255,9 @@ class HomepageView(TemplateView):
     template_name = "bagni/homepage.html"
 
     def get_context_data(self, **kwargs):
-        pass
+        context = super(HomepageView, self).get_context_data(**kwargs)
+        context.update({'l': MY_POSITION})
+        return context
 
 
 class SearchView(TemplateView):
@@ -272,8 +276,12 @@ class SearchView(TemplateView):
         page = self.request.GET.get('p', "1")
         per_page = int(self.request.GET.get('pp', "10"))
         loc = self.request.GET.get('l', "")
+        coords = self.request.GET.get('pos', "")
         place = point = None
-        if loc:
+        if not loc or loc == MY_POSITION and coords:
+            lat,lng = coords.split(",")
+            point = Point(float(lng), float(lat))
+        elif loc:
             g = geocoders.GoogleV3(domain='maps.google.it')
             try:
                 matches = g.geocode(loc, exactly_one=False)
@@ -291,6 +299,7 @@ class SearchView(TemplateView):
                                      _("Error in geocoding"))
                 #logger.error would point to a 500 page
                 logger.warning("geocoding %s gave error %s" % (loc, e))
+
 
 
         filters = self.request.GET.getlist('f', [])
@@ -316,6 +325,44 @@ class SearchView(TemplateView):
                         'hits': hits, 'count': len(raw_hits), 'has_get': has_get })
 
         return context
+
+
+class JSONResponseMixin(object):
+    def render_to_response(self, context):
+        "Returns a JSON response containing 'context' as payload"
+        return self.get_json_response(self.convert_context_to_json(context))
+
+    def get_json_response(self, content, **httpresponse_kwargs):
+        "Construct an `HttpResponse` object."
+        return http.HttpResponse(content,
+                                 content_type='application/json',
+                                 **httpresponse_kwargs)
+
+    def convert_context_to_json(self, context):
+        "Convert the context dictionary into a JSON object"
+        # Note: This is *EXTREMELY* naive; in reality, you'll need
+        # to do much more complex handling to ensure that arbitrary
+        # objects -- such as Django model instances or querysets
+        # -- can be serialized as JSON.
+        return json.dumps(context)
+
+
+class JsonPlaces(JSONResponseMixin, BaseDetailView):
+    """ Json list of places for the autocomplete in search field
+    """
+
+    def get(self, request, *args, **kwargs):
+        #do some queries here to collect your data for the response
+        results = []
+        query = self.request.GET.get('query', "")
+        results = list(Neighbourhood.objects.filter(name__icontains=query))
+        results += list(Municipality.objects.filter(name__icontains=query))
+        results += list(District.objects.filter(name__icontains=query))
+        names = list(set([r.name for r in results]))
+        names.sort()
+        names.insert(0, _("My position"))
+        context = {'success':names}
+        return self.render_to_response(context)
 
 ## VISTE TEMPORANEE
 # Non servono più?!?
