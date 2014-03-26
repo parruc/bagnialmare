@@ -79,7 +79,7 @@
                     <ul class="nav nav-tabs search-page-tabs" id="myTab">
                         <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
                         <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
-                        <li class="visible-xs"><a href="#filterTab" data-toggle="tab">{% trans "Filter Result" %}</a></li>
+                        <li class="visible-xs"><a href="#filterTab" data-toggle="tab">{% trans "Filters" %}</a></li>
                     </ul>
                     <div id="content" class="tab-content">
                         <div class="tab-pane" id="mapTab">
@@ -125,7 +125,7 @@
                     <div>{% trans "No results for the given search" %}</div>
                     {% endif %}
                     </div>
-                    <div class="tab-pane visible-xs" id="filterTab">
+                    <div class="tab-pane" id="filterTab">
                     {% if facets.items %}
                         <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
                     {% endif %}
@@ -133,11 +133,11 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
+                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapseInsideTab{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
                                 </div>
                                 {% for facet in facet_values %}
                                     {% if forloop.first %}
-                                    <div id="collapse{{ forloop.parentloop.counter }}" class="collapse in" >
+                                    <div id="collapseInsideTab{{ forloop.parentloop.counter }}" class="collapse in" >
                                         <ul class="list-group">
                                     {% endif %}
                                     <li class="list-unstyled">
