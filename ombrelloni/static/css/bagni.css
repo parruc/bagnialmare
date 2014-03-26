@@ -67,6 +67,13 @@ body {
 
 .homepage-form {
   margin-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.homepage-input-div{
+  padding-left: 0px;
+  padding-right: 5px;
 }
 
 .homepage-input{
