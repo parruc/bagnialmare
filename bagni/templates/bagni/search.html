@@ -232,14 +232,25 @@
             }
             $("#search_l").autocomplete({
                 source: function (request, response) {
-                    jQuery.get("/it/json/places", {
+                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/places", {
                     query: request.term
                     }, function (data) {
                         response(data["success"]);
                     });
                 },
-                minLength: 3
-            }).attr('autocomplete', 'on');
+                minLength: 1
+            }).attr('autocomplete', 'off');
+
+            $("#search_q").autocomplete({
+                source: function (request, response) {
+                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/searchterms", {
+                    query: request.term
+                    }, function (data) {
+                        response(data["success"]);
+                    });
+                },
+                minLength: 1
+            }).attr('autocomplete', 'off');
         });
 
         </script>

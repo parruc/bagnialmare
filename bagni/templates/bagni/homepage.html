@@ -27,7 +27,7 @@
                     <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{% trans 'Where' %}" />
                     <div class="ui-front"></div>
                 </div>
-                <div class="col-md-2 homepage-input-div"> 
+                <div class="col-md-2 homepage-input-div">
                     <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{% trans "Search" %}</button>
                 </div>
             </form>
@@ -58,7 +58,8 @@
                     });
                 },
                 minLength: 1
-            }).attr('autocomplete', 'on');
+            }).attr('autocomplete', 'off');
+
             $("#search_q").autocomplete({
                 source: function (request, response) {
                     jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/searchterms", {
@@ -68,7 +69,7 @@
                     });
                 },
                 minLength: 1
-            }).attr('autocomplete', 'on');
+            }).attr('autocomplete', 'off');
         });
     </script>
 {% endblock %}
