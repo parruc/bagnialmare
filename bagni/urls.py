@@ -50,9 +50,12 @@ urlpatterns = patterns(
     url(_(r'^districts/$'),
         views.DistrictsView.as_view(),
         name="districts"),
-    url(_(r'^json/places$'),
-        views.JsonPlaces.as_view(),
-        name="json-places"),
+    url(_(r'^json/autocomplete/places$'),
+        views.JsonAutocompletePlaces.as_view(),
+        name="json-autocomplete-places"),
+    url(_(r'^json/autocomplete/searchterms$'),
+        views.JsonAutocompleteSearchterms.as_view(),
+        name="json-autocomplete-searchterms"),
 
     # VISTE TEMPORANEE
 #    url(_('^globalmap/$'),

@@ -17,6 +17,7 @@
                 <div class="form-group">
                     <label class="sr-only" for="search_q">{% trans 'What' %}</label>
                     <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{% trans 'What' %}" />
+                    <div class="ui-front"></div>
                 </div>
                 <div class="form-group">
                     <label class="sr-only" for="search_l">{% trans 'Near to' %}</label>
@@ -44,13 +45,23 @@
             }
             $("#search_l").autocomplete({
                 source: function (request, response) {
-                    jQuery.get("/it/json/places", {
+                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/places", {
                     query: request.term
                     }, function (data) {
                         response(data["success"]);
                     });
                 },
-                minLength: 3
+                minLength: 1
+            }).attr('autocomplete', 'on');
+            $("#search_q").autocomplete({
+                source: function (request, response) {
+                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/searchterms", {
+                    query: request.term
+                    }, function (data) {
+                        response(data["success"]);
+                    });
+                },
+                minLength: 1
             }).attr('autocomplete', 'on');
         });
     </script>

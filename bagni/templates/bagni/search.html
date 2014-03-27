@@ -9,17 +9,18 @@
     {% endcomment %}
     <div class="search-page-search-row-wrapper-div hidden-xs"><div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
-                    <div class="col-xs-5">
-                        <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
-                        <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
-                    </div>
-                    <div class="col-xs-5">
-                        <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
-                        <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
-                    </div>
-                    <div class="col-xs-2 search-page-search-button-div">
-                        <button type="submit" id="search_submit" class="btn btn-primary search-page-button" value="search">{% trans "Search" %}</button>
-                    </div>
+                <input type="hidden" name="pos" value="" />
+                <div class="col-xs-5">
+                    <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
+                    <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
+                </div>
+                <div class="col-xs-5">
+                    <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
+                    <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
+                </div>
+                <div class="col-xs-2 search-page-search-button-div">
+                    <button type="submit" id="search_submit" class="btn btn-primary search-page-button" value="search">{% trans "Search" %}</button>
+                </div>
             </form>
     </div></div>
 
@@ -219,6 +220,26 @@
                 {% endif %}
             {% endfor %}
             map.fitBounds(map_markerBounds);
+
+            function currentPosition(position)
+            {
+                $(":input[name=pos]").val(position.coords.latitude + "," + position.coords.longitude)
+            }
+            if(navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(currentPosition);
+
+            }
+            $("#search_l").autocomplete({
+                source: function (request, response) {
+                    jQuery.get("/it/json/places", {
+                    query: request.term
+                    }, function (data) {
+                        response(data["success"]);
+                    });
+                },
+                minLength: 3
+            }).attr('autocomplete', 'on');
         });
 
         </script>

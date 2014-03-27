@@ -149,15 +149,20 @@ class Bagno(models.Model):
     def index_text(self):
         """ Text indexed for fulltext search (the what field)
         """
-        neighbourhood_name = municipality_name = district_name = ""
-        if self.neighbourhood:
-            neighbourhood_name = self.neighbourhood.name
-            if self.neighbourhood.municipality:
-                municipality_name = self.neighbourhood.municipality.name
-                if self.neighbourhood.municipality.district:
-                    district_name = self.neighbourhood.municipality.district.name
-        elems = (self.name, self.index_services(), neighbourhood_name, municipality_name, district_name)
-        return unicode("%s %s %s %s %s" % elems)
+        elems = [self.name, ]
+        cities = self.index_cities().split("#")
+        services = self.index_services().split("#")
+        elems.extend(cities)
+        elems.extend(services)
+        return unicode(" ".join(elems))
+
+    def index_autocomplete_q(self):
+        elems = [self.name, ]
+        elems.extend(self.index_services().split(" "))
+        return unicode(" ".join(elems))
+
+    def index_autocomplete_l(self):
+        return unicode(self.index_cities(sep=" "))
 
     def index_services(self, sep="#"):
         """ Returns a string representing all the bagno services separated by
@@ -174,14 +179,27 @@ class Bagno(models.Model):
         """
         return unicode(sep.join([l.name for l in self.languages.all()]))
 
+    def index_cities(self, sep="#"):
+        cities = []
+        if self.neighbourhood:
+            cities.append(self.neighbourhood.name)
+            if self.neighbourhood.municipality:
+                cities.append(self.neighbourhood.municipality.name)
+                if self.neighbourhood.municipality.district:
+                    cities.append(self.neighbourhood.municipality.district.name)
+        return unicode(sep.join(cities))
+
     def index_features(self):
         """ Returns a dictionary representing the whoosh entry for
             the current object in the index
         """
         return dict(id=unicode(self.id),
+                    name=unicode(self.name),
                     text=self.index_text(),
-                    services=unicode(self.index_services()),
-                    languages=unicode(self.index_languages()),
+                    services=self.index_services(),
+                    languages=self.index_languages(),
+                    autocomplete_q=self.index_autocomplete_q(),
+                    autocomplete_l=self.index_autocomplete_l(),
                     )
 
     @models.permalink

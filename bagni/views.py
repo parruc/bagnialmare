@@ -275,10 +275,10 @@ class SearchView(TemplateView):
         q = self.request.GET.get('q', "")
         page = self.request.GET.get('p', "1")
         per_page = int(self.request.GET.get('pp', "10"))
-        loc = self.request.GET.get('l', "")
+        loc = self.request.GET.get('l', '')
         coords = self.request.GET.get('pos', "")
         place = point = None
-        if not loc or loc == MY_POSITION and coords:
+        if loc == MY_POSITION and "," in coords:
             lat,lng = coords.split(",")
             point = Point(float(lng), float(lat))
         elif loc:
@@ -299,8 +299,6 @@ class SearchView(TemplateView):
                                      _("Error in geocoding"))
                 #logger.error would point to a 500 page
                 logger.warning("geocoding %s gave error %s" % (loc, e))
-
-
 
         filters = self.request.GET.getlist('f', [])
         new_query_string = self.request.GET.copy()
@@ -347,12 +345,11 @@ class JSONResponseMixin(object):
         return json.dumps(context)
 
 
-class JsonPlaces(JSONResponseMixin, BaseDetailView):
+class JsonAutocompletePlaces(JSONResponseMixin, BaseDetailView):
     """ Json list of places for the autocomplete in search field
     """
 
     def get(self, request, *args, **kwargs):
-        #do some queries here to collect your data for the response
         results = []
         query = self.request.GET.get('query', "")
         results = list(Neighbourhood.objects.filter(name__icontains=query))
@@ -360,38 +357,21 @@ class JsonPlaces(JSONResponseMixin, BaseDetailView):
         results += list(District.objects.filter(name__icontains=query))
         names = list(set([r.name for r in results]))
         names.sort()
-        names.insert(0, _("My position"))
+        names.insert(0, MY_POSITION)
         context = {'success':names}
         return self.render_to_response(context)
 
-## VISTE TEMPORANEE
-# Non servono più?!?
-#class GlobalMapView(ListView):
-#    template_name = "bagni/globalmap.html"
-#    model = Bagno
-#    def get_context_data(self, **kwargs):
-#        context = super(GlobalMapView, self).get_context_data(**kwargs)
-#        return context
-#
-#class BenveView(ListView):
-#    """ Simple view for Service listing everyone with his bagni
-#        TODO: Will soon be removed
-#    """
-#    template_name = "bagni/benve.html"
-#    queryset = Service.objects.all().prefetch_related("bagni", "bagni__municipality", "category")
-#    def get_context_data(self, **kwargs):
-#        context = super(BenveView, self).get_context_data(**kwargs)
-#        return context
+class JsonAutocompleteSearchterms(JSONResponseMixin, BaseDetailView):
+    """ Json list of search terms for the autocomplete in search field
+    """
+
+    def get(self, request, *args, **kwargs):
+        results = []
+        query = self.request.GET.get('query', "")
+        results = list(Service.objects.filter(name__icontains=query))
+        names = list(set([r.name for r in results]))
+        names.sort()
+        context = {'success':names}
+        return self.render_to_response(context)
 
 
-#class Benve2View(ListView):
-#    """ Simple view for Service listing everyone with his bagni
-#        TODO: Will soon be removed
-#    """
-#    template_name = "bagni/benve2.html"
-#    queryset = Bagno.objects.filter(mail="")
-#
-#    def get_context_data(self, **kwargs):
-#        context = super(Benve2View, self).get_context_data(**kwargs)
-#        return context
-#

@@ -13,9 +13,12 @@ from whoosh import fields, index, qparser, sorting, query
 from bagni.models import Bagno
 
 WHOOSH_SCHEMA = fields.Schema(id=fields.ID(stored=True, unique=True),
-                              text=fields.TEXT,
+                              name=fields.TEXT(stored=True),
+                              text=fields.TEXT(),
                               services=fields.IDLIST(stored=True, expression=re.compile(r"[^#]+"),),
                               languages=fields.IDLIST(stored=True, expression=re.compile(r"[^#]+"),),
+                              autocomplete_q=fields.NGRAMWORDS(),
+                              autocomplete_l=fields.NGRAMWORDS(),
                               )
 
 LANGS = [l[0] for l in settings.LANGUAGES]
@@ -96,7 +99,6 @@ def recreate_all(sender=None, langs=LANGS, **kwargs):
 def search(q, filters, groups, query_string, max_facets=5):
     """ Search for a query term and a set o filters
         Returns a list of hits and the representation of the facets
-        TODO: Finetune of the fuzzy search
     """
     lang = get_language()
     ix = index.open_dir(index_path(lang))
@@ -108,8 +110,6 @@ def search(q, filters, groups, query_string, max_facets=5):
     #parser.remove_plugin_class(qparser.WildcardPlugin)
     # Temporary removed fuzzy search: more pain than benefit
     #parser.add_plugin(qparser.FuzzyTermPlugin())
-    #fuzzy = "~1/2 "
-    #q = fuzzy.join(q.split(" ")) + fuzzy
     try:
         q = parser.parse(q)
     except:
