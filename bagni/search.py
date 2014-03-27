@@ -13,12 +13,9 @@ from whoosh import fields, index, qparser, sorting, query
 from bagni.models import Bagno
 
 WHOOSH_SCHEMA = fields.Schema(id=fields.ID(stored=True, unique=True),
-                              name=fields.TEXT(stored=True),
                               text=fields.TEXT(),
                               services=fields.IDLIST(stored=True, expression=re.compile(r"[^#]+"),),
                               languages=fields.IDLIST(stored=True, expression=re.compile(r"[^#]+"),),
-                              autocomplete_q=fields.NGRAMWORDS(),
-                              autocomplete_l=fields.NGRAMWORDS(),
                               )
 
 LANGS = [l[0] for l in settings.LANGUAGES]

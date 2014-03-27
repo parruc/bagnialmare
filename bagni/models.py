@@ -156,14 +156,6 @@ class Bagno(models.Model):
         elems.extend(services)
         return unicode(" ".join(elems))
 
-    def index_autocomplete_q(self):
-        elems = [self.name, ]
-        elems.extend(self.index_services().split(" "))
-        return unicode(" ".join(elems))
-
-    def index_autocomplete_l(self):
-        return unicode(self.index_cities(sep=" "))
-
     def index_services(self, sep="#"):
         """ Returns a string representing all the bagno services separated by
             the sep val.
@@ -194,12 +186,9 @@ class Bagno(models.Model):
             the current object in the index
         """
         return dict(id=unicode(self.id),
-                    name=unicode(self.name),
                     text=self.index_text(),
                     services=self.index_services(),
                     languages=self.index_languages(),
-                    autocomplete_q=self.index_autocomplete_q(),
-                    autocomplete_l=self.index_autocomplete_l(),
                     )
 
     @models.permalink
