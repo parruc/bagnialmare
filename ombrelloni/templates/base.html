@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 {% load i18n compress %}
 {% load url from future %}
-<html xmlns="http://www.w3.org/1999/xhtml" lang="{{LANGUAGE_CODE}}" xml:lang="{{LANGUAGE_CODE}}">
+<html lang="{{LANGUAGE_CODE}}">
     <head>
     <meta name="robots" content="{% block robot %}index follow{% endblock %}" />
         <meta name="description" content="{% block description %}Ombrelloni e lettini{% endblock %}" />
@@ -12,7 +12,7 @@
         <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/bam-favicon.ico" />
         <link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}img/bam-favicon.ico" />
         <link href='http://fonts.googleapis.com/css?family=Henny+Penny&amp;subset=latin-ext' rel='stylesheet' type='text/css' />
- 
+
         {% compress js %}
             <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
             <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
@@ -86,14 +86,14 @@
               {% block content %}
               {% endblock %}
           </div>
-        </div> 
-        
+        </div>
+
         <div id="footer">
           <div class="container centered-text">
             <p class="small">&#169; 2014 BagniAlMare{% block footer %}{% endblock %}</p>
           </div>
         </div>
-    
+
     {% block additionaljs %}
     {% endblock %}
     </body>
