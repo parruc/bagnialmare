@@ -8,7 +8,7 @@ body {
   /*padding-top: 70px;*/
   /*padding-bottom: 20px;*/
   /*background-color: #393C41;*/
-  /*background: url(/static/img/cream_dust.png) repeat 0 0;*/
+  background: url(/static/img/ricepaper.png) repeat 0 0;
 }
 
 .homepage-body-class{
@@ -47,7 +47,7 @@ body {
 
 
 .homepage-first-row {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .search-button {
@@ -67,6 +67,13 @@ body {
 
 .homepage-form {
   margin-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.homepage-input-div{
+  padding-left: 0px;
+  padding-right: 5px;
 }
 
 .homepage-input{
@@ -82,7 +89,7 @@ body {
 
 .homepage-sub-headline {
   font-size: 120%;
-  color: rgb(249, 191, 22);/*#F9BF16;*/
+  color: #F9BF16 /*rgb(249, 191, 22)*/;
 }
 
 .border-right-2 {
@@ -119,6 +126,13 @@ body {
 .filter-result-header {
     margin-bottom: 20px;
     margin-top: 0px;
+    font-weight: 700;
+}
+
+
+.filter-result-header-tab {
+    margin-bottom: 20px;
+    margin-top: 15px;
     font-weight: 700;
 }
 
@@ -279,6 +293,7 @@ img.hp-form-image
     margin-right: 0px;
     border-radius: 4px 4px 4px 4px;
     background-color: rgb(249, 191, 22);/*rgb(249, 191, 22);*/
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -369,8 +384,13 @@ button {
     font-family: Helvetica Neue, sans-serif;
 }
 
-.navbar-default {
-    background-color: #00A0B0;
+.homepage-navbar{
+    background-color: #F9BF16 !important;
+    border-color: #F9BF16 !important;
+}
+
+.navbar-default{
+    background-color: #EB604B/*#00A0B0*/;
     /*background-image: -khtml-gradient(linear, left top, left bottom, from(#08689B), to(#0a6698)); 
      background-image: -moz-linear-gradient(top, #0097D5, #08689B); 
      background-image: -ms-linear-gradient(top, #0097D5, ##08689B); 
@@ -378,9 +398,8 @@ button {
      background-image: -webkit-linear-gradient(top, #0097D5, #08689B); 
      background-image: -o-linear-gradient(top, #0097D5, #08689B); 
      background-image: linear-gradient(#0097D5, #08689B);*/
-    border-color: rgb(249, 191, 22);
+    background-color: #EB604B;
 }
-
 
 .navbar-default .navbar-nav > li > a {
     color: rgb(255, 255, 255);
@@ -388,11 +407,13 @@ button {
 
 .navbar-default .navbar-brand {
     color: rgb(255, 255, 255);
+    padding-top: 0px;
+    font-family: 'Lobster two';
 }
 
 .btn-primary { 
-     background-color: #00A0B0;
-     border-color: #00A0B0;
+     background-color: #EB604B/*#00A0B0*/;
+     border-color: #EB604B/*#00A0B0*/;
 }
 
 

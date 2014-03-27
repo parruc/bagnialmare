@@ -3,6 +3,8 @@
 {% load i18n %}
 
 {% block bodyclass %}homepage-body-class{% endblock %}
+{% block navbarclass %}homepage-navbar{% endblock %}
+{% block logosuffix %}_red{% endblock %}
 
 {% block content %}
     {% comment %}
@@ -12,20 +14,24 @@
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
             <h1 class="homepage-headline" >Tutte le informazioni sui bagni della Riviera Romagnola.</h1>
             <p class="homepage-sub-headline">Contatti, servizi offerti e indirizzi di oltre 800 stabilimenti balneari da Cattolica a Ferrara.</p>
-            <form class="form-inline homepage-form" action="{% url 'search' %}" method="get">
+
+            <form class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
                 <input type="hidden" name="pos" value="" />
-                <div class="form-group">
+                <div class="col-md-5 homepage-input-div">
                     <label class="sr-only" for="search_q">{% trans 'What' %}</label>
                     <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{% trans 'What' %}" />
                     <div class="ui-front"></div>
                 </div>
-                <div class="form-group">
+                <div class="col-md-5 homepage-input-div">
                     <label class="sr-only" for="search_l">{% trans 'Near to' %}</label>
                     <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{% trans 'Where' %}" />
                     <div class="ui-front"></div>
                 </div>
-                <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{% trans "Search" %}</button>
+                <div class="col-md-2 homepage-input-div"> 
+                    <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{% trans "Search" %}</button>
+                </div>
             </form>
+
         </div>
     </div>
 {% endblock %}

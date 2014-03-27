@@ -26,7 +26,7 @@
         {% endcompress %}
 
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" />
-        <link href="//fonts.googleapis.com/css?family=Droid+Sans|Open+Sans" rel="stylesheet" type="text/css"/>
+        <link href="//fonts.googleapis.com/css?family=Droid+Sans|Open+Sans|Lobster+Two" rel="stylesheet" type="text/css"/>
         {% compress css %}
             <link  href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
             <link  href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
@@ -56,14 +56,14 @@
     </head>
     <body class="{% block bodyclass %}{% endblock %}">
         <div id="wrap">
-          <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="{% block navbarclass %}{% endblock %} navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
               <div class="navbar-header">
                   <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
                   <span class="sr-only"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span><span class="icon-bar"></span></button>
-                  <a class="navbar-brand" href="{% url 'homepage' %}"><strong>bagnialmare.com</strong></a>
+                  <a class="navbar-brand" href="{% url 'homepage' %}"><img src="{{ STATIC_URL }}img/logo{% block logosuffix %}{% endblock %}.jpg" width="57px"><strong>bagnialmare.com</strong></a>
               </div>
               <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
