@@ -260,6 +260,17 @@ class HomepageView(TemplateView):
         return context
 
 
+class AboutUsView(TemplateView):
+    """ About us view with a description ot 4hm
+    """
+
+    template_name = "bagni/about-us.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(AboutUsView, self).get_context_data(**kwargs)
+        return context
+
+
 class SearchView(TemplateView):
     """ Search view, which accepts search queries via url, like google.
         accepts 2 params:

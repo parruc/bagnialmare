@@ -12,8 +12,8 @@
     {% endcomment %}
     <div class="row homepage-first-row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
-            <h1 class="homepage-headline" >Tutte le informazioni sui bagni della Riviera Romagnola.</h1>
-            <p class="homepage-sub-headline">Contatti, servizi offerti e indirizzi di oltre 800 stabilimenti balneari da Cattolica a Ferrara.</p>
+            <h1 class="homepage-headline" >{% trans "Tutte le informazioni sui bagni della Riviera Romagnola." %}</h1>
+            <p class="homepage-sub-headline">{% trans "Contatti, servizi offerti e indirizzi di oltre 800 stabilimenti balneari da Cattolica a Ferrara."%}</p>
 
             <form class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
                 <input type="hidden" name="pos" value="" />

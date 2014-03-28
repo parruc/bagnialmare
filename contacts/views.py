@@ -30,7 +30,7 @@ class ContactView(FormView):
             email.send()
         try:
             email = EmailMessage(subject, message, from_email,
-            recipients, headers = {'Reply-To': sender})
+            recipients, headers={'Reply-To': sender})
             email.send()
             messages.add_message(self.request, messages.INFO,
                 _("Thanks for contacting us. We will asnwer you as soon as possible."))
