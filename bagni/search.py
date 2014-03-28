@@ -92,6 +92,18 @@ def recreate_all(sender=None, langs=LANGS, **kwargs):
 
 #signals.post_syncdb.connect(recreate_all)
 
+def set_active_facets_first(facets, active_facets):
+    sorted_facets = OrderedDict()
+    non_active_facet_items = []
+    for item in facets.items():
+        if any(facet_dict in active_facets for facet_dict in item[1]):
+            sorted_facets[item[0]] = item[1]
+        else:
+            non_active_facet_items.append(item)
+    for non_active_facet_item in non_active_facet_items:
+        sorted_facets[non_active_facet_item[0]] = non_active_facet_item[1]
+    return sorted_facets
+
 
 def search(q, filters, groups, query_string, max_facets=5):
     """ Search for a query term and a set o filters
@@ -151,4 +163,5 @@ def search(q, filters, groups, query_string, max_facets=5):
                     facets[out_group] = []
                 if len(facets[out_group]) < max_facets:
                     facets[out_group].append(facet_dict)
+        facets = set_active_facets_first(facets, active_facets)
     return hits, facets, active_facets
