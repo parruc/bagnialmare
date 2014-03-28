@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load thumbnail i18n %}
+
+{% block content %}
+<div id="contatti">
+    <div>
+        {% include "contacts/info.html" %}
+    </div>
+    <div>
+        {% include "contacts/form.html" %}
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block pagetitle %} {% trans "Contacts" %} - {{block.super}}{% endblock %}
+
+{%block description %}{% trans "Contacts" %} {{block.super}}{% endblock %}
+
+{% block keywords %}{% trans "Contacts" %}, {{ block.super }}{% endblock %}

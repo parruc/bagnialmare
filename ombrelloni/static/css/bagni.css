@@ -2,7 +2,7 @@
 html{
   height: 100%;
 }
- 
+
 body {
   height: 100%;
   /*padding-top: 70px;*/
@@ -153,8 +153,8 @@ body {
 }
 
 
-.filter-result-checkbox-div { 
-    color: rgb(42, 100, 150); 
+.filter-result-checkbox-div {
+    color: rgb(42, 100, 150);
     padding-left: 24px;
 }
 
@@ -177,11 +177,11 @@ body {
 .filter-result-service-category {
      cursor:pointer;
      color: #6A4A3C;
-     background-color:#FFF6DF; 
+     background-color:#FFF6DF;
 }
 
 .filter-result-service-category:hover {
-     color:rgb(249, 191, 22);		
+     color:rgb(249, 191, 22);
 }
 
 
@@ -298,7 +298,7 @@ img.hp-form-image
 
 
 .search-page-search-button-div{
-    position: absolute; bottom: 0; left: 83%; 
+    position: absolute; bottom: 0; left: 83%;
 }
 
 
@@ -318,14 +318,14 @@ img.hp-form-image
     left:       0;
     height:     100%;
     width:      100%;
-    background: rgba( 255, 255, 255, .8 ) 
-                url('/static/img/spinning-wheel.gif') 
-                50% 50% 
+    background: rgba( 255, 255, 255, .8 )
+                url('/static/img/spinning-wheel.gif')
+                50% 50%
                 no-repeat;
 }
 
 body.loading {
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
@@ -358,16 +358,16 @@ body.loading .modal-wheel {
 
 h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
-    color: #6A4A3C/*rgb(74, 74, 74)*/;	
+    color: #6A4A3C/*rgb(74, 74, 74)*/;
 }
- 
+
 p {
     font-family: Helvetica Neue, sans-serif;
     color: rgb(96, 96, 96);
 }
 
 label {
-    font-family: Helvetica Neue, sans-serif; 
+    font-family: Helvetica Neue, sans-serif;
 }
 
 span {
@@ -391,12 +391,12 @@ button {
 
 .navbar-default{
     background-color: #EB604B/*#00A0B0*/;
-    /*background-image: -khtml-gradient(linear, left top, left bottom, from(#08689B), to(#0a6698)); 
-     background-image: -moz-linear-gradient(top, #0097D5, #08689B); 
-     background-image: -ms-linear-gradient(top, #0097D5, ##08689B); 
-     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #08689B), color-stop(100%, #08689B)); 
-     background-image: -webkit-linear-gradient(top, #0097D5, #08689B); 
-     background-image: -o-linear-gradient(top, #0097D5, #08689B); 
+    /*background-image: -khtml-gradient(linear, left top, left bottom, from(#08689B), to(#0a6698));
+     background-image: -moz-linear-gradient(top, #0097D5, #08689B);
+     background-image: -ms-linear-gradient(top, #0097D5, ##08689B);
+     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #08689B), color-stop(100%, #08689B));
+     background-image: -webkit-linear-gradient(top, #0097D5, #08689B);
+     background-image: -o-linear-gradient(top, #0097D5, #08689B);
      background-image: linear-gradient(#0097D5, #08689B);*/
     background-color: #EB604B;
 }
@@ -411,20 +411,23 @@ button {
     font-family: 'Lobster two';
 }
 
-.btn-primary { 
+.navbar-default .navbar-brand img{
+  height: 49px;
+}
+.btn-primary {
      background-color: #EB604B/*#00A0B0*/;
      border-color: #EB604B/*#00A0B0*/;
 }
 
 
-/*.btn-primary { 
-     background-color: hsl(201, 87%, 32%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1aa4ef", endColorstr="#0a6698"); 
-     background-image: -khtml-gradient(linear, left top, left bottom, from(#0a6698), to(#1aa4ef)); 
-     background-image: -moz-linear-gradient(top, #0a6698, #1aa4ef); 
-     background-image: -ms-linear-gradient(top, #0a6698, #1aa4ef); 
-     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1aa4ef), color-stop(100%, ##1aa4ef)); 
-     background-image: -webkit-linear-gradient(top, #0a6698, #1aa4ef); 
-     background-image: -o-linear-gradient(top, #1aa4ef, #0a6698); 
-     background-image: linear-gradient(#1aa4ef, #0a6698); 
-     border-color: #0a6698 #0a6698 hsl(201, 87%, 27%); color: #fff !important;  
+/*.btn-primary {
+     background-color: hsl(201, 87%, 32%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1aa4ef", endColorstr="#0a6698");
+     background-image: -khtml-gradient(linear, left top, left bottom, from(#0a6698), to(#1aa4ef));
+     background-image: -moz-linear-gradient(top, #0a6698, #1aa4ef);
+     background-image: -ms-linear-gradient(top, #0a6698, #1aa4ef);
+     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1aa4ef), color-stop(100%, ##1aa4ef));
+     background-image: -webkit-linear-gradient(top, #0a6698, #1aa4ef);
+     background-image: -o-linear-gradient(top, #1aa4ef, #0a6698);
+     background-image: linear-gradient(#1aa4ef, #0a6698);
+     border-color: #0a6698 #0a6698 hsl(201, 87%, 27%); color: #fff !important;
 }*/

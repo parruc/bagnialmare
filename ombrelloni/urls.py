@@ -24,6 +24,8 @@ urlpatterns += i18n_patterns(
     # Bagni urls
     url(r'^', include('bagni.urls')),
 
+    url(r'^contacts/', include('contacts.urls')),
+
     # Authentication initial path
     url(_(r'^accounts/'), include('allauth.urls')),
 )
