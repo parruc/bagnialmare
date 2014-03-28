@@ -181,8 +181,9 @@
         function checkboxChanged(cb) {
             var bodyTag = $("body")
             bodyTag.addClass("loading");
-            $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function() {
+            $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function(response, status, xhr) {
                     bodyTag.removeClass("loading");
+                    window.scrollTo(0,0);
                     registerCollapseEvents();
             });
         };
