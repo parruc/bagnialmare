@@ -230,8 +230,6 @@
             }).addTo(map);
             var map_markerBounds = new L.LatLngBounds();
             $("#bagniToBeMapped li").each(function(index, element){
-                    console.log("marker " + parseFloat(element.getAttribute("data-x").replace(",",".")) + " " +
-                                         parseFloat(element.getAttribute("data-y").replace(",",".")));
                     var p = new L.LatLng(parseFloat(element.getAttribute("data-x").replace(",",".")), 
                                          parseFloat(element.getAttribute("data-y").replace(",",".")));
                     var marker = L.marker(p).addTo(map);
