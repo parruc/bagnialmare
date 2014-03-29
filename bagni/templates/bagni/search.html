@@ -4,10 +4,12 @@
 {% load batch from custom_filters %}
 
 {% block content %}
+<div id="wrapped">
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
-    <div class="search-page-search-row-wrapper-div hidden-xs"><div class="row search search-page-search-row">
+    <div class="search-page-search-row-wrapper-div hidden-xs">
+        <div class="row search search-page-search-row">
             <form role="form" action="{% url 'search' %}" method="get">
                 <input type="hidden" name="pos" value="" />
                 <div class="col-xs-5">
@@ -19,10 +21,14 @@
                     <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
                 </div>
                 <div class="col-xs-2 search-page-search-button-div">
-                    <button type="submit" id="search_submit" class="btn btn-primary search-page-button" value="search">{% trans "Search" %}</button>
+                    <button type="submit" id="search_submit" 
+                        class="btn btn-primary search-page-button" value="search">
+                        {% trans "Search" %}
+                    </button>
                 </div>
             </form>
-    </div></div>
+        </div><!--row search-->
+    </div>
 
     {% if has_get %}
         <div class="row result-wrapper-div">
@@ -35,7 +41,12 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
+                                    <h4 class="filter-result-service-category" data-toggle="collapse" 
+                                        data-target="#collapse{{ forloop.counter }}">
+                                        <span id="spancollapse{{ forloop.counter }}" 
+                                            class="glyphicon glyphicon-chevron-down my-brown"></span> 
+                                        {% filter capfirst %}{% trans facet_group %}{% endfilter %}
+                                    </h4>
                                 </div>
                                 {% for facet in facet_values %}
                                     {% if forloop.first %}
@@ -45,11 +56,18 @@
                                     <li class="list-unstyled">
 		                                {% if facet in active_facets %}
                                         <div class="checkbox filter-result-selected-checkbox-div">
-	                                        <label class="filter-result-selected-checkbox-label"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked><div class="">{{ facet.name }}</div></label>
+                                            <label class="filter-result-selected-checkbox-label">
+                                                <input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' 
+                                                type="checkbox" checked>
+                                                <div class="">{{ facet.name }}</div>
+                                            </label>
                                          </div>
 		                                {% else %}
                                         <div class="checkbox filter-result-checkbox-div">
-		                                    <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox"><div class="">{{ facet.name }}</div></label>
+                                            <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' 
+                                                type="checkbox">
+                                                <div class="">{{ facet.name }}</div>
+                                            </label>
                                         </div>
 		                                {% endif %}
 
@@ -84,7 +102,19 @@
                     </ul>
                     <div id="content" class="tab-content">
                         <div class="tab-pane" id="mapTab">
-                           <div id="bagno_map" style="width: 100%; height: 500px"></div>
+                            <ul id="bagniToBeMapped" class="hide">
+                                {%  for hit in hits %}
+                                    {% if hit.point.x and hit.point.y %}
+                                        <li data-url= "{{ hit.get_absolute_url }}"
+                                            data-name = "{{ hit.name }}"
+                                            data-address = "{{ hit.address }}"
+                                            data-x = "{{ hit.point.x }}"
+                                            data-y = "{{ hit.point.y }}" ></li>
+                                            </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                            <div id="bagno_map" style="width: 100%; height: 500px"></div>
                         </div>
                         <div class="tab-pane active" id="listTab">
                                 {%  for hit in hits %}
@@ -93,12 +123,19 @@
                                         <div class="row">
                                              <div class="col-xs-12">
                                                 <h2 class="single-result-header">
-                                                    <a href="{{ hit.get_absolute_url }}">{{ hit.name }} - {{hit.neighbourhood.name}}</a>
+                                                    <a href="{{ hit.get_absolute_url }}">
+                                                        {{ hit.name }} - {{hit.neighbourhood.name}}
+                                                    </a>
                                                     {% if hit.distance %}
                                                         <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
                                                     {% endif %}
                                                 </h2>
-                                                <p class="single-result-address">{{ hit.address }} - {{ hit.neighbourhood.name }}, {{ hit.neighbourhood.municipality.name }} - {{ hit.neighbourhood.municipality.district.name }}</p>
+                                                <p class="single-result-address">
+                                                    {{ hit.address }} - 
+                                                    {{ hit.neighbourhood.name }}, 
+                                                    {{ hit.neighbourhood.municipality.name }} - 
+                                                    {{ hit.neighbourhood.municipality.district.name }}
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +171,14 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="filter-result-service-category" data-toggle="collapse" data-target="#collapseInsideTab{{ forloop.counter }}"><span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown"></span> {% filter capfirst %}{% trans facet_group %}{% endfilter %}</h4>
+                                    <h4 class="filter-result-service-category" 
+                                        data-toggle="collapse" 
+                                        data-target="#collapseInsideTab{{ forloop.counter }}">
+                                        <span id="spancollapse{{ forloop.counter }}" 
+                                            class="glyphicon glyphicon-chevron-down my-brown">
+                                        </span> 
+                                        {% filter capfirst %}{% trans facet_group %}{% endfilter %}
+                                    </h4>
                                 </div>
                                 {% for facet in facet_values %}
                                     {% if forloop.first %}
@@ -144,7 +188,12 @@
                                     <li class="list-unstyled">
 		                                {% if facet in active_facets %}
                                         <div class="checkbox filter-result-selected-checkbox-div">
-	                                        <label class="filter-result-selected-checkbox-label"><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox" checked><div class="">{{ facet.name }}</div></label>
+                                            <label class="filter-result-selected-checkbox-label">
+                                                <input data-facet-url="?{{ facet.url }}" 
+                                                       onclick='checkboxChanged(this)' 
+                                                       type="checkbox" checked>
+                                                <div class="">{{ facet.name }}</div>
+                                            </label>
                                          </div>
 		                                {% else %}
                                         <div class="checkbox filter-result-checkbox-div">
@@ -167,26 +216,57 @@
         </div>
         <div class="modal-wheel"><!-- Place at bottom of page --></div>
     {% endif %}
+</div><!--wrapped-->
 {% endblock %}
 
 {% block additionaljs %}
     <script type="text/javascript">
-	$("#myTab a").click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-            //TODO: the following should be done only if tab == map
-            map.invalidateSize(false);
+        function drawMap(){
+            var map = L.map('bagno_map');
+            L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
+                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
+                subdomains: ['otile1','otile2','otile3','otile4'],
+                maxZoom: 18
+            }).addTo(map);
+            var map_markerBounds = new L.LatLngBounds();
+            $("#bagniToBeMapped li").each(function(index, element){
+                    var p = new L.LatLng(parseFloat(element.getAttribute("data-x").replace(",",".")), 
+                                         parseFloat(element.getAttribute("data-y").replace(",",".")));
+                    var marker = L.marker(p).addTo(map);
+                    map_markerBounds.extend(p);
+                    marker.bindPopup('<span class="my-bold"><a href=' + 
+                                     element.getAttribute("data-url") + 
+                                     '>' + 
+                                     element.getAttribute("data-name") + 
+                                     '</a></span> <em>' +
+                                     element.getAttribute("data-address") + 
+                                     '</em>').openPopup();
+                    });
             map.fitBounds(map_markerBounds);
-        });
+            $("#myTab a").click(function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                    //TODO: the following should be done only if tab == map
+                    map.invalidateSize(false);
+                    map.fitBounds(map_markerBounds);
+                });
+        };
+
         function checkboxChanged(cb) {
             var bodyTag = $("body")
             bodyTag.addClass("loading");
-            $("#wrap").load("{% url 'search' %}" + cb.getAttribute('data-facet-url') + " #wrap", function(response, status, xhr) {
-                    bodyTag.removeClass("loading");
-                    window.scrollTo(0,0);
-                    registerCollapseEvents();
-            });
+            $("#rootContainer").load("{% url 'search' %}" + 
+                             cb.getAttribute('data-facet-url') + 
+                             " #wrapped", 
+                             function(response, status, xhr) {
+                                bodyTag.removeClass("loading");
+                                window.scrollTo(0,0);
+                                drawMap();
+                                registerCollapseEvents();
+                              }
+                            );
         };
+
         function registerCollapseEvents(){
             $(".collapse").on("shown.bs.collapse", function () {
                  $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
@@ -195,37 +275,21 @@
                  $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
             });
         };
-        registerCollapseEvents();
+
+        function currentPosition(position)
+        {
+            $(":input[name=pos]").val(position.coords.latitude + "," + position.coords.longitude)
+        };
     </script>
 {% endblock additionaljs %}
 
 {% block specific_js %}
         <script type="text/javascript">
-        var map
-        var markerBounds;
         $(function() {
-            map = L.map('bagno_map');
-            L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
-                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
-                subdomains: ['otile1','otile2','otile3','otile4'],
-                maxZoom: 18
-            }).addTo(map);
-            map_markerBounds = new L.LatLngBounds();
-            {% for bagno in hits %}
-                {% if bagno.point.x and bagno.point.y %}
-                    var p = new L.LatLng({{ bagno.point.y|unlocalize }}, {{ bagno.point.x|unlocalize }})
-                    var marker = L.marker(p).addTo(map);
-                    map_markerBounds.extend(p);
-                    marker.bindPopup('<span class="my-bold"><a href={{ bagno.get_absolute_url }}>{{ bagno.name }}</a></span> <em>{{ bagno.address }}</em>').openPopup();
 
-                {% endif %}
-            {% endfor %}
-            map.fitBounds(map_markerBounds);
+            drawMap();
+            registerCollapseEvents();
 
-            function currentPosition(position)
-            {
-                $(":input[name=pos]").val(position.coords.latitude + "," + position.coords.longitude)
-            }
             if(navigator.geolocation)
             {
                 navigator.geolocation.getCurrentPosition(currentPosition);
