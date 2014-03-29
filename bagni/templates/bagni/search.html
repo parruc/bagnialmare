@@ -21,7 +21,7 @@
                     <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
                 </div>
                 <div class="col-xs-2 search-page-search-button-div">
-                    <button type="submit" id="search_submit" 
+                    <button type="submit" id="search_submit"
                         class="btn btn-primary search-page-button" value="search">
                         {% trans "Search" %}
                     </button>
@@ -33,7 +33,7 @@
     {% if has_get %}
         <div class="row result-wrapper-div">
             <div class="col-sm-3 hidden-xs">
-                <div class="filter-result-box">
+                <div id="filters" class="filter-result-box" data-base-url="{% url 'search' %}">
                     {% if facets.items %}
                         <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
                     {% endif %}
@@ -41,10 +41,10 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="filter-result-service-category" data-toggle="collapse" 
+                                    <h4 class="filter-result-service-category" data-toggle="collapse"
                                         data-target="#collapse{{ forloop.counter }}">
-                                        <span id="spancollapse{{ forloop.counter }}" 
-                                            class="glyphicon glyphicon-chevron-down my-brown"></span> 
+                                        <span id="spancollapse{{ forloop.counter }}"
+                                            class="glyphicon glyphicon-chevron-down my-brown"></span>
                                         {% filter capfirst %}{% trans facet_group %}{% endfilter %}
                                     </h4>
                                 </div>
@@ -57,14 +57,14 @@
 		                                {% if facet in active_facets %}
                                         <div class="checkbox filter-result-selected-checkbox-div">
                                             <label class="filter-result-selected-checkbox-label">
-                                                <input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' 
+                                                <input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)'
                                                 type="checkbox" checked>
                                                 <div class="">{{ facet.name }}</div>
                                             </label>
                                          </div>
 		                                {% else %}
                                         <div class="checkbox filter-result-checkbox-div">
-                                            <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' 
+                                            <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)'
                                                 type="checkbox">
                                                 <div class="">{{ facet.name }}</div>
                                             </label>
@@ -131,9 +131,9 @@
                                                     {% endif %}
                                                 </h2>
                                                 <p class="single-result-address">
-                                                    {{ hit.address }} - 
-                                                    {{ hit.neighbourhood.name }}, 
-                                                    {{ hit.neighbourhood.municipality.name }} - 
+                                                    {{ hit.address }} -
+                                                    {{ hit.neighbourhood.name }},
+                                                    {{ hit.neighbourhood.municipality.name }} -
                                                     {{ hit.neighbourhood.municipality.district.name }}
                                                 </p>
                                             </div>
@@ -171,12 +171,12 @@
                         {% if facet_group %}
                             <div class="">
                                 <div class="">
-                                    <h4 class="filter-result-service-category" 
-                                        data-toggle="collapse" 
+                                    <h4 class="filter-result-service-category"
+                                        data-toggle="collapse"
                                         data-target="#collapseInsideTab{{ forloop.counter }}">
-                                        <span id="spancollapse{{ forloop.counter }}" 
+                                        <span id="spancollapse{{ forloop.counter }}"
                                             class="glyphicon glyphicon-chevron-down my-brown">
-                                        </span> 
+                                        </span>
                                         {% filter capfirst %}{% trans facet_group %}{% endfilter %}
                                     </h4>
                                 </div>
@@ -189,8 +189,8 @@
 		                                {% if facet in active_facets %}
                                         <div class="checkbox filter-result-selected-checkbox-div">
                                             <label class="filter-result-selected-checkbox-label">
-                                                <input data-facet-url="?{{ facet.url }}" 
-                                                       onclick='checkboxChanged(this)' 
+                                                <input data-facet-url="?{{ facet.url }}"
+                                                       onclick='checkboxChanged(this)'
                                                        type="checkbox" checked>
                                                 <div class="">{{ facet.name }}</div>
                                             </label>
@@ -219,107 +219,12 @@
 </div><!--wrapped-->
 {% endblock %}
 
-{% block additionaljs %}
-    <script type="text/javascript">
-        function drawMap(){
-            var map = L.map('bagno_map');
-            L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
-                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
-                subdomains: ['otile1','otile2','otile3','otile4'],
-                maxZoom: 18
-            }).addTo(map);
-            var map_markerBounds = new L.LatLngBounds();
-            $("#bagniToBeMapped li").each(function(index, element){
-                    var p = new L.LatLng(parseFloat(element.getAttribute("data-x").replace(",",".")), 
-                                         parseFloat(element.getAttribute("data-y").replace(",",".")));
-                    var marker = L.marker(p).addTo(map);
-                    map_markerBounds.extend(p);
-                    marker.bindPopup('<span class="my-bold"><a href=' + 
-                                     element.getAttribute("data-url") + 
-                                     '>' + 
-                                     element.getAttribute("data-name") + 
-                                     '</a></span> <em>' +
-                                     element.getAttribute("data-address") + 
-                                     '</em>').openPopup();
-                    });
-            map.fitBounds(map_markerBounds);
-            $("#myTab a").click(function (e) {
-                    e.preventDefault();
-                    $(this).tab('show');
-                    //TODO: the following should be done only if tab == map
-                    map.invalidateSize(false);
-                    map.fitBounds(map_markerBounds);
-                });
-        };
-
-        function checkboxChanged(cb) {
-            var bodyTag = $("body")
-            bodyTag.addClass("loading");
-            $("#rootContainer").load("{% url 'search' %}" + 
-                             cb.getAttribute('data-facet-url') + 
-                             " #wrapped", 
-                             function(response, status, xhr) {
-                                bodyTag.removeClass("loading");
-                                window.scrollTo(0,0);
-                                drawMap();
-                                registerCollapseEvents();
-                              }
-                            );
-        };
-
-        function registerCollapseEvents(){
-            $(".collapse").on("shown.bs.collapse", function () {
-                 $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
-            });
-            $(".collapse").on('hidden.bs.collapse', function () {
-                 $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
-            });
-        };
-
-        function currentPosition(position)
-        {
-            $(":input[name=pos]").val(position.coords.latitude + "," + position.coords.longitude)
-        };
-    </script>
-{% endblock additionaljs %}
-
 {% block specific_js %}
-        <script type="text/javascript">
-        $(function() {
-
-            drawMap();
-            registerCollapseEvents();
-
-            if(navigator.geolocation)
-            {
-                navigator.geolocation.getCurrentPosition(currentPosition);
-
-            }
-            $("#search_l").autocomplete({
-                source: function (request, response) {
-                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/places", {
-                    query: request.term
-                    }, function (data) {
-                        response(data["success"]);
-                    });
-                },
-                minLength: 1
-            }).attr('autocomplete', 'off');
-
-            $("#search_q").autocomplete({
-                source: function (request, response) {
-                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/searchterms", {
-                    query: request.term
-                    }, function (data) {
-                        response(data["success"]);
-                    });
-                },
-                minLength: 1
-            }).attr('autocomplete', 'off');
-        });
-
-        </script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/search.js"></script>
 {% endblock specific_js %}
+
 
 {% block title %}{% trans "Search" %}{% endblock title %}
 

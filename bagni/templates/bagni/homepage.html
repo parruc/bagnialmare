@@ -4,7 +4,7 @@
 
 {% block bodyclass %}homepage-body-class{% endblock %}
 {% block navbarclass %}homepage-navbar{% endblock %}
-{% block logosuffix %}_red{% endblock %}
+{% block logoimage %}<img src="{{ STATIC_URL }}img/logo_red.jpg" />{% endblock %}
 
 {% block content %}
     {% comment %}
@@ -36,55 +36,15 @@
     </div>
 {% endblock %}
 
-{% block additionaljs %}
+{% block specific_js %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
     <script type="text/javascript">
         $(function() {
-            $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
-            var pos = "";
-            function currentPositionSuccess(position)
-            {
-                pos = position.coords.latitude + "," + position.coords.longitude;
-                $(":input[name=pos]").val(pos);
-            }
-            function currentPositionFailure(error)
-            {
-                $(":input[name=pos]").remove();
-                $(":input[name=l]").val("");
-            }
-            if(navigator.geolocation)
-            {
-                navigator.geolocation.getCurrentPosition(currentPositionSuccess, currentPositionFailure);
-            }
-            $("#search-form").submit(function(){
-                if(pos == "")
-                {
-                    currentPositionFailure();
-                }
-            });
-            $("#search_l").autocomplete({
-                source: function (request, response) {
-                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/places", {
-                    query: request.term
-                    }, function (data) {
-                        response(data["success"]);
-                    });
-                },
-                minLength: 1
-            }).attr('autocomplete', 'off');
-
-            $("#search_q").autocomplete({
-                source: function (request, response) {
-                    jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/searchterms", {
-                    query: request.term
-                    }, function (data) {
-                        response(data["success"]);
-                    });
-                },
-                minLength: 1
-            }).attr('autocomplete', 'off');
+        $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
         });
     </script>
-{% endblock %}
+{% endblock specific_js %}
 
 {% block title %}{% endblock title %}
 

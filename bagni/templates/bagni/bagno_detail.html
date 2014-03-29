@@ -65,7 +65,13 @@
                 {% endif %}
             </div>
             <div class="col-xs-6 col-sm-5 col-sm-offset-2">
-                <div id="bagno_map" class="well" style="width: 100%; height: 350px"></div>
+                <div id="bagno_map" class="well"
+                     style="width: 100%; height: 350px"
+                     data-x="{{ object.point.x|unlocalize }}"
+                     data-y="{{ object.point.y|unlocalize }}"
+                     data-name="{{ object.name }}"
+                     data-address="{{ object.address }}">
+                 </div>
             </div>
         </div>
         <div class="row">
@@ -120,21 +126,7 @@
 {% endblock content %}
 
 {% block specific_js %}
-    {% if object.point.x and object.point.y %}
-        <script type="text/javascript">
-        var map
-        $(function() {
-            map = L.map('bagno_map').setView([{{ object.point.y|unlocalize }}, {{ object.point.x|unlocalize }}], 13);
-            L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
-                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
-                subdomains: ['otile1','otile2','otile3','otile4'],
-                maxZoom: 18
-            }).addTo(map);
-            var marker = L.marker([{{ object.point.y|unlocalize }}, {{ object.point.x|unlocalize }}]).addTo(map);
-            marker.bindPopup('<span class="my-bold">{{ object.name }}</span><br><em>{{ object.address }}</em>').openPopup();
-        });
-        </script>
-    {% endif %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/single_map.js"></script>
 {% endblock specific_js %}
 
 {% block pagetitle %}
