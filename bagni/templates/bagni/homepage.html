@@ -15,7 +15,7 @@
             <h1 class="homepage-headline" >{% trans "Tutte le informazioni sui bagni della Riviera Romagnola." %}</h1>
             <p class="homepage-sub-headline">{% trans "Contatti, servizi offerti e indirizzi di oltre 800 stabilimenti balneari da Cattolica a Ferrara."%}</p>
 
-            <form class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
+            <form id="search-form" class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
                 <input type="hidden" name="pos" value="" />
                 <div class="col-md-5 homepage-input-div">
                     <label class="sr-only" for="search_q">{% trans 'What' %}</label>
@@ -40,15 +40,27 @@
     <script type="text/javascript">
         $(function() {
             $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
-            function currentPosition(position)
+            var pos = "";
+            function currentPositionSuccess(position)
             {
-                $(":input[name=pos]").val(position.coords.latitude + "," + position.coords.longitude)
+                pos = position.coords.latitude + "," + position.coords.longitude;
+                $(":input[name=pos]").val(pos);
+            }
+            function currentPositionFailure(error)
+            {
+                $(":input[name=pos]").remove();
+                $(":input[name=l]").val("");
             }
             if(navigator.geolocation)
             {
-                navigator.geolocation.getCurrentPosition(currentPosition);
-
+                navigator.geolocation.getCurrentPosition(currentPositionSuccess, currentPositionFailure);
             }
+            $("#search-form").submit(function(){
+                if(pos == "")
+                {
+                    currentPositionFailure();
+                }
+            });
             $("#search_l").autocomplete({
                 source: function (request, response) {
                     jQuery.get("/{{ LANGUAGE_CODE }}/json/autocomplete/places", {
