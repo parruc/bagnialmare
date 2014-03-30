@@ -4,10 +4,13 @@
 
 {% block content %}
 <div id="contatti">
-    <div>
-        {% include "contacts/info.html" %}
+    <div class="row">
+         <div class="col-xs-8 col-xs-offset-2">
+            <h1 class="">{% trans "Want to drop us a line" %}?</h1>
+            <p>{% include "contacts/info.html" %}</p>
+        </div>
     </div>
-    <div>
+    <div class="row">
         {% include "contacts/form.html" %}
     </div>
 </div>
