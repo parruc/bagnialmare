@@ -16,7 +16,7 @@ class M2MSelect(forms.Select):
 class ManagerSignupForm(forms.ModelForm):
     class Meta:
         model = Manager
-        fields = ['bagni', 'privacy']
+        fields = ['bagni', 'privacy', 'tos']
         widgets = {
             'bagni': M2MSelect()
         }
@@ -27,11 +27,17 @@ class ManagerSignupForm(forms.ModelForm):
         m.privacy = self.cleaned_data['privacy']
         m.save()
 
-    def clean_privacy(self):
-        data = self.cleaned_data['privacy']
+    def clean_required_bool(self, field_name):
+        data = self.cleaned_data[field_name]
         if not data:
             raise forms.ValidationError(
                 _(u'You must accept the terms and conditions'),
                 code='privacy'
             )
         return data
+
+    def clean_privacy(self):
+        return self.clean_required_bool('privacy')
+
+    def clean_tos(self):
+        return self.clean_required_bool('tos')
