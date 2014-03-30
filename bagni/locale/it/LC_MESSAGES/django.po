@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-21 11:30+0100\n"
+"POT-Creation-Date: 2014-03-30 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,148 +18,204 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: models.py:12 models.py:40
-msgid "District"
-msgstr "Città"
-
-#: models.py:13
-msgid "Districts"
-msgstr "Città"
-
-#: models.py:19 models.py:43 models.py:65 models.py:165 models.py:198
-msgid "Slug"
+#: constants.py:3
+msgid "Near me"
 msgstr ""
 
-#: models.py:35 models.py:71
-msgid "Municipality"
-msgstr "Comune"
-
-#: models.py:36
-msgid "Municipalities"
-msgstr "Comuni"
-
-#: models.py:58 models.py:202
-msgid "Bagno"
-msgstr "Bagno"
-
-#: models.py:59 templates/bagni/bagno_list.html:15
-#: templates/bagni/bagno_list.html.py:17 templates/bagni/benve.html:20
-#: templates/bagni/benve.html.py:22
-msgid "Bagni"
-msgstr "Bagni"
-
-#: models.py:128
-msgid "Service"
-msgstr "Servizio"
-
-#: models.py:129 templates/bagni/search.html:87
-msgid "Services"
-msgstr "Servizi"
-
-#: models.py:146
-msgid "comfort & relax"
-msgstr "comfort e relax"
-
-#: models.py:147
-msgid "food & beverage"
-msgstr "cibo e bevande"
-
-#: models.py:148
-msgid "sport & wellness"
-msgstr "sport e benessere"
-
-#: models.py:149
-msgid "children"
-msgstr "bambini"
-
-#: models.py:150
-msgid "technology"
-msgstr "tecnologia"
-
-#: models.py:151
-msgid "entertainment and games"
-msgstr "giochi e intrattenimento"
-
-#: models.py:152
-msgid "rent"
-msgstr "affitto"
-
-#: models.py:153
-msgid "special events"
-msgstr "eventi speciali"
-
-#: models.py:154
-msgid "accessibility"
-msgstr "accessibilità"
-
-#: models.py:155
-msgid "extra services"
-msgstr "servizi extra"
-
-#: models.py:156
-msgid "beauty & spa"
-msgstr "bellezza e terme"
-
-#: models.py:157
-msgid "trade"
-msgstr "vendita"
-
-#: models.py:158
-msgid "payment"
-msgstr "pagamento"
-
-#: models.py:159
-msgid "not set"
-msgstr "non impostata"
-
-#: models.py:192 models.py:201
-msgid "Image"
-msgstr "Immagine"
-
-#: models.py:193
-msgid "Images"
-msgstr "Immagini"
-
-#: urls.py:11
+#: urls.py:10
 msgid "^bagni/$"
 msgstr "^bagni/$"
 
-#: urls.py:15
+#: urls.py:11
 msgid "^bagno/(?P<slug>[-\\w]+)/$"
 msgstr "^bagno/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:19
+#: urls.py:12
+#, fuzzy
+msgid "^bagno/(?P<slug>[-\\w]+)/edit/$"
+msgstr "^bagno/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:13
 msgid "^search/$"
 msgstr "^cerca/$"
 
-#: urls.py:23
+#: urls.py:14
+msgid "^service-categories/$"
+msgstr ""
+
+#: urls.py:15
+#, fuzzy
+msgid "^service-category/(?P<slug>[-\\w]+)/$"
+msgstr "servizi/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:16
+#, fuzzy
+msgid "^services/$"
+msgstr "Servizi"
+
+#: urls.py:17
 msgid "^services/(?P<slug>[-\\w]+)/$"
 msgstr "servizi/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:27
+#: urls.py:18
+#, fuzzy
+msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
+msgstr "^bagno/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:19
+msgid "^neighbourhoods/$"
+msgstr ""
+
+#: urls.py:20
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
 msgstr "^comune/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:31
+#: urls.py:21
+#, fuzzy
+msgid "^municipalities/$"
+msgstr "Comuni"
+
+#: urls.py:22
 msgid "^district/(?P<slug>[-\\w]+)/$"
 msgstr "^citta/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:35
-msgid "^globalmap/$"
+#: urls.py:23
+#, fuzzy
+msgid "^districts/$"
+msgstr "Città"
+
+#: urls.py:24
+msgid "^json/autocomplete/places$"
 msgstr ""
 
-#: urls.py:39
-msgid "^benve$"
-msgstr "benve"
+#: urls.py:25
+msgid "^json/autocomplete/searchterms$"
+msgstr ""
 
-#: views.py:103
-#, python-format
-msgid "Cant find place '%s', sorting by relevance"
-msgstr "Impossibile trovare il luobo '%s', ordino per rilevanza"
+#: models/bagni.py:13 models/bagni_details.py:37 models/bagni_details.py:69
+msgid "Bagno"
+msgstr "Bagno"
 
-#: views.py:107
-msgid "Error in geocoding"
-msgstr "Errore di geocodifica"
+#: models/bagni.py:14 templates/bagni/bagno_list.html:15
+#: templates/bagni/bagno_list.html.py:17
+msgid "Bagni"
+msgstr "Bagni"
+
+#: models/bagni.py:21 models/bagni_details.py:20 models/bagni_details.py:65
+#: models/places.py:20 models/places.py:45 models/places.py:69
+#: models/services.py:22 models/services.py:45
+msgid "Slug"
+msgstr ""
+
+#: models/bagni.py:28 models/places.py:60
+msgid "Neighbourhood"
+msgstr ""
+
+#: models/bagni_details.py:12
+msgid "Language"
+msgstr ""
+
+#: models/bagni_details.py:13
+msgid "Languages"
+msgstr ""
+
+#: models/bagni_details.py:31
+msgid "Telephone number"
+msgstr ""
+
+#: models/bagni_details.py:32 templates/bagni/bagno_detail.html:81
+#: templates/bagni/bagno_detail.html:90
+msgid "Telephone numbers"
+msgstr ""
+
+#: models/bagni_details.py:47 models/bagni_details.py:68 models/services.py:19
+#: models/services.py:50
+msgid "Image"
+msgstr "Immagine"
+
+#: models/bagni_details.py:48
+msgid "Images"
+msgstr "Immagini"
+
+#: models/places.py:12 models/places.py:42
+#: templates/bagni/district_detail.html:24
+#: templates/bagni/district_detail.html:26
+msgid "District"
+msgstr "Città"
+
+#: models/places.py:13 templates/bagni/district_list.html:17
+#: templates/bagni/district_list.html:19
+msgid "Districts"
+msgstr "Città"
+
+#: models/places.py:36 models/places.py:66
+#: templates/bagni/municipality_detail.html:17
+#: templates/bagni/municipality_detail.html:19
+msgid "Municipality"
+msgstr "Comune"
+
+#: models/places.py:37 templates/bagni/municipality_list.html:17
+#: templates/bagni/municipality_list.html:19
+msgid "Municipalities"
+msgstr "Comuni"
+
+#: models/places.py:61
+msgid "Neighbourhoods"
+msgstr ""
+
+#: models/services.py:13 models/services.py:14
+#, fuzzy
+msgid "Service Category"
+msgstr "Servizio"
+
+#: models/services.py:37
+msgid "Service"
+msgstr "Servizio"
+
+#: models/services.py:38 templates/bagni/service_list.html:17
+#: templates/bagni/service_list.html:19
+msgid "Services"
+msgstr "Servizi"
+
+#: models/services.py:49
+msgid "Category"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:42 templates/bagni/bagno_detail.html:46
+#, fuzzy
+msgid "image"
+msgstr "Immagine"
+
+#: templates/bagni/bagno_detail.html:62
+#, fuzzy
+msgid "No images available for"
+msgstr "Nessun servizio disponibile"
+
+#: templates/bagni/bagno_detail.html:63
+msgid "No photos available. Add one now"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:79
+msgid "Contacts"
+msgstr "Contatti"
+
+#: templates/bagni/bagno_detail.html:90 templates/bagni/bagno_detail.html:95
+#, fuzzy
+msgid "not yet available"
+msgstr "Nessun servizio disponibile"
+
+#: templates/bagni/bagno_detail.html:93 templates/bagni/bagno_detail.html:95
+msgid "Website"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:101
+#, fuzzy
+msgid "Facilities"
+msgstr "Comuni"
+
+#: templates/bagni/bagno_detail.html:121
+msgid "Facilities information not available"
+msgstr ""
 
 #: templates/bagni/bagno_list.html:10
 msgid "No bagno"
@@ -170,75 +226,189 @@ msgstr "Nessun bagno"
 msgid "No bagno in this municipality"
 msgstr "Nessun bagno in questo comune"
 
-#: templates/bagni/homepage.html:14 templates/bagni/search.html:14
+#: templates/bagni/district_detail.html:19
+msgid "No municipality in this district"
+msgstr ""
+
+#: templates/bagni/district_list.html:12
+#, fuzzy
+msgid "No districts"
+msgstr "Città"
+
+#: templates/bagni/homepage.html:16
+msgid "Tutte le informazioni sui bagni della Riviera Romagnola."
+msgstr ""
+
+#: templates/bagni/homepage.html:17
+msgid ""
+"Contatti, servizi offerti e indirizzi di oltre 800 stabilimenti balneari da "
+"Cattolica a Ferrara."
+msgstr ""
+
+#: templates/bagni/homepage.html:22 templates/bagni/homepage.html.py:23
+#: templates/bagni/search.html:17
 msgid "What"
 msgstr "Cosa"
 
-#: templates/bagni/homepage.html:19 templates/bagni/search.html:19
+#: templates/bagni/homepage.html:27
+msgid "Near to"
+msgstr ""
+
+#: templates/bagni/homepage.html:28 templates/bagni/search.html:21
 msgid "Where"
 msgstr "Dove"
 
-#: templates/bagni/homepage.html:22 templates/bagni/search.html:22
-#: templates/bagni/search.html.py:131 templates/bagni/search.html:133
+#: templates/bagni/homepage.html:32 templates/bagni/search.html:27
+#: templates/bagni/search.html.py:230 templates/bagni/search.html:232
 msgid "Search"
 msgstr "Cerca"
 
-#: templates/bagni/homepage.html:33
-msgid "How does it work"
-msgstr "Come funziona"
-
-#: templates/bagni/homepage.html:37
-msgid "About us"
-msgstr "Chi siamo"
-
-#: templates/bagni/homepage.html:41
-msgid "Contacts"
-msgstr "Contatti"
-
-#: templates/bagni/homepage.html:50
+#: templates/bagni/homepage.html:52
 msgid "Homepage"
 msgstr "Homepage"
 
-#: templates/bagni/search.html:40
-msgid "Active filters"
-msgstr "Filtri attivi"
+#: templates/bagni/municipality_list.html:12
+#, fuzzy
+msgid "No municipality"
+msgstr "Comune"
 
-#: templates/bagni/search.html:52
-msgid "Available filters"
-msgstr "Filtri disponibili"
+#: templates/bagni/search.html:39 templates/bagni/search.html.py:169
+msgid "Filter by facility"
+msgstr ""
 
-#: templates/bagni/search.html:70
+#: templates/bagni/search.html:90
 msgid "results for"
 msgstr "risultati per"
 
-#: templates/bagni/search.html:72
+#: templates/bagni/search.html:92
+#, fuzzy
+msgid "results"
+msgstr "risultati per"
+
+#: templates/bagni/search.html:95
 msgid "near"
 msgstr "vicino"
 
 #: templates/bagni/search.html:100
-msgid "No service available"
-msgstr "Nessun servizio disponibile"
+msgid "List View"
+msgstr ""
 
-#: templates/bagni/search.html:108
+#: templates/bagni/search.html:101
+msgid "Map View"
+msgstr ""
+
+#: templates/bagni/search.html:102
+msgid "Filters"
+msgstr ""
+
+#: templates/bagni/search.html:148
 msgid "previous"
 msgstr "precedente"
 
-#: templates/bagni/search.html:113
+#: templates/bagni/search.html:153
 #, python-format
 msgid "Page %(page)s of %(num_pages)s."
 msgstr "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:118
+#: templates/bagni/search.html:158
 msgid "next"
 msgstr "successivo"
 
-#: templates/bagni/search.html:124
+#: templates/bagni/search.html:164
 msgid "No results for the given search"
 msgstr "Nessun risultato"
 
 #: templates/bagni/service_detail.html:11
+#: templates/bagni/servicecategory_detail.html:14
 msgid "No bagno has this service"
 msgstr "Nessun bagno ha questi servizio"
+
+#: templates/bagni/service_list.html:12
+#, fuzzy
+msgid "No service"
+msgstr "Servizio"
+
+#: templates/bagni/servicecategory_detail.html:19
+#: templates/bagni/servicecategory_list.html:16
+msgid "No service for this category"
+msgstr ""
+
+#: templates/bagni/servicecategory_list.html:21
+#, fuzzy
+msgid "No service categories"
+msgstr "Nessun servizio disponibile"
+
+#: templates/bagni/servicecategory_list.html:26
+#: templates/bagni/servicecategory_list.html:28
+#, fuzzy
+msgid "Service categories"
+msgstr "Servizi"
+
+#: views/search.py:48
+#, python-format
+msgid "Cant find place '%s', sorting by relevance"
+msgstr "Impossibile trovare il luobo '%s', ordino per rilevanza"
+
+#: views/search.py:55
+msgid "Error in geocoding"
+msgstr "Errore di geocodifica"
+
+#~ msgid "comfort & relax"
+#~ msgstr "comfort e relax"
+
+#~ msgid "food & beverage"
+#~ msgstr "cibo e bevande"
+
+#~ msgid "sport & wellness"
+#~ msgstr "sport e benessere"
+
+#~ msgid "children"
+#~ msgstr "bambini"
+
+#~ msgid "technology"
+#~ msgstr "tecnologia"
+
+#~ msgid "entertainment and games"
+#~ msgstr "giochi e intrattenimento"
+
+#~ msgid "rent"
+#~ msgstr "affitto"
+
+#~ msgid "special events"
+#~ msgstr "eventi speciali"
+
+#~ msgid "accessibility"
+#~ msgstr "accessibilità"
+
+#~ msgid "extra services"
+#~ msgstr "servizi extra"
+
+#~ msgid "beauty & spa"
+#~ msgstr "bellezza e terme"
+
+#~ msgid "trade"
+#~ msgstr "vendita"
+
+#~ msgid "payment"
+#~ msgstr "pagamento"
+
+#~ msgid "not set"
+#~ msgstr "non impostata"
+
+#~ msgid "^benve$"
+#~ msgstr "benve"
+
+#~ msgid "How does it work"
+#~ msgstr "Come funziona"
+
+#~ msgid "About us"
+#~ msgstr "Chi siamo"
+
+#~ msgid "Active filters"
+#~ msgstr "Filtri attivi"
+
+#~ msgid "Available filters"
+#~ msgstr "Filtri disponibili"
 
 #~ msgid "^city/(?P<city>[-\\w]+)/$"
 #~ msgstr "^citta/(?P<city>[-\\w]+)/$"
