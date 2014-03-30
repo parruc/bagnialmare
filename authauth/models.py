@@ -18,7 +18,12 @@ class Manager(models.Model):
     )
     privacy = models.BooleanField(default=True,
         null=False, blank=False,
-        help_text=_(u"Terms and conditions")
+        help_text=_(u"Privacy terms")
+    )
+
+    tos = models.BooleanField(default=True,
+        null=False, blank=False,
+        help_text=_(u"Terms of service")
     )
 
     def can_edit(self, obj):

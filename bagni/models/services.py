@@ -57,7 +57,7 @@ class Service(models.Model):
     def get_filtered_search_url(self):
         """ The search url to activate this (and only this) facet as filter
         """
-        return reverse("search") + "?f=services:" + self.name
+        return reverse("search") + "?f=services:" + self.name + "@" + self.category.name
 
     def __unicode__(self):
         return self.name

@@ -110,7 +110,11 @@
 		                    <div class="row">
 		                        {% for service in service_batch %}
 		                        <div class="col-xs-3">
-		                            <p><span class="glyphicon glyphicon-ok service-glyphicon"></span>  {% trans service.name %}</p>
+		                            <p>
+                                        <span class="glyphicon glyphicon-ok service-glyphicon"></span>
+                                        <a href="{{ service.get_filtered_search_url }}"> {% trans service.name %}
+                                        </a>
+                                    </p>
 		                        </div>
 		                        {% endfor %}
 		                    </div>
