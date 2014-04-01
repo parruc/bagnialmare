@@ -360,6 +360,17 @@ body.loading .modal-wheel {
     color: rgb(96, 96, 96);
 }
 
+
+
+.hp-facility-btn{
+    background-color: rgb(240, 240, 240);
+}
+
+.hp-facility-btn:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+
 .my-brown{
     color: #6A4A3C;
 }
