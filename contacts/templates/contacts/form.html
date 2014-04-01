@@ -1,9 +1,25 @@
 {% load i18n %}
 
-<form action="." method="post">
-	{% csrf_token %}
-{{ form.as_p }}
-<input class="btn" type="submit"
-	{% if contact.submit %} value="{{ contact.submit }} sender"{% endif %} />
-</form>
-<div class="clearfix"></div>
+
+{% csrf_token %}
+{{ form.as_div }}
+<div class="col-xs-8 col-xs-offset-2">
+    <form  action="." method="post" class="" role="form">
+        <div class="form-group">
+            {{ form.sender.errors }}
+            <label class="my-brown" for="id_sender">{% trans "Your email address" %}:</label>
+            {{ form.sender }}
+        </div>
+        <div class="form-group"> 
+            {{ form.subject.errors }}
+            <label class="my-brown" for="id_subject">{% trans "Subject" %}:</label>
+            {{ form.subject }}
+        </div>
+        <div class="form-group"> 
+            {{ form.message.errors }}
+            <label class="my-brown" for="id_message">{% trans "Message" %}:</label>
+            {{ form.message }}
+        </div>
+        <button class="btn btn-primary" type="submit" >{% trans "Send Your Message" %}</button>
+    </form>
+</div>
