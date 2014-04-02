@@ -18,11 +18,11 @@ function drawMap(){
                                  parseFloat($(element).data("x").replace(",",".")));
             var marker = L.marker(p).addTo(map);
             map_markerBounds.extend(p);
-            marker.bindPopup('<span class="my-bold"><a href=' +
+            marker.bindPopup('<b class="my-bold"><a href=' +
                              $(element).data("url") +
                              '>' +
                              $(element).data("name") +
-                             '</a></span> <em>' +
+                             '</a></b> <em>' +
                              $(element).data("address") +
                              '</em>').openPopup();
             });

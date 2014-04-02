@@ -4,133 +4,126 @@
 {% load batch from custom_filters %}
 
 {% block content %}
-    <div class="bagno-detail-wrapper-div">
-        <div class="row">
-            <div class="col-xs-12">
-                {% if object.name %}
-                    <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
-                {% endif %}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="bagno-detail-address">{{ object.address }} - {{ object.neighbourhood.name }}</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-5">
-                {% if object.images.all %}
-                    <div id="bagno-image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                        {% with object.images.all as bagno_images %}
-                            {% for bagno_image in bagno_images %}
-                                {% if forloop.first %}
-                                <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" class="active"></li>
-                                {% else %}
-                                <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" ></li>
-                                {% endif %}
-                            {% endfor %}
-                        {% endwith %}
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                        {% with object.images.all as bagno_images %}
-                            {% for bagno_image in bagno_images %}
-                                {% if forloop.first %}
-                                <div class="item active">
-                                    <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {% trans "image" %}">
-                                </div>
-                                {% else %}
-                                <div class="item">
-                                    <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {% trans "image" %}">
-                                </div>
-                                {% endif %}
-                            {% endfor %}
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#bagno-image-carousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        {% endwith %}
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="no-images-wrapper-div">
-                        <img class ="thumbnail img-responsive" src="{{ STATIC_URL }}img/no_images.png" alt="{% trans "No images available for" %} {{ object.name|safe }}">
-                        <span class="no-images-text"><a href="#">{% trans "No photos available. Add one now" %}.</a></span>
-                    </div>
-                {% endif %}
-            </div>
-            <div class="col-xs-6 col-sm-5 col-sm-offset-2">
-                <div id="bagno_map" class="well"
-                     style="width: 100%; height: 350px"
-                     data-x="{{ object.point.x|unlocalize }}"
-                     data-y="{{ object.point.y|unlocalize }}"
-                     data-name="{{ object.name }}"
-                     data-address="{{ object.address }}">
-                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 class="bagno-detail-sub-header">{% trans "Contacts" %}</h2>
-                {% if object.telephones.all %}
-                    <p><span class="bagno-detail-label">{% trans "Telephone numbers" %}: </span>
-                    {% for tel in object.telephones.all %}
-                    {{ tel.name }} {{ tel.number }}
-                    {% if forloop.last %}
-                    {% else %}
-                     -
-                    {% endif %}
-                    {% endfor %}</p>
-                {% else %}
-                    <p><span class="my-bold">{% trans "Telephone numbers" %}: </span><em>{% trans "not yet available" %}</em></p>
-                {% endif %}
-                {% if object.site %}
-                    <p><span class="my-bold">{% trans "Website" %}: </span><a href="{{ object.site }}">{{ object.site }}</a></p>
-                {% else %}
-                    <p><span class="my-bold">{% trans "Website" %}: </span><em>{% trans "not yet available" %}</em></p>
-                {% endif %}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 class="bagno-detail-sub-header">{% trans "Facilities" %}</h2>
-                {% if object.services.all %}
-		            {% with object.services.all|dictsort:"category" as services %}
-		                {% regroup services by category as categorized_services %}
-		                {% for categorized_service in categorized_services %}
-		                    <div class="row">
-		                        <div class="col-xs-12"><h4 class="">{% filter capfirst %}{% trans categorized_service.grouper.name %}{% endfilter %}</h4></div>
-		                    </div>
-		                    {% for service_batch in categorized_service.list|batch:4 %}
-		                    <div class="row">
-		                        {% for service in service_batch %}
-		                        <div class="col-xs-3">
-		                            <p>
-                                        <span class="glyphicon glyphicon-ok service-glyphicon"></span>
-                                        <a href="{{ service.get_filtered_search_url }}"> {% trans service.name %}
-                                        </a>
-                                    </p>
-		                        </div>
-		                        {% endfor %}
-		                    </div>
-		                    {% endfor %}
-		                {% endfor %}
-		            {% endwith %}
-		        {% else %}
-		            <p><em>{% trans "Facilities information not available" %}</em></p>
-		        {% endif %}
-            </div>
-        </div>
+<div id="contact-form"></div>
+<div class="bagno-detail-wrapper-div">
+  <div class="row">
+    <div class="col-xs-12">
+      {% if object.name %}
+      <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
+      {% endif %}
+      {% if object.is_managed %}
+        <button id="contact-form-button" class="button" data-url="{{ object.get_contactform_url }}">
+          {% trans "Contacts of the structure" %}
+        </button>
+      {% endif %}
     </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="bagno-detail-address">{{ object.address }} - {{ object.neighbourhood.name }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-5">
+      {% if object.images.all %}
+        <div id="bagno-image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            {% with object.images.all as bagno_images %}
+              {% for bagno_image in bagno_images %}
+                {% if forloop.first %}
+                  <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" class="active"></li>
+                {% else %}
+                  <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" ></li>
+                {% endif %}
+              {% endfor %}
+            {% endwith %}
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            {% with object.images.all as bagno_images %}
+              {% for bagno_image in bagno_images %}
+                {% if forloop.first %}
+                  <div class="item active">
+                    <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {% trans "image" %}" />
+                  </div>
+                {% else %}
+                  <div class="item">
+                    <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {% trans "image" %}" />
+                  </div>
+                {% endif %}
+              {% endfor %}
+              <!-- Controls -->
+              <a class="left carousel-control" href="#bagno-image-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            {% endwith %}
+          </div>
+        </div>
+      {% else %}
+        <div class="no-images-wrapper-div">
+          <img class ="thumbnail img-responsive" src="{{ STATIC_URL }}img/no_images.png" alt="{% trans "No images available for" %} {{ object.name|safe }}">
+          <span class="no-images-text">
+            <a href="#">{% trans "No photos available. Add one now" %}.</a>
+          </span>
+        </div>
+      {% endif %}
+    </div>
+    <div class="col-xs-6 col-sm-5 col-sm-offset-2">
+      <div id="bagno_map" class="well"
+                       style="width: 100%; height: 350px"
+                       data-x="{{ object.point.x|unlocalize }}"
+                       data-y="{{ object.point.y|unlocalize }}"
+                       data-name="{{ object.name }}"
+                       data-address="{{ object.address }}"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="bagno-detail-sub-header">{% trans "Facilities" %}</h2>
+      {% if object.services.all %}
+        {% with object.services.all|dictsort:"category" as services %}
+          {% regroup services by category as categorized_services %}
+          {% for categorized_service in categorized_services %}
+            <div class="row">
+              <div class="col-xs-12">
+                <h4 class="">
+                  {% filter capfirst %}
+                    {% trans categorized_service.grouper.name %}
+                  {% endfilter %}
+                </h4>
+              </div>
+            </div>
+            {% for service_batch in categorized_service.list|batch:4 %}
+              <div class="row">
+                {% for service in service_batch %}
+                  <div class="col-xs-3">
+                    <p>
+                      <span class="glyphicon glyphicon-ok service-glyphicon"></span>
+                      <a href="{{ service.get_filtered_search_url }}">{% trans service.name %}</a>
+                    </p>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          {% endfor %}
+        {% endwith %}
+      {% else %}
+        <p>
+          <em>{% trans "Facilities information not available" %}</em>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</div>
 {% endblock content %}
 
 {% block specific_js %}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/single_map.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/single_map.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/contact_dialog.js"></script>
 {% endblock specific_js %}
 
 {% block pagetitle %}
@@ -139,5 +132,3 @@
     {% endif %}
     {{ object.name }}
 {% endblock pagetitle %}
-
-

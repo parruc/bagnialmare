@@ -10,6 +10,7 @@ urlpatterns = patterns(
     url(_(r'^bagni/$'), views.BagniView.as_view(), name="bagni",),
     url(_(r'^bagno/(?P<slug>[-\w]+)/$'), views.BagnoView.as_view(), name="bagno"),
     url(_(r'^bagno/(?P<slug>[-\w]+)/edit/$'), views.BagnoEdit.as_view(), name="bagno-edit"),
+    url(_(r'^bagno/(?P<slug>[-\w]+)/contacts/$'), views.BagnoContacts.as_view(), name="bagno-contacts"),
     url(_(r'^search/$'), views.SearchView.as_view(), name="search"),
     url(_(r'^service-categories/$'), views.ServiceCategoriesView.as_view(), name="service-categories"),
     url(_(r'^service-category/(?P<slug>[-\w]+)/$'), views.ServiceCategoryView.as_view(), name="service-category"),

@@ -1,0 +1,38 @@
+{% load thumbnail i18n %}
+
+{% block content %}
+<div id="contatti">
+    <div>
+        <h2 class="bagno-detail-sub-header">{% trans "Contacts" %}</h2>
+      <div>
+        <p>
+          {% if object.telephones.all %}
+            <span class="bagno-detail-label">{% trans "Telephone numbers" %}:</span>
+            {% for tel in object.telephones.all %}
+              {{ tel.name }} {{ tel.number }}
+              {% if forloop.last %}
+              {% else %}
+                -
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            <b class="my-bold">{% trans "Telephone numbers" %}:</b>
+            <em>{% trans "not yet available" %}</em>
+          {% endif %}
+        </p>
+        <p>
+          {% if object.site %}
+            <b class="my-bold">{% trans "Website" %}:</b>
+              <a href="{{ object.site }}">{{ object.site }}</a>
+          {% else %}
+            <b class="my-bold">{% trans "Website" %}:</b>
+            <em>{% trans "not yet available" %}</em>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+    <div>
+        {% include "contacts/form.html" %}
+    </div>
+</div>
+{% endblock content %}

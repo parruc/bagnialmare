@@ -1,6 +1,7 @@
 from bagni import BagniView; BagniView  # pyflakes
 from bagni import BagnoView; BagnoView  # pyflakes
 from bagni import BagnoEdit; BagnoEdit  # pyflakes
+from bagni import BagnoContacts; BagnoContacts  # pyflakes
 
 from jsonviews import JsonAutocompletePlaces; JsonAutocompletePlaces  # pyflakes
 from jsonviews import JsonAutocompleteSearchterms; JsonAutocompleteSearchterms  #pyflakes

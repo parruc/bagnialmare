@@ -2,11 +2,15 @@
 
 from django.core.exceptions import PermissionDenied
 from django.core.exceptions import ObjectDoesNotExist
+from django.core.urlresolvers import reverse
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic.list import ListView
 from django.contrib import messages
 #from django.utils.translation import ugettext as _
+
+from contacts.views import ContactView
+from contacts.forms import ContactForm
 
 from ..models import Bagno
 from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
@@ -14,6 +18,7 @@ from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
 import logging
 logging.basicConfig()
 logger = logging.getLogger("bagni.console")
+
 
 class BagniView(ListView):
     """ View for a list of bagni
@@ -67,13 +72,8 @@ class BagnoEdit(UpdateView):
     def dispatch(self, request, *args, **kwargs):
         """Controllo che il manager possa modificare il bagno
         """
-        is_staff = request.user.is_staff
-        try:
-            manager = request.user.manager
-            can_edit = manager.can_edit(self.object)
-        except (ObjectDoesNotExist, AttributeError):
-            can_edit = False
-        if is_staff or can_edit:
+        self.object = self.get_object()
+        if self.object.can_be_managed_by(request.user):
             return super(BagnoEdit, self).dispatch(request, *args, **kwargs)
         raise PermissionDenied
 
@@ -116,4 +116,31 @@ class BagnoEdit(UpdateView):
         context = super(BagnoEdit, self).get_context_data(*args, **kwargs)
         context['telephone_formset'] = TelephoneFormSet(instance = self.object)
         context['image_formset'] = ImageFormSet(instance = self.object)
+        return context
+
+
+class BagnoContacts(ContactView):
+    """ Contact info and form view for a single bagno
+    """
+    model = Bagno
+    template_name = "bagni/bagno_contacts.html"
+    form_class = ContactForm
+
+    def dispatch(self, request, *args, **kwargs):
+        if not "slug" in kwargs:
+            raise ObjectDoesNotExist
+        slug = kwargs['slug']
+        self.object = Bagno.objects.get(slug=slug)
+        if not self.object.is_managed():
+            raise PermissionDenied
+        self.success_url = self.object.get_absolute_url()
+        self.recipients = [m.user.email for m in self.object.managers.all()]
+        self.form = self.get_form(self.form_class)
+        self.submit_url = reverse("bagno-contacts", kwargs={'slug': slug})
+        return super(BagnoContacts, self).dispatch(request, *args, **kwargs)
+
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(BagnoContacts, self).get_context_data(*args, **kwargs)
+        context.update({"form": self.form})
         return context

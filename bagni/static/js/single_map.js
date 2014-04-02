@@ -11,5 +11,5 @@ $(function() {
         maxZoom: 18
     }).addTo(map);
     var marker = L.marker([bagno_y, bagno_x]).addTo(map);
-    marker.bindPopup('<span class="my-bold">'+ bagno_name +'</span><br><em>' + bagno_address + '</em>').openPopup();
+    marker.bindPopup('<b class="my-bold">'+ bagno_name +'</b><br /><em>' + bagno_address + '</em>').openPopup();
 });

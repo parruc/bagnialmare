@@ -4,7 +4,7 @@ import autoslug
 from django.contrib.gis.db import models
 from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
-
+from django.core.exceptions import ObjectDoesNotExist
 
 class Bagno(models.Model):
     """ The model for Bagno object
@@ -84,5 +84,22 @@ class Bagno(models.Model):
     def get_absolute_url(self):
         return ("bagno", [self.slug, ])
 
+    @models.permalink
     def get_edit_url(self):
         return ("bagno-edit", [self.slug, ])
+
+    @models.permalink
+    def get_contactform_url(self):
+        return ("bagno-contacts", [self.slug, ])
+
+    def is_managed(self):
+        return len(self.managers.all()) > 0
+
+    def can_be_managed_by(self, user):
+        is_staff = user.is_staff
+        try:
+            manager = user.manager
+            can_edit = manager.can_edit(self)
+        except (ObjectDoesNotExist, AttributeError):
+            can_edit = False
+        return is_staff or can_edit
