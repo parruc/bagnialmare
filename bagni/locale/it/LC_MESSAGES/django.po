@@ -3,24 +3,24 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-02 18:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2014-04-02 19:54+0100\n"
+"Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
+"Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+"Language: IT\n"
 
 #: constants.py:3
 msgid "Near me"
-msgstr ""
+msgstr "Vicino a me"
 
 #: urls.py:10
 msgid "^bagni/$"
@@ -31,9 +31,8 @@ msgid "^bagno/(?P<slug>[-\\w]+)/$"
 msgstr "^bagno/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:12
-#, fuzzy
 msgid "^bagno/(?P<slug>[-\\w]+)/edit/$"
-msgstr "^bagno/(?P<slug>[-\\w]+)/$"
+msgstr "^bagno/(?P<slug>[-\\w]+)/edit/$"
 
 #: urls.py:13
 msgid "^search/$"
@@ -41,56 +40,51 @@ msgstr "^cerca/$"
 
 #: urls.py:14
 msgid "^service-categories/$"
-msgstr ""
+msgstr "^servizi-categorie/$"
 
 #: urls.py:15
-#, fuzzy
 msgid "^service-category/(?P<slug>[-\\w]+)/$"
-msgstr "servizi/(?P<slug>[-\\w]+)/$"
+msgstr "^servizi-categorie/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:16
-#, fuzzy
 msgid "^services/$"
-msgstr "Servizi"
+msgstr "^servizi/$"
 
 #: urls.py:17
 msgid "^services/(?P<slug>[-\\w]+)/$"
-msgstr "servizi/(?P<slug>[-\\w]+)/$"
+msgstr "^servizi/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:18
-#, fuzzy
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
-msgstr "^bagno/(?P<slug>[-\\w]+)/$"
+msgstr "^localita/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:19
 msgid "^neighbourhoods/$"
-msgstr ""
+msgstr "^localita/$"
 
 #: urls.py:20
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
 msgstr "^comune/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:21
-#, fuzzy
 msgid "^municipalities/$"
-msgstr "Comuni"
+msgstr "^comuni/$"
 
 #: urls.py:22
 msgid "^district/(?P<slug>[-\\w]+)/$"
 msgstr "^citta/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:23
-#, fuzzy
 msgid "^districts/$"
-msgstr "Città"
+msgstr "^citta/$"
 
 #: urls.py:24
 msgid "^json/autocomplete/places$"
-msgstr ""
+msgstr "^json/autocomplete/places$"
 
 #: urls.py:25
 msgid "^json/autocomplete/searchterms$"
-msgstr ""
+msgstr "^json/autocomplete/searchterms$"
 
 #: models/bagni.py:13 models/bagni_details.py:37 models/bagni_details.py:69
 msgid "Bagno"
@@ -105,28 +99,28 @@ msgstr "Bagni"
 #: models/places.py:20 models/places.py:45 models/places.py:69
 #: models/services.py:22 models/services.py:45
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: models/bagni.py:28 models/places.py:60
 msgid "Neighbourhood"
-msgstr ""
+msgstr "Località"
 
 #: models/bagni_details.py:12
 msgid "Language"
-msgstr ""
+msgstr "Lingua"
 
 #: models/bagni_details.py:13
 msgid "Languages"
-msgstr ""
+msgstr "Lingue"
 
 #: models/bagni_details.py:31
 msgid "Telephone number"
-msgstr ""
+msgstr "Numero di telefono"
 
 #: models/bagni_details.py:32 templates/bagni/bagno_detail.html:81
 #: templates/bagni/bagno_detail.html:90
 msgid "Telephone numbers"
-msgstr ""
+msgstr "Numeri di telefono"
 
 #: models/bagni_details.py:47 models/bagni_details.py:68 models/services.py:19
 #: models/services.py:50
@@ -161,12 +155,11 @@ msgstr "Comuni"
 
 #: models/places.py:61
 msgid "Neighbourhoods"
-msgstr ""
+msgstr "Località"
 
 #: models/services.py:13 models/services.py:14
-#, fuzzy
 msgid "Service Category"
-msgstr "Servizio"
+msgstr "Categoria di servizio"
 
 #: models/services.py:37
 msgid "Service"
@@ -179,43 +172,39 @@ msgstr "Servizi"
 
 #: models/services.py:49
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: templates/bagni/bagno_detail.html:42 templates/bagni/bagno_detail.html:46
-#, fuzzy
 msgid "image"
 msgstr "Immagine"
 
 #: templates/bagni/bagno_detail.html:62
-#, fuzzy
 msgid "No images available for"
-msgstr "Nessun servizio disponibile"
+msgstr "Non abbiamo immagini per"
 
 #: templates/bagni/bagno_detail.html:63
 msgid "No photos available. Add one now"
-msgstr ""
+msgstr "Non ci sono immagini disponibili. Aggiungine una."
 
 #: templates/bagni/bagno_detail.html:79
 msgid "Contacts"
 msgstr "Contatti"
 
 #: templates/bagni/bagno_detail.html:90 templates/bagni/bagno_detail.html:95
-#, fuzzy
 msgid "not yet available"
-msgstr "Nessun servizio disponibile"
+msgstr "non ancora disponibile"
 
 #: templates/bagni/bagno_detail.html:93 templates/bagni/bagno_detail.html:95
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #: templates/bagni/bagno_detail.html:101
-#, fuzzy
 msgid "Facilities"
-msgstr "Comuni"
+msgstr "Servizi"
 
 #: templates/bagni/bagno_detail.html:125
 msgid "Facilities information not available"
-msgstr ""
+msgstr "Informazioni non disponibili"
 
 #: templates/bagni/bagno_list.html:10
 msgid "No bagno"
@@ -228,32 +217,35 @@ msgstr "Nessun bagno in questo comune"
 
 #: templates/bagni/district_detail.html:19
 msgid "No municipality in this district"
-msgstr ""
+msgstr "Non ci sono comuni censiti in questa provincia"
 
 #: templates/bagni/district_list.html:12
-#, fuzzy
 msgid "No districts"
-msgstr "Città"
+msgstr "Nessuna città"
 
 #: templates/bagni/homepage.html:16
 msgid "Tutte le informazioni sui bagni della Riviera Romagnola."
-msgstr ""
+msgstr "Tutte le informazioni sui bagni della Riviera Romagnola."
 
 #: templates/bagni/homepage.html:17
 msgid "All the info you need about the beach resorts in Riviera Romagnola"
-msgstr ""
+msgstr "Tutte le informazioni sui bagni della Riviera Romagnola."
 
 #: templates/bagni/homepage.html:18
 msgid ""
 "Contatti, servizi offerti e indirizzi di oltre 1000 stabilimenti balneari da "
 "Cattolica a Ferrara."
 msgstr ""
+"Contatti, servizi offerti e indirizzi di oltre 1000 stabilimenti balneari da "
+"Cattolica a Ferrara."
 
 #: templates/bagni/homepage.html:19
 msgid ""
 "Contacts, services and addresses of more than 1000 beach resorts from "
 "Cattolica to Ferrara"
 msgstr ""
+"Contatti, servizi offerti e indirizzi di oltre 1000 stabilimenti balneari da "
+"Cattolica a Ferrara."
 
 #: templates/bagni/homepage.html:24 templates/bagni/homepage.html.py:26
 #: templates/bagni/search.html:17
@@ -262,15 +254,15 @@ msgstr "Cosa"
 
 #: templates/bagni/homepage.html:27
 msgid "Show the facility list"
-msgstr ""
+msgstr "Mostra l'elenco dei servizi"
 
 #: templates/bagni/homepage.html:32 templates/bagni/homepage.html.py:33
 msgid "Near to"
-msgstr ""
+msgstr "Vicino a"
 
 #: templates/bagni/homepage.html:36
 msgid "sort by distance from me"
-msgstr ""
+msgstr "ordina per distanza da me"
 
 #: templates/bagni/homepage.html:40 templates/bagni/search.html:27
 #: templates/bagni/search.html.py:230 templates/bagni/search.html:232
@@ -282,9 +274,8 @@ msgid "Homepage"
 msgstr "Homepage"
 
 #: templates/bagni/municipality_list.html:12
-#, fuzzy
 msgid "No municipality"
-msgstr "Comune"
+msgstr "Nessun comune"
 
 #: templates/bagni/search.html:21
 msgid "Where"
@@ -292,14 +283,13 @@ msgstr "Dove"
 
 #: templates/bagni/search.html:39 templates/bagni/search.html.py:169
 msgid "Filter by facility"
-msgstr ""
+msgstr "Filtra per servizio"
 
 #: templates/bagni/search.html:90
 msgid "results for"
 msgstr "risultati per"
 
 #: templates/bagni/search.html:92
-#, fuzzy
 msgid "results"
 msgstr "risultati per"
 
@@ -309,15 +299,15 @@ msgstr "vicino"
 
 #: templates/bagni/search.html:100
 msgid "List View"
-msgstr ""
+msgstr "Lista"
 
 #: templates/bagni/search.html:101
 msgid "Map View"
-msgstr ""
+msgstr "Mappa"
 
 #: templates/bagni/search.html:102
 msgid "Filters"
-msgstr ""
+msgstr "Filtri"
 
 #: templates/bagni/search.html:148
 msgid "previous"
@@ -342,25 +332,22 @@ msgid "No bagno has this service"
 msgstr "Nessun bagno ha questi servizio"
 
 #: templates/bagni/service_list.html:12
-#, fuzzy
 msgid "No service"
-msgstr "Servizio"
+msgstr "Nessun servizio"
 
 #: templates/bagni/servicecategory_detail.html:19
 #: templates/bagni/servicecategory_list.html:16
 msgid "No service for this category"
-msgstr ""
+msgstr "Non ci sono servizi in questa categoria"
 
 #: templates/bagni/servicecategory_list.html:21
-#, fuzzy
 msgid "No service categories"
-msgstr "Nessun servizio disponibile"
+msgstr "Nessuna categoria di servizio"
 
 #: templates/bagni/servicecategory_list.html:26
 #: templates/bagni/servicecategory_list.html:28
-#, fuzzy
 msgid "Service categories"
-msgstr "Servizi"
+msgstr "Categorie di servizi"
 
 #: views/search.py:48
 #, python-format
