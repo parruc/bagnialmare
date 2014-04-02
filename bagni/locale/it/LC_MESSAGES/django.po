@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:37+0200\n"
+"POT-Creation-Date: 2014-04-02 18:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,7 +213,7 @@ msgstr ""
 msgid "Facilities"
 msgstr "Comuni"
 
-#: templates/bagni/bagno_detail.html:121
+#: templates/bagni/bagno_detail.html:125
 msgid "Facilities information not available"
 msgstr ""
 
@@ -240,30 +240,44 @@ msgid "Tutte le informazioni sui bagni della Riviera Romagnola."
 msgstr ""
 
 #: templates/bagni/homepage.html:17
+msgid "All the info you need about the beach resorts in Riviera Romagnola"
+msgstr ""
+
+#: templates/bagni/homepage.html:18
 msgid ""
-"Contatti, servizi offerti e indirizzi di oltre 800 stabilimenti balneari da "
+"Contatti, servizi offerti e indirizzi di oltre 1000 stabilimenti balneari da "
 "Cattolica a Ferrara."
 msgstr ""
 
-#: templates/bagni/homepage.html:22 templates/bagni/homepage.html.py:23
+#: templates/bagni/homepage.html:19
+msgid ""
+"Contacts, services and addresses of more than 1000 beach resorts from "
+"Cattolica to Ferrara"
+msgstr ""
+
+#: templates/bagni/homepage.html:24 templates/bagni/homepage.html.py:26
 #: templates/bagni/search.html:17
 msgid "What"
 msgstr "Cosa"
 
 #: templates/bagni/homepage.html:27
+msgid "Show the facility list"
+msgstr ""
+
+#: templates/bagni/homepage.html:32 templates/bagni/homepage.html.py:33
 msgid "Near to"
 msgstr ""
 
-#: templates/bagni/homepage.html:28 templates/bagni/search.html:21
-msgid "Where"
-msgstr "Dove"
+#: templates/bagni/homepage.html:36
+msgid "sort by distance from me"
+msgstr ""
 
-#: templates/bagni/homepage.html:32 templates/bagni/search.html:27
+#: templates/bagni/homepage.html:40 templates/bagni/search.html:27
 #: templates/bagni/search.html.py:230 templates/bagni/search.html:232
 msgid "Search"
 msgstr "Cerca"
 
-#: templates/bagni/homepage.html:52
+#: templates/bagni/homepage.html:96
 msgid "Homepage"
 msgstr "Homepage"
 
@@ -271,6 +285,10 @@ msgstr "Homepage"
 #, fuzzy
 msgid "No municipality"
 msgstr "Comune"
+
+#: templates/bagni/search.html:21
+msgid "Where"
+msgstr "Dove"
 
 #: templates/bagni/search.html:39 templates/bagni/search.html.py:169
 msgid "Filter by facility"

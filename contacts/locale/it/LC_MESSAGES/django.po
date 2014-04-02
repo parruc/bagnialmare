@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:42+0200\n"
+"POT-Creation-Date: 2014-04-02 18:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: forms.py:6
+#: forms.py:6 templates/contacts/form.html:10
 msgid "Your email address"
 msgstr ""
 
-#: forms.py:8
+#: forms.py:8 templates/contacts/form.html:15
 msgid "Subject"
 msgstr ""
 
-#: forms.py:10
+#: forms.py:10 templates/contacts/form.html:20
 msgid "Message"
 msgstr ""
 
@@ -44,11 +44,24 @@ msgid ""
 "dot com to inform                    us about the error. Thanks"
 msgstr ""
 
-#: templates/contacts/contacts.html:17 templates/contacts/contacts.html:19
-#: templates/contacts/contacts.html:21
+#: templates/contacts/contacts.html:9
+msgid "Want to drop us a line"
+msgstr ""
+
+#: templates/contacts/contacts.html:20 templates/contacts/contacts.html:22
+#: templates/contacts/contacts.html:24
 msgid "Contacts"
 msgstr ""
 
+#: templates/contacts/form.html:23
+msgid "Send Your Message"
+msgstr ""
+
 #: templates/contacts/info.html:2
-msgid "Testo che invogli a contattarci"
+msgid ""
+"Nice to meet you, we are the bagnialmare.com team. In this website we want "
+"to organise all the information about the beach resorts in the Riviera "
+"Romagnola to make it accessible and useful. We are happy to answer your "
+"questions and listen to your suggestions. Use the form below to send us a "
+"message."
 msgstr ""
