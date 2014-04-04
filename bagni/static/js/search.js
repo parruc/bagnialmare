@@ -1,8 +1,23 @@
 $(function() {
 
     drawMap();
-    registerCollapseEvents();
+    $(".collapse").on("shown.bs.collapse", function () {
+        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
+    });
+    $(".collapse").on('hidden.bs.collapse', function () {
+        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
+    });
 
+    $(".checkbox input").on('click', function(evt){
+        $("body").addClass("loading");
+        var url = $("#filters").data("base-url") + $(this).data('facet-url') + "#wrapped";
+        var title = $(title).html()
+        $("#rootContainer").load(url, function(response, status, xhr) {
+            $("body").removeClass("loading");
+            window.scrollTo(0,0);
+            window.history.pushState({}, title, url)
+        });
+    });
 });
 
 function drawMap(){
@@ -34,26 +49,4 @@ function drawMap(){
             map.invalidateSize(false);
             map.fitBounds(map_markerBounds);
         });
-};
-
-function registerCollapseEvents(){
-    $(".collapse").on("shown.bs.collapse", function () {
-         $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
-    });
-    $(".collapse").on('hidden.bs.collapse', function () {
-         $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
-    });
-
-    $(".checkbox input").click(function(evt){
-        $("body").addClass("loading");
-        var url = $("#filters").data("base-url") + $(this).data('facet-url') + "#wrapped";
-        var title = $(title).html()
-        $("#rootContainer").load(url, function(response, status, xhr) {
-            $("body").removeClass("loading");
-            window.scrollTo(0,0);
-            window.history.pushState({}, title, url)
-            drawMap();
-            registerCollapseEvents();
-        });
-    });
 };

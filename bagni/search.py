@@ -167,7 +167,7 @@ def search(q, filters, groups, query_string, max_facets=5):
                     obj = querysets[group].get(slug=facet_slug)
                     group_slug = group
                     group_name = obj._meta.verbose_name_plural
-                    group_order = 0
+                    group_order = 5
                     facet_name = obj.name
                 if group_slug not in facet_groups or "facets" not in facet_groups[group_slug]:
                     facet_groups[group_slug] = {'facets': []}
