@@ -30,7 +30,7 @@ class SearchView(TemplateView):
         groups = ['services', 'languages']
         q = self.request.GET.get('q', "")
         page = self.request.GET.get('p', "1")
-        per_page = int(self.request.GET.get('pp', "10"))
+        per_page = int(self.request.GET.get('pp', "20"))
         loc = self.request.GET.get('l', '')
         coords = self.request.GET.get('pos', "")
         place = point = None
@@ -62,7 +62,7 @@ class SearchView(TemplateView):
         raw_hits, facets, active_facets = search(
             q=query, filters=filters, groups=groups,
             query_string=new_query_string,)
-        hits = Bagno.objects.prefetch_related("services", "services__category", ).filter(id__in=[h['id'] for h in raw_hits])
+        hits = Bagno.objects.prefetch_related("services", "services__category", "neighbourhood").filter(id__in=[h['id'] for h in raw_hits])
         if point:
             hits = hits.distance(point).order_by('distance')
         hits_paginator = paginator.Paginator(hits, per_page)

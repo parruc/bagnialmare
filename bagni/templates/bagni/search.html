@@ -4,225 +4,276 @@
 {% load batch from custom_filters %}
 
 {% block content %}
-<div id="wrapped">
+  <div id="wrapped">
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
     <div class="search-page-search-row-wrapper-div hidden-xs">
-        <div class="row search search-page-search-row">
-            <form role="form" action="{% url 'search' %}" method="get">
-                <input type="hidden" name="pos" value="" />
-                <div class="col-xs-5">
-                    <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
-                    <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
-                </div>
-                <div class="col-xs-5">
-                    <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
-                    <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
-                </div>
-                <div class="col-xs-2 search-page-search-button-div">
-                    <button type="submit" id="search_submit"
-                        class="btn btn-primary search-page-button" value="search">
-                        {% trans "Search" %}
-                    </button>
-                </div>
-            </form>
-        </div><!--row search-->
+      <div class="row search search-page-search-row">
+        <form role="form" action="{% url 'search' %}" method="get">
+          <input type="hidden" name="pos" value="" />
+          <div class="col-xs-5">
+            <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
+            <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
+          </div>
+          <div class="col-xs-5">
+            <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
+            <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
+          </div>
+          <div class="col-xs-2 search-page-search-button-div">
+            <button type="submit" id="search_submit"
+                    class="btn btn-primary search-page-button" value="search">
+              {% trans "Search" %}
+            </button>
+          </div>
+        </form>
+      </div><!--row search-->
     </div>
 
     {% if has_get %}
-        <div class="row result-wrapper-div">
-            <div class="col-sm-3 hidden-xs">
-                <div id="filters" class="filter-result-box" data-base-url="{% url 'search' %}">
-                    {% if facets.items %}
-                        <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
-                    {% endif %}
-                    {% for facet_group, facet_values in facets.items %}
-                        {% if facet_group %}
-                            <div class="">
-                                <div class="">
-                                    <h4 class="filter-result-service-category" data-toggle="collapse"
-                                        data-target="#collapse{{ forloop.counter }}">
-                                        <span id="spancollapse{{ forloop.counter }}"
-                                            class="glyphicon glyphicon-chevron-down my-brown"></span>
-                                        {% filter capfirst %}{% trans facet_group %}{% endfilter %}
-                                    </h4>
-                                </div>
-                                {% for facet in facet_values %}
-                                    {% if forloop.first %}
-                                    <div id="collapse{{ forloop.parentloop.counter }}" class="collapse in" >
-                                        <ul class="list-group">
-                                    {% endif %}
-                                    <li class="list-unstyled">
-		                                {% if facet in active_facets %}
-                                        <div class="checkbox filter-result-selected-checkbox-div">
-                                            <label class="filter-result-selected-checkbox-label">
-                                                <input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)'
-                                                type="checkbox" checked>
-                                                <div class="">{{ facet.name }}</div>
-                                            </label>
-                                         </div>
-		                                {% else %}
-                                        <div class="checkbox filter-result-checkbox-div">
-                                            <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)'
-                                                type="checkbox">
-                                                <div class="">{{ facet.name }}</div>
-                                            </label>
-                                        </div>
-		                                {% endif %}
-
-                                    </li>
-                                    {% if forloop.last %}
-                                        </ul>
-                                    </div>
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+      <div class="row result-wrapper-div">
+        <div class="col-sm-3 hidden-xs">
+          <div id="filters" data-base-url="{% url 'search' %}">
+            {% if facets.items %}
+              <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
+            {% endif %}
+            {% for facet in active_facets %}
+              {% if forloop.first %}
+                <h4 class="filter-result-service-category" data-toggle="collapse"
+                    data-target="#collapse_active">
+                  <span id="collapse_active"
+                        class="glyphicon glyphicon-chevron-down my-brown"></span>
+                    {% trans "Active filters" %}
+                </h4>
+                <div class="collapse in" >
+                  <ul class="list-group">
+              {% endif %}
+              <div class="checkbox filter-result-selected-checkbox-div">
+                <label class="filter-result-selected-checkbox-label">
+                  <input data-facet-url="?{{ facet.url }}"
+                         type="checkbox" checked />
+                  {{ facet.name }} ({{ facet.group }})
+                </label>
+              </div>
+              {% if forloop.last %}
+                  </ul>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-9">
-                <p>
-                    <span class="hits-count">{{ count }}</span>
-                    {% if q %}
-                        {% trans "results for" %} <span class="hits-query">{{ q }}</span>
-                    {% else %}
-                        {% trans "results" %}
+              {% endif %}
+            {% endfor %}
+            {% for facet_group in facets.values %}
+              {% if facet_group %}
+                <div>
+                  <div>
+                    <h4 class="filter-result-service-category" data-toggle="collapse"
+                        data-target="#collapse{{ forloop.counter }}">
+                      <span id="spancollapse{{ forloop.counter }}"
+                            class="glyphicon glyphicon-chevron-down my-brown"></span>
+                      {% filter capfirst %}
+                        {% trans facet_group.name %}
+                      {% endfilter %}
+                    </h4>
+                  </div>
+                  {% for facet in facet_group.facets %}
+                    {% if forloop.first %}
+                      <div id="collapse{{ forloop.parentloop.counter }}" class="collapse in" >
+                        <ul class="list-group">
                     {% endif %}
-                    {% if place %}
-                        {% trans "near" %} <span class="hits-query">{{ place }}</span>
+                    <li class="list-unstyled">
+                      <div class="checkbox filter-result-checkbox-div">
+                        <label>
+                          <input data-facet-url="?{{ facet.url }}"
+                                 type="checkbox" />
+                          {{ facet.name }}
+                        </label>
+                      </div>
+                    </li>
+                    {% if forloop.last %}
+                        </ul>
+                      </div>
                     {% endif %}
-                </p>
-                {% if hits %}
-                    <ul class="nav nav-tabs search-page-tabs" id="myTab">
-                        <li class="active"><a href="#listTab" data-toggle="tab">{% trans "List View" %}</a></li>
-                        <li><a href="#mapTab" data-toggle="tab">{% trans "Map View" %}</a></li>
-                        <li class="visible-xs"><a href="#filterTab" data-toggle="tab">{% trans "Filters" %}</a></li>
-                    </ul>
-                    <div id="content" class="tab-content">
-                        <div class="tab-pane" id="mapTab">
-                            <ul id="bagniToBeMapped" class="hide">
-                                {%  for hit in hits %}
-                                    {% if hit.point.x and hit.point.y %}
-                                        <li data-url= "{{ hit.get_absolute_url }}"
-                                            data-name = "{{ hit.name }}"
-                                            data-address = "{{ hit.address }}"
-                                            data-x = "{{ hit.point.x }}"
-                                            data-y = "{{ hit.point.y }}" ></li>
-                                            </li>
-                                    {% endif %}
-                                {% endfor %}
-                            </ul>
-                            <div id="bagno_map" style="width: 100%; height: 500px"></div>
-                        </div>
-                        <div class="tab-pane active" id="listTab">
-                                {%  for hit in hits %}
-                                    <hr class="search-result-separator">
-                                    <div class="single-bagno-result-box">
-                                        <div class="row">
-                                             <div class="col-xs-12">
-                                                <h2 class="single-result-header">
-                                                    <a href="{{ hit.get_absolute_url }}">
-                                                        {{ hit.name }} - {{hit.neighbourhood.name}}
-                                                    </a>
-                                                    {% if hit.distance %}
-                                                        <span class="badge">{{hit.distance.km|floatformat:2 }}Km</span>
-                                                    {% endif %}
-                                                </h2>
-                                                <p class="single-result-address">
-                                                    {{ hit.address }} -
-                                                    {{ hit.neighbourhood.name }},
-                                                    {{ hit.neighbourhood.municipality.name }} -
-                                                    {{ hit.neighbourhood.municipality.district.name }}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {% endfor %}
-                                <div class="pagination">
-                                    <span class="step-links">
-                                        {% if hits.has_previous %}
-                                            <a href="{% query_string 'p=hits.previous_page_number' 'p' %}">
-                                                {% trans "previous" %}
-                                            </a>
-                                        {% endif %}
-
-                                        <span class="current">
-                                            {% blocktrans with num_pages=hits.paginator.num_pages page=hits.number %}Page {{ page }} of {{ num_pages }}.{% endblocktrans %}
-                                        </span>
-
-                                        {% if hits.has_next %}
-                                            <a href="{% query_string 'p=hits.next_page_number' 'p' %}">
-                                                {% trans "next" %}
-                                            </a>
-                                        {% endif %}
-                                    </span>
-                                </div>
-                    {% else %}
-                    <div>{% trans "No results for the given search" %}</div>
-                    {% endif %}
-                    </div>
-                    <div class="tab-pane" id="filterTab">
-                    {% if facets.items %}
-                        <h3 class="filter-result-header-tab">{% trans "Filter by facility" %}:</h3>
-                    {% endif %}
-                    {% for facet_group, facet_values in facets.items %}
-                        {% if facet_group %}
-                            <div class="">
-                                <div class="">
-                                    <h4 class="filter-result-service-category"
-                                        data-toggle="collapse"
-                                        data-target="#collapseInsideTab{{ forloop.counter }}">
-                                        <span id="spancollapse{{ forloop.counter }}"
-                                            class="glyphicon glyphicon-chevron-down my-brown">
-                                        </span>
-                                        {% filter capfirst %}{% trans facet_group %}{% endfilter %}
-                                    </h4>
-                                </div>
-                                {% for facet in facet_values %}
-                                    {% if forloop.first %}
-                                    <div id="collapseInsideTab{{ forloop.parentloop.counter }}" class="collapse in" >
-                                        <ul class="list-group">
-                                    {% endif %}
-                                    <li class="list-unstyled">
-		                                {% if facet in active_facets %}
-                                        <div class="checkbox filter-result-selected-checkbox-div">
-                                            <label class="filter-result-selected-checkbox-label">
-                                                <input data-facet-url="?{{ facet.url }}"
-                                                       onclick='checkboxChanged(this)'
-                                                       type="checkbox" checked>
-                                                <div class="">{{ facet.name }}</div>
-                                            </label>
-                                         </div>
-		                                {% else %}
-                                        <div class="checkbox filter-result-checkbox-div">
-		                                    <label><input data-facet-url="?{{ facet.url }}" onclick='checkboxChanged(this)' type="checkbox"><div class="">{{ facet.name }}</div></label>
-                                        </div>
-		                                {% endif %}
-
-                                    </li>
-                                    {% if forloop.last %}
-                                        </ul>
-                                    </div>
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                    </div>
+                  {% endfor %}
                 </div>
-            </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
-        <div class="modal-wheel"><!-- Place at bottom of page --></div>
+        <div class="col-xs-12 col-sm-9">
+          <p>
+            <span class="hits-count">{{ count }}</span>
+            {% if q %}
+              {% trans "results for" %} <span class="hits-query">{{ q }}</span>
+            {% else %}
+              {% trans "results" %}
+            {% endif %}
+            {% if place %}
+              {% trans "near" %} <span class="hits-query">{{ place }}</span>
+            {% endif %}
+          </p>
+          {% if hits %}
+            <ul class="nav nav-tabs search-page-tabs" id="myTab">
+              <li class="visible-xs">
+                <a href="#filterTab" data-toggle="tab">
+                  {% trans "Filters" %}
+                </a>
+              </li>
+              <li class="active">
+                <a href="#listTab" data-toggle="tab">
+                  {% trans "List View" %}
+                </a>
+              </li>
+              <li>
+                <a href="#mapTab" data-toggle="tab">
+                  {% trans "Map View" %}
+                </a>
+              </li>
+            </ul>
+          {% endif %}
+          <div id="content" class="tab-content">
+            {% if hits %}
+              <div class="tab-pane" id="mapTab">
+                <ul id="bagniToBeMapped" class="hide">
+                  {%  for hit in hits %}
+                    {% if hit.point.x and hit.point.y %}
+                      <li data-url= "{{ hit.get_absolute_url }}"
+                          data-name = "{{ hit.name }}"
+                          data-address = "{{ hit.address }}"
+                          data-x = "{{ hit.point.x }}"
+                          data-y = "{{ hit.point.y }}" >
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+                <div id="bagno_map" style="width: 100%; height: 500px"></div>
+              </div>
+              <div class="tab-pane active" id="listTab">
+                {%  for hit in hits %}
+                  <hr class="search-result-separator" />
+                  <div class="single-bagno-result-box">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h2 class="single-result-header">
+                          <a href="{{ hit.get_absolute_url }}">
+                            {{ hit.name }} - {{hit.neighbourhood.name}}
+                          </a>
+                          {% if hit.distance %}
+                            <span class="badge">
+                              {{hit.distance.km|floatformat:2 }}Km
+                            </span>
+                          {% endif %}
+                        </h2>
+                        <p class="single-result-address">
+                          {{ hit.address }} -
+                          {{ hit.neighbourhood.name }},
+                          {{ hit.neighbourhood.municipality.name }} -
+                          {{ hit.neighbourhood.municipality.district.name }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+                <div class="pagination">
+                  <span class="step-links">
+                    {% if hits.has_previous %}
+                      <a href="{% query_string 'p=hits.previous_page_number' '' %}">
+                        {% trans "previous" %}
+                      </a>
+                    {% endif %}
+
+                    <span class="current">
+                      {% blocktrans with num_pages=hits.paginator.num_pages page=hits.number %}
+                      Page {{ page }} of {{ num_pages }}.{% endblocktrans %}
+                    </span>
+                    {% if hits.has_next %}
+                      <a href="{% query_string 'p=hits.next_page_number'  '' %}">
+                        {% trans "next" %}
+                      </a>
+                    {% endif %}
+                  </span>
+                </div>
+              </div>
+            {% else %}
+              <div class="tab-pane active" id="listTab">
+                {% trans "No results for the given search" %}
+              </div>
+            {% endif %}
+            <div class="tab-pane" id="filterTab">
+              {% if facets.items %}
+                <h3 class="filter-result-header-tab">
+                  {% trans "Filter by facility" %}:
+                </h3>
+              {% endif %}
+              {% for facet in active_facets %}
+                {% if forloop.first %}
+                  <h4 class="filter-result-service-category" data-toggle="collapse"
+                      data-target="#collapse_active">
+                    <span id="collapse_active"
+                          class="glyphicon glyphicon-chevron-down my-brown"></span>
+                      {% trans "Active filters" %}
+                  </h4>
+                  <div class="collapse in" >
+                    <ul class="list-group">
+                {% endif %}
+                <div class="checkbox filter-result-selected-checkbox-div">
+                  <label class="filter-result-selected-checkbox-label">
+                    <input data-facet-url="?{{ facet.url }}"
+                           type="checkbox" checked />
+                    {{ facet.name }} ({{ facet.group }})
+                  </label>
+                </div>
+                {% if forloop.last %}
+                    </ul>
+                  </div>
+                {% endif %}
+              {% endfor %}
+              {% for facet_group in facets.values  %}
+                {% if facet_group %}
+                  <div>
+                    <div>
+                      <h4 class="filter-result-service-category"
+                          data-toggle="collapse"
+                          data-target="#collapseInsideTab{{ forloop.counter }}">
+                        <span id="spancollapse{{ forloop.counter }}"
+                              class="glyphicon glyphicon-chevron-down my-brown">
+                        </span>
+                        {% filter capfirst %}{% trans facet_group.name %}{% endfilter %}
+                      </h4>
+                    </div>
+                    {% for facet in facet_group.facets %}
+                      {% if forloop.first %}
+                        <div id="collapseInsideTab{{ forloop.parentloop.counter }}"
+                             class="collapse in" >
+                          <ul class="list-group">
+                      {% endif %}
+                      <li class="list-unstyled">
+                        <div class="checkbox filter-result-checkbox-div">
+                          <label>
+                            <input data-facet-url="?{{ facet.url }}"
+                                   type="checkbox" />
+                            {{ facet.name }}
+                          </label>
+                        </div>
+                      </li>
+                      {% if forloop.last %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-wheel"><!-- Place at bottom of page --></div>
     {% endif %}
-</div><!--wrapped-->
+  </div><!--wrapped-->
 {% endblock %}
 
 {% block specific_js %}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/search.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/search.js"></script>
 {% endblock specific_js %}
 
 

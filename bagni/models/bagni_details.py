@@ -9,8 +9,8 @@ class Language(models.Model):
     """ List of languages available for the spoken language field in bagno
     """
     class Meta:
-        verbose_name = _('Language')
-        verbose_name_plural = _('Languages')
+        verbose_name = _('Spoken language')
+        verbose_name_plural = _('Spoken languages')
         app_label = 'bagni'
 
     name = models.CharField(max_length=100)

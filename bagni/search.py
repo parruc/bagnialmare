@@ -10,7 +10,7 @@ from django.utils.translation import get_language, activate, deactivate
 
 from whoosh import fields, index, qparser, sorting, query
 
-from bagni.models import Bagno
+from bagni.models import Bagno, Service, Language
 
 WHOOSH_SCHEMA = fields.Schema(id=fields.ID(stored=True, unique=True),
                               text=fields.TEXT(),
@@ -129,17 +129,23 @@ def search(q, filters, groups, query_string, max_facets=5):
             filter_name, filter_value = filter.split(":", 1)
             q = q & query.Term(filter_name, filter_value)
         hits = searcher.search(q.normalize(), groupedby=facets)
-        facets = OrderedDict()
+        facet_groups = {}
         active_facets = []
+        querysets = {}
+        querysets['services'] = Service.objects.values('slug', 'name',
+                                                       'category__slug',
+                                                       'category__name',
+                                                       'category__order')
+        querysets['languages'] = Language.objects
         for group in groups:
             sorted_facets = sorted(hits.groups(group).items(),
                                    key=operator.itemgetter(1, 0),
                                    reverse=True)
-            for facet_name, facet_value in sorted_facets:
-                if not facet_name:
+            for facet_slug, facet_value in sorted_facets:
+                if not facet_slug:
                     continue
                 qs = query_string.copy()
-                filter = group + ":" + facet_name
+                filter = group + ":" + facet_slug
                 if filter in filters:
                     qs.setlist('f', [f for f in filters if f != filter])
                     state = "active"
@@ -148,20 +154,42 @@ def search(q, filters, groups, query_string, max_facets=5):
                     state = "available"
                 url = qs.urlencode(safe=":")
 
-                out_group = group
-                if group == 'services':
-                    facet_name, out_group = facet_name.split("@")
-                facet_dict = {
-                    'name': facet_name,
-                    'count': facet_value,
-                    'url': url,
-                }
-                if state == 'active':
-                    facet_dict['group'] = out_group
-                    active_facets.append(facet_dict)
-                if not out_group in facets:
-                    facets[out_group] = []
-                if len(facets[out_group]) < max_facets:
-                    facets[out_group].append(facet_dict)
-        facets = set_active_facets_first(facets, active_facets)
+                if group == "services":
+                    for c, o in enumerate(querysets[group]):
+                        if o['slug'] == facet_slug:
+                            obj = o
+                            break
+                    group_slug = obj['category__slug']
+                    group_name = obj['category__name']
+                    group_order = obj['category__order']
+                    facet_name = obj['name']
+                else:
+                    obj = querysets[group].get(slug=facet_slug)
+                    group_slug = group
+                    group_name = obj._meta.verbose_name_plural
+                    group_order = 0
+                    facet_name = obj.name
+                if group_slug not in facet_groups or "facets" not in facet_groups[group_slug]:
+                    facet_groups[group_slug] = {'facets': []}
+                if len(facet_groups[group_slug]['facets']) < max_facets:
+                    facet_groups[group_slug]['name'] = group_name
+                    facet_groups[group_slug]['order'] = group_order
+
+                    facet_dict = {
+                        'slug': facet_slug,
+                        'name': facet_name,
+                        'count': facet_value,
+                        'url': url,
+                    }
+
+                    if state == 'active':
+                        facet_dict['group'] = group_name
+                        active_facets.append(facet_dict)
+                        if len(facet_groups[group_slug]['facets']) == 0:
+                            del(facet_groups[group_slug]['facets'])
+                    else:
+                        facet_groups[group_slug]['facets'].append(facet_dict)
+        facets = OrderedDict(sorted(facet_groups.iteritems(),
+                             key=lambda x: (x[1]['order'], x[1]['name'])))
+
     return hits, facets, active_facets

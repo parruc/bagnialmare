@@ -140,7 +140,7 @@ body {
     font-weight: 700;
 }
 
-.filter-result-box {
+#filters, #filterTab {
   border: 1px solid rgb(249, 191, 22);
   padding: 19px 19px 19px;
   border-radius: 4px 4px 4px 4px;
@@ -152,42 +152,9 @@ body {
   padding: 0px 15px 0px 15px;
 }
 
-.filter-result-selected-checkbox-label {
-     color: rgb(255,255,255);
-}
-
-
-.filter-result-checkbox-div {
+#filters label, #filterTab label{
     color: rgb(42, 100, 150);
-    padding-left: 24px;
 }
-
-
-.filter-result-checkbox-div:hover {
-    color: rgb(0, 151, 213);
-}
-
-
-.filter-result-selected-checkbox-div {
-     background-color: #339900;
-     padding-left: 24px;
-}
-
-
-.filter-result-selected-checkbox-div:hover {
-     background-color: rgb(153,0,0);
-}
-
-.filter-result-service-category {
-     cursor:pointer;
-     color: #6A4A3C;
-     background-color:#FFF6DF;
-}
-
-.filter-result-service-category:hover {
-     color:rgb(249, 191, 22);
-}
-
 
 .bagno-detail-wrapper-div{
     border: 1px solid rgb(226, 226, 226);

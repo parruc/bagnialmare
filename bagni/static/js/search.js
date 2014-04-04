@@ -36,26 +36,24 @@ function drawMap(){
         });
 };
 
-function checkboxChanged(cb) {
-    var bodyTag = $("body");
-    var base_url = $("#filters").data("base-url");
-
-    bodyTag.addClass("loading");
-    var url = base_url + $(cb).data('facet-url') + " #wrapped";
-    $("#rootContainer").load(url, function(response, status, xhr) {
-        bodyTag.removeClass("loading");
-        window.scrollTo(0,0);
-        drawMap();
-        registerCollapseEvents();
-      }
-    );
-};
-
 function registerCollapseEvents(){
     $(".collapse").on("shown.bs.collapse", function () {
          $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
     });
     $(".collapse").on('hidden.bs.collapse', function () {
          $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
+    });
+
+    $(".checkbox input").click(function(evt){
+        $("body").addClass("loading");
+        var url = $("#filters").data("base-url") + $(this).data('facet-url') + "#wrapped";
+        var title = $(title).html()
+        $("#rootContainer").load(url, function(response, status, xhr) {
+            $("body").removeClass("loading");
+            window.scrollTo(0,0);
+            window.history.pushState({}, title, url)
+            drawMap();
+            registerCollapseEvents();
+        });
     });
 };

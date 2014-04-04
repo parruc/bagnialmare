@@ -16,6 +16,7 @@ class ServiceCategory(models.Model):
 
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=2000)
+    order = models.IntegerField()
     image = ImageField(upload_to="images/servicecategories", verbose_name=_("Image"), blank=True, null=True )
     slug = autoslug.AutoSlugField(max_length=50,
                                   populate_from='name',

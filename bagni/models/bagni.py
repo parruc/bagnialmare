@@ -39,35 +39,35 @@ class Bagno(models.Model):
         """ Text indexed for fulltext search (the what field)
         """
         elems = [self.name, ]
-        cities = self.index_cities().split("#")
-        services = self.index_services().split("#")
+        cities = self.index_cities(field="name").split("#")
+        services = self.index_services(field="name").split("#")
         elems.extend(cities)
         elems.extend(services)
         return unicode(" ".join(elems))
 
-    def index_services(self, sep="#"):
+    def index_services(self, field='slug', sep="#"):
         """ Returns a string representing all the bagno services separated by
             the sep val.
             Needed to index the services as listid in whoosh and have facets
         """
-        return unicode(sep.join([s.name+"@"+s.category.name for s in self.services.all()]))
+        return unicode(sep.join([getattr(s, field) for s in self.services.all()]))
 
 
-    def index_languages(self, sep="#"):
+    def index_languages(self, field='slug', sep="#"):
         """ Returns a string representing all the bagno spoken languages separated by
             the sep val.
             Needed to index the languages as listid in whoosh and have facets
         """
-        return unicode(sep.join([l.name for l in self.languages.all()]))
+        return unicode(sep.join([getattr(l, field) for l in self.languages.all()]))
 
-    def index_cities(self, sep="#"):
+    def index_cities(self, sep="#", field="slug"):
         cities = []
         if self.neighbourhood:
-            cities.append(self.neighbourhood.name)
+            cities.append(getattr(self.neighbourhood, field))
             if self.neighbourhood.municipality:
-                cities.append(self.neighbourhood.municipality.name)
+                cities.append(getattr(self.neighbourhood.municipality, field))
                 if self.neighbourhood.municipality.district:
-                    cities.append(self.neighbourhood.municipality.district.name)
+                    cities.append(getattr(self.neighbourhood.municipality.district, field))
         return unicode(sep.join(cities))
 
     def index_features(self):

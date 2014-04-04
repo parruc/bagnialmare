@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.conf import settings
 from django.core.mail import EmailMessage
-from django.core.urlresolvers import reverse
 from django.utils.translation import ugettext as _
 from django.contrib import messages
 from django.views.generic.edit import FormView
