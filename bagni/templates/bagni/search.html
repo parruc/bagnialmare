@@ -9,7 +9,7 @@
 {% trans "search" as t_search %}
 {% trans "filter_by_facility" as t_filter_by_facility %}
 {% trans "active_filters" as t_active_filters %}
-{% trans "results_for" as t_results_for %} 
+{% trans "results_for" as t_results_for %}
 {% trans "results" as t_results %}
 {% trans "near" as t_near %}
 {% trans "filters" as t_filters%}
@@ -157,8 +157,8 @@
                       <li data-url= "{{ hit.get_absolute_url }}"
                           data-name = "{{ hit.name }}"
                           data-address = "{{ hit.address }}"
-                          data-x = "{{ hit.point.x }}"
-                          data-y = "{{ hit.point.y }}" >
+                          data-x = "{{ hit.point.x|unlocalize }}"
+                          data-y = "{{ hit.point.y|unlocalize }}" >
                       </li>
                     {% endif %}
                   {% endfor %}
@@ -173,7 +173,7 @@
                       <div class="col-xs-12">
                         <h2 class="single-result-header">
                           <a href="{{ hit.get_absolute_url }}">
-                            {{ hit.name }} - {{hit.neighbourhood.name}}
+                            {{ hit.name }} - {{ hit.neighbourhood.name }}
                           </a>
                           {% if hit.distance %}
                             <span class="badge">
