@@ -1,13 +1,14 @@
-var pos = "";
 function currentPositionSuccess(position)
 {
-    pos = position.coords.latitude + "," + position.coords.longitude;
-    $(":input[name=pos]").val(pos);
+    $(":input[name=pos]").val(position.coords.latitude + "," + position.coords.longitude);
+    $(":input[name=l]").val($("#set-my-position").data("position-label"));
 }
 function currentPositionFailure(error)
 {
-    $(":input[name=pos]").remove();
+    $(":input[name=pos]").val("");
     $(":input[name=l]").val("");
+    /*Todo modal popup che prende contenuti tradotti dal template*/
+    alert("Condivisione della posizione disattivata");
 }
 function setCurrentPosition()
 {
@@ -18,15 +19,14 @@ function setCurrentPosition()
 }
 
 $(function() {
-
     $("#set-my-position").click(function(evt){
         setCurrentPosition();
-        $(":input[name=l]").val($(this).data("position-label"));
         evt.preventDefault();
     });
 
     $("#search-form").submit(function(){
-        if(pos == "")
+    /*if position is set to current position and and there is no position set*/
+        if($(":input[name=l]").val() == $("#set-my-position").data("position-label") && $(":input[name=pos]").val() == "")
         {
             currentPositionFailure();
         }

@@ -30,7 +30,7 @@ class SearchView(TemplateView):
         groups = ['services', 'languages']
         q = self.request.GET.get('q', "")
         page = self.request.GET.get('p', "1")
-        per_page = int(self.request.GET.get('pp', "20"))
+        per_page = int(self.request.GET.get('pp', "15"))
         loc = self.request.GET.get('l', '')
         coords = self.request.GET.get('pos', "")
         place = point = None
