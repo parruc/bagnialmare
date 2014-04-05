@@ -29,8 +29,8 @@ function drawMap(){
     }).addTo(map);
     var map_markerBounds = new L.LatLngBounds();
     $("#bagniToBeMapped li").each(function(index, element){
-            var p = new L.LatLng(parseFloat($(element).data("y").replace(",",".")),
-                                 parseFloat($(element).data("x").replace(",",".")));
+            var p = new L.LatLng(parseFloat($(element).data("y")),
+                                 parseFloat($(element).data("x")));
             var marker = L.marker(p).addTo(map);
             map_markerBounds.extend(p);
             marker.bindPopup('<b class="my-bold"><a href=' +
