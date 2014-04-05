@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-05 15:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: settings.py:80
+msgid "English"
+msgstr "Inglese"
+
+#: settings.py:81
+msgid "Italiano"
+msgstr "Italiano"
+
+#: urls.py:30
+msgid "^accounts/"
+msgstr "^accounts/"
+
+#: templates/base.html:3
+msgid "contact"
+msgstr "contatti"
+
+#: templates/base.html:4
+msgid "about_us"
+msgstr "about us"
+
+#: templates/base.html:5
+msgid "are_you_manager"
+msgstr "sei un gestore?"
+
+#: templates/account/signup.html:5
+msgid "account signup intro"
+msgstr "informazioni su perchè registrarsi"
+
+#: templates/account/signup.html:6
+msgid "signup"
+msgstr "registrati"
+
+#: templates/account/signup.html:7
+msgid "sign_up_button"
+msgstr "registrati"
+
+#: templates/account/signup.html:8
+msgid "already_have_account"
+msgstr "sei già registrato?"
+
+#: templates/account/signup.html:9
+msgid "sign_in"
+msgstr "entra"
