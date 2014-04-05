@@ -7,6 +7,8 @@ function currentPositionFailure(error)
 {
     $(":input[name=pos]").val("");
     $(":input[name=l]").val("");
+    /*Todo modal popup che prende contenuti tradotti dal template*/
+    alert("Condivisione della posizione disattivata");
 }
 function setCurrentPosition()
 {
