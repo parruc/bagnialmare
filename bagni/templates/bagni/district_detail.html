@@ -3,6 +3,8 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "no_bagno_in_this_municipality" as t_no_bagno %}
+{% trans "no_municipality_in_this_district" as t_no_municipality %}
     {% with object.municipalities.all as municipalities %}
         {% for municipality in municipalities %}
             <h2>{{ municipality.name }}</h2>
@@ -11,16 +13,22 @@
                 {% for bagno in bagni %}
                     <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
                 {% empty %}
-                    <li>{% trans "No bagno in this municipality" %}</li>
+                  <li>{{ t_no_bagno|capfirst }}</li>
                 {% endfor %}
                 </ul>
             {% endwith %}
         {% empty %}
-            <p>{% trans "No municipality in this district" %}</p>
+          <p>{{ t_no_municipality|capfirst }}</p>
         {% endfor %}
     {% endwith %}
 {% endblock content %}
 
-{% block title %}{% trans "District" %} {{ object.name }}{% endblock title %}
+{% block title %}
+{% trans "district" as t_district %} 
+{{ t_district|capfirst }} {{ object.name }}
+{% endblock title %}
 
-{% block pagetitle %}{% trans "District" %} {{ object.name }}{% endblock pagetitle %}
+{% block pagetitle %}
+{% trans "district" as t_district %} 
+{{ t_district|capfirst }} {{ object.name }}
+{% endblock pagetitle %}

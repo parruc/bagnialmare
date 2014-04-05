@@ -4,6 +4,13 @@
 {% load batch from custom_filters %}
 
 {% block content %}
+{% trans "contact_button" as t_contact_button %}
+{% trans "image" as t_image %}
+{% trans "no_images_for" as t_no_images_for %}
+{% trans "no_images_add" as t_no_images_add %}
+{% trans "facilities" as t_facilities %}
+{% trans "facility_info_not_available" as t_facility_info_not_available %}
+
 <div id="contact-form"></div>
 <div class="bagno-detail-wrapper-div">
   <div class="row">
@@ -13,7 +20,7 @@
       {% endif %}
       {% if object.is_managed %}
         <button id="contact-form-button" class="button" data-url="{{ object.get_contactform_url }}">
-          {% trans "Contacts of the structure" %}
+          {{ t_contact_button }}
         </button>
       {% endif %}
     </div>
@@ -45,11 +52,11 @@
               {% for bagno_image in bagno_images %}
                 {% if forloop.first %}
                   <div class="item active">
-                    <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {% trans "image" %}" />
+                      <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
                   </div>
                 {% else %}
                   <div class="item">
-                    <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {% trans "image" %}" />
+                      <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
                   </div>
                 {% endif %}
               {% endfor %}
@@ -65,9 +72,9 @@
         </div>
       {% else %}
         <div class="no-images-wrapper-div">
-          <img class ="thumbnail img-responsive" src="{{ STATIC_URL }}img/no_images.png" alt="{% trans "No images available for" %} {{ object.name|safe }}">
+            <img class ="thumbnail img-responsive" src="{{ STATIC_URL }}img/no_images.png" alt="{{ t_no_images_for }} {{ object.name|safe }}">
           <span class="no-images-text">
-            <a href="#">{% trans "No photos available. Add one now" %}.</a>
+              <a href="#">{{ t_no_images_add }}.</a>
           </span>
         </div>
       {% endif %}
@@ -83,7 +90,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <h2 class="bagno-detail-sub-header">{% trans "Facilities" %}</h2>
+        <h2 class="bagno-detail-sub-header">{{ t_facilities|title }}</h2>
       {% if object.services.all %}
         {% with object.services.all|dictsort:"category" as services %}
           {% regroup services by category as categorized_services %}
@@ -113,7 +120,7 @@
         {% endwith %}
       {% else %}
         <p>
-          <em>{% trans "Facilities information not available" %}</em>
+        <em>{{ t_facility_info_not_available }}</em>
         </p>
       {% endif %}
     </div>

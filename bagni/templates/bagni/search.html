@@ -4,6 +4,21 @@
 {% load batch from custom_filters %}
 
 {% block content %}
+{% trans "what" as t_what %}
+{% trans "where" as t_where %}
+{% trans "search" as t_search %}
+{% trans "filter_by_facility" as t_filter_by_facility %}
+{% trans "active_filters" as t_active_filters %}
+{% trans "results_for" as t_results_for %} 
+{% trans "results" as t_results %}
+{% trans "near" as t_near %}
+{% trans "filters" as t_filters%}
+{% trans "list_view" as t_list_view %}
+{% trans "map_view" as t_map_view %}
+{% trans "previous" as t_previous %}
+{% trans "next" as t_next %}
+{% trans "no_results_for_search" as t_no_results_for_search %}
+
   <div id="wrapped">
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
@@ -13,17 +28,17 @@
         <form role="form" action="{% url 'search' %}" method="get">
           <input type="hidden" name="pos" value="" />
           <div class="col-xs-5">
-            <label class="my-brown" for="search_q">{% trans 'What' %}:</label>
+              <label class="my-brown" for="search_q">{{ t_what|capfirst }}:</label>
             <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
           </div>
           <div class="col-xs-5">
-            <label class="my-brown" for="search_q">{% trans 'Where' %}:</label>
+              <label class="my-brown" for="search_q">{{ t_where|capfirst }}:</label>
             <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
           </div>
           <div class="col-xs-2 search-page-search-button-div">
             <button type="submit" id="search_submit"
                     class="btn btn-primary search-page-button" value="search">
-              {% trans "Search" %}
+              {{ t_search|capfirst }}
             </button>
           </div>
         </form>
@@ -35,7 +50,7 @@
         <div class="col-sm-3 hidden-xs">
           <div id="filters" data-base-url="{% url 'search' %}">
             {% if facets.items %}
-              <h3 class="filter-result-header">{% trans "Filter by facility" %}:</h3>
+              <h3 class="filter-result-header">{{ t_filter_by_facility|capfirst }}:</h3>
             {% endif %}
             {% for facet in active_facets %}
               {% if forloop.first %}
@@ -44,7 +59,7 @@
                     data-target="#collapse_active">
                   <span id="collapse_active"
                         class="glyphicon glyphicon-chevron-down my-brown"></span>
-                    {% trans "Active filters" %}
+                    {{ t_active_filters|capfirst }}
                 </h4>
                 <div class="collapse in" >
                   <ul class="list-group">
@@ -104,29 +119,31 @@
           <p>
             <span class="hits-count">{{ count }}</span>
             {% if q %}
-              {% trans "results for" %} <span class="hits-query">{{ q }}</span>
+              {{ t_results_for }}
+              <span class="hits-query">{{ q }}</span>
             {% else %}
-              {% trans "results" %}
+              {{ t_results }}
             {% endif %}
             {% if place %}
-              {% trans "near" %} <span class="hits-query">{{ place }}</span>
+              {{ t_near }}
+              <span class="hits-query">{{ place }}</span>
             {% endif %}
           </p>
           {% if hits %}
             <ul class="nav nav-tabs search-page-tabs" id="myTab">
               <li class="visible-xs">
                 <a href="#filterTab" data-toggle="tab">
-                  {% trans "Filters" %}
+                  {{ t_filters|capfirst }}
                 </a>
               </li>
               <li class="active">
                 <a href="#listTab" data-toggle="tab">
-                  {% trans "List View" %}
+                  {{ t_list_view|capfirst }}
                 </a>
               </li>
               <li>
                 <a href="#mapTab" data-toggle="tab">
-                  {% trans "Map View" %}
+                  {{ t_map_view|capfirst }}
                 </a>
               </li>
             </ul>
@@ -178,7 +195,7 @@
                   <span class="step-links">
                     {% if hits.has_previous %}
                       <a href="{% query_string 'p=hits.previous_page_number' '' %}">
-                        {% trans "previous" %}
+                        {{ t_previous }}
                       </a>
                     {% endif %}
 
@@ -188,7 +205,7 @@
                     </span>
                     {% if hits.has_next %}
                       <a href="{% query_string 'p=hits.next_page_number'  '' %}">
-                        {% trans "next" %}
+                        {{ t_next }}
                       </a>
                     {% endif %}
                   </span>
@@ -196,13 +213,13 @@
               </div>
             {% else %}
               <div class="tab-pane active" id="listTab">
-                {% trans "No results for the given search" %}
+                {{ t_no_restuls_for_search }}
               </div>
             {% endif %}
             <div class="tab-pane" id="filterTab">
               {% if facets.items %}
                 <h3 class="filter-result-header-tab">
-                  {% trans "Filter by facility" %}:
+                  {{ t_filter_by_facility }}
                 </h3>
               {% endif %}
               {% for facet in active_facets %}
@@ -212,7 +229,7 @@
                       data-target="#collapse_active">
                     <span id="collapse_active"
                           class="glyphicon glyphicon-chevron-down my-brown"></span>
-                      {% trans "Active filters" %}
+                      {{ t_active_filters|capfirst }}
                   </h4>
                   <div class="collapse in" >
                     <ul class="list-group">
@@ -282,6 +299,12 @@
 {% endblock specific_js %}
 
 
-{% block title %}{% trans "Search" %}{% endblock title %}
+{% block title %}
+{% trans "search" as t_search %}
+{{ t_search|title }}
+{% endblock title %}
 
-{% block pagetitle %}{% trans "Search" %}{% endblock pagetitle %}
+{% block pagetitle %}
+{% trans "search" as t_search %}
+{{ t_search|title }}
+{% endblock pagetitle %}

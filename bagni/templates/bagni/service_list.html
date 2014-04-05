@@ -3,17 +3,25 @@
 {% load i18n %}
 
 {% block content %}
+{% trans 'no_service' as _t_no_service %}
     <ul>
         {% for service in object_list %}
             <li>
                 <a href="{{ service.get_absolute_url }}">{{ service.name }}</a>
             </li>
         {% empty %}
-            <li>{% trans 'No service' %}</li>
+          <li>{{ t_no_service|capfirst }}</li>
         {% endfor %}
     </ul>
 {% endblock content %}
 
-{% block title %}{% trans 'Services' %}{% endblock title %}
+{% block title %}
+{% trans 'facilities' as t_facilities %}
+{{ t_facilities|capfirst }}
+{% endblock title %}
 
-{% block pagetitle %}{% trans 'Services' %}{% endblock pagetitle %}
+{% block pagetitle %}
+{% trans 'facilities' as t_facilities %}
+{{ t_facilities|capfirst }}
+{% endblock pagetitle %}
+

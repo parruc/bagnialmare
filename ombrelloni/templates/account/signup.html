@@ -3,15 +3,26 @@
 {% load url from future %}
 {% load i18n %}
 
-{% block head_title %}{% trans "Signup" %}{% endblock %}
+{% block head_title %}
+
+{% trans "signup" as t_signup %}
+{{ t_signup|capfirst }}
+
+{% endblock %}
 
 {% block content %}
 
-<h1>{% trans "Are you a manager?" %}</h1>
+{% trans "account signup intro" as t_account_signup_intro %}
+{% trans "signup" as t_signup %}
+{% trans "sign_up_button" as t_sign_up_button %}
+{% trans "already_have_account" as t_already_have_account %}
+{% trans "sign_in" as t_sign_in %}
 
-<h2>{% trans "Due cazzate che spieghino i fantastici vantaggi dell'iscrizione" %}</h2>
+<h1>{{ t_are_you_manager|title }}</h1>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<h2>{{ t_account_signup_introi|capfirst }}</h2>
+
+<p>{{ t_already_have_account|capfirst }} <a href="{{ login_url }}">{{ t_sign_in }}</a></p>
 
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
@@ -19,7 +30,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+  <button type="submit">{{ t_sign_up_button }} &raquo;</button>
 </form>
 
 

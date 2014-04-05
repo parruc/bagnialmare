@@ -3,17 +3,24 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "no_ditricts" as t_no_districts %}
     <ul>
         {% for district in object_list %}
             <li>
                 <a href="{{ district.get_absolute_url }}">{{ district.name }}</a>
             </li>
         {% empty %}
-            <li>{% trans 'No districts' %}</li>
+          <li>{{ t_no_ditricts|capfirst }}</li>
         {% endfor %}
     </ul>
 {% endblock content %}
 
-{% block title %}{% trans 'Districts' %}{% endblock title %}
+{% block title %}
+{% trans 'districts' as t_districts %}
+{{ t_districts|capfirst }}
+{% endblock title %}
 
-{% block pagetitle %}{% trans 'Districts' %}{% endblock pagetitle %}
+{% block pagetitle %}
+{% trans 'districts' as t_districts %}
+{{ t_districts|capfirst }}
+{% endblock pagetitle %}

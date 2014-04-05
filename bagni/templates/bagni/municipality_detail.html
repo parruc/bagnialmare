@@ -3,17 +3,24 @@
 {% load i18n %}
 
 {% block content %}
-    {% with object.bagni.all as bagni %}
-        <ul>
-        {% for bagno in bagni %}
-            <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
-        {% empty %}
-            <li>{% trans "No bagno in this municipality" %}</li>
-        {% endfor %}
-        </ul>
-    {% endwith %}
+{% trans "no_bagno_in_this_municipality" as t_no_bagno %}
+  {% with object.bagni.all as bagni %}
+    <ul>
+      {% for bagno in bagni %}
+        <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
+      {% empty %}
+        <li>{{ t_no_bagno }}</li>
+      {% endfor %}
+    </ul>
+  {% endwith %}
 {% endblock content %}
 
-{% block title %}{% trans "Municipality" %} {{ object.name }}{% endblock title %}
+{% block title %}
+{% trans "municipality" as t_municipality %} 
+{{t_municipality}} {{ object.name }}
+{% endblock title %}
 
-{% block pagetitle %}{% trans "Municipality" %} {{ object.name }}{% endblock pagetitle %}
+{% block pagetitle %}
+{% trans "municipality" as t_municipality %} 
+{{t_municipality}} {{ object.name }}
+{% endblock pagetitle %}

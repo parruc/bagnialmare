@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 {% load i18n compress %}
+{% trans "contact" as t_contact %}
+{% trans "about_us" as t_about_us %}
+{% trans "are_you_manager" as t_are_you_manager %}
+
 {% load url from future %}
 <html lang="{{LANGUAGE_CODE}}">
     <head>
@@ -55,9 +59,9 @@
               </div>
               <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="{% url 'contact-form' %}"><strong>Contact</strong></a></li>
-                  <li><a href="{% url 'about-us' %}"><strong>About Us</strong></a></li>
-                  <li><a href="{% url 'account_signup' %}"><strong>Are you a manager?</strong></a></li>
+                    <li><a href="{% url 'contact-form' %}"><strong>{{ t_contact|title }}</strong></a></li>
+                    <li><a href="{% url 'about-us' %}"><strong>{{ t_about_us|title }}</strong></a></li>
+                    <li><a href="{% url 'account_signup' %}"><strong>{{ t_are_you_manager|capfirst }}</strong></a></li>
                 </ul>
               </div><!--/.nav-collapse -->
             </div>

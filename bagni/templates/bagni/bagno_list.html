@@ -3,15 +3,22 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "no_bagno" as t_no_bagno %}
     <ul>
-        {% for bagno in object_list %}
-            <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
-        {% empty %}
-            <li>{% trans 'No bagno' %}</li>
-        {% endfor %}
+      {% for bagno in object_list %}
+        <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
+      {% empty %}
+        <li>{{ t_no_bagno }}</li>
+      {% endfor %}
     </ul>
 {% endblock content %}
 
-{% block title %}{% trans 'Bagni' %}{% endblock title %}
+{% block title %}
+{% trans 'bagni' as t_bagni %}
+{{ t_bagni|title }}
+{% endblock title %}
 
-{% block pagetitle %}{% trans 'Bagni' %}{% endblock pagetitle %}
+{% block pagetitle %}
+{% trans 'bagni' as t_bagni %}
+{{ t_bagni|title }}
+{% endblock pagetitle %}

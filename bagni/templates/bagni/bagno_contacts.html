@@ -1,13 +1,16 @@
 {% load thumbnail i18n %}
 
 {% block content %}
+{% trans "telephone_numbers" as t_telephone_numbers %}
+{% trans "not_yet_available" as t_not_yet_available %}
+{% trans "website" as t_website %}
 <div id="contatti">
     <div>
-        <h2 class="bagno-detail-sub-header">{% trans "Contacts" %}</h2>
+        <h2 class="bagno-detail-sub-header">{{ t_telephone_numbers }}</h2>
       <div>
         <p>
           {% if object.telephones.all %}
-            <span class="bagno-detail-label">{% trans "Telephone numbers" %}:</span>
+          <span class="bagno-detail-label">{{ t_telephone_numbers }}:</span>
             {% for tel in object.telephones.all %}
               {{ tel.name }} {{ tel.number }}
               {% if forloop.last %}
@@ -16,17 +19,17 @@
               {% endif %}
             {% endfor %}
           {% else %}
-            <b class="my-bold">{% trans "Telephone numbers" %}:</b>
-            <em>{% trans "not yet available" %}</em>
+          <b class="my-bold">{{ t_telephone_numbers }}:</b>
+          <em>{{ t_not_yet_available }}</em>
           {% endif %}
         </p>
         <p>
           {% if object.site %}
-            <b class="my-bold">{% trans "Website" %}:</b>
-              <a href="{{ object.site }}">{{ object.site }}</a>
+          <b class="my-bold">{{ t_website|capfirst }}:</b>
+            <a href="{{ object.site }}">{{ object.site }}</a>
           {% else %}
-            <b class="my-bold">{% trans "Website" %}:</b>
-            <em>{% trans "not yet available" %}</em>
+          <b class="my-bold">{{ t_website|capfirst }}:</b>
+            <em>{{ t_not_yet_available }}</em>
           {% endif %}
         </p>
       </div>
