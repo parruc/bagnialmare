@@ -1,26 +1,16 @@
-from django.conf import settings
-from django.contrib.sitemaps import Sitemap
-from django.utils.translation import activate
 from models import *
+from common import LocalesSitemap, StaticLocalesSitemap
 
-class EnBagnoSitemap(Sitemap):
+class BagnoSitemap(LocalesSitemap):
     def items(self):
         return Bagno.objects.all()
 
-    def location(self, item):
-        activate("en")
-        return item.get_absolute_url()
-
-class ItBagnoSitemap(Sitemap):
+class BagnoStatic(StaticLocalesSitemap):
     def items(self):
-        return Bagno.objects.all()
-
-    def location(self, item):
-        activate("it")
-        return item.get_absolute_url()
+        return ['homepage', 'about-us', 'services', 'neighbourhoods', 'municipalities', 'districts']
 
 SITEMAPS = {
-    'bagno_en' : EnBagnoSitemap,
-    'bagno_it' : ItBagnoSitemap,
+    'bagni' : BagnoSitemap,
+    'bagni-static': BagnoStatic,
 }
 
