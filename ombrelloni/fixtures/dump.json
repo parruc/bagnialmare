@@ -339,6 +339,14 @@
   }
 },
 {
+  "pk": "js8mpubfu2pi7kcu6laijpt5w1q9o7yb", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-18T08:03:15.299Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
   "pk": "nphw8dtt5j72dj6wst9ak5sahm4q46v9", 
   "model": "sessions.session", 
   "fields": {
@@ -38658,6 +38666,31 @@
   }
 },
 {
+  "pk": 13827, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "slug_en": "test", 
+    "name_it": "Test", 
+    "name": "Test ", 
+    "point": null, 
+    "slug_it": "test", 
+    "number": "", 
+    "description_en": "Bagno test description", 
+    "site": "", 
+    "languages": [], 
+    "services": [], 
+    "address_it": "", 
+    "address": "", 
+    "description_it": "Descrizione di test", 
+    "mail": "", 
+    "name_en": "Test ", 
+    "address_en": "", 
+    "slug": "test", 
+    "neighbourhood": 31, 
+    "description": "Bagno test description"
+  }
+},
+{
   "pk": 68, 
   "model": "bagni.language", 
   "fields": {
@@ -39525,7 +39558,7 @@
     "slug": "food-and-beverage", 
     "description_it": "Cibi e bevande", 
     "name_en": "food & beverage", 
-    "order": 0, 
+    "order": 2, 
     "description": "Food and beverage"
   }
 },
@@ -39542,7 +39575,7 @@
     "slug": "children", 
     "description_it": "Servizi per bambini", 
     "name_en": "children", 
-    "order": 0, 
+    "order": 3, 
     "description": "Services for children"
   }
 },
@@ -39559,7 +39592,7 @@
     "slug": "sport-and-wellness", 
     "description_it": "Attivit\u00e0 sportive e cura del benessere", 
     "name_en": "sport & wellness", 
-    "order": 0, 
+    "order": 1, 
     "description": "Sports and wellness care"
   }
 },
@@ -39576,7 +39609,7 @@
     "slug": "games-and-entertainment", 
     "description_it": "Attivit\u00e0 ludiche e di intrattenimento", 
     "name_en": "games & entertainment", 
-    "order": 0, 
+    "order": 7, 
     "description": "Recreational activities and entertainment"
   }
 },
@@ -39593,7 +39626,7 @@
     "slug": "rent", 
     "description_it": "Servizi a noleggio", 
     "name_en": "rent", 
-    "order": 0, 
+    "order": 6, 
     "description": "Available services for rent"
   }
 },
@@ -39610,7 +39643,7 @@
     "slug": "extras", 
     "description_it": "Servizi aggiuntivi", 
     "name_en": "extras", 
-    "order": 0, 
+    "order": 12, 
     "description": "Additional services"
   }
 },
@@ -39627,7 +39660,7 @@
     "slug": "special-events", 
     "description_it": "Eventi speciali ricorrenti", 
     "name_en": "special events", 
-    "order": 0, 
+    "order": 11, 
     "description": "Special events occurring on a regular basis"
   }
 },
@@ -39644,7 +39677,7 @@
     "slug": "accessibility", 
     "description_it": "Dettagli accessibilit\u00e0", 
     "name_en": "accessibility", 
-    "order": 0, 
+    "order": 10, 
     "description": "Available accessibility"
   }
 },
@@ -39661,7 +39694,7 @@
     "slug": "technology", 
     "description_it": "Servizi tecnologici", 
     "name_en": "technology", 
-    "order": 0, 
+    "order": 9, 
     "description": "Technology services"
   }
 },
@@ -39678,7 +39711,7 @@
     "slug": "comfort-and-relax", 
     "description_it": "Servizi di comfort e relax", 
     "name_en": "comfort & relax", 
-    "order": 0, 
+    "order": 5, 
     "description": "Available services for comfort and relaxation"
   }
 },
@@ -39695,7 +39728,7 @@
     "slug": "beauty-and-spa", 
     "description_it": "Servizi per la cura del benessere e della bellezza", 
     "name_en": "beauty & spa", 
-    "order": 0, 
+    "order": 8, 
     "description": "Available services for beauty and health care"
   }
 },
@@ -39712,7 +39745,7 @@
     "slug": "trade", 
     "description_it": "Attivit\u00e0 commerciali annesse", 
     "name_en": "trade", 
-    "order": 0, 
+    "order": 13, 
     "description": "Available local trades"
   }
 },
@@ -39729,7 +39762,7 @@
     "slug": "payment-form", 
     "description_it": "Forme di pagamento accettate dalla struttura", 
     "name_en": "payment form", 
-    "order": 0, 
+    "order": 11, 
     "description": "Accepted forms of payment"
   }
 },
@@ -42731,7 +42764,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-04-03T15:51:57.206Z", 
+    "last_login": "2014-04-04T08:03:15.296Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$K9qn7bZj1p4O$Jo4paAjpyQ04/8fiDH3Ua9n38/dedibHvmIBOCxvo8k=", 
@@ -44489,6 +44522,214 @@
     "change_message": "Changed name_en and slug_en.", 
     "user": 1, 
     "content_type": 10
+  }
+},
+{
+  "pk": 133, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:01:35.962Z", 
+    "object_repr": "forma di pagamento", 
+    "object_id": "39", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 134, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:01:50.354Z", 
+    "object_repr": "commercio", 
+    "object_id": "38", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 135, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:02.250Z", 
+    "object_repr": "servizi extra", 
+    "object_id": "32", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 136, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:11.241Z", 
+    "object_repr": "eventi speciali", 
+    "object_id": "33", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 137, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:25.102Z", 
+    "object_repr": "accessibilit\u00e0", 
+    "object_id": "34", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 138, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:35.361Z", 
+    "object_repr": "technology", 
+    "object_id": "35", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 139, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:59.878Z", 
+    "object_repr": "beauty e spa", 
+    "object_id": "37", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 140, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:03:13.434Z", 
+    "object_repr": "noleggio", 
+    "object_id": "31", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 141, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:03:23.311Z", 
+    "object_repr": "intrattenimento e giochi", 
+    "object_id": "30", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 142, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:02.570Z", 
+    "object_repr": "noleggio", 
+    "object_id": "31", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 143, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:15.156Z", 
+    "object_repr": "comfort e relax", 
+    "object_id": "36", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 144, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:37.811Z", 
+    "object_repr": "sport e wellness", 
+    "object_id": "29", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 145, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:46.212Z", 
+    "object_repr": "food e beverage", 
+    "object_id": "27", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 146, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:54.813Z", 
+    "object_repr": "bambini", 
+    "object_id": "28", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 147, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-04-04T08:04:42.388Z", 
+    "object_repr": "Test ", 
+    "object_id": "13827", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 148, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 3, 
+    "action_time": "2014-04-04T08:36:21.223Z", 
+    "object_repr": "testuser", 
+    "object_id": "2", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 3
   }
 },
 {
