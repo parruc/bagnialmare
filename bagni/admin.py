@@ -3,8 +3,6 @@ from django.contrib.gis.admin import GeoModelAdmin
 from modeltranslation.admin import TranslationAdmin
 import models
 
-#TODO: Mettere le foreignkeys come fields inline
-
 
 class DistrictAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     pass
