@@ -15,10 +15,13 @@
 {% trans "filters" as t_filters%}
 {% trans "list_view" as t_list_view %}
 {% trans "map_view" as t_map_view %}
+{% trans "contact_button" as t_contact_button %}
 {% trans "previous" as t_previous %}
 {% trans "next" as t_next %}
 {% trans "no_results_for_search" as t_no_results_for_search %}
 
+
+  <div id="contact-form"></div>
   <div id="wrapped">
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
@@ -175,7 +178,7 @@
                           <a href="{{ hit.get_absolute_url }}">
                             {{ hit.name }} - {{ hit.neighbourhood.name }}
                           </a>
-                          {% if hit.distance %}
+                          {% if c.distance %}
                             <span class="badge">
                               {{hit.distance.km|floatformat:2 }}Km
                             </span>
@@ -187,6 +190,12 @@
                           {{ hit.neighbourhood.municipality.name }} -
                           {{ hit.neighbourhood.municipality.district.name }}
                         </p>
+                        {% if hit.is_managed %}
+                          <button id="contact-form-button" class="button"
+                                  data-url="{{ hit.get_contactform_url }}">
+                            {{ t_contact_button }}
+                          </button>
+                        {% endif %}
                       </div>
                     </div>
                   </div>
@@ -296,6 +305,7 @@
   <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/search.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/contact_dialog.js"></script>
 {% endblock specific_js %}
 
 
