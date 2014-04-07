@@ -46,7 +46,7 @@
             </form>
         </div>
     </div>
-   
+
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -74,9 +74,10 @@
 {% block specific_js %}
     <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
     <script type="text/javascript">
         $(function() {
-        $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
+          $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
         });
         function showFacilitiesModal(){
             $('#myModal').modal();
@@ -88,7 +89,7 @@
             if(whatInput.value === ''){
                 whatInput.value = aTag.innerHTML;
             } else{
-               whatInput.value = aTag.innerHTML + ', ' + whatInput.value; 
+               whatInput.value = aTag.innerHTML + ', ' + whatInput.value;
             }
         };
     </script>
