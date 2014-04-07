@@ -5,6 +5,10 @@ from django.utils.translation import ugettext_lazy as _
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib.gis import admin
+from common import get_sitemaps
+
+SITEMAPS = get_sitemaps(['bagni', 'contacts'])
+
 admin.autodiscover()
 
 urlpatterns = patterns(
@@ -17,6 +21,8 @@ urlpatterns = patterns(
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
+    #enables the sitemaps framework
+    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps' : SITEMAPS}),
 )
 
 urlpatterns += i18n_patterns(

@@ -28,7 +28,7 @@
                     <label class="sr-only" for="search_q">{{ t_what|capfirst }}</label>
                     <div class="input-group input-group-lg">
                         <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{{ t_what|capfirst }}">
-                        <span class="input-group-btn"><button id="facilities-list-trigger" data-toggle="tooltip" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button" onclick="showFacilitiesModal()"><span class="glyphicon glyphicon-list"></span></button></span>
+                        <span class="input-group-btn"><button id="facilities-list-trigger" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button" onclick="showFacilitiesModal()"><span class="glyphicon glyphicon-list"></span></button></span>
                     </div>
                     <div class="ui-front"></div>
                 </div>
@@ -41,7 +41,7 @@
                     </a>
                 </div>
                 <div class="col-md-2 homepage-input-div">
-                    <button data-toggle="tooltip" data-placement="top"  data-original-title="See the facilities list" type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{{ t_home_search|capfirst }}</button>
+                <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{{ t_home_search|capfirst }}</button>
                 </div>
             </form>
         </div>
@@ -81,15 +81,14 @@
         function showFacilitiesModal(){
             $('#myModal').modal();
         };
-        $(function () { $("#facilities-list-trigger").tooltip({container: 'body', placement: 'top'}); });
-        $(function () { $("#facilities-list-trigger").tooltip('show'); });
         function populateWhatField(aTag){
             $('#myModal').modal('hide');
             var whatInput = document.getElementById('search_q');
+            whatInput.focus();
             if(whatInput.value === ''){
                 whatInput.value = aTag.innerHTML;
             } else{
-               whatInput.value = whatInput.value + ', ' + aTag.innerHTML; 
+               whatInput.value = aTag.innerHTML + ', ' + whatInput.value; 
             }
         };
     </script>
