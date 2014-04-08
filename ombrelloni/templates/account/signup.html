@@ -18,6 +18,7 @@
 {% trans "already_have_account" as t_already_have_account %}
 {% trans "sign_in" as t_sign_in %}
 
+
 <h1>{{ t_are_you_manager|title }}</h1>
 
 <h2>{{ t_account_signup_introi|capfirst }}</h2>
@@ -32,7 +33,11 @@
   {% endif %}
   <button type="submit">{{ t_sign_up_button }} &raquo;</button>
 </form>
-
+<div id="tos-content">{% trans "tos_content" %}</div>
+<div id="privacy-content">{% trans "privacy_content" %}</div>
+{% block specific_js %}
+  <script type="text/javascript" src="{{ STATIC_URL }}js/signup.js"></script>
+{% endblock specific_js %}
 
 {% endblock %}
 
