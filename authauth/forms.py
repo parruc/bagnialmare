@@ -16,12 +16,12 @@ class M2MSelect(forms.Select):
 class ManagerSignupForm(forms.ModelForm):
     class Meta:
         model = Manager
-        fields = ['bagni', 'privacy', 'tos']
+        fields = ['name', 'surname', 'bagni', 'privacy', 'tos']
         widgets = {
             'bagni': M2MSelect()
         }
 
-    def save(self, user):
+    def signup(self, request, user):
         m = Manager.objects.create(user=user)
         m.bagni = self.cleaned_data['bagni']
         m.privacy = self.cleaned_data['privacy']

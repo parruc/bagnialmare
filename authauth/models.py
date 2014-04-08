@@ -9,21 +9,33 @@ from bagni.models import Bagno
 
 class Manager(models.Model):
 
+    name = models.CharField(max_length=50,
+                            verbose_name=_("Name"),
+    )
+
+    surname = models.CharField(max_length=50,
+                               verbose_name=_("Surname"),
+    )
+
     user = models.OneToOneField(User,
-        null=True, blank=True,
+                                null=True, blank=True,
     )
+
     bagni = models.ManyToManyField(Bagno,
-        null=True, blank=True,
-        related_name='managers',
+                                   null=True, blank=True,
+                                   related_name='managers',
     )
+
     privacy = models.BooleanField(default=True,
-        null=False, blank=False,
-        help_text=_(u"Privacy terms")
+                                  null=False, blank=False,
+                                  verbose_name=_("Privacy terms"),
+                                  help_text=_(u"Privacy terms definition")
     )
 
     tos = models.BooleanField(default=True,
-        null=False, blank=False,
-        help_text=_(u"Terms of service")
+                              null=False, blank=False,
+                              verbose_name=_("Terms of service "),
+                              help_text=_(u"Terms of service definition")
     )
 
     def can_edit(self, obj):

@@ -1,12 +1,13 @@
 {% load thumbnail i18n %}
 
 {% block content %}
+{% trans "contacts" as t_contacts %}
 {% trans "telephone_numbers" as t_telephone_numbers %}
 {% trans "not_yet_available" as t_not_yet_available %}
 {% trans "website" as t_website %}
 <div id="contatti">
     <div>
-        <h2 class="bagno-detail-sub-header">{{ t_telephone_numbers }}</h2>
+        <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
       <div>
         <p>
           {% if object.telephones.all %}
