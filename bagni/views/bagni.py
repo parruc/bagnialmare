@@ -5,8 +5,10 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.core.urlresolvers import reverse
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
-from django.views.generic.list import ListView
+from django.views.generic import TemplateView
 from django.contrib import messages
+from ..models.services import ServiceCategory
+from ..models.places import District
 #from django.utils.translation import ugettext as _
 
 from contacts.views import ContactView
@@ -20,13 +22,16 @@ logging.basicConfig()
 logger = logging.getLogger("bagni.console")
 
 
-class BagniView(ListView):
+class BagniView(TemplateView):
     """ View for a list of bagni
     """
-    model = Bagno
+
+    template_name = "bagni/bagni.html"
 
     def get_context_data(self, **kwargs):
         context = super(BagniView, self).get_context_data(**kwargs)
+        context.update({'districts': District.objects.all()})
+        context.update({'facility_categories': ServiceCategory.objects.all()})
         return context
 
 

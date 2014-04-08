@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+  <div class="row">
+      <div class="col-xs-12">
+          <h1 class="">Bagni</h1>
+          <p>Esplora bagni per localita o per servizio offerto.</p>
+          <hr>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12">
+      <h2 class="">Localita:</h2>
+      {% for district in districts %}
+          <h3 class=""><a href="{{ district.get_absolute_url }}">{{ district.name }}</a></h3>
+              <ul>
+              {% for municipality in district.municipalities.all %}
+                   <li><h4 class=""><a href="{{ municipality.get_absolute_url }}">{{ municipality.name}}</a></h4></li>
+                   <ul>
+                   {% for neighbourhood in municipality.neighbourhoods.all %}
+                       <li><p class=""><a href="{{ neighbourhood.get_absolute_url }}">{{ neighbourhood.name}}</a></p></li>
+                   {% endfor %}
+                   </ul>
+              {% endfor %}
+              </ul>
+      {% endfor %}    
+      <hr>
+      <h2 class="">Servizi:</h2>
+      {% for facility_category in facility_categories %}
+          <h3 class="">{{ facility_category.name}}</h3>
+          <ul>
+          {% for service in facility_category.services.all %}
+               <li><p class=""><a href="{{ service.get_absolute_url }}">{{ service.name }}</a></p></li>
+          {% endfor %}
+          </ul>
+      {% endfor %}
+      </div>
+  </div>
+
+{% endblock %}
+
+
+{% block title %}
+to-do
+{% endblock title %}
+
+{% block pagetitle %}
+to-do
+{% endblock pagetitle %}
