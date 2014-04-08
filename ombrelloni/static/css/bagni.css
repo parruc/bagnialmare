@@ -356,6 +356,10 @@ label {
     font-family: Helvetica Neue, sans-serif;
 }
 
+li {
+    font-family: Helvetica Neue, sans-serif;
+}
+
 span {
     font-family: Helvetica Neue, sans-serif;
     color: rgb(102, 102, 102);
@@ -431,6 +435,15 @@ button {
 
 .modal-facility-row{
     padding-bottom: 10px;
+}
+
+
+
+/* css class set by django on the form errors */
+.errorlist{
+    padding-left: 0px;
+    list-style: none outside none;
+    color: red;
 }
 
 /*.btn-primary {
