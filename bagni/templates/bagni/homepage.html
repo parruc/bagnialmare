@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load i18n %}
+{% load batch from custom_filters %}
 
 {% block bodyclass %}homepage-body-class{% endblock %}
 {% block navbarclass %}homepage-navbar{% endblock %}
@@ -49,27 +50,50 @@
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content hp-facility-modal">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Click on a facility to choose it</h4>
+            <h3 class="modal-title my-bold" id="myModalLabel">Click on a facility to select it:</h3>
           </div>
           <div class="modal-body">
-              <h4>Sport</h4>
-              <p><a href="#" onclick="populateWhatField(this)">Ping Pong</a> | <a href="#" onclick="populateWhatField(this)">Beach Volley</a> | <a href="#" onclick="populateWhatField(this)">Windsurf</a></p>
-              <h4>Beauty and Spa</h4>
-              <p><a href="#" onclick="populateWhatField(this)">Solarium</a> | <a href="#" onclick="populateWhatField(this)">Massaggi</a> | <a href="#" onclick="populateWhatField(this)">etc.</a></p>
-              <h4>Etc.</h4>
-              <p><a href="#" onclick="populateWhatField(this)">etc.</a></p>
+              {% for facility_category in facility_categories %}
+                  <div class="row">
+                      <div class="col-xs-12 modal-category-name-col">
+                          <h4 data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" 
+                              class="modal-category-name"><span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if forloop.counter < 3 %} glyphicon-chevron-down {% else %} glyphicon-chevron-right {% endif %} my-brown"></span> {{ facility_category.name|capfirst }}</h4>
+                      </div> 
+                  </div>
+                  <div id="collapse{{ forloop.counter }}" class="collapse {% if forloop.counter < 3 %} in {% endif %}" >
+                  {% for facility_batch in facility_category.services.all|batch:4 %}
+                      <div class="row modal-facility-row">
+                          {% for facility in facility_batch %}
+                          <div class="col-xs-3">
+                              <p><a href="#" onclick="populateWhatField(this)">{% trans facility.name %}</a></p>
+                          </div>
+                          {% endfor %}
+                      </div>
+                  {% endfor %}
+                  </div>
+              {% endfor %}
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
+    <script type="text/javascript">
+        $(".collapse").on("shown.bs.collapse", function () {
+             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down");
+        });
+        $(".collapse").on('hidden.bs.collapse', function () {
+             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right");
+        });
+    </script>
+
 {% endblock %}
+
 
 {% block specific_js %}
     <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
