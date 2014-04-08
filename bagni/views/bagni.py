@@ -122,7 +122,6 @@ class BagnoEdit(UpdateView):
 class BagnoContacts(ContactView):
     """ Contact info and form view for a single bagno
     """
-    model = Bagno
     template_name = "bagni/bagno_contacts.html"
     form_class = ContactForm
 
