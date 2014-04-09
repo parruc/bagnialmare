@@ -61,7 +61,7 @@
                     data-toggle="collapse"
                     data-target="#collapse_active">
                   <span id="collapse_active"
-                        class="glyphicon glyphicon-chevron-down my-brown"></span>
+                        class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
                     {{ t_active_filters|capfirst }}
                 </h4>
                 <div class="collapse in" >
@@ -87,7 +87,7 @@
                         data-toggle="collapse"
                         data-target="#collapse{{ forloop.counter }}">
                       <span id="spancollapse{{ forloop.counter }}"
-                            class="glyphicon glyphicon-chevron-down my-brown"></span>
+                            class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
                       {% filter capfirst %}
                         {% trans facet_group.name %}
                       {% endfilter %}

@@ -437,6 +437,11 @@ button {
     padding-bottom: 10px;
 }
 
+.facility-categoty-arrow{
+    margin-right: 0px;
+    top: 2px;
+    color: #6A4A3C;
+}
 
 
 /* css class set by django on the form errors */
