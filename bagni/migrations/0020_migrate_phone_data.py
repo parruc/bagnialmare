@@ -1,32 +1,34 @@
-# -*- coding: utf-8 -*-ArithmeticError
-from south.v2 import SchemaMigration
-from bagni.models import  Bagno, Telephone
+# -*- coding: utf-8 -*-
+from south.utils import datetime_utils as datetime
+from south.db import db
+from south.v2 import DataMigration
+from django.db import models
 
-
-class Migration(SchemaMigration):
+class Migration(DataMigration):
 
     def forwards(self, orm):
         fields = {'cell': "Cellulare", 'fax': "Fax", 'tel': "Telefono", 'winter_tel': "Telefono Invernale"}
-        for b in Bagno.objects.all():
+        for b in orm.Bagno.objects.all():
             for field, name in fields.items():
                 values = getattr(b, field, None)
                 if not values:
                     continue
                 for value in values.split("-"):
                     value = value.strip()
-                    t = Telephone.objects.create(bagno=b)
+                    t = orm.Telephone.objects.create(bagno=b)
                     t.name = name
                     t.number = value
                     t.save()
 
     def backwards(self, orm):
-        for b in Bagno.objects.all():
+        for b in orm.Bagno.objects.all():
             numbers = []
             for t in b.telephones.all():
                 numbers.append(t.number)
             if numbers:
                 b.tel = " - ".join(numbers)
                 b.save()
+
 
     models = {
         u'bagni.bagno': {
