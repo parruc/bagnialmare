@@ -49,7 +49,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'homepage' %}">
+          <a class="navbar-brand" href="{% url 'homepage' %}" title="bagnialmare.com">
             {% block logoimage %}
             <img src="{{ STATIC_URL }}img/logo.jpg" />
             {% endblock %} <strong>bagnialmare.com</strong>
@@ -58,16 +58,20 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="{% url 'contact-form' %}"> <strong>{{ t_contact|title }}</strong>
+            <a href="{% url 'contact-form' %}" 
+                title="{{ t_contact }}"> 
+                <strong>{{ t_contact|title }}</strong>
               </a>
             </li>
             <li>
-              <a href="{% url 'about-us' %}">
+            <a href="{% url 'about-us' %}"
+               title="{{ t_about_us }}">
                 <strong>{{ t_about_us|title }}</strong>
               </a>
             </li>
             <li>
-              <a href="{% url 'account_signup' %}">
+            <a href="{% url 'account_signup' %}" 
+               title="{{ t_are_you_manager }}">
                 <strong>{{ t_are_you_manager|capfirst }}</strong>
               </a>
             </li>

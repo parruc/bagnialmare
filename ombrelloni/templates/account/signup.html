@@ -23,7 +23,12 @@
 
 <h2>{{ t_account_signup_introi|capfirst }}</h2>
 
-<p>{{ t_already_have_account|capfirst }} <a href="{{ login_url }}">{{ t_sign_in }}</a></p>
+<p>
+  {{ t_already_have_account|capfirst }} 
+  <a href="{{ login_url }}" title="{{ t_sign_up }}">
+    {{ t_sign_in }}
+  </a>
+</p>
 
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
