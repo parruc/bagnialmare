@@ -3,6 +3,9 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "municipality" as t_municipality %}
+{% trans "neighbourhood" as t_neighbourhood %}
+{% trans "service" as t_service %}
   <div class="row">
       <div class="col-xs-12">
           <h1 class="">Bagni</h1>
@@ -16,15 +19,29 @@
       {% for district in districts %}
           <h3 class=""><a href="{{ district.get_absolute_url }}">{{ district.name }}</a></h3>
               <ul>
-              {% for municipality in district.municipalities.all %}
-                   <li><h4 class=""><a href="{{ municipality.get_absolute_url }}">{{ municipality.name}}</a></h4></li>
-                   <ul>
-                   {% for neighbourhood in municipality.neighbourhoods.all %}
-                       <li><p class=""><a href="{{ neighbourhood.get_absolute_url }}">{{ neighbourhood.name}}</a></p></li>
-                   {% endfor %}
-                   </ul>
-              {% endfor %}
+                  {% for municipality in district.municipalities.all %}
+                  <li>
+                    <h4 class="">
+                      <a href="{{ municipality.get_absolute_url }}"
+                         title="{{ t_municipality }}: {{ municipality.name }}">
+                        {{ municipality.name}}
+                      </a>
+                    </h4>
+                  </li>
+              <ul>
+                {% for neighbourhood in municipality.neighbourhoods.all %}
+                <li>
+                  <p>
+                  <a href="{{ neighbourhood.get_absolute_url }}"
+                      title="{{ t_neighbourhood }}: {{ neighbourhood.name }}" >
+                      {{ neighbourhood.name}}
+                    </a>
+                  </p>
+                </li>
+                {% endfor %}
               </ul>
+            {% endfor %}
+            </ul>
       {% endfor %}    
       <hr>
       <h2 class="">Servizi:</h2>
@@ -32,7 +49,11 @@
           <h3 class="">{{ facility_category.name}}</h3>
           <ul>
           {% for service in facility_category.services.all %}
-               <li><p class=""><a href="{{ service.get_absolute_url }}">{{ service.name }}</a></p></li>
+          <li><p>
+          <a href="{{ service.get_absolute_url }}"
+             title="{{ t_service }}: {% trans service.name %}">
+              {% trans service.name %}
+          </a></p></li>
           {% endfor %}
           </ul>
       {% endfor %}

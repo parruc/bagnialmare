@@ -21,8 +21,8 @@
   {% endcomment %}
   <div class="row homepage-first-row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
-    <h1 class="homepage-headline" >{{ t_home_heading }}</h1>
-    <p class="homepage-sub-headline">{{ t_home_sub_heading }}</p>
+    <h1 class="homepage-headline" >{{ t_home_heading|capfirst }}</h1>
+    <p class="homepage-sub-headline">{{ t_home_sub_heading|capfirst }}</p>
             <form id="search-form" class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
                 <input type="hidden" name="pos" value="" />
                 <div class="col-md-5 homepage-input-div">

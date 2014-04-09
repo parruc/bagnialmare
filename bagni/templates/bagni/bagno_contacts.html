@@ -5,6 +5,7 @@
 {% trans "telephone_numbers" as t_telephone_numbers %}
 {% trans "not_yet_available" as t_not_yet_available %}
 {% trans "website" as t_website %}
+{% trans "bagno" as t_bagno %}
 <div id="contatti">
     <div>
         <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
@@ -27,7 +28,9 @@
         <p>
           {% if object.site %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>
-            <a href="{{ object.site }}">{{ object.site }}</a>
+          <a href="{{ object.site }}"
+              title="{{ t_bagno }} {{ t_website }}">
+              {{ object.site }}</a>
           {% else %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>
             <em>{{ t_not_yet_available }}</em>

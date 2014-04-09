@@ -3,10 +3,16 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "bagno" as t_bagno %}
     {% with object.bagni.all as bagni %}
         <ul>
         {% for bagno in bagni %}
-            <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
+        <li>
+          <a href="{{ bagno.get_absolute_url }}"
+              title="{{ t_bagno }} {{ bagno.name }}">
+              {{ bagno.name }}
+          </a>
+        </li>
         {% empty %}
             <li>{% trans "No bagno has this service" %}</li>
         {% endfor %}

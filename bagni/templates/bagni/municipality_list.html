@@ -3,13 +3,17 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "municipality" as t_municipality %}
+{% trans "no_municipality" as t_no_municipality %}
     <ul>
         {% for municipality in object_list %}
             <li>
-                <a href="{{ municipality.get_absolute_url }}">{{ municipality.name }}</a>
+            <a href="{{ municipality.get_absolute_url }}"
+                title="{{ t_municipality }} {{ municipality.name }}">
+               {{ municipality.name }}</a>
             </li>
         {% empty %}
-            <li>{% trans 'No municipality' %}</li>
+            <li>{{ t_no_municipality }}</li>
         {% endfor %}
     </ul>
 {% endblock content %}

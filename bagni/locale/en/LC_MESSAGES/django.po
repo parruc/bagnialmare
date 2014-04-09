@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 20:46+0200\n"
+"POT-Creation-Date: 2014-04-09 22:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,8 +143,8 @@ msgstr ""
 msgid "Municipality"
 msgstr ""
 
-#: models/places.py:37 templates/bagni/municipality_list.html:17
-#: templates/bagni/municipality_list.html:19
+#: models/places.py:37 templates/bagni/municipality_list.html:21
+#: templates/bagni/municipality_list.html:23
 msgid "Municipalities"
 msgstr ""
 
@@ -168,8 +168,21 @@ msgstr "Facilities"
 msgid "Category"
 msgstr ""
 
+#: templates/bagni/bagni.html:6 templates/bagni/municipality_detail.html:22
+#: templates/bagni/municipality_detail.html:27
+#: templates/bagni/municipality_list.html:6
+msgid "municipality"
+msgstr ""
+
+#: templates/bagni/bagni.html:7
+msgid "neighbourhood"
+msgstr ""
+
+#: templates/bagni/bagni.html:8
+msgid "service"
+msgstr "facility"
+
 #: templates/bagni/bagno_contacts.html:4
-#, fuzzy
 msgid "contacts"
 msgstr "contact this structure"
 
@@ -185,7 +198,15 @@ msgstr "not yet available"
 msgid "website"
 msgstr "website"
 
-#: templates/bagni/bagno_detail.html:7 templates/bagni/search.html:18
+#: templates/bagni/bagno_contacts.html:8 templates/bagni/bagno_list.html:7
+#: templates/bagni/district_detail.html:8
+#: templates/bagni/municipality_detail.html:7 templates/bagni/search.html:10
+#: templates/bagni/service_detail.html:6
+#: templates/bagni/servicecategory_detail.html:6
+msgid "bagno"
+msgstr "beachresort"
+
+#: templates/bagni/bagno_detail.html:7 templates/bagni/search.html:19
 msgid "contact_button"
 msgstr "contact this structure"
 
@@ -201,12 +222,16 @@ msgstr "no images for"
 msgid "no_images_add"
 msgstr "no images available, add one now"
 
-#: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:19
-#: templates/bagni/service_list.html:24
+#: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
+#: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:12
+#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:7
+msgid "facility"
+msgstr "facility"
+
+#: templates/bagni/bagno_detail.html:13
 msgid "facility_info_not_available"
 msgstr "facility informations not available"
 
@@ -214,7 +239,7 @@ msgstr "facility informations not available"
 msgid "no_bagno"
 msgstr "no beach resort"
 
-#: templates/bagni/bagno_list.html:17 templates/bagni/bagno_list.html.py:22
+#: templates/bagni/bagno_list.html:19 templates/bagni/bagno_list.html.py:24
 msgid "bagni"
 msgstr "beach resorts"
 
@@ -227,8 +252,8 @@ msgstr "no beach resort in this municipality"
 msgid "no_municipality_in_this_district"
 msgstr "no municipality in this district"
 
-#: templates/bagni/district_detail.html:27
-#: templates/bagni/district_detail.html:32
+#: templates/bagni/district_detail.html:29
+#: templates/bagni/district_detail.html:34
 msgid "district"
 msgstr ""
 
@@ -278,77 +303,72 @@ msgstr "search"
 msgid "homepage_title"
 msgstr "bagnialmare.com"
 
-#: templates/bagni/municipality_detail.html:19
-#: templates/bagni/municipality_detail.html:24
-msgid "municipality"
-msgstr ""
-
-#: templates/bagni/municipality_list.html:12
-msgid "No municipality"
-msgstr ""
+#: templates/bagni/municipality_list.html:7
+msgid "no_municipality"
+msgstr "no beach resort in this municipality"
 
 #: templates/bagni/search.html:8
 msgid "where"
 msgstr ""
 
-#: templates/bagni/search.html:9 templates/bagni/search.html.py:314
-#: templates/bagni/search.html:319
+#: templates/bagni/search.html:9 templates/bagni/search.html.py:316
+#: templates/bagni/search.html:321
 msgid "search"
 msgstr ""
 
-#: templates/bagni/search.html:10
+#: templates/bagni/search.html:11
 msgid "filter_by_facility"
 msgstr "filter by facility"
 
-#: templates/bagni/search.html:11
+#: templates/bagni/search.html:12
 msgid "active_filters"
 msgstr "active filters"
 
-#: templates/bagni/search.html:12
+#: templates/bagni/search.html:13
 msgid "results_for"
 msgstr "results for"
 
-#: templates/bagni/search.html:13
+#: templates/bagni/search.html:14
 msgid "results"
 msgstr ""
 
-#: templates/bagni/search.html:14
+#: templates/bagni/search.html:15
 msgid "near"
 msgstr ""
 
-#: templates/bagni/search.html:15
+#: templates/bagni/search.html:16
 msgid "filters"
 msgstr ""
 
-#: templates/bagni/search.html:16
+#: templates/bagni/search.html:17
 msgid "list_view"
 msgstr "list view"
 
-#: templates/bagni/search.html:17
+#: templates/bagni/search.html:18
 msgid "map_view"
 msgstr "map view"
 
-#: templates/bagni/search.html:19
+#: templates/bagni/search.html:20
 msgid "previous"
 msgstr ""
 
-#: templates/bagni/search.html:20
+#: templates/bagni/search.html:21
 msgid "next"
 msgstr ""
 
-#: templates/bagni/search.html:21
+#: templates/bagni/search.html:22
 msgid "no_results_for_search"
 msgstr "no results for the given search"
 
-#: templates/bagni/search.html:213
+#: templates/bagni/search.html:215
 #, python-format
 msgid ""
 "\n"
 "                      Page %(page)s of %(num_pages)s."
 msgstr ""
 
-#: templates/bagni/service_detail.html:11
-#: templates/bagni/servicecategory_detail.html:14
+#: templates/bagni/service_detail.html:17
+#: templates/bagni/servicecategory_detail.html:18
 msgid "No bagno has this service"
 msgstr "No bagno has this facility"
 
@@ -356,17 +376,21 @@ msgstr "No bagno has this facility"
 msgid "no_service"
 msgstr "no facility"
 
-#: templates/bagni/servicecategory_detail.html:19
-#: templates/bagni/servicecategory_list.html:16
+#: templates/bagni/servicecategory_detail.html:23
+#: templates/bagni/servicecategory_list.html:19
 msgid "No service for this category"
 msgstr "No facility for this category"
 
-#: templates/bagni/servicecategory_list.html:21
+#: templates/bagni/servicecategory_list.html:6
+msgid "service_category"
+msgstr "Facility Category"
+
+#: templates/bagni/servicecategory_list.html:24
 msgid "No service categories"
 msgstr "No facility categories"
 
-#: templates/bagni/servicecategory_list.html:26
-#: templates/bagni/servicecategory_list.html:28
+#: templates/bagni/servicecategory_list.html:29
+#: templates/bagni/servicecategory_list.html:31
 msgid "Service categories"
 msgstr "Facility categories"
 

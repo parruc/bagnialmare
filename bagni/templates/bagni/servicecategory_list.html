@@ -3,10 +3,13 @@
 {% load i18n %}
 
 {% block content %}
+{% trans "service_category" as t_service_category %}
     <ul>
         {% for service_category in object_list %}
             <li>
-                <a href="{{ service_category.get_absolute_url }}">{{ service_category.name }}</a>
+            <a href="{{ service_category.get_absolute_url }}"
+                title="{{ t_service_category }} {% trans service_category.name %}">
+                {% trans service_category.name %}</a>
                 <ul>
                     {% for service in service_category.services.all %}
                     <li>

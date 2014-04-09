@@ -9,6 +9,7 @@
 {% trans "no_images_for" as t_no_images_for %}
 {% trans "no_images_add" as t_no_images_add %}
 {% trans "facilities" as t_facilities %}
+{% trans "facility" as t_facility %}
 {% trans "facility_info_not_available" as t_facility_info_not_available %}
 
 <div id="contact-form"></div>
@@ -110,7 +111,10 @@
                   <div class="col-xs-3">
                     <p>
                       <span class="glyphicon glyphicon-ok service-glyphicon"></span>
-                      <a href="{{ service.get_filtered_search_url }}">{% trans service.name %}</a>
+                      <a href="{{ service.get_filtered_search_url }}"
+                          title="{{ t_facility }}: {% trans service.name %}">
+                         {% trans service.name %}
+                      </a>
                     </p>
                   </div>
                 {% endfor %}

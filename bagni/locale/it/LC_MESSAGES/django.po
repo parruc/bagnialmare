@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 20:46+0200\n"
+"POT-Creation-Date: 2014-04-09 22:04+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -145,8 +145,8 @@ msgstr "Province"
 msgid "Municipality"
 msgstr "Comune"
 
-#: models/places.py:37 templates/bagni/municipality_list.html:17
-#: templates/bagni/municipality_list.html:19
+#: models/places.py:37 templates/bagni/municipality_list.html:21
+#: templates/bagni/municipality_list.html:23
 msgid "Municipalities"
 msgstr "Comuni"
 
@@ -170,8 +170,21 @@ msgstr "Servizi"
 msgid "Category"
 msgstr "Categoria"
 
+#: templates/bagni/bagni.html:6 templates/bagni/municipality_detail.html:22
+#: templates/bagni/municipality_detail.html:27
+#: templates/bagni/municipality_list.html:6
+msgid "municipality"
+msgstr "comune"
+
+#: templates/bagni/bagni.html:7
+msgid "neighbourhood"
+msgstr "localita"
+
+#: templates/bagni/bagni.html:8
+msgid "service"
+msgstr "servizio"
+
 #: templates/bagni/bagno_contacts.html:4
-#, fuzzy
 msgid "contacts"
 msgstr "contattaci"
 
@@ -187,7 +200,15 @@ msgstr "non ancora disponibile"
 msgid "website"
 msgstr "website"
 
-#: templates/bagni/bagno_detail.html:7 templates/bagni/search.html:18
+#: templates/bagni/bagno_contacts.html:8 templates/bagni/bagno_list.html:7
+#: templates/bagni/district_detail.html:8
+#: templates/bagni/municipality_detail.html:7 templates/bagni/search.html:10
+#: templates/bagni/service_detail.html:6
+#: templates/bagni/servicecategory_detail.html:6
+msgid "bagno"
+msgstr "bagno"
+
+#: templates/bagni/bagno_detail.html:7 templates/bagni/search.html:19
 msgid "contact_button"
 msgstr "contattaci"
 
@@ -203,12 +224,16 @@ msgstr "nessuna immagine per"
 msgid "no_images_add"
 msgstr "nessuna immagine disponibile, aggiungine una"
 
-#: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:19
-#: templates/bagni/service_list.html:24
+#: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
+#: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi"
 
-#: templates/bagni/bagno_detail.html:12
+#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:7
+msgid "facility"
+msgstr "servizio"
+
+#: templates/bagni/bagno_detail.html:13
 msgid "facility_info_not_available"
 msgstr "informazioni non disponibili"
 
@@ -216,7 +241,7 @@ msgstr "informazioni non disponibili"
 msgid "no_bagno"
 msgstr "nessun bagno"
 
-#: templates/bagni/bagno_list.html:17 templates/bagni/bagno_list.html.py:22
+#: templates/bagni/bagno_list.html:19 templates/bagni/bagno_list.html.py:24
 msgid "bagni"
 msgstr "bagni"
 
@@ -229,8 +254,8 @@ msgstr "nessun bagno in questo comune"
 msgid "no_municipality_in_this_district"
 msgstr "non ci sono comuni censiti in questa provincia"
 
-#: templates/bagni/district_detail.html:27
-#: templates/bagni/district_detail.html:32
+#: templates/bagni/district_detail.html:29
+#: templates/bagni/district_detail.html:34
 msgid "district"
 msgstr "città"
 
@@ -280,69 +305,64 @@ msgstr "cerca"
 msgid "homepage_title"
 msgstr "bagnialmare.com"
 
-#: templates/bagni/municipality_detail.html:19
-#: templates/bagni/municipality_detail.html:24
-msgid "municipality"
-msgstr "comune"
-
-#: templates/bagni/municipality_list.html:12
-msgid "No municipality"
-msgstr "Nessun comune"
+#: templates/bagni/municipality_list.html:7
+msgid "no_municipality"
+msgstr "nessun comune"
 
 #: templates/bagni/search.html:8
 msgid "where"
 msgstr "dove"
 
-#: templates/bagni/search.html:9 templates/bagni/search.html.py:314
-#: templates/bagni/search.html:319
+#: templates/bagni/search.html:9 templates/bagni/search.html.py:316
+#: templates/bagni/search.html:321
 msgid "search"
 msgstr "cerca"
 
-#: templates/bagni/search.html:10
+#: templates/bagni/search.html:11
 msgid "filter_by_facility"
 msgstr "filtra per servizio"
 
-#: templates/bagni/search.html:11
+#: templates/bagni/search.html:12
 msgid "active_filters"
 msgstr "filtri attivi"
 
-#: templates/bagni/search.html:12
+#: templates/bagni/search.html:13
 msgid "results_for"
 msgstr "risultati per"
 
-#: templates/bagni/search.html:13
+#: templates/bagni/search.html:14
 msgid "results"
 msgstr "risultati per"
 
-#: templates/bagni/search.html:14
+#: templates/bagni/search.html:15
 msgid "near"
 msgstr "vicino"
 
-#: templates/bagni/search.html:15
+#: templates/bagni/search.html:16
 msgid "filters"
 msgstr "filtri"
 
-#: templates/bagni/search.html:16
+#: templates/bagni/search.html:17
 msgid "list_view"
 msgstr "lista"
 
-#: templates/bagni/search.html:17
+#: templates/bagni/search.html:18
 msgid "map_view"
 msgstr "mappa"
 
-#: templates/bagni/search.html:19
+#: templates/bagni/search.html:20
 msgid "previous"
 msgstr "precedente"
 
-#: templates/bagni/search.html:20
+#: templates/bagni/search.html:21
 msgid "next"
 msgstr "successivo"
 
-#: templates/bagni/search.html:21
+#: templates/bagni/search.html:22
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:213
+#: templates/bagni/search.html:215
 #, python-format
 msgid ""
 "\n"
@@ -351,8 +371,8 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/service_detail.html:11
-#: templates/bagni/servicecategory_detail.html:14
+#: templates/bagni/service_detail.html:17
+#: templates/bagni/servicecategory_detail.html:18
 msgid "No bagno has this service"
 msgstr "Nessun bagno ha questi servizio"
 
@@ -360,17 +380,21 @@ msgstr "Nessun bagno ha questi servizio"
 msgid "no_service"
 msgstr "nessun servizio"
 
-#: templates/bagni/servicecategory_detail.html:19
-#: templates/bagni/servicecategory_list.html:16
+#: templates/bagni/servicecategory_detail.html:23
+#: templates/bagni/servicecategory_list.html:19
 msgid "No service for this category"
 msgstr "Non ci sono servizi in questa categoria"
 
-#: templates/bagni/servicecategory_list.html:21
+#: templates/bagni/servicecategory_list.html:6
+msgid "service_category"
+msgstr "categoria di servizi"
+
+#: templates/bagni/servicecategory_list.html:24
 msgid "No service categories"
 msgstr "Nessuna categoria di servizio"
 
-#: templates/bagni/servicecategory_list.html:26
-#: templates/bagni/servicecategory_list.html:28
+#: templates/bagni/servicecategory_list.html:29
+#: templates/bagni/servicecategory_list.html:31
 msgid "Service categories"
 msgstr "Categorie di servizi"
 
@@ -382,3 +406,6 @@ msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
 #: views/search.py:55
 msgid "Error in geocoding"
 msgstr "Errore di geocodifica"
+
+#~ msgid "No municipality"
+#~ msgstr "Nessun comune"

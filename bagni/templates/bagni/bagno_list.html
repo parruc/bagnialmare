@@ -4,9 +4,11 @@
 
 {% block content %}
 {% trans "no_bagno" as t_no_bagno %}
+{% trans "bagno" as t_bagno %}
     <ul>
       {% for bagno in object_list %}
-        <li><a href="{{ bagno.get_absolute_url }}">{{ bagno.name }}</a></li>
+      <li><a href="{{ bagno.get_absolute_url }}"
+             title="{{ t_bagno }}: {{ bagno.name }}">{{ bagno.name }}</a></li>
       {% empty %}
         <li>{{ t_no_bagno }}</li>
       {% endfor %}
