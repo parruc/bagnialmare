@@ -4,22 +4,37 @@
 
 {% block content %}
 {% trans "bagno" as t_bagno %}
-    {% with object.bagni.all as bagni %}
-        <ul>
-        {% for bagno in bagni %}
-        <li>
-          <a href="{{ bagno.get_absolute_url }}"
-              title="{{ t_bagno }} {{ bagno.name }}">
-              {{ bagno.name }}
-          </a>
-        </li>
-        {% empty %}
-            <li>{% trans "No bagno has this service" %}</li>
-        {% endfor %}
-        </ul>
-    {% endwith %}
-{% endblock content %}
+  <div class="row">
+      <div class="col-xs-12">
+          <h1 class="">Bagni con {{ object}}</h1>
+          <p>Esplora bagni per localita o per servizio offerto.</p>
+          <hr>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12">
+          {% with bagni=object.bagni.all %}
+              {% regroup bagni by neighborhood as neighborhood_list %}
+              {% for neighborhood in neighborhood_list %}
+                  <h3>{{ neighborhood.grouper.name }}, {{ neighborhood.grouper.municipality.name }}</h3>
+                  <ul>
+                  {% for bagno in neighborhood.list %}
+                       <li><p class=""><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></p></li>
+                  {% endfor %}
+                  </ul>
+              {% empty %}
+                  <h3>{% trans "No bagno has this service" %}</h3>
+              {% endfor %}
+          {% endwith %}
+  </div>
 
-{% block title %}{{ object.name }}{% endblock title %}
+{% endblock %}
 
-{% block pagetitle %}{{ object.name }}{% endblock pagetitle %}
+
+{% block title %}
+to-do
+{% endblock title %}
+
+{% block pagetitle %}
+to-do
+{% endblock pagetitle %}

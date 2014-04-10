@@ -1,5 +1,6 @@
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
+from django.views.generic import TemplateView
 
 from ..models import Service, ServiceCategory
 
@@ -29,7 +30,7 @@ class ServiceCategoriesView(ListView):
         return context
 
 class ServiceView(DetailView):
-    """ Detail view for a single service
+    """ Shows the list of bagni offering the service
     """
     model = Service
     queryset = Service.objects.prefetch_related("bagni", "category")
