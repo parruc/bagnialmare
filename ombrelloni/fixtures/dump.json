@@ -251,6 +251,14 @@
   }
 },
 {
+  "pk": "0i2mxcd5qdsigryb7khmxvvccpaiyikd", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-24T18:33:53.404Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
   "pk": "1lisn3cupls44worzvkwb9kxn9xd5dor", 
   "model": "sessions.session", 
   "fields": {
@@ -858,24 +866,6 @@
   }
 },
 {
-  "pk": 47, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T01:46:27.315Z", 
-    "app_name": "bagni", 
-    "migration": "0023_auto__add_field_neighbourhood_name_en__add_field_neighbourhood_name_it"
-  }
-},
-{
-  "pk": 48, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T01:46:40.304Z", 
-    "app_name": "bagni", 
-    "migration": "0024_auto__add_field_bagno_municipality"
-  }
-},
-{
   "pk": 49, 
   "model": "south.migrationhistory", 
   "fields": {
@@ -909,6 +899,15 @@
     "applied": "2014-04-08T16:20:34.378Z", 
     "app_name": "authauth", 
     "migration": "0003_auto__add_field_manager_name__add_field_manager_surname"
+  }
+},
+{
+  "pk": 53, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-10T18:29:45.663Z", 
+    "app_name": "socialaccount", 
+    "migration": "0012_auto__chg_field_socialtoken_token_secret"
   }
 },
 {
@@ -42773,7 +42772,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-04-04T08:03:15.296Z", 
+    "last_login": "2014-04-10T18:33:53.395Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$K9qn7bZj1p4O$Jo4paAjpyQ04/8fiDH3Ua9n38/dedibHvmIBOCxvo8k=", 
