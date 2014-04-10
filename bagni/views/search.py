@@ -66,6 +66,7 @@ class SearchView(TemplateView):
         if point:
             hits = hits.distance(point).order_by('distance')
         hits_paginator = paginator.Paginator(hits, per_page)
+        num_pages = hits_paginator.num_pages
         try:
             hits = hits_paginator.page(page)
         except paginator.PageNotAnInteger:
@@ -73,9 +74,16 @@ class SearchView(TemplateView):
             hits = hits_paginator.page(1)
         except paginator.EmptyPage:
             # If page is out of range (e.g. 9999), deliver last page of results.
-            hits = hits_paginator.page(hits_paginator.num_pages)
-        has_get = self.request.method == 'GET'
-        context.update({'q': q, 'l':loc, 'place': place, 'facets': facets, 'active_facets': active_facets,
-                        'hits': hits, 'count': len(raw_hits), 'has_get': has_get })
+            hits = hits_paginator.page(num_pages)
+        search_results = {}
+        search_results['num_pages'] = num_pages
+        search_results['count'] = len(raw_hits)
+        search_results['q'] = q
+        search_results['loc'] = loc
+        search_results['place'] = place
+        search_results['facets'] = facets
+        search_results['active_facets'] = active_facets
+        search_results['has_get'] = self.request.method == 'GET'
+        context.update({'search_results': search_results, 'hits': hits})
 
         return context

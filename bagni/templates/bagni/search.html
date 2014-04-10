@@ -19,6 +19,8 @@
 {% trans "contact_button" as t_contact_button %}
 {% trans "previous" as t_previous %}
 {% trans "next" as t_next %}
+{% trans "first" as t_first %}
+{% trans "last" as t_last %}
 {% trans "no_results_for_search" as t_no_results_for_search %}
 
 
@@ -33,11 +35,13 @@
           <input type="hidden" name="pos" value="" />
           <div class="col-xs-5">
               <label class="my-brown" for="search_q">{{ t_what|capfirst }}:</label>
-            <input class="form-control"  type="text" id="search_q" name="q" value="{{ q }}" />
+            <input class="form-control" type="text" id="search_q"
+                   name="q" value="{{ search_results.q }}" />
           </div>
           <div class="col-xs-5">
-              <label class="my-brown" for="search_q">{{ t_where|capfirst }}:</label>
-            <input class="form-control" type="text" id="search_l" name="l" value="{{ l }}"  />
+              <label class="my-brown" for="search_l">{{ t_where|capfirst }}:</label>
+            <input class="form-control" type="text" id="search_l"
+                   name="l" value="{{ search_results.l }}"  />
           </div>
           <div class="col-xs-2 search-page-search-button-div">
             <button type="submit" id="search_submit"
@@ -49,14 +53,14 @@
       </div><!--row search-->
     </div>
 
-    {% if has_get %}
+    {% if search_results.has_get %}
       <div class="row result-wrapper-div">
         <div class="col-sm-3 hidden-xs">
           <div id="filters" data-base-url="{% url 'search' %}">
-            {% if facets.items %}
+            {% if search_results.facets.items %}
               <h3 class="filter-result-header">{{ t_filter_by_facility|capfirst }}:</h3>
             {% endif %}
-            {% for facet in active_facets %}
+            {% for facet in search_results.active_facets %}
               {% if forloop.first %}
                 <h4 class="filter-result-service-category"
                     data-toggle="collapse"
@@ -80,7 +84,7 @@
                 </div>
               {% endif %}
             {% endfor %}
-            {% for facet_group in facets.values %}
+            {% for facet_group in search_results.facets.values %}
               {% if facet_group %}
                 <div>
                   <div>
@@ -121,16 +125,16 @@
         </div>
         <div class="col-xs-12 col-sm-9">
           <p>
-            <span class="hits-count">{{ count }}</span>
-            {% if q %}
+            <span class="hits-count">{{ search_results.count }}</span>
+            {% if search_results.q %}
               {{ t_results_for }}
-              <span class="hits-query">{{ q }}</span>
+              <span class="hits-query">{{ search_results.q }}</span>
             {% else %}
               {{ t_results }}
             {% endif %}
-            {% if place %}
+            {% if search_results.place %}
               {{ t_near }}
-              <span class="hits-query">{{ place }}</span>
+              <span class="hits-query">{{ search_results.place }}</span>
             {% endif %}
           </p>
           {% if hits %}
@@ -205,18 +209,24 @@
                 <div class="pagination">
                   <span class="step-links">
                     {% if hits.has_previous %}
+                      <a href="{% query_string '' 'p' %}">
+                        {{ t_first }}
+                      </a>
                       <a href="{% query_string 'p=hits.previous_page_number' '' %}">
                         {{ t_previous }}
                       </a>
                     {% endif %}
 
                     <span class="current">
-                      {% blocktrans with num_pages=hits.paginator.num_pages page=hits.number %}
+                      {% blocktrans with num_pages=search_results.num_pages page=hits.number %}
                       Page {{ page }} of {{ num_pages }}.{% endblocktrans %}
                     </span>
                     {% if hits.has_next %}
                       <a href="{% query_string 'p=hits.next_page_number'  '' %}">
                         {{ t_next }}
+                      </a>
+                      <a href="{% query_string 'p=search_results.num_pages'  '' %}">
+                        {{ t_last }}
                       </a>
                     {% endif %}
                   </span>
@@ -228,12 +238,12 @@
               </div>
             {% endif %}
             <div class="tab-pane" id="filterTab">
-              {% if facets.items %}
+              {% if search_results.facets.items %}
                 <h3 class="filter-result-header-tab">
                   {{ t_filter_by_facility }}
                 </h3>
               {% endif %}
-              {% for facet in active_facets %}
+              {% for facet in search_results.active_facets %}
                 {% if forloop.first %}
                   <h4 class="filter-result-service-category"
                       data-toggle="collapse"
@@ -257,7 +267,7 @@
                   </div>
                 {% endif %}
               {% endfor %}
-              {% for facet_group in facets.values  %}
+              {% for facet_group in search_results.facets.values  %}
                 {% if facet_group %}
                   <div>
                     <div>

@@ -145,6 +145,7 @@ def search(q, filters, groups, query_string, max_facets=5):
                 if not facet_slug:
                     continue
                 qs = query_string.copy()
+                qs["p"] = "1"
                 filter = group + ":" + facet_slug
                 if filter in filters:
                     qs.setlist('f', [f for f in filters if f != filter])
