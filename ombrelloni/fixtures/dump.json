@@ -275,19 +275,27 @@
   }
 },
 {
+  "pk": "7o2tlqvmdjtm8zips25aaxxjzckly2i8", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T16:43:58.869Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "989cfs8t62drwe0op6qwy41ysvw3mf1l", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T12:40:30.229Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
   "pk": "9z8qops3u90fvwnw9phhw5krrvmw2jhr", 
   "model": "sessions.session", 
   "fields": {
     "expire_date": "2013-12-05T12:45:18.190Z", 
     "session_data": "OWMzNzNhOTNjZjMzMDc2OTI1Njc1OWRiOGVkOTUzNjk2NWVjODMzYTqAAn1xAShVDV9hdXRoX3VzZXJfaWRLAVUSX2F1dGhfdXNlcl9iYWNrZW5kVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZFUPZGphbmdvX2xhbmd1YWdlcQJYAgAAAGVucQN1Lg=="
-  }
-},
-{
-  "pk": "cyjguyy30l1gdmz3kmexsiwkoh05p1df", 
-  "model": "sessions.session", 
-  "fields": {
-    "expire_date": "2014-04-23T15:42:29.524Z", 
-    "session_data": "NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ=="
   }
 },
 {
@@ -331,11 +339,27 @@
   }
 },
 {
+  "pk": "js8mpubfu2pi7kcu6laijpt5w1q9o7yb", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-18T08:03:15.299Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
   "pk": "nphw8dtt5j72dj6wst9ak5sahm4q46v9", 
   "model": "sessions.session", 
   "fields": {
     "expire_date": "2013-12-05T11:36:23.842Z", 
     "session_data": "OTg1MzNkY2M1ZmI5ZjFiYmRmYjAwMDdkNDU1ZTBhNTkxNDllY2YzYTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": "oej5e18bc0yuj6xn4ea9mk8radgtrlk4", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T13:41:03.362Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
   }
 },
 {
@@ -347,11 +371,51 @@
   }
 },
 {
+  "pk": "rh4u5xm12g790hc65dfboclb26xe62ah", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T16:36:26.418Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "ro745bm8dnzalk8l00xfiiy6jtuem22e", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T13:58:53.906Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "t5j3x8a4pm2wusehflo17t5q45u1bi04", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T14:50:18.749Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "tqm6cd3seswzt658tc75iad51tbbklor", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-07T18:53:30.092Z", 
+    "session_data": "OTNlMWI0OTNjNzA4OWQ0NzMwYWM3MDg5NTVmNTlmNDA1NTQ3NjdlZTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoxfQ=="
+  }
+},
+{
   "pk": "u85xqbqfwtfhvwat0oi925pr8d3q9za7", 
   "model": "sessions.session", 
   "fields": {
     "expire_date": "2014-02-13T01:30:23.470Z", 
     "session_data": "NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ=="
+  }
+},
+{
+  "pk": "vt65y117s4vtjw7855lovy7kp1po08v7", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-17T15:51:57.216Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
   }
 },
 {
@@ -376,6 +440,16 @@
   "fields": {
     "domain": "bagnialmare.com", 
     "name": "bagnialmare.com"
+  }
+},
+{
+  "pk": 1, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 1, 
+    "key": "38b51e2f899dcd3f362c62963cfa5dd5bbb1ee297d4dc67cec17df816c9b0fb9", 
+    "sent": "2014-03-30T13:56:41.150Z", 
+    "created": "2014-03-30T13:56:40.485Z"
   }
 },
 {
@@ -775,15 +849,6 @@
   }
 },
 {
-  "pk": 45, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T00:48:28.333Z", 
-    "app_name": "socialaccount", 
-    "migration": "0012_auto__chg_field_socialtoken_token_secret"
-  }
-},
-{
   "pk": 46, 
   "model": "south.migrationhistory", 
   "fields": {
@@ -796,34 +861,52 @@
   "pk": 47, 
   "model": "south.migrationhistory", 
   "fields": {
-    "applied": "2014-04-09T15:40:57.497Z", 
+    "applied": "2014-03-21T01:46:27.315Z", 
     "app_name": "bagni", 
-    "migration": "0025_auto__del_field_bagno_municipality__chg_field_bagno_neighbourhood"
+    "migration": "0023_auto__add_field_neighbourhood_name_en__add_field_neighbourhood_name_it"
   }
 },
 {
   "pk": 48, 
   "model": "south.migrationhistory", 
   "fields": {
-    "applied": "2014-04-09T15:40:57.595Z", 
+    "applied": "2014-03-21T01:46:40.304Z", 
     "app_name": "bagni", 
-    "migration": "0026_auto__add_field_servicecategory_order"
+    "migration": "0024_auto__add_field_bagno_municipality"
   }
 },
 {
   "pk": 49, 
   "model": "south.migrationhistory", 
   "fields": {
-    "applied": "2014-04-09T15:40:57.758Z", 
-    "app_name": "authauth", 
-    "migration": "0002_auto__add_field_manager_tos"
+    "applied": "2014-03-21T01:46:44.018Z", 
+    "app_name": "bagni", 
+    "migration": "0025_auto__del_field_bagno_municipality__chg_field_bagno_neighbourhood"
   }
 },
 {
   "pk": 50, 
   "model": "south.migrationhistory", 
   "fields": {
-    "applied": "2014-04-09T15:40:57.841Z", 
+    "applied": "2014-03-30T16:58:44.463Z", 
+    "app_name": "authauth", 
+    "migration": "0002_auto__add_field_manager_tos"
+  }
+},
+{
+  "pk": 51, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-04T00:55:24.506Z", 
+    "app_name": "bagni", 
+    "migration": "0026_auto__add_field_servicecategory_order"
+  }
+},
+{
+  "pk": 52, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-08T16:20:34.378Z", 
     "app_name": "authauth", 
     "migration": "0003_auto__add_field_manager_name__add_field_manager_surname"
   }
@@ -38592,6 +38675,31 @@
   }
 },
 {
+  "pk": 13827, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "slug_en": "test", 
+    "name_it": "Test", 
+    "name": "Test ", 
+    "point": null, 
+    "slug_it": "test", 
+    "number": "", 
+    "description_en": "Bagno test description", 
+    "site": "", 
+    "languages": [], 
+    "services": [], 
+    "address_it": "", 
+    "address": "", 
+    "description_it": "Descrizione di test", 
+    "mail": "", 
+    "name_en": "Test ", 
+    "address_en": "", 
+    "slug": "test", 
+    "neighbourhood": 31, 
+    "description": "Bagno test description"
+  }
+},
+{
   "pk": 68, 
   "model": "bagni.language", 
   "fields": {
@@ -39450,136 +39558,136 @@
   "pk": 27, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "food-e-beverage", 
+    "slug_en": "food-and-beverage", 
     "name_it": "food e beverage", 
-    "name": "food e beverage", 
+    "name": "food & beverage", 
     "image": "", 
     "slug_it": "food-e-beverage", 
-    "description_en": null, 
-    "slug": "food-e-beverage", 
-    "description_it": null, 
-    "name_en": "food e beverage", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Food and beverage", 
+    "slug": "food-and-beverage", 
+    "description_it": "Cibi e bevande", 
+    "name_en": "food & beverage", 
+    "order": 2, 
+    "description": "Food and beverage"
   }
 },
 {
   "pk": 28, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "bambini", 
+    "slug_en": "children", 
     "name_it": "bambini", 
-    "name": "bambini", 
+    "name": "children", 
     "image": "", 
     "slug_it": "bambini", 
-    "description_en": null, 
-    "slug": "bambini", 
-    "description_it": null, 
-    "name_en": "bambini", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Services for children", 
+    "slug": "children", 
+    "description_it": "Servizi per bambini", 
+    "name_en": "children", 
+    "order": 3, 
+    "description": "Services for children"
   }
 },
 {
   "pk": 29, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "sport-e-wellness", 
+    "slug_en": "sport-and-wellness", 
     "name_it": "sport e wellness", 
-    "name": "sport e wellness", 
+    "name": "sport & wellness", 
     "image": "", 
     "slug_it": "sport-e-wellness", 
-    "description_en": null, 
-    "slug": "sport-e-wellness", 
-    "description_it": null, 
-    "name_en": "sport e wellness", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Sports and wellness care", 
+    "slug": "sport-and-wellness", 
+    "description_it": "Attivit\u00e0 sportive e cura del benessere", 
+    "name_en": "sport & wellness", 
+    "order": 1, 
+    "description": "Sports and wellness care"
   }
 },
 {
   "pk": 30, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "intrattenimento-e-giochi", 
+    "slug_en": "games-and-entertainment", 
     "name_it": "intrattenimento e giochi", 
-    "name": "intrattenimento e giochi", 
+    "name": "games & entertainment", 
     "image": "", 
     "slug_it": "intrattenimento-e-giochi", 
-    "description_en": null, 
-    "slug": "intrattenimento-e-giochi", 
-    "description_it": null, 
-    "name_en": "intrattenimento e giochi", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Recreational activities and entertainment", 
+    "slug": "games-and-entertainment", 
+    "description_it": "Attivit\u00e0 ludiche e di intrattenimento", 
+    "name_en": "games & entertainment", 
+    "order": 7, 
+    "description": "Recreational activities and entertainment"
   }
 },
 {
   "pk": 31, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "noleggio", 
+    "slug_en": "rent", 
     "name_it": "noleggio", 
-    "name": "noleggio", 
+    "name": "rent", 
     "image": "", 
     "slug_it": "noleggio", 
-    "description_en": null, 
-    "slug": "noleggio", 
-    "description_it": null, 
-    "name_en": "noleggio", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Available services for rent", 
+    "slug": "rent", 
+    "description_it": "Servizi a noleggio", 
+    "name_en": "rent", 
+    "order": 6, 
+    "description": "Available services for rent"
   }
 },
 {
   "pk": 32, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "servizi-extra", 
+    "slug_en": "extras", 
     "name_it": "servizi extra", 
-    "name": "servizi extra", 
+    "name": "extras", 
     "image": "", 
     "slug_it": "servizi-extra", 
-    "description_en": null, 
-    "slug": "servizi-extra", 
-    "description_it": null, 
-    "name_en": "servizi extra", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Additional services", 
+    "slug": "extras", 
+    "description_it": "Servizi aggiuntivi", 
+    "name_en": "extras", 
+    "order": 12, 
+    "description": "Additional services"
   }
 },
 {
   "pk": 33, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "eventi-speciali", 
+    "slug_en": "special-events", 
     "name_it": "eventi speciali", 
-    "name": "eventi speciali", 
+    "name": "special events", 
     "image": "", 
     "slug_it": "eventi-speciali", 
-    "description_en": null, 
-    "slug": "eventi-speciali", 
-    "description_it": null, 
-    "name_en": "eventi speciali", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Special events occurring on a regular basis", 
+    "slug": "special-events", 
+    "description_it": "Eventi speciali ricorrenti", 
+    "name_en": "special events", 
+    "order": 11, 
+    "description": "Special events occurring on a regular basis"
   }
 },
 {
   "pk": 34, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "accessibilita", 
+    "slug_en": "accessibility", 
     "name_it": "accessibilit\u00e0", 
-    "name": "accessibilit\u00e0", 
+    "name": "accessibility", 
     "image": "", 
     "slug_it": "accessibilita", 
-    "description_en": null, 
-    "slug": "accessibilita", 
-    "description_it": null, 
-    "name_en": "accessibilit\u00e0", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Available accessibility", 
+    "slug": "accessibility", 
+    "description_it": "Dettagli accessibilit\u00e0", 
+    "name_en": "accessibility", 
+    "order": 10, 
+    "description": "Available accessibility"
   }
 },
 {
@@ -39591,80 +39699,80 @@
     "name": "technology", 
     "image": "", 
     "slug_it": "technology", 
-    "description_en": null, 
+    "description_en": "Technology services", 
     "slug": "technology", 
-    "description_it": null, 
+    "description_it": "Servizi tecnologici", 
     "name_en": "technology", 
-    "order": 0, 
-    "description": ""
+    "order": 9, 
+    "description": "Technology services"
   }
 },
 {
   "pk": 36, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "comfort-e-relax", 
+    "slug_en": "comfort-and-relax", 
     "name_it": "comfort e relax", 
-    "name": "comfort e relax", 
+    "name": "comfort & relax", 
     "image": "", 
     "slug_it": "comfort-e-relax", 
-    "description_en": null, 
-    "slug": "comfort-e-relax", 
-    "description_it": null, 
-    "name_en": "comfort e relax", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Available services for comfort and relaxation", 
+    "slug": "comfort-and-relax", 
+    "description_it": "Servizi di comfort e relax", 
+    "name_en": "comfort & relax", 
+    "order": 5, 
+    "description": "Available services for comfort and relaxation"
   }
 },
 {
   "pk": 37, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "beauty-e-spa", 
+    "slug_en": "beauty-and-spa", 
     "name_it": "beauty e spa", 
-    "name": "beauty e spa", 
+    "name": "beauty & spa", 
     "image": "", 
     "slug_it": "beauty-e-spa", 
-    "description_en": null, 
-    "slug": "beauty-e-spa", 
-    "description_it": null, 
-    "name_en": "beauty e spa", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Available services for beauty and health care", 
+    "slug": "beauty-and-spa", 
+    "description_it": "Servizi per la cura del benessere e della bellezza", 
+    "name_en": "beauty & spa", 
+    "order": 8, 
+    "description": "Available services for beauty and health care"
   }
 },
 {
   "pk": 38, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "commercio", 
+    "slug_en": "trade", 
     "name_it": "commercio", 
-    "name": "commercio", 
+    "name": "trade", 
     "image": "", 
     "slug_it": "commercio", 
-    "description_en": null, 
-    "slug": "commercio", 
-    "description_it": null, 
-    "name_en": "commercio", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Available local trades", 
+    "slug": "trade", 
+    "description_it": "Attivit\u00e0 commerciali annesse", 
+    "name_en": "trade", 
+    "order": 13, 
+    "description": "Available local trades"
   }
 },
 {
   "pk": 39, 
   "model": "bagni.servicecategory", 
   "fields": {
-    "slug_en": "forma-di-pagamento", 
+    "slug_en": "payment-form", 
     "name_it": "forma di pagamento", 
-    "name": "forma di pagamento", 
+    "name": "payment form", 
     "image": "", 
     "slug_it": "forma-di-pagamento", 
-    "description_en": null, 
-    "slug": "forma-di-pagamento", 
-    "description_it": null, 
-    "name_en": "forma di pagamento", 
-    "order": 0, 
-    "description": ""
+    "description_en": "Accepted forms of payment", 
+    "slug": "payment-form", 
+    "description_it": "Forme di pagamento accettate dalla struttura", 
+    "name_en": "payment form", 
+    "order": 11, 
+    "description": "Accepted forms of payment"
   }
 },
 {
@@ -39672,16 +39780,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 27, 
-    "slug_en": "piccola-ristorazione", 
+    "slug_en": "snack-bars", 
     "name_it": "piccola ristorazione", 
-    "name": "piccola ristorazione", 
+    "name": "snack bars", 
     "image": "", 
     "slug_it": "piccola-ristorazione", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "piccola ristorazione", 
-    "slug": "piccola-ristorazione", 
+    "description_it": "", 
+    "name_en": "snack bars", 
+    "slug": "snack-bars", 
     "description": ""
   }
 },
@@ -39726,16 +39834,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "videogiochi", 
+    "slug_en": "videogames", 
     "name_it": "videogiochi", 
-    "name": "videogiochi", 
+    "name": "videogames", 
     "image": "", 
     "slug_it": "videogiochi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "videogiochi", 
-    "slug": "videogiochi", 
+    "description_it": "", 
+    "name_en": "videogames", 
+    "slug": "videogames", 
     "description": ""
   }
 },
@@ -39744,16 +39852,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "calcio-balilla", 
+    "slug_en": "table-football", 
     "name_it": "calcio balilla", 
-    "name": "calcio balilla", 
+    "name": "table football", 
     "image": "", 
     "slug_it": "calcio-balilla", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "calcio balilla", 
-    "slug": "calcio-balilla", 
+    "description_it": "", 
+    "name_en": "table football", 
+    "slug": "table-football", 
     "description": ""
   }
 },
@@ -39762,16 +39870,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "animazione-per-bambini", 
+    "slug_en": "children-entertainment", 
     "name_it": "animazione per bambini", 
-    "name": "animazione per bambini", 
+    "name": "children entertainment", 
     "image": "", 
     "slug_it": "animazione-per-bambini", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "animazione per bambini", 
-    "slug": "animazione-per-bambini", 
+    "description_it": "", 
+    "name_en": "children entertainment", 
+    "slug": "children-entertainment", 
     "description": ""
   }
 },
@@ -39780,16 +39888,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "spazio-tv", 
+    "slug_en": "tv-area", 
     "name_it": "spazio tv", 
-    "name": "spazio tv", 
+    "name": "tv area", 
     "image": "", 
     "slug_it": "spazio-tv", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "spazio tv", 
-    "slug": "spazio-tv", 
+    "description_it": "", 
+    "name_en": "tv area", 
+    "slug": "tv-area", 
     "description": ""
   }
 },
@@ -39798,16 +39906,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "bocce", 
+    "slug_en": "bowls", 
     "name_it": "bocce", 
-    "name": "bocce", 
+    "name": "bowls", 
     "image": "", 
     "slug_it": "bocce", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "bocce", 
-    "slug": "bocce", 
+    "description_it": "", 
+    "name_en": "bowls", 
+    "slug": "bowls", 
     "description": ""
   }
 },
@@ -39834,16 +39942,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "musica", 
+    "slug_en": "music", 
     "name_it": "musica", 
-    "name": "musica", 
+    "name": "music", 
     "image": "", 
     "slug_it": "musica", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "musica", 
-    "slug": "musica", 
+    "description_it": "", 
+    "name_en": "music", 
+    "slug": "music", 
     "description": ""
   }
 },
@@ -39852,16 +39960,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "animazione", 
+    "slug_en": "entertainment", 
     "name_it": "animazione", 
-    "name": "animazione", 
+    "name": "entertainment", 
     "image": "", 
     "slug_it": "animazione", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "animazione", 
-    "slug": "animazione", 
+    "description_it": "", 
+    "name_en": "entertainment", 
+    "slug": "entertainment", 
     "description": ""
   }
 },
@@ -39942,16 +40050,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "pedalo", 
+    "slug_en": "pedal-boats", 
     "name_it": "pedal\u00f2", 
-    "name": "pedal\u00f2", 
+    "name": "pedal boats", 
     "image": "", 
     "slug_it": "pedalo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "pedal\u00f2", 
-    "slug": "pedalo", 
+    "description_it": "", 
+    "name_en": "pedal boats", 
+    "slug": "pedal-boats", 
     "description": ""
   }
 },
@@ -39960,16 +40068,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "racchettoni", 
+    "slug_en": "rackets", 
     "name_it": "racchettoni", 
-    "name": "racchettoni", 
+    "name": "rackets", 
     "image": "", 
     "slug_it": "racchettoni", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "racchettoni", 
-    "slug": "racchettoni", 
+    "description_it": "", 
+    "name_en": "rackets", 
+    "slug": "rackets", 
     "description": ""
   }
 },
@@ -39978,16 +40086,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "area-fitness", 
+    "slug_en": "fitness-area", 
     "name_it": "area fitness", 
-    "name": "area fitness", 
+    "name": "fitness area", 
     "image": "", 
     "slug_it": "area-fitness", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "area fitness", 
-    "slug": "area-fitness", 
+    "description_it": "", 
+    "name_en": "fitness area", 
+    "slug": "fitness-area", 
     "description": ""
   }
 },
@@ -39996,16 +40104,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "parco-giochi", 
+    "slug_en": "playground", 
     "name_it": "parco giochi", 
-    "name": "parco giochi", 
+    "name": "playground", 
     "image": "", 
     "slug_it": "parco-giochi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "parco giochi", 
-    "slug": "parco-giochi", 
+    "description_it": "", 
+    "name_en": "playground", 
+    "slug": "playground", 
     "description": ""
   }
 },
@@ -40014,16 +40122,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "basket", 
+    "slug_en": "basketball", 
     "name_it": "basket", 
-    "name": "basket", 
+    "name": "basketball", 
     "image": "", 
     "slug_it": "basket", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "basket", 
-    "slug": "basket", 
+    "description_it": "", 
+    "name_en": "basketball", 
+    "slug": "basketball", 
     "description": ""
   }
 },
@@ -40032,16 +40140,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "canoe", 
+    "slug_en": "canoes", 
     "name_it": "canoe", 
-    "name": "canoe", 
+    "name": "canoes", 
     "image": "", 
     "slug_it": "canoe", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "canoe", 
-    "slug": "canoe", 
+    "description_it": "", 
+    "name_en": "canoes", 
+    "slug": "canoes", 
     "description": ""
   }
 },
@@ -40086,16 +40194,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "parcheggio", 
+    "slug_en": "parking", 
     "name_it": "parcheggio", 
-    "name": "parcheggio", 
+    "name": "parking", 
     "image": "", 
     "slug_it": "parcheggio", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "parcheggio", 
-    "slug": "parcheggio", 
+    "description_it": "", 
+    "name_en": "parking", 
+    "slug": "parking", 
     "description": ""
   }
 },
@@ -40104,16 +40212,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "vela", 
+    "slug_en": "sailing", 
     "name_it": "vela", 
-    "name": "vela", 
+    "name": "sailing", 
     "image": "", 
     "slug_it": "vela", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "vela", 
-    "slug": "vela", 
+    "description_it": "", 
+    "name_en": "sailing", 
+    "slug": "sailing", 
     "description": ""
   }
 },
@@ -40122,16 +40230,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "feste-a-tema", 
+    "slug_en": "theme-parties", 
     "name_it": "feste a tema", 
-    "name": "feste a tema", 
+    "name": "theme parties", 
     "image": "", 
     "slug_it": "feste-a-tema", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "feste a tema", 
-    "slug": "feste-a-tema", 
+    "description_it": "", 
+    "name_en": "theme parties", 
+    "slug": "theme-parties", 
     "description": ""
   }
 },
@@ -40140,16 +40248,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "palestra", 
+    "slug_en": "gym", 
     "name_it": "palestra", 
-    "name": "palestra", 
+    "name": "gym", 
     "image": "", 
     "slug_it": "palestra", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "palestra", 
-    "slug": "palestra", 
+    "description_it": "", 
+    "name_en": "gym", 
+    "slug": "gym", 
     "description": ""
   }
 },
@@ -40158,16 +40266,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "palloni", 
+    "slug_en": "sport-balls", 
     "name_it": "palloni", 
-    "name": "palloni", 
+    "name": "sport balls", 
     "image": "", 
     "slug_it": "palloni", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "palloni", 
-    "slug": "palloni", 
+    "description_it": "", 
+    "name_en": "sport balls", 
+    "slug": "sport-balls", 
     "description": ""
   }
 },
@@ -40176,16 +40284,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "concerti-live", 
+    "slug_en": "live-concerts", 
     "name_it": "concerti live", 
-    "name": "concerti live", 
+    "name": "live concerts", 
     "image": "", 
     "slug_it": "concerti-live", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "concerti live", 
-    "slug": "concerti-live", 
+    "description_it": "", 
+    "name_en": "live concerts", 
+    "slug": "live-concerts", 
     "description": ""
   }
 },
@@ -40212,16 +40320,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 34, 
-    "slug_en": "disabili", 
+    "slug_en": "disabled", 
     "name_it": "disabili", 
-    "name": "disabili", 
+    "name": "disabled", 
     "image": "", 
     "slug_it": "disabili", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "disabili", 
-    "slug": "disabili", 
+    "description_it": "", 
+    "name_en": "disabled", 
+    "slug": "disabled", 
     "description": ""
   }
 },
@@ -40230,16 +40338,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 27, 
-    "slug_en": "ristorazione", 
+    "slug_en": "catering", 
     "name_it": "ristorazione", 
-    "name": "ristorazione", 
+    "name": " catering", 
     "image": "", 
     "slug_it": "ristorazione", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "ristorazione", 
-    "slug": "ristorazione", 
+    "description_it": "", 
+    "name_en": " catering", 
+    "slug": "catering", 
     "description": ""
   }
 },
@@ -40248,16 +40356,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "tornei-sportivi", 
+    "slug_en": "sports-tournaments", 
     "name_it": "tornei sportivi", 
-    "name": "tornei sportivi", 
+    "name": "sports tournaments", 
     "image": "", 
     "slug_it": "tornei-sportivi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "tornei sportivi", 
-    "slug": "tornei-sportivi", 
+    "description_it": "", 
+    "name_en": "sports tournaments", 
+    "slug": "sports-tournaments", 
     "description": ""
   }
 },
@@ -40266,16 +40374,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "ginnastica", 
+    "slug_en": "gymnastics", 
     "name_it": "ginnastica", 
-    "name": "ginnastica", 
+    "name": "gymnastics", 
     "image": "", 
     "slug_it": "ginnastica", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "ginnastica", 
-    "slug": "ginnastica", 
+    "description_it": "", 
+    "name_en": "gymnastics", 
+    "slug": "gymnastics", 
     "description": ""
   }
 },
@@ -40356,16 +40464,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "calcetto", 
+    "slug_en": "poor-football", 
     "name_it": "calcetto", 
-    "name": "calcetto", 
+    "name": "poor football", 
     "image": "", 
     "slug_it": "calcetto", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "calcetto", 
-    "slug": "calcetto", 
+    "description_it": "", 
+    "name_en": "poor football", 
+    "slug": "poor-football", 
     "description": ""
   }
 },
@@ -40374,16 +40482,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "calcio", 
+    "slug_en": "football", 
     "name_it": "calcio", 
-    "name": "calcio", 
+    "name": "football", 
     "image": "", 
     "slug_it": "calcio", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "calcio", 
-    "slug": "calcio", 
+    "description_it": "", 
+    "name_en": "football", 
+    "slug": "football", 
     "description": ""
   }
 },
@@ -40392,16 +40500,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "cabine", 
+    "slug_en": "cabins", 
     "name_it": "cabine", 
-    "name": "cabine", 
+    "name": "cabins", 
     "image": "", 
     "slug_it": "cabine", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "cabine", 
-    "slug": "cabine", 
+    "description_it": "", 
+    "name_en": "cabins", 
+    "slug": "cabins", 
     "description": ""
   }
 },
@@ -40410,16 +40518,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "area-verde", 
+    "slug_en": "green-area", 
     "name_it": "area verde", 
-    "name": "area verde", 
+    "name": "green area", 
     "image": "", 
     "slug_it": "area-verde", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "area verde", 
-    "slug": "area-verde", 
+    "description_it": "", 
+    "name_en": "green area", 
+    "slug": "green-area", 
     "description": ""
   }
 },
@@ -40428,16 +40536,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "calcio-tennis", 
+    "slug_en": "tennis-soccer", 
     "name_it": "calcio tennis", 
-    "name": "calcio tennis", 
+    "name": "tennis soccer", 
     "image": "", 
     "slug_it": "calcio-tennis", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "calcio tennis", 
-    "slug": "calcio-tennis", 
+    "description_it": "", 
+    "name_en": "tennis soccer", 
+    "slug": "tennis-soccer", 
     "description": ""
   }
 },
@@ -40446,16 +40554,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "trampolino-elastico", 
+    "slug_en": "trampoline", 
     "name_it": "trampolino elastico", 
-    "name": "trampolino elastico", 
+    "name": "trampoline", 
     "image": "", 
     "slug_it": "trampolino-elastico", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "trampolino elastico", 
-    "slug": "trampolino-elastico", 
+    "description_it": "", 
+    "name_en": "trampoline", 
+    "slug": "trampoline", 
     "description": ""
   }
 },
@@ -40464,16 +40572,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "libreria", 
+    "slug_en": "bookstore", 
     "name_it": "libreria", 
-    "name": "libreria", 
+    "name": "bookstore", 
     "image": "", 
     "slug_it": "libreria", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "libreria", 
-    "slug": "libreria", 
+    "description_it": "", 
+    "name_en": "bookstore", 
+    "slug": "bookstore", 
     "description": ""
   }
 },
@@ -40482,16 +40590,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "giochi-di-societa", 
+    "slug_en": "games", 
     "name_it": "giochi di societ\u00e0", 
-    "name": "giochi di societ\u00e0", 
+    "name": "games", 
     "image": "", 
     "slug_it": "giochi-di-societa", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "giochi di societ\u00e0", 
-    "slug": "giochi-di-societa", 
+    "description_it": "", 
+    "name_en": "games", 
+    "slug": "games", 
     "description": ""
   }
 },
@@ -40500,16 +40608,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "biciclette", 
+    "slug_en": "bicycles", 
     "name_it": "biciclette", 
-    "name": "biciclette", 
+    "name": "bicycles", 
     "image": "", 
     "slug_it": "biciclette", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "biciclette", 
-    "slug": "biciclette", 
+    "description_it": "", 
+    "name_en": "bicycles", 
+    "slug": "bicycles", 
     "description": ""
   }
 },
@@ -40518,16 +40626,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "custodia-valori", 
+    "slug_en": "goods-keeping", 
     "name_it": "custodia valori", 
-    "name": "custodia valori", 
+    "name": "goods keeping", 
     "image": "", 
     "slug_it": "custodia-valori", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "custodia valori", 
-    "slug": "custodia-valori", 
+    "description_it": "", 
+    "name_en": "goods keeping", 
+    "slug": "goods-keeping", 
     "description": ""
   }
 },
@@ -40536,16 +40644,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 37, 
-    "slug_en": "massaggi", 
+    "slug_en": "massages", 
     "name_it": "massaggi", 
-    "name": "massaggi", 
+    "name": "massages", 
     "image": "", 
     "slug_it": "massaggi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "massaggi", 
-    "slug": "massaggi", 
+    "description_it": "", 
+    "name_en": "massages", 
+    "slug": "massages", 
     "description": ""
   }
 },
@@ -40554,16 +40662,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "animazione-serale", 
+    "slug_en": "evening-entertainment", 
     "name_it": "animazione serale", 
-    "name": "animazione serale", 
+    "name": "evening entertainment", 
     "image": "", 
     "slug_it": "animazione-serale", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "animazione serale", 
-    "slug": "animazione-serale", 
+    "description_it": "", 
+    "name_en": "evening entertainment", 
+    "slug": "evening-entertainment", 
     "description": ""
   }
 },
@@ -40608,16 +40716,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "rivistegiornalini", 
+    "slug_en": "magazines-journals", 
     "name_it": "riviste/giornalini", 
-    "name": "riviste/giornalini", 
+    "name": "magazines/journals", 
     "image": "", 
-    "slug_it": "rivistegiornalini", 
-    "description_en": null, 
+    "slug_it": "riviste-giornalini", 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "riviste/giornalini", 
-    "slug": "rivistegiornalini", 
+    "description_it": "", 
+    "name_en": "magazines/journals", 
+    "slug": "magazines-journals", 
     "description": ""
   }
 },
@@ -40626,16 +40734,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "piscina", 
+    "slug_en": "swimming-pool", 
     "name_it": "piscina", 
-    "name": "piscina", 
+    "name": "swimming pool", 
     "image": "", 
     "slug_it": "piscina", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "piscina", 
-    "slug": "piscina", 
+    "description_it": "", 
+    "name_en": "swimming pool", 
+    "slug": "swimming-pool", 
     "description": ""
   }
 },
@@ -40644,16 +40752,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "aperitivo", 
+    "slug_en": "aperitif", 
     "name_it": "aperitivo", 
-    "name": "aperitivo", 
+    "name": "aperitif", 
     "image": "", 
     "slug_it": "aperitivo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "aperitivo", 
-    "slug": "aperitivo", 
+    "description_it": "", 
+    "name_en": "aperitif", 
+    "slug": "aperitif", 
     "description": ""
   }
 },
@@ -40698,16 +40806,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "canotti-e-materassini", 
-    "name_it": "canotti e materassini", 
-    "name": "canotti e materassini", 
+    "slug_en": "rafts-mattresses", 
+    "name_it": "canotti/materassini", 
+    "name": "rafts/mattresses", 
     "image": "", 
-    "slug_it": "canotti-e-materassini", 
-    "description_en": null, 
+    "slug_it": "canotti-materassini", 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "canotti e materassini", 
-    "slug": "canotti-e-materassini", 
+    "description_it": "", 
+    "name_en": "rafts/mattresses", 
+    "slug": "rafts-mattresses", 
     "description": ""
   }
 },
@@ -40716,16 +40824,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "idromassaggio", 
+    "slug_en": "tub", 
     "name_it": "idromassaggio", 
-    "name": "idromassaggio", 
+    "name": "tub", 
     "image": "", 
     "slug_it": "idromassaggio", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "idromassaggio", 
-    "slug": "idromassaggio", 
+    "description_it": "", 
+    "name_en": "tub", 
+    "slug": "tub", 
     "description": ""
   }
 },
@@ -40734,16 +40842,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 37, 
-    "slug_en": "trattamenti-estetici", 
+    "slug_en": "beauty-treatments", 
     "name_it": "trattamenti estetici", 
-    "name": "trattamenti estetici", 
+    "name": "beauty treatments", 
     "image": "", 
     "slug_it": "trattamenti-estetici", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "trattamenti estetici", 
-    "slug": "trattamenti-estetici", 
+    "description_it": "", 
+    "name_en": "beauty treatments", 
+    "slug": "beauty-treatments", 
     "description": ""
   }
 },
@@ -40770,16 +40878,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "terrazza-prendisole", 
+    "slug_en": "sun-terrace", 
     "name_it": "terrazza prendisole", 
-    "name": "terrazza prendisole", 
+    "name": "sun terrace", 
     "image": "", 
     "slug_it": "terrazza-prendisole", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "terrazza prendisole", 
-    "slug": "terrazza-prendisole", 
+    "description_it": "", 
+    "name_en": "sun terrace", 
+    "slug": "sun-terrace", 
     "description": ""
   }
 },
@@ -40788,16 +40896,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "biliardo", 
+    "slug_en": "pool", 
     "name_it": "biliardo", 
-    "name": "biliardo", 
+    "name": "pool", 
     "image": "", 
     "slug_it": "biliardo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "biliardo", 
-    "slug": "biliardo", 
+    "description_it": "", 
+    "name_en": "pool", 
+    "slug": "pool", 
     "description": ""
   }
 },
@@ -40824,16 +40932,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 28, 
-    "slug_en": "wc-per-bimbi", 
+    "slug_en": "toilets-for-children", 
     "name_it": "wc per bimbi", 
-    "name": "wc per bimbi", 
+    "name": "toilets for children", 
     "image": "", 
     "slug_it": "wc-per-bimbi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "wc per bimbi", 
-    "slug": "wc-per-bimbi", 
+    "description_it": "", 
+    "name_en": "toilets for children", 
+    "slug": "toilets-for-children", 
     "description": ""
   }
 },
@@ -40842,16 +40950,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 38, 
-    "slug_en": "abbigliamento", 
+    "slug_en": "clothing", 
     "name_it": "abbigliamento", 
-    "name": "abbigliamento", 
+    "name": "clothing", 
     "image": "", 
     "slug_it": "abbigliamento", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "abbigliamento", 
-    "slug": "abbigliamento", 
+    "description_it": "", 
+    "name_en": "clothing", 
+    "slug": "clothing", 
     "description": ""
   }
 },
@@ -40860,16 +40968,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 38, 
-    "slug_en": "biglietteria", 
+    "slug_en": "ticket-office", 
     "name_it": "biglietteria", 
-    "name": "biglietteria", 
+    "name": "ticket office", 
     "image": "", 
     "slug_it": "biglietteria", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "biglietteria", 
-    "slug": "biglietteria", 
+    "description_it": "", 
+    "name_en": "ticket office", 
+    "slug": "ticket-office", 
     "description": ""
   }
 },
@@ -40878,16 +40986,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "acquascivolo", 
+    "slug_en": "waterslide", 
     "name_it": "acquascivolo", 
-    "name": "acquascivolo", 
+    "name": "waterslide", 
     "image": "", 
     "slug_it": "acquascivolo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "acquascivolo", 
-    "slug": "acquascivolo", 
+    "description_it": "", 
+    "name_en": "waterslide", 
+    "slug": "waterslide", 
     "description": ""
   }
 },
@@ -40896,16 +41004,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "mosconi", 
+    "slug_en": "pedal-boats-with-oars", 
     "name_it": "mosconi", 
-    "name": "mosconi", 
+    "name": "pedal boats with oars", 
     "image": "", 
     "slug_it": "mosconi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "mosconi", 
-    "slug": "mosconi", 
+    "description_it": "", 
+    "name_en": "pedal boats with oars", 
+    "slug": "pedal-boats-with-oars", 
     "description": ""
   }
 },
@@ -40914,16 +41022,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "corsi-di-nuoto", 
+    "slug_en": "swimming-lessons", 
     "name_it": "corsi di nuoto", 
-    "name": "corsi di nuoto", 
+    "name": "swimming lessons", 
     "image": "", 
     "slug_it": "corsi-di-nuoto", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "corsi di nuoto", 
-    "slug": "corsi-di-nuoto", 
+    "description_it": "", 
+    "name_en": "swimming lessons", 
+    "slug": "swimming-lessons", 
     "description": ""
   }
 },
@@ -40950,16 +41058,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "corsi-di-ballo", 
+    "slug_en": "dance-classes", 
     "name_it": "corsi di ballo", 
-    "name": "corsi di ballo", 
+    "name": "dance classes", 
     "image": "", 
     "slug_it": "corsi-di-ballo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "corsi di ballo", 
-    "slug": "corsi-di-ballo", 
+    "description_it": "", 
+    "name_en": "dance classes", 
+    "slug": "dance-classes", 
     "description": ""
   }
 },
@@ -40986,16 +41094,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 38, 
-    "slug_en": "articoli-spiaggia", 
-    "name_it": "articoli spiaggia", 
-    "name": "articoli spiaggia", 
+    "slug_en": "beach-items", 
+    "name_it": "articoli da spiaggia", 
+    "name": "beach items", 
     "image": "", 
     "slug_it": "articoli-spiaggia", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "articoli spiaggia", 
-    "slug": "articoli-spiaggia", 
+    "description_it": "", 
+    "name_en": "beach items", 
+    "slug": "beach-items", 
     "description": ""
   }
 },
@@ -41004,16 +41112,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "deposito-materassini", 
+    "slug_en": "mats-deposit", 
     "name_it": "deposito materassini", 
-    "name": "deposito materassini", 
+    "name": "mats deposit", 
     "image": "", 
     "slug_it": "deposito-materassini", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "deposito materassini", 
-    "slug": "deposito-materassini", 
+    "description_it": "", 
+    "name_en": "mats deposit", 
+    "slug": "mats-deposit", 
     "description": ""
   }
 },
@@ -41022,16 +41130,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "docce-calde", 
+    "slug_en": "hot-showers", 
     "name_it": "docce calde", 
-    "name": "docce calde", 
+    "name": "hot showers", 
     "image": "", 
     "slug_it": "docce-calde", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "docce calde", 
-    "slug": "docce-calde", 
+    "description_it": "", 
+    "name_en": "hot showers", 
+    "slug": "hot-showers", 
     "description": ""
   }
 },
@@ -41058,16 +41166,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "corsi-di-tennis", 
+    "slug_en": "tennis-classes", 
     "name_it": "corsi di tennis", 
-    "name": "corsi di tennis", 
+    "name": "tennis classes", 
     "image": "", 
     "slug_it": "corsi-di-tennis", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "corsi di tennis", 
-    "slug": "corsi-di-tennis", 
+    "description_it": "", 
+    "name_en": "tennis classes", 
+    "slug": "tennis-classes", 
     "description": ""
   }
 },
@@ -41076,16 +41184,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "animazione-preserale", 
+    "slug_en": "pre-evening-entertainment", 
     "name_it": "animazione preserale", 
-    "name": "animazione preserale", 
+    "name": "pre-evening entertainment", 
     "image": "", 
     "slug_it": "animazione-preserale", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "animazione preserale", 
-    "slug": "animazione-preserale", 
+    "description_it": "", 
+    "name_en": "pre-evening entertainment", 
+    "slug": "pre-evening-entertainment", 
     "description": ""
   }
 },
@@ -41094,16 +41202,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 34, 
-    "slug_en": "accettazione-scolaresche", 
-    "name_it": "accettazione scolaresche", 
-    "name": "accettazione scolaresche", 
+    "slug_en": "pupils", 
+    "name_it": "scolaresche", 
+    "name": "pupils", 
     "image": "", 
-    "slug_it": "accettazione-scolaresche", 
-    "description_en": null, 
+    "slug_it": "scolaresche", 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "accettazione scolaresche", 
-    "slug": "accettazione-scolaresche", 
+    "description_it": "", 
+    "name_en": "pupils", 
+    "slug": "pupils", 
     "description": ""
   }
 },
@@ -41166,16 +41274,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "alaggio-barche", 
+    "slug_en": "beaching-boats", 
     "name_it": "alaggio barche", 
-    "name": "alaggio barche", 
+    "name": "beaching boats", 
     "image": "", 
     "slug_it": "alaggio-barche", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "alaggio barche", 
-    "slug": "alaggio-barche", 
+    "description_it": "", 
+    "name_en": "beaching boats", 
+    "slug": "beaching-boats", 
     "description": ""
   }
 },
@@ -41184,16 +41292,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "grigliate-di-pesce", 
+    "slug_en": "fish-barbecue-events", 
     "name_it": "grigliate di pesce", 
-    "name": "grigliate di pesce", 
+    "name": "fish barbecue events", 
     "image": "", 
     "slug_it": "grigliate-di-pesce", 
     "description_en": "", 
     "free": true, 
     "description_it": "", 
-    "name_en": "grigliate di pesce", 
-    "slug": "grigliate-di-pesce", 
+    "name_en": "fish barbecue events", 
+    "slug": "fish-barbecue-events", 
     "description": ""
   }
 },
@@ -41202,16 +41310,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "grigliate-di-carne", 
+    "slug_en": "meat-barbecue-events", 
     "name_it": "grigliate di carne", 
-    "name": "grigliate di carne", 
+    "name": "meat barbecue events", 
     "image": "", 
     "slug_it": "grigliate-di-carne", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "grigliate di carne", 
-    "slug": "grigliate-di-carne", 
+    "description_it": "", 
+    "name_en": "meat barbecue events", 
+    "slug": "meat-barbecue-events", 
     "description": ""
   }
 },
@@ -41238,16 +41346,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "cene-a-tema", 
+    "slug_en": "themed-dinner", 
     "name_it": "cene a tema", 
-    "name": "cene a tema", 
+    "name": "themed dinner", 
     "image": "", 
     "slug_it": "cene-a-tema", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "cene a tema", 
-    "slug": "cene-a-tema", 
+    "description_it": "", 
+    "name_en": "themed dinner", 
+    "slug": "themed-dinner", 
     "description": ""
   }
 },
@@ -41274,16 +41382,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 33, 
-    "slug_en": "serate-degustazione", 
+    "slug_en": "degustation-evenings", 
     "name_it": "serate degustazione", 
-    "name": "serate degustazione", 
+    "name": "degustation evenings", 
     "image": "", 
     "slug_it": "serate-degustazione", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "serate degustazione", 
-    "slug": "serate-degustazione", 
+    "description_it": "", 
+    "name_en": "degustation evenings", 
+    "slug": "degustation-evenings", 
     "description": ""
   }
 },
@@ -41292,16 +41400,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "cabina-surfwindsurf", 
+    "slug_en": "surfwindsurf-cabin", 
     "name_it": "cabina surf/windsurf", 
-    "name": "cabina surf/windsurf", 
+    "name": "surf/windsurf cabin", 
     "image": "", 
     "slug_it": "cabina-surfwindsurf", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "cabina surf/windsurf", 
-    "slug": "cabina-surfwindsurf", 
+    "description_it": "", 
+    "name_en": "surf/windsurf cabin", 
+    "slug": "surfwindsurf-cabin", 
     "description": ""
   }
 },
@@ -41310,16 +41418,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "rimessaggio-barche", 
+    "slug_en": "mooring", 
     "name_it": "rimessaggio barche", 
-    "name": "rimessaggio barche", 
+    "name": "mooring", 
     "image": "", 
     "slug_it": "rimessaggio-barche", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "rimessaggio barche", 
-    "slug": "rimessaggio-barche", 
+    "description_it": "", 
+    "name_en": "mooring", 
+    "slug": "mooring", 
     "description": ""
   }
 },
@@ -41346,16 +41454,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "corsi-di-racchettoni", 
+    "slug_en": "rackets-courses", 
     "name_it": "corsi di racchettoni", 
-    "name": "corsi di racchettoni", 
+    "name": "rackets courses", 
     "image": "", 
     "slug_it": "corsi-di-racchettoni", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "corsi di racchettoni", 
-    "slug": "corsi-di-racchettoni", 
+    "description_it": "", 
+    "name_en": "rackets courses", 
+    "slug": "rackets-courses", 
     "description": ""
   }
 },
@@ -41364,16 +41472,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 39, 
-    "slug_en": "bancomat", 
+    "slug_en": "cash-machine", 
     "name_it": "bancomat", 
-    "name": "bancomat", 
+    "name": "cash machine", 
     "image": "", 
     "slug_it": "bancomat", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "bancomat", 
-    "slug": "bancomat", 
+    "description_it": "", 
+    "name_en": "cash machine", 
+    "slug": "cash-machine", 
     "description": ""
   }
 },
@@ -41382,16 +41490,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 39, 
-    "slug_en": "carte-di-credito", 
+    "slug_en": "credit-cards", 
     "name_it": "carte di credito", 
-    "name": "carte di credito", 
+    "name": "credit cards", 
     "image": "", 
     "slug_it": "carte-di-credito", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "carte di credito", 
-    "slug": "carte-di-credito", 
+    "description_it": "", 
+    "name_en": "credit cards", 
+    "slug": "credit-cards", 
     "description": ""
   }
 },
@@ -41400,16 +41508,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "deposito-caschi", 
+    "slug_en": "helmet-deposit", 
     "name_it": "deposito caschi", 
-    "name": "deposito caschi", 
+    "name": "helmet deposit", 
     "image": "", 
     "slug_it": "deposito-caschi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "deposito caschi", 
-    "slug": "deposito-caschi", 
+    "description_it": "", 
+    "name_en": "helmet deposit", 
+    "slug": "helmet-deposit", 
     "description": ""
   }
 },
@@ -41436,16 +41544,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "videoteca", 
+    "slug_en": "video-store", 
     "name_it": "videoteca", 
-    "name": "videoteca", 
+    "name": "video store", 
     "image": "", 
     "slug_it": "videoteca", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "videoteca", 
-    "slug": "videoteca", 
+    "description_it": "", 
+    "name_en": "video store", 
+    "slug": "video-store", 
     "description": ""
   }
 },
@@ -41454,16 +41562,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "giochi-da-tavolo", 
+    "slug_en": "board-games", 
     "name_it": "giochi da tavolo", 
-    "name": "giochi da tavolo", 
+    "name": "board games", 
     "image": "", 
     "slug_it": "giochi-da-tavolo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "giochi da tavolo", 
-    "slug": "giochi-da-tavolo", 
+    "description_it": "", 
+    "name_en": "board games", 
+    "slug": "board-games", 
     "description": ""
   }
 },
@@ -41472,16 +41580,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "tavolo-da-gioco", 
+    "slug_en": "game-table", 
     "name_it": "tavolo da gioco", 
-    "name": "tavolo da gioco", 
+    "name": "game table", 
     "image": "", 
     "slug_it": "tavolo-da-gioco", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "tavolo da gioco", 
-    "slug": "tavolo-da-gioco", 
+    "description_it": "", 
+    "name_en": "game table", 
+    "slug": "game-table", 
     "description": ""
   }
 },
@@ -41490,16 +41598,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "amache", 
+    "slug_en": "hammocks", 
     "name_it": "amache", 
-    "name": "amache", 
+    "name": "hammocks", 
     "image": "", 
     "slug_it": "amache", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "amache", 
-    "slug": "amache", 
+    "description_it": "", 
+    "name_en": "hammocks", 
+    "slug": "hammocks", 
     "description": ""
   }
 },
@@ -41526,16 +41634,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "racchette", 
+    "slug_en": "beach-rackets", 
     "name_it": "racchette", 
-    "name": "racchette", 
+    "name": "beach rackets", 
     "image": "", 
     "slug_it": "racchette", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "racchette", 
-    "slug": "racchette", 
+    "description_it": "", 
+    "name_en": "beach rackets", 
+    "slug": "beach-rackets", 
     "description": ""
   }
 },
@@ -41544,16 +41652,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "area-barbecue", 
+    "slug_en": "barbecue-area", 
     "name_it": "area barbecue", 
-    "name": "area barbecue", 
+    "name": "barbecue area", 
     "image": "", 
     "slug_it": "area-barbecue", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "area barbecue", 
-    "slug": "area-barbecue", 
+    "description_it": "", 
+    "name_en": "barbecue area", 
+    "slug": "barbecue-area", 
     "description": ""
   }
 },
@@ -41580,16 +41688,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 29, 
-    "slug_en": "corsi-di-beach-volley", 
+    "slug_en": "beach-volley-courses", 
     "name_it": "corsi di beach volley", 
-    "name": "corsi di beach volley", 
+    "name": "beach volley courses", 
     "image": "", 
     "slug_it": "corsi-di-beach-volley", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "corsi di beach volley", 
-    "slug": "corsi-di-beach-volley", 
+    "description_it": "", 
+    "name_en": "beach volley courses", 
+    "slug": "beach-volley-courses", 
     "description": ""
   }
 },
@@ -41598,16 +41706,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 32, 
-    "slug_en": "disponibilita-feste-private", 
-    "name_it": "disponibilit\u00e0 feste private", 
-    "name": "disponibilit\u00e0 feste private", 
+    "slug_en": "private-parties", 
+    "name_it": "feste private", 
+    "name": "private parties", 
     "image": "", 
-    "slug_it": "disponibilita-feste-private", 
-    "description_en": null, 
+    "slug_it": "feste-private", 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "disponibilit\u00e0 feste private", 
-    "slug": "disponibilita-feste-private", 
+    "description_it": "", 
+    "name_en": "private parties", 
+    "slug": "private-parties", 
     "description": ""
   }
 },
@@ -41616,16 +41724,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 37, 
-    "slug_en": "area-benessere", 
+    "slug_en": "wellness-area", 
     "name_it": "area benessere", 
-    "name": "area benessere", 
+    "name": "wellness area", 
     "image": "", 
     "slug_it": "area-benessere", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "area benessere", 
-    "slug": "area-benessere", 
+    "description_it": "", 
+    "name_en": "wellness area", 
+    "slug": "wellness-area", 
     "description": ""
   }
 },
@@ -41652,16 +41760,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 27, 
-    "slug_en": "paninoteca", 
+    "slug_en": "sandwich-shop", 
     "name_it": "paninoteca", 
-    "name": "paninoteca", 
+    "name": "sandwich shop", 
     "image": "", 
     "slug_it": "paninoteca", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "paninoteca", 
-    "slug": "paninoteca", 
+    "description_it": "", 
+    "name_en": "sandwich shop", 
+    "slug": "sandwich-shop", 
     "description": ""
   }
 },
@@ -41670,16 +41778,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "feste-danzanti", 
+    "slug_en": "dance-parties", 
     "name_it": "feste danzanti", 
-    "name": "feste danzanti", 
+    "name": "dance parties", 
     "image": "", 
     "slug_it": "feste-danzanti", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "feste danzanti", 
-    "slug": "feste-danzanti", 
+    "description_it": "", 
+    "name_en": "dance parties", 
+    "slug": "dance-parties", 
     "description": ""
   }
 },
@@ -41688,16 +41796,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 27, 
-    "slug_en": "cucina-per-celiaci", 
+    "slug_en": "celiac-cooking", 
     "name_it": "cucina per celiaci", 
-    "name": "cucina per celiaci", 
+    "name": "celiac cooking", 
     "image": "", 
     "slug_it": "cucina-per-celiaci", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "cucina per celiaci", 
-    "slug": "cucina-per-celiaci", 
+    "description_it": "", 
+    "name_en": "celiac cooking", 
+    "slug": "celiac-cooking", 
     "description": ""
   }
 },
@@ -41706,16 +41814,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "discoteca", 
+    "slug_en": "disco", 
     "name_it": "discoteca", 
-    "name": "discoteca", 
+    "name": "disco", 
     "image": "", 
     "slug_it": "discoteca", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "discoteca", 
-    "slug": "discoteca", 
+    "description_it": "", 
+    "name_en": "disco", 
+    "slug": "disco", 
     "description": ""
   }
 },
@@ -41724,16 +41832,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 30, 
-    "slug_en": "tornei-da-tavolo", 
+    "slug_en": "table-tournaments", 
     "name_it": "tornei da tavolo", 
-    "name": "tornei da tavolo", 
+    "name": "table tournaments", 
     "image": "", 
     "slug_it": "tornei-da-tavolo", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "tornei da tavolo", 
-    "slug": "tornei-da-tavolo", 
+    "description_it": "", 
+    "name_en": "table tournaments", 
+    "slug": "table-tournaments", 
     "description": ""
   }
 },
@@ -41778,16 +41886,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "area-picnic", 
+    "slug_en": "picnic-area", 
     "name_it": "area picnic", 
-    "name": "area picnic", 
+    "name": "picnic area", 
     "image": "", 
     "slug_it": "area-picnic", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "area picnic", 
-    "slug": "area-picnic", 
+    "description_it": "", 
+    "name_en": "picnic area", 
+    "slug": "picnic-area", 
     "description": ""
   }
 },
@@ -41796,16 +41904,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 36, 
-    "slug_en": "lettini-matrimoniali", 
+    "slug_en": "double-sun-bed", 
     "name_it": "lettini matrimoniali", 
-    "name": "lettini matrimoniali", 
+    "name": "double sun bed", 
     "image": "", 
     "slug_it": "lettini-matrimoniali", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "lettini matrimoniali", 
-    "slug": "lettini-matrimoniali", 
+    "description_it": "", 
+    "name_en": "double sun bed", 
+    "slug": "double-sun-bed", 
     "description": ""
   }
 },
@@ -41814,16 +41922,16 @@
   "model": "bagni.service", 
   "fields": {
     "category": 31, 
-    "slug_en": "frigoriferi", 
+    "slug_en": "refrigerator", 
     "name_it": "frigoriferi", 
-    "name": "frigoriferi", 
+    "name": "refrigerator", 
     "image": "", 
     "slug_it": "frigoriferi", 
-    "description_en": null, 
+    "description_en": "", 
     "free": true, 
-    "description_it": null, 
-    "name_en": "frigoriferi", 
-    "slug": "frigoriferi", 
+    "description_it": "", 
+    "name_en": "refrigerator", 
+    "slug": "refrigerator", 
     "description": ""
   }
 },
@@ -42665,7 +42773,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-03-13T20:10:50.627Z", 
+    "last_login": "2014-04-04T08:03:15.296Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$K9qn7bZj1p4O$Jo4paAjpyQ04/8fiDH3Ua9n38/dedibHvmIBOCxvo8k=", 
@@ -42689,6 +42797,24 @@
     "password": "pbkdf2_sha256$12000$rjz2Mz70Gt9l$GIF8lKtNDvDsjkgcRlHHQxgQ1sV3G3JrLVQEkTJgquM=", 
     "email": "", 
     "date_joined": "2014-01-30T01:30:06.076Z"
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "gestore", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-03-30T13:56:41.160Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$ZLjjmiCWPGv0$tDt2veO3ozUMAw21Ae94gDMxXyy+cmE2jyNNALoocqM=", 
+    "email": "gestorediunbagno@mail.com", 
+    "date_joined": "2014-03-30T13:56:40.312Z"
   }
 },
 {
@@ -42858,6 +42984,1785 @@
     "change_message": "", 
     "user": 1, 
     "content_type": 9
+  }
+},
+{
+  "pk": 14, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:35:02.500Z", 
+    "object_repr": "refrigerator", 
+    "object_id": "2298", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 15, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:38:45.241Z", 
+    "object_repr": "payment form", 
+    "object_id": "39", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 16, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:38:57.149Z", 
+    "object_repr": "payment form", 
+    "object_id": "39", 
+    "change_message": "No fields changed.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 17, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:40:40.112Z", 
+    "object_repr": "trade", 
+    "object_id": "38", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 18, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:43:16.347Z", 
+    "object_repr": "beauty & spa", 
+    "object_id": "37", 
+    "change_message": "Changed name_en, description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 19, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:44:32.795Z", 
+    "object_repr": "comfort & relax", 
+    "object_id": "36", 
+    "change_message": "Changed name_en, description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 20, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:45:21.930Z", 
+    "object_repr": "technology", 
+    "object_id": "35", 
+    "change_message": "Changed description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 21, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:45:29.955Z", 
+    "object_repr": "payment form", 
+    "object_id": "39", 
+    "change_message": "Changed description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 22, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:45:40.131Z", 
+    "object_repr": "trade", 
+    "object_id": "38", 
+    "change_message": "Changed description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 23, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:45:49.635Z", 
+    "object_repr": "beauty & spa", 
+    "object_id": "37", 
+    "change_message": "Changed description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 24, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:45:58.022Z", 
+    "object_repr": "beauty & spa", 
+    "object_id": "37", 
+    "change_message": "No fields changed.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 25, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:46:07.491Z", 
+    "object_repr": "comfort & relax", 
+    "object_id": "36", 
+    "change_message": "Changed description_en and description_it.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 26, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:46:15.836Z", 
+    "object_repr": "technology", 
+    "object_id": "35", 
+    "change_message": "No fields changed.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 27, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:47:10.025Z", 
+    "object_repr": "technology", 
+    "object_id": "35", 
+    "change_message": "No fields changed.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 28, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:48:27.322Z", 
+    "object_repr": "accessibility", 
+    "object_id": "34", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 29, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:50:09.689Z", 
+    "object_repr": "special events", 
+    "object_id": "33", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 30, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:51:30.639Z", 
+    "object_repr": "extras", 
+    "object_id": "32", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 31, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:52:36.683Z", 
+    "object_repr": "rental", 
+    "object_id": "31", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 32, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:53:10.793Z", 
+    "object_repr": "rent", 
+    "object_id": "31", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 33, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:53:25.396Z", 
+    "object_repr": "rent", 
+    "object_id": "31", 
+    "change_message": "Changed description_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 34, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:55:29.271Z", 
+    "object_repr": "games & entertainment", 
+    "object_id": "30", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 35, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:55:41.885Z", 
+    "object_repr": "comfort & relax", 
+    "object_id": "36", 
+    "change_message": "Changed slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 36, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:55:52.098Z", 
+    "object_repr": "beauty & spa", 
+    "object_id": "37", 
+    "change_message": "Changed slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 37, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:57:35.771Z", 
+    "object_repr": "sport & wellness", 
+    "object_id": "29", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 38, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T15:58:40.183Z", 
+    "object_repr": "children", 
+    "object_id": "28", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 39, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-03-30T16:00:22.873Z", 
+    "object_repr": "food & beverage", 
+    "object_id": "27", 
+    "change_message": "Changed name_en, description_en, description_it and slug_en.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 40, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:55:56.521Z", 
+    "object_repr": "double sun bed", 
+    "object_id": "2297", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 41, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:56:14.109Z", 
+    "object_repr": "picnic area", 
+    "object_id": "2296", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 42, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:56:51.552Z", 
+    "object_repr": "table tournaments", 
+    "object_id": "2293", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 43, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:57:06.253Z", 
+    "object_repr": "disco", 
+    "object_id": "2292", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 44, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:57:34.924Z", 
+    "object_repr": "celiac cooking", 
+    "object_id": "2291", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 45, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:58:42.250Z", 
+    "object_repr": "dance parties", 
+    "object_id": "2290", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 46, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T18:59:06.146Z", 
+    "object_repr": "sandwich shop", 
+    "object_id": "2289", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 47, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:00:20.911Z", 
+    "object_repr": "wellness area", 
+    "object_id": "2287", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 48, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:02:14.014Z", 
+    "object_repr": "private parties", 
+    "object_id": "2286", 
+    "change_message": "Changed name_en, name_it, slug_en and slug_it.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 49, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:03:27.791Z", 
+    "object_repr": "beach volley courses", 
+    "object_id": "2285", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 50, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:03:49.167Z", 
+    "object_repr": "barbecue area", 
+    "object_id": "2283", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 51, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:04:23.493Z", 
+    "object_repr": "rackets", 
+    "object_id": "2282", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 52, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:05:24.607Z", 
+    "object_repr": "hammocks", 
+    "object_id": "2280", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 53, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:05:52.579Z", 
+    "object_repr": "game table", 
+    "object_id": "2279", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 54, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:06:21.581Z", 
+    "object_repr": "board games", 
+    "object_id": "2278", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 55, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:08:26.779Z", 
+    "object_repr": "video store", 
+    "object_id": "2277", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 56, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:09:26.167Z", 
+    "object_repr": "helmets deposit", 
+    "object_id": "2275", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 57, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:09:48.555Z", 
+    "object_repr": "helmet deposit", 
+    "object_id": "2275", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 58, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:10:19.944Z", 
+    "object_repr": "credit cards", 
+    "object_id": "2274", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 59, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:10:50.980Z", 
+    "object_repr": "cash machine", 
+    "object_id": "2273", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 60, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:12:29.070Z", 
+    "object_repr": "rackets courses", 
+    "object_id": "2272", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 61, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:12:56.209Z", 
+    "object_repr": "mooring", 
+    "object_id": "2270", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 62, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:13:35.873Z", 
+    "object_repr": "surf/windsurf cabin", 
+    "object_id": "2269", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 63, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:15:09.544Z", 
+    "object_repr": "degustation evenings", 
+    "object_id": "2268", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 64, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:15:49.717Z", 
+    "object_repr": "themed dinner", 
+    "object_id": "2266", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 65, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:17:14.497Z", 
+    "object_repr": "meat barbecue events", 
+    "object_id": "2264", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 66, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:17:37.675Z", 
+    "object_repr": "fish barbecue events", 
+    "object_id": "2263", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 67, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:18:22.554Z", 
+    "object_repr": "beaching boats", 
+    "object_id": "2262", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 68, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:19:18.621Z", 
+    "object_repr": "pupils", 
+    "object_id": "2258", 
+    "change_message": "Changed name_en, name_it, slug_en and slug_it.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 69, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:20:13.498Z", 
+    "object_repr": "pre-evening entertainment", 
+    "object_id": "2257", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 70, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:21:00.752Z", 
+    "object_repr": "tennis classes", 
+    "object_id": "2256", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 71, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:21:34.795Z", 
+    "object_repr": "hot showers", 
+    "object_id": "2254", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 72, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:22:09.945Z", 
+    "object_repr": "mats deposit", 
+    "object_id": "2253", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 73, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:22:42.011Z", 
+    "object_repr": "beach items", 
+    "object_id": "2252", 
+    "change_message": "Changed name_en, name_it and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 74, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:23:11.032Z", 
+    "object_repr": "dance classes", 
+    "object_id": "2250", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 75, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:23:40.733Z", 
+    "object_repr": "swimming lessons", 
+    "object_id": "2248", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 76, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:25:09.514Z", 
+    "object_repr": "pedalo with oars", 
+    "object_id": "2247", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 77, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:25:33.978Z", 
+    "object_repr": "waterslide", 
+    "object_id": "2246", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 78, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:26:07.465Z", 
+    "object_repr": "ticket office", 
+    "object_id": "2245", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 79, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:26:40.453Z", 
+    "object_repr": "clothing", 
+    "object_id": "2244", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 80, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:27:21.168Z", 
+    "object_repr": "toilets for children", 
+    "object_id": "2243", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 81, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:27:44.080Z", 
+    "object_repr": "pool", 
+    "object_id": "2241", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 82, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:28:10.255Z", 
+    "object_repr": "sun terrace", 
+    "object_id": "2240", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 83, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:28:55.873Z", 
+    "object_repr": "beauty treatments", 
+    "object_id": "2238", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 84, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:29:24.669Z", 
+    "object_repr": "tub", 
+    "object_id": "2237", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 85, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:29:27.889Z", 
+    "object_repr": "tub", 
+    "object_id": "2237", 
+    "change_message": "No fields changed.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 86, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:30:12.498Z", 
+    "object_repr": "rafts & mattresses", 
+    "object_id": "2236", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 87, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:30:42.178Z", 
+    "object_repr": "aperitif", 
+    "object_id": "2233", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 88, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:31:05.751Z", 
+    "object_repr": "swimming pool", 
+    "object_id": "2232", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 89, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:31:41.002Z", 
+    "object_repr": "magazines/journals", 
+    "object_id": "2231", 
+    "change_message": "Changed name_en, slug_en and slug_it.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 90, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:32:04.334Z", 
+    "object_repr": "rafts/mattresses", 
+    "object_id": "2236", 
+    "change_message": "Changed name_en and name_it.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 91, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:32:20.495Z", 
+    "object_repr": "rafts/mattresses", 
+    "object_id": "2236", 
+    "change_message": "Changed slug_en and slug_it.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 92, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:32:55.232Z", 
+    "object_repr": "evening entertainment", 
+    "object_id": "2228", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 93, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:33:12.875Z", 
+    "object_repr": "massages", 
+    "object_id": "2227", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 94, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:35:06.454Z", 
+    "object_repr": "goods keeping", 
+    "object_id": "2226", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 95, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:35:50.792Z", 
+    "object_repr": "bicycles", 
+    "object_id": "2225", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 96, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:36:25.999Z", 
+    "object_repr": "games", 
+    "object_id": "2224", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 97, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:36:42.106Z", 
+    "object_repr": "bookstore", 
+    "object_id": "2223", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 98, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:37:12.665Z", 
+    "object_repr": "trampoline", 
+    "object_id": "2222", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 99, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:38:10.861Z", 
+    "object_repr": "tennis soccer", 
+    "object_id": "2221", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 100, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:38:34.637Z", 
+    "object_repr": "green area", 
+    "object_id": "2220", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 101, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:38:49.086Z", 
+    "object_repr": "cabins", 
+    "object_id": "2219", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 102, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:39:09.076Z", 
+    "object_repr": "soccer", 
+    "object_id": "2218", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 103, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:41:06.533Z", 
+    "object_repr": "poor football", 
+    "object_id": "2217", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 104, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:41:21.337Z", 
+    "object_repr": "football", 
+    "object_id": "2218", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 105, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:41:47.838Z", 
+    "object_repr": "gym", 
+    "object_id": "2212", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 106, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:42:20.706Z", 
+    "object_repr": "sports tournaments", 
+    "object_id": "2211", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 107, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:42:46.677Z", 
+    "object_repr": " catering", 
+    "object_id": "2210", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 108, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:43:25.321Z", 
+    "object_repr": "disabled", 
+    "object_id": "2209", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 109, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:43:45.683Z", 
+    "object_repr": "live concerts", 
+    "object_id": "2207", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 110, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:44:08.605Z", 
+    "object_repr": "balls", 
+    "object_id": "2206", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 111, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:44:29.187Z", 
+    "object_repr": "sport balls", 
+    "object_id": "2206", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 112, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:45:22.707Z", 
+    "object_repr": "gymnastics", 
+    "object_id": "2212", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 113, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:45:46.507Z", 
+    "object_repr": "gym", 
+    "object_id": "2205", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 114, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:46:11.447Z", 
+    "object_repr": "theme parties", 
+    "object_id": "2204", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 115, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:46:34.082Z", 
+    "object_repr": "sailing", 
+    "object_id": "2203", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 116, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:46:50.833Z", 
+    "object_repr": "parking", 
+    "object_id": "2202", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 117, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:47:23.298Z", 
+    "object_repr": "canoes", 
+    "object_id": "2199", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 118, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:47:36.814Z", 
+    "object_repr": "basketball", 
+    "object_id": "2198", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 119, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:47:55.398Z", 
+    "object_repr": "playground", 
+    "object_id": "2197", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 120, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:48:12.823Z", 
+    "object_repr": "fitness area", 
+    "object_id": "2196", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 121, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:49:50.782Z", 
+    "object_repr": "beach rackets", 
+    "object_id": "2282", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 122, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:50:26.787Z", 
+    "object_repr": "rackets", 
+    "object_id": "2195", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 123, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:51:09.535Z", 
+    "object_repr": "pedal boats", 
+    "object_id": "2194", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 124, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:51:33.906Z", 
+    "object_repr": "pedal boats with oars", 
+    "object_id": "2247", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 125, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:52:02.709Z", 
+    "object_repr": "entertainment", 
+    "object_id": "2189", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 126, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:52:16.716Z", 
+    "object_repr": "music", 
+    "object_id": "2188", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 127, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:52:50.984Z", 
+    "object_repr": "bowls", 
+    "object_id": "2186", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 128, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:53:21.150Z", 
+    "object_repr": "tv area", 
+    "object_id": "2185", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 129, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:53:41.090Z", 
+    "object_repr": "children entertainment", 
+    "object_id": "2184", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 130, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:54:30.577Z", 
+    "object_repr": "table football", 
+    "object_id": "2183", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 131, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:54:44.882Z", 
+    "object_repr": "videogames", 
+    "object_id": "2182", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 132, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-01T19:55:09.095Z", 
+    "object_repr": "snack bars", 
+    "object_id": "2179", 
+    "change_message": "Changed name_en and slug_en.", 
+    "user": 1, 
+    "content_type": 10
+  }
+},
+{
+  "pk": 133, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:01:35.962Z", 
+    "object_repr": "forma di pagamento", 
+    "object_id": "39", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 134, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:01:50.354Z", 
+    "object_repr": "commercio", 
+    "object_id": "38", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 135, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:02.250Z", 
+    "object_repr": "servizi extra", 
+    "object_id": "32", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 136, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:11.241Z", 
+    "object_repr": "eventi speciali", 
+    "object_id": "33", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 137, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:25.102Z", 
+    "object_repr": "accessibilit\u00e0", 
+    "object_id": "34", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 138, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:35.361Z", 
+    "object_repr": "technology", 
+    "object_id": "35", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 139, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:02:59.878Z", 
+    "object_repr": "beauty e spa", 
+    "object_id": "37", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 140, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:03:13.434Z", 
+    "object_repr": "noleggio", 
+    "object_id": "31", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 141, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:03:23.311Z", 
+    "object_repr": "intrattenimento e giochi", 
+    "object_id": "30", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 142, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:02.570Z", 
+    "object_repr": "noleggio", 
+    "object_id": "31", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 143, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:15.156Z", 
+    "object_repr": "comfort e relax", 
+    "object_id": "36", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 144, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:37.811Z", 
+    "object_repr": "sport e wellness", 
+    "object_id": "29", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 145, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:46.212Z", 
+    "object_repr": "food e beverage", 
+    "object_id": "27", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 146, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 2, 
+    "action_time": "2014-04-04T01:04:54.813Z", 
+    "object_repr": "bambini", 
+    "object_id": "28", 
+    "change_message": "order modificato/a.", 
+    "user": 1, 
+    "content_type": 15
+  }
+},
+{
+  "pk": 147, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-04-04T08:04:42.388Z", 
+    "object_repr": "Test ", 
+    "object_id": "13827", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 9
+  }
+},
+{
+  "pk": 148, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 3, 
+    "action_time": "2014-04-04T08:36:21.223Z", 
+    "object_repr": "testuser", 
+    "object_id": "2", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 3
+  }
+},
+{
+  "pk": 1, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": 3, 
+    "primary": true, 
+    "email": "gestorediunbagno@mail.com"
+  }
+},
+{
+  "pk": 1, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      12930
+    ], 
+    "name": "Name not specified", 
+    "privacy": true, 
+    "tos": true, 
+    "user": 3, 
+    "surname": "Surname not specified"
   }
 }
 ]
