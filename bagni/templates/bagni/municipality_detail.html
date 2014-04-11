@@ -2,28 +2,48 @@
 
 {% load i18n %}
 
-{% block content %}
-{% trans "no_bagno_in_this_municipality" as t_no_bagno %}
-{% trans "bagno" as t_bagno %}
-  {% with object.bagni.all as bagni %}
-    <ul>
-      {% for bagno in bagni %}
-      <li><a href="{{ bagno.get_absolute_url }}"
-          title="{{ t_bagno }} {{ bagno.name }}">
-          {{ bagno.name }}</a></li>
-      {% empty %}
-        <li>{{ t_no_bagno }}</li>
-      {% endfor %}
-    </ul>
-  {% endwith %}
-{% endblock content %}
-
-{% block title %}
-{% trans "municipality" as t_municipality %} 
-{{t_municipality}} {{ object.name }}
-{% endblock title %}
-
 {% block pagetitle %}
-{% trans "municipality" as t_municipality %} 
-{{t_municipality}} {{ object.name }}
+    {% trans "municipality_detail_pagetitle" as t_municipality_detail_pagetitle %}
+    {{ t_municipality_detail_pagetitle }}
 {% endblock pagetitle %}
+
+
+{% block description %}
+    {% trans "municipality_detail_desc" as t_municipality_detail_desc %}
+    {{ t_municipality_detail_desc }}
+{% endblock description %}
+
+{% block content %}
+{% trans "municipality_detail_header" as t_municipality_detail_header %}
+{% trans "municipality_detail_desc" as t_municipality_detail_sub_header %}
+{% comment %}
+    Bagni del comune di -neighbourhood.name-
+    Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari del comune di -neighbourhood.name-. 
+{% endcomment %}
+  <div class="row">
+      <div class="col-xs-12">
+          <h1 class="">{{ t_municipality_detail_header }} {{ object.name}}</h1>
+          <p>{{ t_municipality_detail_sub_header }}.</p>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-xs-12">
+                  {% for neighbourhood in object.neighbourhoods.all %}
+                       {% if neighbourhood.name == object.name %}
+                            <ul>
+                       {% else %}
+                            <h3 class="">{{ neighbourhood.name}}</h3>
+                            <ul>
+                       {% endif %}
+                       {% for bagno in neighbourhood.bagni.all%}
+                            <li><p class=""><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></p></li>
+                            {% if forloop.last %}
+                               </ul>
+                            {% endif %}
+                       {% endfor %}
+                  {% endfor %}
+      </div>
+  </div>
+
+{% endblock %}

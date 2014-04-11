@@ -35,6 +35,8 @@ class MunicipalityView(DetailView):
     """
     model = Municipality
 
+    queryset = Municipality.objects.prefetch_related("neighbourhoods", "neighbourhoods__bagni")
+
     def get_context_data(self, **kwargs):
         context = super(MunicipalityView, self).get_context_data(**kwargs)
         return context

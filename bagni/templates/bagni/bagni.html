@@ -35,7 +35,7 @@
               <ul>
                   {% for municipality in district.municipalities.all %}
                   <li>
-                    <h4>{{ t_bagni_page_comune_of }} {{ municipality.name }}</h4>
+                    <h4><a href="{{ municipality.get_absolute_url }}" >{{ t_bagni_page_comune_of }} {{ municipality.name }}</a></h4>
                   </li>
               <ul>
                 {% for neighbourhood in municipality.neighbourhoods.all %}
