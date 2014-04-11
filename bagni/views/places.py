@@ -12,6 +12,8 @@ class NeighbourhoodView(DetailView):
     """ Detail view for a single neighbourhood
     """
     model = Neighbourhood
+    
+    queryset = Neighbourhood.objects.prefetch_related("bagni", "municipality")
 
     def get_context_data(self, **kwargs):
         context = super(NeighbourhoodView, self).get_context_data(**kwargs)
@@ -22,8 +24,6 @@ class NeighbourhoodsView(ListView):
     """ List view for the neighbourhoods
     """
     model = Neighbourhood
-
-    queryset = District.objects.prefetch_related("bagni", "municipality")
 
     def get_context_data(self, **kwargs):
         context = super(NeighbourhoodsView, self).get_context_data(**kwargs)
