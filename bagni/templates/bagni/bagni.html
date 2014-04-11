@@ -2,40 +2,46 @@
 
 {% load i18n %}
 
+
+{% block pagetitle %}
+    {% trans "bagni_page_pagetitle" as t_bagni_page_pagetitle %}
+    {{ t_bagni_page_pagetitle }}
+{% endblock pagetitle %}
+
+{% block description %}
+    {% trans "bagni_page_desc" as t_bagni_page_desc %}
+    {{ t_bagni_page_desc }}
+{% endblock description %}
+
 {% block content %}
-{% trans "municipality" as t_municipality %}
-{% trans "neighbourhood" as t_neighbourhood %}
-{% trans "service" as t_service %}
+{% trans "bagni_page_header" as t_bagni_page_header %}
+{% trans "bagni_page_desc" as t_bagni_page_sub_header %}
+{% trans "bagni_page_locations" as t_bagni_page_locations %}
+{% trans "bagni_page_province_of" as t_bagni_page_province_of %}
+{% trans "bagni_page_comune_of" as t_bagni_page_comune_of %}
+{% trans "bagni_page_facilities" as t_bagni_page_facilities %}
   <div class="row">
       <div class="col-xs-12">
-          <h1>Bagni</h1>
-          <p>Esplora bagni per localita o per servizio offerto.</p>
+          <h1>{{ t_bagni_page_header }}</h1>
+          <p>{{ t_bagni_page_sub_header }}.</p>
           <hr>
       </div>
   </div>
   <div class="row">
       <div class="col-xs-12">
-      <h2>Localita:</h2>
+      <h2>{{ t_bagni_page_locations }}:</h2>
       {% for district in districts %}
-          <h3><a href="{{ district.get_absolute_url }}">{{ district.name }}</a></h3>
+          <h3>{{ t_bagni_page_province_of }} {{ district.name }}</h3>
               <ul>
                   {% for municipality in district.municipalities.all %}
                   <li>
-                    <h4>
-                      <a href="{{ municipality.get_absolute_url }}"
-                         title="{{ t_municipality }}: {{ municipality.name }}">
-                        {{ municipality.name}}
-                      </a>
-                    </h4>
+                    <h4>{{ t_bagni_page_comune_of }} {{ municipality.name }}</h4>
                   </li>
               <ul>
                 {% for neighbourhood in municipality.neighbourhoods.all %}
                 <li>
                   <p>
-                  <a href="{{ neighbourhood.get_absolute_url }}"
-                      title="{{ t_neighbourhood }}: {{ neighbourhood.name }}" >
-                      {{ neighbourhood.name}}
-                    </a>
+                  <a href="{{ neighbourhood.get_absolute_url }}" >{{ neighbourhood.name }}</a>
                   </p>
                 </li>
                 {% endfor %}
@@ -44,16 +50,12 @@
             </ul>
       {% endfor %}    
       <hr>
-      <h2>Servizi:</h2>
+      <h2>{{ t_bagni_page_facilities }}:</h2>
       {% for facility_category in facility_categories %}
-          <h3>{{ facility_category.name}}</h3>
+          <h3>{% trans facility_category.name|capfirst %}</h3>
           <ul>
           {% for service in facility_category.services.all %}
-          <li><p>
-          <a href="{{ service.get_absolute_url }}"
-             title="{{ t_service }}: {% trans service.name %}">
-              {% trans service.name %}
-          </a></p></li>
+          <li><p><a href="{{ service.get_absolute_url }}">{% trans service.name %}</a></p></li>
           {% endfor %}
           </ul>
       {% endfor %}
@@ -61,12 +63,3 @@
   </div>
 
 {% endblock %}
-
-
-{% block title %}
-to-do
-{% endblock title %}
-
-{% block pagetitle %}
-to-do
-{% endblock pagetitle %}

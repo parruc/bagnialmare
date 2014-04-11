@@ -23,6 +23,8 @@ class NeighbourhoodsView(ListView):
     """
     model = Neighbourhood
 
+    queryset = District.objects.prefetch_related("bagni", "municipality")
+
     def get_context_data(self, **kwargs):
         context = super(NeighbourhoodsView, self).get_context_data(**kwargs)
         return context

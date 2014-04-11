@@ -33,7 +33,7 @@ class ServiceView(DetailView):
     """ Shows the list of bagni offering the service
     """
     model = Service
-    queryset = Service.objects.prefetch_related("bagni", "category")
+    queryset = Service.objects.prefetch_related("bagni__neighbourhood", "bagni__neighbourhood__municipality")
 
     def get_context_data(self, **kwargs):
         context = super(ServiceView, self).get_context_data(**kwargs)

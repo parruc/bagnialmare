@@ -2,39 +2,46 @@
 
 {% load i18n %}
 
+{% block pagetitle %}
+    {% trans "service_detail_pagetitle" as t_service_detail_pagetitle %}
+    {{ t_service_detail_pagetitle }}
+{% endblock pagetitle %}
+
+
+{% block description %}
+    {% trans "service_detail_desc" as t_service_detail_desc %}
+    {{ t_service_detail_desc }}
+{% endblock description %}
+
 {% block content %}
-{% trans "bagno" as t_bagno %}
+{% trans "service_detail_header" as t_service_detail_header %}
+{% trans "service_detail_desc" as t_service_detail_sub_header %}
+{% trans "service_detail_no_result" as t_service_detail_no_result %}
+{% comment %}
+    Bagni con -service.name-
+    Questo e' l'elenco dei bagni che offrono il servizio di -service.name-. 
+{% endcomment %}
   <div class="row">
       <div class="col-xs-12">
-          <h1 class="">Bagni con {{ object}}</h1>
-          <p>Esplora bagni per localita o per servizio offerto.</p>
+          <h1 class="">{{ t_service_detail_header }} {{ object.name}}</h1>
+          <p>{{ t_service_detail_sub_header }}.</p>
           <hr>
       </div>
   </div>
   <div class="row">
-      <div class="col-xs-12">
-          {% with bagni=object.bagni.all %}
-              {% regroup bagni by neighborhood as neighborhood_list %}
-              {% for neighborhood in neighborhood_list %}
-                  <h3>{{ neighborhood.grouper.name }}, {{ neighborhood.grouper.municipality.name }}</h3>
+      <div class="col-xs-12">      
+              {% regroup object.bagni.all|dictsort:"neighbourhood.name"|dictsort:"neighbourhood.municipality.name" by neighbourhood as neighborhood_list %}
+              {% for n in neighborhood_list %}
+                  <h3>{{ n.grouper.name }}{% if n.grouper.name != n.grouper.municipality.name %}, {{ n.grouper.municipality.name }}{% endif %}</h3>
                   <ul>
-                  {% for bagno in neighborhood.list %}
+                  {% for bagno in n.list %}
                        <li><p class=""><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></p></li>
                   {% endfor %}
                   </ul>
               {% empty %}
-                  <h3>{% trans "No bagno has this service" %}</h3>
+                  <h3>{{ t_service_detail_no_result }}</h3>
               {% endfor %}
-          {% endwith %}
+      </div>
   </div>
 
 {% endblock %}
-
-
-{% block title %}
-to-do
-{% endblock title %}
-
-{% block pagetitle %}
-to-do
-{% endblock pagetitle %}
