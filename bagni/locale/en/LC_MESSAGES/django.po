@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 22:04+0200\n"
+"POT-Creation-Date: 2014-04-09 22:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr "^beachresort/(?P<slug>[-\\w]+)/contacts/$"
 
 #: urls.py:14
 msgid "^search/$"
-msgstr ""
+msgstr "^search/$"
 
 #: urls.py:15
 msgid "^service-categories/$"
@@ -58,35 +58,35 @@ msgstr "^facilities/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:19
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
-msgstr ""
+msgstr "^neighbourhood/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:20
 msgid "^neighbourhoods/$"
-msgstr ""
+msgstr "^neighbourhoods/$"
 
 #: urls.py:21
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
-msgstr ""
+msgstr "^municipality/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:22
 msgid "^municipalities/$"
-msgstr ""
+msgstr "^municipalities/$"
 
 #: urls.py:23
 msgid "^district/(?P<slug>[-\\w]+)/$"
-msgstr ""
+msgstr "^district/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:24
 msgid "^districts/$"
-msgstr ""
+msgstr "^districts/$"
 
 #: urls.py:25
 msgid "^json/autocomplete/places$"
-msgstr ""
+msgstr "^json/autocomplete/places$"
 
 #: urls.py:26
 msgid "^json/autocomplete/searchterms$"
-msgstr ""
+msgstr "^json/autocomplete/searchterms$"
 
 #: models/bagni.py:13 models/bagni_details.py:37 models/bagni_details.py:69
 msgid "Bagno"
@@ -100,57 +100,57 @@ msgstr "BeachResorts"
 #: models/places.py:20 models/places.py:45 models/places.py:69
 #: models/services.py:23 models/services.py:46
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: models/bagni.py:28 models/places.py:60
 msgid "Neighbourhood"
-msgstr ""
+msgstr "Neighbourhood"
 
 #: models/bagni_details.py:12
 msgid "Spoken language"
-msgstr ""
+msgstr "Spoken language"
 
 #: models/bagni_details.py:13
 msgid "Spoken languages"
-msgstr ""
+msgstr "Spoken languages"
 
 #: models/bagni_details.py:31
 msgid "Telephone number"
-msgstr ""
+msgstr "Telephone number"
 
 #: models/bagni_details.py:32
 msgid "Telephone numbers"
-msgstr ""
+msgstr "Telephone numbers"
 
 #: models/bagni_details.py:47 models/bagni_details.py:68 models/services.py:20
 #: models/services.py:51
 msgid "Image"
-msgstr ""
+msgstr "Image"
 
 #: models/bagni_details.py:48
 msgid "Images"
-msgstr ""
+msgstr "Images"
 
 #: models/places.py:12 models/places.py:42
 msgid "District"
-msgstr ""
+msgstr "District"
 
 #: models/places.py:13
 msgid "Districts"
-msgstr ""
+msgstr "Districts"
 
 #: models/places.py:36 models/places.py:66
 msgid "Municipality"
-msgstr ""
+msgstr "Municipality"
 
 #: models/places.py:37 templates/bagni/municipality_list.html:21
 #: templates/bagni/municipality_list.html:23
 msgid "Municipalities"
-msgstr ""
+msgstr "Municipalities"
 
 #: models/places.py:61
 msgid "Neighbourhoods"
-msgstr ""
+msgstr "Neighbourhoods"
 
 #: models/services.py:13 models/services.py:14
 msgid "Service Category"
@@ -166,17 +166,17 @@ msgstr "Facilities"
 
 #: models/services.py:50
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 #: templates/bagni/bagni.html:6 templates/bagni/municipality_detail.html:22
 #: templates/bagni/municipality_detail.html:27
 #: templates/bagni/municipality_list.html:6
 msgid "municipality"
-msgstr ""
+msgstr "municipality"
 
 #: templates/bagni/bagni.html:7
 msgid "neighbourhood"
-msgstr ""
+msgstr "neighbourhood"
 
 #: templates/bagni/bagni.html:8
 msgid "service"
@@ -212,7 +212,7 @@ msgstr "contact this structure"
 
 #: templates/bagni/bagno_detail.html:8
 msgid "image"
-msgstr ""
+msgstr "image"
 
 #: templates/bagni/bagno_detail.html:9
 msgid "no_images_for"
@@ -225,7 +225,7 @@ msgstr "no images available, add one now"
 #: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
-msgstr ""
+msgstr "facilities"
 
 #: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:7
 msgid "facility"
@@ -255,7 +255,7 @@ msgstr "no municipality in this district"
 #: templates/bagni/district_detail.html:29
 #: templates/bagni/district_detail.html:34
 msgid "district"
-msgstr ""
+msgstr "district"
 
 #: templates/bagni/district_list.html:6
 msgid "no_ditricts"
@@ -263,7 +263,7 @@ msgstr "no districts"
 
 #: templates/bagni/district_list.html:19 templates/bagni/district_list.html:24
 msgid "districts"
-msgstr ""
+msgstr "districts"
 
 #: templates/bagni/homepage.html:11
 msgid "home_heading"
@@ -309,12 +309,12 @@ msgstr "no beach resort in this municipality"
 
 #: templates/bagni/search.html:8
 msgid "where"
-msgstr ""
+msgstr "where"
 
 #: templates/bagni/search.html:9 templates/bagni/search.html.py:316
 #: templates/bagni/search.html:321
 msgid "search"
-msgstr ""
+msgstr "search"
 
 #: templates/bagni/search.html:11
 msgid "filter_by_facility"
@@ -330,15 +330,15 @@ msgstr "results for"
 
 #: templates/bagni/search.html:14
 msgid "results"
-msgstr ""
+msgstr "results"
 
 #: templates/bagni/search.html:15
 msgid "near"
-msgstr ""
+msgstr "near"
 
 #: templates/bagni/search.html:16
 msgid "filters"
-msgstr ""
+msgstr "filters"
 
 #: templates/bagni/search.html:17
 msgid "list_view"
@@ -350,11 +350,11 @@ msgstr "map view"
 
 #: templates/bagni/search.html:20
 msgid "previous"
-msgstr ""
+msgstr "previous"
 
 #: templates/bagni/search.html:21
 msgid "next"
-msgstr ""
+msgstr "next"
 
 #: templates/bagni/search.html:22
 msgid "no_results_for_search"
@@ -366,6 +366,8 @@ msgid ""
 "\n"
 "                      Page %(page)s of %(num_pages)s."
 msgstr ""
+"\n"
+"                      Page %(page)s of %(num_pages)s."
 
 #: templates/bagni/service_detail.html:17
 #: templates/bagni/servicecategory_detail.html:18
@@ -397,8 +399,8 @@ msgstr "Facility categories"
 #: views/search.py:48
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
-msgstr ""
+msgstr "Cant find place '%s', sorting by relevance"
 
 #: views/search.py:55
 msgid "Error in geocoding"
-msgstr ""
+msgstr "Error in geocoding"
