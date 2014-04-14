@@ -4,26 +4,27 @@
 
 {% block pagetitle %}
     {% trans "municipality_detail_pagetitle" as t_municipality_detail_pagetitle %}
-    {{ t_municipality_detail_pagetitle }}
+    {{ t_municipality_detail_pagetitle|capfirst }} {{ object.name}}
 {% endblock pagetitle %}
 
 
 {% block description %}
     {% trans "municipality_detail_desc" as t_municipality_detail_desc %}
-    {{ t_municipality_detail_desc }}
+    {{ t_municipality_detail_desc|capfirst }} {{ object.name}}.
 {% endblock description %}
 
 {% block content %}
 {% trans "municipality_detail_header" as t_municipality_detail_header %}
-{% trans "municipality_detail_desc" as t_municipality_detail_sub_header %}
+{% trans "municipality_detail_sub_header" as t_municipality_detail_sub_header %}
 {% comment %}
     Bagni del comune di -neighbourhood.name-
     Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari del comune di -neighbourhood.name-. 
 {% endcomment %}
   <div class="row">
       <div class="col-xs-12">
-          <h1 class="">{{ t_municipality_detail_header }} {{ object.name}}</h1>
-          <p>{{ t_municipality_detail_sub_header }}.</p>
+          <h1 class="">{{ t_municipality_detail_header|capfirst }} {{ object.name}}</h1>
+          <br>
+          <p>{{ t_municipality_detail_sub_header|capfirst }} {{ object.name}}.</p>
       </div>
   </div>
   <br>

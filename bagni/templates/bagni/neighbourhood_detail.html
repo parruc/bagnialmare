@@ -4,26 +4,26 @@
 
 {% block pagetitle %}
     {% trans "neighbourhood_detail_pagetitle" as t_neighbourhood_detail_pagetitle %}
-    {{ t_neighbourhood_detail_pagetitle }}
+    {{ t_neighbourhood_detail_pagetitle|capfirst }} {{ object.name}}
 {% endblock pagetitle %}
 
 
 {% block description %}
     {% trans "neighbourhood_detail_desc" as t_neighbourhood_detail_desc %}
-    {{ t_neighbourhood_detail_desc }}
+    {{ t_neighbourhood_detail_desc|capfirst }} {{ object.name}}.
 {% endblock description %}
 
 {% block content %}
 {% trans "neighbourhood_detail_header" as t_neighbourhood_detail_header %}
-{% trans "neighbourhood_detail_desc" as t_neighbourhood_detail_sub_header %}
+{% trans "neighbourhood_detail_sub_header" as t_neighbourhood_detail_sub_header %}
 {% comment %}
     Bagni a -neighbourhood.name-
     Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari di -neighbourhood.name-. 
 {% endcomment %}
   <div class="row">
       <div class="col-xs-12">
-          <h1 class="">{{ t_neighbourhood_detail_header }} {{ object.name}}{% if object.name != object.municipality.name %}, {{ object.municipality.name }}{% endif %}</h1>
-          <p>{{ t_neighbourhood_detail_sub_header }}.</p>
+          <h1 class="">{{ t_neighbourhood_detail_header|capfirst }} {{ object.name}}{% if object.name != object.municipality.name %}, {{ object.municipality.name }}{% endif %}</h1>
+          <p>{{ t_neighbourhood_detail_sub_header|capfirst }} {{ object.name}}.</p>
       </div>
   </div>
   <br>

@@ -4,18 +4,18 @@
 
 {% block pagetitle %}
     {% trans "service_detail_pagetitle" as t_service_detail_pagetitle %}
-    {{ t_service_detail_pagetitle }}
+    {{ t_service_detail_pagetitle|capfirst }} {{ object.name}}
 {% endblock pagetitle %}
 
 
 {% block description %}
     {% trans "service_detail_desc" as t_service_detail_desc %}
-    {{ t_service_detail_desc }}
+    {{ t_service_detail_desc|capfirst }} {{ object.name}}
 {% endblock description %}
 
 {% block content %}
 {% trans "service_detail_header" as t_service_detail_header %}
-{% trans "service_detail_desc" as t_service_detail_sub_header %}
+{% trans "service_detail_sub_header" as t_service_detail_sub_header %}
 {% trans "service_detail_no_result" as t_service_detail_no_result %}
 {% comment %}
     Bagni con -service.name-
@@ -23,9 +23,8 @@
 {% endcomment %}
   <div class="row">
       <div class="col-xs-12">
-          <h1 class="">{{ t_service_detail_header }} {{ object.name}}</h1>
-          <p>{{ t_service_detail_sub_header }}.</p>
-          <hr>
+          <h1 class="">{{ t_service_detail_header|capfirst }} {{ object.name}}</h1>
+          <p>{{ t_service_detail_sub_header|capfirst }} {{ object.name}}.</p>
       </div>
   </div>
   <div class="row">
@@ -39,7 +38,7 @@
                   {% endfor %}
                   </ul>
               {% empty %}
-                  <h3>{{ t_service_detail_no_result }}</h3>
+                  <h3>{{ t_service_detail_no_result|capfirst }} {{ object.name}}</h3>
               {% endfor %}
       </div>
   </div>

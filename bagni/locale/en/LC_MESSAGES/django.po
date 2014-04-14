@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 22:38+0200\n"
+"POT-Creation-Date: 2014-04-14 19:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,19 +168,39 @@ msgstr "Facilities"
 msgid "Category"
 msgstr "Category"
 
-#: templates/bagni/bagni.html:6 templates/bagni/municipality_detail.html:22
-#: templates/bagni/municipality_detail.html:27
-#: templates/bagni/municipality_list.html:6
-msgid "municipality"
-msgstr "municipality"
-
 #: templates/bagni/bagni.html:7
-msgid "neighbourhood"
-msgstr "neighbourhood"
+msgid "bagni_page_pagetitle"
+msgstr "beach resorts of the Riviera Romagnola, Italy"
 
-#: templates/bagni/bagni.html:8
-msgid "service"
-msgstr "facility"
+#: templates/bagni/bagni.html:12
+msgid "bagni_page_desc"
+msgstr "find contacts, addresses and facilities of Italian beach resorts"
+
+#: templates/bagni/bagni.html:17
+msgid "bagni_page_header"
+msgstr "Italian beach resorts"
+
+#: templates/bagni/bagni.html:18
+msgid "bagni_page_sub_header"
+msgstr ""
+"here you can find the list of Italian beach resorts grouped by location and "
+"facility"
+
+#: templates/bagni/bagni.html:19
+msgid "bagni_page_locations"
+msgstr "locations"
+
+#: templates/bagni/bagni.html:20
+msgid "bagni_page_province_of"
+msgstr "province of"
+
+#: templates/bagni/bagni.html:21
+msgid "bagni_page_comune_of"
+msgstr "comune of"
+
+#: templates/bagni/bagni.html:22
+msgid "bagni_page_facilities"
+msgstr "beach resort facilities"
 
 #: templates/bagni/bagno_contacts.html:4
 msgid "contacts"
@@ -199,9 +219,7 @@ msgid "website"
 msgstr "website"
 
 #: templates/bagni/bagno_contacts.html:8 templates/bagni/bagno_list.html:7
-#: templates/bagni/district_detail.html:8
-#: templates/bagni/municipality_detail.html:7 templates/bagni/search.html:10
-#: templates/bagni/service_detail.html:6
+#: templates/bagni/district_detail.html:8 templates/bagni/search.html:10
 #: templates/bagni/servicecategory_detail.html:6
 msgid "bagno"
 msgstr "beachresort"
@@ -244,7 +262,6 @@ msgid "bagni"
 msgstr "beach resorts"
 
 #: templates/bagni/district_detail.html:6
-#: templates/bagni/municipality_detail.html:6
 msgid "no_bagno_in_this_municipality"
 msgstr "no beach resort in this municipality"
 
@@ -303,16 +320,54 @@ msgstr "search"
 msgid "homepage_title"
 msgstr "bagnialmare.com"
 
+#: templates/bagni/municipality_detail.html:6
+msgid "municipality_detail_pagetitle"
+msgstr "beach resorts within the Comune of"
+
+#: templates/bagni/municipality_detail.html:12
+msgid "municipality_detail_desc"
+msgstr ""
+"find contacts, addresses and facilities about beach resorts within the "
+"Comune of"
+
+#: templates/bagni/municipality_detail.html:17
+msgid "municipality_detail_header"
+msgstr "beach resorts within the Comune of"
+
+#: templates/bagni/municipality_detail.html:18
+msgid "municipality_detail_sub_header"
+msgstr "here you can find the list of beach resorts within the Comune of"
+
+#: templates/bagni/municipality_list.html:6
+msgid "municipality"
+msgstr "municipality"
+
 #: templates/bagni/municipality_list.html:7
 msgid "no_municipality"
 msgstr "no beach resort in this municipality"
+
+#: templates/bagni/neighbourhood_detail.html:6
+msgid "neighbourhood_detail_pagetitle"
+msgstr "beach resorts of"
+
+#: templates/bagni/neighbourhood_detail.html:12
+msgid "neighbourhood_detail_desc"
+msgstr "find contacts, addresses and facilities about beach resorts of"
+
+#: templates/bagni/neighbourhood_detail.html:17
+msgid "neighbourhood_detail_header"
+msgstr "beach resorts of"
+
+#: templates/bagni/neighbourhood_detail.html:18
+msgid "neighbourhood_detail_sub_header"
+msgstr "here you can find the list of beach resorts of"
 
 #: templates/bagni/search.html:8
 msgid "where"
 msgstr "where"
 
-#: templates/bagni/search.html:9 templates/bagni/search.html.py:316
-#: templates/bagni/search.html:321
+#: templates/bagni/search.html:9 templates/bagni/search.html.py:326
+#: templates/bagni/search.html:331
 msgid "search"
 msgstr "search"
 
@@ -357,10 +412,18 @@ msgid "next"
 msgstr "next"
 
 #: templates/bagni/search.html:22
+msgid "first"
+msgstr ""
+
+#: templates/bagni/search.html:23
+msgid "last"
+msgstr ""
+
+#: templates/bagni/search.html:24
 msgid "no_results_for_search"
 msgstr "no results for the given search"
 
-#: templates/bagni/search.html:215
+#: templates/bagni/search.html:222
 #, python-format
 msgid ""
 "\n"
@@ -369,14 +432,33 @@ msgstr ""
 "\n"
 "                      Page %(page)s of %(num_pages)s."
 
+#: templates/bagni/service_detail.html:6
+msgid "service_detail_pagetitle"
+msgstr "Italian beach resorts with"
+
+#: templates/bagni/service_detail.html:12
+msgid "service_detail_desc"
+msgstr "find addresses and contacts of Italian beach resorts with"
+
 #: templates/bagni/service_detail.html:17
-#: templates/bagni/servicecategory_detail.html:18
-msgid "No bagno has this service"
-msgstr "No bagno has this facility"
+msgid "service_detail_header"
+msgstr "Italian beach resorts with"
+
+#: templates/bagni/service_detail.html:18
+msgid "service_detail_sub_header"
+msgstr "here you can find the list of Italian beach resorts with"
+
+#: templates/bagni/service_detail.html:19
+msgid "service_detail_no_result"
+msgstr "We could not find any beach resorts with"
 
 #: templates/bagni/service_list.html:6
 msgid "no_service"
 msgstr "no facility"
+
+#: templates/bagni/servicecategory_detail.html:18
+msgid "No bagno has this service"
+msgstr "No bagno has this facility"
 
 #: templates/bagni/servicecategory_detail.html:23
 #: templates/bagni/servicecategory_list.html:19
@@ -404,3 +486,6 @@ msgstr "Cant find place '%s', sorting by relevance"
 #: views/search.py:55
 msgid "Error in geocoding"
 msgstr "Error in geocoding"
+
+#~ msgid "service"
+#~ msgstr "facility"
