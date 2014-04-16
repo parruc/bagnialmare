@@ -58,10 +58,14 @@ class Command(BaseCommand):
                         name = tel_names[field]
                         if len(numeri) > 1:
                             name += " " + str(index+1)
-                        t = Telephone(name=name)
-                        t.number = number.strip()
-                        t.bagno = b
-                        t.save()
+                        t = Telephone(name=name, number=number.strip(), bagno=b)
+                        try:
+                            t.save()
+                        except:
+                            numbers_post = {"Davide": "335 5851390", "Bagno 96": "0541 377260", "Guido": "0541 377260", "Bagno 97": "0541 377236", "Oriano": "339 3910410"}
+                            for name, number in numbers_post.items():
+                                t=Telephone(name=name, number=number, bagno=b)
+                                t.save()
 
                         logger.warning("Bagno [%d/%d]assigning telephone %s: %s  to bagno %s" % (count, tot, t.name, t.number, b.name, ) )
 
