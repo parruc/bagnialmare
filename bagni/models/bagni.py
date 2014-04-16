@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-import autoslug
-
 from django.contrib.gis.db import models
 from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
 
-class Bagno(models.Model):
+from base import BaseModel
+
+class Bagno(BaseModel):
     """ The model for Bagno object
     """
     class Meta:
@@ -14,13 +14,7 @@ class Bagno(models.Model):
         verbose_name_plural = _('Bagni')
         app_label = 'bagni'
 
-    name = models.CharField(max_length=100)
     description = models.TextField(max_length=2000)
-    slug = autoslug.AutoSlugField(max_length=50,
-                                  populate_from='name',
-                                  verbose_name=_("Slug"),
-                                  unique=True,
-                                  editable=True,)
     number = models.CharField(max_length=30, blank=True)
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni')
     services = models.ManyToManyField("Service", blank=True, related_name='bagni')
@@ -31,9 +25,6 @@ class Bagno(models.Model):
     point = models.PointField(null=True, blank=True)
 
     objects = models.GeoManager()
-
-    def __unicode__(self):
-        return self.name
 
     def index_text(self):
         """ Text indexed for fulltext search (the what field)

@@ -4,9 +4,11 @@ from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from sorl.thumbnail import ImageField
-import autoslug
 
-class ServiceCategory(models.Model):
+from base import BaseModel
+
+
+class ServiceCategory(BaseModel):
     """ List of categories available for the service
     """
     class Meta:
@@ -14,24 +16,16 @@ class ServiceCategory(models.Model):
         verbose_name_plural = _('Service Category')
         app_label = 'bagni'
 
-    name = models.CharField(max_length=100)
     description = models.TextField(max_length=2000)
     order = models.IntegerField()
     image = ImageField(upload_to="images/servicecategories", verbose_name=_("Image"), blank=True, null=True )
-    slug = autoslug.AutoSlugField(max_length=50,
-                                  populate_from='name',
-                                  verbose_name=_("Slug"),
-                                  unique=True,
-                                  editable=True,)
-    def __unicode__(self):
-        return self.name
 
     @models.permalink
     def get_absolute_url(self):
         return ("service-category", [self.slug, ])
 
 
-class Service(models.Model):
+class Service(BaseModel):
     """ The model for Service object
     """
     class Meta:
@@ -39,13 +33,8 @@ class Service(models.Model):
         verbose_name_plural = _('Services')
         app_label = 'bagni'
 
-    name = models.CharField(max_length=50)
     description = models.TextField(max_length=2000, blank=True)
-    slug = autoslug.AutoSlugField(max_length=50,
-                                  populate_from='name',
-                                  verbose_name=_("Slug"),
-                                  unique=True,
-                                  editable=True,)
+
     # TODO: A regime mettere  obbligatorio cateogry
     category = models.ForeignKey(ServiceCategory, blank=True, null=True, related_name='services', verbose_name=_("Category"),)
     image = ImageField(upload_to="images/services", verbose_name=_("Image"), blank=True, null=True)
@@ -59,6 +48,3 @@ class Service(models.Model):
         """ The search url to activate this (and only this) facet as filter
         """
         return reverse("search") + "?f=services:" + self.slug
-
-    def __unicode__(self):
-        return self.name

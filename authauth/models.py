@@ -42,3 +42,12 @@ class Manager(models.Model):
         if obj in self.bagni.all():
             return True
         return False
+
+    def natural_key(self):
+        return (self.user.email, )
+
+    def get_by_natural_key(self, email):
+        return self.get(user__email=email)
+
+    def __unicode__(self):
+        return self.name

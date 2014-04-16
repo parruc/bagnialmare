@@ -3,9 +3,10 @@ from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from sorl.thumbnail import ImageField
-import autoslug
 
-class Language(models.Model):
+from base import BaseModel
+
+class Language(BaseModel):
     """ List of languages available for the spoken language field in bagno
     """
     class Meta:
@@ -13,18 +14,10 @@ class Language(models.Model):
         verbose_name_plural = _('Spoken languages')
         app_label = 'bagni'
 
-    name = models.CharField(max_length=100)
     description = models.TextField(max_length=2000)
-    slug = autoslug.AutoSlugField(max_length=50,
-                                  populate_from='name',
-                                  verbose_name=_("Slug"),
-                                  unique=True,
-                                  editable=True,)
-    def __unicode__(self):
-        return self.name
 
 
-class Telephone(models.Model):
+class Telephone(BaseModel):
     """ List of telephone numbers of the bagno
     """
     class Meta:
@@ -32,14 +25,13 @@ class Telephone(models.Model):
         verbose_name_plural = _('Telephone numbers')
         app_label = 'bagni'
 
-    name = models.CharField(max_length=25)
     number = models.CharField(max_length=100)
     bagno = models.ForeignKey("Bagno", related_name="telephones", verbose_name=_("Bagno"),)
     def __unicode__(self):
         return self.name
 
 
-class Image(models.Model):
+class Image(BaseModel):
     """ Model used for the bagno images
         TODO: inline in admin form of bagno?
     """
@@ -57,13 +49,6 @@ class Image(models.Model):
                                     upload_filename)
         return upload_path
 
-
-    name = models.CharField(max_length=50)
     description = models.TextField(max_length=2000, blank=True)
-    slug = autoslug.AutoSlugField(max_length=50,
-                                  populate_from='name',
-                                  verbose_name=_("Slug"),
-                                  unique=True,
-                                  editable=True,)
     image = ImageField(upload_to=_define_filename, verbose_name=_("Image"),)
     bagno = models.ForeignKey("Bagno", related_name="images", verbose_name=_("Bagno"),)
