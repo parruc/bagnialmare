@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 19:54+0200\n"
+"POT-Creation-Date: 2014-04-17 13:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,25 @@ msgstr "^json/autocomplete/places$"
 msgid "^json/autocomplete/searchterms$"
 msgstr "^json/autocomplete/searchterms$"
 
-#: models/bagni.py:13 models/bagni_details.py:37 models/bagni_details.py:69
+#: management/commands/restore_telephones.py:36 models/bagni_details.py:24
+msgid "Telephone number"
+msgstr "Telephone number"
+
+#: management/commands/restore_telephones.py:36
+#, fuzzy
+msgid "Mobile number"
+msgstr "Telephone number"
+
+#: management/commands/restore_telephones.py:36
+#, fuzzy
+msgid "Winter number"
+msgstr "Telephone number"
+
+#: management/commands/restore_telephones.py:36
+msgid "Fax number"
+msgstr ""
+
+#: models/bagni.py:13 models/bagni_details.py:29 models/bagni_details.py:54
 msgid "Bagno"
 msgstr "BeachResort"
 
@@ -96,42 +114,36 @@ msgstr "BeachResort"
 msgid "Bagni"
 msgstr "BeachResorts"
 
-#: models/bagni.py:21 models/bagni_details.py:20 models/bagni_details.py:65
-#: models/places.py:20 models/places.py:45 models/places.py:69
-#: models/services.py:23 models/services.py:46
-msgid "Slug"
-msgstr "Slug"
-
-#: models/bagni.py:28 models/places.py:60
+#: models/bagni.py:22 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Neighbourhood"
 
-#: models/bagni_details.py:12
+#: models/bagni_details.py:13
 msgid "Spoken language"
 msgstr "Spoken language"
 
-#: models/bagni_details.py:13
+#: models/bagni_details.py:14
 msgid "Spoken languages"
 msgstr "Spoken languages"
 
-#: models/bagni_details.py:31
-msgid "Telephone number"
-msgstr "Telephone number"
-
-#: models/bagni_details.py:32
+#: models/bagni_details.py:25
 msgid "Telephone numbers"
 msgstr "Telephone numbers"
 
-#: models/bagni_details.py:47 models/bagni_details.py:68 models/services.py:20
-#: models/services.py:51
+#: models/bagni_details.py:39 models/bagni_details.py:53 models/services.py:21
+#: models/services.py:40
 msgid "Image"
 msgstr "Image"
 
-#: models/bagni_details.py:48
+#: models/bagni_details.py:40
 msgid "Images"
 msgstr "Images"
 
-#: models/places.py:12 models/places.py:42
+#: models/base.py:17
+msgid "Slug"
+msgstr "Slug"
+
+#: models/places.py:12 models/places.py:33
 msgid "District"
 msgstr "District"
 
@@ -139,32 +151,32 @@ msgstr "District"
 msgid "Districts"
 msgstr "Districts"
 
-#: models/places.py:36 models/places.py:66
+#: models/places.py:28 models/places.py:48
 msgid "Municipality"
 msgstr "Municipality"
 
-#: models/places.py:37 templates/bagni/municipality_list.html:21
+#: models/places.py:29 templates/bagni/municipality_list.html:21
 #: templates/bagni/municipality_list.html:23
 msgid "Municipalities"
 msgstr "Municipalities"
 
-#: models/places.py:61
+#: models/places.py:44
 msgid "Neighbourhoods"
 msgstr "Neighbourhoods"
 
-#: models/services.py:13 models/services.py:14
+#: models/services.py:15 models/services.py:16
 msgid "Service Category"
 msgstr "Facility Category"
 
-#: models/services.py:38
+#: models/services.py:32
 msgid "Service"
 msgstr "Facility"
 
-#: models/services.py:39
+#: models/services.py:33
 msgid "Services"
 msgstr "Facilities"
 
-#: models/services.py:50
+#: models/services.py:39
 msgid "Category"
 msgstr "Category"
 
@@ -181,24 +193,26 @@ msgid "bagni_page_header"
 msgstr "Italian beach resorts"
 
 #: templates/bagni/bagni.html:18
-msgid "bagni_page_sub_header"
-msgstr ""
-"here you can find the list of Italian beach resorts grouped by location and "
-"facility"
+msgid "bagni_page_sub_header_outside_link"
+msgstr "here you can find the list of Italian beach resorts grouped by location and"
 
 #: templates/bagni/bagni.html:19
+msgid "bagni_page_sub_header_inside_link"
+msgstr "facility"
+
+#: templates/bagni/bagni.html:20
 msgid "bagni_page_locations"
 msgstr "locations"
 
-#: templates/bagni/bagni.html:20
+#: templates/bagni/bagni.html:21
 msgid "bagni_page_province_of"
 msgstr "province of"
 
-#: templates/bagni/bagni.html:21
+#: templates/bagni/bagni.html:22
 msgid "bagni_page_comune_of"
 msgstr "comune of"
 
-#: templates/bagni/bagni.html:22
+#: templates/bagni/bagni.html:23
 msgid "bagni_page_facilities"
 msgstr "beach resort facilities"
 

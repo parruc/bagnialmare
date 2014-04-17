@@ -15,7 +15,8 @@
 
 {% block content %}
 {% trans "bagni_page_header" as t_bagni_page_header %}
-{% trans "bagni_page_sub_header" as t_bagni_page_sub_header %}
+{% trans "bagni_page_sub_header_outside_link" as t_bagni_page_sub_header_outside_link %}
+{% trans "bagni_page_sub_header_inside_link" as t_bagni_page_sub_header_inside_link %}
 {% trans "bagni_page_locations" as t_bagni_page_locations %}
 {% trans "bagni_page_province_of" as t_bagni_page_province_of %}
 {% trans "bagni_page_comune_of" as t_bagni_page_comune_of %}
@@ -24,7 +25,7 @@
       <div class="col-xs-12">
           <h1>{{ t_bagni_page_header|capfirst }}</h1>
           <br>
-          <p>{{ t_bagni_page_sub_header|capfirst }}.</p>
+          <p>{{ t_bagni_page_sub_header_outside_link|capfirst }} <a href="#{{ t_bagni_page_sub_header_inside_link }}">{{ t_bagni_page_sub_header_inside_link }}</a>.</p>
           <hr>
       </div>
   </div>
@@ -51,7 +52,7 @@
             </ul>
       {% endfor %}    
       <hr>
-      <h2>{{ t_bagni_page_facilities|capfirst }}:</h2>
+      <h2 id="{{ t_bagni_page_sub_header_inside_link }}" class="facility_list">{{ t_bagni_page_facilities|capfirst }}:</h2>
       {% for facility_category in facility_categories %}
           <h3>{% trans facility_category.name|capfirst %}</h3>
           <ul>

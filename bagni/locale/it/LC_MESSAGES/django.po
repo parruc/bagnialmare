@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 19:54+0200\n"
+"POT-Creation-Date: 2014-04-17 13:13+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -90,7 +90,25 @@ msgstr ""
 msgid "^json/autocomplete/searchterms$"
 msgstr ""
 
-#: models/bagni.py:13 models/bagni_details.py:37 models/bagni_details.py:69
+#: management/commands/restore_telephones.py:36 models/bagni_details.py:24
+msgid "Telephone number"
+msgstr "Numero di telefono"
+
+#: management/commands/restore_telephones.py:36
+#, fuzzy
+msgid "Mobile number"
+msgstr "Numero di telefono"
+
+#: management/commands/restore_telephones.py:36
+#, fuzzy
+msgid "Winter number"
+msgstr "Numero di telefono"
+
+#: management/commands/restore_telephones.py:36
+msgid "Fax number"
+msgstr ""
+
+#: models/bagni.py:13 models/bagni_details.py:29 models/bagni_details.py:54
 msgid "Bagno"
 msgstr ""
 
@@ -98,42 +116,36 @@ msgstr ""
 msgid "Bagni"
 msgstr ""
 
-#: models/bagni.py:21 models/bagni_details.py:20 models/bagni_details.py:65
-#: models/places.py:20 models/places.py:45 models/places.py:69
-#: models/services.py:23 models/services.py:46
-msgid "Slug"
-msgstr ""
-
-#: models/bagni.py:28 models/places.py:60
+#: models/bagni.py:22 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Localita"
 
-#: models/bagni_details.py:12
+#: models/bagni_details.py:13
 msgid "Spoken language"
 msgstr "Lingua parlata"
 
-#: models/bagni_details.py:13
+#: models/bagni_details.py:14
 msgid "Spoken languages"
 msgstr "Lingue parlate"
 
-#: models/bagni_details.py:31
-msgid "Telephone number"
-msgstr "Numero di telefono"
-
-#: models/bagni_details.py:32
+#: models/bagni_details.py:25
 msgid "Telephone numbers"
 msgstr "Numeri di telefono"
 
-#: models/bagni_details.py:47 models/bagni_details.py:68 models/services.py:20
-#: models/services.py:51
+#: models/bagni_details.py:39 models/bagni_details.py:53 models/services.py:21
+#: models/services.py:40
 msgid "Image"
 msgstr "Immagine"
 
-#: models/bagni_details.py:48
+#: models/bagni_details.py:40
 msgid "Images"
 msgstr "Immagini"
 
-#: models/places.py:12 models/places.py:42
+#: models/base.py:17
+msgid "Slug"
+msgstr ""
+
+#: models/places.py:12 models/places.py:33
 msgid "District"
 msgstr "Provincia"
 
@@ -141,32 +153,32 @@ msgstr "Provincia"
 msgid "Districts"
 msgstr "Province"
 
-#: models/places.py:36 models/places.py:66
+#: models/places.py:28 models/places.py:48
 msgid "Municipality"
 msgstr "Comune"
 
-#: models/places.py:37 templates/bagni/municipality_list.html:21
+#: models/places.py:29 templates/bagni/municipality_list.html:21
 #: templates/bagni/municipality_list.html:23
 msgid "Municipalities"
 msgstr "Comuni"
 
-#: models/places.py:61
+#: models/places.py:44
 msgid "Neighbourhoods"
 msgstr "Località"
 
-#: models/services.py:13 models/services.py:14
+#: models/services.py:15 models/services.py:16
 msgid "Service Category"
 msgstr "Categoria di servizi"
 
-#: models/services.py:38
+#: models/services.py:32
 msgid "Service"
 msgstr "Servizio"
 
-#: models/services.py:39
+#: models/services.py:33
 msgid "Services"
 msgstr "Servizi"
 
-#: models/services.py:50
+#: models/services.py:39
 msgid "Category"
 msgstr "Categoria"
 
@@ -184,24 +196,26 @@ msgid "bagni_page_header"
 msgstr "bagni e stabilimenti balneari della Riviera Romagnola"
 
 #: templates/bagni/bagni.html:18
-msgid "bagni_page_sub_header"
-msgstr ""
-"qui trovi l'elenco dei bagni e degli stabilimenti balneari della Riviera "
-"Romagnola suddivisi per località e servizio offerto"
+msgid "bagni_page_sub_header_outside_link"
+msgstr "qui trovi l'elenco dei bagni e degli stabilimenti balneari della Riviera Romagnola suddivisi per località e"
 
 #: templates/bagni/bagni.html:19
+msgid "bagni_page_sub_header_inside_link"
+msgstr "servizio offerto"
+
+#: templates/bagni/bagni.html:20
 msgid "bagni_page_locations"
 msgstr "località"
 
-#: templates/bagni/bagni.html:20
+#: templates/bagni/bagni.html:21
 msgid "bagni_page_province_of"
 msgstr "provincia di"
 
-#: templates/bagni/bagni.html:21
+#: templates/bagni/bagni.html:22
 msgid "bagni_page_comune_of"
 msgstr "Comune di"
 
-#: templates/bagni/bagni.html:22
+#: templates/bagni/bagni.html:23
 msgid "bagni_page_facilities"
 msgstr "servizi"
 
@@ -456,7 +470,7 @@ msgstr "questo è l'elenco dei bagni e degli stabilimenti balneari con"
 
 #: templates/bagni/service_detail.html:19
 msgid "service_detail_no_result"
-msgstr ""
+msgstr "Nessun bagno offre servizio di"
 
 #: templates/bagni/service_list.html:6
 msgid "no_service"

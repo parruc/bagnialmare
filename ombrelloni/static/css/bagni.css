@@ -443,6 +443,9 @@ button {
     color: #6A4A3C;
 }
 
+.facility_list{
+    padding-top: 50px;
+}
 
 /* css class set by django on the form errors */
 .errorlist{
