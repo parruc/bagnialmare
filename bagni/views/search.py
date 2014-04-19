@@ -2,12 +2,13 @@
 from geopy import geocoders
 
 from django.core import paginator
+from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic import TemplateView
 from django.contrib import messages
 from django.contrib.gis.geos import Point
 from django.utils.translation import ugettext as _
 
-from ..models import Bagno
+from ..models import Bagno, Service
 from ..search import search
 from ..constants import MY_POSITION
 
@@ -27,8 +28,12 @@ class SearchView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(SearchView, self).get_context_data(**kwargs)
-        groups = ['services', 'languages']
+        groups = ['services', ]
         q = self.request.GET.get('q', "")
+        try:
+            selected_facet = Service.objects.get(name=q)
+        except ObjectDoesNotExist:
+            selected_facet = None
         page = self.request.GET.get('p', "1")
         per_page = int(self.request.GET.get('pp', "15"))
         loc = self.request.GET.get('l', '')
@@ -57,6 +62,9 @@ class SearchView(TemplateView):
                 logger.warning("geocoding %s gave error %s" % (loc, e))
 
         filters = self.request.GET.getlist('f', [])
+        if selected_facet:
+            filters.append("services:" + selected_facet.slug)
+            q = ""
         new_query_string = self.request.GET.copy()
         query = q or "*"
         raw_hits, facets, active_facets = search(

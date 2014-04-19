@@ -75,15 +75,15 @@ class Bagno(BaseModel):
 
     @models.permalink
     def get_absolute_url(self):
-        return ("bagno", [self.slug, ])
+        return ("bagno", [self.neighbourhood.slug, self.slug])
 
     @models.permalink
     def get_edit_url(self):
-        return ("bagno-edit", [self.slug, ])
+        return ("bagno-edit", [self.neighbourhood.slug, self.slug])
 
     @models.permalink
     def get_contactform_url(self):
-        return ("bagno-contacts", [self.slug, ])
+        return ("bagno-contacts", [self.neighbourhood.slug, self.slug] )
 
     def is_managed(self):
         return len(self.managers.all()) > 0

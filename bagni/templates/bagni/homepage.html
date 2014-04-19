@@ -32,7 +32,7 @@
         <div class="input-group input-group-lg">
           <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{{ t_what|capfirst }}">
           <span class="input-group-btn">
-            <button id="facilities-list-trigger" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button" onclick="showFacilitiesModal()">
+            <button id="facilities-list-trigger" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button"">
               <span class="glyphicon glyphicon-list"></span>
             </button>
           </span>
@@ -91,15 +91,6 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-        $(".collapse").on("shown.bs.collapse", function () {
-             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down");
-        });
-        $(".collapse").on('hidden.bs.collapse', function () {
-             $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right");
-        });
-    </script>
 {% endblock %}
 
 
@@ -107,24 +98,13 @@
 <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/home.js"></script>
 <script type="text/javascript">
-        $(function() {
-          $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
-        });
-        function showFacilitiesModal(){
-            $('#myModal').modal();
-        };
-        function populateWhatField(aTag){
-            $('#myModal').modal('hide');
-            var whatInput = document.getElementById('search_q');
-            whatInput.focus();
-            if(whatInput.value === ''){
-                whatInput.value = aTag.innerHTML;
-            } else{
-               whatInput.value = aTag.innerHTML + ', ' + whatInput.value;
-            }
-        };
-    </script>
+$(function() {
+      $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
+    });
+
+</script>
 {% endblock specific_js %}
 
 {% block title %}

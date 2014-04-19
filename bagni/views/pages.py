@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from ..models.services import Service, ServiceCategory
+from ..models.services import ServiceCategory
 
 from ..constants import MY_POSITION
 
@@ -17,7 +17,7 @@ class HomepageView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(HomepageView, self).get_context_data(**kwargs)
         context.update({'my_position': MY_POSITION})
-        context.update({'facility_categories': ServiceCategory.objects.all()})
+        context.update({'facility_categories': ServiceCategory.objects.all().order_by('order')})
         return context
 
 
