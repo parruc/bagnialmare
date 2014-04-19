@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 09:58+0200\n"
+"POT-Creation-Date: 2014-04-19 16:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,11 @@ msgstr "English"
 msgid "Italiano"
 msgstr "Italian"
 
-#: urls.py:33
+#: urls.py:36
 msgid "^contacts/"
 msgstr "^contacts/"
 
-#: urls.py:36
+#: urls.py:39
 msgid "^accounts/"
 msgstr "^accounts/"
 
@@ -58,16 +58,104 @@ msgstr "sing up"
 
 #: templates/account/signup.html:18
 msgid "already_have_account"
-msgstr "Already have an account?"
+msgstr "if you already have an account"
 
 #: templates/account/signup.html:19
+msgid "else_have_account"
+msgstr "otherwise fill the form below"
+
+#: templates/account/signup.html:20
 msgid "sign_in"
 msgstr "sign in"
 
-#: templates/account/signup.html:41
+#: templates/account/signup.html:21
+msgid "accetto i"
+msgstr "I accept the"
+
+#: templates/account/signup.html:22
+msgid "close"
+msgstr ""
+
+#: templates/account/signup.html:102
 msgid "tos_content"
 msgstr ""
 
-#: templates/account/signup.html:42
+#: templates/account/signup.html:124
 msgid "privacy_content"
+msgstr ""
+
+#: templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"User %(user_display)s at %(site_name)s has given this as an email address.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
+
+#: templates/account/email/email_confirmation_subject.txt:3
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.txt:1
+#, python-format
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+msgstr ""
+
+#: templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr ""
+
+#: templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr ""
+
+#: templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr ""
+
+#: templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr ""
+
+#: templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr ""
+
+#: templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr ""
+
+#: templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr ""
+
+#: templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr ""
+
+#: templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr ""
+
+#: templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr ""
+
+#: templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
 msgstr ""

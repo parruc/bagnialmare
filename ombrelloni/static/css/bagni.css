@@ -45,7 +45,6 @@ body {
   text-align: center;
 }
 
-
 .homepage-first-row {
   margin-top: 130px;
 }
@@ -57,6 +56,10 @@ body {
   border: 1px solid rgb(16, 111, 169);
   background-color: rgb(39, 184, 246);
   background-image: linear-gradient(rgb(39, 184, 246), rgb(34, 161, 231));*/
+}
+
+#signup_form #id_email{
+    
 }
 
 .homepage-box-wrapper {
@@ -409,6 +412,7 @@ button {
 .navbar-default .navbar-brand img{
   height: 49px;
 }
+
 .btn-primary {
      background-color: #EB604B/*#00A0B0*/;
      border-color: #EB604B/*#00A0B0*/;
@@ -422,7 +426,6 @@ button {
 .hp-facility-modal {
    border: 3px solid #6A4A3C;
 }
-
 
 .modal-category-name{
     background-color: #F9BF16;

@@ -18,7 +18,10 @@ class ManagerSignupForm(forms.ModelForm):
         model = Manager
         fields = ['name', 'surname', 'bagni', 'privacy', 'tos']
         widgets = {
-            'bagni': M2MSelect()
+            'bagni': M2MSelect(),
+            'name' : forms.TextInput(attrs={'class' : 'form-control'}),
+            'surname' : forms.TextInput(attrs={'class' : 'form-control'}),
+            'email' : forms.TextInput(attrs={'class' : 'form-control'}),
         }
 
     def signup(self, request, user):
