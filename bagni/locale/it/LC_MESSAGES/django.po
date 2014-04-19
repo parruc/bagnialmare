@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 17:36+0200\n"
+"POT-Creation-Date: 2014-04-19 18:40+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -246,29 +246,41 @@ msgid "contact_button"
 msgstr "contattaci"
 
 #: templates/bagni/bagno_detail.html:9
+msgid "modify_bagno"
+msgstr "nessun bagno"
+
+#: templates/bagni/bagno_detail.html:10
+msgid "are_you_the_manager"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:11
 msgid "image"
 msgstr "immagine"
 
-#: templates/bagni/bagno_detail.html:10
+#: templates/bagni/bagno_detail.html:12
 msgid "no_images_for"
 msgstr "nessuna immagine per"
 
-#: templates/bagni/bagno_detail.html:11
+#: templates/bagni/bagno_detail.html:13
 msgid "no_images_add"
 msgstr "nessuna immagine disponibile al momento"
 
-#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:23
+#: templates/bagni/bagno_detail.html:14 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi"
 
-#: templates/bagni/bagno_detail.html:13 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:15 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "servizio"
 
-#: templates/bagni/bagno_detail.html:14
+#: templates/bagni/bagno_detail.html:16
 msgid "facility_info_not_available"
 msgstr "informazioni non disponibili"
+
+#: templates/bagni/bagno_detail.html:155
+msgid "bagno_detail_description"
+msgstr "informazioni, indirizzo e serivizi del bagno"
 
 #: templates/bagni/bagno_list.html:6
 msgid "no_bagno"
@@ -299,47 +311,57 @@ msgstr "nessuna città"
 msgid "districts"
 msgstr "città"
 
-#: templates/bagni/homepage.html:11
+#: templates/bagni/homepage.html:13
 msgid "home_heading"
 msgstr "tutte le informazioni che volete sui bagni della Riviera Romagnola"
 
-#: templates/bagni/homepage.html:12
+#: templates/bagni/homepage.html:14
 msgid "home_sub_heading"
 msgstr ""
 "Contatti, servizi e indirizzi di più di 1000 stabilimenti balneari da "
 "Cattolica a Ferrara"
 
-#: templates/bagni/homepage.html:13 templates/bagni/search.html:7
+#: templates/bagni/homepage.html:15 templates/bagni/search.html:7
 msgid "what"
 msgstr "cosa"
 
-#: templates/bagni/homepage.html:14
+#: templates/bagni/homepage.html:16
 msgid "home_facility_tooltip"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:15
+#: templates/bagni/homepage.html:17
 msgid "home_show_facility"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:16
+#: templates/bagni/homepage.html:18
 msgid "home_near_to"
 msgstr "vicino a"
 
-#: templates/bagni/homepage.html:17
+#: templates/bagni/homepage.html:19
 msgid "home_sort_by_ditance"
 msgstr "la mia posizione!"
 
-#: templates/bagni/homepage.html:18
+#: templates/bagni/homepage.html:20
 msgid "home_search"
 msgstr "cerca"
 
-#: templates/bagni/homepage.html:124 templates/bagni/homepage.html.py:129
+#: templates/bagni/homepage.html:61
+msgid "Click on a facility to select it"
+msgstr ""
+
+#: templates/bagni/homepage.html:90
+msgid "Close"
+msgstr ""
+
+#: templates/bagni/homepage.html:132 templates/bagni/homepage.html.py:137
 msgid "homepage_title"
 msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
 
-#: templates/bagni/homepage.html:134
+#: templates/bagni/homepage.html:142
 msgid "homepage_description"
-msgstr "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, Rimini, Cesenatico, Cervia e Ravenna."
+msgstr ""
+"contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, "
+"Rimini, Cesenatico, Cervia e Ravenna."
 
 #: templates/bagni/municipality_detail.html:6
 msgid "municipality_detail_pagetitle"
@@ -391,7 +413,6 @@ msgid "where"
 msgstr "dove"
 
 #: templates/bagni/search.html:9 templates/bagni/search.html.py:326
-#: templates/bagni/search.html:331
 msgid "search"
 msgstr "cerca"
 
@@ -456,6 +477,14 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
+#: templates/bagni/search.html:331
+msgid "search_pagetitle"
+msgstr "risultati della ricerca | bagnialmare.com"
+
+#: templates/bagni/search.html:336
+msgid "search_description"
+msgstr "risultati della ricerca | bagnialmare.com"
+
 #: templates/bagni/service_detail.html:6
 msgid "service_detail_pagetitle"
 msgstr "bagni e stabilimenti balneari con"
@@ -502,14 +531,13 @@ msgstr "Nessuna categoria di servizio"
 msgid "Service categories"
 msgstr "Categorie di servizi"
 
-#: views/search.py:48
+#: views/search.py:48 views/search.py:55
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
 
-#: views/search.py:55
-msgid "Error in geocoding"
-msgstr "Errore di geocodifica"
+#~ msgid "Error in geocoding"
+#~ msgstr "Errore di geocodifica"
 
 #~ msgid "service"
 #~ msgstr "servizio"

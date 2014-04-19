@@ -147,5 +147,8 @@
     {% if object.number %}
         {{ object.number }} -
     {% endif %}
-    {{ object.name }}
+    {{ object.name }}, 
+    {{ object|neighbourhood_municipality }}
 {% endblock pagetitle %}
+
+{% block description %}{% trans "bagno_detail_description" as t_bagno_detail_description %} {{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.{% endblock description %}

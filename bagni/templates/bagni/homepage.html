@@ -137,8 +137,5 @@
 {{ t_homepage_title|title }}
 {% endblock pagetitle %}
 
-{% block description %}
-{% trans "homepage_description" as t_homepage_description %}
-{{ t_homepage_description }}
-{% endblock description %}
+{% block description %}{% trans "homepage_description" as t_homepage_description %}{{ t_homepage_description|capfirst }}{% endblock description %}
 
