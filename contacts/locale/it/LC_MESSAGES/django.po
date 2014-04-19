@@ -7,38 +7,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 18:55+0200\n"
+"POT-Creation-Date: 2014-04-19 18:58+0200\n"
 "PO-Revision-Date: 2014-04-02 19:58+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
+"Language: IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.7\n"
-"Language: IT\n"
 
-#: forms.py:6 templates/contacts/form.html:10
+#: forms.py:6 templates/contacts/form.html:7
+#: templates/contacts/form_popup.html:6
 msgid "Your email address"
 msgstr "Il tuo indirizzo mail"
 
-#: forms.py:8 templates/contacts/form.html:15
-msgid "Subject"
-msgstr "Oggetto"
-
-#: forms.py:10 templates/contacts/form.html:20
+#: forms.py:8 templates/contacts/form.html:12
+#: templates/contacts/form_popup.html:11
 msgid "Message"
 msgstr "Messaggio"
 
-#: forms.py:14
-msgid "Send a copy to your address"
-msgstr "Invia una copia al tuo indirizzo"
-
-#: views.py:36
+#: views.py:42
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
 msgstr "Grazie per averci contattato, risponderemo al più presto."
 
-#: views.py:39
+#: views.py:45
 msgid ""
 "Error sending the mail: Contact me at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"
@@ -50,14 +44,25 @@ msgstr ""
 msgid "Want to drop us a line"
 msgstr "Vuoi scriverci due righe"
 
-#: templates/contacts/contacts.html:20 templates/contacts/contacts.html:22
+#: templates/contacts/contacts.html:20
+msgid "contacts_pagetitle"
+msgstr "contatta il team di bagnialmare.com"
+
+#: templates/contacts/contacts.html:22
+msgid "contacts_page_description"
+msgstr "contatta il team di bagnialmare.com"
+
 #: templates/contacts/contacts.html:24
 msgid "Contacts"
 msgstr "Contatti"
 
-#: templates/contacts/form.html:23
+#: templates/contacts/form.html:16 templates/contacts/form_popup.html:16
 msgid "Send Your Message"
 msgstr "Invia il tuo messaggio"
+
+#: templates/contacts/form_popup.html:17
+msgid "Close"
+msgstr ""
 
 #: templates/contacts/info.html:2
 msgid ""
@@ -72,3 +77,9 @@ msgstr ""
 "e renderle accessibili e utilizzabili per tutti. Saremo felici di rispondere "
 "alle tue domande e raccogliere i tuoi suggerimenti: usa il form qui sotto "
 "per scriverci un messaggio"
+
+#~ msgid "Subject"
+#~ msgstr "Oggetto"
+
+#~ msgid "Send a copy to your address"
+#~ msgstr "Invia una copia al tuo indirizzo"
