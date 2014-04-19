@@ -23,6 +23,9 @@ urlpatterns = patterns(
 
     #enables the sitemaps framework
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps' : SITEMAPS}),
+
+    #enables rich text editing
+    (r'^ckeditor/', include('ckeditor.urls')),
 )
 
 urlpatterns += i18n_patterns(
