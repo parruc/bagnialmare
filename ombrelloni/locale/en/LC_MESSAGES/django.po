@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-05 15:15+0200\n"
+"POT-Creation-Date: 2014-04-19 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: settings.py:80
+#: settings.py:100
 msgid "English"
 msgstr "English"
 
-#: settings.py:81
+#: settings.py:101
 msgid "Italiano"
 msgstr "Italian"
 
-#: urls.py:30
+#: urls.py:33
+msgid "^contacts/"
+msgstr "^contacts/"
+
+#: urls.py:36
 msgid "^accounts/"
 msgstr "^accounts/"
 
@@ -40,22 +44,30 @@ msgstr "about us"
 msgid "are_you_manager"
 msgstr "are you a manager?"
 
-#: templates/account/signup.html:5
-msgid "account signup intro"
-msgstr "Why should you register?"
-
-#: templates/account/signup.html:6
+#: templates/account/signup.html:8 templates/account/signup.html.py:16
 msgid "signup"
 msgstr "signup"
 
-#: templates/account/signup.html:7
+#: templates/account/signup.html:15
+msgid "account signup intro"
+msgstr "Why should you register?"
+
+#: templates/account/signup.html:17
 msgid "sign_up_button"
 msgstr "sing up"
 
-#: templates/account/signup.html:8
+#: templates/account/signup.html:18
 msgid "already_have_account"
 msgstr "Already have an account?"
 
-#: templates/account/signup.html:9
+#: templates/account/signup.html:19
 msgid "sign_in"
 msgstr "sign in"
+
+#: templates/account/signup.html:41
+msgid "tos_content"
+msgstr ""
+
+#: templates/account/signup.html:42
+msgid "privacy_content"
+msgstr ""
