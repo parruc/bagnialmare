@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 18:40+0200\n"
+"POT-Creation-Date: 2014-04-19 19:08+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -27,16 +27,16 @@ msgid "^bagni/$"
 msgstr ""
 
 #: urls.py:11
-msgid "^bagno/(?P<slug>[-\\w]+)/$"
-msgstr ""
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:12
-msgid "^bagno/(?P<slug>[-\\w]+)/edit/$"
-msgstr ""
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 
 #: urls.py:13
-msgid "^bagno/(?P<slug>[-\\w]+)/contacts/$"
-msgstr "^bagno/(?P<slug>[-\\w]+)/contatti/$"
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
+msgstr "^bagno/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
 
 #: urls.py:14
 msgid "^search/$"
@@ -278,7 +278,7 @@ msgstr "servizio"
 msgid "facility_info_not_available"
 msgstr "informazioni non disponibili"
 
-#: templates/bagni/bagno_detail.html:155
+#: templates/bagni/bagno_detail.html:154
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e serivizi del bagno"
 
@@ -353,11 +353,11 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/homepage.html:132 templates/bagni/homepage.html.py:137
+#: templates/bagni/homepage.html:112 templates/bagni/homepage.html.py:117
 msgid "homepage_title"
 msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
 
-#: templates/bagni/homepage.html:142
+#: templates/bagni/homepage.html:121
 msgid "homepage_description"
 msgstr ""
 "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, "
@@ -531,7 +531,7 @@ msgstr "Nessuna categoria di servizio"
 msgid "Service categories"
 msgstr "Categorie di servizi"
 
-#: views/search.py:48 views/search.py:55
+#: views/search.py:53 views/search.py:60
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"

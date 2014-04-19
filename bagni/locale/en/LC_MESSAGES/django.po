@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 18:40+0200\n"
+"POT-Creation-Date: 2014-04-19 19:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,19 +22,19 @@ msgstr "Near me"
 
 #: urls.py:10
 msgid "^bagni/$"
-msgstr "^beachresorts/$"
+msgstr "^beach-resorts/$"
 
 #: urls.py:11
-msgid "^bagno/(?P<slug>[-\\w]+)/$"
-msgstr "^beachresort/(?P<slug>[-\\w]+)/$"
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
+msgstr "^beach-resorts/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:12
-msgid "^bagno/(?P<slug>[-\\w]+)/edit/$"
-msgstr "^beachresort/(?P<slug>[-\\w]+)/edit/$"
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
+msgstr "^beach-resorts/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 
 #: urls.py:13
-msgid "^bagno/(?P<slug>[-\\w]+)/contacts/$"
-msgstr "^beachresort/(?P<slug>[-\\w]+)/contacts/$"
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
+msgstr "^beach-resorts/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
 
 #: urls.py:14
 msgid "^search/$"
@@ -274,7 +274,7 @@ msgstr "facility"
 msgid "facility_info_not_available"
 msgstr "facility informations not available"
 
-#: templates/bagni/bagno_detail.html:155
+#: templates/bagni/bagno_detail.html:154
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
@@ -349,11 +349,11 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/homepage.html:132 templates/bagni/homepage.html.py:137
+#: templates/bagni/homepage.html:112 templates/bagni/homepage.html.py:117
 msgid "homepage_title"
 msgstr "bagnialmare: beach resorts of Italy"
 
-#: templates/bagni/homepage.html:142
+#: templates/bagni/homepage.html:121
 msgid "homepage_description"
 msgstr ""
 "contacts, facilities and addresses of more than 1000 Italian beach resorts "
@@ -524,10 +524,16 @@ msgstr "No facility categories"
 msgid "Service categories"
 msgstr "Facility categories"
 
-#: views/search.py:48 views/search.py:55
+#: views/search.py:53 views/search.py:60
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Cant find place '%s', sorting by relevance"
+
+#~ msgid "^bagno/(?P<slug>[-\\w]+)/$"
+#~ msgstr "^beachresort/(?P<slug>[-\\w]+)/$"
+
+#~ msgid "^bagno/(?P<slug>[-\\w]+)/edit/$"
+#~ msgstr "^beachresort/(?P<slug>[-\\w]+)/edit/$"
 
 #~ msgid "Error in geocoding"
 #~ msgstr "Error in geocoding"
