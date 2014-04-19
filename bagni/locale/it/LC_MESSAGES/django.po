@@ -182,16 +182,16 @@ msgstr "Categoria"
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
-msgstr "bagni e stabilimenti balneari della Riviera Romagnola"
+msgstr "bagni e stabilimenti balneari della Riviera Adriatica"
 
 #: templates/bagni/bagni.html:12
 msgid "bagni_page_desc"
 msgstr ""
-"trova contatti, indirizzi e servizi offerti dei bagni della Riviera Romagnola"
+"trova contatti, indirizzi e servizi offerti dei bagni della Riviera Adriatica"
 
 #: templates/bagni/bagni.html:17
 msgid "bagni_page_header"
-msgstr "bagni e stabilimenti balneari della Riviera Romagnola"
+msgstr "bagni e stabilimenti balneari della Riviera Adriatica"
 
 #: templates/bagni/bagni.html:18
 msgid "bagni_page_sub_header_outside_link"
@@ -313,12 +313,12 @@ msgstr "città"
 
 #: templates/bagni/homepage.html:13
 msgid "home_heading"
-msgstr "tutte le informazioni che volete sui bagni della Riviera Romagnola"
+msgstr "tutte le informazioni che cercate sui bagni della Riviera Adriatica"
 
 #: templates/bagni/homepage.html:14
 msgid "home_sub_heading"
 msgstr ""
-"Contatti, servizi e indirizzi di più di 1000 stabilimenti balneari da "
+"Contatti, servizi e indirizzi di oltre 1000 stabilimenti balneari da "
 "Cattolica a Ferrara"
 
 #: templates/bagni/homepage.html:15 templates/bagni/search.html:7
