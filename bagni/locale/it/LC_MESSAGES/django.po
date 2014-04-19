@@ -255,7 +255,7 @@ msgstr "nessuna immagine per"
 
 #: templates/bagni/bagno_detail.html:10
 msgid "no_images_add"
-msgstr "nessuna immagine disponibile, aggiungine una"
+msgstr "nessuna immagine disponibile al momento"
 
 #: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28

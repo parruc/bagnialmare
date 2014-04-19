@@ -252,7 +252,7 @@ msgstr "no images for"
 
 #: templates/bagni/bagno_detail.html:10
 msgid "no_images_add"
-msgstr "no images available, add one now"
+msgstr "no images available yet"
 
 #: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
