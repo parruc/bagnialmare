@@ -36,7 +36,7 @@ msgstr ""
 
 #: urls.py:13
 msgid "^bagno/(?P<slug>[-\\w]+)/contacts/$"
-msgstr ""
+msgstr "^bagno/(?P<slug>[-\\w]+)/contatti/$"
 
 #: urls.py:14
 msgid "^search/$"
