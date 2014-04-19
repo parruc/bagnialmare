@@ -180,7 +180,7 @@ msgstr "Category"
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
-msgstr "beach resorts of the Riviera Romagnola, Italy"
+msgstr "beach resorts of the Riviera Adriatica, Italy"
 
 #: templates/bagni/bagni.html:12
 msgid "bagni_page_desc"
@@ -309,7 +309,7 @@ msgstr "districts"
 
 #: templates/bagni/homepage.html:13
 msgid "home_heading"
-msgstr "All the info you need about the beach resorts in Riviera Romagnola"
+msgstr "All the info you need about the beach resorts in Riviera Adriatica"
 
 #: templates/bagni/homepage.html:14
 msgid "home_sub_heading"
