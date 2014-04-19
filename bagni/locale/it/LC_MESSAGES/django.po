@@ -339,7 +339,7 @@ msgstr "vicino a"
 
 #: templates/bagni/homepage.html:19
 msgid "home_sort_by_ditance"
-msgstr "la mia posizione!"
+msgstr "qui vicino!"
 
 #: templates/bagni/homepage.html:20
 msgid "home_search"
