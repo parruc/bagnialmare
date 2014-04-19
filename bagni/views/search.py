@@ -52,7 +52,7 @@ class SearchView(TemplateView):
                 #TODO: falback to another backend
             except Exception as e:
                 messages.add_message(self.request, messages.ERROR,
-                                     _("Error in geocoding"))
+                                     _("Cant find place '%s', sorting by relevance" % loc))
                 #logger.error would point to a 500 page
                 logger.warning("geocoding %s gave error %s" % (loc, e))
 
@@ -79,7 +79,7 @@ class SearchView(TemplateView):
         search_results['num_pages'] = num_pages
         search_results['count'] = len(raw_hits)
         search_results['q'] = q
-        search_results['loc'] = loc
+        search_results['l'] = loc
         search_results['place'] = place
         search_results['facets'] = facets
         search_results['active_facets'] = active_facets
