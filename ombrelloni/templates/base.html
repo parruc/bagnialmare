@@ -20,9 +20,10 @@
   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
-  {% endcompress %}
   <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
+  {% endcompress %}
+
   {% compress js %}
     {% block specific_js %}{% endblock specific_js %}
   {% endcompress %}
