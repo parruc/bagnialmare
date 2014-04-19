@@ -15,7 +15,6 @@
   <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/bam-favicon.ico" />
   <link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}img/bam-favicon.ico" />
-  <link href='http://fonts.googleapis.com/css?family=Henny+Penny&amp;subset=latin-ext' rel='stylesheet' type='text/css' />
   {% compress js %}
   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
@@ -29,12 +28,11 @@
   {% endcompress %}
 
   {% compress css %}
-    <link href="//fonts.googleapis.com/css?family=Droid+Sans|Open+Sans|Lobster+Two"
-    rel="stylesheet" type="text/css"/>
+    <link href="{{ STATIC_URL }}css/google-fonts.css" rel="stylesheet" type="text/css"/>
     <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
-    <link  href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
-    <link  href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
-    <link  href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
   {% endcompress %}
         {% block extrahead %}
             {{ form.media }}
