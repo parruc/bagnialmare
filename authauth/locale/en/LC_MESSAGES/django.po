@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 18:55+0200\n"
+"POT-Creation-Date: 2014-04-19 14:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: forms.py:34
+#: forms.py:37
 msgid "You must accept the terms and conditions"
 msgstr ""
 
-#: models.py:21
+#: models.py:13
+msgid "Name"
+msgstr ""
+
+#: models.py:17
+msgid "Surname"
+msgstr ""
+
+#: models.py:31
 msgid "Privacy terms"
 msgstr ""
 
-#: models.py:26
-msgid "Terms of service"
+#: models.py:32
+msgid "Privacy terms definition"
+msgstr ""
+
+#: models.py:37
+msgid "Terms of service "
+msgstr ""
+
+#: models.py:38
+msgid "Terms of service definition"
 msgstr ""
