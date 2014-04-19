@@ -2,6 +2,7 @@
 
 {% load l10n i18n thumbnail %}
 {% load batch from custom_filters %}
+{% load neighbourhood_municipality from custom_filters %}
 
 {% block content %}
 {% trans "contact_button" as t_contact_button %}
@@ -28,7 +29,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <p class="bagno-detail-address">{{ object.address }} - {{ object.neighbourhood.name }}</p>
+      <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
   </div>
   <div class="row">
