@@ -210,6 +210,11 @@ img.hp-form-image
     width: 90%;
 }
 
+#messages
+{
+    margin-top: 20px
+}
+
 .search
 {
     margin-top: 20px;
@@ -415,7 +420,7 @@ button {
 }
 
 .hp-facility-modal {
-   border: 3px solid #6A4A3C; 
+   border: 3px solid #6A4A3C;
 }
 
 

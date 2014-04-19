@@ -58,8 +58,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-            <a href="{% url 'contact-form' %}" 
-                title="{{ t_contact }}"> 
+            <a href="{% url 'contact-form' %}"
+                title="{{ t_contact }}">
                 <strong>{{ t_contact|title }}</strong>
               </a>
             </li>
@@ -70,7 +70,7 @@
               </a>
             </li>
             <li>
-            <a href="{% url 'account_signup' %}" 
+            <a href="{% url 'account_signup' %}"
                title="{{ t_are_you_manager }}">
                 <strong>{{ t_are_you_manager|capfirst }}</strong>
               </a>
@@ -79,17 +79,17 @@
         </div>
         <!--/.nav-collapse --> </div>
     </div>
-    {% if messages %}
-    <div class="tab-pane fade" id="messages">
-      {% for message in messages %}
-      <div class="alert{% if message.tags %} alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% endif %} alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        {{ message|safe }}
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
     <div class="container" id="rootContainer">
+      {% if messages %}
+        <div class="tab-pane" id="messages">
+          {% for message in messages %}
+          <div class="alert{% if message.tags %} alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% endif %} alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            {{ message|safe }}
+          </div>
+          {% endfor %}
+        </div>
+      {% endif %}
       {% block content %}
       {% endblock %}
     </div>
