@@ -43,6 +43,7 @@ class BagnoView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(BagnoView, self).get_context_data(**kwargs)
+        context['can_edit'] = self.object.can_be_managed_by(self.request.user)
         return context
 
 

@@ -6,6 +6,8 @@
 
 {% block content %}
 {% trans "contact_button" as t_contact_button %}
+{% trans "modify_bagno" as t_modify_bagno %}
+{% trans "are_you_the_manager" as t_are_you_the_manager %}
 {% trans "image" as t_image %}
 {% trans "no_images_for" as t_no_images_for %}
 {% trans "no_images_add" as t_no_images_add %}
@@ -17,13 +19,16 @@
 <div class="bagno-detail-wrapper-div">
   <div class="row">
     <div class="col-xs-12">
-      {% if object.name %}
       <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
-      {% endif %}
       {% if object.is_managed %}
-        <button id="contact-form-button" class="button" data-url="{{ object.get_contactform_url }}">
+        <button id="contact-form-button" class="btn btn-default" data-url="{{ object.get_contactform_url }}">
           {{ t_contact_button }}
         </button>
+        {% if can_edit %}
+          <a href="{{ object.get_edit_url }}" class="btn btn-default">{{ t_modify_bagno }}</a>
+        {% else %}
+          <a href="{% url 'account_signup' %}" class="btn btn-default">{{ t_are_you_the_manager }}</a>
+        {% endif %}
       {% endif %}
     </div>
   </div>

@@ -20,11 +20,10 @@ class ContactView(FormView):
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
         # It should return an HttpResponse.
-        subject = form.cleaned_data['subject']
+        subject = "[bagnialmare.com]"
         message = form.cleaned_data['message']
         sender = form.cleaned_data['sender']
         from_email = "info@bagnialmare.com"
-        cc_myself = form.cleaned_data['cc_myself']
         bcc = []
         recipients = []
         admin_emails = [email[1] for email in settings.ADMINS]
@@ -36,11 +35,6 @@ class ContactView(FormView):
             #else we are the receivers directly
             self.recipients = admin_emails
         try:
-            if cc_myself:
-                email = EmailMessage(subject, message, from_email,
-                [sender, ])
-                email.send()
-
             email = EmailMessage(subject, message, from_email,
             recipients, bcc, headers={'Reply-To': sender})
             email.send()

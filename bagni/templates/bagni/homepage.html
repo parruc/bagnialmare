@@ -5,7 +5,9 @@
 
 {% block bodyclass %}homepage-body-class{% endblock %}
 {% block navbarclass %}homepage-navbar{% endblock %}
-{% block logoimage %}<img src="{{ STATIC_URL }}img/logo_red.jpg" />{% endblock %}
+{% block logoimage %}
+<img src="{{ STATIC_URL }}img/logo_red.jpg" />
+{% endblock %}
 
 {% block content %}
   {% trans "home_heading" as t_home_heading %}
@@ -19,71 +21,78 @@
   {% comment %}
     TODO: Da rifattorizzare in un template tag da usare sia qui che in search?
   {% endcomment %}
-  <div class="row homepage-first-row">
+<div class="row homepage-first-row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
     <h1 class="homepage-headline" >{{ t_home_heading|capfirst }}</h1>
     <p class="homepage-sub-headline">{{ t_home_sub_heading|capfirst }}</p>
-            <form id="search-form" class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
-                <input type="hidden" name="pos" value="" />
-                <div class="col-md-5 homepage-input-div">
-                    <label class="sr-only" for="search_q">{{ t_what|capfirst }}</label>
-                    <div class="input-group input-group-lg">
-                        <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{{ t_what|capfirst }}">
-                        <span class="input-group-btn"><button id="facilities-list-trigger" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button" onclick="showFacilitiesModal()"><span class="glyphicon glyphicon-list"></span></button></span>
-                    </div>
-                    <div class="ui-front"></div>
-                </div>
-                <div class="col-md-5 homepage-input-div">
-                    <label class="sr-only" for="search_l">{{ t_home_near_to|capfirst }}</label>
-                    <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{{ t_home_near_to|capfirst }}">
-                    <div class="ui-front"></div>
-                    <a href="#" id="set-my-position" data-position-label="{{ my_position }}">
-                        {{ t_home_sort_by_distance }}
-                    </a>
-                </div>
-                <div class="col-md-2 homepage-input-div">
-                <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{{ t_home_search|capfirst }}</button>
-                </div>
-            </form>
+    <form id="search-form" class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
+      <input type="hidden" name="pos" value="" />
+      <div class="col-md-5 homepage-input-div">
+        <label class="sr-only" for="search_q">{{ t_what|capfirst }}</label>
+        <div class="input-group input-group-lg">
+          <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{{ t_what|capfirst }}">
+          <span class="input-group-btn">
+            <button id="facilities-list-trigger" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button" onclick="showFacilitiesModal()">
+              <span class="glyphicon glyphicon-list"></span>
+            </button>
+          </span>
         </div>
-    </div>
+        <div class="ui-front"></div>
+      </div>
+      <div class="col-md-5 homepage-input-div">
+        <label class="sr-only" for="search_l">{{ t_home_near_to|capfirst }}</label>
+        <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{{ t_home_near_to|capfirst }}">
+        <div class="ui-front"></div>
+        <a href="#" id="set-my-position" data-position-label="{{ my_position }}">{{ t_home_sort_by_distance }}</a>
+      </div>
+      <div class="col-md-2 homepage-input-div">
+        <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{{ t_home_search|capfirst }}</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content hp-facility-modal">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title my-bold" id="myModalLabel">Click on a facility to select it:</h3>
-          </div>
-          <div class="modal-body">
-              {% for facility_category in facility_categories %}
-                  <div class="row">
-                      <div class="col-xs-12 modal-category-name-col">
-                          <h4 data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" 
-                              class="modal-category-name"><span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if forloop.counter < 3 %} glyphicon-chevron-down {% else %} glyphicon-chevron-right {% endif %} facility-categoty-arrow"></span> {{ facility_category.name|capfirst }}</h4>
-                      </div> 
-                  </div>
-                  <div id="collapse{{ forloop.counter }}" class="collapse {% if forloop.counter < 3 %} in {% endif %}" >
-                  {% for facility_batch in facility_category.services.all|batch:4 %}
-                      <div class="row modal-facility-row">
-                          {% for facility in facility_batch %}
-                          <div class="col-xs-3">
-                              <p><a href="#" onclick="populateWhatField(this)">{% trans facility.name %}</a></p>
-                          </div>
-                          {% endfor %}
-                      </div>
-                  {% endfor %}
-                  </div>
-              {% endfor %}
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content hp-facility-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title my-bold" id="myModalLabel">{% trans "Click on a facility to select it" %}</h3>
+      </div>
+      <div class="modal-body">
+        {% for facility_category in facility_categories %}
+        <div class="row">
+          <div class="col-xs-12 modal-category-name-col">
+            <h4 data-toggle="collapse" data-target="#collapse{{ forloop.counter }}"
+                              class="modal-category-name">
+              <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if forloop.counter < 3 %} glyphicon-chevron-down {% else %} glyphicon-chevron-right {% endif %} facility-categoty-arrow"></span>
+              {{ facility_category.name|capfirst }}
+            </h4>
           </div>
         </div>
+        <div id="collapse{{ forloop.counter }}" class="collapse {% if forloop.counter < 3 %} in {% endif %}" >
+          {% for facility_batch in facility_category.services.all|batch:4 %}
+          <div class="row modal-facility-row">
+            {% for facility in facility_batch %}
+            <div class="col-xs-3">
+              <p>
+                <a href="#" onclick="populateWhatField(this)">{% trans facility.name %}</a>
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">{% trans "Close" %}</button>
       </div>
     </div>
+  </div>
+</div>
 
-    <script type="text/javascript">
+<script type="text/javascript">
         $(".collapse").on("shown.bs.collapse", function () {
              $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down");
         });
@@ -91,15 +100,14 @@
              $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right");
         });
     </script>
-
 {% endblock %}
 
 
 {% block specific_js %}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript" src="{{ STATIC_URL }}js/autocomplete.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
         $(function() {
           $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
         });

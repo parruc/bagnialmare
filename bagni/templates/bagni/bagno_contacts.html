@@ -6,10 +6,14 @@
 {% trans "not_yet_available" as t_not_yet_available %}
 {% trans "website" as t_website %}
 {% trans "bagno" as t_bagno %}
-<div id="contatti">
-    <div>
-        <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
-      <div>
+<div id="contacts-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content hp-facility-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title my-bold" id="myModalLabel">{{ t_contacts }}</h3>
+      </div>
+      <div class="modal-body">
         <p>
           {% if object.telephones.all %}
           <span class="bagno-detail-label">{{ t_telephone_numbers }}:</span>
@@ -32,10 +36,9 @@
             <em>{{ t_not_yet_available }}</em>
           {% endif %}
         </p>
+        {% include "contacts/form_popup.html" %}
       </div>
     </div>
-    <div>
-        {% include "contacts/form.html" %}
-    </div>
+  </div>
 </div>
 {% endblock content %}

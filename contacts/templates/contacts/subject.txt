@@ -1,1 +1,1 @@
-[bagnialmare.com] {{ subject }}
+[bagnialmare.com]
