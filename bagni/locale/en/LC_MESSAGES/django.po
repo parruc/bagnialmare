@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-17 13:13+0200\n"
+"POT-Creation-Date: 2014-04-19 17:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,15 +106,15 @@ msgstr "Telephone number"
 msgid "Fax number"
 msgstr ""
 
-#: models/bagni.py:13 models/bagni_details.py:29 models/bagni_details.py:54
+#: models/bagni.py:15 models/bagni_details.py:29 models/bagni_details.py:54
 msgid "Bagno"
 msgstr "BeachResort"
 
-#: models/bagni.py:14
+#: models/bagni.py:16
 msgid "Bagni"
 msgstr "BeachResorts"
 
-#: models/bagni.py:22 models/places.py:43
+#: models/bagni.py:24 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Neighbourhood"
 
@@ -194,7 +194,8 @@ msgstr "Italian beach resorts"
 
 #: templates/bagni/bagni.html:18
 msgid "bagni_page_sub_header_outside_link"
-msgstr "here you can find the list of Italian beach resorts grouped by location and"
+msgstr ""
+"here you can find the list of Italian beach resorts grouped by location and"
 
 #: templates/bagni/bagni.html:19
 msgid "bagni_page_sub_header_inside_link"
@@ -238,32 +239,32 @@ msgstr "website"
 msgid "bagno"
 msgstr "beachresort"
 
-#: templates/bagni/bagno_detail.html:7 templates/bagni/search.html:19
+#: templates/bagni/bagno_detail.html:8 templates/bagni/search.html:19
 msgid "contact_button"
 msgstr "contact this structure"
 
-#: templates/bagni/bagno_detail.html:8
+#: templates/bagni/bagno_detail.html:9
 msgid "image"
 msgstr "image"
 
-#: templates/bagni/bagno_detail.html:9
+#: templates/bagni/bagno_detail.html:10
 msgid "no_images_for"
 msgstr "no images for"
 
-#: templates/bagni/bagno_detail.html:10
+#: templates/bagni/bagno_detail.html:11
 msgid "no_images_add"
 msgstr "no images available yet"
 
-#: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
+#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "facilities"
 
-#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:13 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "facility"
 
-#: templates/bagni/bagno_detail.html:13
+#: templates/bagni/bagno_detail.html:14
 msgid "facility_info_not_available"
 msgstr "facility informations not available"
 
@@ -332,7 +333,11 @@ msgstr "search"
 
 #: templates/bagni/homepage.html:124 templates/bagni/homepage.html.py:129
 msgid "homepage_title"
-msgstr "bagnialmare.com"
+msgstr "bagnialmare: beach resorts of Italy"
+
+#: templates/bagni/homepage.html:134
+msgid "homepage_description"
+msgstr "contacts, facilities and addresses of more than 1000 Italian beach resorts in Riccione, Rimini, Cesenatico, Cervia and Ravenna."
 
 #: templates/bagni/municipality_detail.html:6
 msgid "municipality_detail_pagetitle"

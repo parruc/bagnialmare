@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-17 13:13+0200\n"
+"POT-Creation-Date: 2014-04-19 17:36+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -95,28 +95,26 @@ msgid "Telephone number"
 msgstr "Numero di telefono"
 
 #: management/commands/restore_telephones.py:36
-#, fuzzy
 msgid "Mobile number"
 msgstr "Numero di telefono"
 
 #: management/commands/restore_telephones.py:36
-#, fuzzy
 msgid "Winter number"
-msgstr "Numero di telefono"
+msgstr "Numero di telefono invernale"
 
 #: management/commands/restore_telephones.py:36
 msgid "Fax number"
 msgstr ""
 
-#: models/bagni.py:13 models/bagni_details.py:29 models/bagni_details.py:54
+#: models/bagni.py:15 models/bagni_details.py:29 models/bagni_details.py:54
 msgid "Bagno"
 msgstr ""
 
-#: models/bagni.py:14
+#: models/bagni.py:16
 msgid "Bagni"
 msgstr ""
 
-#: models/bagni.py:22 models/places.py:43
+#: models/bagni.py:24 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Localita"
 
@@ -197,7 +195,9 @@ msgstr "bagni e stabilimenti balneari della Riviera Romagnola"
 
 #: templates/bagni/bagni.html:18
 msgid "bagni_page_sub_header_outside_link"
-msgstr "qui trovi l'elenco dei bagni e degli stabilimenti balneari della Riviera Romagnola suddivisi per località e"
+msgstr ""
+"qui trovi l'elenco dei bagni e degli stabilimenti balneari della Riviera "
+"Romagnola suddivisi per località e"
 
 #: templates/bagni/bagni.html:19
 msgid "bagni_page_sub_header_inside_link"
@@ -241,32 +241,32 @@ msgstr "website"
 msgid "bagno"
 msgstr "bagno"
 
-#: templates/bagni/bagno_detail.html:7 templates/bagni/search.html:19
+#: templates/bagni/bagno_detail.html:8 templates/bagni/search.html:19
 msgid "contact_button"
 msgstr "contattaci"
 
-#: templates/bagni/bagno_detail.html:8
+#: templates/bagni/bagno_detail.html:9
 msgid "image"
 msgstr "immagine"
 
-#: templates/bagni/bagno_detail.html:9
+#: templates/bagni/bagno_detail.html:10
 msgid "no_images_for"
 msgstr "nessuna immagine per"
 
-#: templates/bagni/bagno_detail.html:10
+#: templates/bagni/bagno_detail.html:11
 msgid "no_images_add"
 msgstr "nessuna immagine disponibile al momento"
 
-#: templates/bagni/bagno_detail.html:11 templates/bagni/service_list.html:23
+#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi"
 
-#: templates/bagni/bagno_detail.html:12 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:13 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "servizio"
 
-#: templates/bagni/bagno_detail.html:13
+#: templates/bagni/bagno_detail.html:14
 msgid "facility_info_not_available"
 msgstr "informazioni non disponibili"
 
@@ -327,7 +327,7 @@ msgstr "vicino a"
 
 #: templates/bagni/homepage.html:17
 msgid "home_sort_by_ditance"
-msgstr "ordina per distanza"
+msgstr "la mia posizione!"
 
 #: templates/bagni/homepage.html:18
 msgid "home_search"
@@ -335,7 +335,11 @@ msgstr "cerca"
 
 #: templates/bagni/homepage.html:124 templates/bagni/homepage.html.py:129
 msgid "homepage_title"
-msgstr "bagnialmare.com"
+msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
+
+#: templates/bagni/homepage.html:134
+msgid "homepage_description"
+msgstr "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, Rimini, Cesenatico, Cervia e Ravenna."
 
 #: templates/bagni/municipality_detail.html:6
 msgid "municipality_detail_pagetitle"
