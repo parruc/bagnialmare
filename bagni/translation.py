@@ -4,7 +4,8 @@ from bagni import models
 
 
 class BagnoTranslationOptions(TranslationOptions):
-    fields = ('name', 'description', 'slug',  'address',)
+    #fields = ('name', 'description', 'slug',  'address',)
+    fields = ('description',)
 
 translator.register(models.Bagno, BagnoTranslationOptions)
 
@@ -45,12 +46,13 @@ translator.register(models.Language, LanguageTranslationOptions)
 
 
 class TelephoneTranslationOptions(TranslationOptions):
-    fields = ('name', )
+    fields = ()
 
 translator.register(models.Telephone, TelephoneTranslationOptions)
 
 
 class ImageTranslationOptions(TranslationOptions):
-    fields = ('name', 'description', 'slug',)
+    fields = ()
 
 translator.register(models.Image, ImageTranslationOptions)
+

@@ -3,6 +3,8 @@ from django.contrib.gis.db import models
 from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
+from ckeditor.fields import RichTextField
+
 
 from base import BaseModel
 
@@ -14,7 +16,7 @@ class Bagno(BaseModel):
         verbose_name_plural = _('Bagni')
         app_label = 'bagni'
 
-    description = models.TextField(max_length=2000)
+    description = RichTextField(max_length=2000)
     number = models.CharField(max_length=30, blank=True)
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni')
     services = models.ManyToManyField("Service", blank=True, related_name='bagni')
