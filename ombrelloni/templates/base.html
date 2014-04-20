@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 {% load i18n compress %}
+{% load cache %}
 {% trans "contact" as t_contact %}
 {% trans "about_us" as t_about_us %}
 {% trans "are_you_manager" as t_are_you_manager %}
 
 {% load url from future %}
+
 <html lang="{{LANGUAGE_CODE}}">
 <head>
   <meta name="robots" content="{% block robot %}index follow{% endblock %}" />
@@ -15,29 +17,34 @@
   <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/bam-favicon.ico" />
   <link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}img/bam-favicon.ico" />
-  {% compress js %}
-  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
-  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
-  {% endcompress %}
+  {% cache 600 base_js %}
+    {% compress js %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
+    {% endcompress %}
+  {% endcache %}
 
   {% compress js %}
     {% block specific_js %}{% endblock specific_js %}
   {% endcompress %}
 
-  {% compress css %}
-    <link href="{{ STATIC_URL }}css/google-fonts.css" rel="stylesheet" type="text/css"/>
-    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
-    <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
-    <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
-    <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
-  {% endcompress %}
+  {% cache 600 base_css %}
+    {% compress css %}
+      <link href="{{ STATIC_URL }}css/google-fonts.css" rel="stylesheet" type="text/css"/>
+      <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
+    {% endcompress %}
+  {% endcache %}
         {% block extrahead %}
             {{ form.media }}
         {% endblock %}
 </head>
+
 <body class="{% block bodyclass %}{% endblock %}"
           data-static-url="{{ STATIC_URL }}">
   <div id="wrap">
@@ -95,8 +102,8 @@
           {% endfor %}
         </div>
       {% endif %}
-      {% block content %}
-      {% endblock %}
+        {% block content %}
+        {% endblock %}
     </div>
   </div>
 

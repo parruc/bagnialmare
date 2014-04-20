@@ -1,5 +1,6 @@
 var map
 $(function() {
+    L.Icon.Default.imagePath = '/static/js/images/';
     var bagno_x = $("#bagno_map").data("x")
     var bagno_y = $("#bagno_map").data("y")
     var bagno_name = $("#bagno_map").data("name")
