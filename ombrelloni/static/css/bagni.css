@@ -1,4 +1,3 @@
-
 html{
   height: 100%;
 }
@@ -141,6 +140,16 @@ body {
     margin-bottom: 20px;
     margin-top: 15px;
     font-weight: 700;
+}
+
+.filter-result-service-category {
+     cursor:pointer;
+     color: #6A4A3C;
+     background-color:#FFF6DF;
+}
+
+.filter-result-service-category:hover {
+     color:rgb(249, 191, 22);
 }
 
 #filters, #filterTab {
