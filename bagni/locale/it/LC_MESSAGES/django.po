@@ -197,7 +197,7 @@ msgstr "bagni e stabilimenti balneari della Riviera Adriatica"
 msgid "bagni_page_sub_header_outside_link"
 msgstr ""
 "qui trovi l'elenco dei bagni e degli stabilimenti balneari della Riviera "
-"Romagnola suddivisi per località e"
+"Adriatica suddivisi per località e"
 
 #: templates/bagni/bagni.html:19
 msgid "bagni_page_sub_header_inside_link"
@@ -339,7 +339,7 @@ msgstr "vicino a"
 
 #: templates/bagni/homepage.html:19
 msgid "home_sort_by_ditance"
-msgstr "qui vicino!"
+msgstr "..qui vicino!"
 
 #: templates/bagni/homepage.html:20
 msgid "home_search"
