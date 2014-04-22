@@ -335,7 +335,7 @@ msgstr "near to"
 
 #: templates/bagni/homepage.html:19
 msgid "home_sort_by_ditance"
-msgstr "close to me!"
+msgstr "..near me!"
 
 #: templates/bagni/homepage.html:20
 msgid "home_search"
