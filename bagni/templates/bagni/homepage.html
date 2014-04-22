@@ -107,14 +107,9 @@ $(function() {
 </script>
 {% endblock specific_js %}
 
-{% block title %}
-{% trans "homepage_title" as t_homepage_title %}
-{{ t_homepage_title|title }}
-{% endblock title %}
-
 {% block pagetitle %}
 {% trans "homepage_title" as t_homepage_title %}
-{{ t_homepage_title|title }}
+{{ t_homepage_title|capfirst }}
 {% endblock pagetitle %}
 
 {% block description %}{% trans "homepage_description" as t_homepage_description %}{{ t_homepage_description|capfirst }}{% endblock description %}
