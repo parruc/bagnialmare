@@ -319,7 +319,7 @@ msgstr ""
 
 #: templates/bagni/homepage.html:15 templates/bagni/search.html:7
 msgid "what"
-msgstr "looking for beach resorts or services?"
+msgstr "resort name or facility?"
 
 #: templates/bagni/homepage.html:16
 msgid "home_facility_tooltip"
