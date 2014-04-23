@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 16:20+0200\n"
+"POT-Creation-Date: 2014-04-23 11:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: settings.py:100
+#: settings.py:102
 msgid "English"
 msgstr "English"
 
-#: settings.py:101
+#: settings.py:103
 msgid "Italiano"
 msgstr "Italian"
 
@@ -32,15 +32,15 @@ msgstr "^contacts/"
 msgid "^accounts/"
 msgstr "^accounts/"
 
-#: templates/base.html:3
+#: templates/base.html:4
 msgid "contact"
 msgstr "contacts"
 
-#: templates/base.html:4
+#: templates/base.html:5
 msgid "about_us"
 msgstr "about us"
 
-#: templates/base.html:5
+#: templates/base.html:6
 msgid "are_you_manager"
 msgstr "are you a manager?"
 

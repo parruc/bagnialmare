@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 19:08+0200\n"
+"POT-Creation-Date: 2014-04-23 11:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,17 +321,18 @@ msgstr ""
 msgid "what"
 msgstr "resort name or facility?"
 
-#: templates/bagni/homepage.html:16
+#: templates/bagni/homepage.html:16 templates/bagni/search.html:15
+#, fuzzy
+msgid "near_to"
+msgstr "near to"
+
+#: templates/bagni/homepage.html:17
 msgid "home_facility_tooltip"
 msgstr "Show the facility list"
 
-#: templates/bagni/homepage.html:17
+#: templates/bagni/homepage.html:18
 msgid "home_show_facility"
 msgstr "show the facility list"
-
-#: templates/bagni/homepage.html:18
-msgid "home_near_to"
-msgstr "near to"
 
 #: templates/bagni/homepage.html:19
 msgid "home_sort_by_ditance"
@@ -349,11 +350,11 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/homepage.html:112 templates/bagni/homepage.html.py:117
+#: templates/bagni/homepage.html:111
 msgid "homepage_title"
 msgstr "bagnialmare: beach resorts of Italy"
 
-#: templates/bagni/homepage.html:121
+#: templates/bagni/homepage.html:115
 msgid "homepage_description"
 msgstr ""
 "contacts, facilities and addresses of more than 1000 Italian beach resorts "
@@ -405,7 +406,7 @@ msgstr "here you can find the list of beach resorts of"
 msgid "where"
 msgstr "where"
 
-#: templates/bagni/search.html:9 templates/bagni/search.html.py:326
+#: templates/bagni/search.html:9 templates/bagni/search.html.py:323
 msgid "search"
 msgstr "search"
 
@@ -424,10 +425,6 @@ msgstr "results for"
 #: templates/bagni/search.html:14
 msgid "results"
 msgstr "results"
-
-#: templates/bagni/search.html:15
-msgid "near"
-msgstr "near"
 
 #: templates/bagni/search.html:16
 msgid "filters"
@@ -461,7 +458,7 @@ msgstr ""
 msgid "no_results_for_search"
 msgstr "no results for the given search"
 
-#: templates/bagni/search.html:222
+#: templates/bagni/search.html:221
 #, python-format
 msgid ""
 "\n"
@@ -470,11 +467,11 @@ msgstr ""
 "\n"
 "                      Page %(page)s of %(num_pages)s."
 
-#: templates/bagni/search.html:331
+#: templates/bagni/search.html:328
 msgid "search_pagetitle"
 msgstr "search results | bagnialmare.com"
 
-#: templates/bagni/search.html:336
+#: templates/bagni/search.html:333
 msgid "search_description"
 msgstr "search results | bagnialmare.com"
 
@@ -528,6 +525,9 @@ msgstr "Facility categories"
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Cant find place '%s', sorting by relevance"
+
+#~ msgid "near"
+#~ msgstr "near"
 
 #~ msgid "^bagno/(?P<slug>[-\\w]+)/$"
 #~ msgstr "^beachresort/(?P<slug>[-\\w]+)/$"

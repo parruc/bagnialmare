@@ -12,7 +12,7 @@
 {% trans "active_filters" as t_active_filters %}
 {% trans "results_for" as t_results_for %}
 {% trans "results" as t_results %}
-{% trans "near" as t_near %}
+{% trans "near_to" as t_near_to %}
 {% trans "filters" as t_filters%}
 {% trans "list_view" as t_list_view %}
 {% trans "map_view" as t_map_view %}
@@ -132,7 +132,7 @@
               {{ t_results }}
             {% endif %}
             {% if search_results.place %}
-              {{ t_near }}
+              {{ t_near_to }}
               <span class="hits-query">{{ search_results.place }}</span>
             {% endif %}
           </p>
