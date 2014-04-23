@@ -34,12 +34,12 @@
         <form role="form" action="{% url 'search' %}" method="get">
           <input type="hidden" name="pos" value="" />
           <div class="col-xs-5">
-              <label class="my-brown" for="search_q">{{ t_what|capfirst }}:</label>
+              <label class="my-brown" for="search_q">{{ t_what|capfirst }}</label>
             <input class="form-control" type="text" id="search_q"
                    name="q" value="{{ search_results.q }}" />
           </div>
           <div class="col-xs-5">
-              <label class="my-brown" for="search_l">{{ t_where|capfirst }}:</label>
+              <label class="my-brown" for="search_l">{{ t_where|capfirst }}</label>
             <input class="form-control" type="text" id="search_l"
                    name="l" value="{{ search_results.l }}"  />
           </div>
