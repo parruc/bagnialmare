@@ -17,7 +17,7 @@
 {% endblock content %}
 
 
-{% block pagetitle %}{% trans "contacts_pagetitle" as t_contacts_pagetitle %}{{ t_contacts_pagetitle }}{% endblock %}
+{% block pagetitle %}{% trans "contacts_pagetitle" as t_contacts_pagetitle %}{{ t_contacts_pagetitle|capfirst }}{% endblock %}
 
 {%block description %}{% trans "contacts_page_description" as t_contacts_page_description %}{{ t_contacts_page_description }}{% endblock %}
 
