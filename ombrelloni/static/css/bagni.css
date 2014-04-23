@@ -312,13 +312,13 @@ img.hp-form-image
                 no-repeat;
 }
 
-body.loading {
+.loading {
     overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
-body.loading .modal-wheel {
+.loading .modal-wheel {
     display: block;
 }
 

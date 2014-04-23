@@ -12,26 +12,30 @@ $(function() {
     });
     $("#contact-form").on("click", "form button", function(evt){
         evt.preventDefault();
+        //$("#contacts-modal").addClass("loading");
         $.ajax({
             url: $("#contact-form form").attr("action"),
             type: $("#contact-form form").attr("method").toUpperCase(),
             data: $("#contact-form form" ).serialize(),
             success: function(contact_response) {
-                if($(contact_response, "#contacts-modal"))
-                {
-                    contacts_modal.hide();
-                    $("#contacts-modal .modal-dialog").replaceWith($(contact_response, ".modal-dialog").html());
-                    contacts_modal.show();
+                //$("#contacts-modal").removeClass("loading");
+                var modal = $(contact_response).filter("#contacts-modal");
+                if(modal.length > 0)
+                { 
+                    $("#contacts-modal .modal-dialog").replaceWith(modal.html());
                 }
                 else
                 {
-                    if($("#wrap #messages").length > 0)
+                    if($("#messages").length > 0)
                     {
-                        $("#wrap #messages").append($(contact_response, "#messages div"));
+                        $("#messages").append($(contact_response).find("#messages div").html());
                     }
                     else{
-                        $("#wrap .navbar").after($(contact_response, " #messages"));
+                        $("#rootContainer").prepend($(contact_response).find("#messages").html());
                     }
+                    $('.modal-backdrop').remove();
+                    $('body').removeClass('modal-open');
+                    
                     contacts_modal.hide();
                 }
             }

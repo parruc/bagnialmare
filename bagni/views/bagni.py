@@ -141,7 +141,7 @@ class BagnoContacts(ContactView):
         self.success_url = self.object.get_absolute_url()
         self.recipients = [m.user.email for m in self.object.managers.all()]
         self.form = self.get_form(self.form_class)
-        self.submit_url = reverse("bagno-contacts", kwargs={'slug': slug})
+        self.submit_url = self.object.get_contactform_url()
         return super(BagnoContacts, self).dispatch(request, *args, **kwargs)
 
 
