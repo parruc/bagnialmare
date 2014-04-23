@@ -183,7 +183,7 @@
                                title="{{ t_bagno }} {{ hit.name }}">
                             {{ hit.name }}, {{ hit.neighbourhood.name }}
                           </a>
-                          {% if c.distance %}
+                          {% if hit.distance %}
                             <span class="badge">
                               {{hit.distance.km|floatformat:2 }}Km
                             </span>
