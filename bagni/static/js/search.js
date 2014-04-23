@@ -1,21 +1,25 @@
 $(function() {
 
     drawMap();
-    $(".collapse").on("shown.bs.collapse", function () {
+    $("body").on("shown.bs.collapse", ".collapse", function () {
         $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
     });
-    $(".collapse").on('hidden.bs.collapse', function () {
+    $("body").on('hidden.bs.collapse', ".collapse", function () {
         $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
     });
 
-    $(".checkbox input").on('click', function(evt){
+    $("body").on('click', '.checkbox input', function(evt){
         $("body").addClass("loading");
-        var url = $("#filters").data("base-url") + $(this).data('facet-url') + "#wrapped";
+        var url = $("#filters").data("base-url") + $(this).data('facet-url');
         var title = $(title).html()
-        $("#rootContainer").load(url, function(response, status, xhr) {
-            $("body").removeClass("loading");
-            window.scrollTo(0,0);
-            window.history.pushState({}, title, url)
+
+        $.ajax({url:url, 
+                success:function(response) {
+                    $("body").removeClass("loading");
+                    $("#rootContainer").html($(response).find("#rootContainer").html());
+                    window.scrollTo(0,0);
+                    window.history.pushState({}, title, url)
+                }
         });
     });
 });

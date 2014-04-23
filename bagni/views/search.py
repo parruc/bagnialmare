@@ -60,16 +60,15 @@ class SearchView(TemplateView):
                                      _("Cant find place '%s', sorting by relevance" % loc))
                 #logger.error would point to a 500 page
                 logger.warning("geocoding %s gave error %s" % (loc, e))
-
-        filters = self.request.GET.getlist('f', [])
+        
         new_query_string = self.request.GET.copy()
+        filters = self.request.GET.getlist('f', [])
         if selected_facet:
-            messages.add_message(self.request, messages.INFO,
-                                     _("Your query matches a service. The service is now in the active filters."))
-            service_filter = "services:" + selected_facet.slug
-            filters.append(service_filter)
-            new_query_string['q'] = q = ""
-            new_query_string.appendlist('f', service_filter)
+            filter = "services:" + selected_facet.slug
+            filters.append(filter)
+            q = ""
+            new_query_string['q'] = ""
+            new_query_string.appendlist("f", filter)
         query = q or "*"
         raw_hits, facets, active_facets = search(
             q=query, filters=filters, groups=groups,

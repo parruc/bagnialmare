@@ -142,9 +142,9 @@ def search(q, filters, groups, query_string, max_facets=5):
                                    key=operator.itemgetter(1, 0),
                                    reverse=True)
             for facet_slug, facet_value in sorted_facets:
+                qs = query_string.copy()
                 if not facet_slug:
                     continue
-                qs = query_string.copy()
                 qs["p"] = "1"
                 filter = group + ":" + facet_slug
                 if filter in filters:
