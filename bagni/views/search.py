@@ -31,7 +31,7 @@ class SearchView(TemplateView):
         groups = ['services', ]
         q = self.request.GET.get('q', "")
         try:
-            selected_facet = Service.objects.get(name=q)
+            selected_facet = Service.objects.get(name__iexact=q)
         except ObjectDoesNotExist:
             selected_facet = None
         page = self.request.GET.get('p', "1")
@@ -62,10 +62,14 @@ class SearchView(TemplateView):
                 logger.warning("geocoding %s gave error %s" % (loc, e))
 
         filters = self.request.GET.getlist('f', [])
-        if selected_facet:
-            filters.append("services:" + selected_facet.slug)
-            q = ""
         new_query_string = self.request.GET.copy()
+        if selected_facet:
+            messages.add_message(self.request, messages.INFO,
+                                     _("Your query matches a service. The service is now in the active filters."))
+            service_filter = "services:" + selected_facet.slug
+            filters.append(service_filter)
+            new_query_string['q'] = q = ""
+            new_query_string.appendlist('f', service_filter)
         query = q or "*"
         raw_hits, facets, active_facets = search(
             q=query, filters=filters, groups=groups,
