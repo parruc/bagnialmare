@@ -318,17 +318,10 @@
 {% endblock specific_js %}
 
 
-{% block title %}
-{% trans "search" as t_search %}
-{{ t_search|title }}
-{% endblock title %}
-
 {% block pagetitle %}
 {% trans "search_pagetitle" as t_search_pagetitle %}
-{{ t_search_pagetitle|title }}
+{{ t_search_pagetitle|capfirst }}
 {% endblock pagetitle %}
 
 {% block description %}
-{% trans "search_description" as t_search_description %}
-{{ t_search_description }}
-{% endblock description %}
+{% trans "search_description" as t_search_description %}{{ t_search_description }}{% endblock description %}
