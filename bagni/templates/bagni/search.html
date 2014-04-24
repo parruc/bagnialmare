@@ -13,6 +13,7 @@
 {% trans "results_for" as t_results_for %}
 {% trans "results" as t_results %}
 {% trans "near_to" as t_near_to %}
+{% trans "near_me" as t_near_me %}
 {% trans "filters" as t_filters%}
 {% trans "list_view" as t_list_view %}
 {% trans "map_view" as t_map_view %}
@@ -31,7 +32,7 @@
     {% endcomment %}
     <div class="search-page-search-row-wrapper-div hidden-xs">
       <div class="row search search-page-search-row">
-        <form role="form" action="{% url 'search' %}" method="get">
+        <form id="search-form"  role="form" action="{% url 'search' %}" method="get">
           <input type="hidden" name="pos" value="" />
           {% for facet in search_results.active_facets %}
             <input type="hidden" name="f" value="services:{{ facet.slug }}" />   
@@ -45,7 +46,9 @@
               <label class="my-brown" for="search_l">{{ t_where|capfirst }}</label>
             <input class="form-control" type="text" id="search_l"
                    name="l" value="{{ search_results.l }}"  />
+            <a href="#" id="set-my-position" data-position-label="{{ t_near_me }}">...{{ t_near_me }}!</a>
           </div>
+
           <div class="col-xs-2 search-page-search-button-div">
             <button type="submit" id="search_submit"
                     class="btn btn-primary search-page-button" value="search">

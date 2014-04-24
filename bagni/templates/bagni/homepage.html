@@ -16,7 +16,7 @@
   {% trans "near_to" as t_near_to %}
   {% trans "home_facility_tooltip" as t_home_facility_tooltip %}
   {% trans "home_show_facility" as t_home_show_facility %}
-  {% trans "home_sort_by_ditance" as t_home_sort_by_distance %}
+  {% trans "near_me" as t_near_me %}
   {% trans "home_search" as t_home_search %}
   {% comment %}
     TODO: Da rifattorizzare in un template tag da usare sia qui che in search?
@@ -42,8 +42,7 @@
       <div class="col-md-5 homepage-input-div">
         <label class="sr-only" for="search_l">{{ t_near_to|capfirst }}</label>
         <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{{ t_near_to|capfirst }}">
-        <div class="ui-front"></div>
-        <a href="#" id="set-my-position" data-position-label="{{ my_position }}">{{ t_home_sort_by_distance }}</a>
+        <a href="#" id="set-my-position" data-position-label="{{ t_near_me }}">...{{ t_near_me }}!</a>
       </div>
       <div class="col-md-2 homepage-input-div">
         <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{{ t_home_search|capfirst }}</button>
@@ -93,16 +92,14 @@
 </div>
 {% endblock %}
 
-
 {% block specific_js %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/geolocation.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/home.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
 <script type="text/javascript">
-$(function() {
-      $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
-    });
-
+    $(function() {
+    $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
+});
 </script>
 {% endblock specific_js %}
 
