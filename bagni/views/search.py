@@ -10,7 +10,6 @@ from django.utils.translation import ugettext as _
 
 from ..models import Bagno, Service
 from ..search import search
-from ..constants import MY_POSITION
 
 import logging
 logging.basicConfig()
@@ -39,7 +38,7 @@ class SearchView(TemplateView):
         loc = self.request.GET.get('l', '')
         coords = self.request.GET.get('pos', "")
         place = point = None
-        if loc == MY_POSITION and "," in coords:
+        if loc == _("near_me") and "," in coords:
             lat,lng = coords.split(",")
             point = Point(float(lng), float(lat))
         elif loc:

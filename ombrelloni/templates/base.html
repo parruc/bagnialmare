@@ -16,15 +16,19 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png">
-  <!--[if IE]><link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/><![endif]-->
+
+  {% block explorer %}
+    <!--[if IE]>
+        <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/>
+    <![endif]-->
+  {% endblock %}
 
   {% cache 600 base_js %}
     {% compress js %}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
     {% endcompress %}
   {% endcache %}
 
@@ -46,7 +50,7 @@
         {% endblock %}
 </head>
 
-<body class="{% block bodyclass %}{% endblock %}"
+<body class="{% block bodyclass %}body-class{% endblock %}"
           data-static-url="{{ STATIC_URL }}">
   <div id="wrap">
     <div class="{% block navbarclass %}{% endblock %} navbar navbar-default navbar-fixed-top" role="navigation">
