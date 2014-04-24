@@ -343,8 +343,8 @@ msgid "home_search"
 msgstr "search"
 
 #: templates/bagni/homepage.html:61
-msgid "Click on a facility to select it"
-msgstr ""
+msgid "Click_on_a_facility"
+msgstr "Click on a facility to select it"
 
 #: templates/bagni/homepage.html:90
 msgid "Close"
