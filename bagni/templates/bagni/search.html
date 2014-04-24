@@ -33,7 +33,7 @@
     <div class="search-page-search-row-wrapper-div hidden-xs">
       <div class="row search search-page-search-row">
         <form id="search-form"  role="form" action="{% url 'search' %}" method="get">
-          <input type="hidden" name="pos" value="" />
+          <input type="hidden" name="coords" value="{{ search_results.coords }}" />
           {% for facet in search_results.active_facets %}
             <input type="hidden" name="f" value="services:{{ facet.slug }}" />   
           {% endfor %}

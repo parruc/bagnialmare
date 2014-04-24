@@ -36,7 +36,7 @@ class SearchView(TemplateView):
         page = self.request.GET.get('p', "1")
         per_page = int(self.request.GET.get('pp', "15"))
         loc = self.request.GET.get('l', '')
-        coords = self.request.GET.get('pos', "")
+        coords = self.request.GET.get('coords', "")
         place = point = None
         if loc == _("near_me") and "," in coords:
             lat,lng = coords.split(",")
@@ -90,6 +90,7 @@ class SearchView(TemplateView):
         search_results['count'] = len(raw_hits)
         search_results['q'] = q
         search_results['l'] = loc
+        search_results['coords'] = coords
         search_results['place'] = place
         search_results['facets'] = facets
         search_results['active_facets'] = active_facets
