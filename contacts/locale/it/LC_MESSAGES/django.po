@@ -21,7 +21,7 @@ msgstr ""
 #: forms.py:6 templates/contacts/form.html:7
 #: templates/contacts/form_popup.html:6
 msgid "Your email address"
-msgstr "Il tuo indirizzo mail"
+msgstr "Il tuo indirizzo email"
 
 #: forms.py:8 templates/contacts/form.html:12
 #: templates/contacts/form_popup.html:11
@@ -30,14 +30,14 @@ msgstr "Messaggio"
 
 #: views.py:42
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
-msgstr "Grazie per averci contattato, risponderemo al più presto."
+msgstr "Grazie per averci contattato, risponderemo al più presto all'indirizzo email fornitoci."
 
 #: views.py:45
 msgid ""
-"Error sending the mail: Contact me at                    info at bagnialmare "
+"Error sending the email: Contact me at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"
 msgstr ""
-"Errore di invio mail: Contattami a info at bagnialmare punto com per "
+"Errore di invio e-mail: Contattami a info at bagnialmare punto com per "
 "informarci dell'errore. Grazie."
 
 #: templates/contacts/contacts.html:9
