@@ -346,8 +346,8 @@ msgid "home_search"
 msgstr "cerca"
 
 #: templates/bagni/homepage.html:61
-msgid "Click on a facility to select it"
-msgstr ""
+msgid "Clicca_su_un_servizio"
+msgstr "Clicca su un servizio per selezionarlo"
 
 #: templates/bagni/homepage.html:90
 msgid "Close"
