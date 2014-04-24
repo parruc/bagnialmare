@@ -9,7 +9,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-04-19T21:47:52.929Z", 
+    "last_login": "2014-04-23T11:43:07.857Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$K9qn7bZj1p4O$Jo4paAjpyQ04/8fiDH3Ua9n38/dedibHvmIBOCxvo8k=", 
@@ -1809,7 +1809,7 @@
   "model": "bagni.service", 
   "fields": {
     "category": [
-      "games-and-entertainment"
+      "children_and_families"
     ], 
     "slug_en": "children-entertainment", 
     "name_it": "animazione per bambini", 
@@ -2481,26 +2481,6 @@
     "description_it": "", 
     "name_en": "poor football", 
     "slug": "poor-football", 
-    "description": ""
-  }
-},
-{
-  "pk": 2218, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "sport-and-wellness"
-    ], 
-    "slug_en": "football", 
-    "name_it": "calcio", 
-    "name": "football", 
-    "image": "", 
-    "slug_it": "calcio", 
-    "description_en": "", 
-    "free": true, 
-    "description_it": "", 
-    "name_en": "football", 
-    "slug": "football", 
     "description": ""
   }
 },
@@ -5130,9 +5110,6 @@
       ], 
       [
         "internet"
-      ], 
-      [
-        "football"
       ], 
       [
         "table-football"
@@ -18670,9 +18647,6 @@
         "goods-keeping"
       ], 
       [
-        "football"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -19399,9 +19373,6 @@
         "nursery"
       ], 
       [
-        "football"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -19755,9 +19726,6 @@
       ], 
       [
         "goods-keeping"
-      ], 
-      [
-        "football"
       ], 
       [
         "beach-volley"
