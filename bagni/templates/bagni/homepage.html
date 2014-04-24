@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% load i18n %}
-{% load batch from custom_filters %}
 
 {% block bodyclass %}homepage-body-class{% endblock %}
 {% block navbarclass %}homepage-navbar{% endblock %}
@@ -70,17 +69,15 @@
           </div>
         </div>
         <div id="collapse{{ forloop.counter }}" class="collapse {% if forloop.counter < 3 %} in {% endif %}" >
-          {% for facility_batch in facility_category.services.all|batch:4 %}
-          <div class="row modal-facility-row">
-            {% for facility in facility_batch %}
-            <div class="col-xs-3">
+          <div class="row">
+          {% for facility_batch in facility_category.services.all %}
+            <div class="col-sm-3 col-xs-4 modal-facility-row">
               <p>
                 <a href="#" onclick="populateWhatField(this)">{% trans facility.name %}</a>
               </p>
             </div>
-            {% endfor %}
-          </div>
           {% endfor %}
+          </div>
         </div>
         {% endfor %}
       </div>
