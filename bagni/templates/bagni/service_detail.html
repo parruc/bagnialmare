@@ -2,16 +2,25 @@
 
 {% load i18n %}
 
-{% block pagetitle %}
-    {% trans "service_detail_pagetitle" as t_service_detail_pagetitle %}
-    {{ t_service_detail_pagetitle|capfirst }} {{ object.name}}
-{% endblock pagetitle %}
+{% block pagetitle %}{% spaceless %}
+  {% trans "service_detail_pagetitle" as t_service_detail_pagetitle %}
+  {{ t_service_detail_pagetitle|capfirst }}
+  {% if object.seo_name %}
+    {{ object.seo_name }}
+  {% else %}
+    {% trans "with" %} {{ object.name }}
+  {% endif %}
+{% endspaceless %}{% endblock pagetitle %}
 
 
-{% block description %}
-    {% trans "service_detail_desc" as t_service_detail_desc %}
-    {{ t_service_detail_desc|capfirst }} {{ object.name}}
-{% endblock description %}
+{% block description %}{% spaceless %}
+  {% trans "service_detail_desc" as t_service_detail_desc %}
+  {% if object.seo_name %}
+    {{ t_service_detail_desc|capfirst }} {{ object.seo_name }}
+  {% else %}
+    {{ t_service_detail_desc|capfirst }} {% trans "with" %} {{ object.name }}
+  {% endif %}
+{% endspaceless %}{% endblock description %}
 
 {% block content %}
 {% trans "service_detail_header" as t_service_detail_header %}
@@ -19,16 +28,30 @@
 {% trans "service_detail_no_result" as t_service_detail_no_result %}
 {% comment %}
     Bagni con -service.name-
-    Questo e' l'elenco dei bagni che offrono il servizio di -service.name-. 
+    Questo e' l'elenco dei bagni che offrono il servizio di -service.name-.
 {% endcomment %}
   <div class="row">
       <div class="col-xs-12">
-          <h1 class="">{{ t_service_detail_header|capfirst }} {{ object.name}}</h1>
-          <p>{{ t_service_detail_sub_header|capfirst }} {{ object.name}}.</p>
+          <h1>
+            {{ t_service_detail_header|capfirst }}
+            {% if object.seo_name %}
+              {{ object.seo_name }}
+            {% else %}
+              {% trans "with" %} {{ object.name }}
+            {% endif %}
+          </h1>
+          <p>
+            {{ t_service_detail_sub_header|capfirst }}
+            {% if object.seo_name %}
+              {{ object.seo_name }}
+            {% else %}
+              {% trans "with" %} {{ object.name }}
+            {% endif %}
+          </p>
       </div>
   </div>
   <div class="row">
-      <div class="col-xs-12">      
+      <div class="col-xs-12">
               {% regroup object.bagni.all|dictsort:"neighbourhood.name"|dictsort:"neighbourhood.municipality.name" by neighbourhood as neighborhood_list %}
               {% for n in neighborhood_list %}
                   <h3>{{ n.grouper.name }}{% if n.grouper.name != n.grouper.municipality.name %}, {{ n.grouper.municipality.name }}{% endif %}</h3>

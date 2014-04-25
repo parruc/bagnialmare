@@ -36,6 +36,8 @@ class Service(BaseModel):
     description = models.TextField(max_length=2000, blank=True)
 
     # TODO: A regime mettere  obbligatorio cateogry
+    seo_name =  models.CharField(max_length=100, blank=True, null=True,)
+    aliases = models.CharField(max_length=300, blank=True, null=True,)
     category = models.ForeignKey(ServiceCategory, blank=True, null=True, related_name='services', verbose_name=_("Category"),)
     image = ImageField(upload_to="images/services", verbose_name=_("Image"), blank=True, null=True)
     free = models.BooleanField(default=True,)

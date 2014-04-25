@@ -28,7 +28,7 @@ class SearchView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(SearchView, self).get_context_data(**kwargs)
         groups = ['services', ]
-        q = self.request.GET.get('q', "")
+        q = self.request.GET.get('q', "").strip()
         try:
             selected_facet = Service.objects.get(name__iexact=q)
         except ObjectDoesNotExist:
@@ -59,7 +59,7 @@ class SearchView(TemplateView):
                                      _("Cant find place '%s', sorting by relevance" % loc))
                 #logger.error would point to a 500 page
                 logger.warning("geocoding %s gave error %s" % (loc, e))
-        
+
         new_query_string = self.request.GET.copy()
         filters = self.request.GET.getlist('f', [])
         if selected_facet:

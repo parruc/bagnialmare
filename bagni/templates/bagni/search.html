@@ -35,7 +35,7 @@
         <form id="search-form"  role="form" action="{% url 'search' %}" method="get">
           <input type="hidden" name="coords" value="{{ search_results.coords }}" />
           {% for facet in search_results.active_facets %}
-            <input type="hidden" name="f" value="services:{{ facet.slug }}" />   
+            <input type="hidden" name="f" value="services:{{ facet.slug }}" />
           {% endfor %}
           <div class="col-xs-5">
               <label class="my-brown" for="search_q">{{ t_what|capfirst }}</label>
@@ -99,7 +99,7 @@
                         data-target="#collapse{{ forloop.counter }}">
                       <span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
                       {% filter capfirst %}
-                        {% trans facet_group.name %}
+                        {% trans facet_group.name|capfirst %}
                       {% endfilter %}
                     </h4>
                   </div>
@@ -282,7 +282,7 @@
                           data-target="#collapseInsideTab{{ forloop.counter }}">
                         <span id="spancollapseInsideTab{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown">
                         </span>
-                        {% filter capfirst %}{% trans facet_group.name %}{% endfilter %}
+                        {% filter capfirst %}{% trans facet_group.name|capfirst %}{% endfilter %}
                       </h4>
                     </div>
                     {% for facet in facet_group.facets %}
