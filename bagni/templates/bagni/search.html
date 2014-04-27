@@ -3,6 +3,8 @@
 {% load l10n i18n query_string %}
 {% load batch from custom_filters %}
 
+{% block robot %}noindex follow{% endblock %}
+
 {% block content %}
 {% trans "what" as t_what %}
 {% trans "where" as t_where %}
