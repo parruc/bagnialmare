@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-23 11:58+0200\n"
+"POT-Creation-Date: 2014-04-25 16:53+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.7\n"
-
-#: constants.py:3
-msgid "Near me"
-msgstr "Vicino a me"
 
 #: urls.py:10
 msgid "^bagni/$"
@@ -131,7 +127,7 @@ msgid "Telephone numbers"
 msgstr "Numeri di telefono"
 
 #: models/bagni_details.py:39 models/bagni_details.py:53 models/services.py:21
-#: models/services.py:40
+#: models/services.py:42
 msgid "Image"
 msgstr "Immagine"
 
@@ -176,7 +172,7 @@ msgstr "Servizio"
 msgid "Services"
 msgstr "Servizi"
 
-#: models/services.py:39
+#: models/services.py:41
 msgid "Category"
 msgstr "Categoria"
 
@@ -241,7 +237,7 @@ msgstr "website"
 msgid "bagno"
 msgstr "bagno"
 
-#: templates/bagni/bagno_detail.html:8 templates/bagni/search.html:19
+#: templates/bagni/bagno_detail.html:8 templates/bagni/search.html:20
 msgid "contact_button"
 msgstr "contattaci"
 
@@ -311,53 +307,54 @@ msgstr "nessuna città"
 msgid "districts"
 msgstr "città"
 
-#: templates/bagni/homepage.html:13
+#: templates/bagni/homepage.html:12
 msgid "home_heading"
 msgstr "tutte le informazioni che cercate sui bagni della Riviera Adriatica"
 
-#: templates/bagni/homepage.html:14
+#: templates/bagni/homepage.html:13
 msgid "home_sub_heading"
 msgstr ""
 "Contatti, servizi e indirizzi di oltre 1000 stabilimenti balneari da "
 "Cattolica a Ferrara"
 
-#: templates/bagni/homepage.html:15 templates/bagni/search.html:7
+#: templates/bagni/homepage.html:14 templates/bagni/search.html:7
 msgid "what"
 msgstr "bagno o servizio?"
 
-#: templates/bagni/homepage.html:16 templates/bagni/search.html:15
+#: templates/bagni/homepage.html:15 templates/bagni/search.html:15
 msgid "near_to"
 msgstr "vicino a"
 
-#: templates/bagni/homepage.html:17
+#: templates/bagni/homepage.html:16
 msgid "home_facility_tooltip"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:18
+#: templates/bagni/homepage.html:17
 msgid "home_show_facility"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:19
+#: templates/bagni/homepage.html:18 templates/bagni/search.html:16
+#: views/search.py:41
 msgid "near_me"
 msgstr "qui vicino"
 
-#: templates/bagni/homepage.html:20
+#: templates/bagni/homepage.html:19
 msgid "home_search"
 msgstr "cerca"
 
-#: templates/bagni/homepage.html:61
-msgid "Click on a facility to select it"
-msgstr ""
+#: templates/bagni/homepage.html:20
+msgid "home_modal_header"
+msgstr "fai click su un servizio per selezionarlo"
 
-#: templates/bagni/homepage.html:90
+#: templates/bagni/homepage.html:87
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/homepage.html:111
+#: templates/bagni/homepage.html:106
 msgid "homepage_title"
 msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
 
-#: templates/bagni/homepage.html:115
+#: templates/bagni/homepage.html:110
 msgid "homepage_description"
 msgstr ""
 "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, "
@@ -410,9 +407,9 @@ msgstr "questo è l'elenco dei bagni e degli stabilimenti balneari di"
 
 #: templates/bagni/search.html:8
 msgid "where"
-msgstr "dove"
+msgstr "vicino a"
 
-#: templates/bagni/search.html:9 templates/bagni/search.html.py:323
+#: templates/bagni/search.html:9
 msgid "search"
 msgstr "cerca"
 
@@ -432,39 +429,39 @@ msgstr "risultati per"
 msgid "results"
 msgstr "risultati per"
 
-#: templates/bagni/search.html:16
+#: templates/bagni/search.html:17
 msgid "filters"
 msgstr "filtri"
 
-#: templates/bagni/search.html:17
+#: templates/bagni/search.html:18
 msgid "list_view"
 msgstr "lista"
 
-#: templates/bagni/search.html:18
+#: templates/bagni/search.html:19
 msgid "map_view"
 msgstr "mappa"
 
-#: templates/bagni/search.html:20
+#: templates/bagni/search.html:21
 msgid "previous"
 msgstr "precedente"
 
-#: templates/bagni/search.html:21
+#: templates/bagni/search.html:22
 msgid "next"
 msgstr "successivo"
 
-#: templates/bagni/search.html:22
+#: templates/bagni/search.html:23
 msgid "first"
 msgstr ""
 
-#: templates/bagni/search.html:23
+#: templates/bagni/search.html:24
 msgid "last"
 msgstr ""
 
-#: templates/bagni/search.html:24
+#: templates/bagni/search.html:25
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:221
+#: templates/bagni/search.html:227
 #, python-format
 msgid ""
 "\n"
@@ -473,31 +470,38 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:328
+#: templates/bagni/search.html:329
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:333
+#: templates/bagni/search.html:334
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
 #: templates/bagni/service_detail.html:6
 msgid "service_detail_pagetitle"
-msgstr "bagni e stabilimenti balneari con"
+msgstr "bagni e stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:12
-msgid "service_detail_desc"
-msgstr "indirizzi e contatti dei bagni e degli stabilimenti balneari con"
+#: templates/bagni/service_detail.html:11
+#: templates/bagni/service_detail.html:21
+#: templates/bagni/service_detail.html:40
+#: templates/bagni/service_detail.html:48
+msgid "with"
+msgstr "con"
 
 #: templates/bagni/service_detail.html:17
+msgid "service_detail_desc"
+msgstr "indirizzi e contatti dei bagni e degli stabilimenti balneari"
+
+#: templates/bagni/service_detail.html:26
 msgid "service_detail_header"
-msgstr "bagni e stabilimenti balneari con"
+msgstr "bagni e stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:18
+#: templates/bagni/service_detail.html:27
 msgid "service_detail_sub_header"
-msgstr "questo è l'elenco dei bagni e degli stabilimenti balneari con"
+msgstr "questo è l'elenco dei bagni e degli stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:19
+#: templates/bagni/service_detail.html:28
 msgid "service_detail_no_result"
 msgstr "Nessun bagno offre servizio di"
 
@@ -527,10 +531,16 @@ msgstr "Nessuna categoria di servizio"
 msgid "Service categories"
 msgstr "Categorie di servizi"
 
-#: views/search.py:53 views/search.py:60
+#: views/search.py:52 views/search.py:59
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
+
+#~ msgid "Near me"
+#~ msgstr "Vicino a me"
+
+#~ msgid "Clicca_su_un_servizio"
+#~ msgstr "Clicca su un servizio per selezionarlo"
 
 #~ msgid "Error in geocoding"
 #~ msgstr "Errore di geocodifica"

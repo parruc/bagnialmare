@@ -11,7 +11,7 @@ translator.register(models.Bagno, BagnoTranslationOptions)
 
 
 class ServiceTranslationOptions(TranslationOptions):
-    fields = ('name', 'description', 'slug',)
+    fields = ('name', 'description', 'aliases', 'seo_name', 'slug',)
 
 translator.register(models.Service, ServiceTranslationOptions)
 

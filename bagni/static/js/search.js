@@ -1,11 +1,11 @@
 $(function() {
 
-    $("#rootContainer").on("shown.bs.collapse", ".collapse", function () {
-        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down")
+    $("#rootContainer").on("show.bs.collapse", ".collapse", function () {
+        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-right').addClass("glyphicon-chevron-down");
     });
 
-    $("#rootContainer").on('hidden.bs.collapse', ".collapse", function () {
-        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right")
+    $("#rootContainer").on("hide.bs.collapse", ".collapse", function () {
+        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right");
     });
 
     $("#rootContainer").on('click', '.checkbox input', function(evt){
@@ -13,7 +13,7 @@ $(function() {
         var url = $("#filters").data("base-url") + $(this).data('facet-url');
         var title = $(title).html()
 
-        $.ajax({url:url, 
+        $.ajax({url:url,
                 success:function(response) {
                     $("body").removeClass("loading");
                     $("#rootContainer").html($(response).find("#rootContainer").html());

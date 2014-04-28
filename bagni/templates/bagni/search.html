@@ -3,6 +3,8 @@
 {% load l10n i18n query_string %}
 {% load batch from custom_filters %}
 
+{% block robot %}noindex follow{% endblock %}
+
 {% block content %}
 {% trans "what" as t_what %}
 {% trans "where" as t_where %}
@@ -35,7 +37,7 @@
         <form id="search-form"  role="form" action="{% url 'search' %}" method="get">
           <input type="hidden" name="coords" value="{{ search_results.coords }}" />
           {% for facet in search_results.active_facets %}
-            <input type="hidden" name="f" value="services:{{ facet.slug }}" />   
+            <input type="hidden" name="f" value="services:{{ facet.slug }}" />
           {% endfor %}
           <div class="col-xs-5">
               <label class="my-brown" for="search_q">{{ t_what|capfirst }}</label>
@@ -71,11 +73,11 @@
                 <h4 class="filter-result-service-category"
                     data-toggle="collapse"
                     data-target="#collapse_active">
-                  <span id="collapse_active"
+                  <span id="spancollapse_active"
                         class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
                     {{ t_active_filters|capfirst }}
                 </h4>
-                <div class="collapse in" >
+                <div id="collapse_active" class="collapse in" >
                   <ul class="list-group">
               {% endif %}
               <div class="checkbox filter-result-selected-checkbox-div">
@@ -97,9 +99,9 @@
                     <h4 class="filter-result-service-category"
                         data-toggle="collapse"
                         data-target="#collapse{{ forloop.counter }}">
-                      <span class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
+                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
                       {% filter capfirst %}
-                        {% trans facet_group.name %}
+                        {% trans facet_group.name|capfirst %}
                       {% endfilter %}
                     </h4>
                   </div>
@@ -280,9 +282,9 @@
                           data-toggle="collapse"
                           data-order="{{ facet_group.order }}"
                           data-target="#collapseInsideTab{{ forloop.counter }}">
-                        <span class="glyphicon glyphicon-chevron-down my-brown">
+                        <span id="spancollapseInsideTab{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown">
                         </span>
-                        {% filter capfirst %}{% trans facet_group.name %}{% endfilter %}
+                        {% filter capfirst %}{% trans facet_group.name|capfirst %}{% endfilter %}
                       </h4>
                     </div>
                     {% for facet in facet_group.facets %}

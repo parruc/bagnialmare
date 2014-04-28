@@ -32,7 +32,11 @@ body {
 #footer {
   height: 40px;
   padding-top: 10px
-  /*background-color: #f5f5f5;*/
+}
+
+#footer.hp-footer p
+{
+    color: #ffffff;
 }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
@@ -58,7 +62,7 @@ body {
 }
 
 #signup_form #id_email{
-    
+
 }
 
 .homepage-box-wrapper {
