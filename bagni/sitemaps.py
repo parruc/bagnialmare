@@ -13,11 +13,10 @@ class ServiceSitemap(LocalesSitemap):
 
 class BagnoStatic(StaticLocalesSitemap):
     def items(self):
-        return ['homepage', 'about-us', 'services', 'neighbourhoods', 'municipalities', 'districts']
+        return ['homepage', 'about-us', 'bagni']
 
 SITEMAPS = {
     'bagni' : BagnoSitemap,
-    'services' : ServiceSitemap,
     'bagni-static': BagnoStatic,
 }
 
