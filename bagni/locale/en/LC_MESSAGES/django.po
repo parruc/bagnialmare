@@ -62,19 +62,19 @@ msgstr "^neighbourhoods/$"
 
 #: urls.py:21
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
-msgstr "^comune/(?P<slug>[-\\w]+)/$"
+msgstr "^municipality/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:22
 msgid "^municipalities/$"
-msgstr "^comuni/$"
+msgstr "^municipalities/$"
 
 #: urls.py:23
 msgid "^district/(?P<slug>[-\\w]+)/$"
-msgstr "^provincia/(?P<slug>[-\\w]+)/$"
+msgstr "^district/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:24
 msgid "^districts/$"
-msgstr "^province/$"
+msgstr "^districts/$"
 
 #: urls.py:25
 msgid "^json/autocomplete/places$"
