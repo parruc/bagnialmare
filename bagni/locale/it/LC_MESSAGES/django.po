@@ -407,7 +407,7 @@ msgstr "questo è l'elenco dei bagni e degli stabilimenti balneari di"
 
 #: templates/bagni/search.html:8
 msgid "where"
-msgstr "dove"
+msgstr "vicino a"
 
 #: templates/bagni/search.html:9
 msgid "search"
