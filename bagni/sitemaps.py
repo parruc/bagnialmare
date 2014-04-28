@@ -1,9 +1,15 @@
-from models import *
+from models.bagni import Bagno
+from models.services import Service
+
 from common import LocalesSitemap, StaticLocalesSitemap
 
 class BagnoSitemap(LocalesSitemap):
     def items(self):
         return Bagno.objects.all()
+
+class ServiceSitemap(LocalesSitemap):
+    def items(self):
+        return Service.objects.all()
 
 class BagnoStatic(StaticLocalesSitemap):
     def items(self):
@@ -11,6 +17,7 @@ class BagnoStatic(StaticLocalesSitemap):
 
 SITEMAPS = {
     'bagni' : BagnoSitemap,
+    'services' : ServiceSitemap,
     'bagni-static': BagnoStatic,
 }
 
