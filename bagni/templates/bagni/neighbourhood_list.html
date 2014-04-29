@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+{% trans "neighbourhood" as t_neighbourhood %}
+{% trans "no_neighbourhood" as t_no_neighbourhood %}
+    <ul>
+        {% for neighbourhood in object_list %}
+            <li>
+            <a href="{{ neighbourhood.get_absolute_url }}"
+                title="{{ t_neighbourhood }} {{ neighbourhood.name }}">
+               {{ neighbourhood.name }}</a>
+            </li>
+        {% empty %}
+            <li>{{ t_no_neighbourhood }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+
+{% block title %}{% trans 'Neighbourhoods' %}{% endblock title %}
+
+{% block pagetitle %}{% trans 'Neighbourhoods' %}{% endblock pagetitle %}
