@@ -14,7 +14,7 @@ class Language(BaseModel):
         verbose_name_plural = _('Spoken languages')
         app_label = 'bagni'
 
-    description = models.TextField(max_length=2000)
+    description = models.TextField(max_length=2000, verbose_name=_("Description"))
 
 
 class Telephone(BaseModel):
@@ -25,7 +25,7 @@ class Telephone(BaseModel):
         verbose_name_plural = _('Telephone numbers')
         app_label = 'bagni'
 
-    number = models.CharField(max_length=100)
+    number = models.CharField(max_length=100, verbose_name=_("Number"))
     bagno = models.ForeignKey("Bagno", related_name="telephones", verbose_name=_("Bagno"),)
     def __unicode__(self):
         return self.name
@@ -49,6 +49,6 @@ class Image(BaseModel):
                                     upload_filename)
         return upload_path
 
-    description = models.TextField(max_length=2000, blank=True)
+    description = models.TextField(max_length=2000, blank=True, verbose_name=_("Description"))
     image = ImageField(upload_to=_define_filename, verbose_name=_("Image"),)
     bagno = models.ForeignKey("Bagno", related_name="images", verbose_name=_("Bagno"),)

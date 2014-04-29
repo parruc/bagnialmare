@@ -16,15 +16,15 @@ class Bagno(BaseModel):
         verbose_name_plural = _('Bagni')
         app_label = 'bagni'
 
-    description = RichTextField(max_length=2000)
-    number = models.CharField(max_length=30, blank=True)
-    languages = models.ManyToManyField("Language", blank=True, related_name='bagni')
-    services = models.ManyToManyField("Service", blank=True, related_name='bagni')
-    address = models.CharField(max_length=100, blank=True)
+    description = RichTextField(max_length=2000, verbose_name=_("Description"))
+    number = models.CharField(max_length=30, blank=True, verbose_name=_("Number"))
+    languages = models.ManyToManyField("Language", blank=True, related_name='bagni', verbose_name=_("Languages"))
+    services = models.ManyToManyField("Service", blank=True, related_name='bagni', verbose_name=_("Facilities"))
+    address = models.CharField(max_length=100, blank=True, verbose_name=_("Address"))
     neighbourhood = models.ForeignKey("Neighbourhood", null=True, related_name='bagni', verbose_name=_("Neighbourhood"), on_delete=django_models.SET_NULL)
-    mail = models.EmailField(max_length=50, blank=True)
-    site = models.URLField(max_length=75, blank=True)
-    point = models.PointField(null=True, blank=True)
+    mail = models.EmailField(max_length=50, blank=True, verbose_name=_("Mail"))
+    site = models.URLField(max_length=75, blank=True, verbose_name=_("Website"))
+    point = models.PointField(null=True, blank=True, verbose_name=_("Coordinates"))
 
     objects = models.GeoManager()
 

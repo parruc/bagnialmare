@@ -11,7 +11,8 @@ class BaseModel(models.Model):
         app_label = 'bagni'
         abstract = True
 
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100,
+                            verbose_name=_("Name"),)
     slug = autoslug.AutoSlugField(max_length=50,
                                   populate_from='name',
                                   verbose_name=_("Slug"),
