@@ -30,9 +30,7 @@ msgstr "Messaggio"
 
 #: views.py:42
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
-msgstr ""
-"Grazie per averci contattato, risponderemo al più presto all'indirizzo email "
-"fornitoci."
+msgstr "Grazie per averci contattato, risponderemo al più presto all'indirizzo email fornitoci."
 
 #: views.py:45
 #, fuzzy
@@ -65,11 +63,11 @@ msgstr "Invia il tuo messaggio"
 
 #: templates/contacts/form_popup.html:17
 msgid "Close"
-msgstr ""
+msgstr "Chiudi"
 
 #: templates/contacts/info.html:2
 msgid "contacts_main_text"
-msgstr "Piacere di conoscerti, siamo il team di bagnialmare.com . In questo sito vogliamo organizzare e rendere accessibili online tutte le informazioni sugli stabilimenti balneari della Riviera Adriatica. Siamo disposti a rispondere alle tue domande ed ascoltare i tuoi suggerimenti: usa la form sottostante per scriverci un messaggio"
+msgstr "Piacere di conoscerti, siamo il team di bagnialmare.com. In questo sito vogliamo organizzare e rendere accessibili online tutte le informazioni sugli stabilimenti balneari della Riviera Adriatica. Saremo lieti di rispondere alle tue domande ed ascoltare i tuoi suggerimenti: usa la form sottostante per scriverci un messaggio"
 
 #~ msgid ""
 #~ "Nice to meet you, we are the bagnialmare.com team. In this website we "
