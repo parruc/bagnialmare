@@ -32,7 +32,7 @@ def set_language(request):
                 redirect = reverse(r.url_name, args=r.args, kwargs=r.kwargs)
             except:
                 redirect = '/'
-            response = http.HttpResponsePermanentRedirect(redirect)
+            response = http.HttpResponseRedirect(redirect)
 
             if hasattr(request, 'session'):
                 request.session['django_language'] = lang_code
