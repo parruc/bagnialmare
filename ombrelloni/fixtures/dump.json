@@ -1,5 +1,6 @@
 [
 {
+<<<<<<< HEAD
   "pk": 5, 
   "model": "auth.user", 
   "fields": {
@@ -69,6 +70,448 @@
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
     "email": "marco.benvenuto1@gmail.com", 
     "date_joined": "2014-04-28T12:49:04Z"
+=======
+  "pk": 1, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "permission", 
+    "name": "permission", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 2, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "group", 
+    "name": "group", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 3, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "user", 
+    "name": "user", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 4, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "contenttype", 
+    "name": "content type", 
+    "app_label": "contenttypes"
+  }
+},
+{
+  "pk": 5, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "session", 
+    "name": "session", 
+    "app_label": "sessions"
+  }
+},
+{
+  "pk": 6, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "logentry", 
+    "name": "log entry", 
+    "app_label": "admin"
+  }
+},
+{
+  "pk": 7, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "migrationhistory", 
+    "name": "migration history", 
+    "app_label": "south"
+  }
+},
+{
+  "pk": 8, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "kvstore", 
+    "name": "kv store", 
+    "app_label": "thumbnail"
+  }
+},
+{
+  "pk": 9, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "bagno", 
+    "name": "Bagno", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 10, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "service", 
+    "name": "Service", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 11, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "image", 
+    "name": "Image", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 12, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "district", 
+    "name": "District", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 13, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "municipality", 
+    "name": "Municipality", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 14, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "language", 
+    "name": "Language", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 15, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "servicecategory", 
+    "name": "Service Category", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 16, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "site", 
+    "name": "site", 
+    "app_label": "sites"
+  }
+},
+{
+  "pk": 17, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "emailaddress", 
+    "name": "email address", 
+    "app_label": "account"
+  }
+},
+{
+  "pk": 18, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "emailconfirmation", 
+    "name": "email confirmation", 
+    "app_label": "account"
+  }
+},
+{
+  "pk": 19, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "manager", 
+    "name": "manager", 
+    "app_label": "managers"
+  }
+},
+{
+  "pk": 20, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "socialapp", 
+    "name": "social app", 
+    "app_label": "socialaccount"
+  }
+},
+{
+  "pk": 21, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "socialaccount", 
+    "name": "social account", 
+    "app_label": "socialaccount"
+  }
+},
+{
+  "pk": 22, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "socialtoken", 
+    "name": "social token", 
+    "app_label": "socialaccount"
+  }
+},
+{
+  "pk": 23, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "openidstore", 
+    "name": "open id store", 
+    "app_label": "openid"
+  }
+},
+{
+  "pk": 24, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "openidnonce", 
+    "name": "open id nonce", 
+    "app_label": "openid"
+  }
+},
+{
+  "pk": 25, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "manager", 
+    "name": "manager", 
+    "app_label": "authauth"
+  }
+},
+{
+  "pk": 26, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "telephone", 
+    "name": "Telephone number", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": 27, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "neighbourhood", 
+    "name": "Neighbourhood", 
+    "app_label": "bagni"
+  }
+},
+{
+  "pk": "06gyca3ioma99w0r6yarvjlgiff40g2b", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-14T10:44:40.843Z", 
+    "session_data": "OTNlMWI0OTNjNzA4OWQ0NzMwYWM3MDg5NTVmNTlmNDA1NTQ3NjdlZTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoxfQ=="
+  }
+},
+{
+  "pk": "1lisn3cupls44worzvkwb9kxn9xd5dor", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-02-08T15:12:47.076Z", 
+    "session_data": "M2Y2ODg1MzVkZTk2OTI3M2ZiOGQ0ZmE2MzBlZWQ3MzA3Zjg0NWFhNDqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ9kamFuZ29fbGFuZ3VhZ2VYAgAAAGl0VQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": "4luksshcrf1gpwabqe60gh8pldlv5jr9", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-12-13T01:56:57.374Z", 
+    "session_data": "NDEzZTExYjIwY2FmMTEyYjFjMWUyMTQ3MmZjYTVlNDc5NDYyYzYzZjqAAn1xAVUPZGphbmdvX2xhbmd1YWdlcQJYAgAAAGVucQNzLg=="
+  }
+},
+{
+  "pk": "7ipqzvv3486a8xzlho2rmqrkk6zidek9", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-27T20:10:50.709Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "7o2tlqvmdjtm8zips25aaxxjzckly2i8", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T16:43:58.869Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "989cfs8t62drwe0op6qwy41ysvw3mf1l", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T12:40:30.229Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "9z8qops3u90fvwnw9phhw5krrvmw2jhr", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-12-05T12:45:18.190Z", 
+    "session_data": "OWMzNzNhOTNjZjMzMDc2OTI1Njc1OWRiOGVkOTUzNjk2NWVjODMzYTqAAn1xAShVDV9hdXRoX3VzZXJfaWRLAVUSX2F1dGhfdXNlcl9iYWNrZW5kVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZFUPZGphbmdvX2xhbmd1YWdlcQJYAgAAAGVucQN1Lg=="
+  }
+},
+{
+  "pk": "d88w6zq1rrqq454sxqsu3qacotzpvwn8", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-02-14T17:20:10.078Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "f5at6y82rxgnef6lmlq967so5bsbnvxr", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-14T11:39:10.523Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "f5mf0qdryolj2djzvjkpktbnlbf1oifz", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-01-03T21:24:29.803Z", 
+    "session_data": "NTY4Nzg2NzM4ZWVjNTkzNTQyNmQ3ZTczMGYyNGM1MTZiZDhlZTIzMzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZFUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmRVDV9hdXRoX3VzZXJfaWRLAVUPZGphbmdvX2xhbmd1YWdlWAIAAABpdHECdS4="
+  }
+},
+{
+  "pk": "jgtvhg4ooy9hjxrbyyxqop2l1oc02fka", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-12-28T12:33:03.801Z", 
+    "session_data": "Mzg2MmZhMDhkYjY5Njc3NTI2ZTJmYzZiZjU4OTU2YmQxZjAzOWNjMTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ9kamFuZ29fbGFuZ3VhZ2VYAgAAAGVuVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": "jjy0fk6r5q0nx52cay8d1smwcnfwmuw2", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-01-29T21:50:33.001Z", 
+    "session_data": "ZjczNTdkMDdiMjQzOTYyOTkyMWZhNDFiZWNhNmZjN2M2YzQxMDlhNTqAAn1xAVUPZGphbmdvX2xhbmd1YWdlcQJYAgAAAGl0cQNzLg=="
+  }
+},
+{
+  "pk": "js8mpubfu2pi7kcu6laijpt5w1q9o7yb", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-18T08:03:15.299Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "nphw8dtt5j72dj6wst9ak5sahm4q46v9", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-12-05T11:36:23.842Z", 
+    "session_data": "OTg1MzNkY2M1ZmI5ZjFiYmRmYjAwMDdkNDU1ZTBhNTkxNDllY2YzYTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": "oej5e18bc0yuj6xn4ea9mk8radgtrlk4", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T13:41:03.362Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "qgs46u4o6b78yf7an6n98yrhddgat7f6", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-03-14T11:36:33.150Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "rh4u5xm12g790hc65dfboclb26xe62ah", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T16:36:26.418Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "ro745bm8dnzalk8l00xfiiy6jtuem22e", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T13:58:53.906Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "t5j3x8a4pm2wusehflo17t5q45u1bi04", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-13T14:50:18.749Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "tqm6cd3seswzt658tc75iad51tbbklor", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-07T18:53:30.092Z", 
+    "session_data": "OTNlMWI0OTNjNzA4OWQ0NzMwYWM3MDg5NTVmNTlmNDA1NTQ3NjdlZTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoxfQ=="
+  }
+},
+{
+  "pk": "u85xqbqfwtfhvwat0oi925pr8d3q9za7", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-02-13T01:30:23.470Z", 
+    "session_data": "NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ=="
+  }
+},
+{
+  "pk": "vt65y117s4vtjw7855lovy7kp1po08v7", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-04-17T15:51:57.216Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": "wkdtmyqqv7tju7waf3tfene33h6g5kcy", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-12-28T12:36:50.916Z", 
+    "session_data": "OTg1MzNkY2M1ZmI5ZjFiYmRmYjAwMDdkNDU1ZTBhNTkxNDllY2YzYTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": "wx8ld573tusontcg9d795wpu2frc931o", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-02-12T22:57:45.636Z", 
+    "session_data": "NTNhMDk2NGZkYTk2ZjU0MjdmY2EwMGQ2OTg4ZmEyN2IxNThjNzQzOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": 1, 
+  "model": "sites.site", 
+  "fields": {
+    "domain": "bagnialmare.com", 
+    "name": "bagnialmare.com"
+>>>>>>> e5d8517dc9945ffd4afc0576821afe5ab8a1264b
   }
 },
 {
@@ -476,6 +919,15 @@
   }
 },
 {
+  "pk": 45, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-03-21T00:48:28.333Z", 
+    "app_name": "socialaccount", 
+    "migration": "0012_auto__chg_field_socialtoken_token_secret"
+  }
+},
+{
   "pk": 46, 
   "model": "south.migrationhistory", 
   "fields": {
@@ -539,9 +991,10 @@
   }
 },
 {
-  "pk": 53, 
-  "model": "south.migrationhistory", 
+  "pk": 68, 
+  "model": "bagni.language", 
   "fields": {
+<<<<<<< HEAD
     "applied": "2014-04-17T13:39:23.044Z", 
     "app_name": "bagni", 
     "migration": "0027_auto__chg_field_service_name_it__chg_field_service_name__chg_field_ser"
@@ -599,6 +1052,20 @@
   }
 },
 {
+=======
+    "slug_en": "italian", 
+    "name_it": "Italian", 
+    "name": "Italian", 
+    "slug_it": "italian", 
+    "description_en": null, 
+    "description_it": null, 
+    "name_en": "Italian", 
+    "slug": "italian", 
+    "description": ""
+  }
+},
+{
+>>>>>>> e5d8517dc9945ffd4afc0576821afe5ab8a1264b
   "pk": 69, 
   "model": "bagni.language", 
   "fields": {
@@ -1748,6 +2215,7 @@
     "slug": "payment-methods", 
     "description": "Accepted forms of payment"
   }
+<<<<<<< HEAD
 },
 {
   "pk": 2179, 
@@ -74448,3 +74916,6 @@
   }
 }
 ]
+=======
+}
+>>>>>>> e5d8517dc9945ffd4afc0576821afe5ab8a1264b
