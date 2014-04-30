@@ -11,7 +11,7 @@
 
 
 {% block content %}
-{% cache 600 homepage_content %}
+{% cache 600 homepage_content LANGUAGE_CODE %}
   {% trans "home_heading" as t_home_heading %}
   {% trans "home_sub_heading" as t_home_sub_heading %}
   {% trans "what" as t_what %}

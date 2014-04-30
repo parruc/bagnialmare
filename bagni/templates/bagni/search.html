@@ -7,7 +7,7 @@
 {% block robot %}noindex, follow{% endblock %}
 
 {% block content %}
-{% cache 600 search request.GET.q request.GET.l request.GET.p search_results.active_facets %}
+{% cache 600 search request.GET.q request.GET.l request.GET.p search_results.active_facets LANGUAGE_CODE %}
 {% trans "what" as t_what %}
 {% trans "where" as t_where %}
 {% trans "search" as t_search %}
