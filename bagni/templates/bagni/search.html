@@ -101,7 +101,7 @@
                     <h4 class="filter-result-service-category"
                         data-toggle="collapse"
                         data-target="#collapse{{ forloop.counter }}">
-                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
+                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} facility-categoty-arrow"></span> 
                       {% filter capfirst %}
                         {% trans facet_group.name|capfirst %}
                       {% endfilter %}
@@ -284,7 +284,7 @@
                           data-toggle="collapse"
                           data-order="{{ facet_group.order }}"
                           data-target="#collapseInsideTab{{ forloop.counter }}">
-                        <span id="spancollapseInsideTab{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown">
+                        <span id="spancollapseInsideTab{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} my-brown">
                         </span>
                         {% filter capfirst %}{% trans facet_group.name|capfirst %}{% endfilter %}
                       </h4>
