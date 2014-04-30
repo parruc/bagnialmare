@@ -4,6 +4,112 @@
 
 {% block content %}
 
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
+        {{ form.name.errors }}
+        {{ form.name }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_number">{{ form.number.label }}:</label>
+        {{ form.number.errors }}
+        {{ form.number }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_address">{{ form.address.label }}:</label>
+        {{ form.address.errors }}
+        {{ form.address }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_languages">{{ form.languages.label }}:</label>
+        {{ form.languages.errors }}
+        {{ form.languages }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_neighbourhood">{{ form.neighbourhood.label }}:</label>
+        {{ form.neighbourhood.errors }}
+        {{ form.neighbourhood }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_site">{{ form.site.label }}:</label>
+        {{ form.site.errors }}
+        {{ form.site }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_mail">{{ form.mail.label }}:</label>
+        {{ form.mail.errors }}
+        {{ form.mail }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown {{ form.description_it.css_class }}" for="id_description_it">{{ form.description_it.label }}:</label>
+        {{ form.description_it.errors }}
+        {{ form.description_it }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown {{ form.description_en.css_class }}" for="id_description_en">{{ form.description_en.label }}:</label>
+        {{ form.description_en.errors }}
+        {{ form.description_en }}
+    </div>
+    <div class="form-group">
+        <label class="my-brown" for="id_point">{{ form.point.label }}:</label>
+        {{ form.point.errors }}
+        {{ form.point }}
+    </div>
+    {{ telephone_formset.management_form }}
+    {% for telephone_form in telephone_formset %}
+        <div class="form-group">
+            <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_name">{{ telephone_form.name.label }}:</label>
+            {{ telephone_form.name.errors }}
+            {{ telephone_form.name }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_number">{{ telephone_form.number.label }}:</label>
+            {{ telephone_form.number.errors }}
+            {{ telephone_form.number }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
+            {{ telephone_form.DELETE.errors }}
+            {{ telephone_form.DELETE }}
+        </div>
+        {% for telephone_field in telephone_form %}
+            {% if telephone_field.is_hidden %}
+                {{ telephone_field }}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {{ image_formset.management_form }}
+    {% for image_form in image_formset %}
+        <div class="form-group">
+            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_name">{{ image_form.name.label }}:</label>
+            {{ image_form.name.errors }}
+            {{ image_form.name }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_description">{{ image_form.description.label }}:</label>
+            {{ image_form.description.errors }}
+            {{ image_form.description }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_image">{{ image_form.image.label }}:</label>
+            {{ image_form.image.errors }}
+            {{ image_form.image }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_DELETE">{{ image_form.DELETE.label }}:</label>
+            {{ image_form.DELETE.errors }}
+            {{ image_form.DELETE }}
+        </div>
+        {% for image_field in image_form %}
+            {% if image_field.is_hidden %}
+                {{ image_field }}
+            {% endif %}
+        {% endfor %}
+
+    {% endfor %}
+</form>
+<!--
 <form method="post" enctype="multipart/form-data">{% csrf_token %}
     {% for field in form %}
         <div class="{{ field.field.css_class }}">
@@ -53,6 +159,7 @@
     {% endfor %}
     <input type="submit" value="Submit" />
 </form>
+-->
 {% endblock %}
 
 {% block specific_js %}

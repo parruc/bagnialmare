@@ -15,7 +15,7 @@ class ContactView(FormView):
     success_url = "/"
     submit_url = "."
     recipients = []
-
+    admin_emails = [email[1] for email in settings.ADMINS]
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
@@ -25,24 +25,23 @@ class ContactView(FormView):
         sender = form.cleaned_data['sender']
         from_email = "info@bagnialmare.com"
         bcc = []
-        recipients = []
-        admin_emails = [email[1] for email in settings.ADMINS]
+        
 
         if self.recipients:
             # If there is already a recipient put us in BCC
-            bcc = admin_emails
+            bcc = self.admin_emails
         else:
             #else we are the receivers directly
-            self.recipients = admin_emails
+            self.recipients = self.admin_emails
         try:
-            email = EmailMessage(subject, message, from_email,
-            recipients, bcc, headers={'Reply-To': sender})
+            email = EmailMessage(subject=subject, body=message,from_email=from_email,
+                                 to=self.recipients, bcc=bcc, headers={'Reply-To': sender})
             email.send()
             messages.add_message(self.request, messages.INFO,
                 _("Thanks for contacting us. We will asnwer you as soon as possible."))
         except:
             messages.add_message(self.request, messages.ERROR,
-                _("Error sending the mail: Contact me at \
+                _("Error sending the mail: Contact us at \
                    info at bagnialmare dot com to inform \
                    us about the error. Thanks"))
         return super(ContactView, self).form_valid(form)

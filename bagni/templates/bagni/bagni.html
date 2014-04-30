@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% load i18n %}
-
+{% load cache %}
 
 {% block pagetitle %}
     {% trans "bagni_page_pagetitle" as t_bagni_page_pagetitle %}
@@ -14,6 +14,7 @@
 {% endblock description %}
 
 {% block content %}
+{% cache 600 bagni %}
 {% trans "bagni_page_header" as t_bagni_page_header %}
 {% trans "bagni_page_sub_header_outside_link" as t_bagni_page_sub_header_outside_link %}
 {% trans "bagni_page_sub_header_inside_link" as t_bagni_page_sub_header_inside_link %}
@@ -63,5 +64,5 @@
       {% endfor %}
       </div>
   </div>
-
+{% endcache %}
 {% endblock %}

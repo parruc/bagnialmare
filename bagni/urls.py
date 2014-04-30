@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 urlpatterns = patterns(
     '',
     url(r'^$', views.HomepageView.as_view(), name="homepage",),
-    url(r'^about-us$', views.AboutUsView.as_view(), name="about-us",),
+    url(_(r'^about-us$'), views.AboutUsView.as_view(), name="about-us",),
     url(_(r'^bagni/$'), views.BagniView.as_view(), name="bagni",),
     url(_(r'^bagni/(?P<neighbourhood>[-\w]+)/(?P<slug>[-\w]+)/$'), views.BagnoView.as_view(), name="bagno"),
     url(_(r'^bagni/(?P<neighbourhood>[-\w]+)/(?P<slug>[-\w]+)/edit/$'), views.BagnoEdit.as_view(), name="bagno-edit"),

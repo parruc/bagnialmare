@@ -2,10 +2,12 @@
 
 {% load l10n i18n query_string %}
 {% load batch from custom_filters %}
+{% load cache %}
 
-{% block robot %}noindex follow{% endblock %}
+{% block robot %}noindex, follow{% endblock %}
 
 {% block content %}
+{% cache 600 search request.GET.q request.GET.l request.GET.p search_results.active_facets %}
 {% trans "what" as t_what %}
 {% trans "where" as t_where %}
 {% trans "search" as t_search %}
@@ -317,6 +319,7 @@
       <div class="modal-wheel"><!-- Place at bottom of page --></div>
     {% endif %}
   </div><!--wrapped-->
+{% endcache %}
 {% endblock %}
 
 {% block specific_js %}

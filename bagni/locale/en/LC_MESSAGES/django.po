@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-25 16:53+0200\n"
+"POT-Creation-Date: 2014-04-29 21:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,9 +108,41 @@ msgstr "BeachResort"
 msgid "Bagni"
 msgstr "BeachResorts"
 
+#: models/bagni.py:19 models/bagni_details.py:17 models/bagni_details.py:52
+msgid "Description"
+msgstr ""
+
+#: models/bagni.py:20 models/bagni_details.py:28
+msgid "Number"
+msgstr ""
+
+#: models/bagni.py:21
+msgid "Languages"
+msgstr "Spoken languages"
+
+#: models/bagni.py:22
+msgid "Facilities"
+msgstr "Facilities"
+
+#: models/bagni.py:23
+msgid "Address"
+msgstr ""
+
 #: models/bagni.py:24 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Neighbourhood"
+
+#: models/bagni.py:25
+msgid "Mail"
+msgstr ""
+
+#: models/bagni.py:26
+msgid "Website"
+msgstr "Website"
+
+#: models/bagni.py:27
+msgid "Coordinates"
+msgstr ""
 
 #: models/bagni_details.py:13
 msgid "Spoken language"
@@ -133,7 +165,11 @@ msgstr "Image"
 msgid "Images"
 msgstr "Images"
 
-#: models/base.py:17
+#: models/base.py:15
+msgid "Name"
+msgstr "Name"
+
+#: models/base.py:18
 msgid "Slug"
 msgstr "Slug"
 
@@ -154,7 +190,8 @@ msgstr "Municipality"
 msgid "Municipalities"
 msgstr "Municipalities"
 
-#: models/places.py:44
+#: models/places.py:44 templates/bagni/neighbourhood_list.html:21
+#: templates/bagni/neighbourhood_list.html:23
 msgid "Neighbourhoods"
 msgstr "Neighbourhoods"
 
@@ -228,12 +265,12 @@ msgid "website"
 msgstr "website"
 
 #: templates/bagni/bagno_contacts.html:8 templates/bagni/bagno_list.html:7
-#: templates/bagni/district_detail.html:8 templates/bagni/search.html:10
+#: templates/bagni/district_detail.html:8 templates/bagni/search.html:12
 #: templates/bagni/servicecategory_detail.html:6
 msgid "bagno"
 msgstr "beachresort"
 
-#: templates/bagni/bagno_detail.html:8 templates/bagni/search.html:20
+#: templates/bagni/bagno_detail.html:8 templates/bagni/search.html:22
 msgid "contact_button"
 msgstr "contact this structure"
 
@@ -313,11 +350,11 @@ msgstr ""
 "Contacts, facilities and addresses of more than 1000 beach resorts from "
 "Cattolica to Ferrara"
 
-#: templates/bagni/homepage.html:14 templates/bagni/search.html:7
+#: templates/bagni/homepage.html:14 templates/bagni/search.html:9
 msgid "what"
 msgstr "resort name or facility?"
 
-#: templates/bagni/homepage.html:15 templates/bagni/search.html:15
+#: templates/bagni/homepage.html:15 templates/bagni/search.html:17
 msgid "near_to"
 msgstr "near to"
 
@@ -329,7 +366,7 @@ msgstr "Show the facility list"
 msgid "home_show_facility"
 msgstr "show the facility list"
 
-#: templates/bagni/homepage.html:18 templates/bagni/search.html:16
+#: templates/bagni/homepage.html:18 templates/bagni/search.html:18
 #: views/search.py:41
 msgid "near_me"
 msgstr "near me"
@@ -398,63 +435,71 @@ msgstr "beach resorts of"
 msgid "neighbourhood_detail_sub_header"
 msgstr "here you can find the list of beach resorts of"
 
-#: templates/bagni/search.html:8
+#: templates/bagni/neighbourhood_list.html:6
+msgid "neighbourhood"
+msgstr "Neighbourhood"
+
+#: templates/bagni/neighbourhood_list.html:7
+msgid "no_neighbourhood"
+msgstr "No neighbourhood"
+
+#: templates/bagni/search.html:10
 msgid "where"
 msgstr "where"
 
-#: templates/bagni/search.html:9
+#: templates/bagni/search.html:11
 msgid "search"
 msgstr "search"
 
-#: templates/bagni/search.html:11
+#: templates/bagni/search.html:13
 msgid "filter_by_facility"
 msgstr "filter by facility"
 
-#: templates/bagni/search.html:12
+#: templates/bagni/search.html:14
 msgid "active_filters"
 msgstr "active filters"
 
-#: templates/bagni/search.html:13
+#: templates/bagni/search.html:15
 msgid "results_for"
 msgstr "results for"
 
-#: templates/bagni/search.html:14
+#: templates/bagni/search.html:16
 msgid "results"
 msgstr "results"
 
-#: templates/bagni/search.html:17
+#: templates/bagni/search.html:19
 msgid "filters"
 msgstr "filters"
 
-#: templates/bagni/search.html:18
+#: templates/bagni/search.html:20
 msgid "list_view"
 msgstr "list view"
 
-#: templates/bagni/search.html:19
+#: templates/bagni/search.html:21
 msgid "map_view"
 msgstr "map view"
 
-#: templates/bagni/search.html:21
+#: templates/bagni/search.html:23
 msgid "previous"
 msgstr "previous"
 
-#: templates/bagni/search.html:22
+#: templates/bagni/search.html:24
 msgid "next"
 msgstr "next"
 
-#: templates/bagni/search.html:23
+#: templates/bagni/search.html:25
 msgid "first"
 msgstr ""
 
-#: templates/bagni/search.html:24
+#: templates/bagni/search.html:26
 msgid "last"
 msgstr ""
 
-#: templates/bagni/search.html:25
+#: templates/bagni/search.html:27
 msgid "no_results_for_search"
 msgstr "no results for the given search"
 
-#: templates/bagni/search.html:227
+#: templates/bagni/search.html:229
 #, python-format
 msgid ""
 "\n"
@@ -463,11 +508,11 @@ msgstr ""
 "\n"
 "                      Page %(page)s of %(num_pages)s."
 
-#: templates/bagni/search.html:329
+#: templates/bagni/search.html:331
 msgid "search_pagetitle"
 msgstr "search results | bagnialmare.com"
 
-#: templates/bagni/search.html:334
+#: templates/bagni/search.html:336
 msgid "search_description"
 msgstr "search results | bagnialmare.com"
 
