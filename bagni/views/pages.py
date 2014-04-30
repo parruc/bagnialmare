@@ -11,10 +11,11 @@ class HomepageView(TemplateView):
     """
 
     template_name = "bagni/homepage.html"
+    queryset = ServiceCategory.objects.prefetch_related("services")
 
     def get_context_data(self, **kwargs):
         context = super(HomepageView, self).get_context_data(**kwargs)
-        context.update({'facility_categories': ServiceCategory.objects.all().order_by('order')})
+        context.update({'facility_categories': self.queryset.all().order_by('order')})
         return context
 
 

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% load cache %}
 {% load i18n %}
 
 {% block bodyclass %}homepage-body-class{% endblock %}
@@ -8,7 +9,9 @@
 <img alt="bagnialmare.com logo" src="{{ STATIC_URL }}img/logo_red.png" />
 {% endblock %}
 
+
 {% block content %}
+{% cache 600 homepage_content %}
   {% trans "home_heading" as t_home_heading %}
   {% trans "home_sub_heading" as t_home_sub_heading %}
   {% trans "what" as t_what %}
@@ -18,9 +21,6 @@
   {% trans "near_me" as t_near_me %}
   {% trans "home_search" as t_home_search %}
   {% trans "home_modal_header" as t_home_modal_header %}
-  {% comment %}
-    TODO: Da rifattorizzare in un template tag da usare sia qui che in search?
-  {% endcomment %}
 <div class="row homepage-first-row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
     <h1 class="homepage-headline" >{{ t_home_heading|capfirst }}</h1>
@@ -88,6 +88,7 @@
     </div>
   </div>
 </div>
+{% endcache %}
 {% endblock %}
 
 {% block specific_js %}
@@ -115,5 +116,3 @@
     </div>
   </div>
 {% endblock footer %}
-
-
