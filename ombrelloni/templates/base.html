@@ -45,13 +45,13 @@
       <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
     {% endcompress %}
   {% endcache %}
-        {% block extrahead %}
-            {{ form.media }}
-        {% endblock %}
+  {% block extrahead %}
+      {{ form.media }}
+  {% endblock %}
 </head>
 
 <body class="{% block bodyclass %}body-class{% endblock %}"
-          data-static-url="{{ STATIC_URL }}">
+      data-static-url="{{ STATIC_URL }}">
   <div id="wrap">
     <div class="{% block navbarclass %}{% endblock %} navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
