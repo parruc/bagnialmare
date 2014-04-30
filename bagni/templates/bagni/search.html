@@ -7,7 +7,7 @@
 {% block robot %}noindex, follow{% endblock %}
 
 {% block content %}
-{% cache 600 search request.GET.q request.GET.l request.GET.p search_results.active_facets %}
+{% cache 600 search request.GET.q request.GET.l request.GET.p search_results.active_facets LANGUAGE_CODE %}
 {% trans "what" as t_what %}
 {% trans "where" as t_where %}
 {% trans "search" as t_search %}
@@ -50,7 +50,6 @@
               <label class="my-brown" for="search_l">{{ t_where|capfirst }}</label>
             <input class="form-control" type="text" id="search_l"
                    name="l" value="{{ search_results.l }}"  />
-            <a href="#" id="set-my-position" data-position-label="{{ t_near_me }}">...{{ t_near_me }}!</a>
           </div>
 
           <div class="col-xs-2 search-page-search-button-div">
@@ -101,7 +100,7 @@
                     <h4 class="filter-result-service-category"
                         data-toggle="collapse"
                         data-target="#collapse{{ forloop.counter }}">
-                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
+                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} facility-categoty-arrow"></span> 
                       {% filter capfirst %}
                         {% trans facet_group.name|capfirst %}
                       {% endfilter %}
@@ -284,7 +283,7 @@
                           data-toggle="collapse"
                           data-order="{{ facet_group.order }}"
                           data-target="#collapseInsideTab{{ forloop.counter }}">
-                        <span id="spancollapseInsideTab{{ forloop.counter }}" class="glyphicon glyphicon-chevron-down my-brown">
+                        <span id="spancollapseInsideTab{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} my-brown">
                         </span>
                         {% filter capfirst %}{% trans facet_group.name|capfirst %}{% endfilter %}
                       </h4>
