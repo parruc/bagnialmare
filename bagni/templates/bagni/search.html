@@ -4,7 +4,7 @@
 {% load batch from custom_filters %}
 {% load cache %}
 
-{% block robot %}noindex follow{% endblock %}
+{% block robot %}noindex, follow{% endblock %}
 
 {% block content %}
 {% cache 600 search request.GET.q request.GET.l request.GET.p search_results.active_facets %}
