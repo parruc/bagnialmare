@@ -2175,7 +2175,7 @@
     "slug_en": "beach-racket-court", 
     "aliases_it": null, 
     "name_it": "racchettoni", 
-    "name": "beach rackets", 
+    "name": "beach rackets court", 
     "seo_name_en": "with beach racket court", 
     "image": "", 
     "slug_it": "racchettoni", 
@@ -2185,7 +2185,7 @@
     "seo_name_it": "con campo da racchettoni", 
     "description_it": "", 
     "aliases_en": null, 
-    "name_en": "beach rackets", 
+    "name_en": "beach rackets court", 
     "aliases": null, 
     "slug": "beach-racket-court", 
     "description": ""
@@ -4402,32 +4402,6 @@
   }
 },
 {
-  "pk": 2282, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "rent"
-    ], 
-    "slug_en": "beach-rackets", 
-    "aliases_it": null, 
-    "name_it": "racchettoni", 
-    "name": "beach rackets", 
-    "seo_name_en": "with beach rackets rental ", 
-    "image": "", 
-    "slug_it": "noleggio-racchettoni", 
-    "description_en": "", 
-    "seo_name": "with beach rackets rental ", 
-    "free": true, 
-    "seo_name_it": "con noleggio racchette", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "beach rackets", 
-    "aliases": null, 
-    "slug": "beach-rackets", 
-    "description": ""
-  }
-},
-{
   "pk": 2283, 
   "model": "bagni.service", 
   "fields": {
@@ -6273,10 +6247,10 @@
   "pk": 12784, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2426<br />\n\tfronte mare: 21<br />\n\tdocce aperte: 2<br />\n\twc: 4</p>", 
-    "point": "POINT (12.3627388830000005 44.2564755149999982)", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2426<br />\r\nfronte mare: 21<br />\r\ndocce aperte: 2<br />\r\nwc: 4</p>\r\n", 
+    "point": "POINT (12.3627388829999951 44.2564755149999982)", 
     "number": "183", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2426<br />\n\tfronte mare: 21<br />\n\tdocce aperte: 2<br />\n\twc: 4</p>", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2426<br />\r\nfronte mare: 21<br />\r\ndocce aperte: 2<br />\r\nwc: 4</p>\r\n", 
     "site": "", 
     "languages": [
       [
@@ -6286,55 +6260,9 @@
         "english"
       ]
     ], 
-    "services": [
-      [
-        "surf"
-      ], 
-      [
-        "dancing"
-      ], 
-      [
-        "catering"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "beach-basket"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "table-football"
-      ], 
-      [
-        "videogames"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "pedal-boats"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "canoes"
-      ]
-    ], 
+    "services": [], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 183", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "slug": "bagno-dallara", 
     "neighbourhood": [
@@ -6416,9 +6344,9 @@
   "model": "bagni.bagno", 
   "fields": {
     "description": "", 
-    "point": "POINT (12.3625272010000007 44.2568877049999969)", 
+    "point": "POINT (12.3625272009999971 44.2568877049999756)", 
     "number": "185", 
-    "description_en": null, 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -6430,7 +6358,7 @@
     ], 
     "services": [], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 185", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "slug": "bagno-conchiglia-lido", 
     "neighbourhood": [
@@ -6499,10 +6427,10 @@
   "pk": 12788, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3834<br />\n\tfronte mare: 35<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>", 
-    "point": "POINT (12.3622096779999993 44.2575059899999985)", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 3834<br />\r\nfronte mare: 35<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n", 
+    "point": "POINT (12.3622096780000081 44.2575059899999630)", 
     "number": "188", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3834<br />\n\tfronte mare: 35<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 3834<br />\r\nfronte mare: 35<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n", 
     "site": "", 
     "languages": [
       [
@@ -6512,62 +6440,25 @@
         "english"
       ]
     ], 
-    "services": [
-      [
-        "table-football"
-      ], 
-      [
-        "parking"
-      ], 
-      [
-        "bar"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "dancing"
-      ], 
-      [
-        "beach-basket"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "music"
-      ]
-    ], 
+    "services": [], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 188", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
-    "slug": "bagno-anna", 
+    "slug": "bagno-spiaggia-188", 
     "neighbourhood": [
       "cervia"
     ], 
-    "name": "Bagno Anna"
+    "name": "Bagno Spiaggia 188"
   }
 },
 {
   "pk": 12789, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 4077<br />\n\tfronte mare: 37<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>", 
-    "point": "POINT (12.3619979959999995 44.2579181799999972)", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 4077<br />\r\nfronte mare: 37<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n", 
+    "point": "POINT (12.3619979960000101 44.2579181799999972)", 
     "number": "190", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 4077<br />\n\tfronte mare: 37<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 4077<br />\r\nfronte mare: 37<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n", 
     "site": "", 
     "languages": [
       [
@@ -6577,43 +6468,9 @@
         "english"
       ]
     ], 
-    "services": [
-      [
-        "table-football"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "pedal-boats"
-      ], 
-      [
-        "bar"
-      ], 
-      [
-        "canoes"
-      ], 
-      [
-        "beach-racket-court"
-      ]
-    ], 
+    "services": [], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 190", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "slug": "bagno-anita", 
     "neighbourhood": [
@@ -6626,10 +6483,10 @@
   "pk": 12790, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2162<br />\n\tfronte mare: 18<br />\n\tdocce aperte: 6<br />\n\twc: 4</p>", 
-    "point": "POINT (12.3618921549999996 44.2581242750000001)", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2162<br />\r\nfronte mare: 18<br />\r\ndocce aperte: 6<br />\r\nwc: 4</p>\r\n", 
+    "point": "POINT (12.3618921549999978 44.2581242749999788)", 
     "number": "191", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2162<br />\n\tfronte mare: 18<br />\n\tdocce aperte: 6<br />\n\twc: 4</p>", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2162<br />\r\nfronte mare: 18<br />\r\ndocce aperte: 6<br />\r\nwc: 4</p>\r\n", 
     "site": "", 
     "languages": [
       [
@@ -6639,49 +6496,9 @@
         "english"
       ]
     ], 
-    "services": [
-      [
-        "table-football"
-      ], 
-      [
-        "baby-sitter"
-      ], 
-      [
-        "parking"
-      ], 
-      [
-        "games"
-      ], 
-      [
-        "bookstore"
-      ], 
-      [
-        "dancing"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "pedal-boats"
-      ], 
-      [
-        "fitness-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "bar"
-      ], 
-      [
-        "canoes"
-      ]
-    ], 
+    "services": [], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 191", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "slug": "bagno-ben", 
     "neighbourhood": [
@@ -33604,9 +33421,6 @@
         "veranda"
       ], 
       [
-        "beach-rackets"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -57484,7 +57298,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-anna"
+      "bagno-spiaggia-188"
     ], 
     "number": "0544 71625", 
     "name": "Telephone number", 
@@ -74445,6 +74259,84 @@
     "number": "338 2711706", 
     "name": "Telephone number", 
     "slug": "telephone-number-935"
+  }
+},
+{
+  "pk": 1, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso al bagno Dallara a Cervia", 
+    "bagno": [
+      "bagno-dallara"
+    ], 
+    "name": "Entrata del bagno", 
+    "image": "images/bagni/bagno-dallara/bagno-dallara.jpg", 
+    "slug": "entrata-del-bagno"
+  }
+},
+{
+  "pk": 2, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Insegna del bagno Conchiglia Lido di Cervia", 
+    "bagno": [
+      "bagno-conchiglia-lido"
+    ], 
+    "name": "Insegna", 
+    "image": "images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido.jpg", 
+    "slug": "insegna"
+  }
+},
+{
+  "pk": 3, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Ingresso del bagno conchiglia lido di Cervia", 
+    "bagno": [
+      "bagno-conchiglia-lido"
+    ], 
+    "name": "Ingresso", 
+    "image": "images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido_1.jpg", 
+    "slug": "ingresso"
+  }
+},
+{
+  "pk": 4, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso del bagno spiaggia 188 a Cervia", 
+    "bagno": [
+      "bagno-spiaggia-188"
+    ], 
+    "name": "Portale di ingresso", 
+    "image": "images/bagni/bagno-anna/bagno-anna.jpg", 
+    "slug": "portale-di-ingresso"
+  }
+},
+{
+  "pk": 5, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso al bagno Anita a Cervia", 
+    "bagno": [
+      "bagno-anita"
+    ], 
+    "name": "Portale di ingresso", 
+    "image": "images/bagni/bagno-anita/bagno-anita.jpg", 
+    "slug": "portale-di-ingresso-2"
+  }
+},
+{
+  "pk": 6, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso al bagno Ben a Cervia", 
+    "bagno": [
+      "bagno-ben"
+    ], 
+    "name": "Portale di ingresso", 
+    "image": "images/bagni/bagno-ben/bagno-ben.jpg", 
+    "slug": "portale-di-ingresso-3"
   }
 }
 ]
