@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
+import autoslug
 
 from sorl.thumbnail import ImageField
 
@@ -17,16 +18,42 @@ class Language(BaseModel):
     description = models.TextField(max_length=2000, verbose_name=_("Description"))
 
 
-class Telephone(BaseModel):
+class Telephone(models.Model):
     """ List of telephone numbers of the bagno
     """
+
     class Meta:
         verbose_name = _('Telephone number')
         verbose_name_plural = _('Telephone numbers')
         app_label = 'bagni'
 
+    TELEPHONE_NAME_CHOICES = (
+            ('Tel1', _("Cell")),
+            ('Tel1', _("Cell2")),
+            ('Tel1', _("Fix")),
+            ('Tel1', _("Winter")),
+            )
+
+    name = models.CharField(max_length=100,
+                            choices = TELEPHONE_NAME_CHOICES,
+                            verbose_name=_("Name"),)
+
+    slug = autoslug.AutoSlugField(max_length=50,
+                                  populate_from='name',
+                                  verbose_name=_("Slug"),
+                                  unique=True,
+                                  editable=True,)
+
     number = models.CharField(max_length=100, verbose_name=_("Number"))
+
     bagno = models.ForeignKey("Bagno", related_name="telephones", verbose_name=_("Bagno"),)
+
+    def natural_key(self):
+        return (self.slug,)
+
+    def get_by_natural_key(self, slug):
+        return self.get(slug=slug)
+
     def __unicode__(self):
         return self.name
 
