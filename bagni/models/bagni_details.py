@@ -36,7 +36,7 @@ class Telephone(models.Model):
 
     name = models.CharField(max_length=100,
                             choices = TELEPHONE_NAME_CHOICES,
-                            verbose_name=_("Name"),)
+                            verbose_name=_("Telephone"),)
 
     slug = autoslug.AutoSlugField(max_length=50,
                                   populate_from='name',
