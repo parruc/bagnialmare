@@ -11,10 +11,25 @@ from django.contrib.gis.forms import ModelForm, OSMWidget
 from django.utils import six
 
 from modeltranslation.translator import translator
+from sorl.thumbnail import get_thumbnail
 
 import logging
 logging.getLogger(__name__)
 
+class ThumbnailImageWidget(forms.FileInput):
+    """ A ImageField Widget for admin that shows a thumbnail. """
+
+    def __init__(self, attrs={}):
+        super(ThumbnailImageWidget, self).__init__(attrs)
+
+    def render(self, name, value, attrs=None):
+        output = []
+        if value and hasattr(value, 'url'):
+            thumb = get_thumbnail(value, 'x28', crop='center', format='PNG')
+            output.append('<a target="_blank" href="%s"><img src="%s" style="height: 28px;" /></a> '
+                                   % (value.url, thumb.url))
+        output.append(super(ThumbnailImageWidget, self).render(name, value, attrs))
+        return mark_safe(u''.join(output))
 
 class OmbrelloniOLWidget(OSMWidget):
     """
@@ -173,6 +188,7 @@ class ImageForm(TranslationModelForm):
                   'description',
                   'image',
                   ]
+        widgets = {'image': ThumbnailImageWidget(),}
 
 
 # These two are used with extra_views package
