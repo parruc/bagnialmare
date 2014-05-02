@@ -26,9 +26,9 @@
         </button>
         {% if can_edit %}
           <a href="{{ object.get_edit_url }}" class="btn btn-default">{{ t_modify_bagno }}</a>
-        {% else %}
+        {% endif %} 
+      {% else %}
           <a href="{% url 'account_signup' %}" class="btn btn-default">{{ t_are_you_the_manager }}</a>
-        {% endif %}
       {% endif %}
     </div>
   </div>
