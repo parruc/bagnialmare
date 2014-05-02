@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from collections import OrderedDict
 
 from django.core.exceptions import PermissionDenied
 from django.core.exceptions import ObjectDoesNotExist
@@ -44,6 +45,12 @@ class BagnoView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(BagnoView, self).get_context_data(**kwargs)
         context['can_edit'] = self.object.can_be_managed_by(self.request.user)
+        services_by_category = OrderedDict()
+        for s in self.object.services.order_by("category__order"):
+            if s.category not in services_by_category:
+                services_by_category[s.category] = []
+            services_by_category[s.category].append(s)
+        context['services_by_category'] = services_by_category
         return context
 
 

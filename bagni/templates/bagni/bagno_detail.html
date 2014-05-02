@@ -98,36 +98,33 @@
   <div class="row">
     <div class="col-xs-12">
         <h2 class="bagno-detail-sub-header">{{ t_facilities|title }}</h2>
-      {% if object.services.all %}
-        {% with object.services.all|dictsort:"category" as services %}
-          {% regroup services by category as categorized_services %}
-          {% for categorized_service in categorized_services %}
-            <div class="row">
-              <div class="col-xs-12">
-                <h4>
-                  {% filter capfirst %}
-                    {% trans categorized_service.grouper.name %}
-                  {% endfilter %}
-                </h4>
-              </div>
+      {% if object.services.count %}
+        {% for category,services in services_by_category.items %}
+          <div class="row">
+            <div class="col-xs-12">
+              <h4>
+                {% filter capfirst %}
+                  {% trans category.name %}
+                {% endfilter %}
+              </h4>
             </div>
-            {% for service_batch in categorized_service.list|batch:4 %}
-              <div class="row">
-                {% for service in service_batch %}
-                  <div class="col-xs-3">
-                    <p>
-                      <span class="glyphicon glyphicon-ok service-glyphicon"></span>
-                      <a href="{{ service.get_filtered_search_url }}"
-                          title="{{ t_facility }}: {% trans service.name %}">
-                         {% trans service.name %}
-                      </a>
-                    </p>
-                  </div>
-                {% endfor %}
-              </div>
-            {% endfor %}
+          </div>
+          {% for service_batch in services|batch:4 %}
+            <div class="row">
+              {% for service in service_batch %}
+                <div class="col-xs-3">
+                  <p>
+                    <span class="glyphicon glyphicon-ok service-glyphicon"></span>
+                    <a href="{{ service.get_filtered_search_url }}"
+                        title="{{ t_facility }}: {% trans service.name %}">
+                       {% trans service.name %}
+                    </a>
+                  </p>
+                </div>
+              {% endfor %}
+            </div>
           {% endfor %}
-        {% endwith %}
+        {% endfor %}
       {% else %}
         <p>
         <em>{{ t_facility_info_not_available }}</em>
@@ -147,7 +144,7 @@
     {% if object.number %}
         {{ object.number }} -
     {% endif %}
-    {{ object.name }}, 
+    {{ object.name }},
     {{ object|neighbourhood_municipality }}
 {% endblock pagetitle %}
 
