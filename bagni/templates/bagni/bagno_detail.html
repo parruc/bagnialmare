@@ -21,14 +21,15 @@
     <div class="col-xs-12">
       <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
       {% if object.is_managed %}
-        <button id="contact-form-button" class="btn btn-default" data-url="{{ object.get_contactform_url }}">
-          {{ t_contact_button }}
-        </button>
         {% if can_edit %}
-          <a href="{{ object.get_edit_url }}" class="btn btn-default">{{ t_modify_bagno }}</a>
+          <a href="{{ object.get_edit_url }}" class="btn btn-primary">{{ t_modify_bagno }}</a>
+        {% else %}
+          <button id="contact-form-button" class="btn btn-primary" data-url="{{ object.get_contactform_url }}">
+            {{ t_contact_button }}
+          </button>
         {% endif %} 
       {% else %}
-          <a href="{% url 'account_signup' %}" class="btn btn-default">{{ t_are_you_the_manager }}</a>
+          <a href="{% url 'account_signup' %}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
       {% endif %}
     </div>
   </div>
