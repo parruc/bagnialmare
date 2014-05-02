@@ -292,7 +292,7 @@ msgstr "contact this structure"
 
 #: templates/bagni/bagno_detail.html:9
 msgid "modify_bagno"
-msgstr "no beach resort"
+msgstr "modify your beach resort data"
 
 #: templates/bagni/bagno_detail.html:10
 msgid "are_you_the_manager"

@@ -58,7 +58,7 @@ class Telephone(models.Model):
         return self.name
 
 
-class Image(BaseModel):
+class Image(models.Model):
     """ Model used for the bagno images
         TODO: inline in admin form of bagno?
     """
@@ -67,9 +67,18 @@ class Image(BaseModel):
         verbose_name_plural = _('Images')
         app_label = 'bagni'
 
+    name = models.CharField(max_length=100,
+                            verbose_name=_("Title"),)
+
+    slug = autoslug.AutoSlugField(max_length=50,
+                                  populate_from='name',
+                                  verbose_name=_("Slug"),
+                                  unique=True,
+                                  editable=True,)
+
     def _define_filename(self, filename):
         extension = filename.split('.')[-1] or 'jpg'
-        upload_filename = self.bagno.slug + '.' + extension
+        upload_filename = self.slug + '.' + extension
         upload_base_path = "images/bagni"
         upload_path = "%s/%s/%s" % (upload_base_path,
                                     self.bagno.slug,
@@ -79,3 +88,13 @@ class Image(BaseModel):
     description = models.TextField(max_length=2000, blank=True, verbose_name=_("Description"))
     image = ImageField(upload_to=_define_filename, verbose_name=_("Image"),)
     bagno = models.ForeignKey("Bagno", related_name="images", verbose_name=_("Bagno"),)
+
+    def natural_key(self):
+        return (self.slug,)
+
+    def get_by_natural_key(self, slug):
+        return self.get(slug=slug)
+
+    def __unicode__(self):
+        return self.name
+

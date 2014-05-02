@@ -16,6 +16,8 @@ from sorl.thumbnail import get_thumbnail
 import logging
 logging.getLogger(__name__)
 
+IMAGE_THUMB_HEIGHT = 128 #in pixels
+
 class ThumbnailImageWidget(forms.FileInput):
     """ A ImageField Widget for admin that shows a thumbnail. """
 
@@ -25,9 +27,12 @@ class ThumbnailImageWidget(forms.FileInput):
     def render(self, name, value, attrs=None):
         output = []
         if value and hasattr(value, 'url'):
-            thumb = get_thumbnail(value, 'x28', crop='center', format='PNG')
-            output.append('<a target="_blank" href="%s"><img src="%s" style="height: 28px;" /></a> '
-                                   % (value.url, thumb.url))
+            thumb = get_thumbnail(value,
+                                  "x%d" % (IMAGE_THUMB_HEIGHT,),
+                                  crop='center',
+                                  format='PNG')
+            output.append('<a target="_blank" href="%s"><img src="%s" style="height: %dpx;" /></a> '
+                                   % (value.url, thumb.url, IMAGE_THUMB_HEIGHT,))
         output.append(super(ThumbnailImageWidget, self).render(name, value, attrs))
         return mark_safe(u''.join(output))
 
@@ -172,6 +177,9 @@ class TranslationModelForm(six.with_metaclass(TranslationModelFormMetaclass, Mod
                 css_class = "field-trans-%s" % field_name
                 setattr(field, "css_class", css_class)
 
+    def get_localized_field(self, field_name, lang_code):
+        return self.fields["%s_%s" % (field_name, lang_code,)]
+
 
 class TelephoneForm(TranslationModelForm):
     class Meta:
@@ -202,7 +210,7 @@ class ImageForm(TranslationModelForm):
 
 # These two are used by our own defined BagnoEdit view
 TelephoneFormSet = inlineformset_factory(Bagno, Telephone, form=TelephoneForm)
-ImageFormSet = inlineformset_factory(Bagno, Image, form=ImageForm)
+ImageFormSet = inlineformset_factory(Bagno, Image, form=ImageForm, max_num=2)
 
 class BagnoForm(TranslationModelForm):
 

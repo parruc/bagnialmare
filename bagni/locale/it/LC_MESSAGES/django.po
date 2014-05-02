@@ -296,7 +296,7 @@ msgstr "contattaci"
 
 #: templates/bagni/bagno_detail.html:9
 msgid "modify_bagno"
-msgstr "nessun bagno"
+msgstr "Modifica il tuo bagno"
 
 #: templates/bagni/bagno_detail.html:10
 msgid "are_you_the_manager"
