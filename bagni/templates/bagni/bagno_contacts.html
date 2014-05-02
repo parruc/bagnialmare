@@ -20,10 +20,14 @@
             {% for tel in object.telephones.all %}
               <p>{{ tel.name }}: {{ tel.number }}</p>
             {% endfor %}
+          {% endif %}
+          {% comment %}
+          secondo me e' meglio se non mostriamo messaggi che suggeriscano incompletezza - Barto
           {% else %}
           <b class="my-bold">{{ t_telephone_numbers }}:</b>
           <em>{{ t_not_yet_available }}</em>
           {% endif %}
+          {% endcomment %}
         </p>
         <p>
           {% if object.site %}
@@ -31,10 +35,14 @@
           <a href="{{ object.site }}"
               title="{{ t_bagno }} {{ t_website }}">
               {{ object.site }}</a>
+          {% endif %}
+          {% comment %}
+          Vedi sopra
           {% else %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>
             <em>{{ t_not_yet_available }}</em>
           {% endif %}
+          {% endcomment %}
         </p>
         {% include "contacts/form_popup.html" %}
       </div>
