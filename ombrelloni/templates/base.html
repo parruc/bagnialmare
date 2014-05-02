@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-{% load i18n compress %}
-{% load cache %}
+{% load i18n compress cache custom_templatetags %}
 
 
 {% trans "contact" as t_contact %}
@@ -17,6 +16,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
+
+  {% for lang in LANGUAGES %}
+    {% with lang.0 as lang_code %}
+      {% ifnotequal lang_code LANGUAGE_CODE %}
+          <link rel="alternate" hreflang="{{ lang_code }}" href="{% change_lang lang_code %}" title="{{ lang.1 }}">
+            {{ lang_code|upper }}
+        </li>
+      {% endifnotequal %}
+    {% endwith %}
+  {% endfor %}
+
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png">
 
   {% block explorer %}
@@ -71,11 +81,22 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-            <a href="{% url 'contact-form' %}"
-                title="{{ t_contact }}">
+              <a href="{% url 'contact-form' %}"
+                 title="{{ t_contact }}">
                 <strong>{{ t_contact|title }}</strong>
               </a>
             </li>
+            {% for lang in LANGUAGES %}
+              {% with lang.0 as lang_code %}
+                {% ifnotequal lang_code LANGUAGE_CODE %}
+                  <li>
+                    <a href="{% change_lang lang_code %}" title="{{ lang.1 }}">
+                      {{ lang_code|upper }}
+                    </a>
+                  </li>
+                {% endifnotequal %}
+              {% endwith %}
+            {% endfor %}
             <!--
             <li>
             <a href="{% url 'about-us' %}"

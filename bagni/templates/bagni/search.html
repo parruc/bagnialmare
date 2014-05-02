@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load l10n i18n query_string %}
+{% load l10n i18n custom_templatetags %}
 {% load batch from custom_filters %}
 {% load cache %}
 
@@ -100,7 +100,7 @@
                     <h4 class="filter-result-service-category"
                         data-toggle="collapse"
                         data-target="#collapse{{ forloop.counter }}">
-                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} facility-categoty-arrow"></span> 
+                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} facility-categoty-arrow"></span>
                       {% filter capfirst %}
                         {% trans facet_group.name|capfirst %}
                       {% endfilter %}
