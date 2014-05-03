@@ -296,7 +296,7 @@ msgstr "modify your beach resort data"
 
 #: templates/bagni/bagno_detail.html:10
 msgid "are_you_the_manager"
-msgstr ""
+msgstr "are you the manager?"
 
 #: templates/bagni/bagno_detail.html:11
 msgid "image"
