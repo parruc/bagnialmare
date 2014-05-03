@@ -29,7 +29,7 @@
           </button>
         {% endif %} 
       {% else %}
-          <a href="{% url 'account_signup' %}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
+        <a href="{% url 'account_signup' %}?selected={{ object.slug }}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
       {% endif %}
     </div>
   </div>

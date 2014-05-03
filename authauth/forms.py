@@ -30,7 +30,7 @@ class ManagerSignupForm(forms.ModelForm):
         m.privacy = self.cleaned_data['privacy']
         m.save()
 
-    def clean_required_bool(self, field_name):
+    def _clean_required_bool(self, field_name):
         data = self.cleaned_data[field_name]
         if not data:
             raise forms.ValidationError(
@@ -40,7 +40,7 @@ class ManagerSignupForm(forms.ModelForm):
         return data
 
     def clean_privacy(self):
-        return self.clean_required_bool('privacy')
+        return self._clean_required_bool('privacy')
 
     def clean_tos(self):
-        return self.clean_required_bool('tos')
+        return self._clean_required_bool('tos')
