@@ -18,9 +18,10 @@
 {% trans "results" as t_results %}
 {% trans "near_to" as t_near_to %}
 {% trans "near_me" as t_near_me %}
-{% trans "filters" as t_filters%}
+{% trans "filters" as t_filters %}
 {% trans "list_view" as t_list_view %}
 {% trans "map_view" as t_map_view %}
+{% trans "your_location" as t_your_location %}
 {% trans "contact_button" as t_contact_button %}
 {% trans "previous" as t_previous %}
 {% trans "next" as t_next %}
@@ -168,6 +169,18 @@
             {% if hits %}
               <div class="tab-pane" id="mapTab">
                 <ul id="bagniToBeMapped" class="hide">
+                {% if search_results.point %}
+                <li id="map_origin"
+                        data-x="{{ search_results.point.x|unlocalize }}"
+                        data-y="{{ search_results.point.y|unlocalize }}"
+                    {% if search_results.place %}
+                        data-name="{{ search_results.place }}"
+                    {% else %}
+                        data-name="{{ t_your_location }}"
+                    {% endif %}
+                    >
+                </li>
+                {% endif %}
                   {%  for hit in hits %}
                     {% if hit.point.x and hit.point.y %}
                       <li data-url= "{{ hit.get_absolute_url }}"

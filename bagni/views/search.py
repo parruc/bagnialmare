@@ -92,6 +92,7 @@ class SearchView(TemplateView):
         search_results['l'] = loc
         search_results['coords'] = coords
         search_results['place'] = place
+        search_results['point'] = point
         search_results['facets'] = facets
         search_results['active_facets'] = active_facets
         search_results['has_get'] = self.request.method == 'GET'
