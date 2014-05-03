@@ -20,7 +20,7 @@
 {{ t_bagni|title }}
 {% endblock title %}
 
-{% block pagetitle %}
+{% block pagetitle %}{% spaceless %}
 {% trans 'bagni' as t_bagni %}
 {{ t_bagni|title }}
-{% endblock pagetitle %}
+{% endspaceless %}{% endblock pagetitle %}

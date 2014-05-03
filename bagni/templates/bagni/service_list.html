@@ -8,7 +8,7 @@
     <ul>
         {% for service in object_list %}
             <li>
-            <a href="{{ service.get_absolute_url }}" 
+            <a href="{{ service.get_absolute_url }}"
                 title="{{ t_facility }}: {% trans service.name %}">
                 {% trans service.name %}
               </a>
@@ -24,8 +24,8 @@
 {{ t_facilities|capfirst }}
 {% endblock title %}
 
-{% block pagetitle %}
+{% block pagetitle %}{% spaceless %}
 {% trans 'facilities' as t_facilities %}
 {{ t_facilities|capfirst }}
-{% endblock pagetitle %}
+{% endspaceless %}{% endblock pagetitle %}
 

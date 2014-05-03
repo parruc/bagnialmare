@@ -28,4 +28,4 @@
 
 {% block title %}{{ object.name }}{% endblock title %}
 
-{% block pagetitle %}{{ object.name }}{% endblock pagetitle %}
+{% block pagetitle %}{% spaceless %}{{ object.name }}{% endspaceless %}{% endblock pagetitle %}

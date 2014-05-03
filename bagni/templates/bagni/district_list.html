@@ -20,7 +20,7 @@
 {{ t_districts|capfirst }}
 {% endblock title %}
 
-{% block pagetitle %}
+{% block pagetitle %}{% spaceless %}
 {% trans 'districts' as t_districts %}
 {{ t_districts|capfirst }}
-{% endblock pagetitle %}
+{% endspaceless %}{% endblock pagetitle %}

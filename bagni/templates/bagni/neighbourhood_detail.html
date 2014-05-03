@@ -2,23 +2,23 @@
 
 {% load i18n %}
 
-{% block pagetitle %}
+{% block pagetitle %}{% spaceless %}
     {% trans "neighbourhood_detail_pagetitle" as t_neighbourhood_detail_pagetitle %}
     {{ t_neighbourhood_detail_pagetitle|capfirst }} {{ object.name}}
-{% endblock pagetitle %}
+{% endspaceless %}{% endblock pagetitle %}
 
 
-{% block description %}
+{% block description %}{% spaceless %}
     {% trans "neighbourhood_detail_desc" as t_neighbourhood_detail_desc %}
     {{ t_neighbourhood_detail_desc|capfirst }} {{ object.name}}.
-{% endblock description %}
+{% endspaceless %}{% endblock description %}
 
 {% block content %}
 {% trans "neighbourhood_detail_header" as t_neighbourhood_detail_header %}
 {% trans "neighbourhood_detail_sub_header" as t_neighbourhood_detail_sub_header %}
 {% comment %}
     Bagni a -neighbourhood.name-
-    Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari di -neighbourhood.name-. 
+    Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari di -neighbourhood.name-.
 {% endcomment %}
   <div class="row">
       <div class="col-xs-12">

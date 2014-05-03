@@ -17,18 +17,15 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
 
+  {% cache 600 base_lang_link %}
   {% for lang in LANGUAGES %}
     {% with lang.0 as lang_code %}
-      {% ifnotequal lang_code LANGUAGE_CODE %}
-          <link rel="alternate" hreflang="{{ lang_code }}" href="{% change_lang lang_code %}" title="{{ lang.1 }}">
-            {{ lang_code|upper }}
-        </li>
-      {% endifnotequal %}
+      <link rel="alternate" hreflang="{{ lang_code }}" href="{% change_lang lang_code %}" title="{{ lang.1 }}" />
     {% endwith %}
   {% endfor %}
+  {% endcache %}
 
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png">
-
   {% block explorer %}
     <!--[if IE]>
         <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/>

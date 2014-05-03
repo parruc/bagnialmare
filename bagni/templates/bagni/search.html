@@ -328,10 +328,10 @@
 {% endblock specific_js %}
 
 
-{% block pagetitle %}
+{% block pagetitle %}{% spaceless %}
 {% trans "search_pagetitle" as t_search_pagetitle %}
 {{ t_search_pagetitle|capfirst }}
-{% endblock pagetitle %}
+{% endspaceless %}{% endblock pagetitle %}
 
 {% block description %}
 {% trans "search_description" as t_search_description %}{{ t_search_description }}{% endblock description %}

@@ -102,12 +102,15 @@
 </script>
 {% endblock specific_js %}
 
-{% block pagetitle %}
-{% trans "homepage_title" as t_homepage_title %}
-{{ t_homepage_title|capfirst }}
-{% endblock pagetitle %}
+{% block pagetitle %}{% spaceless %}
+  {% trans "homepage_title" as t_homepage_title %}
+  {{ t_homepage_title|capfirst }}
+{% endspaceless %}{% endblock pagetitle %}
 
-{% block description %}{% trans "homepage_description" as t_homepage_description %}{{ t_homepage_description|capfirst }}{% endblock description %}
+{% block description %}{% spaceless %}
+  {% trans "homepage_description" as t_homepage_description %}
+  {{ t_homepage_description|capfirst }}
+{% endspaceless %}{% endblock description %}
 
 {% block footer %}
   <div id="footer" class="hp-footer">

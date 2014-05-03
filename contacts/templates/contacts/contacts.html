@@ -17,8 +17,15 @@
 {% endblock content %}
 
 
-{% block pagetitle %}{% trans "contacts_pagetitle" as t_contacts_pagetitle %}{{ t_contacts_pagetitle|capfirst }}{% endblock %}
+{% block pagetitle %}{% spaceless %}
+  {% trans "contacts_pagetitle" as t_contacts_pagetitle %}
+  {{ t_contacts_pagetitle|capfirst }}
+{% endspaceless %}{% endblock %}
 
-{%block description %}{% trans "contacts_page_description" as t_contacts_page_description %}{{ t_contacts_page_description }}{% endblock %}
+
+{% block description %}{% spaceless %}
+  {% trans "contacts_page_description" as t_contacts_page_description %}
+  {{ t_contacts_page_description }}
+{% endspaceless %}{% endblock %}
 
 {% block keywords %}{% trans "Contacts" %}, {{ block.super }}{% endblock %}

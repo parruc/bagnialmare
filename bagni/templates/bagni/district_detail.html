@@ -26,11 +26,11 @@
 {% endblock content %}
 
 {% block title %}
-{% trans "district" as t_district %} 
+{% trans "district" as t_district %}
 {{ t_district|capfirst }} {{ object.name }}
 {% endblock title %}
 
-{% block pagetitle %}
-{% trans "district" as t_district %} 
+{% block pagetitle %}{% spaceless %}
+{% trans "district" as t_district %}
 {{ t_district|capfirst }} {{ object.name }}
-{% endblock pagetitle %}
+{% endspaceless %}{% endblock pagetitle %}
