@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-03 20:52+0200\n"
+"POT-Creation-Date: 2014-05-05 16:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -368,50 +368,53 @@ msgstr "districts"
 msgid "home_heading"
 msgstr "All the info you need about the beach resorts in Riviera Adriatica"
 
-#: templates/bagni/homepage.html:16
-msgid "home_sub_heading"
-msgstr ""
-"Contacts, facilities and addresses of more than 1000 beach resorts from "
-"Cattolica to Ferrara"
-
-#: templates/bagni/homepage.html:17 templates/bagni/search.html:11
+#: templates/bagni/homepage.html:16 templates/bagni/search.html:11
 msgid "what"
 msgstr "resort name or facility?"
 
-#: templates/bagni/homepage.html:18 templates/bagni/search.html:19
+#: templates/bagni/homepage.html:17 templates/bagni/search.html:19
 msgid "near_to"
 msgstr "near to"
 
-#: templates/bagni/homepage.html:19
+#: templates/bagni/homepage.html:18
 msgid "home_facility_tooltip"
 msgstr "Show the facility list"
 
-#: templates/bagni/homepage.html:20
+#: templates/bagni/homepage.html:19
 msgid "home_show_facility"
 msgstr "show the facility list"
 
-#: templates/bagni/homepage.html:21 templates/bagni/search.html:20
+#: templates/bagni/homepage.html:20 templates/bagni/search.html:20
 #: views/search.py:41
 msgid "near_me"
 msgstr "near me"
 
-#: templates/bagni/homepage.html:22
+#: templates/bagni/homepage.html:21
 msgid "home_search"
 msgstr "search"
 
-#: templates/bagni/homepage.html:23
+#: templates/bagni/homepage.html:22
 msgid "home_modal_header"
 msgstr "Click on a facility to select it"
 
-#: templates/bagni/homepage.html:86
+#: templates/bagni/homepage.html:28
+msgid ""
+"Contacts, facilities and addresses of more than <a "
+"href='%(search_url)s'>1000 beach resorts</a> from Cattolica to Ferrara\n"
+"      "
+msgstr ""
+"Contacts, facilities and addresses of more than <a "
+"href='%(search_url)s'>1000 beach resorts</a> from Cattolica to Ferrara"
+
+#: templates/bagni/homepage.html:89
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/homepage.html:106
+#: templates/bagni/homepage.html:109
 msgid "homepage_title"
 msgstr "bagnialmare: beach resorts of Italy"
 
-#: templates/bagni/homepage.html:111
+#: templates/bagni/homepage.html:114
 msgid "homepage_description"
 msgstr ""
 "contacts, facilities and addresses of more than 1000 Italian beach resorts "
@@ -473,7 +476,7 @@ msgstr "where"
 
 #: templates/bagni/search.html:13
 msgid "search"
-msgstr "search"
+msgstr "Search"
 
 #: templates/bagni/search.html:15
 msgid "filter_by_facility"
@@ -601,6 +604,11 @@ msgstr "Facility categories"
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Cant find place '%s', sorting by relevance"
+
+#~ msgid "home_sub_heading"
+#~ msgstr ""
+#~ "Contacts, facilities and addresses of more than 1000 beach resorts from "
+#~ "Cattolica to Ferrara"
 
 #~ msgid "^services/$"
 #~ msgstr "^facilities/$"

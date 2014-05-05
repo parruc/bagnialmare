@@ -5,6 +5,7 @@
 {% trans "contact" as t_contact %}
 {% trans "about_us" as t_about_us %}
 {% trans "are_you_manager" as t_are_you_manager %}
+{% trans "search" as t_search %}
 
 {% load url from future %}
 
@@ -81,6 +82,12 @@
               <a href="{% url 'contact-form' %}"
                  title="{{ t_contact }}">
                 <strong>{{ t_contact|title }}</strong>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'search' %}"
+                 title="{{ t_search }}">
+                <strong>{{ t_search }}</strong>
               </a>
             </li>
             {% for lang in LANGUAGES %}

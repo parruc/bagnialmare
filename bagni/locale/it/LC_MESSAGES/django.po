@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-03 20:52+0200\n"
+"POT-Creation-Date: 2014-05-05 16:58+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -370,52 +370,55 @@ msgstr "città"
 
 #: templates/bagni/homepage.html:15
 msgid "home_heading"
-msgstr "tutte le informazioni che cercate sui bagni della Riviera Adriatica"
+msgstr "Tutte le informazioni che cercate sui bagni della Riviera Adriatica"
 
-#: templates/bagni/homepage.html:16
-msgid "home_sub_heading"
-msgstr ""
-"Contatti, servizi e indirizzi di oltre 1000 stabilimenti balneari da "
-"Cattolica a Ferrara"
-
-#: templates/bagni/homepage.html:17 templates/bagni/search.html:11
+#: templates/bagni/homepage.html:16 templates/bagni/search.html:11
 msgid "what"
 msgstr "bagno o servizio?"
 
-#: templates/bagni/homepage.html:18 templates/bagni/search.html:19
+#: templates/bagni/homepage.html:17 templates/bagni/search.html:19
 msgid "near_to"
 msgstr "vicino a"
 
-#: templates/bagni/homepage.html:19
+#: templates/bagni/homepage.html:18
 msgid "home_facility_tooltip"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:20
+#: templates/bagni/homepage.html:19
 msgid "home_show_facility"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:21 templates/bagni/search.html:20
+#: templates/bagni/homepage.html:20 templates/bagni/search.html:20
 #: views/search.py:41
 msgid "near_me"
 msgstr "qui vicino"
 
-#: templates/bagni/homepage.html:22
+#: templates/bagni/homepage.html:21
 msgid "home_search"
 msgstr "cerca"
 
-#: templates/bagni/homepage.html:23
+#: templates/bagni/homepage.html:22
 msgid "home_modal_header"
 msgstr "fai click su un servizio per selezionarlo"
 
-#: templates/bagni/homepage.html:86
+#: templates/bagni/homepage.html:28
+msgid ""
+"Contacts, facilities and addresses of more than <a "
+"href='%(search_url)s'>1000 beach resorts</a> from Cattolica to Ferrara\n"
+"      "
+msgstr ""
+"Contatti, servizi e indirizzi di oltre <a href='%(search_url)s'>1000 "
+"stabilimenti balneari</a> da Cattolica a Ferrara"
+
+#: templates/bagni/homepage.html:89
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/homepage.html:106
+#: templates/bagni/homepage.html:109
 msgid "homepage_title"
 msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
 
-#: templates/bagni/homepage.html:111
+#: templates/bagni/homepage.html:114
 msgid "homepage_description"
 msgstr ""
 "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, "
@@ -480,7 +483,7 @@ msgstr "vicino a"
 
 #: templates/bagni/search.html:13
 msgid "search"
-msgstr "cerca"
+msgstr "Cerca"
 
 #: templates/bagni/search.html:15
 msgid "filter_by_facility"
@@ -608,6 +611,11 @@ msgstr "Categorie di servizi"
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
+
+#~ msgid "home_sub_heading"
+#~ msgstr ""
+#~ "Contatti, servizi e indirizzi di oltre 1000 stabilimenti balneari da "
+#~ "Cattolica a Ferrara"
 
 #~ msgid "^services/$"
 #~ msgstr "^servizi/$"

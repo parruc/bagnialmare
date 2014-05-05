@@ -13,7 +13,6 @@
 {% block content %}
 {% cache 600 homepage_content LANGUAGE_CODE %}
   {% trans "home_heading" as t_home_heading %}
-  {% trans "home_sub_heading" as t_home_sub_heading %}
   {% trans "what" as t_what %}
   {% trans "near_to" as t_near_to %}
   {% trans "home_facility_tooltip" as t_home_facility_tooltip %}
@@ -21,10 +20,14 @@
   {% trans "near_me" as t_near_me %}
   {% trans "home_search" as t_home_search %}
   {% trans "home_modal_header" as t_home_modal_header %}
+  {% url 'search' as search_url %}
 <div class="row homepage-first-row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
-    <h1 class="homepage-headline" >{{ t_home_heading|capfirst }}</h1>
-    <p class="homepage-sub-headline">{{ t_home_sub_heading|capfirst }}</p>
+    <h1 class="homepage-headline" >{{ t_home_heading }}</h1>
+    <p class="homepage-sub-headline">
+      {% blocktrans %}Contacts, facilities and addresses of more than <a href='{{ search_url }}'>1000 beach resorts</a> from Cattolica to Ferrara
+      {% endblocktrans %}
+    </p>
     <form id="search-form" class="col-xs-12 homepage-form" action="{% url 'search' %}" method="get">
       <input type="hidden" name="coords" value="" />
       <div class="col-md-5 homepage-input-div">
