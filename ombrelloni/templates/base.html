@@ -27,26 +27,35 @@
   {% endcache %}
 
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png">
-  {% block explorer %}
-    <!--[if IE]>
-        <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/>
-    <![endif]-->
-  {% endblock %}
+  <!--[if IE]>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/>
+  <![endif]-->
 
   {% cache 600 base_static %}
+    {% compress css %}
+      <link href="{{ STATIC_URL }}css/fonts.css" rel="stylesheet" type="text/css"/>
+      <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
+    {% endcompress %}
+
+    <!--[if IE]>
+      {% compress js %}
+        <script type='text/javascript' src="{{ STATIC_URL }}js/html5shiv.js"></script>
+        <script type='text/javascript' src="{{ STATIC_URL }}js/respond.js"></script>
+      {% endcompress %}
+      
+      {% compress css %}
+        <link href="{{ STATIC_URL }}css/ie.css" rel="stylesheet" />
+      {% endcompress %}
+    <![endif]-->
+
     {% compress js %}
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
-    {% endcompress %}
-
-    {% compress css %}
-      <link href="{{ STATIC_URL }}css/google-fonts.css" rel="stylesheet" type="text/css"/>
-      <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
-      <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
-      <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
-      <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
     {% endcompress %}
   {% endcache %}
 
