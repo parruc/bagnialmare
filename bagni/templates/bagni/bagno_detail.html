@@ -58,25 +58,19 @@
           <div class="carousel-inner">
             {% with object.images.all as bagno_images %}
               {% for bagno_image in bagno_images %}
-                {% if forloop.first %}
-                  <div class="item active">
+                  <div class="item{% if forloop.first %} active{% endif %}">
                       <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
                   </div>
-                {% else %}
-                  <div class="item">
-                      <img src="{{ bagno_image.image.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
-                  </div>
-                {% endif %}
               {% endfor %}
               <!-- Controls -->
-              <a class="left carousel-control" href="#bagno-image-carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#bagno-image-carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
             {% endwith %}
           </div>
+          <a class="left carousel-control" href="#bagno-image-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#bagno-image-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
       {% else %}
         <div class="no-images-wrapper-div">
