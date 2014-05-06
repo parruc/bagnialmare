@@ -63,4 +63,4 @@ msgstr ""
 
 #: templates/contacts/info.html:2
 msgid "contacts_main_text"
-msgstr "Nice to meet you, we are the bagnialmare.com team. In this website we want to organise all the information about the beach resorts in the Riviera Romagnola to make it accessible and useful. We are happy to answer your questions and listen to your suggestions. Use the form below to send us a message"
+msgstr "Nice to meet you, we are the bagnialmare.com team. In this website we want to organise all the information about the beach resorts in the Riviera Adriatica to make it accessible and useful. We are happy to answer your questions and listen to your suggestions. Use the form below to send us a message"
