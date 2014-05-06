@@ -472,7 +472,7 @@ msgstr "No neighbourhood"
 
 #: templates/bagni/search.html:12
 msgid "where"
-msgstr "where"
+msgstr "near to"
 
 #: templates/bagni/search.html:13
 msgid "search"
