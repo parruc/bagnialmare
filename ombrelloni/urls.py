@@ -35,6 +35,8 @@ urlpatterns += i18n_patterns(
 
     url(_(r'^contacts/'), include('contacts.urls')),
 
+    # Authauth rewrites signup view
+    url(_(r'^accounts/'), include('authauth.urls')),
     # Authentication initial path
     url(_(r'^accounts/'), include('allauth.urls')),
 )

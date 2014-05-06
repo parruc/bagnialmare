@@ -73,6 +73,13 @@ class Bagno(BaseModel):
                     languages=self.index_languages(),
                     )
 
+    def get_complete_name(self):
+        res = self.name
+        if self.number:
+            res += " - n. %s" % self.number
+        res += " - %s" % self.address
+        return res
+
     @models.permalink
     def get_absolute_url(self):
         return ("bagno", [self.neighbourhood.slug, self.slug])

@@ -20,13 +20,15 @@
 {% trans "sign_in" as t_sign_in %}
 {% trans "accetto i" as t_accept %}
 {% trans "close" as t_close %}
+{% trans "choose_neighbourhood" as t_choose_neighbourhood %}
+{% trans "choose_bagno" as t_choose_bagno %}
 
 
 <div class="row">
 <div class="col-xs-8 col-xs-offset-2">
 <h1>{{ t_are_you_manager|title }}</h1>
 
-<h2>{{ t_account_signup_introi|capfirst }}</h2>
+<h2>{{ t_account_signup_intro|capfirst }}</h2>
 
 <p>
   <a href="{{ login_url }}" title="{{ t_sign_up }}">
@@ -42,7 +44,25 @@
         <div class="form-group">
             <label class="my-brown" for="id_bagni">{{ form.bagni.label }}:</label>
             {{ form.bagni.errors }}
-            {{ form.bagni }}
+            <select id="id_neighbourhood" name="neighbourhood"> 
+                <option value="nochoice" selected>
+                    -- {{ t_choose_neighbourhood }} --
+                </option>
+              {% for neighbourhood in select_neighbourhood %}
+                <option value="{{ neighbourhood.0 }}"
+                  {% if pre_selected.0 == neighbourhood.0 %}
+                      selected
+                  {% endif %}
+                >
+                  {{ neighbourhood.1 }}
+                </option>
+              {% endfor %}
+            </select>
+            <select id="id_bagni" name="bagno">
+                <option value="nochoice" selected>
+                    -- {{ t_choose_bagno }} --
+                </option>
+            </select>
         </div>
         <div class="form-group">
             <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
@@ -135,4 +155,33 @@
 
 {% endblock %}
 
+{% block specific_js %}
+{% trans "choose_bagno" as t_choose_bagno %}
+<script type="text/javascript">
+    $(function(){
+            {% if pre_selected %}
+                var pre_selected_neighbourhood = {{ pre_selected.0 }};
+                var pre_selected_bagno = {{ pre_selected.1 }};
+            {% else %}
+                var pre_selected_neighbourhood = False;
+                var pre_selected_bagno = False;
+            {% endif %}
+            $("#id_neighbourhood").change(function(){
+                var neighbourhood_id = $("#id_neighbourhood option:selected").val();
+                $.getJSON("/en/json/neighbourhood/" + neighbourhood_id, function(data){
+                    $("#id_bagni").empty();
+                    $("#id_bagni").append('<option value="undefined">-- {{ t_choose_bagno }} --</option>');
+                    $.each(data['items'], function(index, value){
+                        var html_str = '<option value="' + 
+                                             value[0] + 
+                                            '">' +
+                                             value[1] +
+                                             '</option>';
+                        $("#id_bagni").append(html_str);
+                    });
+                });
+            }).trigger("change");
+        });
+</script>
+{% endblock specific_js %}
 

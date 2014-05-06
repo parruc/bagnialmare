@@ -24,4 +24,6 @@ urlpatterns = patterns(
     url(_(r'^districts/$'), views.DistrictsView.as_view(), name="districts"),
     url(_(r'^json/autocomplete/places$'), views.JsonAutocompletePlaces.as_view(), name="json-autocomplete-places"),
     url(_(r'^json/autocomplete/searchterms$'), views.JsonAutocompleteSearchterms.as_view(), name="json-autocomplete-searchterms"),
+    url(_(r'^json/neighbourhood/(?P<id>\d+)/$'), views.JsonBagniInNeighbourhood.as_view(), name="json-bagni-neighbourhood"),
+    url(_(r'^json/bbox/(?P<x1>[\.\-\+\d]+)/(?P<y1>[\.\-\+\d]+)/(?P<x2>[\.\-\+\d]+)/(?P<y2>[\.\-\+\d]+)$'), views.JsonSearchBoundingBox.as_view(), name="json-search-bbox"),
 )
