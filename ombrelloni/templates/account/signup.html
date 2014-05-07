@@ -45,15 +45,11 @@
             <label class="my-brown" for="id_bagni">{{ form.bagni.label }}:</label>
             {{ form.bagni.errors }}
             <select id="id_neighbourhood" name="neighbourhood"> 
-                <option value="nochoice" selected>
+                <option value="nochoice">
                     -- {{ t_choose_neighbourhood }} --
                 </option>
               {% for neighbourhood in select_neighbourhood %}
-                <option value="{{ neighbourhood.0 }}"
-                  {% if pre_selected.0 == neighbourhood.0 %}
-                      selected
-                  {% endif %}
-                >
+                <option value="{{ neighbourhood.0 }}">
                   {{ neighbourhood.1 }}
                 </option>
               {% endfor %}
@@ -159,15 +155,17 @@
 {% trans "choose_bagno" as t_choose_bagno %}
 <script type="text/javascript">
     $(function(){
-            {% if pre_selected %}
-                var pre_selected_neighbourhood = {{ pre_selected.0 }};
-                var pre_selected_bagno = {{ pre_selected.1 }};
-            {% else %}
-                var pre_selected_neighbourhood = False;
-                var pre_selected_bagno = False;
-            {% endif %}
+            var neighbourhood_id = 0;
+            var pre_selected_neighbourhood = "-1";
+            var pre_selected_bagno = "-1";
             $("#id_neighbourhood").change(function(){
-                var neighbourhood_id = $("#id_neighbourhood option:selected").val();
+                $("#id_neighbourhood option").each(function(){
+                    if($(this).prop("selected")){
+                        if($(this).val() != "nochoice"){
+                            neighbourhood_id = $(this).val();
+                        }
+                    }
+                });
                 $.getJSON("/en/json/neighbourhood/" + neighbourhood_id, function(data){
                     $("#id_bagni").empty();
                     $("#id_bagni").append('<option value="undefined">-- {{ t_choose_bagno }} --</option>');
@@ -179,8 +177,28 @@
                                              '</option>';
                         $("#id_bagni").append(html_str);
                     });
+                    $("#id_bagni option").each(function(){
+                        if($(this).val() == pre_selected_bagno){
+                            $(this).prop("selected", true);
+                            pre_selected_bagno = "-1";
+                        }else{
+                            $(this).prop("selected", false);
+                        }
+                    });
                 });
-            }).trigger("change");
+            });
+            {% if pre_selected %}
+                pre_selected_neighbourhood = "{{ pre_selected.0 }}";
+                pre_selected_bagno = "{{ pre_selected.1 }}";
+                $("#id_neighbourhood option").each(function(){
+                    if($(this).attr("value") == pre_selected_neighbourhood){
+                        $(this).prop("selected", true);
+                    }else{
+                        $(this).prop("selected", false);
+                    }
+                });
+                $("#id_neighbourhood").trigger("change");
+            {% endif %}
         });
 </script>
 {% endblock specific_js %}
