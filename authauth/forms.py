@@ -29,6 +29,7 @@ class ManagerSignupForm(forms.ModelForm):
     def signup(self, request, user):
         user.first_name = self.cleaned_data['name']
         user.last_name = self.cleaned_data['surname']
+        user.save()
         m = Manager.objects.create(user=user)
         m.bagni = self.cleaned_data['bagni']
         m.privacy = self.cleaned_data['privacy']
