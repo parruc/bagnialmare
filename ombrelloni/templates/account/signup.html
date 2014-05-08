@@ -54,11 +54,21 @@
                 </option>
               {% endfor %}
             </select>
-            <select id="id_bagni" name="bagno">
+            <select id="id_bagni" name="bagni">
                 <option value="nochoice" selected>
                     -- {{ t_choose_bagno }} --
                 </option>
             </select>
+            {% comment %}
+            <select id="id_bagni" name="bagni">
+                <option value="nochoice" selected>
+                    -- {{ t_choose_bagno }} --
+                </option>
+                <option value="13827">
+                    Bagno Test
+                </option>
+            </select>
+            {% endcomment %}
         </div>
         <div class="form-group">
             <label class="my-brown" for="id_name">{{ form.name.label }}:</label>

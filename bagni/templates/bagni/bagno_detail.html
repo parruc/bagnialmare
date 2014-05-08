@@ -31,6 +31,9 @@
       {% else %}
         {% if not user.is_authenticated %}
           <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
+        {% comment %}
+          <a href="{% url 'account_signup' %}?selected={{ object.pk }}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
+        {% endcomment %}
         {% endif %}
       {% endif %}
     </div>
