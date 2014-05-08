@@ -333,7 +333,7 @@ msgstr "informazioni non disponibili"
 
 #: templates/bagni/bagno_detail.html:152
 msgid "bagno_detail_description"
-msgstr "informazioni, indirizzo e serivizi del bagno"
+msgstr "informazioni, indirizzo e servizi del bagno"
 
 #: templates/bagni/bagno_edit.html:170
 msgid "Save"
