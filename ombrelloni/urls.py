@@ -35,6 +35,8 @@ urlpatterns += i18n_patterns(
 
     url(_(r'^contacts/'), include('contacts.urls')),
 
+    #exclude logout confirmation step
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
     # Authauth rewrites signup view
     url(_(r'^accounts/'), include('authauth.urls')),
     # Authentication initial path

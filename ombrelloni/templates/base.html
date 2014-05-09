@@ -6,6 +6,10 @@
 {% trans "about_us" as t_about_us %}
 {% trans "are_you_manager" as t_are_you_manager %}
 {% trans "search" as t_search %}
+{% trans "login" as t_login %}
+{% trans "logout" as t_logout %}
+{% trans "edit" as t_edit %}
+{% trans "account" as t_account %}
 
 {% load url from future %}
 
@@ -99,6 +103,34 @@
                 <strong>{{ t_search }}</strong>
               </a>
             </li>
+            {% if user.is_authenticated %}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ t_account|capfirst }}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                {% for bagno in user.manager.bagni.all %}
+                <li>
+                <a href="{{ bagno.get_edit_url }}"
+                    title="{{ t_edit }}">
+                    <strong>{{ t_edit|capfirst }} {{ bagno.name }}</strong>
+                  </a>
+                </li>
+                {% endfor %}
+                <li>
+                  <a href="{% url 'account_logout' %}"
+                    title="{{ t_logout }}">
+                    <strong>{{ t_logout|capfirst }}</strong>
+                  </a>
+                </li>
+              </ul>
+            </li>
+              {% else %}
+              <li>
+                <a href="{% url 'account_login' %}"
+                 title="{{ t_login }}">
+                <strong>{{ t_login|capfirst }}</strong>
+                </a>
+              </li>
+              {% endif %}
             {% for lang in LANGUAGES %}
               {% with lang.0 as lang_code %}
                 {% ifnotequal lang_code LANGUAGE_CODE %}
