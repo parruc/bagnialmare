@@ -141,9 +141,6 @@
 {% endblock specific_js %}
 
 {% block pagetitle %}
-    {% if object.number %}
-        {{ object.number }} -
-    {% endif %}
     {{ object.name }},
     {{ object|neighbourhood_municipality }}
 {% endblock pagetitle %}

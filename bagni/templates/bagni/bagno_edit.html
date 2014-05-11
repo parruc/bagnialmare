@@ -6,167 +6,172 @@
 
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as LANGUAGE_CODE %}
-
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-
-    <div class="form-group">
-        <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
-        {{ form.name.errors }}
-        {{ form.name }}
-    </div>
-    <div class="form-group">
-        <label class="my-brown" for="id_number">{{ form.number.label }}:</label>
-        {{ form.number.errors }}
-        {{ form.number }}
-    </div>
-    <div class="form-group">
-        <label class="my-brown" for="id_address">{{ form.address.label }}:</label>
-        {{ form.address.errors }}
-        {{ form.address }}
-    </div>
-    <div class="form-group">
-        <label class="my-brown" for="id_languages">{{ form.languages.label }}:</label>
-        {{ form.languages.errors }}
-        {{ form.languages }}
-    </div>
-    <div class="form-group">
-        <label class="my-brown" for="id_neighbourhood">{{ form.neighbourhood.label }}:</label>
-        {{ form.neighbourhood.errors }}
-        {{ form.neighbourhood }}
-    </div>
-    <div class="form-group">
-        <label class="my-brown" for="id_site">{{ form.site.label }}:</label>
-        {{ form.site.errors }}
-        {{ form.site }}
-    </div>
-    <div class="form-group">
-        <label class="my-brown" for="id_mail">{{ form.mail.label }}:</label>
-        {{ form.mail.errors }}
-        {{ form.mail }}
-    </div>
-    {% comment %}
-    Questo è il modo di rendere un campo traducibile con una tab selection
-    dentro un form.
-    E' importante rispettare la gerarchia per cui:
-    -+ ul.nav .nav-tabs -> relizza il tabbing
-    -+ div.tab-content  -> contiene gli elementi da navigare con i tab
-     |----+ div.tab-pane  - e' uno dei singoli tab visualizzati
-          |----+ div.form-group -> deve essere diverso per ogni tab-pane
-    {% endcomment %}
-    <ul class="nav nav-tabs">
-      {% for lang in LANGUAGES %}
-      <li
-        {% if lang|first == LANGUAGE_CODE %}
-        class="active"
-        {% endif %}
-      >
-        <a href="#trans_description_{{ lang|first }}" data-toggle="tab">{{ lang|last }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    <div class="tab-content">
-        {% for lang in LANGUAGES %}
-          {% if lang|first == LANGUAGE_CODE %}
-            <div class="tab-pane fade in active" id="trans_description_{{ lang|first }}">
-          {% else %}
-            <div class="tab-pane fade" id="trans_description_{{ lang|first }}">
-          {% endif %}
+<div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+        <h1>Edit bagno</h1>
+        <hr>
+        <form method="post" enctype="multipart/form-data" role="form">
+            {% csrf_token %}
             <div class="form-group">
-          {% if lang|first == "it" %}
-            <label class="my-brown" for="id_description_it">{{ form.description_it.label }}:</label>
-            {{ form.description_it.errors }}
-            {{ form.description_it }}
-          {% elif lang|first == "en" %}
-            <label class="my-brown" for="id_description_en">{{ form.description_en.label }}:</label>
-            {{ form.description_en.errors }}
-            {{ form.description_en }}
-          {% endif %}
-            </div><!-- .form-group -->
-          </div> <!-- .tab-pane -->
-        {% endfor %}
-    </div> <!-- tab-content -->
-    {% comment %}
-    Qui finisce il campo tradotto
-    {% endcomment %}
-    <hr />
-    {{ telephone_formset.management_form }}
-    {% for telephone_form in telephone_formset %}
-        <div class="form-group">
-            <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_name">{{ telephone_form.name.label }}:</label>
-            {{ telephone_form.name.errors }}
-            {{ telephone_form.name }}
-        </div>
-        <div class="form-group">
-            <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_number">{{ telephone_form.number.label }}:</label>
-            {{ telephone_form.number.errors }}
-            {{ telephone_form.number }}
-        </div>
-        <div class="form-group">
-            <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
-            {{ telephone_form.DELETE.errors }}
-            {{ telephone_form.DELETE }}
-        </div>
-        {% for telephone_field in telephone_form %}
-            {% if telephone_field.is_hidden %}
-                {{ telephone_field }}
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
-    <hr />
-    {{ image_formset.management_form }}
-    {% for image_form in image_formset %}
-        <div class="form-group">
-            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_name">{{ image_form.name.label }}:</label>
-            {{ image_form.name.errors }}
-            {{ image_form.name }}
-        </div>
-        <div class="form-group">
-            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_description">{{ image_form.description.label }}:</label>
-            {{ image_form.description.errors }}
-            {{ image_form.description }}
-        </div>
-        <div class="form-group">
-            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_image">{{ image_form.image.label }}:</label>
-            {{ image_form.image.errors }}
-            {{ image_form.image }}
-        </div>
-        <div class="form-group">
-            <label class="my-brown" for="id_images_{{ forloop.counter0 }}_DELETE">{{ image_form.DELETE.label }}:</label>
-            {{ image_form.DELETE.errors }}
-            {{ image_form.DELETE }}
-        </div>
-        {% for image_field in image_form %}
-            {% if image_field.is_hidden %}
-                {{ image_field }}
-            {% endif %}
-        {% endfor %}
-
-    {% endfor %}
-    <hr />
-    <div class="form-group">
-        <label class="my-brown" for="id_point">{{ form.point.label }}:</label>
-        {{ form.point.errors }}
-        {{ form.point }}
-    </div>
-    <hr />
-    <div class="form-group">
-        {% with form.services|dictsort:"attrs.cat_name" as options %}
-            {% regroup options by attrs.cat_name as groups %}
-            {% for group in groups %}
-                <h3 class="service-group">{{ group.grouper }}</h3>
-                <div>
-                    <ul class="services">
-                        {% for option in group.list %}
-                            <li class="service col-lg-4">{{ option }}</li>
-                        {% endfor %}
-                    </ul>
+                <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
+                {{ form.name.errors }}
+               <input id="id_name" class="form-control" name="name" type="text" value="{{ form.name.value }}" />
+            </div>
+            <div class="form-group">
+                <label class="my-brown" for="id_number">{{ form.number.label }}:</label>
+                {{ form.number.errors }}
+                <input id="id_number" class="form-control" name="number" type="text" value="{{ form.number.value }}" />
+            </div>
+            <div class="form-group">
+                <label class="my-brown" for="id_address">{{ form.address.label }}:</label>
+                {{ form.address.errors }}
+                <input id="id_address" class="form-control" name="address" type="text" value="{{ form.address.value }}" />
+            </div>
+            <div class="form-group">
+                <label class="my-brown" for="id_languages">{{ form.languages.label }}:</label>
+                {{ form.languages.errors }}
+                {{ form.languages }}
+            </div>
+            <div class="form-group">
+                <label class="my-brown" for="id_neighbourhood">{{ form.neighbourhood.label }}:</label>
+                {{ form.neighbourhood.errors }}
+                {{ form.neighbourhood }}
+            </div>
+            <div class="form-group">
+                <label class="my-brown" for="id_site">{{ form.site.label }}:</label>
+                {{ form.site.errors }}
+                <input id="id_site" class="form-control" name="site" type="text" value="{{ form.site.value }}" />
+            </div>
+            <div class="form-group">
+                <label class="my-brown" for="id_mail">{{ form.mail.label }}:</label>
+                {{ form.mail.errors }}
+                <input id="id_email" class="form-control" name="email" type="text" value="{{ form.email.value }}" />
+            </div>
+            {% comment %}
+            Questo è il modo di rendere un campo traducibile con una tab selection
+            dentro un form.
+            E' importante rispettare la gerarchia per cui:
+            -+ ul.nav .nav-tabs -> relizza il tabbing
+            -+ div.tab-content  -> contiene gli elementi da navigare con i tab
+             |----+ div.tab-pane  - e' uno dei singoli tab visualizzati
+                  |----+ div.form-group -> deve essere diverso per ogni tab-pane
+            {% endcomment %}
+            <ul class="nav nav-tabs">
+              {% for lang in LANGUAGES %}
+              <li
+                {% if lang|first == LANGUAGE_CODE %}
+                class="active"
+                {% endif %}
+              >
+                <a href="#trans_description_{{ lang|first }}" data-toggle="tab">{{ lang|last }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            <div class="tab-content">
+                {% for lang in LANGUAGES %}
+                  {% if lang|first == LANGUAGE_CODE %}
+                    <div class="tab-pane fade in active" id="trans_description_{{ lang|first }}">
+                  {% else %}
+                    <div class="tab-pane fade" id="trans_description_{{ lang|first }}">
+                  {% endif %}
+                    <div class="form-group">
+                  {% if lang|first == "it" %}
+                    <label class="my-brown" for="id_description_it">{{ form.description_it.label }}:</label>
+                    {{ form.description_it.errors }}
+                    {{ form.description_it }}
+                  {% elif lang|first == "en" %}
+                    <label class="my-brown" for="id_description_en">{{ form.description_en.label }}:</label>
+                    {{ form.description_en.errors }}
+                    {{ form.description_en }}
+                  {% endif %}
+                    </div><!-- .form-group -->
+                  </div> <!-- .tab-pane -->
+                {% endfor %}
+            </div> <!-- tab-content -->
+            {% comment %}
+            Qui finisce il campo tradotto
+            {% endcomment %}
+            <hr>
+            {{ telephone_formset.management_form }}
+            {% for telephone_form in telephone_formset %}
+                <div class="form-group">
+                    <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_name">{{ telephone_form.name.label }}:</label>
+                    {{ telephone_form.name.errors }}
+                    {{ telephone_form.name }}
                 </div>
+                <div class="form-group">
+                    <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_number">{{ telephone_form.number.label }}:</label>
+                    {{ telephone_form.number.errors }}
+                    {{ telephone_form.number }}
+                </div>
+                <div class="form-group">
+                    <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
+                    {{ telephone_form.DELETE.errors }}
+                    {{ telephone_form.DELETE }}
+                </div>
+                {% for telephone_field in telephone_form %}
+                    {% if telephone_field.is_hidden %}
+                        {{ telephone_field }}
+                    {% endif %}
+                {% endfor %}
+                <hr>
             {% endfor %}
-        {% endwith %}
+            {{ image_formset.management_form }}
+            {% for image_form in image_formset %}
+                <div class="form-group">
+                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_name">{{ image_form.name.label }}:</label>
+                    {{ image_form.name.errors }}
+                    {{ image_form.name }}
+                </div>
+                <div class="form-group">
+                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_description">{{ image_form.description.label }}:</label>
+                    {{ image_form.description.errors }}
+                    {{ image_form.description }}
+                </div>
+                <div class="form-group">
+                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_image">{{ image_form.image.label }}:</label>
+                    {{ image_form.image.errors }}
+                    {{ image_form.image }}
+                </div>
+                <div class="form-group">
+                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_DELETE">{{ image_form.DELETE.label }}:</label>
+                    {{ image_form.DELETE.errors }}
+                    {{ image_form.DELETE }}
+                </div>
+                {% for image_field in image_form %}
+                    {% if image_field.is_hidden %}
+                        {{ image_field }}
+                    {% endif %}
+                {% endfor %}
+
+            {% endfor %}
+            <hr>
+            <div class="form-group">
+                <label class="my-brown" for="id_point">{{ form.point.label }}:</label>
+                {{ form.point.errors }}
+                {{ form.point }}
+            </div>
+            <hr>
+                {% with form.services|dictsort:"attrs.cat_name" as options %}
+                    {% regroup options by attrs.cat_name as groups %}
+                    {% for group in groups %}
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3 class="service-group">{{ group.grouper }}</h3>
+                            </div>
+                                {% for option in group.list %}
+                                <div class="col-xs-4">
+                                    {{ option }}
+                                </div>
+                                {% endfor %}
+                        </div>
+                    {% endfor %}
+                {% endwith %}
+            <hr>
+            <button class="btn btn-lg btn-primary" type="submit" >{% trans "Save" %}</button>
+        </form>
     </div>
-    <button class="btn btn-primary" type="submit" >{% trans "Save" %}</button>
-</form>
+</div>
 {% endblock %}
 
 {% block specific_js %}
