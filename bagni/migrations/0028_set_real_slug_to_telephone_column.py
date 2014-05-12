@@ -21,6 +21,7 @@ class Migration(DataMigration):
 
     def backwards(self, orm):
         "Write your backwards methods here."
+        raise RuntimeError("Cannot reverse this migration.")
 
     models = {
         'bagni.bagno': {

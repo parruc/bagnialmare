@@ -28,10 +28,10 @@ class Telephone(models.Model):
         app_label = 'bagni'
 
     TELEPHONE_NAME_CHOICES = (
-            ('Tel1', _("Cell")),
-            ('Tel1', _("Cell2")),
-            ('Tel1', _("Fix")),
-            ('Tel1', _("Winter")),
+            ('mob', _("Mobile number")),
+            ('tel', _("Telephone number")),
+            ('win', _("Winter number")),
+            ('fax', _("Fax number")),
             )
 
     name = models.CharField(max_length=100,

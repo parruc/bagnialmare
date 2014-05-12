@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-from south.utils import datetime_utils as datetime
-from south.db import db
 from south.v2 import DataMigration
-from django.db import models
+
 
 class Migration(DataMigration):
 
@@ -11,9 +9,26 @@ class Migration(DataMigration):
         # Note: Don't use "from appname.models import ModelName". 
         # Use orm.ModelName to refer to models in this application,
         # and orm['appname.ModelName'] for models in other applications.
+        names_map = {"Telephone number": "tel",
+                     "Fax number": "fax",
+                     "Mobile number": "mob",
+                     "Winter number": "win",
+                     "Davide": "mob",
+                     "Bagno 96": "tel",
+                     "Guido": "tel",
+                     "Bagno 97": "tel",
+                     "Oriano": "mob", }
+        for tel in orm.Telephone.objects.all():
+            if tel.name in names_map:
+                tel.name = names_map[tel.name]
+                tel.save()
+            else:
+                import ipdb; ipdb.set_trace()
 
     def backwards(self, orm):
         "Write your backwards methods here."
+        #raise RuntimeError("Cannot reverse this migration.")
+        pass
 
     models = {
         'bagni.bagno': {
