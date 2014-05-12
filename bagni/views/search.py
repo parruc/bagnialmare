@@ -3,6 +3,7 @@ from geopy import geocoders
 
 from django.core import paginator
 from django.core.exceptions import ObjectDoesNotExist
+from django.db.models import Count
 from django.views.generic import TemplateView
 from django.contrib import messages
 from django.contrib.gis.geos import Point
@@ -72,7 +73,8 @@ class SearchView(TemplateView):
         raw_hits, facets, active_facets = search(
             q=query, filters=filters, groups=groups,
             query_string=new_query_string,)
-        hits = Bagno.objects.prefetch_related("services", "services__category", "neighbourhood").filter(id__in=[h['id'] for h in raw_hits])
+        hits = Bagno.objects.prefetch_related("services", "services__category", "neighbourhood", "neighbourhood__municipality", "managers", "images").filter(id__in=[h['id'] for h in raw_hits])
+        hits = hits.annotate(num_managers=Count("managers"), num_images=Count("images")).order_by("-num_managers", "-num_images", "name")
         if point:
             hits = hits.distance(point).order_by('distance')
         hits_paginator = paginator.Paginator(hits, per_page)
@@ -92,6 +94,7 @@ class SearchView(TemplateView):
         search_results['l'] = loc
         search_results['coords'] = coords
         search_results['place'] = place
+        search_results['point'] = point
         search_results['facets'] = facets
         search_results['active_facets'] = active_facets
         search_results['has_get'] = self.request.method == 'GET'

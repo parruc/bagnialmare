@@ -18,9 +18,11 @@
 {% trans "results" as t_results %}
 {% trans "near_to" as t_near_to %}
 {% trans "near_me" as t_near_me %}
-{% trans "filters" as t_filters%}
+{% trans "near_me_tooltip" as t_near_me_tooltip %}
+{% trans "filters" as t_filters %}
 {% trans "list_view" as t_list_view %}
 {% trans "map_view" as t_map_view %}
+{% trans "your_location" as t_your_location %}
 {% trans "contact_button" as t_contact_button %}
 {% trans "previous" as t_previous %}
 {% trans "next" as t_next %}
@@ -48,14 +50,22 @@
           </div>
           <div class="col-xs-5">
               <label class="my-brown" for="search_l">{{ t_where|capfirst }}</label>
-            <input class="form-control" type="text" id="search_l"
-                   name="l" value="{{ search_results.l }}"  />
+              <div class="input-group">
+                  <input class="form-control" type="text" id="search_l"
+                         name="l" value="{{ search_results.l }}"  />
+                  <span class="input-group-btn">
+                  <button id="set-my-position" data-position-label="{{ t_near_me }}" title="{{ t_near_me_tooltip }}" 
+                                               class="btn btn-default hp-facility-btn" type="button">
+                      <span class="glyphicon glyphicon-screenshot"></span>
+                </button>
+          </span>
+        </div>
           </div>
 
           <div class="col-xs-2 search-page-search-button-div">
             <button type="submit" id="search_submit"
                     class="btn btn-primary search-page-button" value="search">
-              {{ t_search|capfirst }}
+              {{ t_search }}
             </button>
           </div>
         </form>
@@ -168,6 +178,18 @@
             {% if hits %}
               <div class="tab-pane" id="mapTab">
                 <ul id="bagniToBeMapped" class="hide">
+                {% if search_results.point %}
+                <li id="map_origin"
+                        data-x="{{ search_results.point.x|unlocalize }}"
+                        data-y="{{ search_results.point.y|unlocalize }}"
+                    {% if search_results.place %}
+                        data-name="{{ search_results.place }}"
+                    {% else %}
+                        data-name="{{ t_your_location }}"
+                    {% endif %}
+                    >
+                </li>
+                {% endif %}
                   {%  for hit in hits %}
                     {% if hit.point.x and hit.point.y %}
                       <li data-url= "{{ hit.get_absolute_url }}"
@@ -205,7 +227,7 @@
                           {{ hit.neighbourhood.municipality.district.name }}
                         </p>
                         {% if hit.is_managed %}
-                          <button id="contact-form-button" class="button"
+                          <button id="contact-form-button" class="button button-primary btn-xs"
                                   data-url="{{ hit.get_contactform_url }}">
                             {{ t_contact_button }}
                           </button>

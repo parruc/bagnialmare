@@ -34,18 +34,27 @@ $(function() {
         var map_markerBounds = new L.LatLngBounds();
         evt.preventDefault();
         $(this).tab('show');
+        
         $("#bagniToBeMapped li").each(function(index, element){
-        var p = new L.LatLng(parseFloat($(element).data("y")),
-                             parseFloat($(element).data("x")));
-            var marker = L.marker(p).addTo(map);
+            var p = new L.LatLng(parseFloat($(element).data("y")),
+                                 parseFloat($(element).data("x")));
             map_markerBounds.extend(p);
-            marker.bindPopup('<b class="my-bold"><a href=' +
-                             $(element).data("url") +
-                             '>' +
-                             $(element).data("name") +
-                             '</a></b> <em>' +
-                             $(element).data("address") +
-                            '</em>').openPopup();
+            if($(element).attr('id') == "map_origin"){
+                L.circleMarker(p).addTo(map)
+                                 .bindPopup('<b class="my-bold">' +
+                                            $(element).data("name") +
+                                            '</b>');
+            }else{
+                L.marker(p).addTo(map)
+                           .bindPopup('<b class="my-bold"><a href=' +
+                                      $(element).data("url") +
+                                      '>' +
+                                      $(element).data("name") +
+                                      '</a></b> <em>' +
+                                      $(element).data("address") +
+                                      '</em>')
+                           .openPopup();
+            }
         });
         map.fitBounds(map_markerBounds);
     });

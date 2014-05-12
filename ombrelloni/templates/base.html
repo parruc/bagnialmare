@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-{% load i18n compress cache custom_templatetags %}
+{% load i18n compress cache multilingual %}
 
 
 {% trans "contact" as t_contact %}
 {% trans "about_us" as t_about_us %}
 {% trans "are_you_manager" as t_are_you_manager %}
+{% trans "search" as t_search %}
+{% trans "login" as t_login %}
+{% trans "logout" as t_logout %}
+{% trans "edit" as t_edit %}
+{% trans "account" as t_account %}
 
 {% load url from future %}
 
@@ -26,26 +31,35 @@
   {% endcache %}
 
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png">
-  {% block explorer %}
-    <!--[if IE]>
-        <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/>
-    <![endif]-->
-  {% endblock %}
+  <!--[if IE]>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico"/>
+  <![endif]-->
 
   {% cache 600 base_static %}
+    {% compress css %}
+      <link href="{{ STATIC_URL }}css/fonts.css" rel="stylesheet" type="text/css"/>
+      <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
+      <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
+    {% endcompress %}
+
+    <!--[if IE]>
+      {% compress js %}
+        <script type='text/javascript' src="{{ STATIC_URL }}js/html5shiv.js"></script>
+        <script type='text/javascript' src="{{ STATIC_URL }}js/respond.js"></script>
+      {% endcompress %}
+      
+      {% compress css %}
+        <link href="{{ STATIC_URL }}css/ie.css" rel="stylesheet" />
+      {% endcompress %}
+    <![endif]-->
+
     {% compress js %}
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.4.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/leaflet.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
-    {% endcompress %}
-
-    {% compress css %}
-      <link href="{{ STATIC_URL }}css/google-fonts.css" rel="stylesheet" type="text/css"/>
-      <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" />
-      <link href="{{ STATIC_URL }}css/jquery-ui-1.10.4.css" rel="stylesheet" />
-      <link href="{{ STATIC_URL }}css/leaflet.css" rel="stylesheet" />
-      <link href="{{ STATIC_URL }}css/bagni.css" rel="stylesheet" />
     {% endcompress %}
   {% endcache %}
 
@@ -83,6 +97,42 @@
                 <strong>{{ t_contact|title }}</strong>
               </a>
             </li>
+            <li>
+              <a href="{% url 'search' %}"
+                 title="{{ t_search }}">
+                <strong>{{ t_search }}</strong>
+              </a>
+            </li>
+            {% comment %}
+            {% if user.is_authenticated %}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ t_account|capfirst }}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                {% for bagno in user.manager.bagni.all %}
+                <li>
+                <a href="{{ bagno.get_edit_url }}"
+                    title="{{ t_edit }}">
+                    <strong>{{ t_edit|capfirst }} {{ bagno.name }}</strong>
+                  </a>
+                </li>
+                {% endfor %}
+                <li>
+                  <a href="{% url 'account_logout' %}"
+                    title="{{ t_logout }}">
+                    <strong>{{ t_logout|capfirst }}</strong>
+                  </a>
+                </li>
+              </ul>
+            </li>
+              {% else %}
+              <li>
+                <a href="{% url 'account_login' %}"
+                 title="{{ t_login }}">
+                <strong>{{ t_login|capfirst }}</strong>
+                </a>
+              </li>
+              {% endif %}
+            {% endcomment %}
             {% for lang in LANGUAGES %}
               {% with lang.0 as lang_code %}
                 {% ifnotequal lang_code LANGUAGE_CODE %}

@@ -5,6 +5,8 @@ from bagni import BagnoContacts; BagnoContacts  # pyflakes
 
 from jsonviews import JsonAutocompletePlaces; JsonAutocompletePlaces  # pyflakes
 from jsonviews import JsonAutocompleteSearchterms; JsonAutocompleteSearchterms  #pyflakes
+from jsonviews import JsonSearchBoundingBox; JsonSearchBoundingBox  #pyflakes
+from jsonviews import JsonBagniInNeighbourhood; JsonBagniInNeighbourhood #pyflakes
 
 from pages import HomepageView; HomepageView  # pyflakes
 from pages import AboutUsView; AboutUsView  # pyflakes

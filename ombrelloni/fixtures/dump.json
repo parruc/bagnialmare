@@ -9,7 +9,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-04-28T12:47:50.144Z", 
+    "last_login": "2014-05-08T09:15:49.312Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -581,6 +581,15 @@
     "applied": "2014-04-25T15:13:13.447Z", 
     "app_name": "bagni", 
     "migration": "0031_auto__add_field_service_seo_name__add_field_service_seo_name_en__add_f"
+  }
+},
+{
+  "pk": 58, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-08T13:51:47.417Z", 
+    "app_name": "socialaccount", 
+    "migration": "0012_auto__chg_field_socialtoken_token_secret"
   }
 },
 {
@@ -74337,6 +74346,90 @@
     "name": "Portale di ingresso", 
     "image": "images/bagni/bagno-ben/bagno-ben.jpg", 
     "slug": "portale-di-ingresso-3"
+  }
+},
+{
+  "pk": 2, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Anita", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "Cervia"
+  }
+},
+{
+  "pk": 3, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "utente", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "detest"
+  }
+},
+{
+  "pk": 4, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Matteo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "Parrucci"
+  }
+},
+{
+  "pk": 5, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Nome", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "Cognome"
+  }
+},
+{
+  "pk": 6, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "buffo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "utente"
+  }
+},
+{
+  "pk": 7, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "buffo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "utente"
+  }
+},
+{
+  "pk": 8, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "buffo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "utente"
   }
 }
 ]

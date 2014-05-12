@@ -51,3 +51,7 @@ class Manager(models.Model):
 
     def __unicode__(self):
         return self.name
+
+def display_user(user):
+    return user.email
+

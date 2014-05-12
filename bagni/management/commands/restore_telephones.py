@@ -39,9 +39,8 @@ class Command(BaseCommand):
             point = Point([float(coord) for coord in reversed(bagno['coords'])])
             try:
                 name = bagno['name'].replace("- 82 ", "")
-                if name in ["Alcide Spiaggia", "Alberto"]:
-                    name = "Bagno " + name
-                b = Bagno.objects.filter(name=name)
+                names = [name, "Bagno " + name]
+                b = Bagno.objects.filter(name__in=names)
                 if len(b) == 1:
                     b = b[0]
                 else:

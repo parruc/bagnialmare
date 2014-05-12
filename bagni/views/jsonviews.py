@@ -3,8 +3,10 @@ import json
 
 from django import http
 from django.views.generic.detail import BaseDetailView
+from django.views.generic.list import BaseListView
+from django.contrib.gis import geos
 
-from ..models import Service, District, Municipality, Neighbourhood
+from ..models import Service, District, Municipality, Neighbourhood, Bagno
 from ..constants import MY_POSITION
 
 import logging
@@ -30,11 +32,35 @@ class JSONResponseMixin(object):
         # -- can be serialized as JSON.
         return json.dumps(context)
 
+class JsonSearchBoundingBox(JSONResponseMixin, BaseListView):
+    """ Json list of bagni within given coordinates for dynamic map update
+    """
+    def get_queryset(self):
+        bbox = geos.Polygon.from_bbox((self.kwargs['x1'],
+                                       self.kwargs['y1'],
+                                       self.kwargs['x2'],
+                                       self.kwargs['y2'],))
+        return Bagno.objects.filter(point__within=bbox)
+
+    def get_context_data(self, **kwargs):
+        queryset = kwargs.pop('object_list', self.object_list)
+        return dict(items=[(b.name, b.address, b.get_absolute_url(), ) for b in queryset])
+
+
+class JsonBagniInNeighbourhood(JSONResponseMixin, BaseListView):
+    def get_queryset(self):
+        neighbourhood_id = int(self.kwargs['id'])
+        queryset = Neighbourhood.objects.get(pk=neighbourhood_id).bagni.all().order_by("name")
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        queryset = kwargs.pop('object_list', self.object_list)
+        return dict(items=[(b.pk, b.get_complete_name()) for b in queryset])
+
 
 class JsonAutocompletePlaces(JSONResponseMixin, BaseDetailView):
     """ Json list of places for the autocomplete in search field
     """
-
     def get(self, request, *args, **kwargs):
         results = []
         query = self.request.GET.get('query', "")
