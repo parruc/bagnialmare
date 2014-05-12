@@ -163,17 +163,20 @@
           {% if hits %}
             <ul class="nav nav-tabs search-page-tabs" id="myTab">
               <li class="visible-xs">
-                <a href="#filterTab" id="filter-tab-button" data-toggle="tab">
+                <a href="#filterTab" id="filter-tab-button" data-toggle="tab" class="ga_click"
+                   data-category="search-tab" data-action="click" data-label="filters">
                   {{ t_filters|capfirst }}
                 </a>
               </li>
               <li class="active">
-                <a href="#listTab" id="list-tab-button" data-toggle="tab">
+                <a href="#listTab" id="list-tab-button" data-toggle="tab" class="ga_click"
+                   data-category="search-tab" data-action="click" data-label="list">
                   {{ t_list_view|capfirst }}
                 </a>
               </li>
               <li>
-                <a href="#mapTab" id="map-tab-button" data-toggle="tab">
+                <a href="#mapTab" id="map-tab-button" data-toggle="tab" class="ga_click"
+                   data-category="search-tab" data-action="click" data-label="map">
                   {{ t_map_view|capfirst }}
                 </a>
               </li>
