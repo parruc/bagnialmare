@@ -49,8 +49,16 @@
           </div>
           <div class="col-xs-5">
               <label class="my-brown" for="search_l">{{ t_where|capfirst }}</label>
-            <input class="form-control" type="text" id="search_l"
-                   name="l" value="{{ search_results.l }}"  />
+              <div class="input-group">
+                  <input class="form-control" type="text" id="search_l"
+                         name="l" value="{{ search_results.l }}"  />
+                  <span class="input-group-btn">
+                  <button id="set-my-position" data-position-label="{{ t_near_me }}" title="{{ t_near_me }}" 
+                                               class="btn btn-default hp-facility-btn" type="button">
+                      <span class="glyphicon glyphicon-screenshot"></span>
+                </button>
+          </span>
+        </div>
           </div>
 
           <div class="col-xs-2 search-page-search-button-div">
