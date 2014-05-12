@@ -69,7 +69,7 @@ class ImageInline(admin.StackedInline):
 
 
 class BagnoAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
-    search_fields = ['name', 'number', 'services__name', 'telephones__number']
+    search_fields = ['name', 'number', 'services__name']
     inlines = [
             ImageInline,
             TelephoneInline,
