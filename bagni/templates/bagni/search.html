@@ -54,7 +54,7 @@
                   <input class="form-control" type="text" id="search_l"
                          name="l" value="{{ search_results.l }}"  />
                   <span class="input-group-btn">
-                  <button id="set-my-position" data-position-label="{{ t_near_me }}" title="{{ t_near_me_tooltip }}" 
+                  <button id="set-my-position" data-position-label="{{ t_near_me }}" title="{{ t_near_me_tooltip }}"
                                                class="btn btn-default hp-facility-btn" type="button">
                       <span class="glyphicon glyphicon-screenshot"></span>
                 </button>
@@ -126,7 +126,11 @@
                       <div class="checkbox filter-result-checkbox-div">
                         <label>
                           <input data-facet-url="?{{ facet.url }}"
-                                 type="checkbox" />
+                                 type="checkbox"
+                                 class="ga_click"
+                                 data-category="facet"
+                                 data-action="click"
+                                 data-label="{{ facet.name }}" />
                           {{ facet.name }}
                         </label>
                       </div>
@@ -320,7 +324,11 @@
                         <div class="checkbox filter-result-checkbox-div">
                           <label>
                             <input data-facet-url="?{{ facet.url }}"
-                                   type="checkbox" />
+                                   type="checkbox"
+                                   class="ga_click"
+                                   data-category="facet"
+                                   data-action="click"
+                                   data-label="{{ facet.name }}" /> />
                             {{ facet.name }}
                           </label>
                         </div>

@@ -103,7 +103,14 @@
           {% if object.telephones.all %}
             {% for tel in object.telephones.all %}
               <p>
-                <b class="my-bold">{{ tel.get_name_display }}:</b> <a href="tel:{{ tel.number }}">{{ tel.number }}</a></p>
+                <b class="my-bold">{{ tel.get_name_display }}:</b>
+                <a class="ga_click"
+                   data-category="telephone-{{ object.slug }}"
+                   data-action="click"
+                   data-label="{{tel.name }} - {{ tel.number }}"
+                   href="tel:{{ tel.number }}"
+                >{{ tel.number }}</a>
+              </p>
             {% endfor %}
           {% endif %}
         </p>

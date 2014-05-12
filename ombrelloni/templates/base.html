@@ -49,7 +49,7 @@
         <script type='text/javascript' src="{{ STATIC_URL }}js/html5shiv.js"></script>
         <script type='text/javascript' src="{{ STATIC_URL }}js/respond.js"></script>
       {% endcompress %}
-      
+
       {% compress css %}
         <link href="{{ STATIC_URL }}css/ie.css" rel="stylesheet" />
       {% endcompress %}
@@ -197,6 +197,9 @@
       ga('create', 'UA-1473162-12', 'bagnialmare.com');
       {% block analytics %}
       ga('send', 'pageview');
+      $(".ga_click").click(function(){
+        ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"))
+      });
       {% endblock %}
     </script>
 </body>
