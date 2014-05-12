@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-01 10:20+0200\n"
+"POT-Creation-Date: 2014-05-11 18:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr "Telephone number"
 msgid "Fax number"
 msgstr ""
 
-#: models/bagni.py:15 models/bagni_details.py:49 models/bagni_details.py:81
+#: models/bagni.py:15 models/bagni_details.py:49 models/bagni_details.py:90
 msgid "Bagno"
 msgstr "BeachResort"
 
@@ -104,13 +104,13 @@ msgstr "BeachResort"
 msgid "Bagni"
 msgstr "BeachResorts"
 
-#: models/bagni.py:19 models/bagni_details.py:18 models/bagni_details.py:79
+#: models/bagni.py:19 models/bagni_details.py:18 models/bagni_details.py:88
 msgid "Description"
-msgstr ""
+msgstr "Beach resort description"
 
 #: models/bagni.py:20 models/bagni_details.py:47
 msgid "Number"
-msgstr ""
+msgstr "Beach resort number"
 
 #: models/bagni.py:21
 msgid "Languages"
@@ -172,11 +172,11 @@ msgstr ""
 msgid "Telephone"
 msgstr "Telephone"
 
-#: models/bagni_details.py:43 models/base.py:18
+#: models/bagni_details.py:43 models/bagni_details.py:75 models/base.py:18
 msgid "Slug"
 msgstr "Slug"
 
-#: models/bagni_details.py:66 models/bagni_details.py:80 models/services.py:21
+#: models/bagni_details.py:66 models/bagni_details.py:89 models/services.py:21
 #: models/services.py:42
 msgid "Image"
 msgstr "Image"
@@ -184,6 +184,10 @@ msgstr "Image"
 #: models/bagni_details.py:67
 msgid "Images"
 msgstr "Images"
+
+#: models/bagni_details.py:71
+msgid "Title"
+msgstr ""
 
 #: models/base.py:15
 msgid "Name"
@@ -265,7 +269,7 @@ msgid "bagni_page_facilities"
 msgstr "beach resort facilities"
 
 #: templates/bagni/bagno_contacts.html:4
-msgid "contacts"
+msgid "contact_structure"
 msgstr "contact this structure"
 
 #: templates/bagni/bagno_contacts.html:5
@@ -291,43 +295,47 @@ msgid "contact_button"
 msgstr "contact this structure"
 
 #: templates/bagni/bagno_detail.html:9
+msgid "contacts"
+msgstr "Contacts"
+
+#: templates/bagni/bagno_detail.html:10
 msgid "modify_bagno"
 msgstr "modify your beach resort data"
 
-#: templates/bagni/bagno_detail.html:10
+#: templates/bagni/bagno_detail.html:11
 msgid "are_you_the_manager"
 msgstr "are you the manager?"
 
-#: templates/bagni/bagno_detail.html:11
+#: templates/bagni/bagno_detail.html:12
 msgid "image"
 msgstr "image"
 
-#: templates/bagni/bagno_detail.html:12
+#: templates/bagni/bagno_detail.html:13
 msgid "no_images_for"
 msgstr "no images for"
 
-#: templates/bagni/bagno_detail.html:13
+#: templates/bagni/bagno_detail.html:14
 msgid "no_images_add"
 msgstr "no images available yet"
 
-#: templates/bagni/bagno_detail.html:14 templates/bagni/service_list.html:23
+#: templates/bagni/bagno_detail.html:15 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "facilities"
 
-#: templates/bagni/bagno_detail.html:15 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:16 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "facility"
 
-#: templates/bagni/bagno_detail.html:16
+#: templates/bagni/bagno_detail.html:17
 msgid "facility_info_not_available"
 msgstr "facility informations not available"
 
-#: templates/bagni/bagno_detail.html:154
+#: templates/bagni/bagno_detail.html:174
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
-#: templates/bagni/bagno_edit.html:111
+#: templates/bagni/bagno_edit.html:170
 msgid "Save"
 msgstr ""
 
@@ -407,7 +415,7 @@ msgstr ""
 msgid "homepage_title"
 msgstr "bagnialmare: beach resorts of Italy"
 
-#: templates/bagni/homepage.html:110
+#: templates/bagni/homepage.html:111
 msgid "homepage_description"
 msgstr ""
 "contacts, facilities and addresses of more than 1000 Italian beach resorts "

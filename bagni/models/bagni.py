@@ -31,7 +31,7 @@ class Bagno(BaseModel):
     def index_text(self):
         """ Text indexed for fulltext search (the what field)
         """
-        elems = [self.name, ]
+        elems = [self.name, self.number, self.description, self.address, ]
         cities = self.index_cities(field="name").split("#")
         services = self.index_services(field="name").split("#")
         elems.extend(cities)

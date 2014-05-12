@@ -114,11 +114,13 @@ def search(q, filters, groups, query_string, max_facets=5):
     hits = []
     facets = [sorting.FieldFacet(g, allow_overlap=True, maptype=sorting.Count) for g in groups]
     # Commented due to a boost error
-    # og = qparser.OrGroup.factory(0.5)
-    parser = qparser.QueryParser("text", schema=ix.schema) # , group=og)
+    #og = qparser.OrGroup.factory(0.5)
+    parser = qparser.QueryParser("text", schema=ix.schema)# , group=og)
     #parser.remove_plugin_class(qparser.WildcardPlugin)
-    # Temporary removed fuzzy search: more pain than benefit
-    #parser.add_plugin(qparser.FuzzyTermPlugin())
+    parser.add_plugin(qparser.FuzzyTermPlugin())
+    #Adds fuzzy search of distance 1 and prefix 0 to all search terms
+    if q not in ("", "*"):
+        q = "".join([item + "~" for item in q.split()])
     try:
         q = parser.parse(q)
     except:

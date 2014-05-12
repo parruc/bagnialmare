@@ -3,7 +3,6 @@ from collections import OrderedDict
 
 from django.core.exceptions import PermissionDenied
 from django.core.exceptions import ObjectDoesNotExist
-from django.core.urlresolvers import reverse
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic import TemplateView

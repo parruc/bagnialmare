@@ -6,6 +6,8 @@
 
 {% block content %}
 {% trans "contact_button" as t_contact_button %}
+{% trans "contacts" as t_contacts %}
+{% trans "website" as t_website %}
 {% trans "modify_bagno" as t_modify_bagno %}
 {% trans "are_you_the_manager" as t_are_you_the_manager %}
 {% trans "image" as t_image %}
@@ -94,6 +96,27 @@
                        data-y="{{ object.point.y|unlocalize }}"
                        data-name="{{ object.name }}"
                        data-address="{{ object.address }}"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
+        <p>
+          {% if object.telephones.all %}
+            {% for tel in object.telephones.all %}
+              <p>
+                <b class="my-bold">{{ tel.name }}:</b> {{ tel.number }}</p>
+            {% endfor %}
+          {% endif %}
+        </p>
+        <p>
+          {% if object.site %}
+          <b class="my-bold">{{ t_website|capfirst }}:</b>
+          <a href="{{ object.site }}"
+              title="{{ t_bagno }} {{ t_website }}">
+              {{ object.site }}</a>
+          {% endif %}
+        </p>
     </div>
   </div>
   <div class="row">
