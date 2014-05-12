@@ -324,7 +324,7 @@ msgstr "servizio"
 
 #: templates/bagni/bagno_detail.html:16
 msgid "facility_info_not_available"
-msgstr "informazioni non disponibili"
+msgstr "informazioni non ancora disponibili"
 
 #: templates/bagni/bagno_detail.html:148
 msgid "bagno_detail_description"

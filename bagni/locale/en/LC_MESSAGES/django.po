@@ -320,7 +320,7 @@ msgstr "facility"
 
 #: templates/bagni/bagno_detail.html:16
 msgid "facility_info_not_available"
-msgstr "facility informations not available"
+msgstr "facility informations yet not available"
 
 #: templates/bagni/bagno_detail.html:148
 msgid "bagno_detail_description"
