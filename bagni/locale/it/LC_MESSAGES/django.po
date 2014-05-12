@@ -311,7 +311,7 @@ msgstr "nessuna immagine per"
 
 #: templates/bagni/bagno_detail.html:13
 msgid "no_images_add"
-msgstr "nessuna immagine disponibile al momento"
+msgstr "foto ancora non disponibili"
 
 #: templates/bagni/bagno_detail.html:14 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
