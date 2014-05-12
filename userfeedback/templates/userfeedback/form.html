@@ -1,0 +1,22 @@
+{% load i18n %}
+
+<div class="col-xs-8 col-xs-offset-2"i id="user-feedback-container">
+  {% trans "Are you interested in the booking feature? Leave us your mail address" %}
+  <form id="user-feedback-form" action="{% url 'user-feedback-form' %}" method="post" class="" role="form">
+  {% csrf_token %}
+    <div class="form-group">
+        <label class="my-brown" for="id_mail">{{ form.mail.label }}:</label>
+        <div id="id_email_errors"></div>
+        <input id="id_email" class="form-control" name="email" type="text" value=" {% trans 'email (optional)' %}" />
+    </div>
+    <input type="hidden" name="bagno" value="{{ object.pk }}" />
+    <button class="btn btn-primary" type="submit" >{% trans "Submit" %}</button>
+  </form>
+</div>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
+<script>
+    $( "#user-feedback-form" ).ajaxForm(function(){
+        $("#user-feedback-container").empty().append("Thanks");        
+    });
+</script>

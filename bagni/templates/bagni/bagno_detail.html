@@ -39,6 +39,9 @@
       {% endif %}
     </div>
   </div>
+
+  {% include "userfeedback/form.html" %}
+
   <div class="row">
     <div class="col-xs-12">
       <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>

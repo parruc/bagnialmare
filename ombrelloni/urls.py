@@ -41,6 +41,8 @@ urlpatterns += i18n_patterns(
     url(_(r'^accounts/'), include('authauth.urls')),
     # Authentication initial path
     url(_(r'^accounts/'), include('allauth.urls')),
+
+    url(_(r'^userfeedback/'), include('userfeedback.urls')),
 )
 
 
