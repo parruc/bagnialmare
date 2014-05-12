@@ -18,6 +18,7 @@
   {% trans "home_facility_tooltip" as t_home_facility_tooltip %}
   {% trans "home_show_facility" as t_home_show_facility %}
   {% trans "near_me" as t_near_me %}
+  {% trans "near_me_tooltip" as t_near_me_tooltip %}
   {% trans "home_search" as t_home_search %}
   {% trans "home_modal_header" as t_home_modal_header %}
   {% url 'search' as search_url %}
@@ -35,7 +36,7 @@
         <div class="input-group input-group-lg">
           <input class="form-control input-lg homepage-input" type="text" id="search_q" name="q" value="{{ q }}" placeholder="{{ t_what|capfirst }}">
           <span class="input-group-btn">
-            <button id="facilities-list-trigger" title="{{ t_home_show_facility }}" class="btn btn-default hp-facility-btn" type="button">
+            <button id="facilities-list-trigger" title="{{ t_near_me_tooltip }}" class="btn btn-default hp-facility-btn" type="button">
               <span class="glyphicon glyphicon-list"></span>
             </button>
           </span>
