@@ -103,7 +103,7 @@
           {% if object.telephones.all %}
             {% for tel in object.telephones.all %}
               <p>
-                <b class="my-bold">{{ tel.name }}:</b> {{ tel.number }}</p>
+                <b class="my-bold">{{ tel.name }}:</b> <a href="tel:{{ tel.number }}">{{ tel.number }}</a></p>
             {% endfor %}
           {% endif %}
         </p>
