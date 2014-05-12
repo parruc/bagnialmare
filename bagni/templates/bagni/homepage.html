@@ -44,8 +44,14 @@
       </div>
       <div class="col-md-5 homepage-input-div">
         <label class="sr-only" for="search_l">{{ t_near_to|capfirst }}</label>
-        <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{{ t_near_to|capfirst }}">
-        <a href="#" id="set-my-position" data-position-label="{{ t_near_me }}">...{{ t_near_me }}!</a>
+        <div class="input-group input-group-lg">
+            <input class="form-control input-lg homepage-input" type="text" id="search_l" name="l" value="{{ l }}" placeholder="{{ t_near_to|capfirst }}">
+            <span class="input-group-btn">
+                <button id="set-my-position" title="{{ t_near_me }}" data-position-label="{{ t_near_me }}" class="btn btn-default hp-facility-btn" type="button">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </button>
+          </span>
+        </div>
       </div>
       <div class="col-md-2 homepage-input-div">
         <button type="submit" id="search_submit" class="btn btn-lg btn-primary homepage-input search-button" value="search">{{ t_home_search|capfirst }}</button>
