@@ -8,4 +8,8 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
     config.removePlugins = "image,flash,youtube,find,iframe";
+    config.wordCount = {
+        showCharCount: true,
+        charLimit: 300
+    };
 };
