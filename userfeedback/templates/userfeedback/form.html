@@ -1,6 +1,6 @@
 {% load i18n %}
 
-<div class="col-xs-8 col-xs-offset-2"i id="user-feedback-container">
+<div class="col-xs-8 col-xs-offset-2" style="display:none" id="user-feedback-container">
   {% trans "Are you interested in the booking feature? Leave us your mail address" %}
   <form id="user-feedback-form" action="{% url 'user-feedback-form' %}" method="post" class="" role="form">
   {% csrf_token %}
@@ -17,6 +17,6 @@
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
 <script>
     $( "#user-feedback-form" ).ajaxForm(function(){
-        $("#user-feedback-container").empty().append("Thanks");        
+        $("#user-feedback-container").empty().append("Thanks");
     });
 </script>

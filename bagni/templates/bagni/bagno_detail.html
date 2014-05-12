@@ -49,20 +49,8 @@
   </div>
   <div class="row">
     <div class="col-xs-6 col-sm-5">
-      {% if object.images.all %}
+      {% if object.images.count > 0 %}
         <div id="bagno-image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            {% with object.images.all as bagno_images %}
-              {% for bagno_image in bagno_images %}
-                {% if forloop.first %}
-                  <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" class="active"></li>
-                {% else %}
-                  <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" ></li>
-                {% endif %}
-              {% endfor %}
-            {% endwith %}
-          </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             {% with object.images.all as bagno_images %}
@@ -74,12 +62,26 @@
               <!-- Controls -->
             {% endwith %}
           </div>
+          {% if object.images.count > 1 %}
           <a class="left carousel-control" href="#bagno-image-carousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
           <a class="right carousel-control" href="#bagno-image-carousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
+          <!-- Indicators -->
+          <!--ol class="carousel-indicators">
+            {% with object.images.all as bagno_images %}
+              {% for bagno_image in bagno_images %}
+                {% if forloop.first %}
+                  <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" class="active"></li>
+                {% else %}
+                  <li data-target="#bagno-image-carousel" data-slide-to="{{ forloop.counter }}" ></li>
+                {% endif %}
+              {% endfor %}
+            {% endwith %}
+          </ol-->
+          {% endif %}
         </div>
       {% else %}
         <div class="no-images-wrapper-div">
@@ -108,9 +110,9 @@
               <p>
                 <b class="my-bold">{{ tel.get_name_display }}:</b>
                 <a class="ga_click"
-                   data-category="telephone-{{ object.slug }}"
-                   data-action="click"
-                   data-label="{{tel.name }} - {{ tel.number }}"
+                   data-category="contact"
+                   data-action="telephone"
+                   data-label="{{ object.slug }} - {{ tel.number }}"
                    href="tel:{{ tel.number }}"
                 >{{ tel.number }}</a>
               </p>
@@ -121,7 +123,13 @@
           {% if object.site %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>
           <a href="{{ object.site }}"
-              title="{{ t_bagno }} {{ t_website }}">
+             class="ga_click"
+             data-category="contact"
+             data-action="website"
+             data-label="{{ object.slug }} - {{ object.site }}"
+             title="{{ t_bagno }} {{ t_website }}"
+             target="_blank"
+             rel="nofollow">
               {{ object.site }}</a>
           {% endif %}
         </p>
