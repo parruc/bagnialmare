@@ -73,6 +73,9 @@ class Bagno(BaseModel):
                     languages=self.index_languages(),
                     )
 
+    def get_list_display_telephone_numbers(self):
+        return " ~ ".join([t.name + ": " + t.number for t in self.telephones.all()])
+
     def get_complete_name(self):
         res = self.name
         if self.number:
