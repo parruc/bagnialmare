@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-13 18:08+0200\n"
+"POT-Creation-Date: 2014-05-14 00:29+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -312,7 +312,7 @@ msgstr "foto ancora non disponibili"
 #: templates/bagni/bagno_detail.html:16 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
-msgstr "servizi"
+msgstr "servizi offerti"
 
 #: templates/bagni/bagno_detail.html:17 templates/bagni/service_list.html:7
 msgid "facility"
@@ -328,7 +328,9 @@ msgstr "Prenota ombrellone e lettino online"
 
 #: templates/bagni/bagno_detail.html:20
 msgid "book_modal_text_1"
-msgstr "La prenotazione online non è ancora disponibile. Stiamo lavorando per attivarla questa estate"
+msgstr ""
+"La prenotazione online non è ancora disponibile. Stiamo lavorando per "
+"attivarla questa estate"
 
 #: templates/bagni/bagno_detail.html:21
 msgid "book_modal_text_2"
@@ -346,11 +348,37 @@ msgstr "Prenota ora online"
 msgid "email_address"
 msgstr "Indirizzo email"
 
-#: templates/bagni/bagno_detail.html:211 templates/bagni/homepage.html:96
+#: templates/bagni/bagno_detail.html:25
+msgid "phone_not_yet_available"
+msgstr "contatti telefonici non ancora disponibili"
+
+#: templates/bagni/bagno_detail.html:26
+msgid "bagno_detail_desc_1"
+msgstr "Sei nella pagina di"
+
+#: templates/bagni/bagno_detail.html:27
+msgid "bagno_detail_desc_2"
+msgstr ""
+"qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questo "
+"bagno"
+
+#: templates/bagni/bagno_detail.html:28
+msgid "bagno_detail_desc_3"
+msgstr "Se vuoi esplorare altri bagni a"
+
+#: templates/bagni/bagno_detail.html:29
+msgid "bagno_detail_desc_4"
+msgstr "puoi farlo in"
+
+#: templates/bagni/bagno_detail.html:30
+msgid "bagno_detail_desc_5"
+msgstr "questa pagina"
+
+#: templates/bagni/bagno_detail.html:225 templates/bagni/homepage.html:96
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:237
+#: templates/bagni/bagno_detail.html:251
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -634,9 +662,6 @@ msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
 
 #~ msgid "telephone_numbers"
 #~ msgstr "numeri di telefono"
-
-msgid "not_yet_available"
-msgstr "non ancora disponibili"
 
 #~ msgid "Mobile"
 #~ msgstr "Cellulare"

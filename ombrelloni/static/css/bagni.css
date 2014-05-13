@@ -186,7 +186,7 @@ body {
 
 .no-images-text{
     top: 10%;
-    left: 10%;
+    left: 5%;
     position: absolute;
 }
 
@@ -198,9 +198,14 @@ body {
     font-weight: 700;
 }
 
+.bagno-detail-address{
+
+}
+
 .bagno-detail-sub-header{
     border-bottom: 1px solid rgb(249, 191, 22);
     padding-bottom: 5px;
+    margin-top: 10px;
 }
 
 .book-button{

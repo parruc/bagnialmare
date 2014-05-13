@@ -22,14 +22,20 @@
 {% trans "book_modal_submit_button" as t_book_modal_submit_button %}
 {% trans "book_button" as t_book_button %}
 {% trans "email_address" as t_email_address %}
-{% trans "not_yet_available" as t_not_yet_available %}
+{% trans "phone_not_yet_available" as t_phone_not_yet_available %}
+{% trans "bagno_detail_desc_1" as t_bagno_detail_desc_1%}
+{% trans "bagno_detail_desc_2" as t_bagno_detail_desc_2 %}
+{% trans "bagno_detail_desc_3" as t_bagno_detail_desc_3 %}
+{% trans "bagno_detail_desc_4" as t_bagno_detail_desc_4 %}
+{% trans "bagno_detail_desc_5" as t_bagno_detail_desc_5 %}
+
 
 <div id="contact-form"></div>
 <div class="bagno-detail-wrapper-div">
   <div class="row bagno-header-row">
     <div class="col-sm-9 col-xs-12">
       <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
-      <p>{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
+      <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
     <div class="col-sm-3 col-xs-12 hidden-xs">
       <button id="book-button" class="btn pull-right book-button ga_click" data-toggle="modal" data-target="#bookModal"
@@ -66,7 +72,10 @@
     </div>
   </div-->
   <div class="row">
-    <div class="col-xs-6 col-sm-5">
+    <div class="col-xs-12 col-sm-4">
+        <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">	
       {% if object.images.count > 0 %}
         <div id="bagno-image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
           <!-- Wrapper for slides -->
@@ -110,9 +119,9 @@
         </div>
       {% endif %}
     </div>
-    <div class="col-xs-6 col-sm-5 col-sm-offset-2">
+    <div class="col-xs-12 col-sm-4">
       <div id="bagno_map" class="well"
-                       style="width: 100%; height: 350px"
+                       style="width: 100%; height: 240px"
                        data-x="{{ object.point.x|unlocalize }}"
                        data-y="{{ object.point.y|unlocalize }}"
                        data-name="{{ object.name }}"
@@ -136,7 +145,7 @@
               </p>
             {% endfor %}
           {% else %}
-             <p><em>{{ t_not_yet_available|capfirst}}</em></p>
+             <p><em>{{ t_phone_not_yet_available|capfirst}}</em></p>
           {% endif %}
         </p>
         <p>

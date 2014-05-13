@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-13 18:08+0200\n"
+"POT-Creation-Date: 2014-05-14 00:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -308,7 +308,7 @@ msgstr "no images available yet"
 #: templates/bagni/bagno_detail.html:16 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
-msgstr "facilities"
+msgstr "Structure facilities"
 
 #: templates/bagni/bagno_detail.html:17 templates/bagni/service_list.html:7
 msgid "facility"
@@ -328,7 +328,8 @@ msgstr "This feature is coming soon. We plan to release it this summer"
 
 #: templates/bagni/bagno_detail.html:21
 msgid "book_modal_text_2"
-msgstr "Enter your email below if you want to be notified when it will be ready"
+msgstr ""
+"Enter your email below if you want to be notified when it will be ready"
 
 #: templates/bagni/bagno_detail.html:22
 msgid "book_modal_submit_button"
@@ -342,11 +343,35 @@ msgstr "Book online now"
 msgid "email_address"
 msgstr "Email address"
 
-#: templates/bagni/bagno_detail.html:211 templates/bagni/homepage.html:96
+#: templates/bagni/bagno_detail.html:25
+msgid "phone_not_yet_available"
+msgstr "phone contacts not yet available"
+
+#: templates/bagni/bagno_detail.html:26
+msgid "bagno_detail_desc_1"
+msgstr "You are in the page of"
+
+#: templates/bagni/bagno_detail.html:27
+msgid "bagno_detail_desc_2"
+msgstr "here you can find the address, contacts and the list of facilities provided by this structure"
+
+#: templates/bagni/bagno_detail.html:28
+msgid "bagno_detail_desc_3"
+msgstr "If you want to explore more beach resorts in"
+
+#: templates/bagni/bagno_detail.html:29
+msgid "bagno_detail_desc_4"
+msgstr "you can do it in"
+
+#: templates/bagni/bagno_detail.html:30
+msgid "bagno_detail_desc_5"
+msgstr "this page"
+
+#: templates/bagni/bagno_detail.html:225 templates/bagni/homepage.html:96
 msgid "Close"
 msgstr "Close"
 
-#: templates/bagni/bagno_detail.html:237
+#: templates/bagni/bagno_detail.html:251
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
@@ -627,9 +652,6 @@ msgstr "Cant find place '%s', sorting by relevance"
 
 #~ msgid "telephone_numbers"
 #~ msgstr "telephone numbers"
-
-msgid "not_yet_available"
-msgstr "not yet available"
 
 #~ msgid "home_sub_heading"
 #~ msgstr ""
