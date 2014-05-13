@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-12 17:32+0200\n"
+"POT-Creation-Date: 2014-05-13 18:08+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -271,19 +271,7 @@ msgstr "servizi"
 msgid "contact_structure"
 msgstr "contattaci"
 
-#: templates/bagni/bagno_contacts.html:5
-msgid "telephone_numbers"
-msgstr "numeri di telefono"
-
-#: templates/bagni/bagno_contacts.html:6
-msgid "not_yet_available"
-msgstr "non ancora disponibile"
-
-#: templates/bagni/bagno_contacts.html:7
-msgid "website"
-msgstr "website"
-
-#: templates/bagni/bagno_contacts.html:8 templates/bagni/bagno_list.html:7
+#: templates/bagni/bagno_contacts.html:5 templates/bagni/bagno_list.html:7
 #: templates/bagni/district_detail.html:8 templates/bagni/search.html:14
 #: templates/bagni/servicecategory_detail.html:6
 msgid "bagno"
@@ -298,43 +286,75 @@ msgid "contacts"
 msgstr "Contatti"
 
 #: templates/bagni/bagno_detail.html:10
+msgid "website"
+msgstr "website"
+
+#: templates/bagni/bagno_detail.html:11
 msgid "modify_bagno"
 msgstr "Modifica il tuo bagno"
 
-#: templates/bagni/bagno_detail.html:11
+#: templates/bagni/bagno_detail.html:12
 msgid "are_you_the_manager"
 msgstr "sei tu il gestore?"
 
-#: templates/bagni/bagno_detail.html:12
+#: templates/bagni/bagno_detail.html:13
 msgid "image"
 msgstr "immagine"
 
-#: templates/bagni/bagno_detail.html:13
+#: templates/bagni/bagno_detail.html:14
 msgid "no_images_for"
 msgstr "nessuna immagine per"
 
-#: templates/bagni/bagno_detail.html:14
+#: templates/bagni/bagno_detail.html:15
 msgid "no_images_add"
 msgstr "foto ancora non disponibili"
 
-#: templates/bagni/bagno_detail.html:15 templates/bagni/service_list.html:23
+#: templates/bagni/bagno_detail.html:16 templates/bagni/service_list.html:23
 #: templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi"
 
-#: templates/bagni/bagno_detail.html:16 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:17 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "servizio"
 
-#: templates/bagni/bagno_detail.html:17
+#: templates/bagni/bagno_detail.html:18
 msgid "facility_info_not_available"
 msgstr "informazioni non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:148
+#: templates/bagni/bagno_detail.html:19
+msgid "book_modal_title"
+msgstr "Prenota ombrellone e lettino online"
+
+#: templates/bagni/bagno_detail.html:20
+msgid "book_modal_text_1"
+msgstr "La prenotazione online non è ancora disponibile. Stiamo lavorando per attivarla questa estate"
+
+#: templates/bagni/bagno_detail.html:21
+msgid "book_modal_text_2"
+msgstr "Inserisci qui la tua email se vuoi essere avvertito quando sarà pronta"
+
+#: templates/bagni/bagno_detail.html:22
+msgid "book_modal_submit_button"
+msgstr "Avvertimi"
+
+#: templates/bagni/bagno_detail.html:23
+msgid "book_button"
+msgstr "Prenota ora online"
+
+#: templates/bagni/bagno_detail.html:24
+msgid "email_address"
+msgstr "Indirizzo email"
+
+#: templates/bagni/bagno_detail.html:211 templates/bagni/homepage.html:96
+msgid "Close"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:237
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
-#: templates/bagni/bagno_edit.html:173
+#: templates/bagni/bagno_edit.html:235
 msgid "Save"
 msgstr ""
 
@@ -413,10 +433,6 @@ msgid ""
 msgstr ""
 "Contatti, servizi e indirizzi di oltre <a href='%(search_url)s'>1000 "
 "stabilimenti balneari</a> da Cattolica a Ferrara"
-
-#: templates/bagni/homepage.html:96
-msgid "Close"
-msgstr ""
 
 #: templates/bagni/homepage.html:116
 msgid "homepage_title"
@@ -541,7 +557,7 @@ msgstr ""
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:252
+#: templates/bagni/search.html:260
 #, python-format
 msgid ""
 "\n"
@@ -550,11 +566,11 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:355
+#: templates/bagni/search.html:367
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:360
+#: templates/bagni/search.html:372
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
@@ -615,6 +631,12 @@ msgstr "Categorie di servizi"
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
+
+#~ msgid "telephone_numbers"
+#~ msgstr "numeri di telefono"
+
+msgid "not_yet_available"
+msgstr "non ancora disponibili"
 
 #~ msgid "Mobile"
 #~ msgstr "Cellulare"

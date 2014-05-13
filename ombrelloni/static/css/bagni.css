@@ -203,9 +203,65 @@ body {
     padding-bottom: 5px;
 }
 
-.bagno-detail-address{
+.book-button{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 139, 228);
+    border-color: rgb(37, 139, 228);
+}
+
+
+.book-button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+
+.book-button:visited{
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 139, 228);
+    border-color: rgb(37, 139, 228);
+}
+
+
+.book-button:focus{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+.book-button-xs{
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 139, 228);
+    border-color: rgb(37, 139, 228);
+}
+
+
+.book-button-xs:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+
+.book-button-xs:visited{
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 139, 228);
+    border-color: rgb(37, 139, 228);
+}
+
+
+.book-button-xs:focus{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+.bagno-header-row{
     border-bottom: 1px solid rgb(249, 191, 22);
-    padding-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .hp-form
@@ -429,6 +485,21 @@ button {
 .btn-primary {
      background-color: #EB604B/*#00A0B0*/;
      border-color: #EB604B/*#00A0B0*/;
+}
+
+.btn-primary:hover {
+     background-color: #EB351A/*#00A0B0*/;
+     border-color: #EB351A/*#00A0B0*/;
+}
+
+.btn-primary:focus {
+     background-color: #EB351A/*#00A0B0*/;
+     border-color: #EB351A/*#00A0B0*/;
+}
+
+.btn-primary:visited {
+     background-color: #EB351A/*#00A0B0*/;
+     border-color: #EB351A/*#00A0B0*/;
 }
 
 .hp-what-input {

@@ -16,37 +16,53 @@
 {% trans "facilities" as t_facilities %}
 {% trans "facility" as t_facility %}
 {% trans "facility_info_not_available" as t_facility_info_not_available %}
+{% trans "book_modal_title" as t_book_modal_title %}
+{% trans "book_modal_text_1" as t_book_modal_text_1 %}
+{% trans "book_modal_text_2" as t_book_modal_text_2 %}
+{% trans "book_modal_submit_button" as t_book_modal_submit_button %}
+{% trans "book_button" as t_book_button %}
+{% trans "email_address" as t_email_address %}
+{% trans "not_yet_available" as t_not_yet_available %}
 
 <div id="contact-form"></div>
 <div class="bagno-detail-wrapper-div">
+  <div class="row bagno-header-row">
+    <div class="col-sm-9 col-xs-12">
+      <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
+      <p>{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
+    </div>
+    <div class="col-sm-3 col-xs-12 hidden-xs">
+      <button id="book-button" class="btn pull-right book-button" data-toggle="modal" data-target="#bookModal">{{ t_book_button }}</button>
+    </div>
+    <div class="col-xs-12 visible-xs">
+      <button id="book-button" class="btn book-button-xs" data-toggle="modal" data-target="#bookModal">{{ t_book_button }}</button>
+  </div>
+  </div>
   <div class="row">
     <div class="col-xs-12">
-      <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
-      {% if object.is_managed %}
-        {% if can_edit %}
-          <a href="{{ object.get_edit_url }}" class="btn btn-primary">{{ t_modify_bagno }}</a>
-        {% else %}
-          <button id="contact-form-button" class="btn btn-primary" data-url="{{ object.get_contactform_url }}">
-            {{ t_contact_button }}
-          </button>
-        {% endif %} 
-      {% else %}
-        {% if not user.is_authenticated %}
-        {% comment %}
-          <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
-        {% endcomment %}
-        {% endif %}
-      {% endif %}
+        {% if object.is_managed %}
+            {% if can_edit %}
+              <a href="{{ object.get_edit_url }}" class="btn btn-primary">{{ t_modify_bagno }}</a>
+            {% else %}
+              <button id="contact-form-button" class="btn btn-primary" data-url="{{ object.get_contactform_url }}">
+                {{ t_contact_button }}
+              </button>
+            {% endif %} 
+          {% else %}
+            {% if not user.is_authenticated %}
+            {% comment %}
+              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
+            {% endcomment %}
+            {% endif %}
+          {% endif %}
     </div>
   </div>
 
-  {% include "userfeedback/form.html" %}
-
-  <div class="row">
+  <!--div class="row">
     <div class="col-xs-12">
       <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
-  </div>
+  </div-->
   <div class="row">
     <div class="col-xs-6 col-sm-5">
       {% if object.images.count > 0 %}
@@ -117,6 +133,8 @@
                 >{{ tel.number }}</a>
               </p>
             {% endfor %}
+          {% else %}
+             <p><em>{{ t_not_yet_available|capfirst}}</em></p>
           {% endif %}
         </p>
         <p>
@@ -173,6 +191,39 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content hp-facility-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title my-bold" id="myModalLabel">{{ t_book_modal_title }}</h3>
+      </div>
+      <div class="modal-body">
+         <p>{{ t_book_modal_text_1 }}.<br>{{ t_book_modal_text_2 }}.</p>
+         <form id="book-online-form" action="{% url 'user-feedback-form' %}" method="post" role="form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="sr-only" for="id_email">{{ form.email.label }}</label>
+                <div id="id_email_errors"></div>
+                <input id="id_email" class="form-control" name="email" type="text" placeholder="{{ t_email_address }}" />
+            </div>
+            <input type="hidden" name="bagno" value="{{ object.pk }}" />
+            <button class="btn btn-primary" type="submit" >{{ t_book_modal_submit_button }}</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
+         </form>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
+<script>
+       $( '#book-online-form').ajaxForm(function(){
+         $('#bookModal').modal('hide')
+        });
+</script>
+
 {% endblock content %}
 
 {% block specific_js %}
