@@ -357,15 +357,15 @@ msgstr "here you can find the address, contacts and the list of facilities provi
 
 #: templates/bagni/bagno_detail.html:28
 msgid "bagno_detail_desc_3"
-msgstr "If you want to explore more beach resorts in"
+msgstr "Explore more beach resorts in"
 
 #: templates/bagni/bagno_detail.html:29
 msgid "bagno_detail_desc_4"
-msgstr "you can do it in"
+msgstr "using our"
 
 #: templates/bagni/bagno_detail.html:30
 msgid "bagno_detail_desc_5"
-msgstr "the search page"
+msgstr "search page"
 
 #: templates/bagni/bagno_detail.html:225 templates/bagni/homepage.html:96
 msgid "Close"
