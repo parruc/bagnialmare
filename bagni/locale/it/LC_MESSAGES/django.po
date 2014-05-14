@@ -342,7 +342,7 @@ msgstr "Avvertimi"
 
 #: templates/bagni/bagno_detail.html:23
 msgid "book_button"
-msgstr "Prenota ora online"
+msgstr "Prenota online"
 
 #: templates/bagni/bagno_detail.html:24
 msgid "email_address"
@@ -354,21 +354,19 @@ msgstr "contatti telefonici non ancora disponibili"
 
 #: templates/bagni/bagno_detail.html:26
 msgid "bagno_detail_desc_1"
-msgstr "Sei nella pagina di"
+msgstr "Benvenuto nella pagina di"
 
 #: templates/bagni/bagno_detail.html:27
 msgid "bagno_detail_desc_2"
-msgstr ""
-"qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questo "
-"bagno"
+msgstr "qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questa struttura"
 
 #: templates/bagni/bagno_detail.html:28
 msgid "bagno_detail_desc_3"
-msgstr "Esplora altri bagni a"
+msgstr "Se cerchi altri bagni a"
 
 #: templates/bagni/bagno_detail.html:29
 msgid "bagno_detail_desc_4"
-msgstr "direttamente dalla nostra"
+msgstr "puoi farlo usando la nostra"
 
 #: templates/bagni/bagno_detail.html:30
 msgid "bagno_detail_desc_5"

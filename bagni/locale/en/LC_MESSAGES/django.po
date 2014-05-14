@@ -337,7 +337,7 @@ msgstr "Submit Email"
 
 #: templates/bagni/bagno_detail.html:23
 msgid "book_button"
-msgstr "Book online now"
+msgstr "Book online"
 
 #: templates/bagni/bagno_detail.html:24
 msgid "email_address"
@@ -349,7 +349,7 @@ msgstr "phone contacts not yet available"
 
 #: templates/bagni/bagno_detail.html:26
 msgid "bagno_detail_desc_1"
-msgstr "You are in the page of"
+msgstr "Welcome to the page of"
 
 #: templates/bagni/bagno_detail.html:27
 msgid "bagno_detail_desc_2"
@@ -357,11 +357,11 @@ msgstr "here you can find the address, contacts and the list of facilities provi
 
 #: templates/bagni/bagno_detail.html:28
 msgid "bagno_detail_desc_3"
-msgstr "Explore more beach resorts in"
+msgstr "If you are lookin for more beach resorts in"
 
 #: templates/bagni/bagno_detail.html:29
 msgid "bagno_detail_desc_4"
-msgstr "using our"
+msgstr " you can use our"
 
 #: templates/bagni/bagno_detail.html:30
 msgid "bagno_detail_desc_5"
