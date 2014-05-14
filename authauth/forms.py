@@ -16,6 +16,9 @@ class M2MSelect(forms.Select):
 
 # Create the form class.
 class ManagerSignupForm(forms.ModelForm):
+
+    accepts_booking = forms.BooleanField(required=False)
+
     class Meta:
         model = Manager
         fields = ['name', 'surname', 'bagni', 'privacy', 'tos']
@@ -36,6 +39,9 @@ class ManagerSignupForm(forms.ModelForm):
         m.name = self.cleaned_data['name']
         m.surname = self.cleaned_data['surname']
         m.save()
+        bagno = m.bagni.first()
+        bagno.accepts_booking = self.cleaned_data['accepts_booking']
+        bagno.save()
 
     def _clean_required_bool(self, field_name):
         data = self.cleaned_data[field_name]

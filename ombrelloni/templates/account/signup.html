@@ -22,6 +22,8 @@
 {% trans "close" as t_close %}
 {% trans "choose_neighbourhood" as t_choose_neighbourhood %}
 {% trans "choose_bagno" as t_choose_bagno %}
+{% trans "label_accepts_booking" as t_label_accepts_booking %}
+{% trans "help_accepts_booking" as t_help_accepts_booking %}
 
 
 <div class="row">
@@ -38,7 +40,6 @@
   {{ t_else_have_account|capfirst }}:
 </p>
 <hr>
-
     <form action="{{ submit_url }}" method="post" id="signup_form" class="" role="form">
       {% csrf_token %}
         <div class="form-group">
@@ -59,16 +60,6 @@
                     -- {{ t_choose_bagno }} --
                 </option>
             </select>
-            {% comment %}
-            <select id="id_bagni" name="bagni">
-                <option value="nochoice" selected>
-                    -- {{ t_choose_bagno }} --
-                </option>
-                <option value="13827">
-                    Bagno Test
-                </option>
-            </select>
-            {% endcomment %}
         </div>
         <div class="form-group">
             <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
@@ -108,6 +99,14 @@
             {{ form.privacy.errors }}
             <input checked="checked" id="id_privacy" name="privacy" type="checkbox">
             </label>
+          </div>
+          <div class="checkbox">
+            <label class="my-brown" for="id_accepts_booking">
+              {{ t_label_accepts_booking }}
+              {{ form.accepts_booking.errors }}
+              <input checked="checked" id="id_accepts_booking" name="accepts_booking" type="checkbox">
+            </label>
+            <p class="help-block">{{ t_help_accepts_booking }}</p>
           </div>
             {{ form.confirmation_key }}
             <button class="btn btn-primary" type="submit" >{{ t_sign_up_button|capfirst }}</button>

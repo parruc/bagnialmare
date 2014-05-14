@@ -55,7 +55,7 @@ class JsonBagniInNeighbourhood(JSONResponseMixin, BaseListView):
 
     def get_context_data(self, **kwargs):
         queryset = kwargs.pop('object_list', self.object_list)
-        return dict(items=[(b.pk, b.get_complete_name()) for b in queryset])
+        return dict(items=[(b.pk, b.get_complete_name()) for b in queryset if not b.is_managed()])
 
 
 class JsonAutocompletePlaces(JSONResponseMixin, BaseDetailView):
