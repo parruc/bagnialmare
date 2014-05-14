@@ -37,6 +37,7 @@
       <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
       <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
+    {% if object.accepts_booking %}
     <div class="col-sm-3 col-xs-12 hidden-xs">
       <button id="book-button" class="btn pull-right book-button ga_click" data-toggle="modal" data-target="#bookModal"
               data-category="book" data-action="click" data-label="book-button">{{ t_book_button }}</button>
@@ -44,7 +45,8 @@
     <div class="col-xs-12 visible-xs">
       <button id="book-button" class="btn book-button-xs ga_click" data-toggle="modal" data-target="#bookModal"
               data-category="book" data-action="click" data-label="book-button" >{{ t_book_button }}</button>
-  </div>
+    </div>
+    {% endif %}
   </div>
   <div class="row">
     <div class="col-xs-12">
@@ -203,6 +205,7 @@
   </div>
 </div>
 
+{% if object.accepts_booking %}
 <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content hp-facility-modal">
@@ -226,6 +229,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 
 
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
