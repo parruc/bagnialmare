@@ -365,7 +365,7 @@ msgstr "using our"
 
 #: templates/bagni/bagno_detail.html:30
 msgid "bagno_detail_desc_5"
-msgstr "search page!"
+msgstr "search page"
 
 #: templates/bagni/bagno_detail.html:225 templates/bagni/homepage.html:96
 msgid "Close"
