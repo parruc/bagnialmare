@@ -1,10 +1,12 @@
 function currentPositionSuccess(position)
 {
+    $("body").removeClass("loading");
     $(":input[name=coords]").val(position.coords.latitude + "," + position.coords.longitude);
     $(":input[name=l]").val($("#set-my-position").data("position-label"));
 }
 function currentPositionFailure(error)
 {
+    $("body").removeClass("loading");
     $(":input[name=coords]").val("");
     $(":input[name=l]").val("");
     /*Todo modal popup che prende contenuti tradotti dal template*/
@@ -14,7 +16,8 @@ function setCurrentPosition()
 {
     if(navigator.geolocation)
     {
-        navigator.geolocation.getCurrentPosition(currentPositionSuccess, currentPositionFailure);
+        $("body").addClass("loading");
+        navigator.geolocation.getCurrentPosition(currentPositionSuccess, currentPositionFailure, {timeout: 4000});
     }
 }
 

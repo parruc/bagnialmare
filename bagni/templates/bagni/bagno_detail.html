@@ -76,7 +76,7 @@
     <div class="col-xs-12 col-sm-4">
         <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
     </div>
-    <div class="col-xs-12 col-sm-4">	
+    <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
         <div id="bagno-image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
           <!-- Wrapper for slides -->
@@ -225,13 +225,12 @@
             <button class="btn btn-primary" type="submit" >{{ t_book_modal_submit_button }}</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
          </form>
+       </div>
     </div>
   </div>
 </div>
 {% endif %}
 
-
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
 <script>
        $( '#book-online-form').ajaxForm(function(){
          $('#bookModal').modal('hide')
@@ -243,6 +242,7 @@
 {% block specific_js %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/single_map.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/contact_dialog.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
 {% endblock specific_js %}
 
 {% block pagetitle %}
