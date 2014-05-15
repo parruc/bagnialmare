@@ -21,6 +21,8 @@
   {% trans "near_me_tooltip" as t_near_me_tooltip %}
   {% trans "home_search" as t_home_search %}
   {% trans "home_modal_header" as t_home_modal_header %}
+  {% trans "geo_modal_text" as t_geo_modal_text %}
+  {% trans "geo_modal_title" as t_geo_modal_title %}
   {% url 'search' as search_url %}
 <div class="row homepage-first-row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 homepage-box-wrapper">
@@ -98,6 +100,20 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="geo-error-modal" tabindex="-1" role="dialog" aria-labelledby="geo-error-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title my-bold" id="geo-error-modal-label">{{ t_geo_modal_title }}</h3>
+      </div>
+      <div class="modal-body">
+         <p>{{ t_geo_modal_text }}</p>
+         <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
+       </div>
+    </div>
+  </div>
+</div>
 {% endcache %}
 {% endblock %}
 
@@ -106,8 +122,11 @@
 <script type="text/javascript" src="{{ STATIC_URL }}js/home.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.backstretch.min.js"></script>
 <script type="text/javascript">
+    //Trying to preload image
+    img1 = new Image();
+    img1.src = "{{ STATIC_URL }}img/ombrelloni.jpg";
     $(function() {
-    $.backstretch("{{ STATIC_URL }}img/ombrelloni.jpg");
+    $.backstretch(img1.src);
 });
 </script>
 {% endblock specific_js %}

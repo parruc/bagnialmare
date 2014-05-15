@@ -231,18 +231,17 @@
 </div>
 {% endif %}
 
-<script>
-       $( '#book-online-form').ajaxForm(function(){
-         $('#bookModal').modal('hide')
-        });
-</script>
-
 {% endblock content %}
 
 {% block specific_js %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/single_map.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/contact_dialog.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
+<script>
+       $( '#book-online-form').ajaxForm(function(){
+         $('#bookModal').modal('hide')
+        });
+</script>
 {% endblock specific_js %}
 
 {% block pagetitle %}

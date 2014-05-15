@@ -10,7 +10,7 @@ function currentPositionFailure(error)
     $(":input[name=coords]").val("");
     $(":input[name=l]").val("");
     /*Todo modal popup che prende contenuti tradotti dal template*/
-    alert("Condivisione della posizione disattivata");
+    $('#geo-error-modal').modal('show');
 }
 function setCurrentPosition()
 {

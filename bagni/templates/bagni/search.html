@@ -29,6 +29,8 @@
 {% trans "first" as t_first %}
 {% trans "last" as t_last %}
 {% trans "no_results_for_search" as t_no_results_for_search %}
+{% trans "geo_modal_text" as t_geo_modal_text %}
+{% trans "geo_modal_title" as t_geo_modal_title %}
 
 
   <div id="contact-form"></div>
@@ -352,6 +354,20 @@
       <div class="modal-wheel"><!-- Place at bottom of page --></div>
     {% endif %}
   </div><!--wrapped-->
+  <div class="modal fade" id="geo-error-modal" tabindex="-1" role="dialog" aria-labelledby="geo-error-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title my-bold" id="geo-error-modal-label">{{ t_geo_modal_title }}</h3>
+      </div>
+      <div class="modal-body">
+         <p>{{ t_geo_modal_text }}.</p>
+         <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
+       </div>
+    </div>
+  </div>
+</div>
 {% endcache %}
 {% endblock %}
 
