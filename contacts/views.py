@@ -25,7 +25,7 @@ class ContactView(FormView):
         sender = form.cleaned_data['sender']
         from_email = "info@bagnialmare.com"
         bcc = []
-        
+
 
         if self.recipients:
             # If there is already a recipient put us in BCC
