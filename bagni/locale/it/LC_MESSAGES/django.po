@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-14 00:29+0200\n"
+"POT-Creation-Date: 2014-05-15 11:09+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -152,6 +152,10 @@ msgstr "Sito internet"
 #: models/bagni.py:27
 msgid "Coordinates"
 msgstr "Coordinate"
+
+#: models/bagni.py:28
+msgid "Accept booking"
+msgstr ""
 
 #: models/bagni_details.py:14
 msgid "Spoken language"
@@ -358,7 +362,9 @@ msgstr "Benvenuto nella pagina di"
 
 #: templates/bagni/bagno_detail.html:27
 msgid "bagno_detail_desc_2"
-msgstr "qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questa struttura"
+msgstr ""
+"qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questa "
+"struttura"
 
 #: templates/bagni/bagno_detail.html:28
 msgid "bagno_detail_desc_3"
@@ -372,15 +378,16 @@ msgstr "puoi farlo usando la nostra"
 msgid "bagno_detail_desc_5"
 msgstr "pagina di ricerca"
 
-#: templates/bagni/bagno_detail.html:225 templates/bagni/homepage.html:96
+#: templates/bagni/bagno_detail.html:227 templates/bagni/homepage.html:98
+#: templates/bagni/homepage.html.py:112 templates/bagni/search.html:367
 msgid "Close"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:251
+#: templates/bagni/bagno_detail.html:253
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
-#: templates/bagni/bagno_edit.html:235
+#: templates/bagni/bagno_edit.html:170
 msgid "Save"
 msgstr ""
 
@@ -450,7 +457,17 @@ msgstr "cerca"
 msgid "home_modal_header"
 msgstr "fai click su un servizio per selezionarlo"
 
-#: templates/bagni/homepage.html:29
+#: templates/bagni/homepage.html:24 templates/bagni/search.html:32
+msgid "geo_modal_text"
+msgstr ""
+"Non hai accettato di condividere la tua posizioneo o il tuo dispositivo non è riuscito a calcolarla."
+"Puoi compilare il campo 'Vicino a' con il tuo indirizzo attuale."
+
+#: templates/bagni/homepage.html:25 templates/bagni/search.html:33
+msgid "geo_modal_title"
+msgstr "Non riusciamo a stabilire la tua posizione"
+
+#: templates/bagni/homepage.html:31
 #, python-format
 msgid ""
 "Contacts, facilities and addresses of more than <a "
@@ -460,11 +477,11 @@ msgstr ""
 "Contatti, servizi e indirizzi di oltre <a href='%(search_url)s'>1000 "
 "stabilimenti balneari</a> da Cattolica a Ferrara"
 
-#: templates/bagni/homepage.html:116
+#: templates/bagni/homepage.html:135
 msgid "homepage_title"
 msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
 
-#: templates/bagni/homepage.html:121
+#: templates/bagni/homepage.html:140
 msgid "homepage_description"
 msgstr ""
 "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, "
@@ -583,7 +600,7 @@ msgstr ""
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:260
+#: templates/bagni/search.html:262
 #, python-format
 msgid ""
 "\n"
@@ -592,11 +609,11 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:367
+#: templates/bagni/search.html:383
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:372
+#: templates/bagni/search.html:388
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
