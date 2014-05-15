@@ -1,7 +1,7 @@
 var geo_timeout;
 function currentPositionNoAnswerOrFailure()
 {
-    $("body").removeClass("loading");
+    hideSpinner();
     $(":input[name=coords]").val("");
     $(":input[name=l]").val("");
     $('#geo-error-modal').modal('show');
@@ -19,7 +19,7 @@ function currentPositionNoAnswer()
 function currentPositionSuccess(position)
 {
     clearTimeout(geo_timeout);
-    $("body").removeClass("loading");
+    hideSpinner();
     $(":input[name=coords]").val(position.coords.latitude + "," + position.coords.longitude);
     $(":input[name=l]").val($("#set-my-position").data("position-label"));
 }
@@ -32,7 +32,7 @@ function setCurrentPosition()
 {
     if(navigator.geolocation)
     {
-        $("body").addClass("loading");
+        showSpinner();
         var options = {timeout:4000, maximumAge:0, enableHighAccuracy:false};
         geo_timeout = setTimeout(currentPositionNoAnswer, 6000);
         navigator.geolocation.getCurrentPosition(currentPositionSuccess, currentPositionFailure, options);

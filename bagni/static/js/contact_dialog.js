@@ -12,13 +12,13 @@ $(function() {
     });
     $("#contact-form").on("click", "form button", function(evt){
         evt.preventDefault();
-        //$("#contacts-modal").addClass("loading");
+        showSpinner("#contacts-modal");
         $.ajax({
             url: $("#contact-form form").attr("action"),
             type: $("#contact-form form").attr("method").toUpperCase(),
             data: $("#contact-form form" ).serialize(),
             success: function(contact_response) {
-                //$("#contacts-modal").removeClass("loading");
+                hideSpinner("#contacts-modal");
                 var modal = $(contact_response).filter("#contacts-modal");
                 if(modal.length > 0)
                 { 
