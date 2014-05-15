@@ -9,13 +9,13 @@ $(function() {
     });
 
     $("#rootContainer").on('click', '.checkbox input', function(evt){
-        $("body").addClass("loading");
+        showSpinner();
         var url = $("#filters").data("base-url") + $(this).data('facet-url');
         var title = $(title).html()
 
         $.ajax({url:url,
                 success:function(response) {
-                    $("body").removeClass("loading");
+                    hideSpinner();
                     $("#rootContainer").html($(response).find("#rootContainer").html());
                     window.scrollTo(0,0);
                     window.history.pushState({}, title, url);

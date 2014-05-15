@@ -6,12 +6,12 @@ $(function(){
        $("#span"+this.id.toString()).removeClass('glyphicon-chevron-down').addClass("glyphicon-chevron-right");
   });
   $("#facilities-list-trigger").on("click", function(){
-    $('#myModal').modal();
+    $('#facilities_modal').modal();
   });
 });
 
 function populateWhatField(aTag){
-    $('#myModal').modal('hide');
+    $('#facilities_modal').modal('hide');
     $('#search_q').focus();
     $('#search_q').attr("value", aTag.innerHTML);
 }
