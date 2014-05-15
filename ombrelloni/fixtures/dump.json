@@ -74459,5 +74459,29 @@
     "user": null, 
     "surname": "utente"
   }
+},
+{
+  "pk": 1, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-anita"
+    ], 
+    "email": "info@bagnialmare.com", 
+    "created": "2014-05-14T12:35:18.986Z"
+  }
+},
+{
+  "pk": 2, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-conchiglia-lido"
+    ], 
+    "email": "marco.benvenuto1@gmail.com", 
+    "created": "2014-05-14T12:57:18.681Z"
+  }
 }
 ]
