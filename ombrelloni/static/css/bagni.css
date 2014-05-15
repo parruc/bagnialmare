@@ -371,12 +371,22 @@ img.hp-form-image
     left:       0;
     height:     100%;
     width:      100%;
-    background: rgba( 125, 125, 125, .8 )
-                url('/static/img/spinning-wheel.gif?v=2')
+    background: rgba( 255, 255, 255, .8 )
+                url('/static/img/spinning-wheel.gif?v=4')
                 50% 50%
                 no-repeat;
-    background-size:48px 48px;
 }
+
+.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+.loading .modal-wheel {
+    display: block;
+}
+
 
 .my-yellow{
     background-color: rgb(249, 191, 22);

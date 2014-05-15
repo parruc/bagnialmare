@@ -78,77 +78,77 @@
     {% if search_results.has_get %}
       <div class="row result-wrapper-div">
         <div class="col-sm-3 hidden-xs">
-          <div id="filters" data-base-url="{% url 'search' %}">
-            {% if search_results.facets.items %}
+          {% if search_results.facets %}
+            <div id="filters" data-base-url="{% url 'search' %}">
               <h3 class="filter-result-header">{{ t_filter_by_facility|capfirst }}:</h3>
-            {% endif %}
-            {% for facet in search_results.active_facets %}
-              {% if forloop.first %}
-                <h4 class="filter-result-service-category"
-                    data-toggle="collapse"
-                    data-target="#collapse_active">
-                  <span id="spancollapse_active"
-                        class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
-                    {{ t_active_filters|capfirst }}
-                </h4>
-                <div id="collapse_active" class="collapse in" >
-                  <ul class="list-group">
-              {% endif %}
-              <div class="checkbox filter-result-selected-checkbox-div">
-                <label class="filter-result-selected-checkbox-label">
-                  <input data-facet-url="?{{ facet.url }}"
-                         type="checkbox" checked />
-                  {{ facet.name }} ({{ facet.group }})
-                </label>
-              </div>
-              {% if forloop.last %}
-                  </ul>
+              {% for facet in search_results.active_facets %}
+                {% if forloop.first %}
+                  <h4 class="filter-result-service-category"
+                      data-toggle="collapse"
+                      data-target="#collapse_active">
+                    <span id="spancollapse_active"
+                          class="glyphicon glyphicon-chevron-down facility-categoty-arrow"></span>
+                      {{ t_active_filters|capfirst }}
+                  </h4>
+                  <div id="collapse_active" class="collapse in" >
+                    <ul class="list-group">
+                {% endif %}
+                <div class="checkbox filter-result-selected-checkbox-div">
+                  <label class="filter-result-selected-checkbox-label">
+                    <input data-facet-url="?{{ facet.url }}"
+                           type="checkbox" checked />
+                    {{ facet.name }} ({{ facet.group }})
+                  </label>
                 </div>
-              {% endif %}
-            {% endfor %}
-            {% for facet_group in search_results.facets.values %}
-              {% if facet_group %}
-                <div>
-                  <div>
-                    <h4 class="filter-result-service-category"
-                        data-toggle="collapse"
-                        data-target="#collapse{{ forloop.counter }}">
-                      <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} facility-categoty-arrow"></span>
-                      {% filter capfirst %}
-                        {% trans facet_group.name|capfirst %}
-                      {% endfilter %}
-                    </h4>
+                {% if forloop.last %}
+                    </ul>
                   </div>
-                  {% for facet in facet_group.facets %}
-                    {% if forloop.first %}
-                      <div id="collapse{{ forloop.parentloop.counter }}"
-                           class="collapse{% if facet_group.order < 3 %} in{% endif %}" >
-                        <ul class="list-group">
-                    {% endif %}
-                    <li class="list-unstyled">
-                      <div class="checkbox filter-result-checkbox-div">
-                        <label>
-                          <input data-facet-url="?{{ facet.url }}"
-                                 type="checkbox"
-                                 class="ga_click"
-                                 data-category="facet"
-                                 data-action="click"
-                                 data-label="{{ facet.name }}" />
-                          {{ facet.name }}
-                        </label>
-                      </div>
-                    </li>
-                    {% if forloop.last %}
-                        </ul>
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
+                {% endif %}
+              {% endfor %}
+              {% for facet_group in search_results.facets.values %}
+                {% if facet_group %}
+                  <div>
+                    <div>
+                      <h4 class="filter-result-service-category"
+                          data-toggle="collapse"
+                          data-target="#collapse{{ forloop.counter }}">
+                        <span id="spancollapse{{ forloop.counter }}" class="glyphicon {% if facet_group.order < 3 %}glyphicon-chevron-down{% else %}glyphicon-chevron-right{% endif %} facility-categoty-arrow"></span>
+                        {% filter capfirst %}
+                          {% trans facet_group.name|capfirst %}
+                        {% endfilter %}
+                      </h4>
+                    </div>
+                    {% for facet in facet_group.facets %}
+                      {% if forloop.first %}
+                        <div id="collapse{{ forloop.parentloop.counter }}"
+                             class="collapse{% if facet_group.order < 3 %} in{% endif %}" >
+                          <ul class="list-group">
+                      {% endif %}
+                      <li class="list-unstyled">
+                        <div class="checkbox filter-result-checkbox-div">
+                          <label>
+                            <input data-facet-url="?{{ facet.url }}"
+                                   type="checkbox"
+                                   class="ga_click"
+                                   data-category="facet"
+                                   data-action="click"
+                                   data-label="{{ facet.name }}" />
+                            {{ facet.name }}
+                          </label>
+                        </div>
+                      </li>
+                      {% if forloop.last %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
-        <div class="col-xs-12 col-sm-9">
+        <div id="search-results" class="col-xs-12 col-sm-9">
           <p>
             <span class="hits-count">{{ search_results.count }}</span>
             {% if search_results.q %}
