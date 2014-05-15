@@ -371,7 +371,7 @@ img.hp-form-image
     left:       0;
     height:     100%;
     width:      100%;
-    background: rgba( 255, 255, 255, .8 )
+    background: rgba( 100, 100, 100, .8 )
                 url('/static/img/spinning-wheel.gif')
                 50% 50%
                 no-repeat;
