@@ -375,6 +375,7 @@ img.hp-form-image
                 url('/static/img/spinning-wheel.gif?v=1')
                 50% 50%
                 no-repeat;
+    background-size:64px 64px;
 }
 
 .loading {
