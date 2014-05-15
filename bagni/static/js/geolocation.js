@@ -44,7 +44,7 @@ function setCurrentPosition()
 }
 
 $(function() {
-    $("#set-my-position").click(function(evt){
+    $("#rootContainer").on("click", "#set-my-position", function(evt){
         setCurrentPosition();
         evt.preventDefault();
     });
