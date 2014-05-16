@@ -2,6 +2,8 @@
 
 {% load l10n i18n thumbnail %}
 {% load batch from custom_filters %}
+{% load href_url from custom_filters %}
+{% load non_href_url from custom_filters %}
 {% load neighbourhood_municipality from custom_filters %}
 
 {% block content %}
@@ -152,7 +154,7 @@
         <p>
           {% if object.site %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>
-          <a href="{{ object.site }}"
+          <a href="{{ object.site|href_url }}"
              class="ga_click"
              data-category="contact"
              data-action="website"
@@ -160,7 +162,7 @@
              title="{{ t_bagno }} {{ t_website }}"
              target="_blank"
              rel="nofollow">
-              {{ object.site }}</a>
+              {{ object.site|non_href_url }}</a>
           {% endif %}
         </p>
     </div>
