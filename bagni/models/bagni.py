@@ -25,7 +25,8 @@ class Bagno(BaseModel):
     mail = models.EmailField(max_length=50, blank=True, verbose_name=_("Mail"))
     site = models.URLField(max_length=75, blank=True, verbose_name=_("Website"))
     point = models.PointField(null=True, blank=True, verbose_name=_("Coordinates"))
-    accepts_booking = models.BooleanField(default=True, verbose_name=_("Accept booking"))
+    accepts_booking = models.BooleanField(null=False, blank=False,
+                                          default=True, verbose_name=_("Accept booking"))
 
     objects = models.GeoManager()
 
