@@ -4,6 +4,8 @@
 
 {% block content %}
 
+{% trans "facilities" as t_facilities %}
+
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as LANGUAGE_CODE %}
 <div class="row">
@@ -30,17 +32,24 @@
             <div class="form-group">
                 <label class="my-brown" for="id_languages">{{ form.languages.label }}:</label>
                 {{ form.languages.errors }}
-                {{ form.languages }}
+                <select multiple="multiple" class="form-control" id="id_languages" name="languages">
+                {% for value,label in form.languages.field.choices %}
+                    <option value="{{ value }}">{{ label }}</option>
+                {% endfor %}
+                </select>                
             </div>
             <div class="form-group">
                 <label class="my-brown" for="id_neighbourhood">{{ form.neighbourhood.label }}:</label>
                 {{ form.neighbourhood.errors }}
-                {{ form.neighbourhood }}
+                <select class="form-control" id="id_neighbourhood" name="neighbourhood">
+                {% for value,label in form.neighbourhood.field.choices %}
+                    <option value="{{ value }}">{{ label }}</option>
+                {% endfor %}
+                </select>
             </div>
-            <div class="form-group">
-                <label class="my-brown" for="id_accepts_booking">{{ form.accepts_booking.label }}:</label>
+            <div class="checkbox">
                 {{ form.accepts_booking.errors }}
-                {{ form.accepts_booking }}
+                <label class="my-brown" for="id_accepts_booking">{{ form.accepts_booking.label }} {{ form.accepts_booking }}</label>
                 <!--<input id="id_site" class="form-control" name="site" type="text" value="{{ form.site.value }}" /> -->
             </div>
             <div class="form-group">
@@ -53,6 +62,7 @@
                 {{ form.mail.errors }}
                 <input id="id_email" class="form-control" name="email" type="text" value="{{ form.email.value }}" />
             </div>
+            <hr>
             {% comment %}
             Questo è il modo di rendere un campo traducibile con una tab selection
             dentro un form.
@@ -152,18 +162,23 @@
 
             {% endfor %}
             <hr>
-            <div class="form-group">
-                <label class="my-brown" for="id_point">{{ form.point.label }}:</label>
+            <h2 class="my-brown">{{ form.point.label }}:</h2>
+            <div>
                 {{ form.point.errors }}
                 {{ form.point }}
             </div>
-            <hr>
+            <div class="row">
+               <div class="col-xs-12">
+                   <hr>
+                   <h2 class="my-brown">{{ t_facilities|capfirst }}:</h2>
+               </div>
+            </div>
                 {% with form.services|dictsort:"attrs.cat_name" as options %}
                     {% regroup options by attrs.cat_name as groups %}
                     {% for group in groups %}
                         <div class="row">
                             <div class="col-xs-12">
-                                <h3 class="service-group">{{ group.grouper }}</h3>
+                                <h3 class="service-group">{{ group.grouper|capfirst }}</h3>
                             </div>
                                 {% for option in group.list %}
                                 <div class="col-xs-4">
