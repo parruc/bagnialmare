@@ -111,14 +111,16 @@
                 {% for bagno in user.manager.bagni.all %}
                 <li>
                 <a href="{{ bagno.get_edit_url }}"
-                    title="{{ t_edit }}">
+                    title="{{ t_edit }}"
+                    rel="nofollow">
                     <strong>{{ t_edit|capfirst }} {{ bagno.name }}</strong>
                   </a>
                 </li>
                 {% endfor %}
                 <li>
                   <a href="{% url 'account_logout' %}"
-                    title="{{ t_logout }}">
+                      title="{{ t_logout }}"
+                      rel="nofollow">
                     <strong>{{ t_logout|capfirst }}</strong>
                   </a>
                 </li>
@@ -127,7 +129,8 @@
               {% else %}
               <li>
                 <a href="{% url 'account_login' %}"
-                 title="{{ t_login }}">
+                    title="{{ t_login }}"
+                    rel="nofollow">
                 <strong>{{ t_login|capfirst }}</strong>
                 </a>
               </li>
