@@ -233,6 +233,7 @@ class BagnoForm(TranslationModelForm):
                   'neighbourhood',
                   'mail',
                   'site',
+                  'accepts_booking',
                   'point',
                   ]
 
