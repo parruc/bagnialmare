@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib.gis import admin
-from common import get_sitemaps
+from ombrelloni.common.sitemaps import get_sitemaps
 
 SITEMAPS = get_sitemaps(['bagni', 'contacts'])
 

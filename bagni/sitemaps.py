@@ -1,7 +1,7 @@
 from models.bagni import Bagno
 from models.services import Service
 
-from common import LocalesSitemap, StaticLocalesSitemap
+from ombrelloni.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
 
 class BagnoSitemap(LocalesSitemap):
     def items(self):
