@@ -19,7 +19,6 @@ def send_newsletter(modeladmin, request, queryset):
                                       level=messages.ERROR, extra_tags='', fail_silently=False)
         return
     obj = queryset[:1].get()
-    import ipdb; ipdb.set_trace()
     if obj.sent_on:
         modeladmin.message_user(request, "You already sent this newsletter",
                                       level=messages.ERROR, extra_tags='', fail_silently=False)
@@ -48,6 +47,7 @@ def send_newsletter(modeladmin, request, queryset):
     recipients = [user.email for user in users]
 
     try:
+        import ipdb; ipdb.set_trace()
         send_mass_html_mail(subject=obj.subject, text_content=text_content, html_content=html_content, recipients=recipients)
     except Exception as e:
         modeladmin.message_user(request, "Error %s trying send emails" % (str(e), obj.template.path),
