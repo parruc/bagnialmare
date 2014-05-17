@@ -12,7 +12,7 @@ class NewsletterTarget(models.Model):
         verbose_name_plural = _('Newsletter targets')
 
     name = models.CharField(max_length=100, verbose_name=_("Name"))
-    #occhio che filter è una funzione builtin in python!!
+    #occhio che filter e una funzione builtin in python!!
     filter = models.CharField(max_length=500, verbose_name=_("Filter"))
 
     def __unicode__(self):
