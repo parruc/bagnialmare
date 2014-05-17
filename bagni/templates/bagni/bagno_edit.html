@@ -10,7 +10,7 @@
 {% get_current_language as LANGUAGE_CODE %}
 <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
-        <h1>Edit bagno</h1>
+        <h1>Modifica i dati del tuo bagno</h1>
         <hr>
         <form method="post" enctype="multipart/form-data" role="form">
             {% csrf_token %}
@@ -30,7 +30,7 @@
                 <input id="id_address" class="form-control" name="address" type="text" value="{{ form.address.value }}" />
             </div>
             <div class="form-group">
-                <label class="my-brown" for="id_languages">{{ form.languages.label }}:</label>
+                <label class="my-brown" for="id_languages">{{ form.languages.label }} (tieni premuto il tasto ctrl per selezionare più righe):</label>
                 {{ form.languages.errors }}
                 <select multiple="multiple" class="form-control" id="id_languages" name="languages">
                 {% for value,label in form.languages.field.choices %}
@@ -43,7 +43,7 @@
                 {{ form.neighbourhood.errors }}
                 <select class="form-control" id="id_neighbourhood" name="neighbourhood">
                 {% for value,label in form.neighbourhood.field.choices %}
-                    <option value="{{ value }}">{{ label }}</option>
+                    <option {% if form.neighbourhood.value == value %} selected {% endif %}  value="{{ value }}">{{ label }}</option>
                 {% endfor %}
                 </select>
             </div>
@@ -162,7 +162,8 @@
 
             {% endfor %}
             <hr>
-            <h2 class="my-brown">{{ form.point.label }}:</h2>
+            <h2 class="my-brown">{{ form.point.label }}</h2>
+            <p>Il cerchio giallo è la posizione del tuo stabilimento balneare nella mappa che viene mostrata agli utenti. Per modificare la posizione clicca sull'icona raffigurante una matita e poi clicca sulla mappa.</p>
             <div>
                 {{ form.point.errors }}
                 {{ form.point }}
@@ -170,7 +171,8 @@
             <div class="row">
                <div class="col-xs-12">
                    <hr>
-                   <h2 class="my-brown">{{ t_facilities|capfirst }}:</h2>
+                   <h2 class="my-brown">{{ t_facilities|capfirst }}</h2>
+                   <p>Seleziona i checkbox corrispodenti ai servizi offerti dal tuo stabilimento balneare.</p>
                </div>
             </div>
                 {% with form.services|dictsort:"attrs.cat_name" as options %}
