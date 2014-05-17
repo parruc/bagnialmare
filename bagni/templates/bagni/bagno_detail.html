@@ -76,7 +76,11 @@
   </div-->
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-        <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
+        {% if object.description and object.is_managed %}
+          <p> {{ object.description }} </p>
+        {% else %}
+          <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
+        {% endif %}
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
@@ -251,4 +255,11 @@
     {{ object|neighbourhood_municipality }}
 {% endblock pagetitle %}
 
-{% block description %}{% trans "bagno_detail_description" as t_bagno_detail_description %} {{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.{% endblock description %}
+{% block description %}
+{% trans "bagno_detail_description" as t_bagno_detail_description %}
+{% if object.description %}
+  {{ object.description }}
+{% else %}
+  {{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.
+{% endif %}
+{% endblock description %}
