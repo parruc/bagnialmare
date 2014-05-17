@@ -633,6 +633,27 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||07057f84c038d2018de6ceae6075bc54", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/78/ad/78ad3352eb8fd8e528dbc41186b82818.png\", \"size\": [228, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||8c36bb722c3208dd9deec4c3e64fed29", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/bagno-dallara.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||8c36bb722c3208dd9deec4c3e64fed29", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"07057f84c038d2018de6ceae6075bc54\"]"
+  }
+},
+{
   "pk": 68, 
   "model": "bagni.language", 
   "fields": {
