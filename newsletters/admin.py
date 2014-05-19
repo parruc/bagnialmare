@@ -50,7 +50,7 @@ def send_newsletter(modeladmin, request, queryset):
         import ipdb; ipdb.set_trace()
         send_mass_html_mail(subject=obj.subject, text_content=text_content, html_content=html_content, recipients=recipients)
     except Exception as e:
-        modeladmin.message_user(request, "Error %s trying send emails" % (str(e), obj.template.path),
+        modeladmin.message_user(request, "Error %s trying send emails" % str(e),
                                   level=messages.ERROR, extra_tags='', fail_silently=False)
         return
 
