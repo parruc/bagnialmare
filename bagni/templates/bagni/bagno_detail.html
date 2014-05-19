@@ -2,6 +2,8 @@
 
 {% load l10n i18n thumbnail %}
 {% load batch from custom_filters %}
+{% load href_url from custom_filters %}
+{% load non_href_url from custom_filters %}
 {% load neighbourhood_municipality from custom_filters %}
 
 {% block content %}
@@ -52,7 +54,7 @@
     <div class="col-xs-12">
         {% if object.is_managed %}
             {% if can_edit %}
-              <a href="{{ object.get_edit_url }}" class="btn btn-primary">{{ t_modify_bagno }}</a>
+              <a href="{{ object.get_edit_url }}" class="btn btn-primary" rel="nofollow">{{ t_modify_bagno }}</a>
             {% endif %} 
               <button id="contact-form-button" class="btn btn-primary" data-url="{{ object.get_contactform_url }}">
                 {{ t_contact_button }}
@@ -60,7 +62,7 @@
         {% else %}
             {% if not user.is_authenticated %}
             {% comment %}
-              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary">{{ t_are_you_the_manager }}</a>
+              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary" rel="nofollow">{{ t_are_you_the_manager }}</a>
             {% endcomment %}
             {% endif %}
         {% endif %}
@@ -74,7 +76,11 @@
   </div-->
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-        <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
+        {% if object.description and object.is_managed %}
+          <p> {{ object.description }} </p>
+        {% else %}
+          <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
+        {% endif %}
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
@@ -152,7 +158,7 @@
         <p>
           {% if object.site %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>
-          <a href="{{ object.site }}"
+          <a href="{{ object.site|href_url }}"
              class="ga_click"
              data-category="contact"
              data-action="website"
@@ -160,7 +166,7 @@
              title="{{ t_bagno }} {{ t_website }}"
              target="_blank"
              rel="nofollow">
-              {{ object.site }}</a>
+              {{ object.site|non_href_url }}</a>
           {% endif %}
         </p>
     </div>
@@ -249,4 +255,11 @@
     {{ object|neighbourhood_municipality }}
 {% endblock pagetitle %}
 
-{% block description %}{% trans "bagno_detail_description" as t_bagno_detail_description %} {{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.{% endblock description %}
+{% block description %}
+{% trans "bagno_detail_description" as t_bagno_detail_description %}
+{% if object.description %}
+  {{ object.description }}
+{% else %}
+  {{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.
+{% endif %}
+{% endblock description %}

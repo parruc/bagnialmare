@@ -3,6 +3,7 @@ from django.contrib.gis.db import models
 from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
+from django.core.validators import MaxLengthValidator
 from ckeditor.fields import RichTextField
 
 
@@ -16,7 +17,8 @@ class Bagno(BaseModel):
         verbose_name_plural = _('Bagni')
         app_label = 'bagni'
 
-    description = RichTextField(max_length=2000, verbose_name=_("Description"))
+    description = models.TextField(max_length=350, verbose_name=_("Description"),
+                                   validators = [MaxLengthValidator(350)])
     number = models.CharField(max_length=30, blank=True, verbose_name=_("Number"))
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni', verbose_name=_("Languages"))
     services = models.ManyToManyField("Service", blank=True, related_name='bagni', verbose_name=_("Facilities"))
@@ -25,7 +27,8 @@ class Bagno(BaseModel):
     mail = models.EmailField(max_length=50, blank=True, verbose_name=_("Mail"))
     site = models.URLField(max_length=75, blank=True, verbose_name=_("Website"))
     point = models.PointField(null=True, blank=True, verbose_name=_("Coordinates"))
-    accepts_booking = models.BooleanField(default=True, verbose_name=_("Accept booking"))
+    accepts_booking = models.BooleanField(null=False, blank=False,
+                                          default=True, verbose_name=_("Accept booking"))
 
     objects = models.GeoManager()
 

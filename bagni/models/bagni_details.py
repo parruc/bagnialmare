@@ -44,7 +44,7 @@ class Telephone(models.Model):
                                   unique=True,
                                   editable=True,)
 
-    number = models.CharField(max_length=100, verbose_name=_("Number"))
+    number = models.CharField(max_length=100, blank=True,  verbose_name=_("Number"))
 
     bagno = models.ForeignKey("Bagno", related_name="telephones", verbose_name=_("Bagno"),)
 
