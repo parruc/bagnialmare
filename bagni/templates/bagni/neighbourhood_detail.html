@@ -2,6 +2,8 @@
 
 {% load i18n %}
 
+{% load neighbourhood_municipality from custom_filters %}
+
 {% block pagetitle %}{% spaceless %}
     {% trans "neighbourhood_detail_pagetitle" as t_neighbourhood_detail_pagetitle %}
     {{ t_neighbourhood_detail_pagetitle|capfirst }} {{ object.name}}
@@ -31,7 +33,10 @@
       <div class="col-xs-12">
            <ul>
                   {% for bagno in object.bagni.all %}
-                       <li><p class=""><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></p></li>
+                       <li>
+                           <h3><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></h3>
+                           <p>{{ bagno.address }} - {{ bagno|neighbourhood_municipality }}</p>
+                       </li>
                   {% endfor %}
            </ul>
       </div>
