@@ -47,19 +47,22 @@ def send_newsletter(modeladmin, request, queryset):
     recipients = [user.email for user in users]
 
     try:
-        import ipdb; ipdb.set_trace()
-        send_mass_html_mail(subject=obj.subject, text_content=text_content, html_content=html_content, recipients=recipients)
+        sent_counter = send_mass_html_mail(subject=obj.subject, text_content=text_content, html_content=html_content, recipients=recipients)
     except Exception as e:
         modeladmin.message_user(request, "Error %s trying send emails" % str(e),
                                   level=messages.ERROR, extra_tags='', fail_silently=False)
         return
 
-    obj.sent_on = datetime.now()
-    obj.sent_to = "; ".join(recipients)
-    obj.save()
+    if sent_counter == len(recipients):
+        obj.sent_on = datetime.now()
+        obj.sent_to = "; ".join(recipients)
+        obj.save()
+        modeladmin.message_user(request, "You have sent the selected newsletter",
+                                level=messages.INFO, extra_tags='', fail_silently=False)
+    else:
+        modeladmin.message_user(request, "Error: sent %d emails of %d" % (sent_counter, len(recipients),),
+                                  level=messages.ERROR, extra_tags='', fail_silently=False)
 
-    modeladmin.message_user(request, "You have sent the selected newsletter",
-                                      level=messages.INFO, extra_tags='', fail_silently=False)
 
 
 send_newsletter.short_description = "Send selected newsletter"
