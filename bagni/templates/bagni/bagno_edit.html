@@ -34,7 +34,7 @@
                 {{ form.languages.errors }}
                 <select multiple="multiple" class="form-control" id="id_languages" name="languages">
                 {% for value,label in form.languages.field.choices %}
-                    <option value="{{ value }}">{{ label }}</option>
+                    <option {% if value in form.languages.value %} selected {% endif %} value="{{ value }}">{{ label }}</option>
                 {% endfor %}
                 </select>                
             </div>
@@ -94,11 +94,11 @@
                   {% if lang|first == "it" %}
                     <label class="my-brown" for="id_description_it">{{ form.description_it.label }}:</label>
                     {{ form.description_it.errors }}
-                    {{ form.description_it }}
+                    <textarea id="id_description_it" class="form-control" rows="10" name="description_it" cols="40"></textarea>
                   {% elif lang|first == "en" %}
                     <label class="my-brown" for="id_description_en">{{ form.description_en.label }}:</label>
                     {{ form.description_en.errors }}
-                    {{ form.description_en }}
+                    <textarea id="id_description_en" class="form-control" rows="10" name="description_en" cols="40"></textarea>
                   {% endif %}
                     </div><!-- .form-group -->
                   </div> <!-- .tab-pane -->
@@ -108,59 +108,73 @@
             Qui finisce il campo tradotto
             {% endcomment %}
             <hr>
-            {{ telephone_formset.management_form }}
-            {% for telephone_form in telephone_formset %}
-                <div class="form-group">
-                    <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_name">{{ telephone_form.name.label }}:</label>
-                    {{ telephone_form.name.errors }}
-                    {{ telephone_form.name }}
-                </div>
-                <div class="form-group">
-                    <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_number">{{ telephone_form.number.label }}:</label>
-                    {{ telephone_form.number.errors }}
-                    {{ telephone_form.number }}
-                </div>
-                <div class="form-group">
-                    <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
-                    {{ telephone_form.DELETE.errors }}
-                    {{ telephone_form.DELETE }}
-                </div>
-                {% for telephone_field in telephone_form %}
-                    {% if telephone_field.is_hidden %}
-                        {{ telephone_field }}
-                    {% endif %}
-                {% endfor %}
-                <hr>
+            <h2 class="my-brown">Numeri di telefono</h2>
+            <div class="row">
+                {{ telephone_formset.management_form }}
+                {% for telephone_form in telephone_formset %}
+                    <div class="col-xs-6">
+                        <div class="well">                 
+                            <div class="form-group">
+                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-name">{{ telephone_form.name.label }}:</label>
+                                {{ telephone_form.name.errors }}
+                                <select class="form-control" id="id_telephones-{{ forloop.counter0 }}-name" name="telephones-{{ forloop.counter0 }}-name">
+                                    {% for value,label in telephone_form.name.field.choices %}
+                                        <option {% if telephone_form.name.value == value %} selected {% endif %}  value="{{ value }}">{{ label }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-number">{{ telephone_form.number.label }}:</label>
+                                {{ telephone_form.number.errors }}
+                                <input id="id_telephones-{{ forloop.counter0 }}-number" class="form-control" type="text" name="telephones-{{ forloop.counter0 }}-number" maxlength="100" value="{{ telephone_form.number.value }}"></input>
+                            </div>
+                            <div class="form-group">
+                                <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
+                                {{ telephone_form.DELETE.errors }}
+                                {{ telephone_form.DELETE }}
+                            </div>
+                            {% for telephone_field in telephone_form %}
+                                {% if telephone_field.is_hidden %}
+                                    {{ telephone_field }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
             {% endfor %}
-            {{ image_formset.management_form }}
-            {% for image_form in image_formset %}
-                <div class="form-group">
-                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_name">{{ image_form.name.label }}:</label>
-                    {{ image_form.name.errors }}
-                    {{ image_form.name }}
+            </div>
+            <hr>
+            <h2 class="my-brown">Aggiungi o rimuovi foto</h2>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="well">
+                        {{ image_formset.management_form }}
+                        {% for image_form in image_formset %}
+                            <div class="form-group">
+                                <label class="my-brown" for="id_images_{{ forloop.counter0 }}_image">{{ image_form.image.label }}:</label>
+                                {{ image_form.image.errors }}
+                                {{ image_form.image }}
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="my-brown" for="id_images_{{ forloop.counter0 }}_name">{{ image_form.name.label }}:</label>
+                                {{ image_form.name.errors }}
+                                <input id="id_images-0-name" class="form-control" type="text" name="images-0-name" 
+                                       maxlength="100" {% if image_form.name.value %} value="{{image_form.name.value}}" {% endif %}></input>
+                            </div>
+                            <div class="form-group">
+                                <label class="my-brown" for="id_images_{{ forloop.counter0 }}_DELETE">{{ image_form.DELETE.label }}:</label>
+                                {{ image_form.DELETE.errors }}
+                                {{ image_form.DELETE }}
+                            </div>
+                            {% for image_field in image_form %}
+                                {% if image_field.is_hidden %}
+                                    {{ image_field }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_description">{{ image_form.description.label }}:</label>
-                    {{ image_form.description.errors }}
-                    {{ image_form.description }}
-                </div>
-                <div class="form-group">
-                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_image">{{ image_form.image.label }}:</label>
-                    {{ image_form.image.errors }}
-                    {{ image_form.image }}
-                </div>
-                <div class="form-group">
-                    <label class="my-brown" for="id_images_{{ forloop.counter0 }}_DELETE">{{ image_form.DELETE.label }}:</label>
-                    {{ image_form.DELETE.errors }}
-                    {{ image_form.DELETE }}
-                </div>
-                {% for image_field in image_form %}
-                    {% if image_field.is_hidden %}
-                        {{ image_field }}
-                    {% endif %}
-                {% endfor %}
-
-            {% endfor %}
+            </div>
             <hr>
             <h2 class="my-brown">{{ form.point.label }}</h2>
             <p>Il cerchio giallo è la posizione del tuo stabilimento balneare nella mappa che viene mostrata agli utenti. Per modificare la posizione clicca sull'icona raffigurante una matita e poi clicca sulla mappa.</p>
