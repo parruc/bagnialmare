@@ -126,7 +126,7 @@
                             <div class="form-group">
                                 <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-number">{{ telephone_form.number.label }}:</label>
                                 {{ telephone_form.number.errors }}
-                                <input id="id_telephones-{{ forloop.counter0 }}-number" class="form-control" type="text" name="telephones-{{ forloop.counter0 }}-number" maxlength="100" value="{{ telephone_form.number.value }}"></input>
+                                <input id="id_telephones-{{ forloop.counter0 }}-number" class="form-control" type="text" name="telephones-{{ forloop.counter0 }}-number" maxlength="100" {% if telephone_form.number.value %} value="{{ telephone_form.number.value }}" {% endif %}></input>
                             </div>
                             <div class="form-group">
                                 <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
