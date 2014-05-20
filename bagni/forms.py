@@ -31,8 +31,7 @@ class ThumbnailImageWidget(forms.FileInput):
                                   "x%d" % (IMAGE_THUMB_HEIGHT,),
                                   crop='center',
                                   format='PNG')
-            output.append('<a target="_blank" href="%s"><img src="%s" style="height: %dpx;" /></a> '
-                                   % (value.url, thumb.url, IMAGE_THUMB_HEIGHT,))
+            output.append('<img class="bagno-edit-img img-responsive" src="%s" /> ' % (thumb.url,))
         output.append(super(ThumbnailImageWidget, self).render(name, value, attrs))
         return mark_safe(u''.join(output))
 
@@ -193,7 +192,6 @@ class ImageForm(TranslationModelForm):
     class Meta:
         model = Image
         fields = ['name',
-                  'description',
                   'image',
                   ]
         widgets = {'image': ThumbnailImageWidget(),}

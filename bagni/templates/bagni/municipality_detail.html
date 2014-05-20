@@ -2,6 +2,9 @@
 
 {% load i18n %}
 
+{% load neighbourhood_municipality from custom_filters %}
+
+
 {% block pagetitle %}{% spaceless %}
     {% trans "municipality_detail_pagetitle" as t_municipality_detail_pagetitle %}
     {{ t_municipality_detail_pagetitle|capfirst }} {{ object.name}}
@@ -38,7 +41,10 @@
                             <ul>
                        {% endif %}
                        {% for bagno in neighbourhood.bagni.all%}
-                            <li><p class=""><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></p></li>
+                            <li>
+                                <h3><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</h3></p>
+                                <p>{{ bagno.address }} - {{ bagno|neighbourhood_municipality }}</p> 
+                            </li>
                             {% if forloop.last %}
                                </ul>
                             {% endif %}
