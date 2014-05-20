@@ -115,7 +115,7 @@
                     <div class="col-xs-6">
                         <div class="well">                 
                             <div class="form-group">
-                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-name">{{ telephone_form.name.label }}:</label>
+                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-name">Descrizione numero di telefono:</label>
                                 {{ telephone_form.name.errors }}
                                 <select class="form-control" id="id_telephones-{{ forloop.counter0 }}-name" name="telephones-{{ forloop.counter0 }}-name">
                                     {% for value,label in telephone_form.name.field.choices %}
@@ -124,14 +124,15 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-number">{{ telephone_form.number.label }}:</label>
+                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-number">Numero di telefono:</label>
                                 {{ telephone_form.number.errors }}
                                 <input id="id_telephones-{{ forloop.counter0 }}-number" class="form-control" type="text" name="telephones-{{ forloop.counter0 }}-number" maxlength="100" {% if telephone_form.number.value %} value="{{ telephone_form.number.value }}" {% endif %}></input>
                             </div>
                             <div class="form-group">
-                                <label class="my-brown" for="id_telephones_{{ forloop.counter0 }}_DELETE">{{ telephone_form.DELETE.label }}:</label>
+                                <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-DELETE">Cancella questo numero di telefono:
                                 {{ telephone_form.DELETE.errors }}
-                                {{ telephone_form.DELETE }}
+                                <input id="id_telephones-{{ forloop.counter0 }}-DELETE" type="checkbox" name="telephones-{{ forloop.counter0 }}-DELETE" {% if not telephone_form.number.value %} disabled {% endif %}>
+                                 </label>
                             </div>
                             {% for telephone_field in telephone_form %}
                                 {% if telephone_field.is_hidden %}
