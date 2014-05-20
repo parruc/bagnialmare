@@ -144,36 +144,42 @@
             </div>
             <hr>
             <h2 class="my-brown">Aggiungi o rimuovi foto</h2>
+            <br>
             <div class="row">
-                <div class="col-xs-6">
-                    <div class="well">
                         {{ image_formset.management_form }}
                         {% for image_form in image_formset %}
-                            <div class="form-group">
-                                <label class="my-brown" for="id_images_{{ forloop.counter0 }}_image">{{ image_form.image.label }}:</label>
-                                {{ image_form.image.errors }}
+                            <div class="col-xs-6">
                                 {{ image_form.image }}
-                                
                             </div>
-                            <div class="form-group">
-                                <label class="my-brown" for="id_images_{{ forloop.counter0 }}_name">{{ image_form.name.label }}:</label>
-                                {{ image_form.name.errors }}
-                                <input id="id_images-0-name" class="form-control" type="text" name="images-0-name" 
-                                       maxlength="100" {% if image_form.name.value %} value="{{image_form.name.value}}" {% endif %}></input>
-                            </div>
-                            <div class="form-group">
-                                <label class="my-brown" for="id_images_{{ forloop.counter0 }}_DELETE">{{ image_form.DELETE.label }}:</label>
-                                {{ image_form.DELETE.errors }}
-                                {{ image_form.DELETE }}
-                            </div>
-                            {% for image_field in image_form %}
-                                {% if image_field.is_hidden %}
-                                    {{ image_field }}
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label class="my-brown" for="id_images-{{ forloop.counter0 }}-name">Titolo della foto:</label>
+                                    {{ image_form.name.errors }}
+                                    <input id="id_images-0-name" class="form-control" type="text" name="images-0-name" 
+                                           maxlength="100" {% if image_form.name.value %} value="{{image_form.name.value}}" {% endif %}></input>
+                                </div>
+                                <div class="form-group">
+                                    <label class="my-brown" for="id_images-{{ forloop.counter0 }}-image">
+                                        {% if image_form.instance.image %}Scegli un'altra foto:{% else %}Scegli una foto da caricare:{% endif %}
+                                    </label>
+                                    {{ image_form.image.errors }}
+                                    <input id="id_images-{{ forloop.counter0 }}-image" type="file" name="images-{{ forloop.counter0 }}-image"></input>
+                                </div>
+                                {% if image_form.instance.image %}
+                                <hr>
+                                    <div class="form-group">
+                                        <label class="my-brown" for="id_images-{{ forloop.counter0 }}-delete">Cancella la foto corrente:</label>
+                                        {{ image_form.DELETE.errors }}
+                                        {{ image_form.DELETE }}
+                                    </div>
                                 {% endif %}
-                            {% endfor %}
+                                {% for image_field in image_form %}
+                                    {% if image_field.is_hidden %}
+                                        {{ image_field }}
+                                    {% endif %}
+                                {% endfor %}
+                             </div>
                         {% endfor %}
-                    </div>
-                </div>
             </div>
             <hr>
             <h2 class="my-brown">{{ form.point.label }}</h2>
