@@ -67,6 +67,11 @@
     {% block specific_js %}{% endblock specific_js %}
   {% endcompress %}
 
+  {% compress css %}
+    {% block specific_css %}{% endblock specific_css %}
+  {% endcompress %}
+    
+
   {% block extrahead %}
       {{ form.media }}
   {% endblock %}
