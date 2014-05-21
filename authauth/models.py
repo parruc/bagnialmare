@@ -18,7 +18,8 @@ class Manager(models.Model):
     )
 
     user = models.OneToOneField(User,
-                                null=True, blank=True,
+                                null=True,
+                                blank=True,
     )
 
     bagni = models.ManyToManyField(Bagno,

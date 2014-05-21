@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from allauth.account.views import SignupView
 from bagni.models import Bagno, Neighbourhood
 
