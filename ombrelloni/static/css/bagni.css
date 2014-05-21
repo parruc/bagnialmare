@@ -182,6 +182,11 @@ body {
 
 .no-images-wrapper-div{
     position:relative;
+    margin-bottom: 10px;
+}
+
+.image-carousel-div{
+    margin-bottom: 10px;
 }
 
 .no-images-text{
