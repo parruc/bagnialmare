@@ -63,7 +63,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-19T16:53:39.357Z", 
+    "last_login": "2014-05-20T13:58:29.748Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -6414,10 +6414,10 @@
   "pk": 12784, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2426<br />\r\nfronte mare: 21<br />\r\ndocce aperte: 2<br />\r\nwc: 4</p>\r\n", 
+    "description": "", 
     "point": "POINT (12.3627388829999951 44.2564755149999982)", 
     "number": "183", 
-    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2426<br />\r\nfronte mare: 21<br />\r\ndocce aperte: 2<br />\r\nwc: 4</p>\r\n", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -58062,20 +58062,54 @@
   "pk": 13827, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "Bagno test description", 
-    "point": null, 
-    "number": "NNNN", 
-    "description_en": "Bagno test description", 
-    "site": "", 
+    "description": "", 
+    "point": "POINT (12.4078750593086742 44.1996141611217155)", 
+    "number": "NNNN-NNNN-NNNN-NNNN-NNNN", 
+    "description_en": "", 
+    "site": "http://www.bagnialmare.com/", 
     "languages": [], 
-    "services": [], 
-    "address": "", 
-    "description_it": "Descrizione di test", 
+    "services": [
+      [
+        "rowing-boats"
+      ], 
+      [
+        "alcohol-tester"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "beach-volley-courses"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "ping-pong"
+      ]
+    ], 
+    "address": "Questa \u00e8 una via sulla spiaggia con meravigliosa vista mare.", 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "test", 
     "neighbourhood": [
-      "rivabella"
+      "rimini"
     ], 
     "name": "Bagno Test"
   }
@@ -75469,19 +75503,6 @@
   }
 },
 {
-  "pk": 1, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "Portale di ingresso al bagno Dallara a Cervia", 
-    "bagno": [
-      "bagno-dallara"
-    ], 
-    "name": "Entrata del bagno", 
-    "image": "images/bagni/bagno-dallara/bagno-dallara.jpg", 
-    "slug": "entrata-del-bagno"
-  }
-},
-{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -75544,6 +75565,19 @@
     "name": "Portale di ingresso", 
     "image": "images/bagni/bagno-ben/bagno-ben.jpg", 
     "slug": "portale-di-ingresso-3"
+  }
+},
+{
+  "pk": 7, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "bagno-dallara"
+    ], 
+    "name": "Entrata bagno", 
+    "image": "images/bagni/bagno-dallara/entrata-bagno.jpg", 
+    "slug": "entrata-bagno"
   }
 },
 {
