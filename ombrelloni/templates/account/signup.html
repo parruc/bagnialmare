@@ -42,7 +42,6 @@
 <hr>
     <form action="{{ submit_url }}" method="post" id="signup_form" class="" role="form">
       {% csrf_token %}
-      {{ form.errors }}
         <div class="form-group">
             <label class="my-brown" for="id_bagni">{{ form.bagni.label }}:</label>
             {{ form.bagni.errors }}
