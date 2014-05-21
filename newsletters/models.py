@@ -1,44 +1,66 @@
+from uuid import uuid4
+
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.contrib.auth.models import User
+
 from ckeditor.fields import RichTextField
+from bagni.models import BaseModel
 
 # Create your models here.
 
-class NewsletterTarget(models.Model):
+class NewsletterUser(BaseModel):
+    """ The target for Newsletter objects
+    """
+    class Meta:
+        verbose_name = _('Newsletter user')
+        verbose_name_plural = _('Newsletter users')
+
+    user = models.OneToOneField(User,
+                                null=True,
+                                blank=True,
+                                related_name='newsletter_user'
+    )
+
+    old_email = models.EmailField(null=True,
+                                  blank=True,
+                                  editable=False,
+    )
+
+    def __unicode__(self):
+        return self.name
+
+class NewsletterTarget(BaseModel):
     """ The target for Newsletter objects
     """
     class Meta:
         verbose_name = _('Newsletter target')
         verbose_name_plural = _('Newsletter targets')
 
-    name = models.CharField(max_length=100, verbose_name=_("Name"))
-    #occhio che filter e una funzione builtin in python!!
-    filter = models.CharField(max_length=500, verbose_name=_("Filter"))
-
     def __unicode__(self):
         return self.name
 
 
-class NewsletterTemplate(models.Model):
+class NewsletterTemplate(BaseModel):
     """ The template for Newsletter objects
     """
     class Meta:
         verbose_name = _('Newsletter tempalte')
         verbose_name_plural = _('Newsletter tempalte')
 
-    name = models.CharField(max_length=100, verbose_name=_("Name"))
     path = models.CharField(max_length=100, verbose_name=_("Path"))
 
     def __unicode__(self):
         return self.name
 
 
-class Newsletter(models.Model):
+class Newsletter(BaseModel):
     """ The model for Newsletter object
     """
     class Meta:
         verbose_name = _('Newsletter')
         verbose_name_plural = _('Newsletters')
+
 
     subject = models.CharField(max_length=100, verbose_name=_("Subject"))
     text = RichTextField(max_length=2000, verbose_name=_("Text"))
@@ -49,3 +71,18 @@ class Newsletter(models.Model):
 
     def __unicode__(self):
         return self.subject
+
+class NewsletterSubscription(models.Model):
+    class Meta:
+        verbose_name = _('Newsletter subscriber')
+        verbose_name_plural = _('Newsletter subscribers')
+        unique_together = ("email", "target", )
+
+    email = models.EmailField(verbose_name=_("Email"))
+    target = models.ForeignKey("NewsletterTarget", related_name="subscribers", verbose_name=_("Targets"))
+    hash_field = models.CharField(max_length=40, unique=True)
+
+    def save(self, *args, **kwargs):
+        if not self.hash_field:
+            self.hash_field = uuid4().hex
+        super(NewsletterSubscription, self).save(*args, **kwargs)
