@@ -17,6 +17,7 @@ import logging
 logging.getLogger(__name__)
 
 IMAGE_THUMB_HEIGHT = 128 #in pixels
+NO_PHOTO_IMAGE_PATH = '/static/img/no_images.png'
 
 class ThumbnailImageWidget(forms.FileInput):
     """ A ImageField Widget for admin that shows a thumbnail. """
@@ -31,9 +32,10 @@ class ThumbnailImageWidget(forms.FileInput):
                                   "x%d" % (IMAGE_THUMB_HEIGHT,),
                                   crop='center',
                                   format='PNG')
-            output.append('<a target="_blank" href="%s"><img src="%s" style="height: %dpx;" /></a> '
-                                   % (value.url, thumb.url, IMAGE_THUMB_HEIGHT,))
-        output.append(super(ThumbnailImageWidget, self).render(name, value, attrs))
+            output.append('<img class="bagno-edit-img img-responsive" src="%s" /> ' % (value.url,))
+        #output.append(super(ThumbnailImageWidget, self).render(name, value, attrs))
+        else:
+            output.append('<img class="bagno-edit-img img-responsive" src="%s" /> ' % (NO_PHOTO_IMAGE_PATH,))
         return mark_safe(u''.join(output))
 
 class OmbrelloniOLWidget(OSMWidget):
@@ -193,7 +195,6 @@ class ImageForm(TranslationModelForm):
     class Meta:
         model = Image
         fields = ['name',
-                  'description',
                   'image',
                   ]
         widgets = {'image': ThumbnailImageWidget(),}
