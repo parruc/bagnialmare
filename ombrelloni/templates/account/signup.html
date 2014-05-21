@@ -42,6 +42,7 @@
 <hr>
     <form action="{{ submit_url }}" method="post" id="signup_form" class="" role="form">
       {% csrf_token %}
+      {{ form.errors }}
         <div class="form-group">
             <label class="my-brown" for="id_bagni">{{ form.bagni.label }}:</label>
             {{ form.bagni.errors }}
@@ -113,6 +114,7 @@
     </form>
 </div>
 
+
 <!-- TOS MODAL DIALOG -->
     <div class="modal fade" id="myTosModal" tabindex="-1" role="dialog" aria-labelledby="tosModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -160,10 +162,127 @@
 
 {% endblock %}
 
+{% block specific_css %}
+<link href="{{ STATIC_URL }}css/bootstrapValidator.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
 {% block specific_js %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrapValidator.js"></script>
 {% trans "choose_bagno" as t_choose_bagno %}
 <script type="text/javascript">
     $(function(){
+            $("#signup_form").bootstrapValidator({
+                message: 'Valore non valido',
+                live: 'enabled',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh',
+                },
+                fields: {
+                    neighbourhood: {
+                        message: 'località non valida',
+                        validators: {
+                            notEmpty: {
+                                message : 'scegli una località',
+                            },
+                            callback: {
+                                message : 'scegli una località',
+                                callback: function(value, validator){
+                                    return value != 'nochoice'
+                                }
+                            }
+                        }
+                    },
+                    bagni: {
+                        message: 'bagno non valido',
+                        validators: {
+                            notEmpty: {
+                                message : 'bagno una località',
+                            },
+                            callback: {
+                                message : 'scegli un bagno',
+                                callback: function(value, validator){
+                                    return value != 'undefined'
+                                }
+                            }
+                        }
+                    },
+                    name: {
+                        message: 'nome non valido',
+                        validators: {
+                            notEmpty: {
+                                message : 'il nome è richiesto e non può essere vuoto'
+                            }
+                        }
+                    },
+                    surname: {
+                        message: 'cognome non valido',
+                        validators: {
+                            notEmpty: {
+                                message : 'il cognome è richiesto e non può essere vuoto'
+                            }
+                        }
+                    },
+                    email: {
+                        message: 'email non valida',
+                        validators: {
+                            notEmpty: {
+                                message : 'l\'indirizzo mail è richiesto e non può essere vuoto'
+                            },
+                            emailAddress: {
+                                message: 'l\'indirizzo fornito non è un email valido'
+                            }
+                        }
+                    },
+                    password1: {
+                        message: 'password non valida',
+                        validators: {
+                            stringLength: {
+                                min: 6,
+                                max: 36,
+                                message: 'la lunghezza della password deve essere compresa tra 6 e 36 caratteri',
+                            },
+                            identical: {
+                                field: 'password2',
+                                message: 'Password1 e Password2 devono coincidere',
+                            }
+                        }
+                    },
+                    password2: {
+                        message: 'password non valida',
+                        validators: {
+                            stringLength: {
+                                min: 6,
+                                max: 36,
+                                message: 'la lunghezza della password deve essere compresa tra 6 e 36 caratteri',
+                            },
+                            identical: {
+                                field: 'password1',
+                                message: 'Password1 e Password2 devono coincidere',
+                            }
+                        }
+                    },
+                    tos: {
+                        message: 'tos non valido',
+                        validators: {
+                            choice: {
+                                min: 1,
+                                message : 'devi accettare i termini del servizio per proseguire'
+                            }
+                        }
+                    },
+                    privacy: {
+                        message: 'privacy non valido',
+                        validators: {
+                            choice: {
+                                min: 1,
+                                message : 'devi accettare i termini della privacy per proseguire'
+                            }
+                        }
+                    },
+                }
+            });
             var neighbourhood_id = 0;
             var pre_selected_neighbourhood = "-1";
             var pre_selected_bagno = "-1";
