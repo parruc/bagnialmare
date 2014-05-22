@@ -1,3 +1,5 @@
+from base import BaseModel; BaseModel  #pyflakes
+
 from bagni import Bagno; Bagno  #pyflakes
 
 from bagni_details import Image; Image  # pyflakes
