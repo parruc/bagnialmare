@@ -17439,9 +17439,9 @@
   "model": "bagni.bagno", 
   "fields": {
     "description": "", 
-    "point": "POINT (12.4090147018432617 44.1991589609863027)", 
+    "point": "POINT (12.4090147018432635 44.1991589609862885)", 
     "number": "", 
-    "description_en": null, 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -17453,14 +17453,14 @@
     ], 
     "services": [], 
     "address": "Viale Carso", 
-    "description_it": null, 
-    "mail": "p.barberini@libero.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-bologna-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno bologna levante"
+    "name": "Bagno Bologna"
   }
 },
 {
@@ -19786,10 +19786,10 @@
   "pk": 13015, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 25<br />\n\twc: 4<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 38<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3000<br />\n\tdocce aperte: 3</p>", 
-    "point": "POINT (0.0000000000000000 0.0000000000000000)", 
+    "description": "", 
+    "point": "POINT (0.0000000000000000 -0.0000000000000035)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 25<br />\n\twc: 4<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 38<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3000<br />\n\tdocce aperte: 3</p>", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -19801,10 +19801,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "canoes"
       ], 
       [
-        "disabled"
+        "pedal-boats"
       ], 
       [
         "bicycles"
@@ -19813,13 +19813,10 @@
         "bookstore"
       ], 
       [
-        "beach-volley"
+        "entertainment"
       ], 
       [
-        "baby-park"
-      ], 
-      [
-        "pedal-boats"
+        "ping-pong"
       ], 
       [
         "petanque"
@@ -19828,24 +19825,27 @@
         "tv-area"
       ], 
       [
-        "canoes"
+        "beach-volley"
       ], 
       [
-        "ping-pong"
+        "baby-park"
       ], 
       [
-        "entertainment"
+        "catering"
+      ], 
+      [
+        "disabled"
       ]
     ], 
     "address": "Viale Piave, 67", 
-    "description_it": null, 
-    "mail": "bagnoitalia@yahoo.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-italia-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno italia levante"
+    "name": "Bagno Italia"
   }
 },
 {
@@ -19888,10 +19888,10 @@
   "pk": 13017, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>sdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 29<br />\n\tlettini: 170<br />\n\tcabine: 22<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 1276<br />\n\tdocce aperte: 2</p>", 
-    "point": "POINT (12.3998951911926270 44.2081883555382902)", 
+    "description": "", 
+    "point": "POINT (12.3998951911926127 44.2081883555382689)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>sdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 29<br />\n\tlettini: 170<br />\n\tcabine: 22<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 1276<br />\n\tdocce aperte: 2</p>", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -19903,16 +19903,19 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
         "gym"
       ], 
       [
-        "lockers"
+        "canoes"
       ], 
       [
-        "disabled"
+        "basketball"
+      ], 
+      [
+        "massages"
+      ], 
+      [
+        "lockers"
       ], 
       [
         "bicycles"
@@ -19921,42 +19924,39 @@
         "footvolley"
       ], 
       [
+        "entertainment"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
+        "catering"
       ], 
       [
-        "tv-area"
-      ], 
-      [
-        "massages"
-      ], 
-      [
-        "basketball"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "entertainment"
-      ], 
-      [
-        "canoes"
+        "disabled"
       ]
     ], 
     "address": "Viale Lungomare Ponente, 76", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno levante"
+    "name": "Bagno Levante"
   }
 },
 {
@@ -20599,10 +20599,10 @@
   "pk": 13028, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 60<br />\n\twc: 7<br />\n\tombrelloni: 160<br />\n\tfronte mare: 40<br />\n\tlettini: 320<br />\n\tcabine: 30<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 4400<br />\n\tdocce aperte: 5</p>", 
-    "point": "POINT (12.4067294597625732 44.2011664673167886)", 
+    "description": "", 
+    "point": "POINT (12.4067294597625697 44.2011664673167672)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 60<br />\n\twc: 7<br />\n\tombrelloni: 160<br />\n\tfronte mare: 40<br />\n\tlettini: 320<br />\n\tcabine: 30<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 4400<br />\n\tdocce aperte: 5</p>", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -20614,25 +20614,22 @@
     ], 
     "services": [
       [
-        "pedal-boats"
+        "swimming-lessons"
       ], 
       [
-        "basketball"
+        "toilets-for-children"
       ], 
       [
-        "canoes"
+        "sun-terrace"
       ], 
       [
-        "baby-sitter"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "lockers"
+        "tub"
       ], 
       [
         "massages"
+      ], 
+      [
+        "lockers"
       ], 
       [
         "bicycles"
@@ -20641,19 +20638,31 @@
         "bookstore"
       ], 
       [
-        "swimming-lessons"
+        "five-a-side"
       ], 
       [
-        "sun-terrace"
+        "internet"
       ], 
       [
-        "toilets-for-children"
+        "catering"
       ], 
       [
-        "beach-volley"
+        "gym"
       ], 
       [
-        "baby-park"
+        "baby-sitter"
+      ], 
+      [
+        "canoes"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "entertainment"
       ], 
       [
         "ping-pong"
@@ -20665,30 +20674,21 @@
         "tv-area"
       ], 
       [
-        "entertainment"
+        "beach-volley"
       ], 
       [
-        "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "internet"
-      ], 
-      [
-        "tub"
+        "baby-park"
       ]
     ], 
     "address": "Piazza Andrea Costa, 7", 
-    "description_it": null, 
-    "mail": "info@bagnomilano.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-milano-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno milano levante"
+    "name": "Bagno Milano"
   }
 },
 {
@@ -20827,10 +20827,10 @@
   "pk": 13031, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 110<br />\n\tfronte mare: 27<br />\n\tlettini: 220<br />\n\tcabine: 30<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2295<br />\n\tdocce aperte: 2</p>", 
-    "point": "POINT (12.4329400062561035 44.1760484850286019)", 
+    "description": "", 
+    "point": "POINT (12.4329400062561071 44.1760484850285806)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 110<br />\n\tfronte mare: 27<br />\n\tlettini: 220<br />\n\tcabine: 30<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2295<br />\n\tdocce aperte: 2</p>", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -20842,13 +20842,7 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
+        "entertainment"
       ], 
       [
         "ping-pong"
@@ -20860,18 +20854,24 @@
         "tv-area"
       ], 
       [
-        "entertainment"
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "catering"
       ]
     ], 
     "address": "Viale Venezia,  28", 
-    "description_it": null, 
-    "mail": "bagnonettuno28@alice.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-nettuno-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno nettuno levante"
+    "name": "Bagno Nettuno"
   }
 },
 {
@@ -21568,10 +21568,10 @@
   "pk": 13044, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 70<br />\n\twc: 5<br />\n\tombrelloni: 140<br />\n\tfronte mare: 34<br />\n\tlettini: 250<br />\n\tcabine: 34<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3610<br />\n\tdocce aperte: 4</p>", 
-    "point": "POINT (12.4073624610900879 44.2003588580512030)", 
+    "description": "", 
+    "point": "POINT (12.4073624610900897 44.2003588580511746)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 70<br />\n\twc: 5<br />\n\tombrelloni: 140<br />\n\tfronte mare: 34<br />\n\tlettini: 250<br />\n\tcabine: 34<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3610<br />\n\tdocce aperte: 4</p>", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -21583,10 +21583,25 @@
     ], 
     "services": [
       [
-        "catering"
+        "canoes"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "pedal-boats"
       ], 
       [
         "footvolley"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "tv-area"
       ], 
       [
         "beach-volley"
@@ -21595,33 +21610,18 @@
         "baby-park"
       ], 
       [
-        "pedal-boats"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "canoes"
-      ], 
-      [
-        "basketball"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "entertainment"
+        "catering"
       ]
     ], 
     "address": "Via Isonzo, 48", 
-    "description_it": null, 
-    "mail": "bagnochinoromagna48@alice.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-romagna-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno romagna levante"
+    "name": "Bagno Romagna"
   }
 },
 {
@@ -21733,11 +21733,11 @@
   "pk": 13047, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>sdraio: 40<br />\n\twc: 7<br />\n\tombrelloni: 180<br />\n\tfronte mare: 40<br />\n\tlettini: 300<br />\n\tcabine: 38<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3600<br />\n\tdocce aperte: 4</p>", 
-    "point": "POINT (12.4042081832885742 44.2039353293256312)", 
+    "description": "", 
+    "point": "POINT (12.4042081832885831 44.2039353293256099)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>sdraio: 40<br />\n\twc: 7<br />\n\tombrelloni: 180<br />\n\tfronte mare: 40<br />\n\tlettini: 300<br />\n\tcabine: 38<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3600<br />\n\tdocce aperte: 4</p>", 
-    "site": "http://www.bagnoromeo.com", 
+    "description_en": "", 
+    "site": "http://www.bagnoromeo.com/", 
     "languages": [
       [
         "italian"
@@ -21751,10 +21751,7 @@
         "baby-sitter"
       ], 
       [
-        "catering"
-      ], 
-      [
-        "internet"
+        "magazines-journals"
       ], 
       [
         "lockers"
@@ -21766,13 +21763,7 @@
         "bookstore"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
+        "entertainment"
       ], 
       [
         "ping-pong"
@@ -21781,18 +21772,27 @@
         "tv-area"
       ], 
       [
-        "entertainment"
+        "internet"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "catering"
       ]
     ], 
     "address": "Via Spiaggia Levante, 64/65", 
-    "description_it": null, 
-    "mail": "info@bagnoromeo.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-romeo", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno romeo"
+    "name": "Bagno Romeo"
   }
 },
 {
@@ -22360,10 +22360,10 @@
   "pk": 13057, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 90<br />\n\tfronte mare: 24<br />\n\tlettini: 140<br />\n\tcabine: 30<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2009<br />\n\tdocce aperte: 2</p>", 
-    "point": "POINT (12.4121797084808350 44.1951975888494601)", 
+    "description": "", 
+    "point": "POINT (12.4121797084808225 44.1951975888494459)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 90<br />\n\tfronte mare: 24<br />\n\tlettini: 140<br />\n\tcabine: 30<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2009<br />\n\tdocce aperte: 2</p>", 
+    "description_en": "", 
     "site": "", 
     "languages": [
       [
@@ -22375,22 +22375,13 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
         "lockers"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-basket"
       ], 
       [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
+        "entertainment"
       ], 
       [
         "ping-pong"
@@ -22402,18 +22393,27 @@
         "tv-area"
       ], 
       [
-        "entertainment"
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "disabled"
       ]
     ], 
     "address": "Viale Venezia", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-torino-levante", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno torino levante"
+    "name": "Bagno Torino"
   }
 },
 {
