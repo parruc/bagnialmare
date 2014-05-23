@@ -9,23 +9,15 @@ from bagni.models import BaseModel
 
 # Create your models here.
 
-class NewsletterUser(BaseModel):
+class NewsletterUser(models.Model):
     """ The target for Newsletter objects
     """
     class Meta:
         verbose_name = _('Newsletter user')
         verbose_name_plural = _('Newsletter users')
 
-    user = models.OneToOneField(User,
-                                null=True,
-                                blank=True,
-                                related_name='newsletter_user'
-    )
-
-    old_email = models.EmailField(null=True,
-                                  blank=True,
-                                  editable=False,
-    )
+    user = models.OneToOneField(User, related_name='newsletter_user')
+    old_email = models.EmailField(editable=False)
 
     def __unicode__(self):
         return self.name
