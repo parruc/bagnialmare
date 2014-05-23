@@ -47,6 +47,7 @@ class NewsletterSubscriptionFactory(factory.DjangoModelFactory):
     FACTORY_FOR = newsletters_models.NewsletterSubscription
     email = random_email()
     target = factory.SubFactory(NewsletterTargetFactory)
+    hash_field = "hash"
 
 
 class NewsletterUserFactory(factory.DjangoModelFactory):
