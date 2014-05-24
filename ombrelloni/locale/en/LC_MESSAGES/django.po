@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-23 11:20+0200\n"
+"POT-Creation-Date: 2014-05-21 23:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: settings.py:102
+#: settings.py:110
 msgid "English"
 msgstr "English"
 
-#: settings.py:103
+#: settings.py:111
 msgid "Italiano"
 msgstr "Italian"
 
@@ -28,21 +28,107 @@ msgstr "Italian"
 msgid "^contacts/"
 msgstr "^contacts/"
 
-#: urls.py:39
+#: urls.py:41 urls.py:43
 msgid "^accounts/"
 msgstr "^accounts/"
 
-#: templates/base.html:4
+#: urls.py:45
+msgid "^userfeedback/"
+msgstr ""
+
+#: templates/base.html:5
 msgid "contact"
 msgstr "contacts"
 
-#: templates/base.html:5
+#: templates/base.html:6
 msgid "about_us"
 msgstr "about us"
 
-#: templates/base.html:6
+#: templates/base.html:7
 msgid "are_you_manager"
 msgstr "are you a manager?"
+
+#: templates/base.html:8
+msgid "search"
+msgstr ""
+
+#: templates/base.html:9
+msgid "login"
+msgstr ""
+
+#: templates/base.html:10
+msgid "logout"
+msgstr ""
+
+#: templates/base.html:11
+msgid "edit"
+msgstr ""
+
+#: templates/base.html:12
+#, fuzzy
+msgid "account"
+msgstr "^accounts/"
+
+#: templates/account/email_confirm.html:7
+#: templates/account/email_confirm.html:11
+#: templates/account/email/email_confirmation_subject.txt:3
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: templates/account/email_confirm.html:17
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: templates/account/email_confirm.html:21
+msgid "Confirm"
+msgstr ""
+
+#: templates/account/email_confirm.html:28
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: templates/account/login.html:7 templates/account/login.html.py:11
+#: templates/account/login.html:56
+msgid "Sign In"
+msgstr ""
+
+#: templates/account/login.html:14
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\" rel="
+"\"nofollow\">sign up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: templates/account/login.html:24
+msgid "or"
+msgstr ""
+
+#: templates/account/login.html:31
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\" rel=\"nofollow\">sign up</a> first."
+msgstr ""
+
+#: templates/account/login.html:40
+msgid "Email address"
+msgstr ""
+
+#: templates/account/login.html:48
+msgid "Remember Me"
+msgstr ""
+
+#: templates/account/login.html:55
+msgid "Forgot Password?"
+msgstr ""
 
 #: templates/account/signup.html:8 templates/account/signup.html.py:16
 msgid "signup"
@@ -76,12 +162,40 @@ msgstr "I accept the"
 msgid "close"
 msgstr ""
 
-#: templates/account/signup.html:102
+#: templates/account/signup.html:23
+msgid "choose_neighbourhood"
+msgstr ""
+
+#: templates/account/signup.html:24 templates/account/signup.html.py:172
+msgid "choose_bagno"
+msgstr ""
+
+#: templates/account/signup.html:25
+msgid "label_accepts_booking"
+msgstr ""
+
+#: templates/account/signup.html:26
+msgid "help_accepts_booking"
+msgstr ""
+
+#: templates/account/signup.html:129
 msgid "tos_content"
 msgstr ""
 
-#: templates/account/signup.html:124
+#: templates/account/signup.html:151
 msgid "privacy_content"
+msgstr ""
+
+#: templates/account/verification_sent.html:5
+#: templates/account/verification_sent.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
 msgstr ""
 
 #: templates/account/email/email_confirmation_message.txt:1
@@ -90,10 +204,6 @@ msgid ""
 "User %(user_display)s at %(site_name)s has given this as an email address.\n"
 "\n"
 "To confirm this is correct, go to %(activate_url)s\n"
-msgstr ""
-
-#: templates/account/email/email_confirmation_subject.txt:3
-msgid "Confirm E-mail Address"
 msgstr ""
 
 #: templates/account/email/password_reset_key_message.txt:1

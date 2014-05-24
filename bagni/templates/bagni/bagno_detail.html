@@ -40,11 +40,11 @@
       <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
     {% if object.accepts_booking %}
-    <div class="col-sm-3 col-xs-12 hidden-xs">
+    <div class="col-sm-3 col-xs-12 hidden">
       <button id="book-button" class="btn pull-right book-button ga_click" data-toggle="modal" data-target="#bookModal"
               data-category="book" data-action="click" data-label="book-button">{{ t_book_button }}</button>
     </div>
-    <div class="col-xs-12 visible-xs">
+    <div class="col-xs-12">
       <button id="book-button" class="btn book-button-xs ga_click" data-toggle="modal" data-target="#bookModal"
               data-category="book" data-action="click" data-label="book-button" >{{ t_book_button }}</button>
     </div>
@@ -84,7 +84,7 @@
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
-        <div id="bagno-image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="bagno-image-carousel" class="carousel slide image-carousel-div" data-ride="carousel" data-interval="false">
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             {% with object.images.all as bagno_images %}

@@ -113,6 +113,7 @@
     </form>
 </div>
 
+
 <!-- TOS MODAL DIALOG -->
     <div class="modal fade" id="myTosModal" tabindex="-1" role="dialog" aria-labelledby="tosModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -160,10 +161,17 @@
 
 {% endblock %}
 
+{% block specific_css %}
+<link href="{{ STATIC_URL }}css/bootstrapValidator.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
 {% block specific_js %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/signupform.js"></script>
 {% trans "choose_bagno" as t_choose_bagno %}
 <script type="text/javascript">
     $(function(){
+            $("#signup_form").bootstrapValidator(signup_form_validation);
             var neighbourhood_id = 0;
             var pre_selected_neighbourhood = "-1";
             var pre_selected_bagno = "-1";

@@ -3,12 +3,11 @@ import random
 
 import factory
 from factory import fuzzy
-from django.contrib import auth
 from django.contrib.gis.geos import Point
 from bagni import search
-from bagni.models import *
-from django.contrib.auth.models import *
-from authauth.models import *
+from bagni import models as bagni_models
+from django.contrib.auth import models as auth_models
+from authauth import models as authauth_models
 
 DEFAULT_PASSWORD = "password"
 
@@ -71,14 +70,14 @@ class ServiceFactory(factory.DjangoModelFactory):
 
 def tearDownTestFactory():
     search.delete_index()
-    Bagno.objects.all().delete()
-    Service.objects.all().delete()
-    ServiceCategory.objects.all().delete()
-    District.objects.all().delete()
-    Municipality.objects.all().delete()
-    Language.objects.all().delete()
-    User.objects.all().delete()
-    Manager.objects.all().delete()
+    bagni_models.Bagno.objects.all().delete()
+    bagni_models.Service.objects.all().delete()
+    bagni_models.ServiceCategory.objects.all().delete()
+    bagni_models.District.objects.all().delete()
+    bagni_models.Municipality.objects.all().delete()
+    bagni_models.Language.objects.all().delete()
+    auth_models.User.objects.all().delete()
+    authauth_models.objects.all().delete()
 
 def setUpTestFactory(test_dimension=10):
     """
