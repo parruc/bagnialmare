@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-19 15:42+0200\n"
+"POT-Creation-Date: 2014-05-25 19:34+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: forms.py:37
+#: forms.py:50
 msgid "You must accept the terms and conditions"
 msgstr "Devi accettare i termini della privacy e le condizioni"
 
@@ -30,19 +30,19 @@ msgstr "Nome"
 msgid "Surname"
 msgstr "Cognome"
 
-#: models.py:31
+#: models.py:32
 msgid "Privacy terms"
 msgstr "termini della privacy"
 
-#: models.py:32
+#: models.py:33
 msgid "Privacy terms definition"
 msgstr "definizione dei termini della privacy"
 
-#: models.py:37
+#: models.py:38
 msgid "Terms of service "
 msgstr "termini del servizio"
 
-#: models.py:38
+#: models.py:39
 msgid "Terms of service definition"
 msgstr "Definizione dei termini del servizio"
 
@@ -58,8 +58,8 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
-"Per favore conferma di esserti registrato con l'indirizzo email "
-"<a href=\"mailto:%(email)s\">%(user_display)s</a>"
+"Per favore conferma di esserti registrato con l'indirizzo email <a href="
+"\"mailto:%(email)s\">%(user_display)s</a>"
 
 #: templates/account/email_confirm.html:21
 msgid "Confirm"
@@ -71,8 +71,8 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
-"Questo link per la conferma dell'indirizzo email è scaduto o non valido. Per favore "
-"<a href=\"%(email_url)s\">richiedi una nuova email di attivazione</a>."
+"Questo link per la conferma dell'indirizzo email è scaduto o non valido. Per "
+"favore <a href=\"%(email_url)s\">richiedi una nuova email di attivazione</a>."
 
 #: templates/account/login.html:7 templates/account/login.html.py:11
 #: templates/account/login.html:56
@@ -113,6 +113,76 @@ msgstr "Ricordami"
 msgid "Forgot Password?"
 msgstr "Hai dimenticato la password?"
 
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:11
+#: templates/account/password_reset_done.html:6
+#: templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr "Reimposta la password"
+
+#: templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"Hai dimenticato la tua password? Scrivi qui sotto il tuo indirizzo email e "
+"provvederemo ad inviarti una email che ti permetterà di resettarla."
+
+#: templates/account/password_reset.html:24
+msgid "Reset My Password"
+msgstr "Reimposta la password"
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "Contattaci se incontri problemi nel reimpostare la tua password"
+
+#: templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"Ti abbiamo inviato un messagio e-mail di conferma. Contattaci se non lo "
+"ricevi entro pochi minuti"
+
+#: templates/account/password_reset_from_key.html:5
+#: templates/account/password_reset_from_key.html:8
+#: templates/account/password_reset_from_key_done.html:5
+#: templates/account/password_reset_from_key_done.html:8
+msgid "Change Password"
+msgstr "Cambia la password"
+
+#: templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr "Token errato"
+
+#: templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"Il link di reset della password non è corretto, probabilmente perché è già "
+"stato usato.  Per favore richiedi una <a href=\"%(passwd_reset_url)s\">nuova "
+"password</a>."
+
+#: templates/account/password_reset_from_key.html:18
+msgid "New Password"
+msgstr "Nuova password"
+
+#: templates/account/password_reset_from_key.html:23
+msgid "New Password (again)"
+msgstr "Nuova password (di nuovo)"
+
+#: templates/account/password_reset_from_key.html:27
+msgid "change password"
+msgstr "cambia la password"
+
+#: templates/account/password_reset_from_key.html:30
+#: templates/account/password_reset_from_key_done.html:9
+msgid "Your password is now changed."
+msgstr "La password è stata modificata con successo"
+
 #: templates/account/signup.html:8 templates/account/signup.html.py:16
 msgid "signup"
 msgstr "registrati"
@@ -149,7 +219,7 @@ msgstr "chiudi"
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:24 templates/account/signup.html.py:172
+#: templates/account/signup.html:24 templates/account/signup.html.py:171
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
@@ -161,11 +231,11 @@ msgstr ""
 msgid "help_accepts_booking"
 msgstr ""
 
-#: templates/account/signup.html:129
+#: templates/account/signup.html:128
 msgid "tos_content"
 msgstr ""
 
-#: templates/account/signup.html:151
+#: templates/account/signup.html:150
 msgid "privacy_content"
 msgstr ""
 
@@ -180,8 +250,9 @@ msgid ""
 "finalize the signup process. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
-"Ti abbiamo inviato un messagio e-mail di conferma. Segui il link fornito "
-"per finalizzare il processo di signup. Ti preghiamo di contattarci per qualsiasi problema"
+"Ti abbiamo inviato un messagio e-mail di conferma. Segui il link fornito per "
+"finalizzare il processo di signup. Ti preghiamo di contattarci per qualsiasi "
+"problema"
 
 #: templates/account/email/email_confirmation_message.txt:1
 #, python-format
@@ -190,7 +261,8 @@ msgid ""
 "\n"
 "To confirm this is correct, go to %(activate_url)s\n"
 msgstr ""
-"L'utente %(user_display)s di %(site_name)s ha fornito questo indirizzo mail come credenziale.\n"
+"L'utente %(user_display)s di %(site_name)s ha fornito questo indirizzo mail "
+"come credenziale.\n"
 "\n"
 "Per confermare che questo è l'indirizzo corretto, vai a %(activate_url)s\n"
 
@@ -210,8 +282,9 @@ msgid ""
 msgstr ""
 "Hai ricevuto queso messaggio e-mail perchè tu o qualcun'altro ha richiesto "
 "di resettare la password per il tuo account sul sito %(site_domain)s.\n"
-"Puoi tranquillamente ignoare questo messaggio se non hai richiesto tu il reset della password. Clicca il "
-"link sottostante per resettare la tua password.\n"
+"Puoi tranquillamente ignoare questo messaggio se non hai richiesto tu il "
+"reset della password. Clicca il link sottostante per resettare la tua "
+"password.\n"
 "\n"
 "%(password_reset_url)s\n"
 "\n"
