@@ -669,6 +669,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||06094897e27c8253a57b97a0b3a07063", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/9e/19/9e19935d7fa1f35c80c7fd5a224b82ac.png\", \"size\": [228, 128]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||07057f84c038d2018de6ceae6075bc54", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -683,10 +690,24 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||e567b1d69ef006ec7306d3079e01d7f5", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/entrata-bagno.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||thumbnails||8c36bb722c3208dd9deec4c3e64fed29", 
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"07057f84c038d2018de6ceae6075bc54\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||e567b1d69ef006ec7306d3079e01d7f5", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"06094897e27c8253a57b97a0b3a07063\"]"
   }
 },
 {
