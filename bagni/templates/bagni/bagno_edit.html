@@ -130,12 +130,14 @@
                                 {{ telephone_form.number.errors }}
                                 <input id="id_telephones-{{ forloop.counter0 }}-number" class="form-control" type="text" name="telephones-{{ forloop.counter0 }}-number" maxlength="100" {% if telephone_form.number.value %} value="{{ telephone_form.number.value }}" {% endif %}></input>
                             </div>
+                            {% if telephone_form.number.value %}
                             <div class="form-group">
                                 <label class="my-brown" for="id_telephones-{{ forloop.counter0 }}-DELETE">Cancella questo numero di telefono:
                                 {{ telephone_form.DELETE.errors }}
                                 <input id="id_telephones-{{ forloop.counter0 }}-DELETE" type="checkbox" name="telephones-{{ forloop.counter0 }}-DELETE" {% if not telephone_form.number.value %} disabled {% endif %}>
                                  </label>
                             </div>
+                            {% endif %}
                             {% for telephone_field in telephone_form %}
                                 {% if telephone_field.is_hidden %}
                                     {{ telephone_field }}
@@ -220,7 +222,15 @@
 </div>
 {% endblock %}
 
+{% block specific_css %}
+<link href="{{ STATIC_URL }}css/bootstrapValidator.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
 {% block specific_js %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrapValidator.js"></script>
+<!--
+<script type="text/javascript" src="{{ STATIC_URL }}js/editform.js"></script>
+-->
     <!--script type="text/javascript">
         $(function(){
             target_elements = []
