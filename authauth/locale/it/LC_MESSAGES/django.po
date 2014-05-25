@@ -50,7 +50,7 @@ msgstr "Definizione dei termini del servizio"
 #: templates/account/email_confirm.html:11
 #: templates/account/email/email_confirmation_subject.txt:3
 msgid "Confirm E-mail Address"
-msgstr ""
+msgstr "Conferma il tuo indirizzo di posta elettronica"
 
 #: templates/account/email_confirm.html:17
 #, python-format
@@ -58,10 +58,12 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
+"Per favore conferma di esserti registrato con l'indirizzo email "
+"<a href=\"mailto:%(email)s\">%(user_display)s</a>"
 
 #: templates/account/email_confirm.html:21
 msgid "Confirm"
-msgstr ""
+msgstr "Conferma"
 
 #: templates/account/email_confirm.html:28
 #, python-format
@@ -69,11 +71,13 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+"Questo link per la conferma dell'indirizzo email è scaduto o non valido. Per favore "
+"<a href=\"%(email_url)s\">richiedi una nuova email di attivazione</a>."
 
 #: templates/account/login.html:7 templates/account/login.html.py:11
 #: templates/account/login.html:56
 msgid "Sign In"
-msgstr ""
+msgstr "Entra"
 
 #: templates/account/login.html:14
 #, python-format
@@ -94,18 +98,20 @@ msgid ""
 "If you have not created an account yet, then please\n"
 "<a href=\"%(signup_url)s\" rel=\"nofollow\">sign up</a> first."
 msgstr ""
+"Se non hai ancora creato una account per favore prima\n"
+"<a href=\"%(signup_url)s\" rel=\"nofollow\">Registrati</a>."
 
 #: templates/account/login.html:40
 msgid "Email address"
-msgstr ""
+msgstr "Indirizzo email"
 
 #: templates/account/login.html:48
 msgid "Remember Me"
-msgstr ""
+msgstr "Ricordami"
 
 #: templates/account/login.html:55
 msgid "Forgot Password?"
-msgstr ""
+msgstr "Hai dimenticato la password?"
 
 #: templates/account/signup.html:8 templates/account/signup.html.py:16
 msgid "signup"
