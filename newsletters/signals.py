@@ -6,7 +6,6 @@ from models import NewsletterUser
 
 def change_newsletters_user_email(sender, instance, created, **kwargs):
     email = instance.email
-    import ipdb; ipdb.set_trace()
     if not hasattr(instance, "newsletter_user"):
         newsletter_user = NewsletterUser(user=instance, old_email=email)
         newsletter_user.save()

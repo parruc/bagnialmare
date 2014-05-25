@@ -1,0 +1,222 @@
+{% extends "account/base.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block head_title %}
+
+{% trans "signup" as t_signup %}
+{{ t_signup|capfirst }}
+
+{% endblock %}
+
+{% block content %}
+
+{% trans "account signup intro" as t_account_signup_intro %}
+{% trans "signup" as t_signup %}
+{% trans "sign_up_button" as t_sign_up_button %}
+{% trans "already_have_account" as t_already_have_account %}
+{% trans "else_have_account" as t_else_have_account %}
+{% trans "sign_in" as t_sign_in %}
+{% trans "accetto i" as t_accept %}
+{% trans "close" as t_close %}
+{% trans "choose_neighbourhood" as t_choose_neighbourhood %}
+{% trans "choose_bagno" as t_choose_bagno %}
+{% trans "label_accepts_booking" as t_label_accepts_booking %}
+{% trans "help_accepts_booking" as t_help_accepts_booking %}
+
+
+<div class="row">
+<div class="col-xs-8 col-xs-offset-2">
+<h1>{{ t_are_you_manager|title }}</h1>
+
+<h2>{{ t_account_signup_intro|capfirst }}</h2>
+
+<p>
+  <a href="{{ login_url }}" title="{{ t_sign_up }}" rel="nofollow">
+    {{ t_sign_in|capfirst }}
+  </a>
+  {{ t_already_have_account }}.
+  {{ t_else_have_account|capfirst }}:
+</p>
+<hr>
+    <form action="{% url 'account_signup' %}" method="post" id="signup_form" class="" role="form">
+      {% csrf_token %}
+        <div class="form-group">
+            <label class="my-brown" for="id_bagni">{{ form.bagni.label }}:</label>
+            {{ form.bagni.errors }}
+            <select id="id_neighbourhood" name="neighbourhood">
+                <option value="nochoice">
+                    -- {{ t_choose_neighbourhood }} --
+                </option>
+              {% for neighbourhood in select_neighbourhood %}
+                <option value="{{ neighbourhood.0 }}">
+                  {{ neighbourhood.1 }}
+                </option>
+              {% endfor %}
+            </select>
+            <select id="id_bagni" name="bagni">
+                <option value="nochoice" selected>
+                    -- {{ t_choose_bagno }} --
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
+            {{ form.name.errors }}
+            {{ form.name }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_surname">{{ form.surname.label }}:</label>
+            {{ form.surname.errors }}
+            {{ form.surname }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_email">{{ form.email.label }}:</label>
+            {{ form.email.errors }}
+            {{ form.email }}
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_password1">{{ form.password1.label }}:</label>
+            {{ form.password1.errors }}
+            <input id="id_password1" name="password1" class="form-control" type="password">
+        </div>
+        <div class="form-group">
+            <label class="my-brown" for="id_password2">{{ form.password2.label }}:</label>
+            {{ form.password2.errors }}
+            <input id="id_password2" name="password2" class="form-control"  type="password">
+        </div>
+          <div class="checkbox">
+              <label class="my-brown" for="id_tos">
+                  {{ t_accept }} <a id="tos_modal_link" title="{{ form.tos.label }}" href="#" data-toggle="modal" data-target="#myTosModal" >{{ form.tos.label }}</a>
+            {{ form.tos.errors }}
+            <input checked="checked" id="id_tos" name="tos" type="checkbox">
+            </label>
+          </div>
+          <div class="checkbox">
+              <label class="my-brown" for="id_privacy">
+                  {{ t_accept }} <a id="privacy_modal_link" title="{{ form.privacy.label }}" href="#" data-toggle="modal" data-target="#myPrivacyModal" >{{ form.privacy.label }}</a>
+            {{ form.privacy.errors }}
+            <input checked="checked" id="id_privacy" name="privacy" type="checkbox">
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="my-brown" for="id_accepts_booking">
+              {{ t_label_accepts_booking }}
+              {{ form.accepts_booking.errors }}
+              <input checked="checked" id="id_accepts_booking" name="accepts_booking" type="checkbox">
+            </label>
+            <p class="help-block">{{ t_help_accepts_booking }}</p>
+          </div>
+            {{ form.confirmation_key }}
+            <button class="btn btn-primary" type="submit" >{{ t_sign_up_button|capfirst }}</button>
+    </form>
+</div>
+
+
+<!-- TOS MODAL DIALOG -->
+    <div class="modal fade" id="myTosModal" tabindex="-1" role="dialog" aria-labelledby="tosModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content hp-facility-modal">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="tosModalLabel" class="modal-title my-bold">{{ form.tos.label }}</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12">
+                <p>{% trans "tos_content" %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">{{ t_close|capfirst }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- PRIVACY MODAL DIALOG -->
+    <div class="modal fade" id="myPrivacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content hp-facility-modal">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="privacyModalLabel" class="modal-title my-bold">{{ form.privacy.label }}</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12">
+                <p>{% trans "privacy_content" %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">{{ t_close|capfirst }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div> <!-- class=row -->
+
+{% endblock %}
+
+{% block specific_css %}
+<link href="{{ STATIC_URL }}css/bootstrapValidator.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block specific_js %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/signupform.js"></script>
+{% trans "choose_bagno" as t_choose_bagno %}
+<script type="text/javascript">
+    $(function(){
+            $("#signup_form").bootstrapValidator(signup_form_validation);
+            var neighbourhood_id = 0;
+            var pre_selected_neighbourhood = "-1";
+            var pre_selected_bagno = "-1";
+            $("#id_neighbourhood").change(function(){
+                $("#id_neighbourhood option").each(function(){
+                    if($(this).prop("selected")){
+                        if($(this).val() != "nochoice"){
+                            neighbourhood_id = $(this).val();
+                        }
+                    }
+                });
+                $.getJSON("/en/json/neighbourhood/" + neighbourhood_id, function(data){
+                    $("#id_bagni").empty();
+                    $("#id_bagni").append('<option value="undefined">-- {{ t_choose_bagno }} --</option>');
+                    $.each(data['items'], function(index, value){
+                        var html_str = '<option value="' +
+                                             value[0] +
+                                            '">' +
+                                             value[1] +
+                                             '</option>';
+                        $("#id_bagni").append(html_str);
+                    });
+                    $("#id_bagni option").each(function(){
+                        if($(this).val() == pre_selected_bagno){
+                            $(this).prop("selected", true);
+                            pre_selected_bagno = "-1";
+                        }else{
+                            $(this).prop("selected", false);
+                        }
+                    });
+                });
+            });
+            {% if pre_selected %}
+                pre_selected_neighbourhood = "{{ pre_selected.0 }}";
+                pre_selected_bagno = "{{ pre_selected.1 }}";
+                $("#id_neighbourhood option").each(function(){
+                    if($(this).attr("value") == pre_selected_neighbourhood){
+                        $(this).prop("selected", true);
+                    }else{
+                        $(this).prop("selected", false);
+                    }
+                });
+                $("#id_neighbourhood").trigger("change");
+            {% endif %}
+        });
+</script>
+{% endblock specific_js %}
+
