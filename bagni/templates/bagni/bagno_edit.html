@@ -29,6 +29,7 @@
                 {{ form.address.errors }}
                 <input id="id_address" class="form-control" name="address" type="text" value="{{ form.address.value }}" />
             </div>
+            {% comment %}
             <div class="form-group">
                 <label class="my-brown" for="id_languages">{{ form.languages.label }} (tieni premuto il tasto ctrl per selezionare più righe):</label>
                 {{ form.languages.errors }}
@@ -38,6 +39,7 @@
                 {% endfor %}
                 </select>                
             </div>
+            {% endcomment %}
             <div class="form-group">
                 <label class="my-brown" for="id_neighbourhood">{{ form.neighbourhood.label }}:</label>
                 {{ form.neighbourhood.errors }}
