@@ -218,6 +218,13 @@
             <hr>
             <button class="btn btn-lg btn-primary" type="submit" >{% trans "Save" %}</button>
         </form>
+        <hr>
+        <p>
+        {% url "contact-form" as contact_url %}
+        {% blocktrans %}
+        Per richiedere la cancellazione del bagno dal sito <a href="{{ contact_url }}" title="contattaci">contattaci</a> specificando esattamente il nome del bagno e la località
+        {% endblocktrans %}
+        </p>
     </div>
 </div>
 {% endblock %}
