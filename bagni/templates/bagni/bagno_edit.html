@@ -12,7 +12,7 @@
     <div class="col-xs-8 col-xs-offset-2">
         <h1>Modifica i dati del tuo bagno</h1>
         <hr>
-        <form method="post" enctype="multipart/form-data" role="form">
+        <form method="post" enctype="multipart/form-data" role="form" id="edit_form">
             {% csrf_token %}
             <div class="form-group">
                 <label class="my-brown" for="id_name">{{ form.name.label }}:</label>
@@ -228,9 +228,12 @@
 
 {% block specific_js %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrapValidator.js"></script>
-<!--
 <script type="text/javascript" src="{{ STATIC_URL }}js/editform.js"></script>
--->
+<script type="text/javascript">
+    $(function(){
+            $("#edit_form").bootstrapValidator(edit_form_validation);
+        });
+</script>
     <!--script type="text/javascript">
         $(function(){
             target_elements = []
