@@ -14,6 +14,12 @@ class NewsletterTemplate(TranslationOptions):
 
 translator.register(models.NewsletterTemplate, NewsletterTemplate)
 
+class NewsletterSubscription(TranslationOptions):
+    fields = []
+
+translator.register(models.NewsletterSubscription, NewsletterSubscription)
+
+
 class Newsletter(TranslationOptions):
     fields = []
 
