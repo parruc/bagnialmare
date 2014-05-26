@@ -1,6 +1,6 @@
 import ast
 from datetime import datetime
-
+from django.utils import translation
 from django.contrib import admin
 from django.contrib import messages
 from django.contrib.auth.models import User
@@ -30,21 +30,17 @@ def send_newsletter(modeladmin, request, queryset):
     try:
         t = get_template(obj.template.path)
         c = Context({"subject": obj.subject, "text": obj.text})
+
+        translation.activate("it")
         html_content = t.render(c)
+        translation.deactivate()
     except Exception as e:
         modeladmin.message_user(request, "Error %s trying to render template %s" % (str(e), obj.template.path),
-                                  level=messages.ERROR, extra_tags='', fail_silently=False)
+                                level=messages.ERROR, extra_tags='', fail_silently=False)
         return
 
     #Get target users email
-    try:
-        filters = ast.literal_eval(obj.target.filter)
-        users = User.objects.filter(**filters)
-    except Exception as e:
-        modeladmin.message_user(request, "Error %s trying to query for %s" % (str(e), obj.target.filter),
-                                  level=messages.ERROR, extra_tags='', fail_silently=False)
-        return
-    recipients = [user.email for user in users]
+    recipients = obj.target.recipients.split(";")
 
     try:
         sent_counter = send_mass_html_mail(subject=obj.subject, text_content=text_content, html_content=html_content, recipients=recipients)
@@ -53,17 +49,11 @@ def send_newsletter(modeladmin, request, queryset):
                                   level=messages.ERROR, extra_tags='', fail_silently=False)
         return
 
-    if sent_counter == len(recipients):
-        obj.sent_on = datetime.now()
-        obj.sent_to = "; ".join(recipients)
-        obj.save()
-        modeladmin.message_user(request, "You have sent the selected newsletter",
-                                level=messages.INFO, extra_tags='', fail_silently=False)
-    else:
-        modeladmin.message_user(request, "Error: sent %d emails of %d" % (sent_counter, len(recipients),),
-                                  level=messages.ERROR, extra_tags='', fail_silently=False)
-
-
+    obj.sent_on = datetime.now()
+    obj.sent_to = "; ".join(recipients)
+    obj.save()
+    modeladmin.message_user(request, "Error: sent %d emails of %d" % (sent_counter, len(recipients),),
+                            level=messages.INFO, extra_tags='', fail_silently=False)
 
 send_newsletter.short_description = "Send selected newsletter"
 
@@ -78,8 +68,13 @@ class NewsletterTemplateAdmin(TranslationAdmin, admin.ModelAdmin):
 
 admin.site.register(models.NewsletterTemplate, NewsletterTemplateAdmin)
 
+class NewsletterSubscriptionAdmin(TranslationAdmin, admin.ModelAdmin):
+    pass
+
+admin.site.register(models.NewsletterSubscription, NewsletterSubscriptionAdmin)
 
 class NewsletterAdmin(TranslationAdmin, admin.ModelAdmin):
     actions = [send_newsletter]
+    readonly_fields=('sent_on', 'sent_to')
 
 admin.site.register(models.Newsletter, NewsletterAdmin)

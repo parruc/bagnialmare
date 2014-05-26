@@ -4,7 +4,7 @@ from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.validators import MaxLengthValidator
-from ckeditor.fields import RichTextField
+#from ckeditor.fields import RichTextField
 
 
 from base import BaseModel

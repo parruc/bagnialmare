@@ -118,8 +118,8 @@ class BagnoEdit(UpdateView):
                     )
                 )
         else:
-            telephone_formset.save(commit=False)
-            image_formset.save(commit=False)
+            #telephone_formset.save(commit=False)
+            #image_formset.save(commit=False)
             telephone_formset.save()
             image_formset.save()
             return super(BagnoEdit, self).post(request, *args, **kwargs)

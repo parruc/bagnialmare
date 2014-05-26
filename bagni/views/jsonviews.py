@@ -48,14 +48,16 @@ class JsonSearchBoundingBox(JSONResponseMixin, BaseListView):
 
 
 class JsonBagniInNeighbourhood(JSONResponseMixin, BaseListView):
+    """Json dict of the beach resort in a newighbourhood
+    """
     def get_queryset(self):
         neighbourhood_id = int(self.kwargs['id'])
-        queryset = Neighbourhood.objects.get(pk=neighbourhood_id).bagni.all().order_by("name")
+        queryset = Neighbourhood.objects.get(pk=neighbourhood_id).bagni.filter(managers__isnull=True).order_by("name")
         return queryset
 
     def get_context_data(self, **kwargs):
         queryset = kwargs.pop('object_list', self.object_list)
-        return dict(items=[(b.pk, b.get_complete_name()) for b in queryset if not b.is_managed()])
+        return dict(items=[(b.pk, b.get_complete_name()) for b in queryset])
 
 
 class JsonAutocompletePlaces(JSONResponseMixin, BaseDetailView):

@@ -53,9 +53,9 @@ def update_index(sender, langs=LANGS, **kwargs):
         the post_save signal of the Object objects so will automatically
         index every new or modified Object
     """
+    old_language = get_language()
     for lang in langs:
         ix = index.open_dir(index_path(lang))
-        # TODO: Verificare se poi mi cambia lingua
         activate(lang)
         writer = ix.writer()
         obj = kwargs['instance']
@@ -63,8 +63,8 @@ def update_index(sender, langs=LANGS, **kwargs):
             writer.add_document(**obj.index_features())
         else:
             writer.update_document(**obj.index_features())
-        deactivate()
         writer.commit()
+    activate(old_language)
 
 signals.post_save.connect(update_index, sender=Bagno)
 
