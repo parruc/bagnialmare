@@ -98,16 +98,17 @@
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="{% url 'contact-form' %}"
-                 title="{{ t_contact }}">
+                 title="{{ t_contact }}">
                 <strong>{{ t_contact|title }}</strong>
               </a>
             </li>
             <li>
               <a href="{% url 'search' %}"
-                 title="{{ t_search }}">
+                 title="{{ t_search }}">
                 <strong>{{ t_search }}</strong>
               </a>
             </li>
+          {% comment %}
             {% if user.is_authenticated %}
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ t_account|capfirst }}<b class="caret"></b></a>
@@ -115,7 +116,7 @@
                 {% for bagno in user.manager.bagni.all %}
                 <li>
                 <a href="{{ bagno.get_edit_url }}"
-                    title="{{ t_edit }}"
+                    title="{{ t_edit }}"
                     rel="nofollow">
                     <strong>{{ t_edit|capfirst }} {{ bagno.name }}</strong>
                   </a>
@@ -123,7 +124,7 @@
                 {% endfor %}
                 <li>
                   <a href="{% url 'account_logout' %}"
-                      title="{{ t_logout }}"
+                      title="{{ t_logout }}"
                       rel="nofollow">
                     <strong>{{ t_logout|capfirst }}</strong>
                   </a>
@@ -133,12 +134,13 @@
               {% else %}
               <li>
                 <a href="{% url 'account_login' %}"
-                    title="{{ t_login }}"
+                    title="{{ t_login }}"
                     rel="nofollow">
                 <strong>{{ t_login|capfirst }}</strong>
                 </a>
               </li>
               {% endif %}
+            {% endcomment %}
             {% for lang in LANGUAGES %}
               {% with lang.0 as lang_code %}
                 {% ifnotequal lang_code LANGUAGE_CODE %}
@@ -153,7 +155,7 @@
             <!--
             <li>
             <a href="{% url 'about-us' %}"
-               title="{{ t_about_us }}">
+               title="{{ t_about_us }}">
                 <strong>{{ t_about_us|title }}</strong>
               </a>
             </li>
