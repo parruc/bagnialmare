@@ -76,10 +76,10 @@
       {{ form.media }}
   {% endblock %}
 </head>
-<body class="{% block bodyclass %}body-class{% endblock %}"
+<body {% block bodyclass %}{% endblock %}
       data-static-url="{{ STATIC_URL }}">
   <div id="wrap">
-    <div class="{% block navbarclass %}{% endblock %} navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
@@ -91,7 +91,13 @@
           <a class="navbar-brand" href="{% url 'homepage' %}" title="bagnialmare.com">
             {% block logoimage %}
             <img alt="bagnialmare.com logo" src="{{ STATIC_URL }}img/logo.png" />
-            {% endblock %} <strong>bagnialmare.com</strong>
+            {% endblock %}
+            {% spaceless %}
+              <span class="homizio homizio-black">bagni</span>
+              <span class="homizio homizio-thin">al</span>
+              <span class="homizio homizio-black">mare</span>
+              <span class="homizio homizio-thin">.com</span>
+            {% endspaceless %}
           </a>
         </div>
         <div class="navbar-collapse collapse">

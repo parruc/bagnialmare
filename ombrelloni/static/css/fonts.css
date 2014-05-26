@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'Droid Sans';
   src: url('../fonts/droidsans-webfont.eot');
   src: url('../fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
@@ -7,9 +7,9 @@
        url('../fonts/droidsans-webfont.svg#droid_sansregular') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
   font-family: 'Lobster Two';
   src: url('../fonts/lobstertwo-regular-webfont.eot');
   src: url('../fonts/lobstertwo-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -18,9 +18,39 @@
        url('../fonts/lobstertwo-regular-webfont.svg#lobster_tworegular') format('svg');
   font-weight: normal;
   font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'homizio-black';
+  src: url('../fonts/homizio-black-webfont.eot');
+  src: url('../fonts/homizio-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/homizio-black-webfont.woff') format('woff'),
+       url('../fonts/homizio-black-webfont.ttf') format('truetype'),
+       url('../fonts/homizio-black-webfont.svg#homizioblack') format('svg');
+  font-style: normal;
 }
 
 @font-face {
+  font-family: 'homizio-thin';
+  src: url('../fonts/homizio-thin-webfont.eot');
+  src: url('../fonts/homizio-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/homizio-thin-webfont.woff') format('woff'),
+       url('../fonts/homizio-thin-webfont.ttf') format('truetype'),
+       url('../fonts/homizio-thin-webfont.svg#homiziothin') format('svg');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'homizio-regular';
+  src: url('../fonts/homizio-regular-webfont.eot');
+  src: url('../fonts/homizio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/homizio-regular-webfont.woff') format('woff'),
+       url('../fonts/homizio-regular-webfont.ttf') format('truetype'),
+       url('../fonts/homizio-regular-webfont.svg#homizioregular') format('svg');
+  font-style: normal;
+}
+
+/*@font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot');
   src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -29,9 +59,9 @@
        url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
   font-family: 'Henny Penny';
   src: url('../fonts/hennypenny-regular-webfont.eot');
   src: url('../fonts/hennypenny-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -40,4 +70,4 @@
        url('../fonts/hennypenny-regular-webfont.svg#henny_pennyregular') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
