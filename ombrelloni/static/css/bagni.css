@@ -39,9 +39,9 @@ body {
     color: #ffffff;
 }
 
-/* Move down content because we have a fixed navbar that is 50px tall */
+/* Move down content because we have a fixed navbar that is 70px tall */
 #wrap > .container {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .centered-text {
@@ -468,6 +468,8 @@ button {
 
 .navbar-default{
     background-color: #EB604B;
+    height: 70px;
+    padding: 10px 0px;
 }
 
 .homepage-body-class .navbar-default{
@@ -505,11 +507,9 @@ button {
 }
 
 
-.navbar-default .navbar-brand img{
-  height: 40px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+#.navbar-default .navbar-brand img{
+#  height: 40px;
+#}
 
 .btn-primary {
      background-color: #EB604B/*#00A0B0*/;
