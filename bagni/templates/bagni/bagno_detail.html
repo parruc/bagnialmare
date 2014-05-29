@@ -140,7 +140,7 @@
       <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
         <p>
           {% if object.telephones.all %}
-            {% for tel in object.telephones.all %}
+            {% for tel in object.get_ordered_telephones %}
               <p>
                 <b class="my-bold">{{ tel.get_name_display }}:</b>
                 <a class="ga_click"

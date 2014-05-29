@@ -7,6 +7,7 @@ from django.core.validators import MaxLengthValidator
 #from ckeditor.fields import RichTextField
 
 
+from bagni_details import Telephone
 from base import BaseModel
 
 class Bagno(BaseModel):
@@ -79,6 +80,12 @@ class Bagno(BaseModel):
 
     def get_list_display_telephone_numbers(self):
         return " ~ ".join([t.name + ": " + t.number for t in self.telephones.all()])
+
+    def get_ordered_telephones(self):
+        return sorted(
+                list(self.telephones.all()),
+                key = lambda x: Telephone.TELEPHONE_ORDERING.get(x.name, 7)
+                )
 
     def get_complete_name(self):
         res = self.name

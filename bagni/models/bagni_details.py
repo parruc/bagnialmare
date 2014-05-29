@@ -30,9 +30,16 @@ class Telephone(models.Model):
     TELEPHONE_NAME_CHOICES = (
             ('mob', _("Mobile number")),
             ('tel', _("Telephone number")),
-            ('win', _("Winter number")),
             ('fax', _("Fax number")),
+            ('win', _("Winter number")),
             )
+
+    TELEPHONE_ORDERING = {
+                           'mob' : 1,
+                           'tel' : 5,
+                           'fax' : 10,
+                           'win' : 15,
+                        }
 
     name = models.CharField(max_length=100,
                             choices = TELEPHONE_NAME_CHOICES,
