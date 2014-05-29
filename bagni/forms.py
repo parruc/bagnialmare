@@ -210,7 +210,7 @@ class ImageForm(TranslationModelForm):
 #    form_class = ImageForm
 
 # These two are used by our own defined BagnoEdit view
-TelephoneFormSet = inlineformset_factory(Bagno, Telephone, form=TelephoneForm, max_num=4)
+TelephoneFormSet = inlineformset_factory(Bagno, Telephone, form=TelephoneForm, extra=4, max_num=4)
 ImageFormSet = inlineformset_factory(Bagno, Image, form=ImageForm, max_num=1)
 
 class BagnoForm(TranslationModelForm):
