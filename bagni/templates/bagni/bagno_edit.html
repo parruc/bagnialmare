@@ -62,7 +62,7 @@
             <div class="form-group">
                 <label class="my-brown" for="id_mail">{{ form.mail.label }}:</label>
                 {{ form.mail.errors }}
-                <input id="id_email" class="form-control" name="email" type="text" value="{{ form.email.value }}" />
+                <input id="id_mail" class="form-control" name="mail" type="text" value="{{ form.mail.value }}" />
             </div>
             <hr>
             {% comment %}
@@ -96,11 +96,11 @@
                   {% if lang|first == "it" %}
                     <label class="my-brown" for="id_description_it">{{ form.description_it.label }}:</label>
                     {{ form.description_it.errors }}
-                    <textarea id="id_description_it" class="form-control" rows="10" name="description_it" cols="40"></textarea>
+                    <textarea id="id_description_it" class="form-control" rows="10" name="description_it" cols="40">{{ form.description_it.value }}</textarea>
                   {% elif lang|first == "en" %}
                     <label class="my-brown" for="id_description_en">{{ form.description_en.label }}:</label>
                     {{ form.description_en.errors }}
-                    <textarea id="id_description_en" class="form-control" rows="10" name="description_en" cols="40"></textarea>
+                    <textarea id="id_description_en" class="form-control" rows="10" name="description_en" cols="40">{{ form.description_en.value }}</textarea>
                   {% endif %}
                     </div><!-- .form-group -->
                   </div> <!-- .tab-pane -->

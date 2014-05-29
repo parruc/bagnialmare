@@ -45,7 +45,7 @@ edit_form_validation = {
                             },
                         }
                     },
-                    email: {
+                    mail: {
                         message: 'email non valida',
                         validators: {
                             emailAddress: {
