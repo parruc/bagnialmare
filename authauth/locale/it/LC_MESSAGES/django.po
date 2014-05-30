@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-25 19:34+0200\n"
+"POT-Creation-Date: 2014-05-30 20:33+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -219,24 +219,26 @@ msgstr "chiudi"
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:24 templates/account/signup.html.py:171
+#: templates/account/signup.html:24 templates/account/signup.html.py:186
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
 #: templates/account/signup.html:25
 msgid "label_accepts_booking"
-msgstr ""
+msgstr "Interessato a prenotazioni online?"
 
 #: templates/account/signup.html:26
 msgid "help_accepts_booking"
-msgstr ""
+msgstr "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante di prova per monitorare l'interesse dei tuoi utenti a disporre di questa funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:128
-msgid "tos_content"
-msgstr ""
-
-#: templates/account/signup.html:150
-msgid "privacy_content"
+#: templates/account/signup.html:66
+#, python-format
+msgid ""
+"\n"
+"        Se non trovi il tuo bagno o la tua località in questo elenco, <a "
+"href=\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
+"informazioni che vorresti aggiungere\n"
+"        "
 msgstr ""
 
 #: templates/account/verification_sent.html:5

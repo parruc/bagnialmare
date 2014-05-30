@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-25 19:34+0200\n"
+"POT-Creation-Date: 2014-05-30 20:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,19 +178,19 @@ msgstr ""
 
 #: templates/account/signup.html:17
 msgid "sign_up_button"
-msgstr ""
+msgstr "sign up"
 
 #: templates/account/signup.html:18
 msgid "already_have_account"
-msgstr ""
+msgstr "already have an account"
 
 #: templates/account/signup.html:19
 msgid "else_have_account"
-msgstr ""
+msgstr "otherwise"
 
 #: templates/account/signup.html:20
 msgid "sign_in"
-msgstr ""
+msgstr "sign in"
 
 #: templates/account/signup.html:21
 msgid "accetto i"
@@ -204,24 +204,26 @@ msgstr ""
 msgid "choose_neighbourhood"
 msgstr ""
 
-#: templates/account/signup.html:24 templates/account/signup.html.py:171
+#: templates/account/signup.html:24 templates/account/signup.html.py:186
 msgid "choose_bagno"
 msgstr ""
 
 #: templates/account/signup.html:25
 msgid "label_accepts_booking"
-msgstr ""
+msgstr "Interessato a prenotazioni online?"
 
 #: templates/account/signup.html:26
 msgid "help_accepts_booking"
-msgstr ""
+msgstr "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante di prova per monitorare l'interesse dei tuoi utenti a disporre di questa funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:128
-msgid "tos_content"
-msgstr ""
-
-#: templates/account/signup.html:150
-msgid "privacy_content"
+#: templates/account/signup.html:66
+#, python-format
+msgid ""
+"\n"
+"        Se non trovi il tuo bagno o la tua località in questo elenco, <a "
+"href=\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
+"informazioni che vorresti aggiungere\n"
+"        "
 msgstr ""
 
 #: templates/account/verification_sent.html:5
