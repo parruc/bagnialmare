@@ -28,3 +28,33 @@ class AboutUsView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(AboutUsView, self).get_context_data(**kwargs)
         return context
+
+class UserTermsAndPrivacyView(TemplateView):
+    """ Terms and privacy page for user who visit the website
+    """
+
+    template_name = "bagni/user-terms-and-privacy.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(UserTermsAndPrivacyView, self).get_context_data(**kwargs)
+        return context
+
+class ManagerPrivacyView(TemplateView):
+    """ Privacy page for managers who sign up in the site
+    """
+
+    template_name = "bagni/manager-privacy.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(ManagerPrivacyView, self).get_context_data(**kwargs)
+        return context
+
+class ManagerTermsView(TemplateView):
+    """ Terms page for managers who sign up in the site
+    """
+
+    template_name = "bagni/manager-terms.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(ManagerTermsView, self).get_context_data(**kwargs)
+        return context
