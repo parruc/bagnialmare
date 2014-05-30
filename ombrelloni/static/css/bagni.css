@@ -437,6 +437,7 @@ img.hp-form-image
 h1, h2, h3, h4 {
     font-family: 'homizio-regular', sans-serif;
     color: #6A4A3C;
+    letter-spacing: 2px;
 }
 
 p {

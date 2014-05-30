@@ -77,7 +77,7 @@
   <div class="row">
     <div class="col-xs-12 col-sm-4">
         {% if object.description and object.is_managed %}
-          <p> {{ object.description }} </p>
+          <p> {{ object.description|safe }} </p>
         {% else %}
           <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
         {% endif %}
