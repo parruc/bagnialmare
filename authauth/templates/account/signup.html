@@ -94,14 +94,20 @@
         </div>
           <div class="checkbox">
               <label class="my-brown" for="id_tos">
-                  {{ t_accept }} <a id="tos_modal_link" title="{{ form.tos.label }}" href="#" data-toggle="modal" data-target="#myTosModal" >{{ form.tos.label }}</a>
+                  {{ t_accept }} <a id="tos_link" title="{{ form.tos.label }}" href='{% url "manager-terms" %}' target="_blank" >{{ form.tos.label }}</a>
+                  {% comment %}
+                  {{ t_accept }} <a id="tos_modal_link" title="{{ form.tos.label }}" href='{% url "manager-terms" %}' data-toggle="modal" target="_blank" data-target="#myTosModal" >{{ form.tos.label }}</a>
+                  {% endcomment %}
             {{ form.tos.errors }}
             <input checked="checked" id="id_tos" name="tos" type="checkbox">
             </label>
           </div>
           <div class="checkbox">
               <label class="my-brown" for="id_privacy">
-                  {{ t_accept }} <a id="privacy_modal_link" title="{{ form.privacy.label }}" href="#" data-toggle="modal" data-target="#myPrivacyModal" >{{ form.privacy.label }}</a>
+                  {{ t_accept }} <a id="privacy_link" title="{{ form.privacy.label }}" href='{% url "manager-privacy" %}' target="_blank" >{{ form.privacy.label }}</a>
+                  {% comment %}
+                  {{ t_accept }} <a id="privacy_modal_link" title="{{ form.privacy.label }}" href='{% url "manager-privacy" %}' data-toggle="modal" target="_blank" data-target="#myPrivacyModal" >{{ form.privacy.label }}</a>
+                  {% endcomment %}
             {{ form.privacy.errors }}
             <input checked="checked" id="id_privacy" name="privacy" type="checkbox">
             </label>
@@ -119,7 +125,7 @@
     </form>
 </div>
 
-
+{% comment %}
 <!-- TOS MODAL DIALOG -->
     <div class="modal fade" id="myTosModal" tabindex="-1" role="dialog" aria-labelledby="tosModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -164,6 +170,7 @@
       </div>
     </div>
 </div> <!-- class=row -->
+{% endcomment %}
 
 {% endblock %}
 
