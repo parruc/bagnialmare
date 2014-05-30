@@ -4305,10 +4305,24 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||8cdf7928f0e82fc0c1e501425ca1eab0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/test/benvenuti-nellestate-2014.jpg\", \"size\": [800, 600]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||917e18c6e71db66bc6b364a385175d8b", 
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/48/0d/480dff71dc29b781afa362b4adce70fa.png\", \"size\": [228, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||c57fc645a5926f9e17001291d8c7ab06", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/3d/b2/3db26ff49fad5f7f7e3422491a1e4807.png\", \"size\": [171, 128]}"
   }
 },
 {
@@ -4344,6 +4358,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"07057f84c038d2018de6ceae6075bc54\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||8cdf7928f0e82fc0c1e501425ca1eab0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"c57fc645a5926f9e17001291d8c7ab06\"]"
   }
 },
 {
@@ -4975,7 +4996,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-15T11:36:08Z", 
+    "last_login": "2014-05-29T13:20:06.147Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
@@ -5011,7 +5032,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-27T18:12:13.174Z", 
+    "last_login": "2014-05-29T09:37:39.733Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -5047,6 +5068,26 @@
       "parruc"
     ], 
     "old_email": "parruc@gmail.com"
+  }
+},
+{
+  "pk": 2, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "benve"
+    ], 
+    "old_email": "marco.benvenuto1@gmail.com"
+  }
+},
+{
+  "pk": 3, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "inge"
+    ], 
+    "old_email": "nicola.valentini@gmail.com"
   }
 },
 {
@@ -58122,56 +58163,179 @@
   "pk": 13827, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
-    "number": "NNNN-NNNN-NNNN-NNNN-NNNN", 
-    "description_en": "", 
+    "number": "1", 
+    "description_en": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!", 
     "site": "http://www.bagnialmare.com/", 
     "languages": [], 
     "services": [
       [
-        "rowing-boats"
+        "pizzeria"
       ], 
       [
-        "alcohol-tester"
+        "double-sun-bed"
       ], 
       [
-        "bicycles"
+        "picnic-area"
+      ], 
+      [
+        "celiac-cooking"
+      ], 
+      [
+        "sandwich-shop"
+      ], 
+      [
+        "wellness-area"
       ], 
       [
         "beach-volley-courses"
       ], 
       [
-        "entertainment"
+        "barbecue-area"
+      ], 
+      [
+        "veranda"
+      ], 
+      [
+        "hammocks"
+      ], 
+      [
+        "alcohol-tester"
+      ], 
+      [
+        "credit-cards-accepted"
+      ], 
+      [
+        "bancomat"
+      ], 
+      [
+        "cocktail-bar"
+      ], 
+      [
+        "tasting-events"
+      ], 
+      [
+        "piano-bar"
+      ], 
+      [
+        "themed-dinner"
+      ], 
+      [
+        "meat-barbecue-events"
+      ], 
+      [
+        "fish-barbecue-events"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "dogs-allowed"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "beachwear"
+      ], 
+      [
+        "rowing-boats"
+      ], 
+      [
+        "ticket-office"
+      ], 
+      [
+        "clothing"
+      ], 
+      [
+        "toilets-for-children"
+      ], 
+      [
+        "sun-terrace"
+      ], 
+      [
+        "solarium"
+      ], 
+      [
+        "beauty-treatments"
+      ], 
+      [
+        "tub"
+      ], 
+      [
+        "aperitif"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "massages"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "green-area"
       ], 
       [
         "cabins"
       ], 
       [
-        "beach-soccer"
-      ], 
-      [
         "wi-fi"
       ], 
       [
-        "beach-volley"
+        "dj-set"
       ], 
       [
         "gymnastics"
       ], 
       [
+        "catering"
+      ], 
+      [
+        "disabled"
+      ], 
+      [
+        "happy-hour"
+      ], 
+      [
+        "live-concerts"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "ping-pong"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "bar"
       ]
     ], 
-    "address": "Questa \u00e8 una via sulla spiaggia con meravigliosa vista mare.", 
-    "description_it": "", 
+    "address": "Riviera Adriatica, Estate 2014", 
+    "description_it": "Benvenuti nel mondo di BagniAlMare.\r\nQuesto \u00e8 un esempio di vetrina ideale per il vostro stabilimento, per gestire e personalizzare la vostra vetrina privata baster\u00e0 registrare il vostro account!", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "test", 
     "neighbourhood": [
-      "rimini"
+      "villamarina"
     ], 
-    "name": "Bagno Test"
+    "name": "Bagno Welcome!"
   }
 },
 {
@@ -75563,6 +75727,42 @@
   }
 },
 {
+  "pk": 3403, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "number": "051 111111", 
+    "name": "tel", 
+    "slug": "tel"
+  }
+},
+{
+  "pk": 3404, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "number": "333 1111111", 
+    "name": "mob", 
+    "slug": "mob"
+  }
+},
+{
+  "pk": 3405, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "number": "051 222222", 
+    "name": "win", 
+    "slug": "win"
+  }
+},
+{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -75638,6 +75838,19 @@
     "name": "Entrata bagno", 
     "image": "images/bagni/bagno-dallara/entrata-bagno.jpg", 
     "slug": "entrata-bagno"
+  }
+},
+{
+  "pk": 8, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "test"
+    ], 
+    "name": "Benvenuti nell'Estate 2014", 
+    "image": "images/bagni/test/benvenuti-nellestate-2014.jpg", 
+    "slug": "benvenuti-nellestate-2014"
   }
 },
 {
