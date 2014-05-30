@@ -5,6 +5,7 @@
 {% block content %}
 
 {% trans "facilities" as t_facilities %}
+{% trans "help_accept_booking" as t_help_accept_booking %}
 
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as LANGUAGE_CODE %}
@@ -52,6 +53,7 @@
             <div class="checkbox">
                 {{ form.accepts_booking.errors }}
                 <label class="my-brown" for="id_accepts_booking">{{ form.accepts_booking.label }} {{ form.accepts_booking }}</label>
+                <p> {{ t_help_accept_booking }} </p>
                 <!--<input id="id_site" class="form-control" name="site" type="text" value="{{ form.site.value }}" /> -->
             </div>
             <div class="form-group">
