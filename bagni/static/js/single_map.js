@@ -1,6 +1,5 @@
 var map
 $(function() {
-    L.Icon.Default.imagePath = '/static/js/images/';
     var bagno_x = $("#bagno_map").data("x")
     var bagno_y = $("#bagno_map").data("y")
     var bagno_name = $("#bagno_map").data("name")
@@ -11,6 +10,6 @@ $(function() {
         subdomains: ['otile1','otile2','otile3','otile4'],
         maxZoom: 18
     }).addTo(map);
-    var marker = L.marker([bagno_y, bagno_x]).addTo(map);
+    var marker = L.marker([bagno_y, bagno_x], {icon: ombrelloneIcon}).addTo(map);
     marker.bindPopup('<b class="my-bold">'+ bagno_name +'</b><br /><em>' + bagno_address + '</em>').openPopup();
 });

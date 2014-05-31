@@ -25,7 +25,6 @@ $(function() {
 
     $("#rootContainer").on("click", "#map-tab-button", function(evt) {
         var map = L.map('bagno_map');
-        L.Icon.Default.imagePath = '/static/js/images/';
         L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
             attribution: '',
             subdomains: ['otile1','otile2','otile3','otile4'],
@@ -34,7 +33,7 @@ $(function() {
         var map_markerBounds = new L.LatLngBounds();
         evt.preventDefault();
         $(this).tab('show');
-        
+
         $("#bagniToBeMapped li").each(function(index, element){
             var p = new L.LatLng(parseFloat($(element).data("y")),
                                  parseFloat($(element).data("x")));
@@ -45,7 +44,7 @@ $(function() {
                                             $(element).data("name") +
                                             '</b>');
             }else{
-                L.marker(p).addTo(map)
+                L.marker(p, {icon: ombrelloneIcon}).addTo(map)
                            .bindPopup('<b class="my-bold"><a href=' +
                                       $(element).data("url") +
                                       '>' +
