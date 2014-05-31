@@ -12,9 +12,6 @@ import mimetypes
 import requests
 
 
-MANDRILL_API_URL = getattr(settings, "MANDRILL_API_URL", "http://mandrillapp.com/api/1.0")
-
-
 class JSONDateUTCEncoder(json.JSONEncoder):
     """JSONEncoder that encodes dates in string format used by Mandrill.
 
@@ -34,10 +31,20 @@ class JSONDateUTCEncoder(json.JSONEncoder):
         return super(JSONDateUTCEncoder, self).default(obj)
 
 
+class NotSupportedByMandrillError(ValueError):
+    pass
+
+
+class MandrillAPIError(ValueError):
+    pass
+
+
 class MandrillBackend(BaseEmailBackend):
     """
     Mandrill API Email Backend
     """
+
+    api_key_field = "MANDRILL_API_KEY"
 
     def __init__(self, **kwargs):
         """
@@ -45,7 +52,7 @@ class MandrillBackend(BaseEmailBackend):
         """
         super(MandrillBackend, self).__init__(**kwargs)
         self.api_url = getattr(settings, "MANDRILL_API_URL", "http://mandrillapp.com/api/1.0")
-        self.api_key = getattr(settings, "MANDRILL_API_KEY", None)
+        self.api_key = getattr(settings, self.api_key_field, None)
 
         self.subaccount = getattr(settings, "MANDRILL_SUBACCOUNT", None)
 
@@ -307,3 +314,7 @@ class MandrillBackend(BaseEmailBackend):
             'content': content_b64.decode('ascii'),
         }
         return mandrill_attachment, is_embedded_image
+
+
+class MandrillTestBackend(MandrillBackend):
+    api_key_field = "MANDRILL_API_TEST_KEY"

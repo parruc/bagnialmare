@@ -72,7 +72,7 @@ class NewsletterSubscription(models.Model):
 
     email = models.EmailField(verbose_name=_("Email"))
     target = models.ForeignKey("NewsletterTarget", related_name="subscribers", verbose_name=_("Targets"))
-    hash_field = models.CharField(max_length=40, unique=True)
+    hash_field = models.CharField(editable=False, blank=True, max_length=40, unique=True)
 
     def save(self, *args, **kwargs):
         if not self.hash_field:
