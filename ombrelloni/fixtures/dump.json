@@ -4978,7 +4978,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-27T22:12:05.420Z", 
+    "last_login": "2014-05-31T16:14:57.755Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -75938,27 +75938,27 @@
   }
 },
 {
-  "pk": 1, 
+  "pk": 3, 
   "model": "userfeedback.userfeedback", 
   "fields": {
     "notified": false, 
     "bagno": [
-      "bagno-anita"
+      "angelo-2"
     ], 
-    "email": "info@bagnialmare.com", 
-    "created": "2014-05-14T12:35:18.986Z"
+    "email": "Pierre-Yves.farina@wanadoo.fr", 
+    "created": "2014-05-31T06:53:31.967Z"
   }
 },
 {
-  "pk": 2, 
+  "pk": 4, 
   "model": "userfeedback.userfeedback", 
   "fields": {
     "notified": false, 
     "bagno": [
-      "bagno-conchiglia-lido"
+      "honolulu"
     ], 
-    "email": "marco.benvenuto1@gmail.com", 
-    "created": "2014-05-14T12:57:18.681Z"
+    "email": "babigino72@gmail.com", 
+    "created": "2014-05-31T09:42:39.787Z"
   }
 }
 ]
