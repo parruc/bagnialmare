@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-30 20:24+0200\n"
+"POT-Creation-Date: 2014-06-03 19:54+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -399,14 +399,23 @@ msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
 #: templates/bagni/bagno_edit.html:8
-msgid "help_accept_booking"
-msgstr "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante di prova per monitorare l'interesse dei tuoi utenti a disporre di questa funzione. In futuro potrai sempre disabilitare questa opzione."
+msgid "help_mail"
+msgstr "Nota: BagniAlMare invierà eventuali comunicazioni degli utenti all'indirizzo e-mail registrato. Se desideri modificare l'indirizzo e-mail registrato puoi segnalarcelo tramite la sezione Contatti"
 
-#: templates/bagni/bagno_edit.html:224
+
+
+#: templates/bagni/bagno_edit.html:9
+msgid "help_accept_booking"
+msgstr ""
+"Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante "
+"di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
+"funzione. In futuro potrai sempre disabilitare questa opzione."
+
+#: templates/bagni/bagno_edit.html:226
 msgid "Save"
 msgstr "Salva"
 
-#: templates/bagni/bagno_edit.html:229
+#: templates/bagni/bagno_edit.html:231
 #, python-format
 msgid ""
 "\n"
