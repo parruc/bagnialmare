@@ -8,7 +8,7 @@ import zmq
 import django
 
 if __name__ == "__main__":
-    logger = logging.getLogger(__module__)
+    logger = logging.getLogger("mailoffloader")
     settings = os.getenv("DJANGO_SETTINGS_MODULE")
     if not settings:
         logger.error("this process must live in a django environment")
@@ -22,14 +22,16 @@ if __name__ == "__main__":
     logger.info("resulting SYS.PATH:")
     logger.info(sys.path)
     from django.conf import settings
-    from newsletters.mail.helpers import send_mass_html_mail
+    from django.utils.importlib import import_module
+    logger.debug("found socket: %s" % settings.MAILOFFLOADER_SOCKET)
+    helpers = import_module('newsletters.mail.helpers')
     context = zmq.Context()
     server = context.socket(zmq.REP)
     server.bind(settings.MAILOFFLOADER_SOCKET)
     while True:
         msg = server.recv_json()
         #send_mass_html_mail(msg['subject'], msg['text_content'], msg['html_content'], msg['recipients'], msg['from_email'], msg['test']
-        logger.DEBUG("received: %s" % (msg,))
+        logger.debug("received: %s" % (msg,))
         server.send_string("ack")
     sys.exit(0)
 
