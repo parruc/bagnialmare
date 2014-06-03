@@ -284,7 +284,7 @@ msgstr "servizi"
 
 #: templates/bagni/bagno_contacts.html:4
 msgid "contact_structure"
-msgstr "contattaci"
+msgstr "contatta la struttura"
 
 #: templates/bagni/bagno_contacts.html:5 templates/bagni/bagno_list.html:7
 #: templates/bagni/district_detail.html:8 templates/bagni/search.html:14
@@ -294,7 +294,7 @@ msgstr "bagno"
 
 #: templates/bagni/bagno_detail.html:10 templates/bagni/search.html:26
 msgid "contact_button"
-msgstr "contattaci"
+msgstr "contatta la struttura"
 
 #: templates/bagni/bagno_detail.html:11
 msgid "contacts"
