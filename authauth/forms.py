@@ -41,6 +41,7 @@ class ManagerSignupForm(forms.ModelForm):
         user.save()
         bagno = m.bagni.first()
         bagno.accepts_booking = self.cleaned_data['accepts_booking']
+        bagno.mail = self.cleaned_data['email']
         bagno.save()
 
     def _clean_required_bool(self, field_name):
