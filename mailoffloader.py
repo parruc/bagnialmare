@@ -31,8 +31,8 @@ if __name__ == "__main__":
     logger.info("server listening on socket: %s" % settings.MAILOFFLOADER_SOCKET)
     while True:
         msg = server.recv_json()
+        server.send_string("ack") #ack before time-consuming execution
         #send_mass_html_mail(msg['subject'], msg['text_content'], msg['html_content'], msg['recipients'], msg['from_email'], msg['test']
         logger.debug("received: %s" % (msg,))
-        server.send_string("ack")
     sys.exit(0)
 
