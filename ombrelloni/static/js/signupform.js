@@ -66,6 +66,9 @@ signup_form_validation = {
                     password1: {
                         message: 'password non valida',
                         validators: {
+                            notEmpty: {
+                                message: 'la lunghezza della password deve essere compresa tra 6 e 36 caratteri',
+                            },
                             stringLength: {
                                 min: 6,
                                 max: 36,
@@ -80,6 +83,9 @@ signup_form_validation = {
                     password2: {
                         message: 'password non valida',
                         validators: {
+                            notEmpty: {
+                                message: 'la lunghezza della password deve essere compresa tra 6 e 36 caratteri',
+                            },
                             stringLength: {
                                 min: 6,
                                 max: 36,
