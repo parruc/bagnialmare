@@ -32,7 +32,7 @@ if __name__ == "__main__":
     while True:
         msg = server.recv_json()
         server.send_string("ack") #ack before time-consuming execution
-        send_mass_html_mail(msg['subject'], msg['text_content'], msg['html_content'], msg['recipients'], msg['from_email'], msg['test'])
         logger.debug("received: %s" % (msg['subject'],))
+        helpers.send_mass_html_mail(msg['subject'], msg['text_content'], msg['html_content'], msg['recipients'], msg['from_email'], msg['test'])
     sys.exit(0)
 
