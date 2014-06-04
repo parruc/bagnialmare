@@ -16,7 +16,7 @@ signup_form_validation = {
                             callback: {
                                 message : 'scegli una località',
                                 callback: function(value, validator){
-                                    return value != 'nochoice'
+                                    return (value != 'nochoice' && value != null);
                                 }
                             }
                         }
@@ -25,12 +25,13 @@ signup_form_validation = {
                         message: 'bagno non valido',
                         validators: {
                             notEmpty: {
-                                message : 'bagno una località',
+                                message : 'bagno non valido',
                             },
                             callback: {
                                 message : 'scegli un bagno',
                                 callback: function(value, validator){
-                                    return value != 'undefined'
+                                    console.log(value);
+                                    return (value != 'undefined' && value != null);
                                 }
                             }
                         }

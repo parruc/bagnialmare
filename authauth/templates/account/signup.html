@@ -196,7 +196,7 @@
 {% trans "choose_bagno" as t_choose_bagno %}
 <script type="text/javascript">
     $(function(){
-            $("#signup_form").bootstrapValidator(signup_form_validation);
+            var form = $("#signup_form").bootstrapValidator(signup_form_validation);
             var neighbourhood_id = 0;
             var pre_selected_neighbourhood = "-1";
             var pre_selected_bagno = "-1";
@@ -207,7 +207,7 @@
                             neighbourhood_id = $(this).val();
                         }
                     }
-                });
+                }); //id_neighbourhood
                 $.getJSON("/en/json/neighbourhood/" + neighbourhood_id, function(data){
                     $("#id_bagni").empty();
                     $("#id_bagni").append('<option value="undefined">-- {{ t_choose_bagno }} --</option>');
@@ -227,6 +227,8 @@
                             $(this).prop("selected", false);
                         }
                     });
+                    //revalidate the bagno field in the form
+                    $("#id_bagni").trigger("change");
                 });
             });
             {% if pre_selected %}
