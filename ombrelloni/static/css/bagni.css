@@ -139,6 +139,12 @@ body {
 .single-result-header{
     font-weight: 700;
 }
+.single-bagno-result-box .badge, 
+.single-bagno-result-box .contact-from-button
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
 .single-result-address{
     margin-bottom: 20px;
@@ -342,7 +348,6 @@ img.hp-form-image
 .search-page-label{
     padding-left: 15px;
 }
-
 .search-page-button{
     /*background-color: #0097D5;
     border-color: #0097D5;*/

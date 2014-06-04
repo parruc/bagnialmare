@@ -218,17 +218,12 @@
                   <hr class="search-result-separator" />
                   <div class="single-bagno-result-box">
                     <div class="row">
-                      <div class="col-xs-12">
+                      <div class="col-xs-8">
                         <h2 class="single-result-header">
                             <a href="{{ hit.get_absolute_url }}"
                                title="{{ t_bagno }} {{ hit.name }}">
                             {{ hit.name }}, {{ hit.neighbourhood.name }}
                           </a>
-                          {% if hit.distance %}
-                            <span class="badge">
-                              {{hit.distance.km|floatformat:2 }}Km
-                            </span>
-                          {% endif %}
                         </h2>
                         <p class="single-result-address">
                           {{ hit.address }} -
@@ -236,11 +231,22 @@
                           {{ hit.neighbourhood.municipality.name }} -
                           {{ hit.neighbourhood.municipality.district.name }}
                         </p>
+                      </div>
+                      <div class="col-xs-4">
                         {% if hit.is_managed %}
-                          <button id="contact-form-button" class="button button-primary btn-xs"
+                          <p>
+                            <button id="contact-form-button" class="btn btn-primary contact-from-button"
                                   data-url="{{ hit.get_contactform_url }}">
-                            {{ t_contact_button }}
-                          </button>
+                              {{ t_contact_button }}
+                            </button>
+                          </p>
+                        {% endif %}
+                        {% if hit.distance %}
+                          <p>
+                            <span class="badge">
+                              {{hit.distance.km|floatformat:2 }}Km
+                            </span>
+                          </p>
                         {% endif %}
                       </div>
                     </div>
