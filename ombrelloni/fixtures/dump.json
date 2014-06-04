@@ -4270,6 +4270,26 @@
   }
 },
 {
+  "pk": 12, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 12, 
+    "key": "b159cf088fdcab1e1f45428faa77ad7bc35329ada108a2660c8c62da514f9647", 
+    "sent": "2014-06-03T07:53:56.540Z", 
+    "created": "2014-06-03T07:53:55.430Z"
+  }
+},
+{
+  "pk": 13, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 13, 
+    "key": "9cb509557f102963bfb811067098bc59bd47d979495d8b6ad2d60fe4530c1d98", 
+    "sent": "2014-06-03T12:51:24.706Z", 
+    "created": "2014-06-03T12:51:24.621Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -4978,7 +4998,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-31T16:14:57.755Z", 
+    "last_login": "2014-06-03T07:54:25.312Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -5032,12 +5052,30 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-29T09:37:39.733Z", 
+    "last_login": "2014-06-03T12:33:25.747Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
     "email": "marco.benvenuto1@gmail.com", 
     "date_joined": "2014-04-28T12:49:04Z"
+  }
+},
+{
+  "pk": 18, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mbenvenuto", 
+    "first_name": "User", 
+    "last_name": "Tester", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-03T12:51:22.754Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=", 
+    "email": "mbenvenuto@airplus.com", 
+    "date_joined": "2014-06-03T12:51:22.754Z"
   }
 },
 {
@@ -5058,6 +5096,30 @@
     ], 
     "primary": true, 
     "email": "marco.benvenuto1@gmail.com"
+  }
+},
+{
+  "pk": 12, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "parruc"
+    ], 
+    "primary": true, 
+    "email": "parruc@gmail.com"
+  }
+},
+{
+  "pk": 13, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "mbenvenuto"
+    ], 
+    "primary": true, 
+    "email": "mbenvenuto@airplus.com"
   }
 },
 {
@@ -5088,6 +5150,16 @@
       "inge"
     ], 
     "old_email": "nicola.valentini@gmail.com"
+  }
+},
+{
+  "pk": 4, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "mbenvenuto"
+    ], 
+    "old_email": "mbenvenuto@airplus.com"
   }
 },
 {
@@ -58163,10 +58235,10 @@
   "pk": 13827, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!", 
+    "description": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare.", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
     "number": "1", 
-    "description_en": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!", 
+    "description_en": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare.", 
     "site": "http://www.bagnialmare.com/", 
     "languages": [], 
     "services": [
@@ -58328,14 +58400,105 @@
       ]
     ], 
     "address": "Riviera Adriatica, Estate 2014", 
-    "description_it": "Benvenuti nel mondo di BagniAlMare.\r\nQuesto \u00e8 un esempio di vetrina ideale per il vostro stabilimento, per gestire e personalizzare la vostra vetrina privata baster\u00e0 registrare il vostro account!", 
-    "mail": "", 
+    "description_it": "Benvenuti nel mondo di BagniAlMare.com.\r\nQuesto \u00e8 un esempio di vetrina ideale di uno stabilimento balneare. \r\nPer gestire e personalizzare la vetrina privata del vostro bagno baster\u00e0 registrare il vostro account in pochi click. \r\nCrea il tuo spazio su BagniAlMare.com!", 
+    "mail": "marco.benvenuto1@gmail.com", 
     "accepts_booking": true, 
     "slug": "test", 
     "neighbourhood": [
       "villamarina"
     ], 
     "name": "Bagno Welcome!"
+  }
+},
+{
+  "pk": 2, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Insegna del bagno Conchiglia Lido di Cervia", 
+    "bagno": [
+      "bagno-conchiglia-lido"
+    ], 
+    "name": "Insegna", 
+    "image": "images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido.jpg", 
+    "slug": "insegna"
+  }
+},
+{
+  "pk": 3, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Ingresso del bagno conchiglia lido di Cervia", 
+    "bagno": [
+      "bagno-conchiglia-lido"
+    ], 
+    "name": "Ingresso", 
+    "image": "images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido_1.jpg", 
+    "slug": "ingresso"
+  }
+},
+{
+  "pk": 4, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso del bagno spiaggia 188 a Cervia", 
+    "bagno": [
+      "bagno-spiaggia-188"
+    ], 
+    "name": "Portale di ingresso", 
+    "image": "images/bagni/bagno-anna/bagno-anna.jpg", 
+    "slug": "portale-di-ingresso"
+  }
+},
+{
+  "pk": 5, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso al bagno Anita a Cervia", 
+    "bagno": [
+      "bagno-anita"
+    ], 
+    "name": "Portale di ingresso", 
+    "image": "images/bagni/bagno-anita/bagno-anita.jpg", 
+    "slug": "portale-di-ingresso-2"
+  }
+},
+{
+  "pk": 6, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "Portale di ingresso al bagno Ben a Cervia", 
+    "bagno": [
+      "bagno-ben"
+    ], 
+    "name": "Portale di ingresso", 
+    "image": "images/bagni/bagno-ben/bagno-ben.jpg", 
+    "slug": "portale-di-ingresso-3"
+  }
+},
+{
+  "pk": 7, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "bagno-dallara"
+    ], 
+    "name": "Entrata bagno", 
+    "image": "images/bagni/bagno-dallara/entrata-bagno.jpg", 
+    "slug": "entrata-bagno"
+  }
+},
+{
+  "pk": 8, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "test"
+    ], 
+    "name": "Benvenuti nell'Estate 2014", 
+    "image": "images/bagni/test/benvenuti-nellestate-2014.jpg", 
+    "slug": "benvenuti-nellestate-2014"
   }
 },
 {
@@ -75727,130 +75890,51 @@
   }
 },
 {
-  "pk": 3403, 
+  "pk": 3406, 
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
       "test"
     ], 
-    "number": "051 111111", 
-    "name": "tel", 
-    "slug": "tel"
-  }
-},
-{
-  "pk": 3404, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "number": "333 1111111", 
-    "name": "mob", 
-    "slug": "mob"
-  }
-},
-{
-  "pk": 3405, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "number": "051 222222", 
+    "number": "051 0111111", 
     "name": "win", 
     "slug": "win"
   }
 },
 {
-  "pk": 2, 
-  "model": "bagni.image", 
+  "pk": 3407, 
+  "model": "bagni.telephone", 
   "fields": {
-    "description": "Insegna del bagno Conchiglia Lido di Cervia", 
-    "bagno": [
-      "bagno-conchiglia-lido"
-    ], 
-    "name": "Insegna", 
-    "image": "images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido.jpg", 
-    "slug": "insegna"
-  }
-},
-{
-  "pk": 3, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "Ingresso del bagno conchiglia lido di Cervia", 
-    "bagno": [
-      "bagno-conchiglia-lido"
-    ], 
-    "name": "Ingresso", 
-    "image": "images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido_1.jpg", 
-    "slug": "ingresso"
-  }
-},
-{
-  "pk": 4, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "Portale di ingresso del bagno spiaggia 188 a Cervia", 
-    "bagno": [
-      "bagno-spiaggia-188"
-    ], 
-    "name": "Portale di ingresso", 
-    "image": "images/bagni/bagno-anna/bagno-anna.jpg", 
-    "slug": "portale-di-ingresso"
-  }
-},
-{
-  "pk": 5, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "Portale di ingresso al bagno Anita a Cervia", 
-    "bagno": [
-      "bagno-anita"
-    ], 
-    "name": "Portale di ingresso", 
-    "image": "images/bagni/bagno-anita/bagno-anita.jpg", 
-    "slug": "portale-di-ingresso-2"
-  }
-},
-{
-  "pk": 6, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "Portale di ingresso al bagno Ben a Cervia", 
-    "bagno": [
-      "bagno-ben"
-    ], 
-    "name": "Portale di ingresso", 
-    "image": "images/bagni/bagno-ben/bagno-ben.jpg", 
-    "slug": "portale-di-ingresso-3"
-  }
-},
-{
-  "pk": 7, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "", 
-    "bagno": [
-      "bagno-dallara"
-    ], 
-    "name": "Entrata bagno", 
-    "image": "images/bagni/bagno-dallara/entrata-bagno.jpg", 
-    "slug": "entrata-bagno"
-  }
-},
-{
-  "pk": 8, 
-  "model": "bagni.image", 
-  "fields": {
-    "description": "", 
     "bagno": [
       "test"
     ], 
-    "name": "Benvenuti nell'Estate 2014", 
-    "image": "images/bagni/test/benvenuti-nellestate-2014.jpg", 
-    "slug": "benvenuti-nellestate-2014"
+    "number": "051 0222222", 
+    "name": "tel", 
+    "slug": "tel"
+  }
+},
+{
+  "pk": 3408, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "number": "333 0333333", 
+    "name": "mob", 
+    "slug": "mob"
+  }
+},
+{
+  "pk": 3409, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "number": "334 0444444", 
+    "name": "mob", 
+    "slug": "mob-2"
   }
 },
 {
@@ -75935,6 +76019,24 @@
     "tos": true, 
     "user": null, 
     "surname": "utente"
+  }
+},
+{
+  "pk": 11, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "test"
+      ]
+    ], 
+    "name": "User", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "mbenvenuto"
+    ], 
+    "surname": "Tester"
   }
 },
 {
