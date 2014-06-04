@@ -7,7 +7,7 @@ import zmq
 def offload_mass_html_mail(subject, text_content, html_content, recipients, from_email=None, test=False):
     context = zmq.Context()
     client = context.socket(zmq.REQ)
-    client.connect(setting.MAILOFFLOADER_SOCKET) #aggiunta in settings.py
+    client.connect(settings.MAILOFFLOADER_SOCKET) #aggiunta in settings.py
     #occhio qui quello che mandiamo deve essere serizlizable come json!
     client.send_json(dict(subject = subject,
                           text_content = text_content,

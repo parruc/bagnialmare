@@ -10,6 +10,7 @@ from modeltranslation.admin import TranslationAdmin
 
 import models
 from .mail.helpers import send_mass_html_mail
+from .mail.helpers import offload_mass_html_mail
 
 
 def send_test_newsletter(modeladmin, request, queryset):
@@ -50,7 +51,8 @@ def _send_newsletter(modeladmin, request, queryset, test):
     recipients = [s.email for s in obj.target.subscribers.all()]
 
     try:
-        sent_mail = send_mass_html_mail(subject=obj.subject,
+        #sent_mail = send_mass_html_mail(subject=obj.subject,
+        sent_mail = offload_mass_html_mail(subject=obj.subject,
                             text_content=text_content,
                             html_content=html_content,
                             recipients=recipients,
@@ -64,7 +66,7 @@ def _send_newsletter(modeladmin, request, queryset, test):
     obj.sent_on = datetime.now()
     obj.sent_to = "; ".join(recipients)
     obj.save()
-    modeladmin.message_user(request, "Sent %d emails of %s" % (sent_mail, len(recipients)),
+    modeladmin.message_user(request, "Sent emails",
                             level=messages.INFO, extra_tags='', fail_silently=False)
 
 send_newsletter.short_description = "Send selected newsletter"
