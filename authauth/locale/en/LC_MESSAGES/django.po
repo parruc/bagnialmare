@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 19:43+0200\n"
+"POT-Creation-Date: 2014-06-04 17:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: forms.py:50
+#: forms.py:51
 msgid "You must accept the terms and conditions"
 msgstr ""
 
@@ -201,29 +201,33 @@ msgid "close"
 msgstr ""
 
 #: templates/account/signup.html:23
+msgid "bagno_and_neighbourhood_hint"
+msgstr "Select the neighbourhood and the name of your beach resort"
+
+#: templates/account/signup.html:24
 msgid "choose_neighbourhood"
 msgstr ""
 
-#: templates/account/signup.html:24 templates/account/signup.html.py:188
+#: templates/account/signup.html:25 templates/account/signup.html.py:198
 msgid "choose_bagno"
 msgstr ""
 
-#: templates/account/signup.html:25
+#: templates/account/signup.html:26
 msgid "label_accepts_booking"
 msgstr "Interessato a prenotazioni online?"
 
-#: templates/account/signup.html:26
-msgid "help_email_signup"
-msgstr "Nota: BagniAlMare invierà eventuali comunicazioni degli utenti all'indirizzo e-mail registrato"
-
 #: templates/account/signup.html:27
+msgid "help_email_signup"
+msgstr "BagniAlMare will send messages from users to this email address"
+
+#: templates/account/signup.html:28
 msgid "help_accepts_booking"
 msgstr ""
 "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante "
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:67
+#: templates/account/signup.html:77
 #, python-format
 msgid ""
 "\n"

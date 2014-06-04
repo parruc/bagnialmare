@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 19:43+0200\n"
+"POT-Creation-Date: 2014-06-04 17:08+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: forms.py:50
+#: forms.py:51
 msgid "You must accept the terms and conditions"
 msgstr "Devi accettare i termini della privacy e le condizioni"
 
@@ -201,7 +201,7 @@ msgstr "se sei già registrato come utente"
 
 #: templates/account/signup.html:19
 msgid "else_have_account"
-msgstr "altrimenti compila il form sottostante"
+msgstr "altrimenti registrati usando il form sottostante"
 
 #: templates/account/signup.html:20
 msgid "sign_in"
@@ -216,29 +216,34 @@ msgid "close"
 msgstr "chiudi"
 
 #: templates/account/signup.html:23
+msgid "bagno_and_neighbourhood_hint"
+msgstr "Seleziona la località e il nome del tuo bagno"
+
+#: templates/account/signup.html:24
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:24 templates/account/signup.html.py:188
+#: templates/account/signup.html:25 templates/account/signup.html.py:198
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
-#: templates/account/signup.html:25
+#: templates/account/signup.html:26
 msgid "label_accepts_booking"
 msgstr "Interessato a prenotazioni online?"
 
-#: templates/account/signup.html:26
-msgid "help_email_signup"
-msgstr "Nota: BagniAlMare invierà eventuali comunicazioni degli utenti all'indirizzo e-mail registrato"
-
 #: templates/account/signup.html:27
+msgid "help_email_signup"
+msgstr ""
+"Nota: BagniAlMare invierà eventuali comunicazioni degli utenti a questo indirizzo e-mail"
+
+#: templates/account/signup.html:28
 msgid "help_accepts_booking"
 msgstr ""
 "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante "
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:67
+#: templates/account/signup.html:77
 #, python-format
 msgid ""
 "\n"

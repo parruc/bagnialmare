@@ -65,6 +65,17 @@ body {
 
 }
 
+#choose_neighbourhood_dropdown .has-feedback .form-control-feedback {
+    top: 0;
+    right: 0px;
+}
+
+#choose_bagno_dropdown .has-feedback .form-control-feedback {
+    top: 0;
+    right: 0px;
+}
+
+
 .homepage-box-wrapper {
   background: none repeat scroll 0% 0% rgba(57, 60, 61, 0.8);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
