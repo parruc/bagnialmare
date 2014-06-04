@@ -1,6 +1,23 @@
 from django.core.mail import EmailMultiAlternatives
 from django.core.mail import get_connection
 from django.conf import settings
+import zmq
+
+
+def offload_mass_html_mail(subject, text_content, html_content, recipients, from_email=None, test=False):
+    context = zmq.Context()
+    client = context.socket(zmq.REQ)
+    client.connect(setting.MAILOFFLOADER_SOCKET) #aggiunta in settings.py
+    #occhio qui quello che mandiamo deve essere serizlizable come json!
+    client.send_json(dict(subject = subject,
+                          text_content = text_content,
+                          html_content = html_content,
+                          recipients = recipients,
+                          form_email = from_email,
+                          test = test))
+    client.recv() #questa serve per essere sicuri che il msg sia stato ricevuto
+    #now the server will import the 'send_mass_html_method' below and call it with given arguments
+    return True
 
 
 def send_mass_html_mail(subject, text_content, html_content, recipients, from_email=None, test=False):

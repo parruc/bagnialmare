@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-30 20:33+0200\n"
+"POT-Creation-Date: 2014-06-03 19:43+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -219,7 +219,7 @@ msgstr "chiudi"
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:24 templates/account/signup.html.py:186
+#: templates/account/signup.html:24 templates/account/signup.html.py:188
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
@@ -228,10 +228,17 @@ msgid "label_accepts_booking"
 msgstr "Interessato a prenotazioni online?"
 
 #: templates/account/signup.html:26
-msgid "help_accepts_booking"
-msgstr "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante di prova per monitorare l'interesse dei tuoi utenti a disporre di questa funzione. In futuro potrai sempre disabilitare questa opzione."
+msgid "help_email_signup"
+msgstr "Nota: BagniAlMare invierà eventuali comunicazioni degli utenti all'indirizzo e-mail registrato"
 
-#: templates/account/signup.html:66
+#: templates/account/signup.html:27
+msgid "help_accepts_booking"
+msgstr ""
+"Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante "
+"di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
+"funzione. In futuro potrai sempre disabilitare questa opzione."
+
+#: templates/account/signup.html:67
 #, python-format
 msgid ""
 "\n"

@@ -5,6 +5,7 @@
 {% block content %}
 
 {% trans "facilities" as t_facilities %}
+{% trans "help_mail" as t_help_mail %}
 {% trans "help_accept_booking" as t_help_accept_booking %}
 
 {% get_available_languages as LANGUAGES %}
@@ -64,7 +65,8 @@
             <div class="form-group">
                 <label class="my-brown" for="id_mail">{{ form.mail.label }}:</label>
                 {{ form.mail.errors }}
-                <input id="id_mail" class="form-control" name="mail" type="text" value="{{ form.mail.value }}" />
+                <input id="id_mail" class="form-control" name="mail" type="text" value="{{ form.mail.value }}" disabled/>
+                <p>{{ t_help_mail }}</p>
             </div>
             <hr>
             {% comment %}
