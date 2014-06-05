@@ -71,7 +71,7 @@ class ImageInline(admin.StackedInline):
 class BagnoAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
     search_fields = ['name', 'services__name']
     list_filter = ['neighbourhood__municipality__district', 'neighbourhood__municipality', 'neighbourhood', 'services']
-    list_display = ['number', 'name', 'mail', 'site', 'get_list_display_telephone_numbers']
+    list_display = ['name', 'number', 'mail', 'site', 'get_list_display_telephone_numbers']
     inlines = [
             ImageInline,
             TelephoneInline,
