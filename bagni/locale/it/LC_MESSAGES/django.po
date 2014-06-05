@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 19:54+0200\n"
+"POT-Creation-Date: 2014-06-05 18:30+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -17,87 +17,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: urls.py:9
+#: urls.py:10
 msgid "^about-us$"
 msgstr "^chi-siamo$"
 
-#: urls.py:10
+#: urls.py:11
 msgid "^terms$"
 msgstr ""
 
-#: urls.py:11
+#: urls.py:12
 msgid "^privacy$"
 msgstr ""
 
-#: urls.py:12
+#: urls.py:13
 msgid "^conditions$"
 msgstr ""
 
-#: urls.py:13
+#: urls.py:14
 msgid "^bagni/$"
 msgstr ""
 
-#: urls.py:14
+#: urls.py:15
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
 msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:15
+#: urls.py:16
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 
-#: urls.py:16
+#: urls.py:17
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
 msgstr "^bagno/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
 
-#: urls.py:17
+#: urls.py:18
 msgid "^search/$"
 msgstr "^cerca/$"
 
-#: urls.py:18
+#: urls.py:19
 msgid "^service-categories/$"
 msgstr "^categorie-servizi/$"
 
-#: urls.py:19
+#: urls.py:20
 msgid "^service-category/(?P<slug>[-\\w]+)/$"
 msgstr "^categoria-servizi/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:21
+#: urls.py:22
 msgid "^services/(?P<slug>[-\\w]+)/$"
 msgstr "^servizi/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:22
+#: urls.py:23
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
 msgstr "^localita/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:24
+#: urls.py:25
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
 msgstr "^comune/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:25
+#: urls.py:26
 msgid "^municipalities/$"
 msgstr "^comuni/$"
 
-#: urls.py:26
+#: urls.py:27
 msgid "^district/(?P<slug>[-\\w]+)/$"
 msgstr "^provincia/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:27
+#: urls.py:28
 msgid "^districts/$"
 msgstr "^provinice/$"
 
-#: urls.py:28
+#: urls.py:29
 msgid "^json/autocomplete/places$"
 msgstr ""
 
-#: urls.py:29
+#: urls.py:30
 msgid "^json/autocomplete/searchterms$"
 msgstr ""
 
-#: urls.py:30
+#: urls.py:31
 msgid "^json/neighbourhood/(?P<id>\\d+)/$"
 msgstr "^json/localita/(?P<id>\\d+)/$"
 
-#: urls.py:31
+#: urls.py:32
 msgid ""
 "^json/bbox/(?P<x1>[\\.\\-\\+\\d]+)/(?P<y1>[\\.\\-\\+\\d]+)/(?P<x2>[\\.\\-\\+"
 "\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
@@ -390,7 +390,7 @@ msgid "bagno_detail_desc_5"
 msgstr "pagina di ricerca"
 
 #: templates/bagni/bagno_detail.html:233 templates/bagni/homepage.html:97
-#: templates/bagni/homepage.html.py:111 templates/bagni/search.html:366
+#: templates/bagni/homepage.html.py:111 templates/bagni/search.html:367
 msgid "Close"
 msgstr "Chiudi"
 
@@ -400,9 +400,10 @@ msgstr "informazioni, indirizzo e servizi del bagno"
 
 #: templates/bagni/bagno_edit.html:8
 msgid "help_mail"
-msgstr "Nota: BagniAlMare invierà eventuali comunicazioni degli utenti all'indirizzo e-mail registrato. Se desideri modificare l'indirizzo e-mail registrato puoi segnalarcelo tramite la sezione Contatti"
-
-
+msgstr ""
+"Nota: BagniAlMare invierà eventuali comunicazioni degli utenti all'indirizzo "
+"e-mail registrato. Se desideri modificare l'indirizzo e-mail registrato puoi "
+"segnalarcelo tramite la sezione Contatti"
 
 #: templates/bagni/bagno_edit.html:9
 msgid "help_accept_booking"
@@ -639,7 +640,11 @@ msgstr "ultimo"
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:262
+#: templates/bagni/search.html:34
+msgid "away"
+msgstr "di distanza"
+
+#: templates/bagni/search.html:263
 #, python-format
 msgid ""
 "\n"
@@ -648,11 +653,11 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:382
+#: templates/bagni/search.html:383
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:387
+#: templates/bagni/search.html:388
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 

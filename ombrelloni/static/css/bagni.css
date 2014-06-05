@@ -139,15 +139,10 @@ body {
 .single-result-header{
     font-weight: 700;
 }
-.single-bagno-result-box .badge, 
-.single-bagno-result-box .contact-from-button
-{
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+
 
 .single-result-address{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .filter-result-header {
