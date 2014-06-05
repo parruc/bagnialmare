@@ -83,7 +83,7 @@ msgstr "^provincia/(?P<slug>[-\\w]+)/$"
 
 #: urls.py:28
 msgid "^districts/$"
-msgstr "^provinice/$"
+msgstr "^province/$"
 
 #: urls.py:29
 msgid "^json/autocomplete/places$"
