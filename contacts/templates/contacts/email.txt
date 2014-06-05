@@ -1,1 +1,4 @@
+
+NB: Rispondi direttamente a questa email per comunicare con l'utente interessato
+
 {{ data.content }}
