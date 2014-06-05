@@ -294,7 +294,7 @@ msgstr "bagno"
 
 #: templates/bagni/bagno_detail.html:10 templates/bagni/search.html:26
 msgid "contact_button"
-msgstr "contatta la struttura"
+msgstr "Contatta la struttura"
 
 #: templates/bagni/bagno_detail.html:11
 msgid "contacts"

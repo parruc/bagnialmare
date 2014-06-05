@@ -274,6 +274,10 @@ body {
     border-color: rgb(37, 139, 228);
 }
 
+.bagno-detail-button{
+    margin-bottom: 10px;
+    font-family: Helvetica Neue, sans-serif;
+}
 
 .book-button-xs:focus{
     color: rgb(255, 255, 255);

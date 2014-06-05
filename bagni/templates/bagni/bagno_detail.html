@@ -39,41 +39,28 @@
       <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
       <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
-    {% if object.accepts_booking %}
-    <div class="col-sm-3 col-xs-12 hidden">
-      <button id="book-button" class="btn pull-right book-button ga_click" data-toggle="modal" data-target="#bookModal"
-              data-category="book" data-action="click" data-label="book-button">{{ t_book_button }}</button>
-    </div>
     <div class="col-xs-12">
-      <button id="book-button" class="btn book-button-xs ga_click" data-toggle="modal" data-target="#bookModal"
+      {% if object.accepts_booking %}
+        <button id="book-button" class="btn book-button-xs ga_click" data-toggle="modal" data-target="#bookModal"
               data-category="book" data-action="click" data-label="book-button" >{{ t_book_button }}</button>
-    </div>
-    {% endif %}
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-        {% if object.is_managed %}
-            {% if can_edit %}
-              <a href="{{ object.get_edit_url }}" class="btn btn-primary" rel="nofollow">{{ t_modify_bagno }}</a>
-            {% endif %} 
-              <button id="contact-form-button" class="btn btn-primary" data-url="{{ object.get_contactform_url }}">
+      {% endif %}
+      {% if object.is_managed %}
+            <button id="contact-form-button" class="btn btn-primary bagno-detail-button" data-url="{{ object.get_contactform_url }}">
                 {{ t_contact_button }}
-              </button>
-        {% else %}
+             </button>
+            {% if can_edit %}
+              <a href="{{ object.get_edit_url }}" class="btn btn-primary bagno-detail-button" rel="nofollow">{{ t_modify_bagno }}</a>
+            {% endif %} 
+      {% else %}
             {% if not user.is_authenticated %}
             {% comment %}
-              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary" rel="nofollow">{{ t_are_you_the_manager }}</a>
+              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary bagno-detail-button" rel="nofollow">{{ t_are_you_the_manager }}</a>
             {% endcomment %}
             {% endif %}
-        {% endif %}
+      {% endif %}
     </div>
   </div>
 
-  <!--div class="row">
-    <div class="col-xs-12">
-      <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
-    </div>
-  </div-->
   <div class="row">
     <div class="col-xs-12 col-sm-4">
         {% if object.description and object.is_managed %}
@@ -138,7 +125,6 @@
   <div class="row">
     <div class="col-xs-12">
       <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
-        <p>
           {% if object.telephones.all %}
             {% for tel in object.get_ordered_telephones %}
               <p>
@@ -154,7 +140,6 @@
           {% else %}
              <p><em>{{ t_phone_not_yet_available|capfirst}}</em></p>
           {% endif %}
-        </p>
         <p>
           {% if object.site %}
           <b class="my-bold">{{ t_website|capfirst }}:</b>

@@ -281,7 +281,7 @@ msgstr "beach resort facilities"
 
 #: templates/bagni/bagno_contacts.html:4
 msgid "contact_structure"
-msgstr "contact this structure"
+msgstr "Contact this structure"
 
 #: templates/bagni/bagno_contacts.html:5 templates/bagni/bagno_list.html:7
 #: templates/bagni/district_detail.html:8 templates/bagni/search.html:14
