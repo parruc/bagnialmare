@@ -12,8 +12,8 @@
 
 {% block content %}
 
-{% trans "account signup intro" as t_account_signup_intro %}
 {% trans "signup" as t_signup %}
+{% trans "are_you_manager" as t_are_you_manager %}
 {% trans "sign_up_button" as t_sign_up_button %}
 {% trans "already_have_account" as t_already_have_account %}
 {% trans "else_have_account" as t_else_have_account %}
@@ -30,16 +30,23 @@
 
 <div class="row">
 <div class="col-xs-8 col-xs-offset-2">
-<h1>{{ t_are_you_manager|title }}</h1>
+<h1>{% trans "Where our collaboration starts!" %}</h1>
 <p>
   <a href="{{ login_url }}" title="{{ t_sign_up }}" rel="nofollow">
-    {{ t_sign_in|capfirst }}
+    {{ t_sign_in }}
   </a>
   {{ t_already_have_account }}.
-  {{ t_else_have_account|capfirst }}.
+  {{ t_else_have_account }}.
 </p>
-<h2>{{ t_account_signup_intro|capfirst }}</h2>
-
+<p>
+  {% url "contact-form" as contact_url %}
+  {% blocktrans %}<p>Nice to meet you and a warm welcome from the bagnialmare.com team.</p>
+<p>In this web space we’d like to host and arrange information about beach resorts of the Riviera Adriatica. Today we already provide <strong>free</strong> online visibility to more than 1.000 beach resorts in Emilia-Romagna, linking them to the large internet community on a national and international level, as the portal is navigable via all the most popular mobile devices and fully available in English.</p>
+<p>If you are a manager of a beach resort you have just discovered a new <strong>space to care about</strong> to give visibility to your offer and let your customers reach and contact you very easily. We look forward to collaborate with you!</p>
+<p>Add, update or remove data of your resort is very simple and instantaneous: just register in the site by filling below form and you will be able to do it in a few seconds once confirmed the activation link sent to the e-mail you’ve provided us. You may wish to search your resort using the available research features: it will be even easier to register yourself directly from your resort page!</p>
+<p><strong>Oh, and!</strong> If you do not find your business resort among those available in the registration form, than you just need to <strong>report us your beach resort</strong> via the <a href='{{ contact_url }}' alt='Contact form'>available contact form</a> and wait for our insertion confirmation (via e-mail and sms if required) to finalize your registration. Easy, isn’t it?</p>
+<p>Well, when you feel so, you may already throw new sunbeams on your business thanks to bagnialmare.com.</p>{% endblocktrans %}
+</p>
 <hr>
     <form action="{% url 'account_signup' %}" method="post" id="signup_form" class="" role="form">
       {% csrf_token %}
@@ -141,6 +148,10 @@
             {{ form.confirmation_key }}
             <button class="btn btn-primary" type="submit" >{{ t_sign_up_button|capfirst }}</button>
     </form>
+    {% blocktrans %}<p>Thank you for the attention, we invite you to contact us for any question, suggestion or feedback to help our partnership grow and develop better and better. We count on that. We are committed from now on to keep you informed of all the possible news to follow.
+    Best wishes for a good start and have a beautiful summer!</p>
+
+    <p>The bagnialmare.com team</p>{% endblocktrans %}
 </div>
 
 {% comment %}

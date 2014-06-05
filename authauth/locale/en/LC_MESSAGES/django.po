@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-04 17:08+0200\n"
+"POT-Creation-Date: 2014-06-05 20:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,12 +168,12 @@ msgstr ""
 msgid "Your password is now changed."
 msgstr ""
 
-#: templates/account/signup.html:8 templates/account/signup.html.py:16
+#: templates/account/signup.html:8 templates/account/signup.html.py:15
 msgid "signup"
 msgstr ""
 
-#: templates/account/signup.html:15
-msgid "account signup intro"
+#: templates/account/signup.html:16
+msgid "are_you_manager"
 msgstr ""
 
 #: templates/account/signup.html:17
@@ -208,7 +208,7 @@ msgstr "Select the neighbourhood and the name of your beach resort"
 msgid "choose_neighbourhood"
 msgstr ""
 
-#: templates/account/signup.html:25 templates/account/signup.html.py:198
+#: templates/account/signup.html:25 templates/account/signup.html.py:210
 msgid "choose_bagno"
 msgstr ""
 
@@ -227,14 +227,59 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:77
+#: templates/account/signup.html:41
+msgid "Where our collaboration starts!"
+msgstr ""
+
+#: templates/account/signup.html:44
+#, python-format
+msgid ""
+"<p>Nice to meet you and a warm welcome from the bagnialmare.com team.</p>\n"
+"<p>In this web space we’d like to host and arrange information about beach "
+"resorts of the Riviera Adriatica. Today we already provide <strong>free</"
+"strong> online visibility to more than 1.000 beach resorts in Emilia-"
+"Romagna, linking them to the large internet community on a national and "
+"international level, as the portal is navigable via all the most popular "
+"mobile devices and fully available in English.</p>\n"
+"<p>If you are a manager of a beach resort you have just discovered a new "
+"<strong>space to care about</strong> to give visibility to your offer and "
+"let your customers reach and contact you very easily. We look forward to "
+"collaborate with you!</p>\n"
+"<p>Add, update or remove data of your resort is very simple and "
+"instantaneous: just register in the site by filling below form and you will "
+"be able to do it in a few seconds once confirmed the activation link sent to "
+"the e-mail you’ve provided us. You may wish to search your resort using the "
+"available research features: it will be even easier to register yourself "
+"directly from your resort page!</p>\n"
+"<p><strong>Oh, and!</strong> If you do not find your business resort among "
+"those available in the registration form, than you just need to "
+"<strong>report us your beach resort</strong> via the <a "
+"href='%(contact_url)s' alt='Contact form'>available contact form</a> and "
+"wait for our insertion confirmation (via e-mail and sms if required) to "
+"finalize your registration. Easy, isn’t it?</p>\n"
+"<p>Well, when you feel so, you may already throw new sunbeams on your "
+"business thanks to bagnialmare.com.</p>"
+msgstr ""
+
+#: templates/account/signup.html:84
 #, python-format
 msgid ""
 "\n"
-"        Se non trovi il tuo bagno o la tua località in questo elenco, <a "
+"            Se non trovi il tuo bagno o la tua località in questo elenco, <a "
 "href=\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
 "informazioni che vorresti aggiungere\n"
-"        "
+"            "
+msgstr ""
+
+#: templates/account/signup.html:148
+msgid ""
+"<p>Thank you for the attention, we invite you to contact us for any "
+"question, suggestion or feedback to help our partnership grow and develop "
+"better and better. We count on that. We are committed from now on to keep "
+"you informed of all the possible news to follow.\n"
+"    Best wishes for a good start and have a beautiful summer!</p>\n"
+"\n"
+"    <p>The bagnialmare.com team</p>"
 msgstr ""
 
 #: templates/account/verification_sent.html:5

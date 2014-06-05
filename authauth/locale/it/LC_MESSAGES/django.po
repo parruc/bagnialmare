@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-04 17:08+0200\n"
+"POT-Creation-Date: 2014-06-05 20:38+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -183,13 +183,13 @@ msgstr "cambia la password"
 msgid "Your password is now changed."
 msgstr "La password è stata modificata con successo"
 
-#: templates/account/signup.html:8 templates/account/signup.html.py:16
+#: templates/account/signup.html:8 templates/account/signup.html.py:15
 msgid "signup"
 msgstr "registrati"
 
-#: templates/account/signup.html:15
-msgid "account signup intro"
-msgstr "informazioni su perchè registrarsi"
+#: templates/account/signup.html:16
+msgid "are_you_manager"
+msgstr "Sei un gestore?"
 
 #: templates/account/signup.html:17
 msgid "sign_up_button"
@@ -201,11 +201,11 @@ msgstr "se sei già registrato come utente"
 
 #: templates/account/signup.html:19
 msgid "else_have_account"
-msgstr "altrimenti registrati usando il form sottostante"
+msgstr "Altrimenti registrati usando il form sottostante"
 
 #: templates/account/signup.html:20
 msgid "sign_in"
-msgstr "entra"
+msgstr "Entra"
 
 #: templates/account/signup.html:21
 msgid "accetto i"
@@ -223,7 +223,7 @@ msgstr "Seleziona la località e il nome del tuo bagno"
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:25 templates/account/signup.html.py:198
+#: templates/account/signup.html:25 templates/account/signup.html.py:210
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
@@ -234,7 +234,8 @@ msgstr "Interessato a prenotazioni online?"
 #: templates/account/signup.html:27
 msgid "help_email_signup"
 msgstr ""
-"Nota: BagniAlMare invierà eventuali comunicazioni degli utenti a questo indirizzo e-mail"
+"Nota: BagniAlMare invierà eventuali comunicazioni degli utenti a questo "
+"indirizzo e-mail"
 
 #: templates/account/signup.html:28
 msgid "help_accepts_booking"
@@ -243,15 +244,96 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:77
+#: templates/account/signup.html:41
+msgid "Where our collaboration starts!"
+msgstr "La nostra collaborazione inizia da qui!"
+
+#: templates/account/signup.html:44
+#, python-format
+msgid ""
+"<p>Nice to meet you and a warm welcome from the bagnialmare.com team.</p>\n"
+"<p>In this web space we’d like to host and arrange information about beach "
+"resorts of the Riviera Adriatica. Today we already provide <strong>free</"
+"strong> online visibility to more than 1.000 beach resorts in Emilia-"
+"Romagna, linking them to the large internet community on a national and "
+"international level, as the portal is navigable via all the most popular "
+"mobile devices and fully available in English.</p>\n"
+"<p>If you are a manager of a beach resort you have just discovered a new "
+"<strong>space to care about</strong> to give visibility to your offer and "
+"let your customers reach and contact you very easily. We look forward to "
+"collaborate with you!</p>\n"
+"<p>Add, update or remove data of your resort is very simple and "
+"instantaneous: just register in the site by filling below form and you will "
+"be able to do it in a few seconds once confirmed the activation link sent to "
+"the e-mail you’ve provided us. You may wish to search your resort using the "
+"available research features: it will be even easier to register yourself "
+"directly from your resort page!</p>\n"
+"<p><strong>Oh, and!</strong> If you do not find your business resort among "
+"those available in the registration form, than you just need to "
+"<strong>report us your beach resort</strong> via the <a "
+"href='%(contact_url)s' alt='Contact form'>available contact form</a> and "
+"wait for our insertion confirmation (via e-mail and sms if required) to "
+"finalize your registration. Easy, isn’t it?</p>\n"
+"<p>Well, when you feel so, you may already throw new sunbeams on your "
+"business thanks to bagnialmare.com.</p>"
+msgstr ""
+"<p>Piacere di conoscerti e un caloroso benvenuto dal team di bagnialmare.com."
+"</p>\n"
+"<p>In questo spazio web desideriamo ospitare e organizzare le informazioni "
+"degli stabilimenti balneari della Riviera Adriatica. Oggi offriamo "
+"<strong>gratuitamente</strong> visibilità online a già oltre 1.000 "
+"stabilimenti dell’Emilia-Romagna, mettendoli in contatto con il vasto numero "
+"di utenti che internet offre sia a livello nazionale che internazionale, "
+"essendo il portale navigabile da tutti i dispositivi mobili più diffusi sul "
+"mercato oltre che interamente fruibile in lingua inglese.</p>\n"
+"<p>Se sei il gestore di uno stabilimento balneare, perciò, hai appena "
+"scoperto un nuovo <strong>spazio da accudire</strong> per valorizzare la tua "
+"offerta e permettere ai tuoi clienti di rintracciarti e contattarti "
+"immediatamente: noi saremo lieti di collaborare con te!</p>\n"
+"<p>Aggiungere, aggiornare o rimuovere i dati della tua struttura e' semplice "
+"e istantaneo: registrati al sito compilando il form sottostante e sarai "
+"in grado di farlo in pochi secondi una volta confermato il link per "
+"l’attivazione direttamente all’indirizzo e-mail fornitoci. Se lo ritieni "
+"puoi ricercare la tua struttura tramite le funzionalità di ricerca del sito "
+"e sarà ancora più facile registrarsi come gestore direttamente nella pagina "
+"dello stabilimento!</p>\n"
+"<p><strong>Ah, dimenticavamo!</strong> E’ possibile che la tua struttura non "
+"sia ancora stata registrata sul portale e perciò non sia presente "
+"nell’elenco di quelle opzionabili in fase di registrazione. In questo caso "
+"non devi fare altro che <strong>segnalarci la tua struttura</strong> tramite "
+"<a href='%(contact_url)s' alt='Form di contatto'>l’apposito form</a> e "
+"attendere poi la nostra conferma di inserimento (via e-mail e se lo richiedi "
+"via sms) , per poi completare la tua registrazione. Facile no?</p>\n"
+"<p>Beh, quando lo ritieni puoi già regalare alla tua struttura un nuovo "
+"raggio di sole grazie a bagnialmare.com.</p>"
+
+#: templates/account/signup.html:84
 #, python-format
 msgid ""
 "\n"
-"        Se non trovi il tuo bagno o la tua località in questo elenco, <a "
+"            Se non trovi il tuo bagno o la tua località in questo elenco, <a "
 "href=\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
 "informazioni che vorresti aggiungere\n"
-"        "
+"            "
 msgstr ""
+
+#: templates/account/signup.html:148
+msgid ""
+"<p>Thank you for the attention, we invite you to contact us for any "
+"question, suggestion or feedback to help our partnership grow and develop "
+"better and better. We count on that. We are committed from now on to keep "
+"you informed of all the possible news to follow.\n"
+"    Best wishes for a good start and have a beautiful summer!</p>\n"
+"\n"
+"    <p>The bagnialmare.com team</p>"
+msgstr ""
+"<p>Ringraziandoti per l’attenzione, ti invitiamo a contattarci per qualunque domanda, "
+"suggerimento o critica utile affinchè questa collaborazione possa crescere ed "
+"esprimersi al meglio. Ci contiamo. Da parte nostra ci impegniamo sin da ora a "
+"tenerti informato su tutte le possibili novità a seguire.\n"
+"    Tanti auguri di buon inizio e, soprattutto, di una ottima estate!</p>\n"
+"\n"
+"    <p>Il team di bagnialmare.com</p>"
 
 #: templates/account/verification_sent.html:5
 #: templates/account/verification_sent.html:8
@@ -354,3 +436,6 @@ msgstr "Abbiamo inserito il tuo indirizzo mail primario"
 #: templates/account/messages/unverified_primary_email.txt:2
 msgid "Your primary e-mail address must be verified."
 msgstr "Il tuo indirizzo mail deve essere verificato."
+
+#~ msgid "account signup intro"
+#~ msgstr "La nostra collaborazione inizia qui"
