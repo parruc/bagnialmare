@@ -90,9 +90,9 @@
         </div>
         <div class="form-group">
             <label class="my-brown" for="id_email">{{ form.email.label }}:</label>
-            <p>{{ t_help_email_signup }} </p>
             {{ form.email.errors }}
             <input id="id_email" class="form-control" name="email" type="text" value="{% firstof form.email.value '' %}" />
+            <p>{{ t_help_email_signup }} </p>
         </div>
         <div class="form-group">
             <label class="my-brown" for="id_password1">{{ form.password1.label }}:</label>
