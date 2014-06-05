@@ -100,18 +100,30 @@ signup_form_validation = {
                     tos: {
                         message: 'tos non valido',
                         validators: {
-                            choice: {
-                                min: 1,
-                                message : 'devi accettare i termini del servizio per proseguire'
+                            callback: {
+                                message : 'devi accettare i termini del servizio per proseguire',
+                                callback: function(value, validator){
+                                    if ($("#id_tos").is(":checked")){
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
                             }
                         }
                     },
                     privacy: {
                         message: 'privacy non valido',
                         validators: {
-                            choice: {
-                                min: 1,
-                                message : 'devi accettare i termini della privacy per proseguire'
+                            callback: {
+                                message : 'devi accettare i termini della privacy per proseguire',
+                                callback: function(value, validator){
+                                    if ($("#id_privacy").is(":checked")){
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
                             }
                         }
                     },

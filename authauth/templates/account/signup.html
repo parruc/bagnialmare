@@ -104,6 +104,7 @@
             {{ form.password2.errors }}
             <input id="id_password2" name="password2" class="form-control"  type="password">
         </div>
+        <div class="form-group">
           <div class="checkbox">
               <label class="my-brown" for="id_tos">
                   {{ t_accept }} <a id="tos_link" title="{{ form.tos.label }}" href='{% url "manager-terms" %}' target="_blank" >{{ form.tos.label }}</a>
@@ -111,9 +112,11 @@
                   {{ t_accept }} <a id="tos_modal_link" title="{{ form.tos.label }}" href='{% url "manager-terms" %}' data-toggle="modal" target="_blank" data-target="#myTosModal" >{{ form.tos.label }}</a>
                   {% endcomment %}
             {{ form.tos.errors }}
-            <input id="id_tos" name="tos" type="checkbox">
+            <input id="id_tos" name="tos" type="checkbox" checked>
             </label>
           </div>
+      </div>
+      <div class="form-group">
           <div class="checkbox">
               <label class="my-brown" for="id_privacy">
                   {{ t_accept }} <a id="privacy_link" title="{{ form.privacy.label }}" href='{% url "manager-privacy" %}' target="_blank" >{{ form.privacy.label }}</a>
@@ -121,9 +124,11 @@
                   {{ t_accept }} <a id="privacy_modal_link" title="{{ form.privacy.label }}" href='{% url "manager-privacy" %}' data-toggle="modal" target="_blank" data-target="#myPrivacyModal" >{{ form.privacy.label }}</a>
                   {% endcomment %}
             {{ form.privacy.errors }}
-            <input id="id_privacy" name="privacy" type="checkbox">
+            <input id="id_privacy" name="privacy" type="checkbox" checked>
             </label>
           </div>
+      </div>
+      <div class="form-group">
           <div class="checkbox">
             <label class="my-brown" for="id_accepts_booking">
               {{ t_label_accepts_booking }}
@@ -132,6 +137,7 @@
             </label>
             <p class="help-block">{{ t_help_accepts_booking }}</p>
           </div>
+        </div>
             {{ form.confirmation_key }}
             <button class="btn btn-primary" type="submit" >{{ t_sign_up_button|capfirst }}</button>
     </form>
