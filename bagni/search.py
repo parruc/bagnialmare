@@ -10,7 +10,7 @@ from django.utils.translation import get_language, activate, deactivate
 
 from whoosh import fields, index, qparser, sorting, query
 
-from bagni.models import Bagno, Service, Language
+from .models import Bagno, Service, Language
 
 WHOOSH_SCHEMA = fields.Schema(id=fields.ID(stored=True, unique=True),
                               text=fields.TEXT(),

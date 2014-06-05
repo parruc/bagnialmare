@@ -1,1 +1,1 @@
-import signals; signals  # pyflakes
+from . import signals; signals  # pyflakes

@@ -5,7 +5,7 @@ import autoslug
 
 from sorl.thumbnail import ImageField
 
-from base import BaseModel
+from . import BaseModel
 
 class Language(BaseModel):
     """ List of languages available for the spoken language field in bagno

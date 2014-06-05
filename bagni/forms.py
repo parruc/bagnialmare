@@ -6,12 +6,13 @@ from django.forms.models import inlineformset_factory, ModelFormMetaclass
 from django.utils.html import conditional_escape
 from django.utils.encoding import StrAndUnicode, force_unicode
 from django.utils.safestring import mark_safe
-from bagni.models import Bagno, Service, Image, Telephone
 from django.contrib.gis.forms import ModelForm, OSMWidget
 from django.utils import six
 
 from modeltranslation.translator import translator
 from sorl.thumbnail import get_thumbnail
+
+from .models import Bagno, Service, Image, Telephone
 
 import logging
 logging.getLogger(__name__)

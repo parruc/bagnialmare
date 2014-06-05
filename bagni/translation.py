@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from modeltranslation.translator import translator, TranslationOptions
-from bagni import models
+from . import models
 
 
 class BagnoTranslationOptions(TranslationOptions):

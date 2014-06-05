@@ -3,7 +3,7 @@ import json
 from django import http
 from django.views.generic import View
 
-from models import NewsletterSubscription, NewsletterTarget
+from .models import NewsletterSubscription, NewsletterTarget
 
 
 

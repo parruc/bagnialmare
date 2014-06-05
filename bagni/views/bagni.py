@@ -7,14 +7,13 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic import TemplateView
 from django.contrib import messages
-from ..models.services import ServiceCategory
-from ..models.places import District
-#from django.utils.translation import ugettext as _
 
 from contacts.views import ContactView
 from contacts.forms import ContactForm
 
 from ..models import Bagno
+from ..models import ServiceCategory
+from ..models import District
 from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
 
 import logging

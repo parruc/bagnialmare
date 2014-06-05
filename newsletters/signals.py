@@ -1,7 +1,7 @@
 from django.db.models import signals
 from django.contrib.auth.models import User
-from models import NewsletterSubscription
-from models import NewsletterUser
+from .models import NewsletterSubscription
+from .models import NewsletterUser
 
 
 def change_newsletters_user_email(sender, instance, created, **kwargs):

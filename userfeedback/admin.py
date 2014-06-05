@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-import models
+from . import models
 
 class UserFeedbackAdmin(admin.ModelAdmin):
     list_display = ['email', 'created', 'bagno', 'notified']

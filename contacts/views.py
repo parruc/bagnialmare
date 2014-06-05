@@ -5,7 +5,7 @@ from django.utils.translation import ugettext as _
 from django.contrib import messages
 from django.views.generic.edit import FormView
 
-from forms import ContactForm
+from .forms import ContactForm
 
 
 class ContactView(FormView):

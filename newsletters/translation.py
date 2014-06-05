@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from modeltranslation.translator import translator, TranslationOptions
-from newsletters import models
+from . import models
 
 
 class NewsletterTarget(TranslationOptions):

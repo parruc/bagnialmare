@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from sorl.thumbnail import ImageField
 
-from base import BaseModel
+from . import BaseModel
 
 
 class ServiceCategory(BaseModel):

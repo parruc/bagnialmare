@@ -7,8 +7,8 @@ from django.core.validators import MaxLengthValidator
 #from ckeditor.fields import RichTextField
 
 
-from bagni_details import Telephone
-from base import BaseModel
+from . import BaseModel
+from . import Telephone
 
 class Bagno(BaseModel):
     """ The model for Bagno object

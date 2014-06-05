@@ -7,7 +7,7 @@ from factories import NewsletterTargetFactory
 from factories import NewsletterSubscriptionFactory
 from factories import NewsletterFactory
 from factories import UserFactory
-import models
+from newsletters import models
 
 class NewsletterTest(TestCase):
     """

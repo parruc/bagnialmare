@@ -1,2 +1,1 @@
-import search
-search #pyflakes
+from bagni import search; search #pyflakes

@@ -2,7 +2,7 @@
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from base import BaseModel
+from . import BaseModel
 
 
 class District(BaseModel):

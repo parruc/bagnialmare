@@ -7,7 +7,11 @@ from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
 from bagni.models import BaseModel
 
-# Create your models here.
+
+class NewsletterStatus:
+    NEW = "new"
+    SENT = "sent"
+    SENDING = "sending"
 
 class NewsletterUser(models.Model):
     """ The target for Newsletter objects
@@ -53,11 +57,12 @@ class Newsletter(BaseModel):
         verbose_name = _('Newsletter')
         verbose_name_plural = _('Newsletters')
 
-
     subject = models.CharField(max_length=100, verbose_name=_("Subject"))
     text = RichTextField(max_length=2000, verbose_name=_("Text"))
     sent_to = models.TextField(editable=False, null=True, blank=True)
     sent_on = models.TimeField(editable=False, null=True, blank=True)
+    sent_count = models.IntegerField(editable=False, null=True, blank=True)
+    status = models.CharField(editable=False, default=NewsletterStatus.NEW, max_length=10, verbose_name=_("Status"))
     target = models.ForeignKey("NewsletterTarget", related_name="newsletters", verbose_name=_("Target"),)
     template = models.ForeignKey("NewsletterTemplate", related_name="newsletters", verbose_name=_("Template"),)
 

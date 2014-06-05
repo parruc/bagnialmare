@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.gis.admin import GeoModelAdmin
 from modeltranslation.admin import TranslationAdmin
-import models
+from . import models
 
 
 class DistrictAdmin(TranslationAdmin, GeoModelAdmin, admin.ModelAdmin):
