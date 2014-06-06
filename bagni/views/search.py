@@ -45,7 +45,8 @@ class SearchView(TemplateView):
         elif loc:
             g = geocoders.GoogleV3(domain='maps.google.it')
             try:
-                matches = g.geocode(loc, exactly_one=False)
+                matches = g.geocode(loc + ", Emilia Romagna", exactly_one=False)
+                # TODO: if len(matches) > 1 prompt the user a choice between matches
                 place, (lat, lng) = matches[0]
                 point = Point(lng, lat)
             except geocoders.googlev3.GeocoderQueryError as e:
