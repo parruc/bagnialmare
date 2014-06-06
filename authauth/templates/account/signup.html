@@ -227,7 +227,7 @@
                 }); //id_neighbourhood
                 $.getJSON("/en/json/neighbourhood/" + neighbourhood_id, function(data){
                     $("#id_bagni").empty();
-                    $("#id_bagni").append('<option value="undefined">-- {{ t_choose_bagno }} --</option>');
+                    $("#id_bagni").append('<option value="nochoice">-- {{ t_choose_bagno }} --</option>');
                     $.each(data['items'], function(index, value){
                         var html_str = '<option value="' +
                                              value[0] +

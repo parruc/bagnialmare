@@ -30,8 +30,7 @@ signup_form_validation = {
                             callback: {
                                 message : 'scegli un bagno',
                                 callback: function(value, validator){
-                                    console.log(value);
-                                    return (value != 'undefined' && value != null);
+                                    return (value != 'nochoice' && value != null);
                                 }
                             }
                         }
