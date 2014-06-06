@@ -72,7 +72,7 @@ def _send_newsletter(modeladmin, request, queryset, test):
     obj.save()
     modeladmin.message_user(request, "Sent emails",
                             level=messages.INFO, extra_tags='', fail_silently=False)
-        
+
 
 send_newsletter.short_description = "Send selected newsletter"
 send_test_newsletter.short_description = "Test selected newsletter"
@@ -89,7 +89,7 @@ class NewsletterTemplateAdmin(TranslationAdmin, admin.ModelAdmin):
 admin.site.register(models.NewsletterTemplate, NewsletterTemplateAdmin)
 
 class NewsletterSubscriptionAdmin(TranslationAdmin, admin.ModelAdmin):
-    pass
+    list_display = ['email', 'target', ]
 
 admin.site.register(models.NewsletterSubscription, NewsletterSubscriptionAdmin)
 
