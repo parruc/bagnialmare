@@ -1,11 +1,11 @@
 signup_form_validation = {
                 message: 'Valore non valido',
                 live: 'enabled',
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh',
-                },
+                //feedbackIcons: {
+                //    valid: 'glyphicon glyphicon-ok',
+                //    invalid: 'glyphicon glyphicon-remove',
+                //    validating: 'glyphicon glyphicon-refresh',
+                //},
                 fields: {
                     neighbourhood: {
                         message: 'località non valida',
