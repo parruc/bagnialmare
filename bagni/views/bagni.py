@@ -7,6 +7,7 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import UpdateView
 from django.views.generic import TemplateView
 from django.contrib import messages
+from django.utils.translation import ugettext_lazy as _
 
 from contacts.views import ContactView
 from contacts.forms import ContactForm
@@ -135,6 +136,7 @@ class BagnoContacts(ContactView):
     """
     template_name = "bagni/bagno_contacts.html"
     form_class = ContactForm
+    success_message = _("Thanks for contacting us. We will asnwer you as soon as possible.")
 
     def dispatch(self, request, *args, **kwargs):
         if not "slug" in kwargs:
