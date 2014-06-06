@@ -291,7 +291,7 @@ msgstr "beachresort"
 
 #: templates/bagni/bagno_detail.html:10 templates/bagni/search.html:26
 msgid "contact_button"
-msgstr "contact this structure"
+msgstr "Contact this structure"
 
 #: templates/bagni/bagno_detail.html:11
 msgid "contacts"
@@ -303,7 +303,7 @@ msgstr "website"
 
 #: templates/bagni/bagno_detail.html:13
 msgid "modify_bagno"
-msgstr "modify your beach resort data"
+msgstr "Modify your beach resort data"
 
 #: templates/bagni/bagno_detail.html:14
 msgid "are_you_the_manager"
