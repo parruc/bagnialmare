@@ -488,9 +488,17 @@ button {
     padding: 10px 0px;
 }
 
+.navbar-collapse{
+  background-color: #EB604B;
+}
+
 .homepage-body-class .navbar-default{
     background-color: #F9BF16;
     border-color: #F9BF16;
+}
+
+.homepage-body-class .navbar-collapse{
+    background-color: #F9BF16;
 }
 
 .navbar-default .navbar-nav > li > a {
