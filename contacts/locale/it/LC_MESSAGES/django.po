@@ -33,7 +33,6 @@ msgid "Thanks for contacting us. We will asnwer you as soon as possible."
 msgstr "Grazie per averci contattato, risponderemo al più presto all'indirizzo email fornitoci."
 
 #: views.py:45
-#, fuzzy
 msgid ""
 "Error sending the mail: Contact me at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"

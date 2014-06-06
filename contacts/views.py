@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 from django.conf import settings
 from django.core.mail import EmailMessage
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from django.contrib import messages
+from django.template.loader import get_template
+from django.template import Context
 from django.views.generic.edit import FormView
 
 from .forms import ContactForm
+
+import logging
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 
 class ContactView(FormView):
@@ -13,6 +19,7 @@ class ContactView(FormView):
     template_name = "contacts/contacts.html"
     form_class = ContactForm
     success_url = "/"
+    success_message = _("Thanks for contacting us. We will asnwer you as soon as possible.")
     submit_url = "."
     recipients = []
     admin_emails = [email[1] for email in settings.ADMINS]
@@ -20,8 +27,7 @@ class ContactView(FormView):
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
         # It should return an HttpResponse.
-        subject = "[bagnialmare.com]"
-        message = form.cleaned_data['message']
+        subject = "Richiesta informazioni"
         sender = form.cleaned_data['sender']
         from_email = "info@bagnialmare.com"
         bcc = []
@@ -34,12 +40,20 @@ class ContactView(FormView):
             #else we are the receivers directly
             self.recipients = self.admin_emails
         try:
+            t = get_template("contacts/email.txt")
+            c = Context({"message": form.cleaned_data['message'], })
+            message = t.render(c)
+
+            t = get_template("contacts/subject.txt")
+            c = Context({"subject": subject, })
+            subject = t.render(c).strip()
+
             email = EmailMessage(subject=subject, body=message,from_email=from_email,
                                  to=self.recipients, bcc=bcc, headers={'Reply-To': sender})
             email.send()
-            messages.add_message(self.request, messages.INFO,
-                _("Thanks for contacting us. We will asnwer you as soon as possible."))
-        except:
+            messages.add_message(self.request, messages.INFO, self.success_message)
+        except Exception as e:
+            logger.error("Error '%s' sending the mail" % str(e))
             messages.add_message(self.request, messages.ERROR,
                 _("Error sending the mail: Contact us at \
                    info at bagnialmare dot com to inform \

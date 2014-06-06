@@ -3,4 +3,4 @@ N.B.
 - Rispondi direttamente a questa email per comunicare con l'utente interessato
 - To send a feedback to the interested user reply directly to this email
 
-{{ data.content }}
+{{ message }}
