@@ -223,7 +223,7 @@ msgstr "BagniAlMare will send messages from users to this email address"
 #: templates/account/signup.html:28
 msgid "help_accepts_booking"
 msgstr ""
-"Activate this option if you wish to keep a test button on your page to monitor users' interest. You will be able to deactivate this option anytime afterwards."
+"Activate this option if you wish to keep a test button on your page to monitor users' interest."
 
 #: templates/account/signup.html:33
 msgid "Where our collaboration starts!"

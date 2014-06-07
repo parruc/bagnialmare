@@ -242,7 +242,7 @@ msgid "help_accepts_booking"
 msgstr ""
 "Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante "
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
-"funzione. In futuro potrai sempre disabilitare questa opzione."
+"funzione."
 
 #: templates/account/signup.html:33
 msgid "Where our collaboration starts!"
