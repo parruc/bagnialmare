@@ -279,6 +279,24 @@
   }
 },
 {
+  "pk": 137, 
+  "model": "bagni.municipality", 
+  "fields": {
+    "slug_en": "cattolica", 
+    "name_it": "Cattolica", 
+    "name": "Cattolica", 
+    "district": [
+      "rimini"
+    ], 
+    "slug_it": "cattolica", 
+    "description_en": "", 
+    "description_it": "", 
+    "name_en": "Cattolica", 
+    "slug": "cattolica", 
+    "description": ""
+  }
+},
+{
   "pk": 1, 
   "model": "bagni.neighbourhood", 
   "fields": {
@@ -941,6 +959,24 @@
     "description_it": null, 
     "name_en": "Igea Marina", 
     "slug": "igea-marina", 
+    "description": ""
+  }
+},
+{
+  "pk": 38, 
+  "model": "bagni.neighbourhood", 
+  "fields": {
+    "slug_en": "cattolica", 
+    "name_it": "Cattolica", 
+    "name": "Cattolica", 
+    "municipality": [
+      "cattolica"
+    ], 
+    "slug_it": "cattolica", 
+    "description_en": "", 
+    "description_it": "", 
+    "name_en": "Cattolica", 
+    "slug": "cattolica", 
     "description": ""
   }
 },
@@ -4257,909 +4293,6 @@
     "aliases": null, 
     "slug": "pizzeria", 
     "description": ""
-  }
-},
-{
-  "pk": 10, 
-  "model": "account.emailconfirmation", 
-  "fields": {
-    "email_address": 10, 
-    "key": "135f9a421135900e0eeeba46230acb3f79a8fedbd488472e503925bd7e7de9fe", 
-    "sent": "2014-05-11T15:09:35.190Z", 
-    "created": "2014-05-11T15:09:34.396Z"
-  }
-},
-{
-  "pk": 12, 
-  "model": "account.emailconfirmation", 
-  "fields": {
-    "email_address": 12, 
-    "key": "b159cf088fdcab1e1f45428faa77ad7bc35329ada108a2660c8c62da514f9647", 
-    "sent": "2014-06-03T07:53:56.540Z", 
-    "created": "2014-06-03T07:53:55.430Z"
-  }
-},
-{
-  "pk": 13, 
-  "model": "account.emailconfirmation", 
-  "fields": {
-    "email_address": 13, 
-    "key": "9cb509557f102963bfb811067098bc59bd47d979495d8b6ad2d60fe4530c1d98", 
-    "sent": "2014-06-03T12:51:24.706Z", 
-    "created": "2014-06-03T12:51:24.621Z"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido.jpg\", \"size\": [958, 539]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||051bb55b5941388f49e97d289512bddb", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido_1.jpg\", \"size\": [429, 762]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||06094897e27c8253a57b97a0b3a07063", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/9e/19/9e19935d7fa1f35c80c7fd5a224b82ac.png\", \"size\": [228, 128]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||07057f84c038d2018de6ceae6075bc54", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/78/ad/78ad3352eb8fd8e528dbc41186b82818.png\", \"size\": [228, 128]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||8c36bb722c3208dd9deec4c3e64fed29", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/bagno-dallara.jpg\", \"size\": [958, 539]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||8cdf7928f0e82fc0c1e501425ca1eab0", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/test/benvenuti-nellestate-2014.jpg\", \"size\": [800, 600]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||917e18c6e71db66bc6b364a385175d8b", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/48/0d/480dff71dc29b781afa362b4adce70fa.png\", \"size\": [228, 128]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||c57fc645a5926f9e17001291d8c7ab06", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/3d/b2/3db26ff49fad5f7f7e3422491a1e4807.png\", \"size\": [171, 128]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||db219bdc2ddd22bc1f5406c218bfddb0", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/66/11/66117ff1dd3dd65b5632adf1885e81e6.png\", \"size\": [72, 128]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||image||e567b1d69ef006ec7306d3079e01d7f5", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/entrata-bagno.jpg\", \"size\": [958, 539]}"
-  }
-},
-{
-  "pk": "sorl-thumbnail||thumbnails||03a12c43bd4c47d1513aa6cfba2e694b", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "[\"917e18c6e71db66bc6b364a385175d8b\"]"
-  }
-},
-{
-  "pk": "sorl-thumbnail||thumbnails||051bb55b5941388f49e97d289512bddb", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "[\"db219bdc2ddd22bc1f5406c218bfddb0\"]"
-  }
-},
-{
-  "pk": "sorl-thumbnail||thumbnails||8c36bb722c3208dd9deec4c3e64fed29", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "[\"07057f84c038d2018de6ceae6075bc54\"]"
-  }
-},
-{
-  "pk": "sorl-thumbnail||thumbnails||8cdf7928f0e82fc0c1e501425ca1eab0", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "[\"c57fc645a5926f9e17001291d8c7ab06\"]"
-  }
-},
-{
-  "pk": "sorl-thumbnail||thumbnails||e567b1d69ef006ec7306d3079e01d7f5", 
-  "model": "thumbnail.kvstore", 
-  "fields": {
-    "value": "[\"06094897e27c8253a57b97a0b3a07063\"]"
-  }
-},
-{
-  "pk": 1, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.025Z", 
-    "app_name": "bagni", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 2, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.455Z", 
-    "app_name": "bagni", 
-    "migration": "0002_auto__add_unique_service_slug__chg_field_bagno_tel__chg_field_bagno_po"
-  }
-},
-{
-  "pk": 3, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.530Z", 
-    "app_name": "bagni", 
-    "migration": "0003_auto__chg_field_bagno_name"
-  }
-},
-{
-  "pk": 4, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.548Z", 
-    "app_name": "bagni", 
-    "migration": "0004_auto__add_image"
-  }
-},
-{
-  "pk": 5, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.579Z", 
-    "app_name": "bagni", 
-    "migration": "0005_auto__add_field_bagno_description__add_field_bagno_cell__add_field_bag"
-  }
-},
-{
-  "pk": 6, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.620Z", 
-    "app_name": "bagni", 
-    "migration": "0006_auto__chg_field_bagno_fax"
-  }
-},
-{
-  "pk": 7, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.713Z", 
-    "app_name": "bagni", 
-    "migration": "0007_auto__chg_field_bagno_fax__chg_field_bagno_tel__chg_field_bagno_cell"
-  }
-},
-{
-  "pk": 8, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.820Z", 
-    "app_name": "bagni", 
-    "migration": "0008_auto__chg_field_bagno_fax__chg_field_bagno_tel__chg_field_bagno_cell"
-  }
-},
-{
-  "pk": 9, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.855Z", 
-    "app_name": "bagni", 
-    "migration": "0009_auto__chg_field_bagno_description"
-  }
-},
-{
-  "pk": 10, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.891Z", 
-    "app_name": "bagni", 
-    "migration": "0010_auto__chg_field_bagno_name"
-  }
-},
-{
-  "pk": 11, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-20T13:32:09.992Z", 
-    "app_name": "bagni", 
-    "migration": "0011_auto__add_field_bagno_name_en__add_field_bagno_name_it__add_field_bagn"
-  }
-},
-{
-  "pk": 12, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-21T10:43:21.962Z", 
-    "app_name": "bagni", 
-    "migration": "0012_auto__add_district__add_municipality__del_field_bagno_city_it__del_fie"
-  }
-},
-{
-  "pk": 13, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-21T10:43:22.100Z", 
-    "app_name": "bagni", 
-    "migration": "0013_auto__add_language"
-  }
-},
-{
-  "pk": 14, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-21T12:24:27.940Z", 
-    "app_name": "bagni", 
-    "migration": "0014_auto__add_field_language_name_en__add_field_language_name_it__add_fiel"
-  }
-},
-{
-  "pk": 15, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-28T13:18:48.384Z", 
-    "app_name": "bagni", 
-    "migration": "0015_auto__add_servicecategory__del_field_service_category"
-  }
-},
-{
-  "pk": 16, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-28T13:18:48.411Z", 
-    "app_name": "bagni", 
-    "migration": "0016_auto__add_field_service_category"
-  }
-},
-{
-  "pk": 17, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-11-28T13:18:48.529Z", 
-    "app_name": "bagni", 
-    "migration": "0017_auto__add_field_service_description__add_field_service_description_en_"
-  }
-},
-{
-  "pk": 18, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2013-12-14T14:22:15.451Z", 
-    "app_name": "bagni", 
-    "migration": "0018_auto__add_field_service_image__add_field_servicecategory_image"
-  }
-},
-{
-  "pk": 19, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.421Z", 
-    "app_name": "socialaccount", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 20, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.456Z", 
-    "app_name": "twitter", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 21, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.514Z", 
-    "app_name": "twitter", 
-    "migration": "0002_snowflake"
-  }
-},
-{
-  "pk": 22, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.643Z", 
-    "app_name": "socialaccount", 
-    "migration": "0002_genericmodels"
-  }
-},
-{
-  "pk": 23, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.665Z", 
-    "app_name": "twitter", 
-    "migration": "0003_tosocialaccount"
-  }
-},
-{
-  "pk": 24, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.712Z", 
-    "app_name": "openid", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 25, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.734Z", 
-    "app_name": "openid", 
-    "migration": "0002_tosocialaccount"
-  }
-},
-{
-  "pk": 26, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.784Z", 
-    "app_name": "facebook", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 27, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.845Z", 
-    "app_name": "facebook", 
-    "migration": "0002_auto__add_facebookaccesstoken__add_unique_facebookaccesstoken_app_acco"
-  }
-},
-{
-  "pk": 28, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.875Z", 
-    "app_name": "facebook", 
-    "migration": "0003_tosocialaccount"
-  }
-},
-{
-  "pk": 29, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.901Z", 
-    "app_name": "socialaccount", 
-    "migration": "0003_auto__add_unique_socialaccount_uid_provider"
-  }
-},
-{
-  "pk": 30, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.933Z", 
-    "app_name": "socialaccount", 
-    "migration": "0004_add_sites"
-  }
-},
-{
-  "pk": 31, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.949Z", 
-    "app_name": "socialaccount", 
-    "migration": "0005_set_sites"
-  }
-},
-{
-  "pk": 32, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.967Z", 
-    "app_name": "socialaccount", 
-    "migration": "0006_auto__del_field_socialapp_site"
-  }
-},
-{
-  "pk": 33, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:39.988Z", 
-    "app_name": "socialaccount", 
-    "migration": "0007_auto__add_field_socialapp_client_id"
-  }
-},
-{
-  "pk": 34, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.005Z", 
-    "app_name": "socialaccount", 
-    "migration": "0008_client_id"
-  }
-},
-{
-  "pk": 35, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.022Z", 
-    "app_name": "socialaccount", 
-    "migration": "0009_auto__add_field_socialtoken_expires_at"
-  }
-},
-{
-  "pk": 36, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.067Z", 
-    "app_name": "socialaccount", 
-    "migration": "0010_auto__chg_field_socialtoken_token"
-  }
-},
-{
-  "pk": 37, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.112Z", 
-    "app_name": "socialaccount", 
-    "migration": "0011_auto__chg_field_socialtoken_token"
-  }
-},
-{
-  "pk": 38, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.177Z", 
-    "app_name": "facebook", 
-    "migration": "0004_auto__del_facebookapp__del_facebookaccesstoken__del_unique_facebookacc"
-  }
-},
-{
-  "pk": 39, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.211Z", 
-    "app_name": "openid", 
-    "migration": "0003_auto__del_openidaccount"
-  }
-},
-{
-  "pk": 40, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-29T23:13:40.242Z", 
-    "app_name": "twitter", 
-    "migration": "0004_auto__del_twitteraccount__del_twitterapp"
-  }
-},
-{
-  "pk": 41, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-01-31T00:13:58.268Z", 
-    "app_name": "authauth", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 42, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-02-21T19:55:56.166Z", 
-    "app_name": "bagni", 
-    "migration": "0019_auto__add_telephone"
-  }
-},
-{
-  "pk": 43, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-02-21T19:55:56.290Z", 
-    "app_name": "bagni", 
-    "migration": "0020_migrate_phone_data"
-  }
-},
-{
-  "pk": 44, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-02-21T19:55:56.315Z", 
-    "app_name": "bagni", 
-    "migration": "0021_auto__del_field_bagno_tel__del_field_bagno_cell__del_field_bagno_fax__"
-  }
-},
-{
-  "pk": 46, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T00:48:28.473Z", 
-    "app_name": "bagni", 
-    "migration": "0022_auto__add_neighbourhood__add_field_bagno_neighbourhood"
-  }
-},
-{
-  "pk": 47, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T01:46:27.315Z", 
-    "app_name": "bagni", 
-    "migration": "0023_auto__add_field_neighbourhood_name_en__add_field_neighbourhood_name_it"
-  }
-},
-{
-  "pk": 48, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T01:46:40.304Z", 
-    "app_name": "bagni", 
-    "migration": "0024_auto__add_field_bagno_municipality"
-  }
-},
-{
-  "pk": 49, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-21T01:46:44.018Z", 
-    "app_name": "bagni", 
-    "migration": "0025_auto__del_field_bagno_municipality__chg_field_bagno_neighbourhood"
-  }
-},
-{
-  "pk": 50, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-03-30T16:58:44.463Z", 
-    "app_name": "authauth", 
-    "migration": "0002_auto__add_field_manager_tos"
-  }
-},
-{
-  "pk": 51, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-04T00:55:24.506Z", 
-    "app_name": "bagni", 
-    "migration": "0026_auto__add_field_servicecategory_order"
-  }
-},
-{
-  "pk": 52, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-08T16:20:34.378Z", 
-    "app_name": "authauth", 
-    "migration": "0003_auto__add_field_manager_name__add_field_manager_surname"
-  }
-},
-{
-  "pk": 53, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-17T13:39:23.044Z", 
-    "app_name": "bagni", 
-    "migration": "0027_auto__chg_field_service_name_it__chg_field_service_name__chg_field_ser"
-  }
-},
-{
-  "pk": 54, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-17T13:39:23.137Z", 
-    "app_name": "bagni", 
-    "migration": "0028_set_real_slug_to_telephone_column"
-  }
-},
-{
-  "pk": 55, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-17T13:39:23.188Z", 
-    "app_name": "bagni", 
-    "migration": "0029_auto__add_unique_telephone_slug"
-  }
-},
-{
-  "pk": 56, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-19T17:25:09.098Z", 
-    "app_name": "bagni", 
-    "migration": "0030_auto__del_field_telephone_name_it__del_field_telephone_name_en__del_fi"
-  }
-},
-{
-  "pk": 57, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-04-25T15:13:13.447Z", 
-    "app_name": "bagni", 
-    "migration": "0031_auto__add_field_service_seo_name__add_field_service_seo_name_en__add_f"
-  }
-},
-{
-  "pk": 58, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-08T13:51:47.417Z", 
-    "app_name": "socialaccount", 
-    "migration": "0012_auto__chg_field_socialtoken_token_secret"
-  }
-},
-{
-  "pk": 60, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-12T13:49:52.465Z", 
-    "app_name": "bagni", 
-    "migration": "0032_telephone_number_names_fix"
-  }
-},
-{
-  "pk": 61, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-15T12:19:20.932Z", 
-    "app_name": "bagni", 
-    "migration": "0033_auto__add_field_bagno_accepts_booking"
-  }
-},
-{
-  "pk": 62, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-19T06:58:04.035Z", 
-    "app_name": "bagni", 
-    "migration": "0034_set_accepts_booking_true"
-  }
-},
-{
-  "pk": 63, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-19T06:58:04.135Z", 
-    "app_name": "bagni", 
-    "migration": "0035_auto__chg_field_bagno_description__chg_field_bagno_description_en__chg"
-  }
-},
-{
-  "pk": 66, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-27T22:11:41.817Z", 
-    "app_name": "newsletters", 
-    "migration": "0001_initial"
-  }
-},
-{
-  "pk": 67, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-27T22:11:41.836Z", 
-    "app_name": "newsletters", 
-    "migration": "0002_auto__add_field_newsletter_sent_to__add_field_newsletter_sent_on"
-  }
-},
-{
-  "pk": 68, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-27T22:11:41.896Z", 
-    "app_name": "newsletters", 
-    "migration": "0003_auto__add_newslettersubscription__add_unique_newslettersubscription_em"
-  }
-},
-{
-  "pk": 69, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-27T22:11:41.944Z", 
-    "app_name": "newsletters", 
-    "migration": "0004_auto__add_newsletteruser"
-  }
-},
-{
-  "pk": 70, 
-  "model": "south.migrationhistory", 
-  "fields": {
-    "applied": "2014-05-27T22:11:42.023Z", 
-    "app_name": "newsletters", 
-    "migration": "0005_auto__del_field_newsletteruser_name__del_field_newsletteruser_slug__ch"
-  }
-},
-{
-  "pk": 5, 
-  "model": "auth.user", 
-  "fields": {
-    "username": "parruc", 
-    "first_name": "Matteo", 
-    "last_name": "Parrucci", 
-    "is_active": true, 
-    "is_superuser": true, 
-    "is_staff": true, 
-    "last_login": "2014-06-03T07:54:25.312Z", 
-    "groups": [], 
-    "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
-    "email": "parruc@gmail.com", 
-    "date_joined": "2014-04-27T16:36:54Z"
-  }
-},
-{
-  "pk": 6, 
-  "model": "auth.user", 
-  "fields": {
-    "username": "inge", 
-    "first_name": "Nicola", 
-    "last_name": "Valentini", 
-    "is_active": true, 
-    "is_superuser": true, 
-    "is_staff": true, 
-    "last_login": "2014-05-29T13:20:06.147Z", 
-    "groups": [], 
-    "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
-    "email": "nicola.valentini@gmail.com", 
-    "date_joined": "2014-04-27T16:38:16Z"
-  }
-},
-{
-  "pk": 7, 
-  "model": "auth.user", 
-  "fields": {
-    "username": "barto", 
-    "first_name": "Marco", 
-    "last_name": "Bartolini", 
-    "is_active": true, 
-    "is_superuser": true, 
-    "is_staff": true, 
-    "last_login": "2014-05-12T14:03:31Z", 
-    "groups": [], 
-    "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
-    "email": "marco.bartolini@gmail.com", 
-    "date_joined": "2014-04-28T12:48:31Z"
-  }
-},
-{
-  "pk": 8, 
-  "model": "auth.user", 
-  "fields": {
-    "username": "benve", 
-    "first_name": "Marco", 
-    "last_name": "Benvenuto", 
-    "is_active": true, 
-    "is_superuser": true, 
-    "is_staff": true, 
-    "last_login": "2014-06-03T12:33:25.747Z", 
-    "groups": [], 
-    "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
-    "email": "marco.benvenuto1@gmail.com", 
-    "date_joined": "2014-04-28T12:49:04Z"
-  }
-},
-{
-  "pk": 18, 
-  "model": "auth.user", 
-  "fields": {
-    "username": "mbenvenuto", 
-    "first_name": "User", 
-    "last_name": "Tester", 
-    "is_active": true, 
-    "is_superuser": false, 
-    "is_staff": false, 
-    "last_login": "2014-06-03T12:51:22.754Z", 
-    "groups": [], 
-    "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=", 
-    "email": "mbenvenuto@airplus.com", 
-    "date_joined": "2014-06-03T12:51:22.754Z"
-  }
-},
-{
-  "pk": 1, 
-  "model": "sites.site", 
-  "fields": {
-    "domain": "bagnialmare.com", 
-    "name": "bagnialmare.com"
-  }
-},
-{
-  "pk": 10, 
-  "model": "account.emailaddress", 
-  "fields": {
-    "verified": true, 
-    "user": [
-      "benve"
-    ], 
-    "primary": true, 
-    "email": "marco.benvenuto1@gmail.com"
-  }
-},
-{
-  "pk": 12, 
-  "model": "account.emailaddress", 
-  "fields": {
-    "verified": true, 
-    "user": [
-      "parruc"
-    ], 
-    "primary": true, 
-    "email": "parruc@gmail.com"
-  }
-},
-{
-  "pk": 13, 
-  "model": "account.emailaddress", 
-  "fields": {
-    "verified": true, 
-    "user": [
-      "mbenvenuto"
-    ], 
-    "primary": true, 
-    "email": "mbenvenuto@airplus.com"
-  }
-},
-{
-  "pk": 1, 
-  "model": "newsletters.newsletteruser", 
-  "fields": {
-    "user": [
-      "parruc"
-    ], 
-    "old_email": "parruc@gmail.com"
-  }
-},
-{
-  "pk": 2, 
-  "model": "newsletters.newsletteruser", 
-  "fields": {
-    "user": [
-      "benve"
-    ], 
-    "old_email": "marco.benvenuto1@gmail.com"
-  }
-},
-{
-  "pk": 3, 
-  "model": "newsletters.newsletteruser", 
-  "fields": {
-    "user": [
-      "inge"
-    ], 
-    "old_email": "nicola.valentini@gmail.com"
-  }
-},
-{
-  "pk": 4, 
-  "model": "newsletters.newsletteruser", 
-  "fields": {
-    "user": [
-      "mbenvenuto"
-    ], 
-    "old_email": "mbenvenuto@airplus.com"
   }
 },
 {
@@ -18675,10 +17808,10 @@
   "pk": 12994, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 200<br />\n\tcabine: 8<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 1455<br />\n\tdocce aperte: 3</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 20<br />\r\n\twc: 3<br />\r\n\tombrelloni: 120<br />\r\n\tfronte mare: 34<br />\r\n\tlettini: 200<br />\r\n\tcabine: 8<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 1455<br />\r\n\tdocce aperte: 3</p>", 
     "point": "POINT (12.4298286437988281 44.1783260848201493)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 200<br />\n\tcabine: 8<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 1455<br />\n\tdocce aperte: 3</p>", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 20<br />\r\n\twc: 3<br />\r\n\tombrelloni: 120<br />\r\n\tfronte mare: 34<br />\r\n\tlettini: 200<br />\r\n\tcabine: 8<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 1455<br />\r\n\tdocce aperte: 3</p>", 
     "site": "", 
     "languages": [
       [
@@ -18690,7 +17823,7 @@
     ], 
     "services": [
       [
-        "catering"
+        "canoes"
       ], 
       [
         "five-a-side"
@@ -18699,7 +17832,7 @@
         "magazines-journals"
       ], 
       [
-        "disabled"
+        "pedal-boats"
       ], 
       [
         "bicycles"
@@ -18708,13 +17841,10 @@
         "bookstore"
       ], 
       [
-        "beach-volley"
+        "entertainment"
       ], 
       [
-        "baby-park"
-      ], 
-      [
-        "pedal-boats"
+        "ping-pong"
       ], 
       [
         "petanque"
@@ -18723,18 +17853,21 @@
         "tv-area"
       ], 
       [
-        "canoes"
+        "beach-volley"
       ], 
       [
-        "ping-pong"
+        "baby-park"
       ], 
       [
-        "entertainment"
+        "catering"
+      ], 
+      [
+        "disabled"
       ]
     ], 
     "address": "Viale Giosu\u00e8 Carducci", 
-    "description_it": null, 
-    "mail": "casadei_elisa@libero.itfacebook", 
+    "description_it": "", 
+    "mail": "casadei_elisa@libero.it", 
     "accepts_booking": true, 
     "slug": "bagno-eden", 
     "neighbourhood": [
@@ -26513,10 +25646,10 @@
   "pk": 13118, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.2447884082794189 44.7440738363792292)", 
     "number": "24", 
-    "description_en": null, 
+    "description_en": " ", 
     "site": "", 
     "languages": [
       [
@@ -26528,7 +25661,7 @@
     ], 
     "services": [
       [
-        "disabled"
+        "tub"
       ], 
       [
         "catering"
@@ -26537,15 +25670,15 @@
         "evening-entertainment"
       ], 
       [
-        "tub"
+        "schoolchildren"
       ], 
       [
-        "schoolchildren"
+        "disabled"
       ]
     ], 
     "address": "Lungomare Italia, 5", 
-    "description_it": null, 
-    "mail": "www.ristorantelido.net", 
+    "description_it": "", 
+    "mail": "info@ristorantelido.net", 
     "accepts_booking": true, 
     "slug": "lido", 
     "neighbourhood": [
@@ -29627,10 +28760,10 @@
   "pk": 13164, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.2527062892913818 44.6472310035246807)", 
     "number": "53", 
-    "description_en": null, 
+    "description_en": " ", 
     "site": "", 
     "languages": [
       [
@@ -29642,34 +28775,34 @@
     ], 
     "services": [
       [
-        "baby-sitter"
+        "tub"
       ], 
       [
         "sailing"
       ], 
       [
-        "five-a-side"
+        "children-entertainment"
       ], 
       [
-        "beach-racket-court"
-      ], 
-      [
-        "disabled"
+        "baby-sitter"
       ], 
       [
         "swimming-pool"
       ], 
       [
-        "beach-volley"
+        "canoes"
       ], 
       [
-        "tub"
+        "beach-racket-court"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "pre-evening-entertainment"
       ], 
       [
         "acquagym"
-      ], 
-      [
-        "baby-park"
       ], 
       [
         "pedal-boats"
@@ -29678,27 +28811,27 @@
         "petanque"
       ], 
       [
-        "children-entertainment"
-      ], 
-      [
-        "pre-evening-entertainment"
+        "five-a-side"
       ], 
       [
         "swimming-lessons"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
         "bar"
       ], 
       [
-        "canoes"
-      ], 
-      [
-        "schoolchildren"
+        "disabled"
       ]
     ], 
     "address": "Via Spiaggia, 53", 
-    "description_it": null, 
-    "mail": "www.bagnoeden.com", 
+    "description_it": "", 
+    "mail": "valerianomartini@alice.it", 
     "accepts_booking": true, 
     "slug": "eden-2", 
     "neighbourhood": [
@@ -29831,11 +28964,11 @@
   "pk": 13167, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.2537362575531006 44.6454448544557820)", 
     "number": "56", 
-    "description_en": null, 
-    "site": "", 
+    "description_en": " ", 
+    "site": "http://www.bagnovirna.info/", 
     "languages": [
       [
         "italian"
@@ -29846,16 +28979,16 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
         "evening-entertainment"
       ], 
       [
-        "disabled"
+        "beach-racket-court"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "five-a-side"
       ], 
       [
         "beach-volley"
@@ -29864,15 +28997,15 @@
         "baby-park"
       ], 
       [
-        "beach-racket-court"
+        "catering"
       ], 
       [
-        "schoolchildren"
+        "disabled"
       ]
     ], 
     "address": "Via Spiaggia, 56", 
-    "description_it": null, 
-    "mail": "www.bagnovirna.it", 
+    "description_it": "", 
+    "mail": "info@bagnovirna.info", 
     "accepts_booking": true, 
     "slug": "virna", 
     "neighbourhood": [
@@ -30638,11 +29771,11 @@
   "pk": 13181, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.2695183753967285 44.7984110939432654)", 
     "number": "7", 
-    "description_en": null, 
-    "site": "", 
+    "description_en": " ", 
+    "site": "http://www.bagnokelly.com/", 
     "languages": [
       [
         "italian"
@@ -30653,19 +29786,7 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
       ], 
       [
         "beach-racket-court"
@@ -30678,11 +29799,23 @@
       ], 
       [
         "dance-classes"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "disabled"
       ]
     ], 
     "address": "Via Lungomare del Parco, 1", 
-    "description_it": null, 
-    "mail": "www.bagnokelly.com", 
+    "description_it": "", 
+    "mail": "info@bagnokelly.com", 
     "accepts_booking": true, 
     "slug": "kelly", 
     "neighbourhood": [
@@ -31829,11 +30962,11 @@
   "pk": 13201, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.2414624691009521 44.6796049589107298)", 
     "number": "71", 
-    "description_en": null, 
-    "site": "", 
+    "description_en": " ", 
+    "site": "http://www.bagnoristoranteuropa.com/", 
     "languages": [
       [
         "italian"
@@ -31844,24 +30977,24 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
-      ], 
-      [
-        "catering"
       ], 
       [
         "baby-park"
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "disabled"
       ]
     ], 
     "address": "Via dei Mille, 8", 
-    "description_it": null, 
-    "mail": "www.bagnoristoranteuropa.com", 
+    "description_it": "", 
+    "mail": "info@bagnoristoranteuropa.com", 
     "accepts_booking": true, 
     "slug": "europa", 
     "neighbourhood": [
@@ -32333,11 +31466,11 @@
   "pk": 13210, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.2449117898941040 44.6760040832363288)", 
     "number": "83", 
-    "description_en": null, 
-    "site": "", 
+    "description_en": " ", 
+    "site": "http://www.paradisoristorante.it/", 
     "languages": [
       [
         "italian"
@@ -32348,18 +31481,18 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
         "catering"
+      ], 
+      [
+        "disabled"
       ]
     ], 
     "address": "Via dei caduti del Mare, 5", 
-    "description_it": null, 
-    "mail": "www.paradisoristorante.it", 
+    "description_it": "", 
+    "mail": "info@paradisoristorante.it", 
     "accepts_booking": true, 
     "slug": "paradiso", 
     "neighbourhood": [
@@ -36562,11 +35695,11 @@
   "pk": 13282, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 6<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 4</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 6<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 4</p>", 
     "point": "POINT (12.2846995680000006 44.4806537199999994)", 
     "number": "", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 6<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 4</p>", 
-    "site": "http://www.bagnoobelix.it", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 6<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 4</p>", 
+    "site": "http://www.bagnoobelix.it/", 
     "languages": [
       [
         "italian"
@@ -36577,28 +35710,28 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
         "cocktail-bar"
-      ], 
-      [
-        "beach-rackets-courses"
-      ], 
-      [
-        "massages"
-      ], 
-      [
-        "barbecue-area"
-      ], 
-      [
-        "beach-volley-courses"
       ], 
       [
         "tub"
       ], 
       [
+        "beach-racket-court"
+      ], 
+      [
+        "massages"
+      ], 
+      [
         "footvolley"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "beach-volley-courses"
+      ], 
+      [
+        "barbecue-area"
       ], 
       [
         "beach-volley"
@@ -36607,15 +35740,15 @@
         "baby-park"
       ], 
       [
-        "beach-racket-court"
+        "catering"
       ], 
       [
-        "entertainment"
+        "beach-rackets-courses"
       ]
     ], 
     "address": "viale delle Nazioni, 204", 
-    "description_it": null, 
-    "mail": "info@bagnoobelix.it - luca@bagnoobelix.it", 
+    "description_it": "", 
+    "mail": "info@bagnoobelix.it", 
     "accepts_booking": true, 
     "slug": "bagno-obelix", 
     "neighbourhood": [
@@ -52435,10 +51568,10 @@
   "pk": 13626, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.6815419699999996 43.9910896299999976)", 
     "number": "22", 
-    "description_en": null, 
+    "description_en": " ", 
     "site": "http://www.hoteliberty.com/", 
     "languages": [
       [
@@ -52450,14 +51583,14 @@
     ], 
     "services": [], 
     "address": "Fontanelle Abissinia", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@hoteliberty.com", 
     "accepts_booking": true, 
-    "slug": "bagni", 
+    "slug": "bagni-hotel-liberty", 
     "neighbourhood": [
       "riccione"
     ], 
-    "name": "Bagni"
+    "name": "Bagni Hotel Liberty"
   }
 },
 {
@@ -53421,11 +52554,11 @@
   "pk": 13660, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.6686500599999992 43.9993787399999974)", 
     "number": "59", 
-    "description_en": null, 
-    "site": "http://www.spiaggia59riccione.it", 
+    "description_en": " ", 
+    "site": "http://www.spiaggia59riccione.it/", 
     "languages": [
       [
         "italian"
@@ -53436,8 +52569,8 @@
     ], 
     "services": [], 
     "address": "Riccione centro", 
-    "description_it": null, 
-    "mail": "silvia@ spiaggia59riccione. it", 
+    "description_it": "", 
+    "mail": "silvia@spiaggia59riccione.it", 
     "accepts_booking": true, 
     "slug": "bagni-cicca", 
     "neighbourhood": [
@@ -54842,10 +53975,10 @@
   "pk": 13709, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
+    "description": " ", 
     "point": "POINT (12.6494900000000001 44.0122597100000021)", 
-    "number": "108", 
-    "description_en": null, 
+    "number": "108, 109", 
+    "description_en": " ", 
     "site": "http://www.bagno108.com/", 
     "languages": [
       [
@@ -54857,39 +53990,10 @@
     ], 
     "services": [], 
     "address": "Alba", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@playadelsolriccione.com", 
     "accepts_booking": true, 
     "slug": "playa-del-sol", 
-    "neighbourhood": [
-      "riccione"
-    ], 
-    "name": "Bagno Playa del Sol"
-  }
-},
-{
-  "pk": 13710, 
-  "model": "bagni.bagno", 
-  "fields": {
-    "description": "", 
-    "point": "POINT (12.6491000000000007 44.0125373400000015)", 
-    "number": "109", 
-    "description_en": null, 
-    "site": "http://www.bagno108.com", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
-    "services": [], 
-    "address": "Alba", 
-    "description_it": null, 
-    "mail": "info@playadelsolriccione.com", 
-    "accepts_booking": true, 
-    "slug": "playa-del-sol-2", 
     "neighbourhood": [
       "riccione"
     ], 
@@ -58235,15 +57339,18 @@
   "pk": 13827, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare.", 
+    "description": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare right now.", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
     "number": "1", 
-    "description_en": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare.", 
+    "description_en": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare right now.", 
     "site": "http://www.bagnialmare.com/", 
     "languages": [], 
     "services": [
       [
         "pizzeria"
+      ], 
+      [
+        "refrigerators"
       ], 
       [
         "double-sun-bed"
@@ -58253,6 +57360,9 @@
       ], 
       [
         "celiac-cooking"
+      ], 
+      [
+        "dance-parties"
       ], 
       [
         "sandwich-shop"
@@ -58273,7 +57383,10 @@
         "hammocks"
       ], 
       [
-        "alcohol-tester"
+        "board-games"
+      ], 
+      [
+        "helmet-deposit"
       ], 
       [
         "credit-cards-accepted"
@@ -58292,6 +57405,9 @@
       ], 
       [
         "themed-dinner"
+      ], 
+      [
+        "karaoke"
       ], 
       [
         "meat-barbecue-events"
@@ -58342,10 +57458,19 @@
         "nursery"
       ], 
       [
+        "evening-entertainment"
+      ], 
+      [
         "massages"
       ], 
       [
         "bicycles"
+      ], 
+      [
+        "trampoline"
+      ], 
+      [
+        "footvolley"
       ], 
       [
         "green-area"
@@ -58355,6 +57480,9 @@
       ], 
       [
         "wi-fi"
+      ], 
+      [
+        "internet"
       ], 
       [
         "dj-set"
@@ -58375,7 +57503,19 @@
         "live-concerts"
       ], 
       [
+        "gym"
+      ], 
+      [
+        "parking"
+      ], 
+      [
         "baby-sitter"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "fitness-area"
       ], 
       [
         "beach-soccer"
@@ -58384,10 +57524,19 @@
         "entertainment"
       ], 
       [
+        "music"
+      ], 
+      [
         "ping-pong"
       ], 
       [
+        "petanque"
+      ], 
+      [
         "children-entertainment"
+      ], 
+      [
+        "table-football"
       ], 
       [
         "beach-volley"
@@ -58400,14 +57549,6334 @@
       ]
     ], 
     "address": "Riviera Adriatica, Estate 2014", 
-    "description_it": "Benvenuti nel mondo di BagniAlMare.com.\r\nQuesto \u00e8 un esempio di vetrina ideale di uno stabilimento balneare. \r\nPer gestire e personalizzare la vetrina privata del vostro bagno baster\u00e0 registrare il vostro account in pochi click. \r\nCrea il tuo spazio su BagniAlMare.com!", 
-    "mail": "marco.benvenuto1@gmail.com", 
+    "description_it": "Benvenuti nel mondo di BagniAlMare.com.\r\nQuesto \u00e8 un esempio di vetrina ideale di uno stabilimento balneare. \r\nPer gestire e personalizzare la vetrina privata del tuo bagno baster\u00e0 registrare il tuo account in pochi click a partire dall'Area Gestori.\r\nCrea subito il tuo spazio su BagniAlMare.com!", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "test", 
     "neighbourhood": [
       "villamarina"
     ], 
-    "name": "Bagno Welcome!"
+    "name": "Bagno Welcome"
+  }
+},
+{
+  "pk": 13828, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "description": "", 
+    "point": "POINT (12.7335512611853563 43.9686824509075933)", 
+    "number": "68-75", 
+    "description_en": "", 
+    "site": "http://www.laplayacattolica.com/", 
+    "languages": [], 
+    "services": [], 
+    "address": "Via Carducci 36", 
+    "description_it": "", 
+    "mail": "", 
+    "accepts_booking": true, 
+    "slug": "la-playa-beach-village", 
+    "neighbourhood": [
+      "cattolica"
+    ], 
+    "name": "La Playa Beach Village"
+  }
+},
+{
+  "pk": 13829, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "description": " ", 
+    "point": "POINT (12.7374650817813180 43.9673343711004776)", 
+    "number": "54-64", 
+    "description_en": " ", 
+    "site": "http://www.idelfinibeachvillage.com/", 
+    "languages": [], 
+    "services": [], 
+    "address": "Via Fiume", 
+    "description_it": "", 
+    "mail": "", 
+    "accepts_booking": true, 
+    "slug": "i-delfini-beach-village", 
+    "neighbourhood": [
+      "cattolica"
+    ], 
+    "name": "I Delfini Beach Village"
+  }
+},
+{
+  "pk": 13830, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "description": " ", 
+    "point": "POINT (12.7274016123321125 43.9704817450355563)", 
+    "number": "105", 
+    "description_en": " ", 
+    "site": "http://www.altamareabeachvillage.it/", 
+    "languages": [], 
+    "services": [], 
+    "address": "Viale Turismo", 
+    "description_it": "", 
+    "mail": "", 
+    "accepts_booking": true, 
+    "slug": "altamarea-beach-village", 
+    "neighbourhood": [
+      "cattolica"
+    ], 
+    "name": "Altamarea Beach Village"
+  }
+},
+{
+  "pk": 1, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "name": "Welcome mail", 
+    "slug": "welcome-mail"
+  }
+},
+{
+  "pk": 2, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "name": "4hm", 
+    "slug": "4hm"
+  }
+},
+{
+  "pk": 1, 
+  "model": "newsletters.newslettertemplate", 
+  "fields": {
+    "path": "newsletters/template_staff.html", 
+    "name": "Standard Template", 
+    "slug": "standard-template"
+  }
+},
+{
+  "pk": 2, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "slug": "prova-invio-newsletter", 
+    "name": "Prova invio newsletter", 
+    "text": "<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href=\"http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa\" target=\"_blank\">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align=\"center\"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href=\"http://bagnialmare.com/it/accounts/signup\">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href=\"http://bagnialmare.com/it/bagni/villamarina/test/\">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n", 
+    "sent_to": "nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com", 
+    "template": [
+      "standard-template"
+    ], 
+    "target": [
+      "4hm"
+    ], 
+    "sent_count": 4, 
+    "sent_on": "12:15:10.686", 
+    "subject": "Dobbiamo inventarci un subject significativo"
+  }
+},
+{
+  "pk": 1, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8fc9a687e60d4315b9c431fc753571a1", 
+    "email": "info@bagno70.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 2, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2792ee3d91a446fc9f7e0230d5f75fc1", 
+    "email": "bagno-azzurro@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 3, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b90d56c67bfc4a498b754cc22d2ac507", 
+    "email": "jmcbar@tiscali.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 4, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8d94ab46689d41599e945cfb49836ebd", 
+    "email": "cmorgav@tin.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 5, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c2289f28038943319fb3b3a817294e3e", 
+    "email": "info@spiaggia129.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 6, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "efa51b934fd342cf861bd6b5bfd373e8", 
+    "email": "contatti@bagnoristoro.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 7, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2371c568438b434ca2192cc7c4bec1db", 
+    "email": "tavernamolino@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 8, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "46672bd865434285a10448ceaea5ae2c", 
+    "email": "bagniparadise122@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 9, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9dc9a0ccf7cd4557bc9cdb4344a0a972", 
+    "email": "info@laspiaggiadelledonne.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 10, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d3be0eae3b6445ee9d2ebb5527f0dd87", 
+    "email": "info@bagno90.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 11, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6c944bc4a5f145edadf1d96adecb9649", 
+    "email": "info@marinagrandediviserba.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 12, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "65318242070a4b598f448118ad08f0f4", 
+    "email": "informazioni@vincenzo-nives.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 13, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "abb4e30e911149e882707c10d22d2525", 
+    "email": "spiaggia23riccione@email.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 14, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ee5ed9ee8662493fbb12156ff378368e", 
+    "email": "info@bagnocesare66.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 15, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "504eaa5958aa4a7e88c813960965c555", 
+    "email": "toto@toto-beach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 16, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e7fc20d4a92f40ed9aaf2e7bcd218055", 
+    "email": "info@lidocenter.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 17, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4f61ab18448942d1969a136bf29148f6", 
+    "email": "info@marysolbagno57.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 18, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9b02cbec08254c88bfd9392d9211e41a", 
+    "email": "bagnoaurora@tiscalinet.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 19, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "01fd55714f6744e793bb27ee3c8ebb21", 
+    "email": "ali_popescu@yahoo.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 20, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2773dd26022b4770834e29c2062cfc2a", 
+    "email": "bagno.silvano123@email.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 21, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a13434f4aa3646d4aff76cd7dbd55010", 
+    "email": "bagnoettore@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 22, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "308f1d1324d94386b6f0021128486f56", 
+    "email": "info@prestigeventi.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 23, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "35f00c6a9e764feeb6d06cdfcbd7912f", 
+    "email": "bagno131@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 24, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f5960afdccbb4b418a6d67096f805c88", 
+    "email": "diegosurf23@msn.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 25, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cea12c0d924c4ca490154a22bda84ae9", 
+    "email": "info@marinabay.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 26, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "71cc501274e3479daed88cf12b1cdf12", 
+    "email": "info@bagnopomposa.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 27, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0026a831c9124cf0b91ba7f9ab467f5a", 
+    "email": "info@bagnosayonara.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 28, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7154593d22cf49809fbd35800160cfe8", 
+    "email": "elioparma@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 29, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7a44d114dbcf4385a500af923861bebf", 
+    "email": "info@spiaggia80.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 30, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3f8438f371414d14b3fa5ba427ef4c58", 
+    "email": "info@nariz.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 31, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4e60b85de5434254b673fa6915229243", 
+    "email": "info@lidosangiuliano.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 32, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d23736c88a42460ca1cb005154b57f71", 
+    "email": "bagnopassatore@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 33, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a05cdd829fdf41ae9fd0ebb868fb439a", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 34, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a7480a766d7345429707aa9cfc852543", 
+    "email": "lucianidavide@tiscali.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 35, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "74393b2bd541458fbaca4a72fef35aff", 
+    "email": "info@hookipa.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 36, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6d13a006d8d64293b7a6ec779081c3e4", 
+    "email": "info@singita.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 37, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6d8bd0f181cc4f44bce0f0c81b3e5706", 
+    "email": "info@bagnograziella.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 38, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "af87c509b6f3453c9a69b85f3251e1de", 
+    "email": "info@bagnoildavid.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 39, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6bdc6acfcd94472aae806e8bda2ac488", 
+    "email": "bagnomarte@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 40, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "317deb6d5a604acaa2a87023810918de", 
+    "email": "info@bagnomexico.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 41, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e6a47a55935a446fab81046bf9a63361", 
+    "email": "info@riccione27.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 42, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9bb2e80b51d5481abf441395026425d0", 
+    "email": "spiaggialepalme@leardinigroup.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 43, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "835c5c260e554af9b203cc1ae395588d", 
+    "email": "info@bbkbeach.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 44, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d946a5639ae54778be086c5cf614f00d", 
+    "email": "info@bagnogiovanni.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 45, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "90eb6113fe71477ca8ba48d7ff48440d", 
+    "email": "info@spiaggia53.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 46, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dd16a2c0f86b4f34a2b8efc175a22632", 
+    "email": "lasvegas49@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 47, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1a7d6c6797eb4b31867e72176059ac84", 
+    "email": "info@bagnoroma.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 48, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f41a22caf1f34abf83efb9fc33fc8a6d", 
+    "email": "info@kuta.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 49, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ed1eb88770e745d2b60257886241df57", 
+    "email": "bagnocarlo65@jumpy.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 50, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f024da7f25ee4cab8cee7047fedbe923", 
+    "email": "playatamarindo@playatamarindo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 51, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a2f95628a0e349ac898ed998dcb9db38", 
+    "email": "bagno.azzurra@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 52, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a748d429a5064ec59168012423857f0c", 
+    "email": "bagnoluca@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 53, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "66df50bce1d946aea60c998154f8b8f1", 
+    "email": "teocommercio@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 54, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "05a1da74c8b644ff88fe9fac9cbbf17b", 
+    "email": "aguidolin@email.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 55, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "448f6e9210f648728b99edc3c0dffe23", 
+    "email": "praiabrasil@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 56, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6ad31e9038d24a9b8672794b5d7da3a3", 
+    "email": "info@bagnomassimo-viserbella.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 57, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2b20c512d2774a6ebb6cb8f85c424b69", 
+    "email": "fetsabfar@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 58, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "79af9af40c5a49938eb3803f3090dbdb", 
+    "email": "filobagno22@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 59, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ccce15ba983944869a57ae3eda648e07", 
+    "email": "info@bagnoaragosta.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 60, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4feae0bbecff4179aa12fb222b635c79", 
+    "email": "bagnobussola@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 61, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b748be830c8c4ea684c9c0cdfb020305", 
+    "email": "astorcarli@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 62, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f939ba254480436aa2a9671c40b91262", 
+    "email": "bagnoristorante68@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 63, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ce6db8113c2d4363b753d34b7ac15c2f", 
+    "email": "info@bagnopineta.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 64, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0dd2bedc67de46e7a98bc597acc35986", 
+    "email": "info@tremoschettieri.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 65, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2f4b2b17e191416d8f7c2ff407780424", 
+    "email": "info@bagnomorris.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 66, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "03a2ed1cd8fd4910a36c447332d1092f", 
+    "email": "info@bagnoaloha.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 67, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dc0ec7efbb9b4edaa6f55b5a7c46a3bb", 
+    "email": "silvia@spiaggia59riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 68, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "71c91b58b61b444aaab87c5d7f6abe39", 
+    "email": "info@beachvillagericcione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 69, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3a9fd9bc22f3497981f230ae932ba7aa", 
+    "email": "info@bagnoclasse.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 70, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "51f647c579ae400c861ef1577d7170eb", 
+    "email": "posta@bagnoambasciata.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 71, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3d854e9571974450803801f6f1c827f8", 
+    "email": "titti66@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 72, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "481940c8a6d2435785648a2628ca50c5", 
+    "email": "p.ponente102@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 73, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1411519616d84d8bb1aa72b13ee3c770", 
+    "email": "umberto64@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 74, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1be56dd1f24b4b269265c209550defaa", 
+    "email": "marcobagnari@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 75, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2d78943f0f7543878b9ace3856403c08", 
+    "email": "bagnomercurio@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 76, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "25e0014cbdcd41979ea0a9bbc7a918af", 
+    "email": "katia.luciani@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 77, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "640c8fded41f425b896c0b6dff82bac2", 
+    "email": "info@basilico4748.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 78, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a2e1fdd31be945e2a9896f6e52ce1be2", 
+    "email": "alezona3@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 79, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "efcf7fec1aca4ccf9660c31cc166b5ec", 
+    "email": "info@bagnogiada.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 80, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0c4c297f04454bd589ec5e225391369d", 
+    "email": "bagnobelvedere@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 81, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5a0814db60c647d3b21c030226abd6fd", 
+    "email": "danielabugli@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 82, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f4598a5aaded42949536cd2bd83fc901", 
+    "email": "claudio@151riccione.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 83, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c34fe77275f2478ba0bbad1d02a5b816", 
+    "email": "info@gallantibeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 84, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f32b2303668e42e6b6dcfc0e5d06530e", 
+    "email": "info@marinamitu.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 85, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7992746ea223413ebf737a42a11f3510", 
+    "email": "info@bagnoclaudia49.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 86, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d177ce12bd654265bb2b76923d97fd91", 
+    "email": "info@maebabeach.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 87, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "222d0306082f4e7a9b92045b08ca7cc4", 
+    "email": "info@bagnomiamibeach.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 88, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cd2e86aca9e846e7aa07c979da8b2b82", 
+    "email": "info@cesenaticocampingvillage.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 89, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4d3ab660927e4e04afc559b4d0053dfe", 
+    "email": "derisbeach@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 90, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0c8247a956e145a6b14e4e8db77301b0", 
+    "email": "cristian.giovini@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 91, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "672a355d882a4b2d831c7945d4e5be63", 
+    "email": "info@sirenetta-paradiso.net", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 92, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "310710aec15c430892ae662c26e4d86d", 
+    "email": "info@spiaggia29e30riccione.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 93, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ee12b4c80d3f4b6dbafb2133b475a2f4", 
+    "email": "bagnoisa@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 94, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b4e4519461e943189cff053297608476", 
+    "email": "jeffyele@hotmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 95, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a367c4d1ae4f49ebb082fc5eee2c9268", 
+    "email": "info@bagnotitanus.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 96, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3da542e3d1514818be720dbdcab08612", 
+    "email": "info@bagnoenrico75.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 97, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ce6f6d4bb7e249cfbbc41641f4079f5b", 
+    "email": "info@41mastrobeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 98, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "19913bc0bc7c4a05ac6bfc940b337938", 
+    "email": "pinguino.volano@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 99, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "523e1f96719842b5b8aad8cd639d2345", 
+    "email": "bagno_mulazzani@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 100, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3655f20fdcd94cc7aff0db8e6eb0aa17", 
+    "email": "info@spiaggia76.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 101, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9571dd4254454604b851412a149e8d61", 
+    "email": "m312009@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 102, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f4daf6fa4e70419781c7213246e63ac1", 
+    "email": "mosquito-coast@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 103, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "07451a72fdf54952b0359c5b4d35383d", 
+    "email": "info@bahiantigua20.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 104, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b877ee41d19a43a6bda4691715b5fe7d", 
+    "email": "bagnoarlecchino@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 105, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "76f794264ab74895a55112f01c513eae", 
+    "email": "info@bagnoluciano.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 106, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c53fdc64c8bf47debbea64637d09e0e9", 
+    "email": "info@spiaggia91riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 107, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2bbc2f5e620f4735896617c8647fb517", 
+    "email": "info@bagno125rimini.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 108, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c248641b844248019192ca3f78def0ff", 
+    "email": "info@bagnosollevante.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 109, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4739b9b015bc4d71824d44016625f125", 
+    "email": "info@chaletdelmare.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 110, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d6afebd869144beb84b64ef359faa24b", 
+    "email": "info@bagnoveneziacesenatico.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 111, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4062f82b9e0e4b6b938fcb74e56f5921", 
+    "email": "dave.mazza@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 112, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b9960955afd240f4894e53465b8935bd", 
+    "email": "acapulco.posa@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 113, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3d407192639f4c859e5e295c86da90ca", 
+    "email": "betti_roberto@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 114, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9174e999b0be4cb4a048f4b81016ad3c", 
+    "email": "clarissabizzi@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 115, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "48d152819e184f58845057101fe9f85c", 
+    "email": "tarroni.barbara@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 116, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9d700a67e4d24efeb5b66bd5db22e2db", 
+    "email": "info@overbeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 117, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "eca716a0ce1340f2a1eb7751791bf133", 
+    "email": "info@beach33.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 118, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8699033bd76f48ec87748f59b8efcfdf", 
+    "email": "info@spiaggia127.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 119, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6c8786f2473545b4ba9678bc8d978af8", 
+    "email": "bagnolevante@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 120, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a715ede799d348e880c4753e1e1be9d8", 
+    "email": "costaverdehotel@costaverdehotel.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 121, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9d3645b9a7b04c35a9c0c99a58a53785", 
+    "email": "info@bagnoelio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 122, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4d48058ba070457b905e549172072033", 
+    "email": "alberto@alohabeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 123, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ea1bd267d0624a259f227f0a19bf53f6", 
+    "email": "info@bagnocris.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 124, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c52c15691ee6406ca3272abca20eeabe", 
+    "email": "info@pinetabeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 125, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ad28134b8bce4710acd25f1bc4775e71", 
+    "email": "ladybeach@live.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 126, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a11dc5c8081d4a6a94caa8fda09cf0f2", 
+    "email": "bagno.tiziano@teletu.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 127, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cae9151b51dc44888be4390a5567110d", 
+    "email": "info@laspiaggiadelcuore.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 128, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0e2dfd748a5b4411b51dbb264ba46620", 
+    "email": "info@molotrezero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 129, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e50c5be257fc4593bdb5536fca0c01f4", 
+    "email": "gino.farinelli@tiscali.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 130, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "19f7430ef6e8475f8aa6c5a16f62f543", 
+    "email": "direzione@hakunamatataplus.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 131, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a9455b51d38c4a149470378180af21a6", 
+    "email": "gabristella1958@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 132, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5f635e87a1ce4c4ca2f85a1d0c3b9ee6", 
+    "email": "glmontebelli@tiscali.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 133, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fd2539cd2c6f41608fd3c7bf4d3c5778", 
+    "email": "info@loretta99.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 134, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "37c4dfa5246d43eb98bc3875ed4474e6", 
+    "email": "info@bagnolidotalismano.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 135, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "540cca04fce4459c98ae21b2be450668", 
+    "email": "conchiglia08@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 136, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "aa63aa5fefde442dbfc6e7fc5bbe006b", 
+    "email": "gianni.cinelife@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 137, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "69d7c95e2adb42df88ac2176f394aa24", 
+    "email": "info@bagnifabio84riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 138, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8916a00ee4f9460ebf7b6d52c62aaf62", 
+    "email": "carlosapori@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 139, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cada319a1e624f569c414b071c3adbcd", 
+    "email": "info@papayabeachvillage.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 140, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "903e3d9399f3459a958ea599c928f252", 
+    "email": "simocayman@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 141, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "16c139dd29164dd4b1ae62c53589462f", 
+    "email": "info@bagno50.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 142, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "aad1e0f27739409196f257e4e186138e", 
+    "email": "info@spiaggia38riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 143, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d786f6c8d64f4766a5137ded99c64d73", 
+    "email": "waikikibeach16@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 144, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6831539ef7484cd88d86dc4331969a00", 
+    "email": "davide.biz@hotmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 145, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2c06fa26895741538615ccf6230ae9ca", 
+    "email": "info@bellarivalido89.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 146, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fea02a00b1a5429483909e93286275fd", 
+    "email": "info@bagnicristianriccione.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 147, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6e1b2c26861c4942978441fa693bbd74", 
+    "email": "ladyenric@yahoo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 148, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dfdce7c2bc904eea8bebc267f38b1053", 
+    "email": "alfredo@bagni100.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 149, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0ea814509b1c45bcbd900dbb57430bf1", 
+    "email": "vela12estensi@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 150, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3e87d77edc5d4e21a6c731106337bbc6", 
+    "email": "info@bagnileo58riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 151, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "de151bc316b84d0f90fcbcf3920ff7d8", 
+    "email": "bagnoestense@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 152, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7e030c6b6c7241dbb187421bb4d7ab81", 
+    "email": "info@bagnofaustina.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 153, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "36a6eb583d95450aa7a9feea08f5179e", 
+    "email": "bagnorenata@bagnorenata.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 154, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ffc6e3401e7c48b093e11ff30e46620b", 
+    "email": "lubro1990@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 155, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d2ada23da6254ab3b5d4f6c7f046b88d", 
+    "email": "aiasravenna@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 156, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3b560059da0645a680af70e672cb0149", 
+    "email": "info@bagninovella.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 157, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "17a2a541b7c84365a401c7c09347ad35", 
+    "email": "info@lucaedea.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 158, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3df983ce98ec4385955ea1a6c03f56c6", 
+    "email": "info@spiaggia63.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 159, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3deb8b9c6d5047d79d8f299724f94da9", 
+    "email": "info@bagnomerida.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 160, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "82e78f366f1c48cdaae856fa28adce23", 
+    "email": "livregg@tin.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 161, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "77c9cc38a5914dec9b9d6804fa095c9a", 
+    "email": "info@bagnomiami.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 162, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c7bea5ed9f7d4914833b5813caa8d080", 
+    "email": "info@bagnoitalia.eu", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 163, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e3753f9729da4d09a659871268b1cb3a", 
+    "email": "silvano@bagno96silvano.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 164, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "04bacca55de64ca7bb9c10ccfedf75a4", 
+    "email": "info@bagnogranchio.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 165, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a8c0cd70dab64ca8bc91b484cff6d448", 
+    "email": "spiaggia32riccione@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 166, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6e05cb478d294c8ba1e7639b7eedd9d4", 
+    "email": "info@bagnomara.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 167, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "648beb99ddfa4b7c8b301111dc9c67f6", 
+    "email": "mauro.sap@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 168, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ba68467a82034b73b0592e362a4c702b", 
+    "email": "info@vistamaresuite.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 169, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bc8e6738f9234991a0887b5517ada5d3", 
+    "email": "info@bagnohawaii.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 170, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9016e09f847647a0b6c2f01069a3703f", 
+    "email": "daniele.patrick@aliceposta.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 171, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "44c91b19de3c45e18855d00f795c8798", 
+    "email": "bagnocapri@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 172, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c98afad97d2b4e9191bf6a8df89102d4", 
+    "email": "bagnonautilus@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 173, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "21f644c3d09f45648d1ed5a0eb937d8b", 
+    "email": "topstory@gesturist.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 174, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "52b0da3ac2f34630927ad4eff8a320b0", 
+    "email": "info@hbritannia.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 175, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d04910df36694469a56e9230787c076e", 
+    "email": "nerimirco@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 176, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d93c9e4140d0459a83274acf324c26c6", 
+    "email": "antonio.bezzi@tin.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 177, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "37be292362eb4ddd9ef7295e1e63f36b", 
+    "email": "info@bagnoperla81.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 178, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2d2fa3e179fb47b7807d46dc5e83a29f", 
+    "email": "info@bagnoparadiso.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 179, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7fb0ce8f538a49d18474f3e758286068", 
+    "email": "info@bagnoluna.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 180, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7d2398acd0fb4b0b9654af7e604ec7c0", 
+    "email": "rickydezordo@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 181, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8f8ea1de626f406a8bbcabfc43011ba9", 
+    "email": "mava@bagnibologna.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 182, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f938115a4192427981a8f1e42ff80951", 
+    "email": "info@bagnotequila.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 183, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "76c8876c110d451499aef6e5c59bb580", 
+    "email": "ipauo@yahoo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 184, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "79d84f78ee1249e0b72f8f08d3171b6d", 
+    "email": "spinabeach40@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 185, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "681ac387604c4dc4a8e50cc4aff2226f", 
+    "email": "info@bagnoprey.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 186, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4d85cbc1d0ae4e488a82b64678806510", 
+    "email": "info@beach75riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 187, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b498227a09b7432d9f75d8446dd26507", 
+    "email": "hennaut@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 188, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3e422c3a409f44a49ceeae2224604493", 
+    "email": "massimo@bagno91rimini.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 189, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "291d117c056c46399477d4db52e0db78", 
+    "email": "info@bagnovirna.info", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 190, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7b7508d9893b408bb99c1884c9fbc467", 
+    "email": "simontemaurizio@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 191, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "025e288a1fee419b95dadcac765d8127", 
+    "email": "dunaorsi@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 192, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c547953401c94ca69c40bd97bed082c0", 
+    "email": "v.montironi@yahoo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 193, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "511e5bce27064c7ca02cd481620e4d2b", 
+    "email": "havanabeach@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 194, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c7f5372ade26448185c84623720a8a16", 
+    "email": "info@charliebeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 195, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d6383885c13e48e78fd998235913f0a6", 
+    "email": "bagnolido@email.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 196, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bd0517e4b8d64cad84a3d3e991329bfd", 
+    "email": "info@bocabarranca.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 197, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b00bada8dd0442808eb1685da262e74f", 
+    "email": "info@ristorantelido.net", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 198, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6433d29486e241489397a086f9c1275f", 
+    "email": "progettoulisse82@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 199, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "867585e77e154bc8a575de64d1ab279b", 
+    "email": "maurizio@spiaggia51riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 200, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "54f944b503884ac4aa0802e56d746194", 
+    "email": "fandangobeach@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 201, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "971c0b3c36f3480b979c3d61455ba059", 
+    "email": "bagno.giorgio@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 202, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d4b497f6cc4e498395a3ec65810a93f6", 
+    "email": "info@lidodellesirenericcione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 203, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6a985f1005904985aa2772af13c50625", 
+    "email": "info@bagno81rimini.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 204, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f383925b34514a0395bd169f9718469a", 
+    "email": "info@kamokebeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 205, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1526750411274028b437e26bad2bc887", 
+    "email": "info@marisol74.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 206, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "922c1c91fb39480f93cdb3c713495190", 
+    "email": "info.bagnoclaudio@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 207, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c4663d32dd11446fbe7b1ab475cf04d2", 
+    "email": "valececca@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 208, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ff2bd793a2be4ff28b5f1f90bda731cd", 
+    "email": "fabbrimarco.mf@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 209, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4587992834e24910ba015ce4b96614b7", 
+    "email": "spinabeach48@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 210, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "679b2b97674647bc8dcfa624c1d8290c", 
+    "email": "bagnoschiuma1983@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 211, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "49d5805a9c994b38a484ed1278bc4266", 
+    "email": "info@peterpan36.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 212, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4c483df73b5d4bdb88373c9ec7742599", 
+    "email": "bagnozara@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 213, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "26ba25a08cb846d88e3897625b191f1f", 
+    "email": "andrew-power@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 214, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "44d620d689164c219d09ac16c5f7b960", 
+    "email": "spiaggia136@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 215, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a2b2bc7d24384a0b8d4f0b30455d6c0e", 
+    "email": "info@paradisoristorante.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 216, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7c932a0700a74f7bb384a491b0fd584d", 
+    "email": "info@hroyal.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 217, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9c9a8d9c8c804d1cbfea845db89aaf4c", 
+    "email": "info@sorayahotel.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 218, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "005923f1999742f3b55638e313945d9b", 
+    "email": "info@ristoranteduestelle.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 219, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "615a451fbdb84f4a81461526e8f40a06", 
+    "email": "info@playadelsolriccione.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 220, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "35b705f8a53f47fa997210cc19133746", 
+    "email": "bagni92@riccionespiaggia.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 221, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "08adbfea5ac74bf1a54036664190435a", 
+    "email": "maury.zanny@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 222, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8862c6dcb909410b828f1fcdf9a3eab8", 
+    "email": "bagnoveneto@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 223, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ffd5f21645034b3f946e8962f9322713", 
+    "email": "lellaruffato@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 224, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3dcc1ef20e724fc296189682e3989d7e", 
+    "email": "info@bagnobianconero.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 225, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1f1524685bfd4831ae56ac83e1421131", 
+    "email": "info@bagnorudy.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 226, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fc953e920db04a4eace5edf5a6452d56", 
+    "email": "ultimaspiaggia39@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 227, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e7d6f2bc02b442b7ad359e583563bcae", 
+    "email": "info@chiccobeach54.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 228, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b6c06cc8e3e54843aadef82360c69570", 
+    "email": "info@marepineta.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 229, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dae6a9daf962402dbd432e0b33a16532", 
+    "email": "info@bagnooro.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 230, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ed2cbfec370546dfa371e2e221423b36", 
+    "email": "bagnovillaggiodelsole@yahoo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 231, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3db631c604a649f59321ee6fc06d8c93", 
+    "email": "info@riccionespiaggia73.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 232, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "eaa499409cef4789a550b969e322a430", 
+    "email": "mauriziobarnabe@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 233, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4dee243e37984246870697c2c71d283e", 
+    "email": "stefania.piraccini@fastwebnet.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 234, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5920a491b0e34e3e8b571fa18cd2b2dd", 
+    "email": "info@bagnocorallo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 235, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f541c276c9644581a6538e31ef625f77", 
+    "email": "beach007@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 236, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3b8de7fbc27649caa27de53d949abd9e", 
+    "email": "info@aquarama.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 237, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0e581471b6e5439f96b8b9e8367fdef4", 
+    "email": "info@bagnoristoranteuropa.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 238, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9a1576b951584d4580ada897a8617db3", 
+    "email": "info@bagno26rimini.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 239, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7ecb701a34a24c52ba11f224bbb344ec", 
+    "email": "orietta.guaraldi@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 240, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c1ffd2f00f7e4daea91370fad6f93a6d", 
+    "email": "bagnocayoloco@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 241, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cc38414869964c56a8e1bd7c67ed49c7", 
+    "email": "info@bagnosolaris.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 242, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "612809a6d62f4b60850a2a6cf0df01dd", 
+    "email": "info@bagnotaormina.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 243, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "affc6e0b122f458296087553096d024a", 
+    "email": "bagnomiocapitano@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 244, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d37ad8cb477249e688acb958c3b64c31", 
+    "email": "info@bagnimirella120.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 245, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2581a969572f42fea5d6fd57e430afc5", 
+    "email": "sarabonazza@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 246, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "58f943fa060b430cae4fa511e2101a23", 
+    "email": "info@bagniricci.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 247, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "19b15445cbc34270ad42c1c735bff1f0", 
+    "email": "info@maremotobeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 248, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bc1e49119f234d72960c3749ea0ec5a9", 
+    "email": "bagnovela@inwind.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 249, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "85eecf6ac98f4767bcad5de42de77449", 
+    "email": "info@bagnocapriccio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 250, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ab354a1bcf3141b2b2005ea562bdbd60", 
+    "email": "cimavale@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 251, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7b816cbf85714f009f303539f24d1b33", 
+    "email": "info@bufalobeach.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 252, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "89a961fa68174b65930d81632da78a28", 
+    "email": "info@korasol.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 253, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5dc231195ff3449cbae289635f3d9dbf", 
+    "email": "info@bagnoperla.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 254, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3a24e80abc354a4e9cd7d22952fea3f5", 
+    "email": "info@spiaggiadelbenessere.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 255, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bdb476b600494af5a4f6d6bfb758d3d9", 
+    "email": "info@adrianocampingvillage.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 256, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ffa58af561224dba8da1296a2a661681", 
+    "email": "andrea@spiaggia77.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 257, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e4a68bad4d4a4cda83112cd19630a56d", 
+    "email": "info@bagnoalbatros.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 258, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "224e2de561a54933aef3aa6ecddaf984", 
+    "email": "info@village60.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 259, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "946758a71c2445e29dc32b29792b53b9", 
+    "email": "salesvalue@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 260, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7eefc2de893a493c860eb9d25d7ed6b7", 
+    "email": "ivocomandini@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 261, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3c6e37aa183b491db361c8b520c3e71a", 
+    "email": "info@papirriki.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 262, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "372c6da82d6b4c60b876f8be6a30aa7f", 
+    "email": "bagniluciano119@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 263, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7db2be9ecaf14aa28769e8ba5ec3c02e", 
+    "email": "info@spiaggia61.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 264, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "654a770f46e64454b5b65bf39e5a39cc", 
+    "email": "info@spiaggia54riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 265, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "252f3dbbcb0d4f2ca874c3a0bbb21efd", 
+    "email": "info@bagnoconti.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 266, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "47255958832d4301ae4e0657aaff37d4", 
+    "email": "casadei_elisa@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 267, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9d7b0187eb77465b8d95240b6175c957", 
+    "email": "bagnotahiti@yahoo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 268, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ea110424da7248afacbc5c5d43a069d8", 
+    "email": "mattvince@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 269, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0b5587ac3e1d4205b60a85a7bfd51cb2", 
+    "email": "glipe74@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 270, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "33d056480e454367a354e310eef0dff9", 
+    "email": "info@icamini.org", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 271, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "87be004057644cc3ab707645317e9e8c", 
+    "email": "cocoaspiaggia23@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 272, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ec01a85030084e93a17f7e63cabb15df", 
+    "email": "info@bagnogogo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 273, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ff9cb3aef2114457b42272693e684116", 
+    "email": "info@bagnofloridabeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 274, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "09eee188979b479d9290b3597be6f382", 
+    "email": "info@spiaggia90.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 275, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fb5e544a79ac40109e0c1a919848320e", 
+    "email": "info@hotelsanfrancisco.info", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 276, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "735c36ca9f7749f48a36387f9157345e", 
+    "email": "stella_89@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 277, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "90f5d720c6d74a67a84c5c4eb6e6e277", 
+    "email": "info@bagnimario65.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 278, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6a87d8ee8a5b4385a14795db7faf89ff", 
+    "email": "gas21viserba@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 279, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e84707e222264d9295648aba41f263e9", 
+    "email": "info@campingmarepineta.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 280, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f931e9a4a0d14c648a42ab58183b9e66", 
+    "email": "bagnokiribati@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 281, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a8dd952ccf914c4da5562b30eef8c2ad", 
+    "email": "info@riviera69.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 282, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c74c4bebdb2a415988fd8492c0cf3607", 
+    "email": "francescomichelotti@email.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 283, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8706b52c790e4192b440495a70f17846", 
+    "email": "kitsune_e@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 284, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ff142686fdec49cb9793b9edcc8fc2eb", 
+    "email": "bagnokiaorana@yahoo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 285, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f8069410908b43d9bd3232397e56ac48", 
+    "email": "info@bronsonproduzioni.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 286, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4348ff2d28f244e59b5ec954e0596c5a", 
+    "email": "info@hotsand.info", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 287, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c17ded783bf140b2a5e22b3f8ae7995e", 
+    "email": "info@spiaggia4riccione.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 288, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "027a30f435a74cecbf7c006307498212", 
+    "email": "aledalia@hotmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 289, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7b01221a8e7641269b8131aa612f6519", 
+    "email": "bagno_jolly@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 290, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5e8b10e7d9544a01bb33d6f9ffc4131d", 
+    "email": "bagnowave@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 291, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e9caadc70f9b42688091ada1f3a7619c", 
+    "email": "info@grandhotelrimini.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 292, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "16b4f26270c24c368cb96459ad9aec92", 
+    "email": "bagnogiulia85@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 293, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0252e418af7a4c20a9a16e9dfc9762d5", 
+    "email": "amerigo59@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 294, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b992a25aece8440f86321ee9144cf955", 
+    "email": "bagnomeridiana@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 295, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dc01a8d6b3b348de96bb5bd80fa07016", 
+    "email": "info@bagnocarlo17.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 296, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b862ec42ce7747a7aedd4599bce9f895", 
+    "email": "info@tipidaspiaggia.net", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 297, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d65225ba1e2b455c86c1084476564aa6", 
+    "email": "ruvido@ruvido.org", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 298, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8150bacf57014c4b826769fec49c86ca", 
+    "email": "bagno6al7@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 299, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7c3e6d515c7f49d2a732b8b24c478756", 
+    "email": "info@bagnovenere.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 300, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d1b4f4f978394532a6daac30130f1ec6", 
+    "email": "hedonism@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 301, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4cabecf7db6645bab96cf18c1a3f6d59", 
+    "email": "info@spiaggia68riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 302, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6e7c983814604556a035c7f583eec6fc", 
+    "email": "barbaratassi@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 303, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ade1452a2c46412784f2873fa1151850", 
+    "email": "info@bagnofederico.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 304, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0cc64f7de4a74c98a77009248b3c4e7f", 
+    "email": "info@bagnoadria.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 305, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "addfa919b46f4fc5bad2c1c21cca9c60", 
+    "email": "hotelasiago@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 306, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "852d5f777dbb462a8758cbf8c1f58745", 
+    "email": "info@bagnoegisto38.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 307, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7ebd5c2287dd485bad6bf97342582509", 
+    "email": "bagno.piera@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 308, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d84b568994654331a59096be68715bb1", 
+    "email": "info@bagnoobelix.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 309, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "513a5d87aa8a4468a3fb63e514c1ba14", 
+    "email": "bagno57pinguino@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 310, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "31e5b7d2621e4a74bfc9909b482d095b", 
+    "email": "info@bigmamabeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 311, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ff576a034e1e4e52b9a81e905b7010a2", 
+    "email": "greta.pericoli@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 312, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "256a3ac3d50f4b30bbbfc0f6253103d4", 
+    "email": "hawaybeach@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 313, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "72a51ef477d445068a7be63ed74cf07d", 
+    "email": "info@spiaggia87.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 314, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a0599a547acb45bcb0ed07f36b8cceb7", 
+    "email": "bagnofabio28arimini@inwind.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 315, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fa05a43cb6ea42d0a5461d6069167b54", 
+    "email": "info@spiaggia56riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 316, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ad9b164b45e04d8eb53af8d61b0ac884", 
+    "email": "valerianomartini@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 317, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "76f98be22c55460aa7cb9f1f802873c2", 
+    "email": "bagno.vanni@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 318, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2d131f825dcc407d916c87db30f1036a", 
+    "email": "info@bagni106paola.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 319, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "974cfe69a80b44cfaa087573abd4feee", 
+    "email": "bagniroberto@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 320, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b172a67395c9472cb34dbeb969b44cf7", 
+    "email": "bagnogabbiano@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 321, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "104918a4c55745e380fbb07a5f41cef8", 
+    "email": "info@bagno-romeo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 322, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d2e0307f86c34664ab15fe253cd84b54", 
+    "email": "parkhotelravenna@geturhotels.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 323, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ad5d94d4276644f497c6748012d76bf1", 
+    "email": "bagno.matteo@virgilio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 324, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dd18a45f6f5f405094c4008cb60e63c7", 
+    "email": "roberto.albertarelli@fastwebnet.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 325, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "023034393d2a40c2baa58601694cd384", 
+    "email": "astra_13@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 326, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6182228b805a4135b03f8c04c989875a", 
+    "email": "info@bagnomarfisa.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 327, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5f72d8835c09437fbff2095fab3aa954", 
+    "email": "info@zona60.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 328, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f67cbaec5c3c4fd693060861ee05f23c", 
+    "email": "bagno64riccione@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 329, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f4df32c7945a43249263ce8da7ba7dba", 
+    "email": "info@bagnosport70.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 330, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5353116ccd3b40fb8a1c96e82155dd23", 
+    "email": "kontiki_beach@hotmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 331, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fa53eb44d92e46dfbae0302468b88e3f", 
+    "email": "alls1965@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 332, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cfa5047e91bd4070a404be8dc19de20b", 
+    "email": "lucalbatros@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 333, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b8c9d265f2994bb78cce32b0f4b57ab1", 
+    "email": "info@bagnomeridiano.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 334, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "26e34e3bbb774263b3260085be7342f5", 
+    "email": "bagno4venti@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 335, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b46b8d3eadcc4cc187b0dc4c81c19967", 
+    "email": "info@bagnodorian.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 336, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ec9adc1361f641da8cd27fb5dc55c2c4", 
+    "email": "info@bagnorivaverde.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 337, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b03c95353c1140e5a07930127df55236", 
+    "email": "info@riccionespiaggia28.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 338, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b3f13eee426441f188a11c8053959f4d", 
+    "email": "bagnoondablu@live.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 339, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "aea3d2f2313e442a94ff33683016e6c3", 
+    "email": "info@battarraesettimio.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 340, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e204db7ce63e445cb3bad9b3f740278d", 
+    "email": "info@bagniniriviera.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 341, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e5d6a34890c2469aab5176c32c135148", 
+    "email": "info@bagno-oasi.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 342, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "049a7e08bce0459ebdce82d6700350ee", 
+    "email": "info@birimbaobeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 343, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "68ba5bcf71da4815a483243dbe44552d", 
+    "email": "info@bagnosabbiadoro.net", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 344, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5951cbe11a0046bd8e2e062b47f087c7", 
+    "email": "info@salsedine367.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 345, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ca057bc0eba245c8bbab8f189f0e83f8", 
+    "email": "andrea.spiaggia104@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 346, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "699b1f09e2c14aa99f36f98ca94a995c", 
+    "email": "andrews@7lidiweb.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 347, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "10c34e6127814fc698a0edf76577bda8", 
+    "email": "bagni82riccione@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 348, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "900cd245b9fc4feab9b5e1df1bbf2ca4", 
+    "email": "capohoornbeach@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 349, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8179ec1508814db3a1207b97200bb5b1", 
+    "email": "info@turquoisebeachclub.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 350, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9f5f6097fdfd4b979769a5d0b309bb15", 
+    "email": "alegio.manu@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 351, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d320bae34f15443b97f08ce3e69b9cc6", 
+    "email": "nevemare@bagnonettuno20.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 352, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f03c74127a3444cb95ea0f4a064703d5", 
+    "email": "info@faro34.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 353, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "407a9d39a4cd48ad984cf336eb41aadb", 
+    "email": "marbellotti@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 354, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8ee2ae20e0c04b0eaa883963b300b216", 
+    "email": "bagnodiana@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 355, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e989d8d343c24117b1014c8b3d822273", 
+    "email": "info@tikoa.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 356, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c3f0cd8e9c8340bf80495088310962bd", 
+    "email": "info@bagnoristorante_ippopotamus.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 357, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "85e631fc15874c6c86bce13db17f0c8a", 
+    "email": "info@bagnocorallobeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 358, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0fba52ef4fcb4e259375dafb230d19bc", 
+    "email": "info@bagnopippo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 359, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "09f37e3ada9147c3aecd1380372b1a3c", 
+    "email": "info@centrovacanzericcione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 360, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0e5bd1850e4a4f64a65f05aab2eed1f5", 
+    "email": "info@bagnosaintropez.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 361, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "369885e381d24884844ca2e653c130c5", 
+    "email": "bagnoelioeroby@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 362, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "57004b888b4d4700b1b5e058c724c157", 
+    "email": "info@lailaiisland.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 363, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "663604ab706348cc8eea4717da8ff002", 
+    "email": "info@bagnoangelineri.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 364, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "60c311ca89bc47249b611f0bd305f325", 
+    "email": "infomalaika@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 365, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "35d7cc5e6e594d05884d56afb9551d8b", 
+    "email": "ritabilly@live.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 366, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "73599cebdbcb4f6293772cda5ed6d70c", 
+    "email": "riccardo75@email.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 367, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2e75d54e52aa45808de1eeb31c679edc", 
+    "email": "info@bagnolucciola.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 368, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ed34a01c6478440bbd81b3565038e540", 
+    "email": "info@bagnovally.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 369, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "83eb8a5110b2412a92565bc38d85e32c", 
+    "email": "info@bagnoschiuma.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 370, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "71f2c24d8df24dbd8fe328bbbd7ceb07", 
+    "email": "cinti.giuseppe2008@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 371, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8592fd2fe88c421aa00ab98b85efb780", 
+    "email": "azzurrospiaggia@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 372, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "399e06718f3a4d459b6a78a463dc0faa", 
+    "email": "info@bagniazzura.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 373, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d6a3487694464a9f84674548de58f55c", 
+    "email": "info@hotelcrocedelsud.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 374, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3fb3aebded854f56b80f4e74415d2606", 
+    "email": "info@bagnocelli.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 375, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1059345899074035b0436dad610abb39", 
+    "email": "eziogallina@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 376, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "800cf935ccdb494e986631c8c406ec25", 
+    "email": "luminob.luminob@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 377, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4a9854db855f45ba9f9bc569a2954690", 
+    "email": "raffellielena@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 378, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "85aab9c7d9e84fa4bed94bda67a03ab2", 
+    "email": "info@103riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 379, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c8013cc239084893b3482904a2f34558", 
+    "email": "info@sottomarino54.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 380, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "09eef06ca4cf4db2bd8c95944af11ec4", 
+    "email": "info@bagnomundial.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 381, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dc17fd1ff21445de840c50cc2c66c0cd", 
+    "email": "info@bagno55rimini.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 382, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "58a226de776e4deba17c85f4d2771c6f", 
+    "email": "riccardo.ventaglio@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 383, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a53563fee08c42ed8446d0983d9219a1", 
+    "email": "maui1969@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 384, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "87635a315f66401d85003b6ff5c63f86", 
+    "email": "info@tortugabeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 385, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "40078968032b4928b06445cd8a87b414", 
+    "email": "info@fafin.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 386, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "932381bdee2b4193a2d1fe1580530913", 
+    "email": "bagno.soleluna@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 387, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e64aaf219fea46259747d29c5f6260f1", 
+    "email": "info@bagnomontecarlo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 388, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bdabd24003ac494cac8ff9beb3c091d9", 
+    "email": "info@bagnokursaal.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 389, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "aa11143f89fc4a9d859a9ef7953c84b0", 
+    "email": "info@spiaggia86riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 390, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "565af52c0cd745a2a764c8a31ec9b195", 
+    "email": "bagnovascello@gmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 391, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "40a5f070e7184f8da38b6d1f585d6f04", 
+    "email": "info@bagnocostaazzurra.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 392, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "88032326bdbb41a4b2f3dd3b5cd21209", 
+    "email": "info@bagnolucia.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 393, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0043190206414a07a28e7512a62f00e4", 
+    "email": "info@baiadimaui.eu", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 394, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0d32b194d00b4738a789a705caa2a3d1", 
+    "email": "info@bagnosarah.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 395, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2bcc564f35c248809a1bf894abd1f422", 
+    "email": "info@bagno27.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 396, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e4052ed9edd54ddd9434239b45799c29", 
+    "email": "info@spiaggia69riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 397, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e51959e705d14dacbf0dc09dc7463994", 
+    "email": "hope852@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 398, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e05dfcb5b2794678a0aabf2bca8235c4", 
+    "email": "cristinagaroia@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 399, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1a5f48097e734ef5b513d97c93c4b6d0", 
+    "email": "cimamarcello@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 400, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "385e077d8cab44f29b781bb8146257cf", 
+    "email": "bagnoquarantuno-info@deltawt.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 401, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "697fa458234d4d84ad049fba9d39c649", 
+    "email": "giorgio@villaceleste.eu", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 402, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "20142dbd4da14dd5ba26fe49878d4c8f", 
+    "email": "info@bagnielio.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 403, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f7da50fff98d42ebacb5368a12f632a1", 
+    "email": "info@malua.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 404, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "773ba15f2024473eb8cd2a2b29dfe03a", 
+    "email": "info@bagnogalattico.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 405, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ca9c526ab9ce4ca3bb87547aaa08f7ff", 
+    "email": "bagno.marisa@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 406, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e3b276d03c1848008617d5cec89768fd", 
+    "email": "patra1960@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 407, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "390de344f36d43cca7e5723c9d4c06db", 
+    "email": "info@hoteliberty.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 408, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7f5f73dda12a4a6bbb46ce76f4f4441d", 
+    "email": "info@bagnotrinidad.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 409, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "33efcd650d8e4c6c9dc23c9003c856bd", 
+    "email": "bagniprimo@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 410, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "82b114fd3b57426c9d5cdc6bb2de3555", 
+    "email": "bottogian@gmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 411, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "01b2cd07294b48a49b5c60a549cf96f1", 
+    "email": "info@rougehotel.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 412, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "eaacc0f11d2b4748b848e2c96169f585", 
+    "email": "bagno.alsole@tin.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 413, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c0ed6cad34144c3e815f3bbe5fa18eaf", 
+    "email": "bagnodera@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 414, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "76e60d5b42a443b59b28c9c5ecbcfefd", 
+    "email": "info@bagnimauro78riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 415, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b1314a74cd8b427197869f48435f063d", 
+    "email": "angelobandini@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 416, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7397efe611e6488ab30e53ff0c756e46", 
+    "email": "bagnosole@infinito.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 417, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c3e603c6711b4082bbb95c445a8dc949", 
+    "email": "bagno.chery@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 418, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "596c0fdec1194f19b9d7aaa6792a07bb", 
+    "email": "info@bagnosusanna.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 419, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2ad1a7481f634680bbf166630948c12f", 
+    "email": "bagnolescogliere@pec.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 420, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f7535207f09e4f24bf350370078b089d", 
+    "email": "info@bagnocalipso.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 421, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8a6c7bdb9d7140e3bca93064f7ede7be", 
+    "email": "info@riccionebeach72.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 422, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c8c6aff72a934a32bd8c3efa46c70653", 
+    "email": "bagnolongbeach@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 423, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "329c29402bc24812b212eeae4d7b8b11", 
+    "email": "bagno.ulisse@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 424, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9dfba2c5d8324e0588f6b6e38f1b19f2", 
+    "email": "info@bananabeach.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 425, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2e551720d7c14f0b87e807c61aec6066", 
+    "email": "info@bagniniriccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 426, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1a1417580f304f1fbb904ccb36a03cb0", 
+    "email": "info@palacelidohotel.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 427, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f72b9851b78641b19a1d5f46e3a81c9f", 
+    "email": "bagnopelo@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 428, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "155a2643b8d040c18f65832a9fa9d14b", 
+    "email": "info@bagnirina99.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 429, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c8c0bf54a94448e5985723643e20c1c2", 
+    "email": "andrea35beach@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 430, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7b723cdb6f454f2b9b0a58930352a043", 
+    "email": "info@termepuntamarina.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 431, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b51f9750b97641959a1a89a23b64fbaa", 
+    "email": "info@bagnoromana.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 432, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d8217745a60240c6a9b068ab185d463f", 
+    "email": "stefa50@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 433, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1d77e8fbd8964b588d621c0d53788790", 
+    "email": "info@bagnoesperia.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 434, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6b0a83818c5d47d7884376944bae317f", 
+    "email": "info@marinamore.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 435, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1e990d5ac64e4dd4a4dd761fb03b54e8", 
+    "email": "info@bagnowaimea.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 436, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "83c63c17705648429d7b87c738305e1e", 
+    "email": "info@bagno71riccione.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 437, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e43819a35fe449b993a61d1a16bf3b12", 
+    "email": "baroni.g@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 438, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "90637e6b9c6f4559867c995568a68cf4", 
+    "email": "info@dolcelucia.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 439, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b6d0a7f25fc6466c8bbb147f1a409e5f", 
+    "email": "faridah@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 440, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ee53d1fc91874c8fb1e78e8dfbad89f2", 
+    "email": "info@bagnoselene.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 441, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "51f3d64dc0874eb2b2f90092457827a7", 
+    "email": "bastonilorenzo@tiscali.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 442, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e139b2292816405ca37d1593d079aabb", 
+    "email": "clararavaglia@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 443, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "de60b3ee7d1a4c90b24b40d66e3caee4", 
+    "email": "bagno94@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 444, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b7ba243a352048a989469e9f3db5462f", 
+    "email": "agenzia.mario@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 445, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "388f681a93024e72be68c32b11adb526", 
+    "email": "barby.dani@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 446, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f7f22a494c2b4848a7787d8d26b2ce4a", 
+    "email": "info@bagnoarcobaleno.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 447, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "eac37f598dd2423f8e887df4f630c394", 
+    "email": "bagniluca12riccione@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 448, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "609882646a6143848946ae7e7032dfca", 
+    "email": "info@mojitobeach.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 449, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "da7e2902e7184983831284b0876c49dc", 
+    "email": "bagno.serena@fastwebnet.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 450, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "24fecd4335b14625b4612d31679072f0", 
+    "email": "info@bagno23.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 451, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "67c6e5fc669f464f8cc8def2308b0b12", 
+    "email": "enea2081@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 452, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1da09b3fca4d4665be762b4f3509d32a", 
+    "email": "mazzini333@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 453, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "cd073e1160504a5a8f35778262c51308", 
+    "email": "matisse.beachvillage@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 454, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e90a195b42ed466d803ff9583a8a2e24", 
+    "email": "mare@spiaggiadonnarosa.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 455, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "883e68554ac64b4595381e4515647a50", 
+    "email": "parasassi23@hotmail.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 456, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2fbfabc330a148dda6f48e16a1aeaa36", 
+    "email": "info@bagnopaolo.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 457, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d91ca43ee68e4cd29401b2fb609d3f5c", 
+    "email": "bagnorosa63@tiscali.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 458, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f35d64d070904176b2378b5e7e2eaea4", 
+    "email": "bagno.pinguino@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 459, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1e087ab0833d476aa4241ff73475608c", 
+    "email": "davbax105@libero.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 460, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7cd2a7e29fb24b83bdecb94d1d4ed026", 
+    "email": "info@bagnoromea.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 461, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f7189ec5efdf4aeb8a308f8b9774775b", 
+    "email": "jamaicabeach64@alice.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 462, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9ba9e08f0fd84a59b79e3e0056dae1f1", 
+    "email": "marcolaus@rimini.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 463, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7a47b59bcc12445a93d913a937c0c01f", 
+    "email": "info@bagnomarconi.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 464, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a5c6c738a4da477d91b9a5c83794b18b", 
+    "email": "info@bagnokelly.com", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 465, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b0190c34263f4d59895174a38030c7da", 
+    "email": "bagnoflamingo63@hotmail.it", 
+    "target": [
+      "welcome-mail"
+    ]
+  }
+},
+{
+  "pk": 466, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8f32c7c4c74647eaacda40d0fb7e4d4b", 
+    "email": "parruc@gmail.com", 
+    "target": [
+      "4hm"
+    ]
+  }
+},
+{
+  "pk": 467, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4e71cbfdd5e246f39ea515168bc8ade6", 
+    "email": "marco.bartolini@gmail.com", 
+    "target": [
+      "4hm"
+    ]
+  }
+},
+{
+  "pk": 468, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6b99f193b85f4a6981cfaa4f18ab4332", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "target": [
+      "4hm"
+    ]
+  }
+},
+{
+  "pk": 469, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b141044ffebf4c5bb779914e96bb9501", 
+    "email": "nicola.valentini@gmail.com", 
+    "target": [
+      "4hm"
+    ]
+  }
+},
+{
+  "pk": 3, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "angelo-2"
+    ], 
+    "email": "Pierre-Yves.farina@wanadoo.fr", 
+    "created": "2014-05-31T06:53:31.967Z"
+  }
+},
+{
+  "pk": 4, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "honolulu"
+    ], 
+    "email": "babigino72@gmail.com", 
+    "created": "2014-05-31T09:42:39.787Z"
+  }
+},
+{
+  "pk": 5, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "prestige"
+    ], 
+    "email": "giovanni_canino@alice.it", 
+    "created": "2014-06-04T18:49:18.377Z"
+  }
+},
+{
+  "pk": 10, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 10, 
+    "key": "135f9a421135900e0eeeba46230acb3f79a8fedbd488472e503925bd7e7de9fe", 
+    "sent": "2014-05-11T15:09:35.190Z", 
+    "created": "2014-05-11T15:09:34.396Z"
+  }
+},
+{
+  "pk": 12, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 12, 
+    "key": "b159cf088fdcab1e1f45428faa77ad7bc35329ada108a2660c8c62da514f9647", 
+    "sent": "2014-06-03T07:53:56.540Z", 
+    "created": "2014-06-03T07:53:55.430Z"
+  }
+},
+{
+  "pk": 13, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 13, 
+    "key": "9cb509557f102963bfb811067098bc59bd47d979495d8b6ad2d60fe4530c1d98", 
+    "sent": "2014-06-03T12:51:24.706Z", 
+    "created": "2014-06-03T12:51:24.621Z"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||051bb55b5941388f49e97d289512bddb", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-conchiglia-lido/bagno-conchiglia-lido_1.jpg\", \"size\": [429, 762]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||06094897e27c8253a57b97a0b3a07063", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/9e/19/9e19935d7fa1f35c80c7fd5a224b82ac.png\", \"size\": [228, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||07057f84c038d2018de6ceae6075bc54", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/78/ad/78ad3352eb8fd8e528dbc41186b82818.png\", \"size\": [228, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||8c36bb722c3208dd9deec4c3e64fed29", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/bagno-dallara.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||8cdf7928f0e82fc0c1e501425ca1eab0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/test/benvenuti-nellestate-2014.jpg\", \"size\": [800, 600]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||917e18c6e71db66bc6b364a385175d8b", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/48/0d/480dff71dc29b781afa362b4adce70fa.png\", \"size\": [228, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||c57fc645a5926f9e17001291d8c7ab06", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/3d/b2/3db26ff49fad5f7f7e3422491a1e4807.png\", \"size\": [171, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||db219bdc2ddd22bc1f5406c218bfddb0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/66/11/66117ff1dd3dd65b5632adf1885e81e6.png\", \"size\": [72, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||e567b1d69ef006ec7306d3079e01d7f5", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/entrata-bagno.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||03a12c43bd4c47d1513aa6cfba2e694b", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"917e18c6e71db66bc6b364a385175d8b\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||051bb55b5941388f49e97d289512bddb", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"db219bdc2ddd22bc1f5406c218bfddb0\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||8c36bb722c3208dd9deec4c3e64fed29", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"07057f84c038d2018de6ceae6075bc54\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||8cdf7928f0e82fc0c1e501425ca1eab0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"c57fc645a5926f9e17001291d8c7ab06\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||e567b1d69ef006ec7306d3079e01d7f5", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"06094897e27c8253a57b97a0b3a07063\"]"
+  }
+},
+{
+  "pk": 1, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.025Z", 
+    "app_name": "bagni", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 2, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.455Z", 
+    "app_name": "bagni", 
+    "migration": "0002_auto__add_unique_service_slug__chg_field_bagno_tel__chg_field_bagno_po"
+  }
+},
+{
+  "pk": 3, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.530Z", 
+    "app_name": "bagni", 
+    "migration": "0003_auto__chg_field_bagno_name"
+  }
+},
+{
+  "pk": 4, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.548Z", 
+    "app_name": "bagni", 
+    "migration": "0004_auto__add_image"
+  }
+},
+{
+  "pk": 5, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.579Z", 
+    "app_name": "bagni", 
+    "migration": "0005_auto__add_field_bagno_description__add_field_bagno_cell__add_field_bag"
+  }
+},
+{
+  "pk": 6, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.620Z", 
+    "app_name": "bagni", 
+    "migration": "0006_auto__chg_field_bagno_fax"
+  }
+},
+{
+  "pk": 7, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.713Z", 
+    "app_name": "bagni", 
+    "migration": "0007_auto__chg_field_bagno_fax__chg_field_bagno_tel__chg_field_bagno_cell"
+  }
+},
+{
+  "pk": 8, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.820Z", 
+    "app_name": "bagni", 
+    "migration": "0008_auto__chg_field_bagno_fax__chg_field_bagno_tel__chg_field_bagno_cell"
+  }
+},
+{
+  "pk": 9, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.855Z", 
+    "app_name": "bagni", 
+    "migration": "0009_auto__chg_field_bagno_description"
+  }
+},
+{
+  "pk": 10, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.891Z", 
+    "app_name": "bagni", 
+    "migration": "0010_auto__chg_field_bagno_name"
+  }
+},
+{
+  "pk": 11, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-20T13:32:09.992Z", 
+    "app_name": "bagni", 
+    "migration": "0011_auto__add_field_bagno_name_en__add_field_bagno_name_it__add_field_bagn"
+  }
+},
+{
+  "pk": 12, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-21T10:43:21.962Z", 
+    "app_name": "bagni", 
+    "migration": "0012_auto__add_district__add_municipality__del_field_bagno_city_it__del_fie"
+  }
+},
+{
+  "pk": 13, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-21T10:43:22.100Z", 
+    "app_name": "bagni", 
+    "migration": "0013_auto__add_language"
+  }
+},
+{
+  "pk": 14, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-21T12:24:27.940Z", 
+    "app_name": "bagni", 
+    "migration": "0014_auto__add_field_language_name_en__add_field_language_name_it__add_fiel"
+  }
+},
+{
+  "pk": 15, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-28T13:18:48.384Z", 
+    "app_name": "bagni", 
+    "migration": "0015_auto__add_servicecategory__del_field_service_category"
+  }
+},
+{
+  "pk": 16, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-28T13:18:48.411Z", 
+    "app_name": "bagni", 
+    "migration": "0016_auto__add_field_service_category"
+  }
+},
+{
+  "pk": 17, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-11-28T13:18:48.529Z", 
+    "app_name": "bagni", 
+    "migration": "0017_auto__add_field_service_description__add_field_service_description_en_"
+  }
+},
+{
+  "pk": 18, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2013-12-14T14:22:15.451Z", 
+    "app_name": "bagni", 
+    "migration": "0018_auto__add_field_service_image__add_field_servicecategory_image"
+  }
+},
+{
+  "pk": 19, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.421Z", 
+    "app_name": "socialaccount", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 20, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.456Z", 
+    "app_name": "twitter", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 21, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.514Z", 
+    "app_name": "twitter", 
+    "migration": "0002_snowflake"
+  }
+},
+{
+  "pk": 22, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.643Z", 
+    "app_name": "socialaccount", 
+    "migration": "0002_genericmodels"
+  }
+},
+{
+  "pk": 23, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.665Z", 
+    "app_name": "twitter", 
+    "migration": "0003_tosocialaccount"
+  }
+},
+{
+  "pk": 24, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.712Z", 
+    "app_name": "openid", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 25, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.734Z", 
+    "app_name": "openid", 
+    "migration": "0002_tosocialaccount"
+  }
+},
+{
+  "pk": 26, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.784Z", 
+    "app_name": "facebook", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 27, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.845Z", 
+    "app_name": "facebook", 
+    "migration": "0002_auto__add_facebookaccesstoken__add_unique_facebookaccesstoken_app_acco"
+  }
+},
+{
+  "pk": 28, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.875Z", 
+    "app_name": "facebook", 
+    "migration": "0003_tosocialaccount"
+  }
+},
+{
+  "pk": 29, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.901Z", 
+    "app_name": "socialaccount", 
+    "migration": "0003_auto__add_unique_socialaccount_uid_provider"
+  }
+},
+{
+  "pk": 30, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.933Z", 
+    "app_name": "socialaccount", 
+    "migration": "0004_add_sites"
+  }
+},
+{
+  "pk": 31, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.949Z", 
+    "app_name": "socialaccount", 
+    "migration": "0005_set_sites"
+  }
+},
+{
+  "pk": 32, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.967Z", 
+    "app_name": "socialaccount", 
+    "migration": "0006_auto__del_field_socialapp_site"
+  }
+},
+{
+  "pk": 33, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:39.988Z", 
+    "app_name": "socialaccount", 
+    "migration": "0007_auto__add_field_socialapp_client_id"
+  }
+},
+{
+  "pk": 34, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.005Z", 
+    "app_name": "socialaccount", 
+    "migration": "0008_client_id"
+  }
+},
+{
+  "pk": 35, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.022Z", 
+    "app_name": "socialaccount", 
+    "migration": "0009_auto__add_field_socialtoken_expires_at"
+  }
+},
+{
+  "pk": 36, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.067Z", 
+    "app_name": "socialaccount", 
+    "migration": "0010_auto__chg_field_socialtoken_token"
+  }
+},
+{
+  "pk": 37, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.112Z", 
+    "app_name": "socialaccount", 
+    "migration": "0011_auto__chg_field_socialtoken_token"
+  }
+},
+{
+  "pk": 38, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.177Z", 
+    "app_name": "facebook", 
+    "migration": "0004_auto__del_facebookapp__del_facebookaccesstoken__del_unique_facebookacc"
+  }
+},
+{
+  "pk": 39, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.211Z", 
+    "app_name": "openid", 
+    "migration": "0003_auto__del_openidaccount"
+  }
+},
+{
+  "pk": 40, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-29T23:13:40.242Z", 
+    "app_name": "twitter", 
+    "migration": "0004_auto__del_twitteraccount__del_twitterapp"
+  }
+},
+{
+  "pk": 41, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-01-31T00:13:58.268Z", 
+    "app_name": "authauth", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 42, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-02-21T19:55:56.166Z", 
+    "app_name": "bagni", 
+    "migration": "0019_auto__add_telephone"
+  }
+},
+{
+  "pk": 43, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-02-21T19:55:56.290Z", 
+    "app_name": "bagni", 
+    "migration": "0020_migrate_phone_data"
+  }
+},
+{
+  "pk": 44, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-02-21T19:55:56.315Z", 
+    "app_name": "bagni", 
+    "migration": "0021_auto__del_field_bagno_tel__del_field_bagno_cell__del_field_bagno_fax__"
+  }
+},
+{
+  "pk": 46, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-03-21T00:48:28.473Z", 
+    "app_name": "bagni", 
+    "migration": "0022_auto__add_neighbourhood__add_field_bagno_neighbourhood"
+  }
+},
+{
+  "pk": 47, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-03-21T01:46:27.315Z", 
+    "app_name": "bagni", 
+    "migration": "0023_auto__add_field_neighbourhood_name_en__add_field_neighbourhood_name_it"
+  }
+},
+{
+  "pk": 48, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-03-21T01:46:40.304Z", 
+    "app_name": "bagni", 
+    "migration": "0024_auto__add_field_bagno_municipality"
+  }
+},
+{
+  "pk": 49, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-03-21T01:46:44.018Z", 
+    "app_name": "bagni", 
+    "migration": "0025_auto__del_field_bagno_municipality__chg_field_bagno_neighbourhood"
+  }
+},
+{
+  "pk": 50, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-03-30T16:58:44.463Z", 
+    "app_name": "authauth", 
+    "migration": "0002_auto__add_field_manager_tos"
+  }
+},
+{
+  "pk": 51, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-04T00:55:24.506Z", 
+    "app_name": "bagni", 
+    "migration": "0026_auto__add_field_servicecategory_order"
+  }
+},
+{
+  "pk": 52, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-08T16:20:34.378Z", 
+    "app_name": "authauth", 
+    "migration": "0003_auto__add_field_manager_name__add_field_manager_surname"
+  }
+},
+{
+  "pk": 53, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-17T13:39:23.044Z", 
+    "app_name": "bagni", 
+    "migration": "0027_auto__chg_field_service_name_it__chg_field_service_name__chg_field_ser"
+  }
+},
+{
+  "pk": 54, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-17T13:39:23.137Z", 
+    "app_name": "bagni", 
+    "migration": "0028_set_real_slug_to_telephone_column"
+  }
+},
+{
+  "pk": 55, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-17T13:39:23.188Z", 
+    "app_name": "bagni", 
+    "migration": "0029_auto__add_unique_telephone_slug"
+  }
+},
+{
+  "pk": 56, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-19T17:25:09.098Z", 
+    "app_name": "bagni", 
+    "migration": "0030_auto__del_field_telephone_name_it__del_field_telephone_name_en__del_fi"
+  }
+},
+{
+  "pk": 57, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-04-25T15:13:13.447Z", 
+    "app_name": "bagni", 
+    "migration": "0031_auto__add_field_service_seo_name__add_field_service_seo_name_en__add_f"
+  }
+},
+{
+  "pk": 58, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-08T13:51:47.417Z", 
+    "app_name": "socialaccount", 
+    "migration": "0012_auto__chg_field_socialtoken_token_secret"
+  }
+},
+{
+  "pk": 60, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-12T13:49:52.465Z", 
+    "app_name": "bagni", 
+    "migration": "0032_telephone_number_names_fix"
+  }
+},
+{
+  "pk": 61, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-15T12:19:20.932Z", 
+    "app_name": "bagni", 
+    "migration": "0033_auto__add_field_bagno_accepts_booking"
+  }
+},
+{
+  "pk": 62, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-19T06:58:04.035Z", 
+    "app_name": "bagni", 
+    "migration": "0034_set_accepts_booking_true"
+  }
+},
+{
+  "pk": 63, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-19T06:58:04.135Z", 
+    "app_name": "bagni", 
+    "migration": "0035_auto__chg_field_bagno_description__chg_field_bagno_description_en__chg"
+  }
+},
+{
+  "pk": 66, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-27T22:11:41.817Z", 
+    "app_name": "newsletters", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 67, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-27T22:11:41.836Z", 
+    "app_name": "newsletters", 
+    "migration": "0002_auto__add_field_newsletter_sent_to__add_field_newsletter_sent_on"
+  }
+},
+{
+  "pk": 68, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-27T22:11:41.896Z", 
+    "app_name": "newsletters", 
+    "migration": "0003_auto__add_newslettersubscription__add_unique_newslettersubscription_em"
+  }
+},
+{
+  "pk": 69, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-27T22:11:41.944Z", 
+    "app_name": "newsletters", 
+    "migration": "0004_auto__add_newsletteruser"
+  }
+},
+{
+  "pk": 70, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-05-27T22:11:42.023Z", 
+    "app_name": "newsletters", 
+    "migration": "0005_auto__del_field_newsletteruser_name__del_field_newsletteruser_slug__ch"
+  }
+},
+{
+  "pk": 71, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-06-05T18:54:24.122Z", 
+    "app_name": "newsletters", 
+    "migration": "0006_auto__add_field_newsletter_sent_count__add_field_newsletter_status"
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "parruc", 
+    "first_name": "Matteo", 
+    "last_name": "Parrucci", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-06-03T07:54:25.312Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
+    "email": "parruc@gmail.com", 
+    "date_joined": "2014-04-27T16:36:54Z"
+  }
+},
+{
+  "pk": 6, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "inge", 
+    "first_name": "Nicola", 
+    "last_name": "Valentini", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-06-04T13:48:44.923Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
+    "email": "nicola.valentini@gmail.com", 
+    "date_joined": "2014-04-27T16:38:16Z"
+  }
+},
+{
+  "pk": 7, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "barto", 
+    "first_name": "Marco", 
+    "last_name": "Bartolini", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-05-12T14:03:31Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
+    "email": "marco.bartolini@gmail.com", 
+    "date_joined": "2014-04-28T12:48:31Z"
+  }
+},
+{
+  "pk": 8, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "benve", 
+    "first_name": "Marco", 
+    "last_name": "Benvenuto", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-06-04T13:48:11.577Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "date_joined": "2014-04-28T12:49:04Z"
+  }
+},
+{
+  "pk": 18, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mbenvenuto", 
+    "first_name": "User", 
+    "last_name": "Tester", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-03T12:51:22.754Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=", 
+    "email": "mbenvenuto@airplus.com", 
+    "date_joined": "2014-06-03T12:51:22.754Z"
+  }
+},
+{
+  "pk": 1, 
+  "model": "sites.site", 
+  "fields": {
+    "domain": "bagnialmare.com", 
+    "name": "bagnialmare.com"
+  }
+},
+{
+  "pk": 10, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "benve"
+    ], 
+    "primary": true, 
+    "email": "marco.benvenuto1@gmail.com"
+  }
+},
+{
+  "pk": 12, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "parruc"
+    ], 
+    "primary": true, 
+    "email": "parruc@gmail.com"
+  }
+},
+{
+  "pk": 13, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "mbenvenuto"
+    ], 
+    "primary": true, 
+    "email": "mbenvenuto@airplus.com"
+  }
+},
+{
+  "pk": 2, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Anita", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "Cervia"
+  }
+},
+{
+  "pk": 3, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "utente", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "detest"
+  }
+},
+{
+  "pk": 4, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Matteo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "Parrucci"
+  }
+},
+{
+  "pk": 5, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Nome", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "Cognome"
+  }
+},
+{
+  "pk": 6, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "buffo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "utente"
+  }
+},
+{
+  "pk": 7, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "buffo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "utente"
+  }
+},
+{
+  "pk": 8, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "buffo", 
+    "privacy": true, 
+    "tos": true, 
+    "user": null, 
+    "surname": "utente"
+  }
+},
+{
+  "pk": 11, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "test"
+      ]
+    ], 
+    "name": "User", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "mbenvenuto"
+    ], 
+    "surname": "Tester"
+  }
+},
+{
+  "pk": 1, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "parruc"
+    ], 
+    "old_email": "parruc@gmail.com"
+  }
+},
+{
+  "pk": 2, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "benve"
+    ], 
+    "old_email": "marco.benvenuto1@gmail.com"
+  }
+},
+{
+  "pk": 3, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "inge"
+    ], 
+    "old_email": "nicola.valentini@gmail.com"
+  }
+},
+{
+  "pk": 4, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "mbenvenuto"
+    ], 
+    "old_email": "mbenvenuto@airplus.com"
   }
 },
 {
@@ -72510,7 +77979,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagni"
+      "bagni-hotel-liberty"
     ], 
     "number": "335.7010179", 
     "name": "mob", 
@@ -74294,18 +79763,6 @@
   }
 },
 {
-  "pk": 3266, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "playa-del-sol-2"
-    ], 
-    "number": "0541.647356", 
-    "name": "tel", 
-    "slug": "telephone-number-828"
-  }
-},
-{
   "pk": 3267, 
   "model": "bagni.telephone", 
   "fields": {
@@ -75897,7 +81354,7 @@
       "test"
     ], 
     "number": "051 0111111", 
-    "name": "win", 
+    "name": "tel", 
     "slug": "win"
   }
 },
@@ -75909,7 +81366,7 @@
       "test"
     ], 
     "number": "051 0222222", 
-    "name": "tel", 
+    "name": "win", 
     "slug": "tel"
   }
 },
@@ -75935,132 +81392,6 @@
     "number": "334 0444444", 
     "name": "mob", 
     "slug": "mob-2"
-  }
-},
-{
-  "pk": 2, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "Anita", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "Cervia"
-  }
-},
-{
-  "pk": 3, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "utente", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "detest"
-  }
-},
-{
-  "pk": 4, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "Matteo", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "Parrucci"
-  }
-},
-{
-  "pk": 5, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "Nome", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "Cognome"
-  }
-},
-{
-  "pk": 6, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "buffo", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "utente"
-  }
-},
-{
-  "pk": 7, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "buffo", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "utente"
-  }
-},
-{
-  "pk": 8, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [], 
-    "name": "buffo", 
-    "privacy": true, 
-    "tos": true, 
-    "user": null, 
-    "surname": "utente"
-  }
-},
-{
-  "pk": 11, 
-  "model": "authauth.manager", 
-  "fields": {
-    "bagni": [
-      [
-        "test"
-      ]
-    ], 
-    "name": "User", 
-    "privacy": true, 
-    "tos": true, 
-    "user": [
-      "mbenvenuto"
-    ], 
-    "surname": "Tester"
-  }
-},
-{
-  "pk": 3, 
-  "model": "userfeedback.userfeedback", 
-  "fields": {
-    "notified": false, 
-    "bagno": [
-      "angelo-2"
-    ], 
-    "email": "Pierre-Yves.farina@wanadoo.fr", 
-    "created": "2014-05-31T06:53:31.967Z"
-  }
-},
-{
-  "pk": 4, 
-  "model": "userfeedback.userfeedback", 
-  "fields": {
-    "notified": false, 
-    "bagno": [
-      "honolulu"
-    ], 
-    "email": "babigino72@gmail.com", 
-    "created": "2014-05-31T09:42:39.787Z"
   }
 }
 ]
