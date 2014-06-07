@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:38+0200\n"
+"POT-Creation-Date: 2014-06-07 11:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,13 +208,13 @@ msgstr "Select the neighbourhood and the name of your beach resort"
 msgid "choose_neighbourhood"
 msgstr ""
 
-#: templates/account/signup.html:25 templates/account/signup.html.py:210
+#: templates/account/signup.html:25 templates/account/signup.html.py:209
 msgid "choose_bagno"
 msgstr ""
 
 #: templates/account/signup.html:26
 msgid "label_accepts_booking"
-msgstr "Interessato a prenotazioni online?"
+msgstr "Interested in online booking?"
 
 #: templates/account/signup.html:27
 msgid "help_email_signup"
@@ -223,15 +223,13 @@ msgstr "BagniAlMare will send messages from users to this email address"
 #: templates/account/signup.html:28
 msgid "help_accepts_booking"
 msgstr ""
-"Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante "
-"di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
-"funzione. In futuro potrai sempre disabilitare questa opzione."
+"Lascia attivata questa opzione se vuoi inserire nella tua scheda un pulsante di prova per monitorare l'interesse dei tuoi utenti a disporre di questa funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:41
+#: templates/account/signup.html:33
 msgid "Where our collaboration starts!"
 msgstr ""
 
-#: templates/account/signup.html:44
+#: templates/account/signup.html:43
 #, python-format
 msgid ""
 "<p>Nice to meet you and a warm welcome from the bagnialmare.com team.</p>\n"
@@ -261,26 +259,16 @@ msgid ""
 "business thanks to bagnialmare.com.</p>"
 msgstr ""
 
-#: templates/account/signup.html:84
+#: templates/account/signup.html:83
 #, python-format
 msgid ""
-"\n"
-"            Se non trovi il tuo bagno o la tua località in questo elenco, <a "
-"href=\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
-"informazioni che vorresti aggiungere\n"
-"            "
+"Se non trovi il tuo bagno o la tua località in questo elenco, <a href="
+"\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
+"informazioni che vorresti aggiungere"
 msgstr ""
-
-#: templates/account/signup.html:148
-msgid ""
-"<p>Thank you for the attention, we invite you to contact us for any "
-"question, suggestion or feedback to help our partnership grow and develop "
-"better and better. We count on that. We are committed from now on to keep "
-"you informed of all the possible news to follow.\n"
-"    Best wishes for a good start and have a beautiful summer!</p>\n"
-"\n"
-"    <p>The bagnialmare.com team</p>"
-msgstr ""
+"If you are not able to find your beach resort or your location, please <a href="
+"\"%(contact_url)s\" title=\"contact us\">contact us</a> and send us "
+"the main information"
 
 #: templates/account/verification_sent.html:5
 #: templates/account/verification_sent.html:8

@@ -80,9 +80,7 @@
             </div>
             <p>
             {% url 'contact-form' as contact_url %}
-            {% blocktrans  %}
-            Se non trovi il tuo bagno o la tua località in questo elenco, <a href="{{ contact_url }}" title="contattaci">contattaci</a> e inviaci le informazioni che vorresti aggiungere
-            {% endblocktrans %}
+            {% blocktrans  %}Se non trovi il tuo bagno o la tua località in questo elenco, <a href="{{ contact_url }}" title="contattaci">contattaci</a> e inviaci le informazioni che vorresti aggiungere{% endblocktrans %}
             </p>
         </div>
         <div class="form-group">

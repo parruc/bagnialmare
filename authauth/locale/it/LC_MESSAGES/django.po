@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:38+0200\n"
+"POT-Creation-Date: 2014-06-07 11:42+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -223,7 +223,7 @@ msgstr "Seleziona la località e il nome del tuo bagno"
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:25 templates/account/signup.html.py:210
+#: templates/account/signup.html:25 templates/account/signup.html.py:209
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
@@ -244,11 +244,11 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/account/signup.html:41
+#: templates/account/signup.html:33
 msgid "Where our collaboration starts!"
 msgstr "La nostra collaborazione inizia da qui!"
 
-#: templates/account/signup.html:44
+#: templates/account/signup.html:43
 #, python-format
 msgid ""
 "<p>Nice to meet you and a warm welcome from the bagnialmare.com team.</p>\n"
@@ -307,33 +307,13 @@ msgstr ""
 "<p>Beh, quando lo ritieni puoi già regalare alla tua struttura un nuovo "
 "raggio di sole grazie a bagnialmare.com.</p>"
 
-#: templates/account/signup.html:84
+#: templates/account/signup.html:83
 #, python-format
 msgid ""
-"\n"
-"            Se non trovi il tuo bagno o la tua località in questo elenco, <a "
-"href=\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
-"informazioni che vorresti aggiungere\n"
-"            "
+"Se non trovi il tuo bagno o la tua località in questo elenco, <a href="
+"\"%(contact_url)s\" title=\"contattaci\">contattaci</a> e inviaci le "
+"informazioni che vorresti aggiungere"
 msgstr ""
-
-#: templates/account/signup.html:148
-msgid ""
-"<p>Thank you for the attention, we invite you to contact us for any "
-"question, suggestion or feedback to help our partnership grow and develop "
-"better and better. We count on that. We are committed from now on to keep "
-"you informed of all the possible news to follow.\n"
-"    Best wishes for a good start and have a beautiful summer!</p>\n"
-"\n"
-"    <p>The bagnialmare.com team</p>"
-msgstr ""
-"<p>Ringraziandoti per l’attenzione, ti invitiamo a contattarci per qualunque domanda, "
-"suggerimento o critica utile affinchè questa collaborazione possa crescere ed "
-"esprimersi al meglio. Ci contiamo. Da parte nostra ci impegniamo sin da ora a "
-"tenerti informato su tutte le possibili novità a seguire.\n"
-"    Tanti auguri di buon inizio e, soprattutto, di una ottima estate!</p>\n"
-"\n"
-"    <p>Il team di bagnialmare.com</p>"
 
 #: templates/account/verification_sent.html:5
 #: templates/account/verification_sent.html:8
@@ -436,6 +416,25 @@ msgstr "Abbiamo inserito il tuo indirizzo mail primario"
 #: templates/account/messages/unverified_primary_email.txt:2
 msgid "Your primary e-mail address must be verified."
 msgstr "Il tuo indirizzo mail deve essere verificato."
+
+#~ msgid ""
+#~ "<p>Thank you for the attention, we invite you to contact us for any "
+#~ "question, suggestion or feedback to help our partnership grow and develop "
+#~ "better and better. We count on that. We are committed from now on to keep "
+#~ "you informed of all the possible news to follow.\n"
+#~ "    Best wishes for a good start and have a beautiful summer!</p>\n"
+#~ "\n"
+#~ "    <p>The bagnialmare.com team</p>"
+#~ msgstr ""
+#~ "<p>Ringraziandoti per l’attenzione, ti invitiamo a contattarci per "
+#~ "qualunque domanda, suggerimento o critica utile affinchè questa "
+#~ "collaborazione possa crescere ed esprimersi al meglio. Ci contiamo. Da "
+#~ "parte nostra ci impegniamo sin da ora a tenerti informato su tutte le "
+#~ "possibili novità a seguire.\n"
+#~ "    Tanti auguri di buon inizio e, soprattutto, di una ottima estate!</"
+#~ "p>\n"
+#~ "\n"
+#~ "    <p>Il team di bagnialmare.com</p>"
 
 #~ msgid "account signup intro"
 #~ msgstr "La nostra collaborazione inizia qui"
