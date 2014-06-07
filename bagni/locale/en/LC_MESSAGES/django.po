@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 18:30+0200\n"
+"POT-Creation-Date: 2014-06-07 11:38+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -385,12 +385,12 @@ msgstr " you can use our"
 msgid "bagno_detail_desc_5"
 msgstr "search page"
 
-#: templates/bagni/bagno_detail.html:233 templates/bagni/homepage.html:97
+#: templates/bagni/bagno_detail.html:218 templates/bagni/homepage.html:97
 #: templates/bagni/homepage.html.py:111 templates/bagni/search.html:367
 msgid "Close"
 msgstr "Close"
 
-#: templates/bagni/bagno_detail.html:260
+#: templates/bagni/bagno_detail.html:245
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
@@ -706,7 +706,13 @@ msgstr "No facility categories"
 msgid "Service categories"
 msgstr "Facility categories"
 
-#: views/search.py:53 views/search.py:60
+#: views/bagni.py:139
+msgid ""
+"We forwarded your message to the beach resort. As soon as possible you'll "
+"receive a feedback to the email address provided."
+msgstr ""
+
+#: views/search.py:54 views/search.py:61
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Cant find place '%s', sorting by relevance"

@@ -136,7 +136,7 @@ class BagnoContacts(ContactView):
     """
     template_name = "bagni/bagno_contacts.html"
     form_class = ContactForm
-    success_message = _("Thanks for contacting us. We will asnwer you as soon as possible.")
+    success_message = _("We forwarded your message to the beach resort. As soon as possible you'll receive a feedback to the email address provided.")
 
     def dispatch(self, request, *args, **kwargs):
         if not "slug" in kwargs:
