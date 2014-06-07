@@ -204,21 +204,35 @@
                    <p>Seleziona i checkbox corrispodenti ai servizi offerti dal tuo stabilimento balneare.</p>
                </div>
             </div>
+            <div class="panel-group" id="features-accordion">
                 {% with form.services|dictsort:"attrs.cat_name" as options %}
                     {% regroup options by attrs.cat_name as groups %}
                     {% for group in groups %}
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h3 class="service-group">{{ group.grouper|capfirst }}</h3>
+                        <div class="row panel panel-info">
+                            <div class="col-xs-12 panel-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" 
+                                       data-parent="#features-accordion" 
+                                       href="#panel-{{ forloop.counter0 }}">
+                                    <h3 class="service-group panel-title">
+                                        {{ group.grouper|capfirst }}
+                                    </h3>
+                                </a>
                             </div>
-                                {% for option in group.list %}
-                                <div class="col-xs-4">
-                                    {{ option }}
+                            <div id="panel-{{ forloop.counter0 }}" 
+                                 class="panel-collapse collapse 
+                                        {% if forloop.first %}in{% else %}out{% endif%}">
+                                 <div class="panel-body">
+                                    {% for option in group.list %}
+                                    <div class="col-xs-4">
+                                        {{ option }}
+                                    </div>
+                                    {% endfor %}
                                 </div>
-                                {% endfor %}
+                            </div>
                         </div>
                     {% endfor %}
                 {% endwith %}
+            </div>
             <hr>
             <button class="btn btn-lg btn-primary" type="submit" >{% trans "Save" %}</button>
         </form>
