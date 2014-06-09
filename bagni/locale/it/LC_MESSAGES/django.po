@@ -310,7 +310,7 @@ msgstr "Modifica il tuo bagno"
 
 #: templates/bagni/bagno_detail.html:14
 msgid "are_you_the_manager"
-msgstr "sei tu il gestore?"
+msgstr "Sei il gestore?"
 
 #: templates/bagni/bagno_detail.html:15
 msgid "image"
