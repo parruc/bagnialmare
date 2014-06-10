@@ -13170,6 +13170,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 10	8	marco.benvenuto1@gmail.com	t	t
 12	5	parruc@gmail.com	t	t
 13	18	mbenvenuto@airplus.com	t	t
+14	19	ndefrancesco@bagno27.it	f	t
 \.
 
 
@@ -13177,7 +13178,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 13, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 14, true);
 
 
 --
@@ -13188,6 +13189,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 10	10	2014-05-11 11:09:34.396264-04	2014-05-11 11:09:35.190328-04	135f9a421135900e0eeeba46230acb3f79a8fedbd488472e503925bd7e7de9fe
 12	12	2014-06-03 03:53:55.430028-04	2014-06-03 03:53:56.540926-04	b159cf088fdcab1e1f45428faa77ad7bc35329ada108a2660c8c62da514f9647
 13	13	2014-06-03 08:51:24.621236-04	2014-06-03 08:51:24.706612-04	9cb509557f102963bfb811067098bc59bd47d979495d8b6ad2d60fe4530c1d98
+14	14	2014-06-09 04:26:31.653478-04	2014-06-09 04:26:31.780114-04	087dad2191748bd86d09a679349bb6c5357e71ae358e268da8cf50e53ed8db20
 \.
 
 
@@ -13195,7 +13197,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 13, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 14, true);
 
 
 --
@@ -13356,11 +13358,12 @@ SELECT pg_catalog.setval('auth_permission_id_seq', 108, true);
 --
 
 COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
-7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-05-12 10:03:31-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
-18	pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=	2014-06-03 08:51:22.754463-04	f	mbenvenuto	User	Tester	mbenvenuto@airplus.com	f	t	2014-06-03 08:51:22.754527-04
-8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-04 09:48:11.577788-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-06-04 09:48:44.923406-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-07 10:06:27.218613-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
+8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-09 05:11:54.824874-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
+18	pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=	2014-06-09 05:13:37.488704-04	f	mbenvenuto	User	Tester	mbenvenuto@airplus.com	f	t	2014-06-03 08:51:22.754527-04
+19	pbkdf2_sha256$12000$gvuKqtYpU576$e4tpwgv432EUJ847ZBQptllrKE/t1eDaeXP83KfU3Gc=	2014-06-09 04:26:29.294945-04	f	ndefrancesco	Nadia	Defrancesco	ndefrancesco@bagno27.it	f	t	2014-06-09 04:26:29.29501-04
+7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-06-09 16:33:28.823381-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 \.
 
 
@@ -13383,7 +13386,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 18, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 19, true);
 
 
 --
@@ -13414,6 +13417,7 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname) FROM stdin;
 7	\N	t	t	buffo	utente
 8	\N	t	t	buffo	utente
 11	18	t	t	User	Tester
+12	19	t	t	Nadia	Defrancesco
 \.
 
 
@@ -13430,14 +13434,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 3, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 4, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 11, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 12, true);
 
 
 --
@@ -13477,6 +13481,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13828	La Playa Beach Village	la-playa-beach-village	68-75	Via Carducci 36		http://www.laplayacattolica.com/	0101000020E61000001976E90794772940BA6D5BC9FDFB4540				38	t
 13829	I Delfini Beach Village	i-delfini-beach-village	54-64	Via Fiume		http://www.idelfinibeachvillage.com/	0101000020E6100000AD62F005957929402E16D89CD1FB4540	 	 		38	t
 13830	Altamarea Beach Village	altamarea-beach-village	105	Viale Turismo		http://www.altamareabeachvillage.it/	0101000020E6100000560CF0FB6D7429407825EEBE38FC4540	 	 		38	t
+13436	Bagno 27	bagno-27	27 sud	Lungomare Tintori - zona Piazza Kennedy		http://www.bagno27.it/	0101000020E6100000E0FD5B43552A2940CFD14FDD01094640	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di bocce www.comitatobagninirimini.it  \r\n	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di bocce www.comitatobagninirimini.it  \r\n		25	t
 13780	Bagno Acquario Da Leo	bagno-acquario-da-leo	47	Via C. Colombo			0101000020E61000004027FDAFC5F028404F0929B3B1124640		\N	\N	37	t
 13094	Bagno Perla	perla	22	Via Spiaggia, 22			0101000020E6100000000000DC9B7E2840DE2EB4A507554640		\N	\N	9	t
 12859	Bagno Miami	bagno-miami	282	III Traversa - arenile demaniale 282			0101000020E6100000402BAA2AA6B42840DEDD6F592A244640		\N	\N	2	t
@@ -13610,7 +13615,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13405	Bagno Paolo	bagno-paolo-2		Via Castrocaro, 1	ipauo@yahoo.it	http://www.bagnopaolo.110mb.com	0101000020E61000008BA548BE12B028409B9141EE22284640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 15<br />\n\twc: 3<br />\n\tombrelloni: 200<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 15<br />\n\twc: 3<br />\n\tombrelloni: 200<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	\N	24	t
 13495	Bagno La Playa	la-playa	85 sud	Lungomare Di Vittorio			0101000020E61000001DC076BE0C352940DD499FB18A064640	<h3>Details</h3>\n\t<p>cabine: 51<br />\n\tombrelloni: 110</p>\n<p>Servizi offerti tv per motomondiale e f1\r\n- feste a tema ogni domenica \r\n- musica in filo-diffusione Area accoglienza animali domestici</p>	<h3>Details</h3>\n\t<p>cabine: 51<br />\n\tombrelloni: 110</p>\n<p>Servizi offerti tv per motomondiale e f1\r\n- feste a tema ogni domenica \r\n- musica in filo-diffusione Area accoglienza animali domestici</p>	\N	26	t
 13473	Bagno Dario	dario	64 sud		umberto64@libero.it	http://www.riminispiaggia64.it	0101000020E6100000E4DA2A6A2B31294080FF9C386F074640	\n<p>Associazione confesercenti - consorzio marina riminese Servizi offerti corso di acquagymn</p>	\n<p>Associazione confesercenti - consorzio marina riminese Servizi offerti corso di acquagymn</p>	\N	25	t
-13436	Bagno 27	bagno-27	27 sud	Lungomare Tintori - zona Piazza Kennedy	info@bagno27.it	http://www.bagno27.it	0101000020E6100000E0FD5B43552A2940CFD14FDD01094640	<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 130</p>\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di bocce www.comitatobagninirimini.it  \n\r\nIl Bagno è stato certificato come ECOACCESSIBILE\r\nSono a disposizione 5 carrozzine adatte agli spostamenti sull’arenile ed idonee a sostenere la persona diversamente abile anche in acqua, così da rendere più agevole e piacevole la vacanza sotto l’ombrellone. Le carrozzine sono utilizzabili anche dai bagni aderenti al Consorzio e dal prossimo anno saranno affiancati da altri specifici ausili, ad iniziare dai lettini prendisole realizzati su precisa indicazione tecnica del sodalizio professionale e dunque modulati allo scopo. Il traguardo da raggiungere nell’estate 2011 è la dotazione di almeno 30 lettini speciali, uno per ogni stabilimento balneare.</p>	<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 130</p>\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di bocce www.comitatobagninirimini.it  \n\r\nIl Bagno è stato certificato come ECOACCESSIBILE\r\nSono a disposizione 5 carrozzine adatte agli spostamenti sull’arenile ed idonee a sostenere la persona diversamente abile anche in acqua, così da rendere più agevole e piacevole la vacanza sotto l’ombrellone. Le carrozzine sono utilizzabili anche dai bagni aderenti al Consorzio e dal prossimo anno saranno affiancati da altri specifici ausili, ad iniziare dai lettini prendisole realizzati su precisa indicazione tecnica del sodalizio professionale e dunque modulati allo scopo. Il traguardo da raggiungere nell’estate 2011 è la dotazione di almeno 30 lettini speciali, uno per ogni stabilimento balneare.</p>	\N	25	t
 13469	Bagno Tipi da Spiaggia	tipi-da-spiaggia	62 sud	Il bagnino ECOLOGICO	info@tipidaspiaggia.net	http://www.tipidaspiaggia.net	0101000020E6100000EB7BDACFCC30294015A353FC84074640	<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 267</p>\n<p>Servizi offerti centro nautico moto d'acqua, banana boat e mosconi windsurf\r\n- corsi di spinning, acquagym ed aerobica\r\n- cassetta di sicurezza - 1 €\r\n- doccia in riva al mare; doccia abbronzante - 2€ \r\n- tessera elettronica scheda ricaricabile fornita ai clienti per pagare ogni genere di servizio a pagamento dello stabilimento (dalla piscina ad un lettino aggiuntivo al noleggio di barche e gommoni).\r\n- docce aromatizzate e sauna Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilità ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>	<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 267</p>\n<p>Servizi offerti centro nautico moto d'acqua, banana boat e mosconi windsurf\r\n- corsi di spinning, acquagym ed aerobica\r\n- cassetta di sicurezza - 1 €\r\n- doccia in riva al mare; doccia abbronzante - 2€ \r\n- tessera elettronica scheda ricaricabile fornita ai clienti per pagare ogni genere di servizio a pagamento dello stabilimento (dalla piscina ad un lettino aggiuntivo al noleggio di barche e gommoni).\r\n- docce aromatizzate e sauna Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilità ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>	\N	25	t
 13485	Bagno Hedonism	hedonism	76 sud		hedonism@libero.it	http://www.hedonism76.it	0101000020E6100000BB140D0863332940FE2955A2EC064640	<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 182</p>\n<p>Servizi offerti pista per tornei biglie\n- sms cupido\r\n- lampione dell'amore (come il ponte degli innamorati) - gli innamorati si promettono amore eterno gettando le chiavi del lucchetto in mare</p>	<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 182</p>\n<p>Servizi offerti pista per tornei biglie\n- sms cupido\r\n- lampione dell'amore (come il ponte degli innamorati) - gli innamorati si promettono amore eterno gettando le chiavi del lucchetto in mare</p>	\N	25	t
 13486	Bagno Guido e Luca	guido-e-luca	78 sud	Lungomare Di Vittorio		http://www.spiaggeoasi.it/scheda.html?id=780&loc=rimini	0101000020E6100000B5735DA2C133294068869EDED6064640	<h3>Details</h3>\n\t<p>cabine: 50</p>\n<p>Servizi offerti corsi di aquagymn e spinning\r\n- tornei delle varie attività</p>	<h3>Details</h3>\n\t<p>cabine: 50</p>\n<p>Servizi offerti corsi di aquagymn e spinning\r\n- tornei delle varie attività</p>	\N	25	t
@@ -15826,8 +15830,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22626	13434	69
 22627	13435	68
 22628	13435	69
-22629	13436	68
-22630	13436	69
 22631	13437	68
 22632	13437	69
 22633	13438	68
@@ -16650,6 +16652,8 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23480	13660	69
 23481	12994	68
 23482	12994	69
+23486	13436	68
+23487	13436	69
 \.
 
 
@@ -16657,7 +16661,7 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 -- Name: bagni_bagno_languages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23485, true);
+SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23487, true);
 
 
 --
@@ -22783,13 +22787,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 86847	13435	2184
 86848	13435	2189
 86849	13435	2254
-86850	13436	2214
-86851	13436	2231
-86852	13436	2180
-86853	13436	2187
-86854	13436	2195
-86855	13436	2184
-86856	13436	2186
 86857	13437	2205
 86858	13437	2231
 86859	13437	2237
@@ -23884,6 +23881,13 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 88954	13827	2297
 88955	13827	2298
 88956	13827	2299
+88957	13436	2180
+88958	13436	2214
+88959	13436	2184
+88960	13436	2186
+88961	13436	2187
+88962	13436	2195
+88963	13436	2231
 \.
 
 
@@ -23891,7 +23895,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 -- Name: bagni_bagno_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 88956, true);
+SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 88963, true);
 
 
 --
@@ -25791,6 +25795,8 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 315	2014-06-07 06:40:33.858086-04	5	31	3	BagniAlMare - la Riviera è online!	1	
 316	2014-06-07 10:07:15.594558-04	5	31	4	BagniAlMare - la Riviera è online!	1	
 317	2014-06-07 10:35:35.376117-04	5	31	5	BagniAlMare - la Riviera è online!	1	
+318	2014-06-09 05:24:09.808646-04	7	31	5	BagniAlMare - il primo portale online per gli stabilimenti balneari	2	subject modificato/a.
+319	2014-06-09 13:52:37.981015-04	7	9	13436	Bagno 27	2	description_en, mail e site modificato/a.
 \.
 
 
@@ -25798,7 +25804,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 317, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 319, true);
 
 
 --
@@ -25906,9 +25912,14 @@ ncnup4fkkoedj4tk3vw6sfxqrg5rybt9	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM
 dbd2bcw6r5g4b478f12pc65m24qeap7b	NDU2YTkxZGZmZWRkZjNjNDY5ZmM4NzMzMGRmNDBjODFiYjA2MGRiOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjUsIl9zZXNzaW9uX2V4cGlyeSI6MH0=	2014-06-17 03:54:25.331834-04
 nb8jsnme111uwai1xl096f1d1zdvr1uz	ZmM3ZWYyYjU4ODI5M2I1N2NkNmVkZWFiYTU5YjUwYzk5YTZkYzEyNTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-06-17 08:33:25.758323-04
 p59gxdembzxdztnwys8qyt2swslawooz	ZmQ2MTk5NjdiZGFiMTdjYjAwZDIzMzkwYjQ4NWIzMTlmMGYxZTE5ZTp7ImFjY291bnRfdXNlciI6MTgsImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGx9	2014-06-17 08:51:24.72324-04
-kt1te8miyzt58sblcctzp6c3sfq58icb	MGEyNGE0MzI1NDQwYzhiOTI1YTA1ZDk4YjA5YjJmMzM2ZmYwZDBiYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjh9	2014-06-18 09:48:11.59539-04
 u36dy8yjfsz1u96fyj8s2nhne0mfe52g	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-06-18 09:48:44.927005-04
 acjdslhchasmntgp0mz4g0nuidjgh5oo	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-06-21 10:06:27.222555-04
+kiddin1u7at0gligsu7q35n2ybj0uv4q	OWEyZThjOGRlODkxYzRlYzlmYmEyNmMzMDVmNjk3NmJiNzFlM2ZhZTp7ImFjY291bnRfdXNlciI6MTksImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGx9	2014-06-23 04:26:31.801735-04
+nu7vtxksgmg8ib7oj5ehtpyg2l81zvjt	ZmM3ZWYyYjU4ODI5M2I1N2NkNmVkZWFiYTU5YjUwYzk5YTZkYzEyNTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-06-23 04:57:16.63609-04
+gf1tb0b49u9dagpbznyw86mdldhqbuo0	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-06-23 05:07:48.34329-04
+ik3ej0d596uk9glzi3xnox01ak11vo7k	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-06-23 05:47:22.206474-04
+eprlhd7rou7p2l2vr4kikdh05feayd6a	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-06-23 13:44:49.061695-04
+jc5d7bgitp1jfgqrv3vhks7yo5put5au	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-06-23 16:33:28.82729-04
 \.
 
 
@@ -25960,7 +25971,7 @@ COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to,
 2	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	2	1	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	12:15:10.686999	Prova invio newsletter	prova-invio-newsletter	4	sent
 3	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	2	1	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	12:40:41.500698	Prova 2 invio newsletter	prova-2-invio-newsletter	4	sent
 4	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	2	1	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	16:07:23.061036	Prova 3 invio newsletter	prova-3-invio-newsletter	4	sent
-5	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	1	1	\N	\N	Welcome Mail	welcome-mail	\N	new
+5	BagniAlMare - il primo portale online per gli stabilimenti balneari	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	1	1	\N	\N	Welcome Mail	welcome-mail	\N	new
 \.
 
 
@@ -26497,6 +26508,8 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 2	8	marco.benvenuto1@gmail.com
 3	6	nicola.valentini@gmail.com
 4	18	mbenvenuto@airplus.com
+5	19	ndefrancesco@bagno27.it
+6	7	marco.bartolini@gmail.com
 \.
 
 
@@ -26504,7 +26517,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 4, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 6, true);
 
 
 --
