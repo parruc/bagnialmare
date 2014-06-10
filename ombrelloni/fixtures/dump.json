@@ -43284,11 +43284,11 @@
   "pk": 13436, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 130</p>\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di\u00a0bocce www.comitatobagninirimini.it \u00a0\n\r\nIl Bagno \u00e8 stato certificato come ECOACCESSIBILE\r\nSono a disposizione 5 carrozzine\u00a0adatte agli spostamenti sull\u2019arenile ed idonee a sostenere la persona diversamente abile anche in acqua,\u00a0cos\u00ec da rendere pi\u00f9 agevole e piacevole la vacanza sotto l\u2019ombrellone.\u00a0Le carrozzine sono utilizzabili anche dai bagni\u00a0aderenti al Consorzio e\u00a0dal prossimo anno saranno affiancati da altri specifici ausili, ad iniziare dai lettini prendisole realizzati su precisa indicazione tecnica del sodalizio professionale e dunque modulati allo scopo. Il traguardo da raggiungere nell\u2019estate 2011 \u00e8 la dotazione di almeno 30 lettini speciali, uno per ogni stabilimento balneare.</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di\u00a0bocce www.comitatobagninirimini.it \u00a0\r\n", 
     "point": "POINT (12.5826817559999995 44.0703693999999970)", 
     "number": "27 sud", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 130</p>\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di\u00a0bocce www.comitatobagninirimini.it \u00a0\n\r\nIl Bagno \u00e8 stato certificato come ECOACCESSIBILE\r\nSono a disposizione 5 carrozzine\u00a0adatte agli spostamenti sull\u2019arenile ed idonee a sostenere la persona diversamente abile anche in acqua,\u00a0cos\u00ec da rendere pi\u00f9 agevole e piacevole la vacanza sotto l\u2019ombrellone.\u00a0Le carrozzine sono utilizzabili anche dai bagni\u00a0aderenti al Consorzio e\u00a0dal prossimo anno saranno affiancati da altri specifici ausili, ad iniziare dai lettini prendisole realizzati su precisa indicazione tecnica del sodalizio professionale e dunque modulati allo scopo. Il traguardo da raggiungere nell\u2019estate 2011 \u00e8 la dotazione di almeno 30 lettini speciali, uno per ogni stabilimento balneare.</p>", 
-    "site": "http://www.bagno27.it", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di\u00a0bocce www.comitatobagninirimini.it \u00a0\r\n", 
+    "site": "http://www.bagno27.it/", 
     "languages": [
       [
         "italian"
@@ -43299,30 +43299,30 @@
     ], 
     "services": [
       [
-        "internet"
-      ], 
-      [
         "magazines-journals"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "children-entertainment"
+        "ping-pong"
       ], 
       [
         "petanque"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "internet"
+      ], 
+      [
+        "baby-park"
       ]
     ], 
     "address": "Lungomare Tintori - zona Piazza Kennedy", 
-    "description_it": null, 
-    "mail": "info@bagno27.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-27", 
     "neighbourhood": [
@@ -57727,7 +57727,7 @@
     ], 
     "sent_count": null, 
     "sent_on": null, 
-    "subject": "BagniAlMare - la Riviera \u00e8 online!"
+    "subject": "BagniAlMare - il primo portale online per gli stabilimenti balneari"
   }
 },
 {
@@ -62956,6 +62956,16 @@
   }
 },
 {
+  "pk": 14, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 14, 
+    "key": "087dad2191748bd86d09a679349bb6c5357e71ae358e268da8cf50e53ed8db20", 
+    "sent": "2014-06-09T08:26:31.780Z", 
+    "created": "2014-06-09T08:26:31.653Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -63709,7 +63719,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-05-12T14:03:31Z", 
+    "last_login": "2014-06-09T20:33:28.823Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
@@ -63727,7 +63737,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-06-04T13:48:11.577Z", 
+    "last_login": "2014-06-09T09:11:54.824Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -63745,12 +63755,30 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2014-06-03T12:51:22.754Z", 
+    "last_login": "2014-06-09T09:13:37.488Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=", 
     "email": "mbenvenuto@airplus.com", 
     "date_joined": "2014-06-03T12:51:22.754Z"
+  }
+},
+{
+  "pk": 19, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "ndefrancesco", 
+    "first_name": "Nadia", 
+    "last_name": "Defrancesco", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-09T08:26:29.294Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$gvuKqtYpU576$e4tpwgv432EUJ847ZBQptllrKE/t1eDaeXP83KfU3Gc=", 
+    "email": "ndefrancesco@bagno27.it", 
+    "date_joined": "2014-06-09T08:26:29.295Z"
   }
 },
 {
@@ -63795,6 +63823,18 @@
     ], 
     "primary": true, 
     "email": "mbenvenuto@airplus.com"
+  }
+},
+{
+  "pk": 14, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "ndefrancesco"
+    ], 
+    "primary": true, 
+    "email": "ndefrancesco@bagno27.it"
   }
 },
 {
@@ -63900,6 +63940,20 @@
   }
 },
 {
+  "pk": 12, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [], 
+    "name": "Nadia", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "ndefrancesco"
+    ], 
+    "surname": "Defrancesco"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -63937,6 +63991,26 @@
       "mbenvenuto"
     ], 
     "old_email": "mbenvenuto@airplus.com"
+  }
+},
+{
+  "pk": 5, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "ndefrancesco"
+    ], 
+    "old_email": "ndefrancesco@bagno27.it"
+  }
+},
+{
+  "pk": 6, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "barto"
+    ], 
+    "old_email": "marco.bartolini@gmail.com"
   }
 },
 {
