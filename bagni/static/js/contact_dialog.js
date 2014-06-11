@@ -1,6 +1,6 @@
 $(function() {
     var contacts_modal;
-    $("#contact-form-button").on("click", function(evt){
+    $(".contact-form-button").on("click", function(evt){
         evt.preventDefault();
         $.ajax({
             url: $(this).data("url"),
