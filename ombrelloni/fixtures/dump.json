@@ -54381,23 +54381,98 @@
   "pk": 13724, 
   "model": "bagni.bagno", 
   "fields": {
-    "description": "", 
-    "point": "POINT (12.6440300000000008 44.0161465300000003)", 
+    "description": "None", 
+    "point": "POINT (12.6436705839930248 44.0160307962138688)", 
     "number": "122/a", 
-    "description_en": null, 
-    "site": "http://www.centrovacanzericcione.it", 
-    "languages": [
+    "description_en": "None", 
+    "site": "http://www.centrovacanzericcione.it/", 
+    "languages": [], 
+    "services": [
       [
-        "italian"
+        "board-games"
       ], 
       [
-        "english"
+        "dogs-allowed"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "mats-deposit"
+      ], 
+      [
+        "swimming-lessons"
+      ], 
+      [
+        "rowing-boats"
+      ], 
+      [
+        "toilets-for-children"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "bookstore"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "sports-tournaments"
+      ], 
+      [
+        "disabled"
+      ], 
+      [
+        "gym"
+      ], 
+      [
+        "canoes"
+      ], 
+      [
+        "playground"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "baby-park"
       ]
     ], 
-    "services": [], 
-    "address": "Fogliano", 
-    "description_it": null, 
-    "mail": "info@centrovacanzericcione.it", 
+    "address": "Viale D'Annunzio", 
+    "description_it": "Dedicato alla famiglia dove puoi trovare vari confort.", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-nettuno-3", 
     "neighbourhood": [
@@ -57714,20 +57789,20 @@
   "pk": 5, 
   "model": "newsletters.newsletter", 
   "fields": {
-    "status": "new", 
+    "status": "sent", 
     "slug": "welcome-mail", 
     "name": "Welcome Mail", 
     "text": "<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href=\"http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa\" target=\"_blank\">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align=\"center\"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href=\"http://bagnialmare.com/it/accounts/signup\">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href=\"http://bagnialmare.com/it/bagni/villamarina/test/\">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n", 
-    "sent_to": null, 
+    "sent_to": "info@bagno70.it; bagno-azzurro@libero.it; jmcbar@tiscali.it; cmorgav@tin.it; info@spiaggia129.it; contatti@bagnoristoro.it; tavernamolino@libero.it; bagniparadise122@libero.it; info@laspiaggiadelledonne.it; info@bagno90.com; info@marinagrandediviserba.it; informazioni@vincenzo-nives.com; spiaggia23riccione@email.it; info@bagnocesare66.it; toto@toto-beach.it; info@lidocenter.it; info@marysolbagno57.it; bagnoaurora@tiscalinet.it; ali_popescu@yahoo.com; bagno.silvano123@email.it; bagnoettore@libero.it; info@prestigeventi.com; bagno131@gmail.com; diegosurf23@msn.com; info@marinabay.it; info@bagnopomposa.it; info@bagnosayonara.com; elioparma@virgilio.it; info@spiaggia80.it; info@nariz.it; info@lidosangiuliano.it; bagnopassatore@hotmail.it; marco.benvenuto1@gmail.com; lucianidavide@tiscali.it; info@hookipa.it; info@singita.it; info@bagnograziella.com; info@bagnoildavid.it; bagnomarte@gmail.com; info@bagnomexico.com; info@riccione27.com; spiaggialepalme@leardinigroup.com; info@bbkbeach.com; info@bagnogiovanni.com; info@spiaggia53.it; lasvegas49@libero.it; info@bagnoroma.it; info@kuta.it; bagnocarlo65@jumpy.it; playatamarindo@playatamarindo.it; bagno.azzurra@gmail.com; bagnoluca@libero.it; teocommercio@libero.it; aguidolin@email.it; praiabrasil@libero.it; info@bagnomassimo-viserbella.it; fetsabfar@gmail.com; filobagno22@libero.it; info@bagnoaragosta.it; bagnobussola@libero.it; astorcarli@libero.it; bagnoristorante68@libero.it; info@bagnopineta.it; info@tremoschettieri.com; info@bagnomorris.com; info@bagnoaloha.com; silvia@spiaggia59riccione.it; info@beachvillagericcione.it; info@bagnoclasse.it; posta@bagnoambasciata.it; titti66@libero.it; p.ponente102@libero.it; umberto64@libero.it; marcobagnari@libero.it; bagnomercurio@gmail.com; katia.luciani@libero.it; info@basilico4748.com; alezona3@alice.it; info@bagnogiada.it; bagnobelvedere@gmail.com; danielabugli@libero.it; claudio@151riccione.com; info@gallantibeach.it; info@marinamitu.it; info@bagnoclaudia49.it; info@maebabeach.com; info@bagnomiamibeach.com; info@cesenaticocampingvillage.com; derisbeach@gmail.com; cristian.giovini@alice.it; info@sirenetta-paradiso.net; info@spiaggia29e30riccione.com; bagnoisa@gmail.com; jeffyele@hotmail.com; info@bagnotitanus.com; info@bagnoenrico75.com; info@41mastrobeach.it; pinguino.volano@gmail.com; bagno_mulazzani@hotmail.it; info@spiaggia76.it; m312009@libero.it; mosquito-coast@hotmail.it; info@bahiantigua20.it; bagnoarlecchino@libero.it; info@bagnoluciano.it; info@spiaggia91riccione.it; info@bagno125rimini.it; info@bagnosollevante.it; info@chaletdelmare.it; info@bagnoveneziacesenatico.com; dave.mazza@libero.it; acapulco.posa@libero.it; betti_roberto@libero.it; clarissabizzi@libero.it; tarroni.barbara@virgilio.it; info@overbeach.it; info@beach33.com; info@spiaggia127.it; bagnolevante@libero.it; costaverdehotel@costaverdehotel.it; info@bagnoelio.it; alberto@alohabeach.it; info@bagnocris.it; info@pinetabeach.it; ladybeach@live.it; bagno.tiziano@teletu.it; info@laspiaggiadelcuore.com; info@molotrezero.it; gino.farinelli@tiscali.it; direzione@hakunamatataplus.it; gabristella1958@libero.it; glmontebelli@tiscali.it; info@loretta99.com; info@bagnolidotalismano.it; conchiglia08@gmail.com; gianni.cinelife@libero.it; info@bagnifabio84riccione.it; carlosapori@virgilio.it; info@papayabeachvillage.it; simocayman@alice.it; info@bagno50.it; info@spiaggia38riccione.it; waikikibeach16@gmail.com; davide.biz@hotmail.com; info@bellarivalido89.it; info@bagnicristianriccione.com; ladyenric@yahoo.it; alfredo@bagni100.it; vela12estensi@gmail.com; info@bagnileo58riccione.it; bagnoestense@virgilio.it; info@bagnofaustina.it; bagnorenata@bagnorenata.it; lubro1990@libero.it; aiasravenna@virgilio.it; info@bagninovella.it; info@lucaedea.it; info@spiaggia63.it; info@bagnomerida.it; livregg@tin.it; info@bagnomiami.com; info@bagnoitalia.eu; silvano@bagno96silvano.it; info@bagnogranchio.com; spiaggia32riccione@libero.it; info@bagnomara.it; mauro.sap@libero.it; info@vistamaresuite.com; info@bagnohawaii.com; daniele.patrick@aliceposta.it; bagnocapri@libero.it; bagnonautilus@gmail.com; topstory@gesturist.com; info@hbritannia.it; nerimirco@libero.it; antonio.bezzi@tin.it; info@bagnoperla81.it; info@bagnoparadiso.it; info@bagnoluna.it; rickydezordo@gmail.com; mava@bagnibologna.it; info@bagnotequila.com; ipauo@yahoo.it; spinabeach40@hotmail.it; info@bagnoprey.it; info@beach75riccione.it; hennaut@libero.it; massimo@bagno91rimini.it; info@bagnovirna.info; simontemaurizio@libero.it; dunaorsi@gmail.com; v.montironi@yahoo.it; havanabeach@alice.it; info@charliebeach.it; bagnolido@email.it; info@bocabarranca.it; info@ristorantelido.net; progettoulisse82@gmail.com; maurizio@spiaggia51riccione.it; fandangobeach@libero.it; bagno.giorgio@alice.it; info@lidodellesirenericcione.it; info@bagno81rimini.it; info@kamokebeach.it; info@marisol74.it; info.bagnoclaudio@virgilio.it; valececca@libero.it; fabbrimarco.mf@libero.it; spinabeach48@gmail.com; bagnoschiuma1983@libero.it; info@peterpan36.com; bagnozara@libero.it; andrew-power@libero.it; spiaggia136@gmail.com; info@paradisoristorante.it; info@hroyal.it; info@sorayahotel.it; info@ristoranteduestelle.it; info@playadelsolriccione.com; bagni92@riccionespiaggia.com; maury.zanny@libero.it; bagnoveneto@virgilio.it; lellaruffato@libero.it; info@bagnobianconero.com; info@bagnorudy.it; ultimaspiaggia39@libero.it; info@chiccobeach54.it; info@marepineta.com; info@bagnooro.com; bagnovillaggiodelsole@yahoo.it; info@riccionespiaggia73.com; mauriziobarnabe@libero.it; stefania.piraccini@fastwebnet.it; info@bagnocorallo.it; beach007@libero.it; info@aquarama.com; info@bagnoristoranteuropa.com; info@bagno26rimini.com; orietta.guaraldi@libero.it; bagnocayoloco@libero.it; info@bagnosolaris.it; info@bagnotaormina.it; bagnomiocapitano@libero.it; info@bagnimirella120.it; sarabonazza@libero.it; info@bagniricci.it; info@maremotobeach.it; bagnovela@inwind.it; info@bagnocapriccio.it; cimavale@libero.it; info@bufalobeach.com; info@korasol.it; info@bagnoperla.it; info@spiaggiadelbenessere.it; info@adrianocampingvillage.com; andrea@spiaggia77.it; info@bagnoalbatros.it; info@village60.com; salesvalue@libero.it; ivocomandini@libero.it; info@papirriki.it; bagniluciano119@libero.it; info@spiaggia61.it; info@spiaggia54riccione.it; info@bagnoconti.it; casadei_elisa@libero.it; bagnotahiti@yahoo.it; mattvince@libero.it; glipe74@libero.it; info@icamini.org; cocoaspiaggia23@gmail.com; info@bagnogogo.it; info@bagnofloridabeach.it; info@spiaggia90.it; info@hotelsanfrancisco.info; stella_89@hotmail.it; info@bagnimario65.it; gas21viserba@hotmail.it; info@campingmarepineta.com; bagnokiribati@libero.it; info@riviera69.com; francescomichelotti@email.it; kitsune_e@libero.it; bagnokiaorana@yahoo.it; info@bronsonproduzioni.com; info@hotsand.info; info@spiaggia4riccione.com; aledalia@hotmail.com; bagno_jolly@libero.it; bagnowave@libero.it; info@grandhotelrimini.it; bagnogiulia85@libero.it; amerigo59@libero.it; bagnomeridiana@alice.it; info@bagnocarlo17.com; info@tipidaspiaggia.net; ruvido@ruvido.org; bagno6al7@hotmail.it; info@bagnovenere.com; hedonism@libero.it; info@spiaggia68riccione.it; barbaratassi@alice.it; info@bagnofederico.com; info@bagnoadria.com; hotelasiago@libero.it; info@bagnoegisto38.com; bagno.piera@virgilio.it; info@bagnoobelix.it; bagno57pinguino@libero.it; info@bigmamabeach.it; greta.pericoli@hotmail.it; hawaybeach@libero.it; info@spiaggia87.it; bagnofabio28arimini@inwind.it; info@spiaggia56riccione.it; valerianomartini@alice.it; bagno.vanni@libero.it; info@bagni106paola.it; bagniroberto@libero.it; bagnogabbiano@libero.it; info@bagno-romeo.it; parkhotelravenna@geturhotels.com; bagno.matteo@virgilio.it; roberto.albertarelli@fastwebnet.it; astra_13@libero.it; info@bagnomarfisa.com; info@zona60.it; bagno64riccione@gmail.com; info@bagnosport70.it; kontiki_beach@hotmail.com; alls1965@alice.it; lucalbatros@libero.it; info@bagnomeridiano.it; bagno4venti@gmail.com; info@bagnodorian.it; info@bagnorivaverde.it; info@riccionespiaggia28.it; bagnoondablu@live.com; info@battarraesettimio.it; info@bagniniriviera.it; info@bagno-oasi.it; info@birimbaobeach.it; info@bagnosabbiadoro.net; info@salsedine367.it; andrea.spiaggia104@libero.it; andrews@7lidiweb.com; bagni82riccione@alice.it; capohoornbeach@libero.it; info@turquoisebeachclub.com; alegio.manu@libero.it; nevemare@bagnonettuno20.it; info@faro34.it; marbellotti@libero.it; bagnodiana@gmail.com; info@tikoa.it; info@bagnoristorante_ippopotamus.com; info@bagnocorallobeach.it; info@bagnopippo.it; info@centrovacanzericcione.it; info@bagnosaintropez.it; bagnoelioeroby@libero.it; info@lailaiisland.it; info@bagnoangelineri.it; infomalaika@libero.it; ritabilly@live.it; riccardo75@email.it; info@bagnolucciola.it; info@bagnovally.com; info@bagnoschiuma.it; cinti.giuseppe2008@libero.it; azzurrospiaggia@alice.it; info@bagniazzura.it; info@hotelcrocedelsud.it; info@bagnocelli.com; eziogallina@hotmail.it; luminob.luminob@alice.it; raffellielena@libero.it; info@103riccione.it; info@sottomarino54.com; info@bagnomundial.it; info@bagno55rimini.com; riccardo.ventaglio@alice.it; maui1969@libero.it; info@tortugabeach.it; info@fafin.it; bagno.soleluna@libero.it; info@bagnomontecarlo.it; info@bagnokursaal.it; info@spiaggia86riccione.it; bagnovascello@gmail.it; info@bagnocostaazzurra.it; info@bagnolucia.it; info@baiadimaui.eu; info@bagnosarah.it; info@bagno27.it; info@spiaggia69riccione.it; hope852@hotmail.it; cristinagaroia@gmail.com; cimamarcello@gmail.com; bagnoquarantuno-info@deltawt.it; giorgio@villaceleste.eu; info@bagnielio.com; info@malua.it; info@bagnogalattico.com; bagno.marisa@alice.it; patra1960@hotmail.it; info@hoteliberty.com; info@bagnotrinidad.it; bagniprimo@libero.it; bottogian@gmail.com; info@rougehotel.it; bagno.alsole@tin.it; bagnodera@libero.it; info@bagnimauro78riccione.it; angelobandini@libero.it; bagnosole@infinito.it; bagno.chery@libero.it; info@bagnosusanna.it; bagnolescogliere@pec.it; info@bagnocalipso.com; info@riccionebeach72.com; bagnolongbeach@libero.it; bagno.ulisse@alice.it; info@bananabeach.it; info@bagniniriccione.it; info@palacelidohotel.it; bagnopelo@libero.it; info@bagnirina99.it; andrea35beach@libero.it; info@termepuntamarina.com; info@bagnoromana.it; stefa50@alice.it; info@bagnoesperia.com; info@marinamore.it; info@bagnowaimea.it; info@bagno71riccione.it; baroni.g@libero.it; info@dolcelucia.com; faridah@hotmail.it; info@bagnoselene.com; bastonilorenzo@tiscali.it; clararavaglia@alice.it; bagno94@libero.it; agenzia.mario@libero.it; barby.dani@libero.it; info@bagnoarcobaleno.it; bagniluca12riccione@alice.it; info@mojitobeach.com; bagno.serena@fastwebnet.it; info@bagno23.it; enea2081@libero.it; mazzini333@libero.it; matisse.beachvillage@libero.it; mare@spiaggiadonnarosa.com; parasassi23@hotmail.com; info@bagnopaolo.it; bagnorosa63@tiscali.it; bagno.pinguino@libero.it; davbax105@libero.it; info@bagnoromea.com; jamaicabeach64@alice.it; marcolaus@rimini.it; info@bagnomarconi.com; info@bagnokelly.com; bagnoflamingo63@hotmail.it", 
     "template": [
       "standard-template"
     ], 
     "target": [
       "welcome-mail"
     ], 
-    "sent_count": null, 
-    "sent_on": null, 
-    "subject": "BagniAlMare - il primo portale online per gli stabilimenti balneari"
+    "sent_count": 465, 
+    "sent_on": "08:50:34.262", 
+    "subject": "Nasce BagniAlMare, il primo portale online degli stabilimenti balneari"
   }
 },
 {
@@ -62966,6 +63041,36 @@
   }
 },
 {
+  "pk": 15, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 15, 
+    "key": "bd645dbebb772d0b29084375853050473cd41281816babe7ee2b9d159b69d1fd", 
+    "sent": "2014-06-10T08:01:48.361Z", 
+    "created": "2014-06-10T08:01:48.071Z"
+  }
+},
+{
+  "pk": 16, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 16, 
+    "key": "7eb141a49acfaac8ab08522057799459ebf6f50604c3b39897d1afb417358c9d", 
+    "sent": "2014-06-10T19:42:35.426Z", 
+    "created": "2014-06-10T19:42:34.813Z"
+  }
+},
+{
+  "pk": 17, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 17, 
+    "key": "3ff0e87564b058059fa1f0ee00ed3764b93f23d72e74c3ba8e91070a80f154f0", 
+    "sent": "2014-06-10T21:15:59.614Z", 
+    "created": "2014-06-10T21:15:59.532Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -63782,6 +63887,60 @@
   }
 },
 {
+  "pk": 20, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info", 
+    "first_name": "societ\u00e0", 
+    "last_name": "Nettuno", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-10T08:06:02.213Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$I0oDJY31RDCa$oRi8DNR7BjHFyLPTVt603EzOMOe+RYIDRWKQFOuqsLU=", 
+    "email": "info@centrovacanzericcione.it", 
+    "date_joined": "2014-06-10T08:01:46.021Z"
+  }
+},
+{
+  "pk": 21, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info2", 
+    "first_name": "Alessandro", 
+    "last_name": "Bologna", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-10T19:42:53.620Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=", 
+    "email": "info@bagnoegisto38.com", 
+    "date_joined": "2014-06-10T19:42:30.977Z"
+  }
+},
+{
+  "pk": 22, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "spiaggia136", 
+    "first_name": "fausto", 
+    "last_name": "ravaglia", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-10T21:17:06.185Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=", 
+    "email": "spiaggia136@gmail.com", 
+    "date_joined": "2014-06-10T21:15:56.918Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -63835,6 +63994,42 @@
     ], 
     "primary": true, 
     "email": "ndefrancesco@bagno27.it"
+  }
+},
+{
+  "pk": 15, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info"
+    ], 
+    "primary": true, 
+    "email": "info@centrovacanzericcione.it"
+  }
+},
+{
+  "pk": 16, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info2"
+    ], 
+    "primary": true, 
+    "email": "info@bagnoegisto38.com"
+  }
+},
+{
+  "pk": 17, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "spiaggia136"
+    ], 
+    "primary": true, 
+    "email": "spiaggia136@gmail.com"
   }
 },
 {
@@ -63954,6 +64149,60 @@
   }
 },
 {
+  "pk": 13, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "bagno-nettuno-3"
+      ]
+    ], 
+    "name": "societ\u00e0", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "info"
+    ], 
+    "surname": "Nettuno"
+  }
+},
+{
+  "pk": 14, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "egisto"
+      ]
+    ], 
+    "name": "Alessandro", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "info2"
+    ], 
+    "surname": "Bologna"
+  }
+},
+{
+  "pk": 15, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "marano-beach"
+      ]
+    ], 
+    "name": "fausto", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "spiaggia136"
+    ], 
+    "surname": "ravaglia"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -64011,6 +64260,36 @@
       "barto"
     ], 
     "old_email": "marco.bartolini@gmail.com"
+  }
+},
+{
+  "pk": 7, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info"
+    ], 
+    "old_email": "info@centrovacanzericcione.it"
+  }
+},
+{
+  "pk": 8, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info2"
+    ], 
+    "old_email": "info@bagnoegisto38.com"
+  }
+},
+{
+  "pk": 9, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "spiaggia136"
+    ], 
+    "old_email": "spiaggia136@gmail.com"
   }
 },
 {
