@@ -63071,6 +63071,26 @@
   }
 },
 {
+  "pk": 18, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 18, 
+    "key": "3c7f53899e7314606ebf1fda75b7f9b5d6c7e6312172fbadac4c904c8c7d94d9", 
+    "sent": "2014-06-11T06:37:07.461Z", 
+    "created": "2014-06-11T06:37:07.265Z"
+  }
+},
+{
+  "pk": 19, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 18, 
+    "key": "b03043c9dd01bca4577b22219625eaacf7a368476f29a4735fbb7d7319d2875c", 
+    "sent": "2014-06-11T06:42:51.569Z", 
+    "created": "2014-06-11T06:42:50.862Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -63941,6 +63961,24 @@
   }
 },
 {
+  "pk": 23, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info3", 
+    "first_name": "fabio", 
+    "last_name": "pezzei", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-11T06:45:26.391Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=", 
+    "email": "info@bagno55rimini.com", 
+    "date_joined": "2014-06-11T06:37:05.174Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -64030,6 +64068,18 @@
     ], 
     "primary": true, 
     "email": "spiaggia136@gmail.com"
+  }
+},
+{
+  "pk": 18, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info3"
+    ], 
+    "primary": true, 
+    "email": "info@bagno55rimini.com"
   }
 },
 {
@@ -64203,6 +64253,24 @@
   }
 },
 {
+  "pk": 16, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "paolo-e-fabio"
+      ]
+    ], 
+    "name": "fabio", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "info3"
+    ], 
+    "surname": "pezzei"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -64290,6 +64358,16 @@
       "spiaggia136"
     ], 
     "old_email": "spiaggia136@gmail.com"
+  }
+},
+{
+  "pk": 10, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info3"
+    ], 
+    "old_email": "info@bagno55rimini.com"
   }
 },
 {
