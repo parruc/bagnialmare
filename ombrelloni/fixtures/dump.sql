@@ -13174,6 +13174,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 15	20	info@centrovacanzericcione.it	t	t
 16	21	info@bagnoegisto38.com	t	t
 17	22	spiaggia136@gmail.com	t	t
+18	23	info@bagno55rimini.com	t	t
 \.
 
 
@@ -13181,7 +13182,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 17, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 18, true);
 
 
 --
@@ -13196,6 +13197,8 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 15	15	2014-06-10 04:01:48.071784-04	2014-06-10 04:01:48.36139-04	bd645dbebb772d0b29084375853050473cd41281816babe7ee2b9d159b69d1fd
 16	16	2014-06-10 15:42:34.813352-04	2014-06-10 15:42:35.42618-04	7eb141a49acfaac8ab08522057799459ebf6f50604c3b39897d1afb417358c9d
 17	17	2014-06-10 17:15:59.532069-04	2014-06-10 17:15:59.614175-04	3ff0e87564b058059fa1f0ee00ed3764b93f23d72e74c3ba8e91070a80f154f0
+18	18	2014-06-11 02:37:07.265053-04	2014-06-11 02:37:07.461111-04	3c7f53899e7314606ebf1fda75b7f9b5d6c7e6312172fbadac4c904c8c7d94d9
+19	18	2014-06-11 02:42:50.862288-04	2014-06-11 02:42:51.56942-04	b03043c9dd01bca4577b22219625eaacf7a368476f29a4735fbb7d7319d2875c
 \.
 
 
@@ -13203,7 +13206,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 17, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 19, true);
 
 
 --
@@ -13365,6 +13368,7 @@ SELECT pg_catalog.setval('auth_permission_id_seq', 108, true);
 
 COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
 22	pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=	2014-06-10 17:17:06.185602-04	f	spiaggia136	fausto	ravaglia	spiaggia136@gmail.com	f	t	2014-06-10 17:15:56.918226-04
+23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
 6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-06-04 09:48:44.923406-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-07 10:06:27.218613-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-09 05:11:54.824874-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
@@ -13395,7 +13399,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 22, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 23, true);
 
 
 --
@@ -13430,6 +13434,7 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname) FROM stdin;
 13	20	t	t	società	Nettuno
 14	21	t	t	Alessandro	Bologna
 15	22	t	t	fausto	ravaglia
+16	23	t	t	fabio	pezzei
 \.
 
 
@@ -13442,6 +13447,7 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 5	13	13724
 6	14	13580
 7	15	13737
+8	16	13465
 \.
 
 
@@ -13449,14 +13455,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 7, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 8, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 15, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 16, true);
 
 
 --
@@ -14511,9 +14517,9 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13468	Bagno Etoile Beach Village60	etoile-beach-village60	58/59/60/61 sud	Lungomare Murri	info@village60.com	http://www.village60.com	0101000020E6100000F8BD399B0F30294040EAC083B0074640	\n<p>Servizi offerti pedalò, canoe, mosconi, surf \r\n- area ristoro \r\n- ampi parcheggi per cicli e motorini. \r\n- area adibita all'accoglienza di quadrupedi di taglia piccola, in spiaggia     vedi dettagli</p>	\n<p>Servizi offerti pedalò, canoe, mosconi, surf \r\n- area ristoro \r\n- ampi parcheggi per cicli e motorini. \r\n- area adibita all'accoglienza di quadrupedi di taglia piccola, in spiaggia     vedi dettagli</p>	\N	25	t
 13503	Bagno Tito's Beach	titos-beach	93 sud	Lungomare Di Vittorio			0101000020E6100000023CB8278736294086BBC4A233064640	<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 170</p>\n<p>Servizi offerti tornei di bocce organizzati dai clienti\r\n- scuola di vela</p>	<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 170</p>\n<p>Servizi offerti tornei di bocce organizzati dai clienti\r\n- scuola di vela</p>	\N	26	t
 13493	Bagno Luca & Dea	luca-dea	85/A sud	Lungomare Di Vittorio	info@lucaedea.it	http://www.lucaedea.it	0101000020E61000001DC076BE0C352940DD499FB18A064640	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti corsi di ginnastica\r\n- tornei delle varie attività</p>	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti corsi di ginnastica\r\n- tornei delle varie attività</p>	\N	26	t
-13465	Bagno Paolo e Fabio	paolo-e-fabio	55 sud	Lungomare Murri	info@bagno55rimini.com	http://www.bagno55rimini.com	0101000020E6100000822FC1B3812F2940A1DF5229D1074640	<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti  campi sportivi illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n- 2 vasche idromassaggio (6 e 10 posti) a pagamento - 3 € per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori sono a disposizione per dare lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>	<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti  campi sportivi illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n- 2 vasche idromassaggio (6 e 10 posti) a pagamento - 3 € per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori sono a disposizione per dare lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>	\N	25	t
 13110	Bagno Pinguino	pinguino	57	Via San Daniele, 3	bagno57pinguino@libero.it		0101000020E610000000000064AE7A2840585DC22B345A4640		\N	\N	10	t
 13105	Bagno Mattia	mattia	53	Via Mare Jonio	sarabonazza@libero.it		0101000020E6100000000000487F7A28403CB5C619B35A4640		\N	\N	10	t
+13465	Bagno Paolo e Fabio	paolo-e-fabio	55 sud	Lungomare Murri	info@bagno55rimini.com	http://www.bagno55rimini.com	0101000020E6100000822FC1B3812F2940A1DF5229D1074640	<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti  campi sportivi illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n- 2 vasche idromassaggio (6 e 10 posti) a pagamento - 3 € per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori sono a disposizione per dare lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>	<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti  campi sportivi illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n- 2 vasche idromassaggio (6 e 10 posti) a pagamento - 3 € per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori sono a disposizione per dare lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>	\N	25	t
 13553	Bagno Mario	mario	147 sud	Lungomare Spadazzi		http://www.spiaggeoasi.it/scheda.html?id=1470&loc=rimini	0101000020E61000004D40326E81402940BF7A81FEE7034640	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 200</p>	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 200</p>	\N	29	t
 13547	Bagno Dino	dino-2	140 sud	Lungomare Spadazzi		http://www.spiaggeoasi.it/scheda.html?id=1400&loc=rimini	0101000020E6100000E4F31852363F29404BB7802B34044640	<h3>Details</h3>\n\t<p>cabine: 38<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti tornei di bocce</p>	<h3>Details</h3>\n\t<p>cabine: 38<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti tornei di bocce</p>	\N	29	t
 13532	Bagno Paradise	paradise	122 sud		bagniparadise122@libero.it		0101000020E6100000219D45E5E23B29408D77EC0CF8044640	<h3>Details</h3>\n\t<p>cabine: 16<br />\n\tombrelloni: 124</p>\n<p>Servizi offerti tornei di bocce</p>	<h3>Details</h3>\n\t<p>cabine: 16<br />\n\tombrelloni: 124</p>\n<p>Servizi offerti tornei di bocce</p>	\N	28	t
@@ -25964,6 +25970,7 @@ jc5d7bgitp1jfgqrv3vhks7yo5put5au	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ
 fp8pbg80gwtgrpuwy8b882rdie4uuexh	NmQxZGY5MzlmY2RkZDM0YjA0ZGM4OTlmMDBiOTE4Njc5MWE3ZmE2Mjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIwLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 04:06:02.227987-04
 gvtg851gf5fop1u5m9ysjt8vcvisk71w	ZWZmY2Y4YWI5N2Q3ZTg0NmEwYWY5ZmMzMzM1ODAyMzViNWZlNmMzYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIxLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 15:42:53.655532-04
 vbq74hzxft9bwmp26bk03xyyr30tposk	YzVjYzg5YTgzMzhkMTY0NTE1Yjk2MzNlMjc4NWFlOWY4Mjg2OWVhMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIyLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 17:17:06.18968-04
+xwuxp28gh1t1pcqgnq8x2a8begdeq6oy	OWQ4MGRiOTUxOTQxYzU4MjUxOTU0NWIyNTY4ZjE1ZDVmNzczZDA5NDp7Il9zZXNzaW9uX2V4cGlyeSI6MTgxNDQwMCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MjN9	2014-07-02 02:45:26.454091-04
 \.
 
 
@@ -26557,6 +26564,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 7	20	info@centrovacanzericcione.it
 8	21	info@bagnoegisto38.com
 9	22	spiaggia136@gmail.com
+10	23	info@bagno55rimini.com
 \.
 
 
@@ -26564,7 +26572,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 9, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 10, true);
 
 
 --
