@@ -13507,7 +13507,9 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13780	Bagno Acquario Da Leo	bagno-acquario-da-leo	47	Via C. Colombo			0101000020E61000004027FDAFC5F028404F0929B3B1124640		\N	\N	37	t
 13580	Bagno Egisto	egisto	38 nord	Via Dati 113 h	info@bagnoegisto38.com	http://www.bagnoegisto38.com	0101000020E6100000E77C254EF61029400CD373E2DD0B4640	<h3>Details</h3>\n\t<p>cabine: 23<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di balli latini americani e aquagymn\r\n- tornei di ping-pong\r\n- area benessere con lettini massaggianti (a pagamento)\r\n- area accoglienza animali domestici spiaggia attrezzata parzialmente recintata con gli ombrelloni più larghi rispetto lo standard. gratuitamente è possibile avere a disposizione ciotole, stuoie, sacchetti e la doccia a loro dedicata. un veterinario è reperibile per qualsiasi necessità. all'arrivo è necessario solamente presentare il libretto delle vaccinazioni in direzione e prendere visione del regolamento. si consiglia la prenotazione, in quanto i posti attrezzati sono limitati. Il bagno ha aderito nel 2009 al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.</p>	<h3>Details</h3>\n\t<p>cabine: 23<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di balli latini americani e aquagymn\r\n- tornei di ping-pong\r\n- area benessere con lettini massaggianti (a pagamento)\r\n- area accoglienza animali domestici spiaggia attrezzata parzialmente recintata con gli ombrelloni più larghi rispetto lo standard. gratuitamente è possibile avere a disposizione ciotole, stuoie, sacchetti e la doccia a loro dedicata. un veterinario è reperibile per qualsiasi necessità. all'arrivo è necessario solamente presentare il libretto delle vaccinazioni in direzione e prendere visione del regolamento. si consiglia la prenotazione, in quanto i posti attrezzati sono limitati. Il bagno ha aderito nel 2009 al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.</p>	\N	32	t
 13094	Bagno Perla	perla	22	Via Spiaggia, 22			0101000020E6100000000000DC9B7E2840DE2EB4A507554640		\N	\N	9	t
+13831	Bagno Guerrino	bagno-guerrino		Via Ruggero Pascoli			0101000020E6100000090F00C014E5284041B9C1F40D154640	 	 		40	t
 12859	Bagno Miami	bagno-miami	282	III Traversa - arenile demaniale 282			0101000020E6100000402BAA2AA6B42840DEDD6F592A244640		\N	\N	2	t
+13832	Bagno Olimpia	bagno-olimpia-20	20	via Forli		http://www.bagnoolimpia.it/	0101000020E6100000D60AF1EFF2E028406E4E4EC60E164640	 	 		39	t
 12901	Bagno Mediterraneo	bagno-mediterraneo	65	Arenile Demaniale 65			0101000020E610000026CB1BF091C02840D57139B4011E4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1990<br />\n\tfronte mare: 19<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 1</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1990<br />\n\tfronte mare: 19<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 1</p>	\N	3	t
 12921	Bagno Everest	bagno-everest	98	Arenile demaniale 98			0101000020E6100000E03018F690BE2840447FD83AC71E4640		\N	\N	3	t
 12970	Bagno bertino	bagno-bertino		Viale Giosuè Carducci			0101000020E610000000000080B5DE28409F3D7A866D164640		\N	\N	5	t
@@ -14543,7 +14545,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 -- Name: bagni_bagno_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_id_seq', 13830, true);
+SELECT pg_catalog.setval('bagni_bagno_id_seq', 13832, true);
 
 
 --
@@ -16680,7 +16682,7 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 -- Name: bagni_bagno_languages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23487, true);
+SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23489, true);
 
 
 --
@@ -24019,6 +24021,8 @@ COPY bagni_municipality (id, name, name_en, name_it, description, district_id, s
 135	Riccione	Riccione	Riccione		28	riccione	riccione	riccione	\N	\N
 136	Bellaria - Igea Marina	Bellaria - Igea Marina	Bellaria - Igea Marina		28	bellaria-igea-marina	bellaria-igea-marina	bellaria-igea-marina	\N	\N
 137	Cattolica	Cattolica	Cattolica		28	cattolica	cattolica	cattolica		
+138	Gatteo	Gatteo	Gatteo		26	gatteo	gatteo	gatteo		
+139	San Mauro Pascoli	San Mauro Pascoli	San Mauro Pascoli		26	san-mauro-pascoli	san-mauro-pascoli	san-mauro-pascoli		
 \.
 
 
@@ -24026,7 +24030,7 @@ COPY bagni_municipality (id, name, name_en, name_it, description, district_id, s
 -- Name: bagni_municipality_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_municipality_id_seq', 137, true);
+SELECT pg_catalog.setval('bagni_municipality_id_seq', 139, true);
 
 
 --
@@ -24072,6 +24076,8 @@ COPY bagni_neighbourhood (id, name, name_en, name_it, description, description_e
 36	Riccione	Riccione	Riccione		\N	\N	135	riccione	riccione	riccione
 37	Igea Marina	Igea Marina	Igea Marina		\N	\N	136	igea-marina	igea-marina	igea-marina
 38	Cattolica	Cattolica	Cattolica				137	cattolica	cattolica	cattolica
+39	Gatteo a Mare	Gatteo a Mare	Gatteo a Mare				138	gatteo-a-mare	gatteo-a-mare	gatteo-a-mare
+40	San Mauro Mare	San Mauro Mare	San Mauro Mare				139	san-mauro-mare	san-mauro-mare	san-mauro-mare
 \.
 
 
@@ -24079,7 +24085,7 @@ COPY bagni_neighbourhood (id, name, name_en, name_it, description, description_e
 -- Name: bagni_neighbourhood_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_neighbourhood_id_seq', 38, true);
+SELECT pg_catalog.setval('bagni_neighbourhood_id_seq', 40, true);
 
 
 --
@@ -25844,6 +25850,13 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 318	2014-06-09 05:24:09.808646-04	7	31	5	BagniAlMare - il primo portale online per gli stabilimenti balneari	2	subject modificato/a.
 319	2014-06-09 13:52:37.981015-04	7	9	13436	Bagno 27	2	description_en, mail e site modificato/a.
 320	2014-06-10 02:47:18.746615-04	7	31	5	Nasce BagniAlMare, il primo portale online degli stabilimenti balneari	2	subject modificato/a.
+321	2014-06-12 10:42:50.887378-04	7	13	138	Gatteo	1	
+322	2014-06-12 10:43:37.116578-04	7	27	39	Gatteo a Mare	1	
+323	2014-06-12 10:45:14.531714-04	7	13	139	San Mauro Pascoli	1	
+324	2014-06-12 10:45:44.153546-04	7	27	40	San Mauro Mare	1	
+325	2014-06-12 10:50:51.769042-04	7	9	13831	Bagno Guerrino	1	
+326	2014-06-12 10:58:14.417212-04	7	9	13832	Bagno Olimpia	1	
+327	2014-06-12 10:59:44.308434-04	7	9	13831	Bagno Guerrino	2	address modificato/a.
 \.
 
 
@@ -25851,7 +25864,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 320, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 327, true);
 
 
 --
