@@ -297,6 +297,42 @@
   }
 },
 {
+  "pk": 138, 
+  "model": "bagni.municipality", 
+  "fields": {
+    "slug_en": "gatteo", 
+    "name_it": "Gatteo", 
+    "name": "Gatteo", 
+    "district": [
+      "forli-cesena"
+    ], 
+    "slug_it": "gatteo", 
+    "description_en": "", 
+    "description_it": "", 
+    "name_en": "Gatteo", 
+    "slug": "gatteo", 
+    "description": ""
+  }
+},
+{
+  "pk": 139, 
+  "model": "bagni.municipality", 
+  "fields": {
+    "slug_en": "san-mauro-pascoli", 
+    "name_it": "San Mauro Pascoli", 
+    "name": "San Mauro Pascoli", 
+    "district": [
+      "forli-cesena"
+    ], 
+    "slug_it": "san-mauro-pascoli", 
+    "description_en": "", 
+    "description_it": "", 
+    "name_en": "San Mauro Pascoli", 
+    "slug": "san-mauro-pascoli", 
+    "description": ""
+  }
+},
+{
   "pk": 1, 
   "model": "bagni.neighbourhood", 
   "fields": {
@@ -977,6 +1013,42 @@
     "description_it": "", 
     "name_en": "Cattolica", 
     "slug": "cattolica", 
+    "description": ""
+  }
+},
+{
+  "pk": 39, 
+  "model": "bagni.neighbourhood", 
+  "fields": {
+    "slug_en": "gatteo-a-mare", 
+    "name_it": "Gatteo a Mare", 
+    "name": "Gatteo a Mare", 
+    "municipality": [
+      "gatteo"
+    ], 
+    "slug_it": "gatteo-a-mare", 
+    "description_en": "", 
+    "description_it": "", 
+    "name_en": "Gatteo a Mare", 
+    "slug": "gatteo-a-mare", 
+    "description": ""
+  }
+},
+{
+  "pk": 40, 
+  "model": "bagni.neighbourhood", 
+  "fields": {
+    "slug_en": "san-mauro-mare", 
+    "name_it": "San Mauro Mare", 
+    "name": "San Mauro Mare", 
+    "municipality": [
+      "san-mauro-pascoli"
+    ], 
+    "slug_it": "san-mauro-mare", 
+    "description_en": "", 
+    "description_it": "", 
+    "name_en": "San Mauro Mare", 
+    "slug": "san-mauro-mare", 
     "description": ""
   }
 },
@@ -57698,6 +57770,50 @@
       "cattolica"
     ], 
     "name": "Altamarea Beach Village"
+  }
+},
+{
+  "pk": 13831, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "description": " ", 
+    "point": "POINT (12.4474239349433606 44.1644884057918787)", 
+    "number": "", 
+    "description_en": " ", 
+    "site": "", 
+    "languages": [], 
+    "services": [], 
+    "address": "Via Ruggero Pascoli", 
+    "description_it": "", 
+    "mail": "", 
+    "accepts_booking": true, 
+    "slug": "bagno-guerrino", 
+    "neighbourhood": [
+      "san-mauro-mare"
+    ], 
+    "name": "Bagno Guerrino"
+  }
+},
+{
+  "pk": 13832, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "description": " ", 
+    "point": "POINT (12.4393534642926333 44.1723258859973242)", 
+    "number": "20", 
+    "description_en": " ", 
+    "site": "http://www.bagnoolimpia.it/", 
+    "languages": [], 
+    "services": [], 
+    "address": "via Forli", 
+    "description_it": "", 
+    "mail": "", 
+    "accepts_booking": true, 
+    "slug": "bagno-olimpia-20", 
+    "neighbourhood": [
+      "gatteo-a-mare"
+    ], 
+    "name": "Bagno Olimpia"
   }
 },
 {
