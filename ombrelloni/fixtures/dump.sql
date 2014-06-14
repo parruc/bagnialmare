@@ -30548,6 +30548,7 @@ COPY userfeedback_userfeedback (id, email, created, notified, bagno_id) FROM std
 3	Pierre-Yves.farina@wanadoo.fr	2014-05-31 02:53:31.967646-04	f	13582
 4	babigino72@gmail.com	2014-05-31 05:42:39.787507-04	f	13148
 5	giovanni_canino@alice.it	2014-06-04 14:49:18.377554-04	f	13117
+6		2014-06-13 05:15:57.129755-04	f	13148
 \.
 
 
@@ -30555,7 +30556,7 @@ COPY userfeedback_userfeedback (id, email, created, notified, bagno_id) FROM std
 -- Name: userfeedback_userfeedback_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('userfeedback_userfeedback_id_seq', 5, true);
+SELECT pg_catalog.setval('userfeedback_userfeedback_id_seq', 6, true);
 
 
 --
