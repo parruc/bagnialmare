@@ -63117,6 +63117,18 @@
   }
 },
 {
+  "pk": 6, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "honolulu"
+    ], 
+    "email": "", 
+    "created": "2014-06-13T09:15:57.129Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
