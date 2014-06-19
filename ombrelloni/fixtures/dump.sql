@@ -13370,7 +13370,7 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 22	pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=	2014-06-10 17:17:06.185602-04	f	spiaggia136	fausto	ravaglia	spiaggia136@gmail.com	f	t	2014-06-10 17:15:56.918226-04
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
 6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-06-15 12:22:03.250239-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
-5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-07 10:06:27.218613-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
+5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-18 10:45:38.52453-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-09 05:11:54.824874-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 18	pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=	2014-06-09 05:13:37.488704-04	f	mbenvenuto	User	Tester	mbenvenuto@airplus.com	f	t	2014-06-03 08:51:22.754527-04
 19	pbkdf2_sha256$12000$gvuKqtYpU576$e4tpwgv432EUJ847ZBQptllrKE/t1eDaeXP83KfU3Gc=	2014-06-09 04:26:29.294945-04	f	ndefrancesco	Nadia	Defrancesco	ndefrancesco@bagno27.it	f	t	2014-06-09 04:26:29.29501-04
@@ -25984,7 +25984,7 @@ gvtg851gf5fop1u5m9ysjt8vcvisk71w	ZWZmY2Y4YWI5N2Q3ZTg0NmEwYWY5ZmMzMzM1ODAyMzViNWZ
 vbq74hzxft9bwmp26bk03xyyr30tposk	YzVjYzg5YTgzMzhkMTY0NTE1Yjk2MzNlMjc4NWFlOWY4Mjg2OWVhMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIyLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 17:17:06.18968-04
 xwuxp28gh1t1pcqgnq8x2a8begdeq6oy	OWQ4MGRiOTUxOTQxYzU4MjUxOTU0NWIyNTY4ZjE1ZDVmNzczZDA5NDp7Il9zZXNzaW9uX2V4cGlyeSI6MTgxNDQwMCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MjN9	2014-07-02 02:45:26.454091-04
 0tlfflmrftz721cfpwl4u0o8xv1zv7rf	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-06-29 12:22:03.254371-04
-j4yv6eh6qlvuijptzljf22xtehxzvuoe	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-01 10:07:28.085407-04
+2ee07z4axrlpu00sc1bqr5hmozz8a8d3	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-02 10:45:38.52901-04
 \.
 
 
