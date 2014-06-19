@@ -41,11 +41,21 @@
     </div>
     <div class="col-xs-12">
       {% if object.accepts_booking %}
-        <button id="book-button" class="btn book-button-xs ga_click" data-toggle="modal" data-target="#bookModal"
-              data-category="book" data-action="click" data-label="book-button" >{{ t_book_button }}</button>
+        <button id="book-button" 
+                class="btn book-button-xs ga_click" 
+                data-toggle="modal" 
+                data-target="#bookModal"
+                data-category="book" 
+                data-action="click" 
+                data-label="book-button" >{{ t_book_button }}</button>
       {% endif %}
       {% if object.is_managed %}
-            <button id="contact-form-button" class="btn btn-primary bagno-detail-button" data-url="{{ object.get_contactform_url }}">
+            <button id="contact-form-button"
+                    class="contact-form-button btn btn-primary bagno-detail-button ga_click"
+                    data-url="{{ object.get_contactform_url }}"
+                    data-category="contact" 
+                    data-action="mail-popup" 
+                    data-label="{{ object.slug }} - detail">
                 {{ t_contact_button }}
              </button>
             {% if can_edit %}

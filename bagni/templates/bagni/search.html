@@ -238,8 +238,12 @@
                        </div>
                       {% if hit.is_managed %}
                       <div class="col-xs-12">
-                          <button id="contact-form-button" class="btn btn-primary contact-form-button"
-                                data-url="{{ hit.get_contactform_url }}">
+                          <button id="contact-form-button" 
+                                  class="btn btn-primary contact-form-button ga_click"
+                                  data-url="{{ hit.get_contactform_url }}"
+                                  data-category="contact" 
+                                  data-action="mail-popup" 
+                                  data-label="{{ object.slug }} - search">
                             {{ t_contact_button }}
                           </button>
                       </div> 
