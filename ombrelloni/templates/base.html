@@ -174,23 +174,41 @@
           </ul>
         </nav>
         <!--/.nav-collapse --> </div>
-    </div>
-    <div class="container" id="rootContainer">
-      {% if messages %}
-        <div class="tab-pane" id="messages">
-          {% for message in messages %}
-          <div class="alert{% if message.tags %} alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% endif %} alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            {{ message|safe }}
+      </div>
+      <div class="container" id="rootContainer">
+        {% if messages %}
+          <div class="tab-pane" id="messages">
+            {% for message in messages %}
+            <div class="alert{% if message.tags %} alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% endif %} alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              {{ message|safe }}
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
-        </div>
-      {% endif %}
-        {% block content %}
-        {% endblock %}
+        {% endif %}
+          {% block content %}
+          {% endblock %}
+      </div>
     </div>
-  </div>
-
+    <div class="social-links">
+      <a title="BagniAlMare su Google+" 
+         href="https://plus.google.com/+Bagnialmare"
+         target="_blank">
+        <img src="https://www.gstatic.com/images/icons/gplus-32.png"
+             alt="G+ icon" width="30" height="30" />
+      </a> &nbsp;|
+      <a title="Bagnialmare su facebook"
+         href="https://www.facebook.com/bagnialmare"
+         target="_blank">
+        <img src="https://www.facebookbrand.com/img/assets/asset.f.logo.lg.png"
+             alt="Facebook link" width="30" height="30">
+      </a> &nbsp;|
+      <a title="Il nostro profilo twitter"
+         href="https://twitter.com/bagnialmare"
+         target="_blank">
+        <img src="https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_32.png" alt="logo twitter" width="38" height="30">
+      </a>
+    </div>
 {% block footer %}
 {% trans "terms_and_privacy" as t_terms_and_privacy %}
   <div id="footer">

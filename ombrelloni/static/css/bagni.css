@@ -28,6 +28,12 @@ body {
   padding: 0 0 40px;
 }
 
+.social-links
+{
+  margin: 10px auto 0px auto;
+  text-align: center;
+}
+
 /* Set the fixed height of the footer here */
 #footer {
   height: 40px;
