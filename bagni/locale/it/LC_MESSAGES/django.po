@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-07 11:38+0200\n"
+"POT-Creation-Date: 2014-06-23 18:52+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -65,39 +65,39 @@ msgstr "^categoria-servizi/(?P<slug>[-\\w]+)/$"
 msgid "^services/(?P<slug>[-\\w]+)/$"
 msgstr "^servizi/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:23
+#: urls.py:25
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
 msgstr "^localita/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:25
+#: urls.py:27
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
 msgstr "^comune/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:26
+#: urls.py:28
 msgid "^municipalities/$"
 msgstr "^comuni/$"
 
-#: urls.py:27
+#: urls.py:29
 msgid "^district/(?P<slug>[-\\w]+)/$"
 msgstr "^provincia/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:28
+#: urls.py:30
 msgid "^districts/$"
 msgstr "^province/$"
 
-#: urls.py:29
+#: urls.py:31
 msgid "^json/autocomplete/places$"
 msgstr ""
 
-#: urls.py:30
+#: urls.py:32
 msgid "^json/autocomplete/searchterms$"
 msgstr ""
 
-#: urls.py:31
+#: urls.py:33
 msgid "^json/neighbourhood/(?P<id>\\d+)/$"
 msgstr "^json/localita/(?P<id>\\d+)/$"
 
-#: urls.py:32
+#: urls.py:34
 msgid ""
 "^json/bbox/(?P<x1>[\\.\\-\\+\\d]+)/(?P<y1>[\\.\\-\\+\\d]+)/(?P<x2>[\\.\\-\\+"
 "\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
@@ -301,100 +301,104 @@ msgid "contacts"
 msgstr "Contatti"
 
 #: templates/bagni/bagno_detail.html:12
+msgid "details"
+msgstr "Dettagli"
+
+#: templates/bagni/bagno_detail.html:13
 msgid "website"
 msgstr "website"
 
-#: templates/bagni/bagno_detail.html:13
+#: templates/bagni/bagno_detail.html:14
 msgid "modify_bagno"
 msgstr "Modifica il tuo bagno"
 
-#: templates/bagni/bagno_detail.html:14
+#: templates/bagni/bagno_detail.html:15
 msgid "are_you_the_manager"
 msgstr "Sei il gestore?"
 
-#: templates/bagni/bagno_detail.html:15
+#: templates/bagni/bagno_detail.html:16
 msgid "image"
 msgstr "immagine"
 
-#: templates/bagni/bagno_detail.html:16
+#: templates/bagni/bagno_detail.html:17
 msgid "no_images_for"
 msgstr "nessuna immagine per"
 
-#: templates/bagni/bagno_detail.html:17
+#: templates/bagni/bagno_detail.html:18
 msgid "no_images_add"
 msgstr "foto ancora non disponibili"
 
-#: templates/bagni/bagno_detail.html:18 templates/bagni/bagno_edit.html:7
+#: templates/bagni/bagno_detail.html:19 templates/bagni/bagno_edit.html:7
 #: templates/bagni/service_list.html:23 templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi offerti"
 
-#: templates/bagni/bagno_detail.html:19 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:20 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "servizio"
 
-#: templates/bagni/bagno_detail.html:20
+#: templates/bagni/bagno_detail.html:21
 msgid "facility_info_not_available"
 msgstr "informazioni non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:21
+#: templates/bagni/bagno_detail.html:22
 msgid "book_modal_title"
 msgstr "Prenota ombrellone e lettino online"
 
-#: templates/bagni/bagno_detail.html:22
+#: templates/bagni/bagno_detail.html:23
 msgid "book_modal_text_1"
 msgstr ""
 "La prenotazione online non è ancora disponibile. Stiamo lavorando per "
 "attivarla questa estate"
 
-#: templates/bagni/bagno_detail.html:23
+#: templates/bagni/bagno_detail.html:24
 msgid "book_modal_text_2"
 msgstr "Inserisci qui la tua email se vuoi essere avvertito quando sarà pronta"
 
-#: templates/bagni/bagno_detail.html:24
+#: templates/bagni/bagno_detail.html:25
 msgid "book_modal_submit_button"
 msgstr "Avvertimi"
 
-#: templates/bagni/bagno_detail.html:25
+#: templates/bagni/bagno_detail.html:26
 msgid "book_button"
 msgstr "Prenota online"
 
-#: templates/bagni/bagno_detail.html:26
+#: templates/bagni/bagno_detail.html:27
 msgid "email_address"
 msgstr "Indirizzo email"
 
-#: templates/bagni/bagno_detail.html:27
+#: templates/bagni/bagno_detail.html:28
 msgid "phone_not_yet_available"
 msgstr "contatti telefonici non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:28
+#: templates/bagni/bagno_detail.html:29
 msgid "bagno_detail_desc_1"
 msgstr "Benvenuto nella pagina di"
 
-#: templates/bagni/bagno_detail.html:29
+#: templates/bagni/bagno_detail.html:30
 msgid "bagno_detail_desc_2"
 msgstr ""
 "qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questa "
 "struttura"
 
-#: templates/bagni/bagno_detail.html:30
+#: templates/bagni/bagno_detail.html:31
 msgid "bagno_detail_desc_3"
 msgstr "Se cerchi altri bagni a"
 
-#: templates/bagni/bagno_detail.html:31
+#: templates/bagni/bagno_detail.html:32
 msgid "bagno_detail_desc_4"
 msgstr "puoi farlo usando la nostra"
 
-#: templates/bagni/bagno_detail.html:32
+#: templates/bagni/bagno_detail.html:33
 msgid "bagno_detail_desc_5"
 msgstr "pagina di ricerca"
 
-#: templates/bagni/bagno_detail.html:218 templates/bagni/homepage.html:97
-#: templates/bagni/homepage.html.py:111 templates/bagni/search.html:367
+#: templates/bagni/bagno_detail.html:227 templates/bagni/homepage.html:97
+#: templates/bagni/homepage.html.py:111 templates/bagni/search.html:371
 msgid "Close"
 msgstr "Chiudi"
 
-#: templates/bagni/bagno_detail.html:245
+#: templates/bagni/bagno_detail.html:254
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -412,11 +416,11 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/bagni/bagno_edit.html:226
+#: templates/bagni/bagno_edit.html:240
 msgid "Save"
 msgstr "Salva"
 
-#: templates/bagni/bagno_edit.html:231
+#: templates/bagni/bagno_edit.html:245
 #, python-format
 msgid ""
 "\n"
@@ -644,7 +648,7 @@ msgstr "nessun risultato"
 msgid "away"
 msgstr "di distanza"
 
-#: templates/bagni/search.html:263
+#: templates/bagni/search.html:267
 #, python-format
 msgid ""
 "\n"
@@ -653,11 +657,11 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:383
+#: templates/bagni/search.html:387
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:388
+#: templates/bagni/search.html:392
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
@@ -714,7 +718,7 @@ msgstr "Nessuna categoria di servizio"
 msgid "Service categories"
 msgstr "Categorie di servizi"
 
-#: views/bagni.py:139
+#: views/bagni.py:156
 msgid ""
 "We forwarded your message to the beach resort. As soon as possible you'll "
 "receive a feedback to the email address provided."

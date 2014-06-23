@@ -9,6 +9,7 @@
 {% block content %}
 {% trans "contact_button" as t_contact_button %}
 {% trans "contacts" as t_contacts %}
+{% trans "details" as t_details %}
 {% trans "website" as t_website %}
 {% trans "modify_bagno" as t_modify_bagno %}
 {% trans "are_you_the_manager" as t_are_you_the_manager %}
@@ -71,11 +72,36 @@
 
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-        {% if object.description and object.is_managed %}
-          <p> {{ object.description|safe }} </p>
-        {% else %}
-          <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
-        {% endif %}
+        <h2 class="bagno-detail-contact-title">{{ t_contacts }}</h2>
+        {% if object.telephones.all %}
+            {% for tel in object.get_ordered_telephones %}
+              <p>
+                <b class="my-bold">{{ tel.get_name_display }}:</b>
+                <a class="ga_click"
+                   data-category="contact"
+                   data-action="telephone"
+                   data-label="{{ object.slug }} - {{ tel.number }}"
+                   href="tel:{{ tel.number }}"
+                >{{ tel.number }}</a>
+              </p>
+            {% endfor %}
+          {% else %}
+             <p><em>{{ t_phone_not_yet_available|capfirst}}</em></p>
+          {% endif %}
+        <p>
+          {% if object.site %}
+          <b class="my-bold">{{ t_website|capfirst }}:</b>
+          <a href="{{ object.site|href_url }}"
+             class="ga_click"
+             data-category="contact"
+             data-action="website"
+             data-label="{{ object.slug }} - {{ object.site }}"
+             title="{{ t_bagno }} {{ t_website }}"
+             target="_blank"
+             rel="nofollow">
+              {{ object.site|non_href_url }}</a>
+          {% endif %}
+        </p> 
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
@@ -132,36 +158,12 @@
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <h2 class="bagno-detail-sub-header">{{ t_contacts }}</h2>
-          {% if object.telephones.all %}
-            {% for tel in object.get_ordered_telephones %}
-              <p>
-                <b class="my-bold">{{ tel.get_name_display }}:</b>
-                <a class="ga_click"
-                   data-category="contact"
-                   data-action="telephone"
-                   data-label="{{ object.slug }} - {{ tel.number }}"
-                   href="tel:{{ tel.number }}"
-                >{{ tel.number }}</a>
-              </p>
-            {% endfor %}
-          {% else %}
-             <p><em>{{ t_phone_not_yet_available|capfirst}}</em></p>
-          {% endif %}
-        <p>
-          {% if object.site %}
-          <b class="my-bold">{{ t_website|capfirst }}:</b>
-          <a href="{{ object.site|href_url }}"
-             class="ga_click"
-             data-category="contact"
-             data-action="website"
-             data-label="{{ object.slug }} - {{ object.site }}"
-             title="{{ t_bagno }} {{ t_website }}"
-             target="_blank"
-             rel="nofollow">
-              {{ object.site|non_href_url }}</a>
-          {% endif %}
-        </p>
+      <h2 class="bagno-detail-sub-header">{{ t_details }}</h2>
+          {% if object.description and object.is_managed %}
+          <p> {{ object.description|safe }} </p>
+        {% else %}
+          <p>{{t_bagno_detail_desc_1}} {{ object.name }}, {{t_bagno_detail_desc_2}}.<br>{{t_bagno_detail_desc_3}} {{ object.neighbourhood }} {{t_bagno_detail_desc_4}} <a href="{% url 'search' %}?coords=&q=&l={{ object.neighbourhood }}">{{t_bagno_detail_desc_5}}</a>.</p>
+        {% endif %}
     </div>
   </div>
   <div class="row">
