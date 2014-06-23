@@ -42,7 +42,7 @@
     <div class="col-xs-12">
       {% if object.accepts_booking %}
         <button id="book-button" 
-                class="btn book-button-xs ga_click" 
+                class="btn btn-lg book-button-xs ga_click" 
                 data-toggle="modal" 
                 data-target="#bookModal"
                 data-category="book" 
@@ -51,7 +51,7 @@
       {% endif %}
       {% if object.is_managed %}
             <button id="contact-form-button"
-                    class="contact-form-button btn btn-primary bagno-detail-button ga_click"
+                    class="contact-form-button btn btn-lg btn-primary bagno-detail-button ga_click"
                     data-url="{{ object.get_contactform_url }}"
                     data-category="contact" 
                     data-action="mail-popup" 
@@ -59,11 +59,11 @@
                 {{ t_contact_button }}
              </button>
             {% if can_edit %}
-              <a href="{{ object.get_edit_url }}" class="btn btn-primary bagno-detail-button" rel="nofollow">{{ t_modify_bagno }}</a>
+              <a href="{{ object.get_edit_url }}" class="btn btn-lg btn-primary bagno-detail-button" rel="nofollow">{{ t_modify_bagno }}</a>
             {% endif %} 
       {% else %}
             {% if not user.is_authenticated %}
-              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-primary bagno-detail-button" rel="nofollow">{{ t_are_you_the_manager }}</a>
+              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-lg btn-primary bagno-detail-button" rel="nofollow">{{ t_are_you_the_manager }}</a>
             {% endif %}
       {% endif %}
     </div>
