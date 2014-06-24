@@ -137,13 +137,15 @@
               </ul>
             </li>
             {% else %}
-            <!--li>
+            {% comment %}
+            <li>
               <a href="{% url 'account_login' %}"
                   title="{{ t_login }}"
                   rel="nofollow">
               <strong>{{ t_login|capfirst }}</strong>
               </a>
-            </li-->
+            </li>
+            {% endcomment %}
             <li>
               <a href="{% url 'account_signup' %}"
                  title="{{ t_are_you_manager }}">
@@ -151,14 +153,14 @@
               </a>
             </li>
             {% endif %}
-            <!--
+            {% comment %}
             <li>
             <a href="{% url 'about-us' %}"
                title="{{ t_about_us }}">
                 <strong>{{ t_about_us|title }}</strong>
               </a>
             </li>
-            -->
+            {% endcomment %}
             <li>
             {% for lang in LANGUAGES %}
               {% with lang.0 as lang_code %}
