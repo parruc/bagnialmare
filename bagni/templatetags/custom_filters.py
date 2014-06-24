@@ -13,9 +13,21 @@ def batch(thelist, n):
     for i in xrange(0, len(thelist), n):
         yield thelist[i:i+n]
 
+
+@register.filter
+def pretty_neighbourhood(neighbourhood):
+    """ Return 'Neighborhood, Municipality' if they are different,
+    otherwise just 'Municipality'
+    """
+    neighbourhood_name = neighbourhood.name
+    municipality_name = neighbourhood.municipality.name
+    if neighbourhood_name.lower() != municipality_name.lower():
+        return neighbourhood_name + ', ' + municipality_name
+    return municipality_name
+
 @register.filter
 def neighbourhood_municipality(bagno):
-    """ Return 'Neighborhood, Municipality' if they are different,
+    """ Return 'Neighborhood, Municipality' of the bagno if they are different,
     otherwise just 'Municipality'
     """
     neighbourhood_name = bagno.neighbourhood.name

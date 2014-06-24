@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from collections import OrderedDict
 
+from django.http import Http404
 from django.core.exceptions import PermissionDenied
 from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic.detail import DetailView
@@ -12,14 +13,35 @@ from django.utils.translation import ugettext_lazy as _
 from contacts.views import ContactView
 from contacts.forms import ContactForm
 
-from ..models import Bagno
-from ..models import ServiceCategory
-from ..models import District
+from ..models import Bagno, ServiceCategory, District, Service, Neighbourhood
 from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
 
 import logging
 logging.basicConfig()
 logger = logging.getLogger("bagni.console")
+
+
+class BagniByFacilityAndNeighbourhoodView(TemplateView):
+    """ List of bagni in the neighbourhood offering the facility 
+    """
+    
+    template_name = "bagni/bagni-by-facility-and-neighbourhood.html"
+    
+    def get_context_data(self, **kwargs):
+        context = super(BagniByFacilityAndNeighbourhoodView, self).get_context_data(**kwargs)
+        facility_slug = str(self.kwargs['facility_slug'])
+        neighbourhood_slug = str(self.kwargs['neighbourhood_slug'])
+        neighbourhood = Neighbourhood.objects.filter(slug=neighbourhood_slug).first()
+        facility = Service.objects.filter(slug=facility_slug).first()
+        if not neighbourhood or not facility:
+            raise Http404
+        bagni_with_facility_in_neighbourhood = Bagno.objects.filter(neighbourhood__slug=neighbourhood_slug).filter(services__slug__contains=facility_slug)
+        context.update({'neighbourhood': neighbourhood})
+        context.update({'facility': facility})
+        context.update({'bagni': bagni_with_facility_in_neighbourhood})
+        #add facility name or obj? 
+        #add neighbourhood name or obj?
+        return context
 
 
 class BagniView(TemplateView):

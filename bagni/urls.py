@@ -20,6 +20,8 @@ urlpatterns = patterns(
     url(_(r'^service-category/(?P<slug>[-\w]+)/$'), views.ServiceCategoryView.as_view(), name="service-category"),
 #    url(_(r'^services/$'), views.ServicesView.as_view(), name="services"),
     url(_(r'^services/(?P<slug>[-\w]+)/$'), views.ServiceView.as_view(), name="service"),
+    url(_(r'^stabilimenti-balneari/services/(?P<facility_slug>[-\w]+)/(?P<neighbourhood_slug>[-\w]+)/$'), views.BagniByFacilityAndNeighbourhoodView.as_view(), 
+                                                                                                name="bagni-by-facility-and-neighbourhood"),
     url(_(r'^neighbourhood/(?P<slug>[-\w]+)/$'), views.NeighbourhoodView.as_view(), name="neighbourhood"),
 #    url(_(r'^neighbourhoods/$'), views.NeighbourhoodsView.as_view(), name="neighbourhoods"),
     url(_(r'^municipality/(?P<slug>[-\w]+)/$'), views.MunicipalityView.as_view(), name="municipality"),

@@ -1,24 +1,21 @@
 {% extends "base.html" %}
 
 {% load i18n %}
+{% load url from future %}
+{% load pretty_neighbourhood from custom_filters %}
 
 {% block pagetitle %}{% spaceless %}
   {% trans "service_detail_pagetitle" as t_service_detail_pagetitle %}
-  {{ t_service_detail_pagetitle|capfirst }}
-  {% if object.seo_name %}
-    {{ object.seo_name }}
-  {% else %}
-    {% trans "with" %} {{ object.name }}
-  {% endif %}
-{% endspaceless %}{% endblock pagetitle %}
+  {{ t_service_detail_pagetitle }} {% if object.seo_name %}{{ object.seo_name }}{% else %}{% trans "with" %} {{ object.name }}{% endif %}
+  {% endspaceless %}{% endblock pagetitle %}
 
 
 {% block description %}{% spaceless %}
   {% trans "service_detail_desc" as t_service_detail_desc %}
   {% if object.seo_name %}
-    {{ t_service_detail_desc|capfirst }} {{ object.seo_name }}
+    {{ t_service_detail_desc }} {{ object.seo_name }}
   {% else %}
-    {{ t_service_detail_desc|capfirst }} {% trans "with" %} {{ object.name }}
+    {{ t_service_detail_desc }} {% trans "with" %} {{ object.name }}
   {% endif %}
 {% endspaceless %}{% endblock %}
 
@@ -26,6 +23,7 @@
 {% trans "service_detail_header" as t_service_detail_header %}
 {% trans "service_detail_sub_header" as t_service_detail_sub_header %}
 {% trans "service_detail_no_result" as t_service_detail_no_result %}
+{% trans "service_detail_stabilimenti" as t_service_detail_stabilimenti %}
 {% comment %}
     Bagni con -service.name-
     Questo e' l'elenco dei bagni che offrono il servizio di -service.name-.
@@ -46,7 +44,7 @@
               {{ object.seo_name }}
             {% else %}
               {% trans "with" %} {{ object.name }}
-            {% endif %}
+            {% endif %}.
           </p>
       </div>
   </div>
@@ -54,14 +52,10 @@
       <div class="col-xs-12">
               {% regroup object.bagni.all|dictsort:"neighbourhood.name"|dictsort:"neighbourhood.municipality.name" by neighbourhood as neighborhood_list %}
               {% for n in neighborhood_list %}
-                  <h3>{{ n.grouper.name }}{% if n.grouper.name != n.grouper.municipality.name %}, {{ n.grouper.municipality.name }}{% endif %}</h3>
-                  <ul>
-                  {% for bagno in n.list %}
-                       <li><p class=""><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></p></li>
-                  {% endfor %}
-                  </ul>
+                  <h4><a href="{% url 'bagni-by-facility-and-neighbourhood' facility_slug=object.slug neighbourhood_slug=n.grouper.slug %}">{{ t_service_detail_stabilimenti }} {% if object.seo_name %}{{ object.seo_name }}{% else %}{% trans "with" %} {{ object.name }}
+            {% endif %} {%trans "in" %} {{ n.grouper|pretty_neighbourhood }}</a></h4>
               {% empty %}
-                  <h3>{{ t_service_detail_no_result|capfirst }} {{ object.name}}</h3>
+                  <h3>{{ t_service_detail_no_result }} {% if object.seo_name %}{{ object.seo_name }}{% else %}{% trans "with" %} {{ object.name }}{% endif %}</h3>
               {% endfor %}
       </div>
   </div>

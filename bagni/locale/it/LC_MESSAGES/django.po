@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-23 18:52+0200\n"
+"POT-Creation-Date: 2014-06-24 17:34+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -64,6 +64,14 @@ msgstr "^categoria-servizi/(?P<slug>[-\\w]+)/$"
 #: urls.py:22
 msgid "^services/(?P<slug>[-\\w]+)/$"
 msgstr "^servizi/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:23
+msgid ""
+"^stabilimenti-balneari/services/(?P<facility_slug>[-\\w]+)/(?"
+"P<neighbourhood_slug>[-\\w]+)/$"
+msgstr ""
+"^stabilimenti-balneari/servizi/(?P<facility_slug>[-\\w]+)/(?"
+"P<neighbourhood_slug>[-\\w]+)/$"
 
 #: urls.py:25
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
@@ -242,6 +250,45 @@ msgstr "Servizi"
 #: models/services.py:41
 msgid "Category"
 msgstr "Categoria"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:9
+msgid "bagni_by_facility_and_neighbourhood_pagetitle"
+msgstr "Stabilimenti balneari"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:10
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:16
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:28
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
+#: templates/bagni/service_detail.html:13
+#: templates/bagni/service_detail.html:23
+#: templates/bagni/service_detail.html:43
+#: templates/bagni/service_detail.html:51
+#: templates/bagni/service_detail.html:60
+#: templates/bagni/service_detail.html:63
+msgid "with"
+msgstr "con"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:10
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:16
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:28
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
+#: templates/bagni/service_detail.html:61
+msgid "in"
+msgstr "a"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:15
+msgid "bagni_by_facility_and_neighbourhood_desc"
+msgstr "Elenco degli stabilimenti balneari"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:20
+msgid "bagni_by_facility_and_neighbourhood_header"
+msgstr "Stabilimenti balneari"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:21
+msgid "bagni_by_facility_and_neighbourhood_sub_header"
+msgstr ""
+"Qui puoi trovare contatti, indirizzi e altre informazioni sugli stabilimenti "
+"balneari"
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
@@ -665,32 +712,29 @@ msgstr "risultati della ricerca | bagnialmare.com"
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/service_detail.html:6
+#: templates/bagni/service_detail.html:8
 msgid "service_detail_pagetitle"
-msgstr "bagni e stabilimenti balneari"
+msgstr "Dove trovare stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:11
-#: templates/bagni/service_detail.html:21
-#: templates/bagni/service_detail.html:40
-#: templates/bagni/service_detail.html:48
-msgid "with"
-msgstr "con"
-
-#: templates/bagni/service_detail.html:17
+#: templates/bagni/service_detail.html:19
 msgid "service_detail_desc"
-msgstr "indirizzi e contatti dei bagni e degli stabilimenti balneari"
-
-#: templates/bagni/service_detail.html:26
-msgid "service_detail_header"
-msgstr "bagni e stabilimenti balneari"
-
-#: templates/bagni/service_detail.html:27
-msgid "service_detail_sub_header"
-msgstr "questo è l'elenco dei bagni e degli stabilimenti balneari"
+msgstr "Indirizzi e contatti degli stabilimenti balneari"
 
 #: templates/bagni/service_detail.html:28
+msgid "service_detail_header"
+msgstr "Dove trovare stabilimenti balneari"
+
+#: templates/bagni/service_detail.html:29
+msgid "service_detail_sub_header"
+msgstr "questo è l'elenco delle località che che hanno stabilimenti balneari"
+
+#: templates/bagni/service_detail.html:30
 msgid "service_detail_no_result"
-msgstr "Nessun bagno offre servizio di"
+msgstr "Non abbiamo trovato nessuno stabilimento balneare"
+
+#: templates/bagni/service_detail.html:31
+msgid "service_detail_stabilimenti"
+msgstr "Stabilimenti balneari"
 
 #: templates/bagni/service_list.html:6
 msgid "no_service"
@@ -718,7 +762,7 @@ msgstr "Nessuna categoria di servizio"
 msgid "Service categories"
 msgstr "Categorie di servizi"
 
-#: views/bagni.py:156
+#: views/bagni.py:161
 msgid ""
 "We forwarded your message to the beach resort. As soon as possible you'll "
 "receive a feedback to the email address provided."
