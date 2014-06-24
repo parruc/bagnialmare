@@ -285,6 +285,11 @@ body {
     font-family: Helvetica Neue, sans-serif;
 }
 
+
+.bagno-detail-contact-title{
+    margin-top: 0px;
+}
+
 .book-button-xs:focus{
     color: rgb(255, 255, 255);
     background-color: rgb(50, 118, 177);
