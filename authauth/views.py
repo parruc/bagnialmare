@@ -15,8 +15,8 @@ class ManagerSignupView(SignupView):
                 context.update(dict(pre_selected = (_selected_bagno.neighbourhood.pk, _selected_bagno.pk,)))
             except:
                 pass
-        _select_neighbourhood = [(_neighbourhood.pk, _neighbourhood.name)
-                                for _neighbourhood in Neighbourhood.objects.all().order_by("name")]
+        _select_neighbourhood = [(_neighbourhood.pk, _neighbourhood)
+                                for _neighbourhood in Neighbourhood.objects.all().order_by("municipality__name")]
         context.update(dict(select_neighbourhood = _select_neighbourhood))
         return context
 

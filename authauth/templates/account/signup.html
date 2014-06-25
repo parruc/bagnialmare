@@ -62,7 +62,7 @@
                         </option>
                       {% for neighbourhood in select_neighbourhood %}
                         <option value="{{ neighbourhood.0 }}">
-                          {{ neighbourhood.1 }}
+                          {{ neighbourhood.1.municipality.name }}, {{ neighbourhood.1.name }}
                         </option>
                       {% endfor %}
                     </select>
