@@ -9,7 +9,6 @@ def change_lang(context, lang=None, *args, **kwargs):
     """
     Get active page's url by a specified language
     Usage: {% change_lang 'en' %}
-    TODO: To move inside multilingual app
     """
 
     path = context['request'].path
@@ -23,8 +22,9 @@ def change_lang(context, lang=None, *args, **kwargs):
     cur_language = get_language()
     try:
         activate(lang)
-        if "slug" in url_parts.kwargs and obj:
-            url_parts.kwargs['slug'] = obj.slug
+        for key in url_parts.kwargs.keys():
+            if key.endsWith("slug") and obj:
+                url_parts.kwargs[key] = obj.slug
         url = reverse( url_parts.view_name, kwargs=url_parts.kwargs )
     finally:
         activate(cur_language)
