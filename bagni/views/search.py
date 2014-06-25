@@ -97,6 +97,7 @@ class SearchView(TemplateView):
         search_results['place'] = place
         search_results['point'] = point
         search_results['facets'] = facets
+        search_results['filters'] = filters
         search_results['active_facets'] = active_facets
         search_results['has_get'] = self.request.method == 'GET'
         context.update({'search_results': search_results, 'hits': hits})

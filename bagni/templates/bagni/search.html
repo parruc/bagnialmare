@@ -169,7 +169,13 @@
                 {% else %}
                     <span class="hits-query">( {{ search_results.active_facets|length }} {{ t_active_filters }} )</span>
                 {% endif %}
-            {% endif %}
+            {% elif search_results.count == 0 and search_results.filters|length > 0 %}
+                {% if search_results.filters|length == 1 %}
+                    <span class="hits-query">( 1 {{ t_active_filter }} )</span>
+                {% else %}
+                    <span class="hits-query">( {{ search_results.filters|length }} {{ t_active_filters }} )</span>
+                {% endif %}
+            {% endif %} 
           </p>
           {% if hits %}
             <ul class="nav nav-tabs search-page-tabs" id="myTab">
