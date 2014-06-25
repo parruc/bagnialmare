@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load neighbourhood_municipality from custom_filters %}
+{% load pretty_neighbourhood from custom_filters %}
+
+{% block pagetitle %}{% spaceless %}
+    {% trans "bagni_by_facility_and_neighbourhood_pagetitle" as t_bagni_by_facility_and_neighbourhood_pagetitle %}
+    {{ t_bagni_by_facility_and_neighbourhood_pagetitle }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}
+{% endspaceless %}{% endblock pagetitle %}
+
+
+{% block description %}{% spaceless %}
+    {% trans "bagni_by_facility_and_neighbourhood_desc" as t_bagni_by_facility_and_neighbourhood_desc %}
+    {{ t_bagni_by_facility_and_neighbourhood_desc }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}.
+{% endspaceless %}{% endblock description %}
+
+{% block content %}
+{% trans "bagni_by_facility_and_neighbourhood_header" as t_bagni_by_facility_and_neighbourhood_header %}
+{% trans "bagni_by_facility_and_neighbourhood_sub_header" as t_bagni_by_facility_and_neighbourhood_sub_header %}
+{% comment %}
+    Stabilimenti balneari con -facility.name- a -neighbourhood.name-
+    Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari di -neighbourhood.name-.
+{% endcomment %}
+  <div class="row">
+      <div class="col-xs-12">
+          <h1>{{ t_bagni_by_facility_and_neighbourhood_header }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}</h1>
+          <p>{{ t_bagni_by_facility_and_neighbourhood_sub_header }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}.</p>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-xs-12">
+           <ul>
+                  {% for bagno in bagni %}
+                       <li>
+                           <h3><a href="{{ bagno.get_absolute_url }}">{{ bagno.name}}</a></h3>
+                           <p>{{ bagno.address }} - {{ bagno|neighbourhood_municipality }}</p>
+                       </li>
+                  {% endfor %}
+           </ul>
+      </div>
+  </div>
+
+{% endblock %}
