@@ -14,6 +14,7 @@
 {% trans "bagno" as t_bagno %}
 {% trans "filter_by_facility" as t_filter_by_facility %}
 {% trans "active_filters" as t_active_filters %}
+{% trans "active_filter" as t_active_filter %}
 {% trans "results_for" as t_results_for %}
 {% trans "results" as t_results %}
 {% trans "near_to" as t_near_to %}
@@ -161,6 +162,13 @@
             {% if search_results.place %}
               {{ t_near_to }}
               <span class="hits-query">{{ search_results.place }}</span>
+            {% endif %}
+            {% if search_results.active_facets|length > 0 %}
+                {% if search_results.active_facets|length == 1 %}
+                    <span class="hits-query">( 1 {{ t_active_filter }} )</span>
+                {% else %}
+                    <span class="hits-query">( {{ search_results.active_facets|length }} {{ t_active_filters }} )</span>
+                {% endif %}
             {% endif %}
           </p>
           {% if hits %}
