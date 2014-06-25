@@ -64,7 +64,7 @@
             {% endif %} 
       {% else %}
             {% if not user.is_authenticated %}
-              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-lg btn-primary bagno-detail-button" rel="nofollow">{{ t_are_you_the_manager }}</a>
+              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-lg btn-primary bagno-detail-button hidden" rel="nofollow">{{ t_are_you_the_manager }}</a>
             {% endif %}
       {% endif %}
     </div>
