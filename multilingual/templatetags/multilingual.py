@@ -12,9 +12,6 @@ def change_lang(context, lang=None, *args, **kwargs):
     """
 
     path = context['request'].path
-    obj = None
-    if "object" in context:
-        obj = context.get("object")
 
     url_parts = resolve( path )
 
@@ -23,8 +20,15 @@ def change_lang(context, lang=None, *args, **kwargs):
     try:
         activate(lang)
         for key in url_parts.kwargs.keys():
-            if key.endsWith("slug") and obj:
-                url_parts.kwargs[key] = obj.slug
+            if key.endswith("slug"):
+                key_parts = key.split("_")
+                key_name = "object"
+                obj = None
+                if len(key_parts) > 1:
+                    key_name = key_parts[0]
+                if key_name in context:
+                    obj = context.get(key_name)
+                    url_parts.kwargs[key] = obj.slug
         url = reverse( url_parts.view_name, kwargs=url_parts.kwargs )
     finally:
         activate(cur_language)
