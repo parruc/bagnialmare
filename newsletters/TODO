@@ -1,0 +1,9 @@
+Per poter dare maggior flessibilità al meccanismo di mailing sarebbe utile 
+compilare il field text della newsletter con il context scelto.
+
+- Eliminare il meccanismo di compilazioni dei template testuali html
+- Aggiungere un field model_name opzionale del tipo "bagni.models.Bagno"
+- Aggiungere un field field_name opzionale del tipo "email"
+- Invece di compilare una volta sola il file template html compilo un template ogni mail nell'helper usando il model_name, facendo una query per campo field_name = email
+- In questo modo ho il contesto disponibile nell'editor html e posso fare cose tipo:
+  {{ object.signin_url }} o {% url "bagno-signup" object.slug %}
