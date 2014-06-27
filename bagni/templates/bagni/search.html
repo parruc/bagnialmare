@@ -40,19 +40,19 @@
     {% comment %}
  html - Twitter Bootstrap 3 inline and horizontal form - Stack Overflow       TODO: Da rifattorizzare in un templatetag da usare sia qui che in hp?
     {% endcomment %}
-    <div class="search-page-search-row-wrapper-div hidden-xs">
+    <div class="search-page-search-row-wrapper-div">
       <div class="row search search-page-search-row">
         <form id="search-form"  role="form" action="{% url 'search' %}" method="get">
           <input type="hidden" name="coords" value="{{ search_results.coords }}" />
           {% for facet in search_results.active_facets %}
             <input type="hidden" name="f" value="services:{{ facet.slug }}" />
           {% endfor %}
-          <div class="col-xs-5">
+          <div class="col-xs-12 col-sm-5">
               <label class="my-brown" for="search_q">{{ t_what|capfirst }}</label>
             <input class="form-control" type="text" id="search_q"
                    name="q" value="{{ search_results.q }}" />
           </div>
-          <div class="col-xs-5">
+          <div class="col-xs-9 col-sm-5">
               <label class="my-brown" for="search_l">{{ t_where|capfirst }}</label>
               <div class="input-group">
                   <input class="form-control" type="text" id="search_l"
@@ -67,7 +67,7 @@
         </div>
           </div>
 
-          <div class="col-xs-2 search-page-search-button-div">
+          <div class="col-xs-2 col-sm-2 search-page-search-button-div">
             <button type="submit" id="search_submit"
                     class="btn btn-primary search-page-button" value="search">
               {{ t_search }}
