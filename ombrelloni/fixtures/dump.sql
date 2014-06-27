@@ -13175,6 +13175,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 16	21	info@bagnoegisto38.com	t	t
 17	22	spiaggia136@gmail.com	t	t
 18	23	info@bagno55rimini.com	t	t
+19	24	info@bagnomeridiano.it	t	t
 \.
 
 
@@ -13182,7 +13183,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 18, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 19, true);
 
 
 --
@@ -13199,6 +13200,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 17	17	2014-06-10 17:15:59.532069-04	2014-06-10 17:15:59.614175-04	3ff0e87564b058059fa1f0ee00ed3764b93f23d72e74c3ba8e91070a80f154f0
 18	18	2014-06-11 02:37:07.265053-04	2014-06-11 02:37:07.461111-04	3c7f53899e7314606ebf1fda75b7f9b5d6c7e6312172fbadac4c904c8c7d94d9
 19	18	2014-06-11 02:42:50.862288-04	2014-06-11 02:42:51.56942-04	b03043c9dd01bca4577b22219625eaacf7a368476f29a4735fbb7d7319d2875c
+20	19	2014-06-26 12:53:45.248542-04	2014-06-26 12:53:45.494602-04	3a06f85ed049477ce9b53fb2bd1cdec4d0136c1cbbd96eb2db910188feff470c
 \.
 
 
@@ -13206,7 +13208,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 19, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 20, true);
 
 
 --
@@ -13369,12 +13371,13 @@ SELECT pg_catalog.setval('auth_permission_id_seq', 108, true);
 COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
 22	pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=	2014-06-10 17:17:06.185602-04	f	spiaggia136	fausto	ravaglia	spiaggia136@gmail.com	f	t	2014-06-10 17:15:56.918226-04
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
-6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-06-15 12:22:03.250239-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
-5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-18 10:45:38.52453-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
+7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-06-25 04:05:05.310998-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
+5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-25 12:34:37.001892-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
+6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-06-26 06:13:20.536308-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
+24	pbkdf2_sha256$12000$epMiSQuwsn2v$XMqOSbi+TS++FOYVXEpU0SNmuqrCCBTsN4xZQvC3nqo=	2014-06-26 13:01:18.341567-04	f	info4	eros	fabbri	info@bagnomeridiano.it	f	t	2014-06-26 12:53:42.035262-04
 8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-09 05:11:54.824874-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 18	pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=	2014-06-09 05:13:37.488704-04	f	mbenvenuto	User	Tester	mbenvenuto@airplus.com	f	t	2014-06-03 08:51:22.754527-04
 19	pbkdf2_sha256$12000$gvuKqtYpU576$e4tpwgv432EUJ847ZBQptllrKE/t1eDaeXP83KfU3Gc=	2014-06-09 04:26:29.294945-04	f	ndefrancesco	Nadia	Defrancesco	ndefrancesco@bagno27.it	f	t	2014-06-09 04:26:29.29501-04
-7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-06-09 16:33:28.823381-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 20	pbkdf2_sha256$12000$I0oDJY31RDCa$oRi8DNR7BjHFyLPTVt603EzOMOe+RYIDRWKQFOuqsLU=	2014-06-10 04:06:02.213327-04	f	info	società	Nettuno	info@centrovacanzericcione.it	f	t	2014-06-10 04:01:46.021113-04
 21	pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=	2014-06-10 15:42:53.620993-04	f	info2	Alessandro	Bologna	info@bagnoegisto38.com	f	t	2014-06-10 15:42:30.977587-04
 \.
@@ -13399,7 +13402,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 23, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 24, true);
 
 
 --
@@ -13435,6 +13438,7 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname) FROM stdin;
 14	21	t	t	Alessandro	Bologna
 15	22	t	t	fausto	ravaglia
 16	23	t	t	fabio	pezzei
+17	24	t	t	eros	fabbri
 \.
 
 
@@ -13448,6 +13452,7 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 6	14	13580
 7	15	13737
 8	16	13465
+9	17	13027
 \.
 
 
@@ -13455,14 +13460,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 8, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 9, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 16, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 17, true);
 
 
 --
@@ -13510,10 +13515,16 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13831	Bagno Guerrino	bagno-guerrino		Via Ruggero Pascoli			0101000020E6100000090F00C014E5284041B9C1F40D154640	 	 		40	t
 12859	Bagno Miami	bagno-miami	282	III Traversa - arenile demaniale 282			0101000020E6100000402BAA2AA6B42840DEDD6F592A244640		\N	\N	2	t
 13832	Bagno Olimpia	bagno-olimpia-20	20	via Forli		http://www.bagnoolimpia.it/	0101000020E6100000D60AF1EFF2E028406E4E4EC60E164640	 	 		39	t
+12786	Bagno Conchiglia Lido	bagno-conchiglia-lido	185	Lungomare Grazia Deledda - arenile demaniale 185			0101000020E61000002B69502A9DB9284015DC41B2E1204640	 	 		1	t
 12901	Bagno Mediterraneo	bagno-mediterraneo	65	Arenile Demaniale 65			0101000020E610000026CB1BF091C02840D57139B4011E4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1990<br />\n\tfronte mare: 19<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 1</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1990<br />\n\tfronte mare: 19<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 1</p>	\N	3	t
+13097	Bagno Kapogiro	kapogiro	25	Via Spiaggia, 25			0101000020E6100000F8FFFFA7B17E28405501B9A3DE544640	None	None	None	9	t
 12921	Bagno Everest	bagno-everest	98	Arenile demaniale 98			0101000020E6100000E03018F690BE2840447FD83AC71E4640		\N	\N	3	t
+13117	Bagno Prestige	prestige	23	Lungomare Italia, 3			0101000020E6100000FDFFFFAB637D28403C25ED2B4A5F4640	None	None	None	11	t
 12970	Bagno bertino	bagno-bertino		Viale Giosuè Carducci			0101000020E610000000000080B5DE28409F3D7A866D164640		\N	\N	5	t
+13274	Bagno Marisol	bagno-marisol		Viale delle Nazioni, 74			0101000020E6100000A4A484E946932840E11F7C49DF3B4640	None	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\tombrelloni: 97<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 500<br />\r\n\tcabine: 2<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 3</p>	None	19	t
+13089	Bagno Oro	oro	17	Via Spiaggia, 17	ozor@libero.it	http://www.bagnooro.com/	0101000020E61000000000009C637E28401FBC192841554640	 	 		9	t
 13020	Bagno luigi	bagno-luigi-2		Spiaggia Villamarina			0101000020E6100000000000A07ADB2840B1B08E37FA164640	<h3>Details</h3>\n\t<p>sdraio: 24<br />\n\twc: 2<br />\n\tombrelloni: 82<br />\n\tfronte mare: 24<br />\n\tlettini: 142<br />\n\tcabine: 4<br />\n\tsuperficie complessiva spiaggia: 0<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 24<br />\n\twc: 2<br />\n\tombrelloni: 82<br />\n\tfronte mare: 24<br />\n\tlettini: 142<br />\n\tcabine: 4<br />\n\tsuperficie complessiva spiaggia: 0<br />\n\tdocce aperte: 2</p>	\N	7	t
+13293	Bagno Waimea	bagno-waimea		Viale dell Nazioni, 14	magiusnc@gmail.com	http://www.bagnowaimea.it/	0101000020E6100000BA58A4CB93912840860A69E8BA3D4640	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 80<br />\r\n\twc: 3<br />\r\n\tombrelloni: 114<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 40<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 5</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 80<br />\r\n\twc: 3<br />\r\n\tombrelloni: 114<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 40<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 5</p>		19	t
 13114	Bar Bagno Oasi	bar-bagno-oasi	20	Viale Unione Sovietica, 1			0101000020E6100000000000C44B7D2840A9EDD308B95F4640		\N	\N	11	t
 13103	Bagno Medusa	medusa-2	51b	Via Mare Jonio, 11/a			0101000020E61000000000009CB27A2840206F4DF4D65A4640		\N	\N	10	t
 13160	Bagno Spina	spina	48	Via Spiaggia, 48	spinabeach48@gmail.com	www.bagnospina.com	0101000020E610000000000008C880284091B0FF0137534640		\N	\N	13	t
@@ -13582,7 +13593,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13422	Bagno Azzurro	azzurro	12 sud	Lungomare Tintori		http://www.comitatobagninirimini.it	0101000020E6100000933501BE8F272940B19C2919A5094640	<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 120</p>	<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 120</p>	\N	25	t
 13029	Bagno milano villamarina	bagno-milano-villamarina		Spiaggia Villamarina			0101000020E6100000000000E0A1DD2840D3B126BB85164640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 170<br />\n\tfronte mare: 26<br />\n\tlettini: 350<br />\n\tcabine: 11<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 1600<br />\n\tdocce aperte: 4</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 170<br />\n\tfronte mare: 26<br />\n\tlettini: 350<br />\n\tcabine: 11<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 1600<br />\n\tdocce aperte: 4</p>	\N	7	t
 13762	Bagno Lino	bagno-lino	21	Via C. Colombo			0101000020E6100000891879D021EC2840DF80E285A5134640		\N	\N	37	t
-12786	Bagno Conchiglia Lido	bagno-conchiglia-lido	185	Lungomare Grazia Deledda - arenile demaniale 185			0101000020E61000002B69502A9DB9284015DC41B2E1204640				1	t
 12788	Bagno Spiaggia 188	bagno-spiaggia-188	188	Lungomare Grazia Deledda - arenile demaniale 188			0101000020E6100000059C028C73B9284077C9CEF4F5204640	<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 3834<br />\r\nfronte mare: 35<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n	<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 3834<br />\r\nfronte mare: 35<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n		1	t
 12789	Bagno Anita	bagno-anita	190	Lungomare Grazia Deledda - arenile demaniale 190			0101000020E61000003E1324CD57B928406912827603214640	<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 4077<br />\r\nfronte mare: 37<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n	<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 4077<br />\r\nfronte mare: 37<br />\r\ndocce aperte: 4<br />\r\nwc: 5</p>\r\n		1	t
 12790	Bagno Ben	bagno-ben	191	Lungomare Grazia Deledda - arenile demaniale 191			0101000020E6100000D3CEB4ED49B92840DDB65B370A214640	<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2162<br />\r\nfronte mare: 18<br />\r\ndocce aperte: 6<br />\r\nwc: 4</p>\r\n	<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 2162<br />\r\nfronte mare: 18<br />\r\ndocce aperte: 6<br />\r\nwc: 4</p>\r\n		1	t
@@ -13699,7 +13709,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13023	Bagno magnani	bagno-magnani		Viale Piave		http://www.bagnomagnani.it	0101000020E61000000000000019CE284065EC22CD581A4640	<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 5<br />\n\tombrelloni: 50<br />\n\tfronte mare: 25<br />\n\tlettini: 100<br />\n\tcabine: 22<br />\n\tdocce chiuse: 6<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 5<br />\n\tombrelloni: 50<br />\n\tfronte mare: 25<br />\n\tlettini: 100<br />\n\tcabine: 22<br />\n\tdocce chiuse: 6<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 2</p>	\N	6	t
 13024	Bagno marconi	bagno-marconi		Piazza Ginesio Marconi	info@bagnomarconi.com	http://bagnomarconi.com	0101000020E6100000000000E0F6D32840CEAC75AEB8184640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 100<br />\n\twc: 9<br />\n\tombrelloni: 600<br />\n\tfronte mare: 133<br />\n\tlettini: 1200<br />\n\tcabine: 70<br />\n\tdocce chiuse: 3<br />\n\tsuperficie complessiva spiaggia: 10441<br />\n\tdocce aperte: 8</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 100<br />\n\twc: 9<br />\n\tombrelloni: 600<br />\n\tfronte mare: 133<br />\n\tlettini: 1200<br />\n\tcabine: 70<br />\n\tdocce chiuse: 3<br />\n\tsuperficie complessiva spiaggia: 10441<br />\n\tdocce aperte: 8</p>	\N	6	t
 13026	Bagno medusa	bagno-medusa-2		Viale Lungomare Ponente, 83			0101000020E6100000000000609DCB2840995970C1911A4640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 100<br />\n\tfronte mare: 32<br />\n\tlettini: 200<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1344<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 100<br />\n\tfronte mare: 32<br />\n\tlettini: 200<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1344<br />\n\tdocce aperte: 3</p>	\N	6	t
-13027	Bagno meridiano	bagno-meridiano		Viale Milano, 34	info@bagnomeridiano.it	http://www.bagnomeridiano.it	0101000020E6100000000000307BD228409AAC4A5A29194640	<h3>Details</h3>\n\t<p>sdraio: 40<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\tfronte mare: 30<br />\n\tlettini: 190<br />\n\tcabine: 29<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2850</p>	<h3>Details</h3>\n\t<p>sdraio: 40<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\tfronte mare: 30<br />\n\tlettini: 190<br />\n\tcabine: 29<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2850</p>	\N	6	t
 13034	Bagno paradiso	bagno-paradiso		Viale Lungomare Ponente, 87	info@bagnoparadiso.it	http://www.bagnoparadiso.it	0101000020E6100000000000D0A5CB284045527EC3921A4640	<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 2<br />\n\tombrelloni: 100<br />\n\tfronte mare: 40<br />\n\tlettini: 220<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1800<br />\n\tdocce aperte: 1</p>	<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 2<br />\n\tombrelloni: 100<br />\n\tfronte mare: 40<br />\n\tlettini: 220<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1800<br />\n\tdocce aperte: 1</p>	\N	6	t
 13035	Bagno pasquina	bagno-pasquina		Viale Lungomare Ponente, 77			0101000020E6100000000000F8F5CB2840225266ED871A4640	<h3>Details</h3>\n\t<p>lavapiedi: 3<br />\n\tsdraio: 30<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 45<br />\n\tlettini: 150<br />\n\tcabine: 19<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1575<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 3<br />\n\tsdraio: 30<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 45<br />\n\tlettini: 150<br />\n\tcabine: 19<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1575<br />\n\tdocce aperte: 2</p>	\N	6	t
 13038	Bagno pinguino	bagno-pinguino		Viale Lungomare Ponente, 85	bagno.pinguino@libero.it	http://www.bagnopinguino.it	0101000020E610000000000020BFCB2840410D31388D1A4640	<h3>Details</h3>\n\t<p>lavapiedi: 0<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\tfronte mare: 30<br />\n\tlettini: 150<br />\n\tcabine: 12<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1230<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 0<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\tfronte mare: 30<br />\n\tlettini: 150<br />\n\tcabine: 12<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1230<br />\n\tdocce aperte: 2</p>	\N	6	t
@@ -13707,6 +13716,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13430	Bagno Arcobaleno	arcobaleno	20 sud	Lungomare Tintori		http://www.comitatobagninirimini.it/	0101000020E610000078B142270A2929405B0E4F0A4E094640	<h3>Details</h3>\n\t<p>cabine: 44<br />\n\tombrelloni: 177</p>	<h3>Details</h3>\n\t<p>cabine: 44<br />\n\tombrelloni: 177</p>	\N	25	t
 13637	Bagni Mario	bagni-mario-3	34	Fontanelle Abissinia			0101000020E61000008A153D09CF5A29406E44FF1D34FF4540		\N	\N	36	t
 13031	Bagno Nettuno	bagno-nettuno-levante		Viale Venezia,  28			0101000020E610000002000050AADD2840A3DABAC188164640				6	t
+13027	Bagno meridiano	bagno-meridiano	34	Viale Milano, 34		http://www.bagnomeridiano.it/	0101000020E6100000060000307BD2284094AC4A5A29194640	None	<h3>Details</h3>\r\n\t<p>sdraio: 40<br />\r\n\twc: 3<br />\r\n\tombrelloni: 120<br />\r\n\tfronte mare: 30<br />\r\n\tlettini: 190<br />\r\n\tcabine: 29<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2850</p>	None	6	t
 13043	Bagno roma	bagno-roma-2		Via Montenero, 54	info@bagnoroma.it	http://www.bagnoroma.it	0101000020E610000000000048C0CF2840D80A5598E1194640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 50<br />\n\twc: 3<br />\n\tombrelloni: 130<br />\n\tfronte mare: 28<br />\n\tlettini: 230<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2240<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 50<br />\n\twc: 3<br />\n\tombrelloni: 130<br />\n\tfronte mare: 28<br />\n\tlettini: 230<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2240<br />\n\tdocce aperte: 2</p>	\N	6	t
 13046	Bagno romana	bagno-romana		Viale Lungomare Ponente, 79	info@bagnoromana.it	http://www.bagnoromana.it	0101000020E610000000000038F3CA284009E01782B11A4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 8<br />\n\twc: 2<br />\n\tombrelloni: 70<br />\n\tfronte mare: 30<br />\n\tlettini: 130<br />\n\tcabine: 13<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 840<br />\n\tdocce aperte: 1</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 8<br />\n\twc: 2<br />\n\tombrelloni: 70<br />\n\tfronte mare: 30<br />\n\tlettini: 130<br />\n\tcabine: 13<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 840<br />\n\tdocce aperte: 1</p>	\N	6	t
 13050	Bagno sessantanove	bagno-sessantanove		Viale Piave, 69	info@riviera69.com	http://riviera69.com	0101000020E610000000000018D1D02840FAB087D2A0194640	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 240<br />\n\tfronte mare: 43<br />\n\tlettini: 600<br />\n\tcabine: 40<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 5160<br />\n\tdocce aperte: 4</p>	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 240<br />\n\tfronte mare: 43<br />\n\tlettini: 600<br />\n\tcabine: 40<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 5160<br />\n\tdocce aperte: 4</p>	\N	6	t
@@ -14051,7 +14061,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12931	Bagno Sara Beach	bagno-sara-beach	114	Arenile demaniale 114			0101000020E610000041A0D03E98BD28405AD3FEFF261F4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2094<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 3<br />\n\twc: 5</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2094<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 3<br />\n\twc: 5</p>	\N	3	t
 12932	Bagno Sole	bagno-sole	115/116/117	Arenile demaniale 115/116/117			0101000020E610000037275CB388BD28409C3851FC2C1F4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3989<br />\n\tfronte mare: 39<br />\n\tdocce aperte: 1<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3989<br />\n\tfronte mare: 39<br />\n\tdocce aperte: 1<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	\N	3	t
 13088	Bagno Gabbiano	gabbiano	16	Via Spiaggia, 16	bagnogabbiano@libero.it	www.bagnogabbiano.it	0101000020E6100000000000A8577E2840687EFCA859554640		\N	\N	9	t
-13089	Bagno Oro	oro	17	Via Spiaggia, 17	info@bagnooro.com	www.bagnooro.com	0101000020E61000000000009C637E28401FBC192841554640		\N	\N	9	t
 13090	Bagno Italia	italia	18	Via Spiaggia, 18	info@bagnoitalia.eu		0101000020E61000000000003C697E28404524D5273A554640		\N	\N	9	t
 12933	Bagno La Villa Beach	bagno-la-villa-beach	118	Arenile Demaniale 118			0101000020E610000019BCFE105ABD2840606848F13E1F4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 128<br />\n\twc disabili: 1<br />\n\tfronte mare: 35<br />\n\tlettini: 350<br />\n\tcabine: 40<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3650<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 128<br />\n\twc disabili: 1<br />\n\tfronte mare: 35<br />\n\tlettini: 350<br />\n\tcabine: 40<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3650<br />\n\tdocce aperte: 2</p>	\N	3	t
 12934	Bagno Angela	bagno-angela-2	119	Arenile demaniale 119			0101000020E61000000F438A854ABD2840A1CD9AED441F4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2400<br />\n\tfronte mare: 24<br />\n\tdocce aperte: 2<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2400<br />\n\tfronte mare: 24<br />\n\tdocce aperte: 2<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	\N	3	t
@@ -14072,7 +14081,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12943	Bagno Delfino	bagno-delfino	131	Arenile demaniale 131			0101000020E6100000999614FC8FBC2840B28C77C18C1F4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3030<br />\n\tfronte mare: 30<br />\n\tdocce aperte: 4<br />\n\twc: 3<br />\n\tdocce chiuse: 1</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3030<br />\n\tfronte mare: 30<br />\n\tdocce aperte: 4<br />\n\twc: 3<br />\n\tdocce chiuse: 1</p>	\N	3	t
 12944	Bagno Sabrina - Fuorionda	bagno-sabrina-fuorionda	3	Arenile demaniale 3			0101000020E6100000AEEFC34142C4284044E048A0C11C4640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tfronte mare: 59<br />\n\tlettini: 400<br />\n\tcabine: 20<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 1260<br />\n\tdocce aperte: 6</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tfronte mare: 59<br />\n\tlettini: 400<br />\n\tcabine: 20<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 1260<br />\n\tdocce aperte: 6</p>	\N	4	t
 13085	Bagno Vela	vela	12	Viale Spiaggia, 12	vela12estensi@gmail.com		0101000020E610000000000080347E2840CD35896A8B554640		\N	\N	9	t
-13117	Bagno Prestige	prestige	23	Lungomare Italia, 3	info@prestigeventi.com	www.prestigeventi.com	0101000020E6100000000000AC637D28404025ED2B4A5F4640		\N	\N	11	t
 13100	Bagno Vascello	vascello	28	Via Spiaggia, 28	bagnovascello@gmail.it		0101000020E610000000000028C87E284045519B41B7544640		\N	\N	9	t
 13101	Bagno Aquarama	aquarama	29	Via Spiaggia, 29	info@aquarama.com	www.ristoranteaquarama.com/	0101000020E61000000000008CDC7E284003C24DC0A0544640		\N	\N	9	t
 12946	Bagno Bianconero - Fuorionda	bagno-bianconero-fuorionda	7/8/9	Arenile demaniale 7/8/9			0101000020E61000008D13366EF7C32840D8A790E9D81C4640	<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\twc: 6<br />\n\tombrelloni: 275<br />\n\twc disabili: 2<br />\n\tfronte mare: 86<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 5000<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\twc: 6<br />\n\tombrelloni: 275<br />\n\twc disabili: 2<br />\n\tfronte mare: 86<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 5000<br />\n\tdocce aperte: 5</p>	\N	4	t
@@ -14170,7 +14178,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13145	Bagno Roma	roma	33	Via Spiaggia, 33	agenzia.mario@libero.it	www.agenziaturisticamario.com	0101000020E6100000000000A0047F2840BF77D7D93E544640		\N	\N	13	t
 13146	Bagno Faro	faro	34	Via Spiaggia, 34	info@faro34.it	www.faro34.it	0101000020E6100000000000A0047F2840BF77D7D93E544640		\N	\N	13	t
 13147	Bagno Hawaii	hawaii	35	Via Spiaggia, 35	info@hotsand.info	www.hotsand.info	0101000020E610000000000080157F2840AA6166582B544640		\N	\N	13	t
-13148	Bagno Honolulu	honolulu	36	Via Spiaggia, 36	info@hotsand.info	www.hotsand.info	0101000020E6100000000000C4C17F28407D4E26F71A544640		\N	\N	13	t
 13150	Bagno Capanna	capanna	38	Via Spiaggia, 38	info@marepineta.com	www.campingmarepineta.com	0101000020E610000000000068B47F28400E69920B95534640		\N	\N	13	t
 13151	Bagno Ultima Spiaggia Trocadero	ultima-spiaggia-trocadero	39	Via Spiaggia, 39	ultimaspiaggia39@libero.it	www.trocaderomare.com	0101000020E610000000000068B47F28400E69920B95534640		\N	\N	13	t
 13152	Bagno San Marco	san-marco	40	Via Spiaggia, 40	spinabeach40@hotmail.it	bagno-sanmarco.com/	0101000020E610000000000068B47F28400E69920B95534640		\N	\N	13	t
@@ -14198,6 +14205,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13180	Bagno Apollo	apollo	6	Via Spiaggia, 48	andrews@7lidiweb.com	www.7lidiweb.com/apollo	0101000020E610000000000050FE892840FD9FB05532664640		\N	\N	14	t
 13182	Bagno La Cueva	la-cueva	8	Via Spiaggia, 8			0101000020E610000000000058328A2840D134E3C947664640		\N	\N	14	t
 13164	Bagno Eden	eden-2	53	Via Spiaggia, 53	valerianomartini@alice.it		0101000020E6100000000000B862812840428C2C77D8524640	 	 		13	t
+13148	Bagno Honolulu	honolulu	36	Via Spiaggia, 36			0101000020E6100000FFFFFFC3C17F28407B4E26F71A544640	None	None	None	13	t
 13183	Bagno Ristoro	ristoro	9	Via Lungomare del Parco, 5	contatti@bagnoristoro.it	www.bagnoristoro.it	0101000020E610000000000058F78828405E519DDD23664640		\N	\N	14	t
 13184	Bagno Schiuma	schiuma-2	10	Via Lungomare del Parco, 7	bagnoschiuma1983@libero.it		0101000020E6100000000000589D88284054DD282C09664640		\N	\N	14	t
 13185	Bagno Estense	estense	11	Via Lungomare del Parco, 9	bagnoestense@virgilio.it		0101000020E61000000000008093882840BB2E76EE04664640		\N	\N	14	t
@@ -14208,7 +14216,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13191	Bagno Isa	isa	17	Via Lungomare del Parco, 23	bagnoisa@gmail.com		0101000020E6100000000000106F862840FD848D583C654640		\N	\N	14	t
 13192	Bagno Ippopotamus	ippopotamus	62	Via dei Mille, 42	info@bagnoristorante_ippopotamus.com		0101000020E61000000000006C3C7B2840CCBEB5A694574640		\N	\N	15	t
 13193	Bagno Flamingo	flamingo	63	Via dei Mille, 36	bagnoflamingo63@hotmail.it		0101000020E610000000000028447B28401B8EB9C77B574640		\N	\N	15	t
-13194	Bagno Morris	morris	64	Via dei Mille, 34	info@bagnomorris.com	www.bagnomorris.com	0101000020E6100000000000945F7B284010D551286C574640		\N	\N	15	t
 13195	Bagno Astor	astor	65	Via dei Mille, 32	astorcarli@libero.it	www.bagnoastorcarli.blogspot.com	0101000020E6100000000000D46A7B2840A7B7308953574640		\N	\N	15	t
 13196	Bagno Panemabeach	panemabeach	66	Via dei Mille, 30			0101000020E610000000000060757B28401B4AB3E943574640		\N	\N	15	t
 13203	Bagno Roma	roma-2	73	Piazza 5 Maggio, 4			0101000020E61000000000001CD77B2840BF92F6ABEB564640		\N	\N	15	t
@@ -14229,6 +14236,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13218	Bagno Oasi	bagno-oasi-2		Via Leggero, 12			0101000020E61000007E52EDD3F1902840DF313CF6B3464640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\twc disabili: 2<br />\n\tlettini: 250<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\twc disabili: 2<br />\n\tlettini: 250<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>	\N	16	t
 13219	Bagno Overbeach (Mare e Vento)	bagno-overbeach-mare-e-vento		Via Ortolani Stefano, 1	info@overbeach.it	http://www.overbeach.it/	0101000020E61000006859F78F859028408BA4DDE863464640	<h3>Details</h3>\n\t<p>sdraio: 7<br />\n\twc: 3<br />\n\tombrelloni: 96<br />\n\twc disabili: 1<br />\n\tlettini: 350<br />\n\tcabine: 7<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 7<br />\n\twc: 3<br />\n\tombrelloni: 96<br />\n\twc disabili: 1<br />\n\tlettini: 350<br />\n\tcabine: 7<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 2</p>	\N	16	t
 13221	Bagno Romeo	bagno-romeo-2		Via Delle Ortensie, 12	info@bagno-romeo.it	http://www.bagno-romeo.it	0101000020E6100000DFC2BAF1EE9028402711E15F04474640	<h3>Details</h3>\n\t<p>sdraio: 40<br />\n\twc: 2<br />\n\tombrelloni: 100<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 21<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 40<br />\n\twc: 2<br />\n\tombrelloni: 100<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 21<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 2</p>	\N	16	t
+13194	Bagno Morris	morris	64	Via dei Mille, 34	monicabiu@hotmail.it	http://www.bagnomorris.com/	0101000020E6100000000000945F7B284010D551286C574640	 	 		15	t
 13222	Bagno Sole Luna (Fabio's Beach)	bagno-sole-luna-fabios-beach		Via Spazzoli Tonino, 3			0101000020E61000009C1A683EE78E2840FAD51C2098434640	<h3>Details</h3>\n\t<p>wc: 2<br />\n\tombrelloni: 45<br />\n\twc disabili: 1<br />\n\tlettini: 140<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>wc: 2<br />\n\tombrelloni: 45<br />\n\twc disabili: 1<br />\n\tlettini: 140<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 3</p>	\N	16	t
 13224	Bagno Aloha Beach (Medusa)	bagno-aloha-beach-medusa		Viale Italia, 32	alberto@alohabeach.it	http://www.alohabeach.it	0101000020E610000085AA3D91CC8F28401DC1D72148414640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 27<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 27<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 5</p>	\N	17	t
 13225	Bagno Azzurro	bagno-azzurro-2		Viale Italia, 18 (155)	bagno-azzurro@libero.it	http://www.bagnoazzurro.it	0101000020E6100000B51944F7EE8F284050A3149DFA404640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 150<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 30<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 8</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 150<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 30<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 8</p>	\N	17	t
@@ -14274,12 +14282,10 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13272	Bagno Marinabay	bagno-marinabay		Viale dell Nazioni, 10/12	info@marinabay.it	http://www.marinabay.it	0101000020E61000006F4C17AE83912840BB090086CC3D4640	<h3>Details</h3>\n\t<p>sdraio: 100<br />\n\twc: 12<br />\n\tombrelloni: 220<br />\n\twc disabili: 3<br />\n\tlettini: 1000<br />\n\tcabine: 16<br />\n\tdocce chiuse: 3<br />\n\tdocce aperte: 12</p>	<h3>Details</h3>\n\t<p>sdraio: 100<br />\n\twc: 12<br />\n\tombrelloni: 220<br />\n\twc disabili: 3<br />\n\tlettini: 1000<br />\n\tcabine: 16<br />\n\tdocce chiuse: 3<br />\n\tdocce aperte: 12</p>	\N	19	t
 13074	Bagno Medusa	medusa	1	Via Spiaggia, 1	clarissabizzi@libero.it		0101000020E610000000000070267E2840B30D54AD38564640		\N	\N	9	t
 13273	Bagno Marinamore	bagno-marinamore		viale delle Nazioni, 82	info@marinamore.it	http://www.marinamore.it	0101000020E61000001EE2457D97932840D6238935873B4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 4<br />\n\tombrelloni: 110<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 4<br />\n\tombrelloni: 110<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
-13274	Bagno Marisol	bagno-marisol		Viale delle Nazioni, 74	info@marisol74.it	http://www.marisol74.it	0101000020E6100000A6A484E946932840E11F7C49DF3B4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 3<br />\n\tombrelloni: 97<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 2<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 3<br />\n\tombrelloni: 97<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 2<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	\N	19	t
 13275	Bagno Maverick	bagno-maverick		Via Lungo Mare, 76	tavernamolino@libero.it		0101000020E61000008E277055539128405C07C55E013E4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 15<br />\n\twc: 4<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 10<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 15<br />\n\twc: 4<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 10<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
 13276	Bagno Mio Capitano	bagno-mio-capitano		Viale della Pace, 456	bagnomiocapitano@libero.it		0101000020E61000003CBD9E246793284076214E0EBC3B4640	<h3>Details</h3>\n\t<p>sdraio: 20<br />\n\twc: 4<br />\n\tombrelloni: 60<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 20<br />\n\twc: 4<br />\n\tombrelloni: 60<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
 13277	Bagno Mitù C.R.A.L.P.T.	bagno-mitu-cralpt		viale delle Nazioni, 28 (242/C)	info@marinamitu.it	http://www.marinamitu.it	0101000020E61000007DA2F27CF4912840450FDF36513D4640	<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\tsdraio: 1015<br />\n\twc: 4<br />\n\tombrelloni: 190<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\tsdraio: 1015<br />\n\twc: 4<br />\n\tombrelloni: 190<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	\N	19	t
 13278	Bagno Mokambo	bagno-mokambo		Via Lungomare, 4			0101000020E6100000F80E561A33912840C705F399243E4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 6<br />\n\tombrelloni: 300<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 50<br />\n\tdocce chiuse: 10<br />\n\tdocce aperte: 8</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 6<br />\n\tombrelloni: 300<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 50<br />\n\tdocce chiuse: 10<br />\n\tdocce aperte: 8</p>	\N	19	t
-13279	Bagno Molo Tre Zero	bagno-molo-tre-zero		Viale delle Nazioni, 30	info@molotrezero.it	http://www.molotrezero.it	0101000020E610000013BB0CB814922840DA10B1FB2D3D4640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 40<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 15<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 40<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 15<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
 13500	Bagno Spiaggia 90 Mirco	spiaggia-90-mirco	90 sud	Piazzale Gondar	info@spiaggia90.it	http://www.spiaggia90.it	0101000020E61000008CAD3F40F9352940E7B0564854064640	\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei delle varie attività\r\n- serate a tema</p>	\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei delle varie attività\r\n- serate a tema</p>	\N	26	t
 13281	Bagno Oasi	bagno-oasi-3		Viale delle Nazioni, 80 (462)	luminob.luminob@alice.it		0101000020E6100000D3D5B85F879328400B2320D3983B4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 175<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 29<br />\n\tdocce chiuse: 3<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 175<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 29<br />\n\tdocce chiuse: 3<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
 13283	Bagno Paradiso	bagno-paradiso-3		Viale delle Nazioni, 44	iorio@racine.ra.it		0101000020E6100000D6045B69759228409915274AC43C4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 190<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 11<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 190<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tcabine: 11<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
@@ -14287,11 +14293,11 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13286	Bagno Singita Miracle Beach	bagno-singita-miracle-beach		Viale delle Nazioni, 242/b	info@singita.it	http://www.singita.it	0101000020E6100000C8AE7F9A049228400F1048993F3D4640	<h3>Details</h3>\n\t<p>wc: 5<br />\n\tombrelloni: 200<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tcabine: 5<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 9</p>	<h3>Details</h3>\n\t<p>wc: 5<br />\n\tombrelloni: 200<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tcabine: 5<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 9</p>	\N	19	t
 13287	Bagno Sottomarino Rivaverde	bagno-sottomarino-rivaverde		Viale Delle Nazioni, 54	info@sottomarino54.com	http://www.sottomarino54.com	0101000020E610000002368FDFB5922840C318CBD37D3C4640	<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 176<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 8<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>	<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 176<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 8<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>	\N	19	t
 13288	Bagno Taormina	bagno-taormina		Viale Delle Nazioni, 46 (278)	info@bagnotaormina.it	http://www.bagnotaormina.it	0101000020E61000002111E88685922840631690ACB23C4640	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 150<br />\n\twc disabili: 1<br />\n\tlettini: 550<br />\n\tcabine: 27<br />\n\tdocce chiuse: 3<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 150<br />\n\twc disabili: 1<br />\n\tlettini: 550<br />\n\tcabine: 27<br />\n\tdocce chiuse: 3<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
+13279	Bagno Molo Tre Zero	bagno-molo-tre-zero		Viale delle Nazioni, 30	info@molotrezero.com	http://www.molotrezero.com/	0101000020E610000013BB0CB814922840DA10B1FB2D3D4640	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 40<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 15<br />\r\n\tdocce chiuse: 2<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 40<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 15<br />\r\n\tdocce chiuse: 2<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>		19	t
 13289	Bagno Tequila	bagno-tequila		Viale Delle Nazioni, 48 (284)	info@bagnotequila.com		0101000020E61000006C1D75A4959228402E17F90EA13C4640	<h3>Details</h3>\n\t<p>wc: 3<br />\n\tombrelloni: 90<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 15<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>wc: 3<br />\n\tombrelloni: 90<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 15<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	19	t
 13290	Bagno Tikoa	bagno-tikoa		Viale delle Nazioni, 442	info@tikoa.it	http://www.tikoa.it	0101000020E61000007A73507306932840B71CD8BF253C4640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\twc: 4<br />\n\tombrelloni: 90<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 6</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\twc: 4<br />\n\tombrelloni: 90<br />\n\twc disabili: 1<br />\n\tlettini: 500<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 6</p>	\N	19	t
 13291	Bagno Toto Beach Bar	bagno-toto-beach-bar		Viale dell Nazioni, 64	toto@toto-beach.it	http://www.totobeach.it	0101000020E6100000E45A3638E6922840221B06FB483C4640	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 250<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tcabine: 24<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 250<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tcabine: 24<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>	\N	19	t
 13292	Bagno Ulisse	bagno-ulisse-3		Via Lungo Mare, 78	bagno.ulisse@alice.it		0101000020E6100000D933FD726391284026082EC1EF3D4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 5<br />\n\twc disabili: 1<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 5<br />\n\twc disabili: 1<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>	\N	19	t
-13293	Bagno Waimea	bagno-waimea		Viale dell Nazioni, 14	info@bagnowaimea.it	http://www.bagnowaimea.it/	0101000020E6100000BA58A4CB93912840860A69E8BA3D4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 80<br />\n\twc: 3<br />\n\tombrelloni: 114<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 40<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 80<br />\n\twc: 3<br />\n\tombrelloni: 114<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 40<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 5</p>	\N	19	t
 13313	Bagno Mare Blu	bagno-mare-blu		Viale Lungomare, 18/B			0101000020E6100000065050EEA594284046C9FBDE653A4640		\N	\N	20	t
 13356	Bagno Classe	bagno-classe		Via Paolo e Francesca	info@bagnoclasse.it	http://www.bagnoclasse.it	0101000020E6100000FAF202ECA3A32840956247E350314640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 4<br />\n\tombrelloni: 70<br />\n\tlettini: 220<br />\n\tcabine: 9<br />\n\tdocce chiuse: 3<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 4<br />\n\tombrelloni: 70<br />\n\tlettini: 220<br />\n\tcabine: 9<br />\n\tdocce chiuse: 3<br />\n\tdocce aperte: 3</p>	\N	22	t
 13297	Bagno B. B. King	bagno-b-b-king		Lungomare Colombo Cristoforo, 171	info@bbkbeach.com	http://www.bbkbeach.com	0101000020E6100000605E443F81972840A42DFE5CF3384640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\twc: 5<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tlettini: 500<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\twc: 5<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tlettini: 500<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 5</p>	\N	20	t
@@ -14441,7 +14447,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13559	Bagno Edera	edera	2 nord	Via Toscanelli		http://www.spiaggeoasi.it/scheda.html?id=20&loc=viserba	0101000020E61000002D3E05C0781E2940A7406667D1094640	<h3>Details</h3>\n\t<p>cabine: 25<br />\n\tombrelloni: 250</p>	<h3>Details</h3>\n\t<p>cabine: 25<br />\n\tombrelloni: 250</p>	\N	31	t
 13560	Bagno Toni William	toni-william	3/4 nord	Via Toscanelli		http://www.spiaggeoasi.it/scheda.html?id=40&loc=viserba	0101000020E6100000459C4EB2D51D2940ABB2EF8AE0094640	<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 130</p>	<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 130</p>	\N	31	t
 13602	Bagno Umberto	umberto	64 nord	Via  San Salvador			0101000020E610000011DE3F92690729406B3D6CB7970D4640	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 162</p>\n<p>Servizi offerti tornei di bocce</p>	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 162</p>\n<p>Servizi offerti tornei di bocce</p>	\N	34	t
-13097	Bagno Kapogiro	kapogiro	25	Via Spiaggia, 25	glipe74@libero.it	www.kapogirobeach.com	0101000020E6100000000000A8B17E28405701B9A3DE544640		\N	\N	9	t
 13083	Bagno Prey fun beach	prey-fun-beach	10	Via Spiaggia, 10	info@bagnoprey.it	www.bagnoprey.it	0101000020E6100000000000A82A7E2840805225ABA2554640		\N	\N	9	t
 13562	Bagno Celli	celli-2	6 nord	Via Toscanelli	info@bagnocelli.com	http://www.bagnocelli.com	0101000020E6100000F3E84658541C2940310917F2080A4640	\n<p>Servizi offerti accessibile ai cani    vedi informazioni dettagliate\n- corsi e tornei di burraco\r\nil burraco è il gioco del momento, "un gioco di carte apparentemente semplice, ma dai risvolti spesso imprevedibili e assolutamente coinvolgenti". \r\npotrete imparare a giocare seguendo i corsi per principianti, tenuti dalle signore mirna e anna e partecipare ai nostri bellissimi tornei.</p>	\n<p>Servizi offerti accessibile ai cani    vedi informazioni dettagliate\n- corsi e tornei di burraco\r\nil burraco è il gioco del momento, "un gioco di carte apparentemente semplice, ma dai risvolti spesso imprevedibili e assolutamente coinvolgenti". \r\npotrete imparare a giocare seguendo i corsi per principianti, tenuti dalle signore mirna e anna e partecipare ai nostri bellissimi tornei.</p>	\N	31	t
 13563	Bagno Micky	micky	7 nord	Via Toscanelli		http://www.spiaggeoasi.it/scheda.html?id=70&loc=viserba	0101000020E6100000B19801FC8D1B2940234632582F0A4640		\N	\N	31	t
@@ -15063,8 +15068,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 21808	13025	69
 21809	13026	68
 21810	13026	69
-21811	13027	68
-21812	13027	69
 21815	13029	68
 21816	13029	69
 21817	13030	68
@@ -15177,8 +15180,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 21932	13087	69
 21933	13088	68
 21934	13088	69
-21935	13089	68
-21936	13089	69
 21937	13090	68
 21938	13090	69
 21939	13091	68
@@ -15193,8 +15194,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 21948	13095	69
 21949	13096	68
 21950	13096	69
-21951	13097	68
-21952	13097	69
 21953	13098	68
 21954	13098	69
 21955	13099	68
@@ -15233,8 +15232,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 21988	13115	69
 21989	13116	68
 21990	13116	69
-21991	13117	68
-21992	13117	69
 21995	13119	68
 21996	13119	69
 21997	13120	68
@@ -15293,8 +15290,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22050	13146	69
 22051	13147	68
 22052	13147	69
-22053	13148	68
-22054	13148	69
 22055	13149	68
 22056	13149	69
 22057	13150	68
@@ -15379,8 +15374,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22142	13192	69
 22143	13193	68
 22144	13193	69
-22145	13194	68
-22146	13194	69
 22147	13195	68
 22148	13195	69
 22149	13196	68
@@ -15533,8 +15526,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22302	13272	69
 22303	13273	68
 22304	13273	69
-22305	13274	68
-22306	13274	69
 22307	13275	68
 22308	13275	69
 22309	13276	68
@@ -15543,8 +15534,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22312	13277	69
 22313	13278	68
 22314	13278	69
-22315	13279	68
-22316	13279	69
 22317	13280	68
 22318	13280	69
 22319	13281	68
@@ -15569,8 +15558,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22340	13291	69
 22341	13292	68
 22342	13292	69
-22343	13293	68
-22344	13293	69
 22345	13294	68
 22346	13294	69
 22347	13295	68
@@ -16621,8 +16608,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23406	13824	69
 23407	13825	68
 23408	13825	69
-23411	12786	68
-23412	12786	69
 23419	12788	68
 23420	12788	69
 23421	12789	68
@@ -16675,6 +16660,16 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23482	12994	69
 23486	13436	68
 23487	13436	69
+23490	12786	68
+23491	12786	69
+23492	13279	68
+23493	13279	69
+23494	13089	68
+23495	13089	69
+23496	13293	68
+23497	13293	69
+23498	13194	68
+23499	13194	69
 \.
 
 
@@ -16682,7 +16677,7 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 -- Name: bagni_bagno_languages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23489, true);
+SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23499, true);
 
 
 --
@@ -19206,16 +19201,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 83116	13026	2187
 83117	13026	2189
 83118	13026	2240
-83119	13027	2210
-83120	13027	2209
-83121	13027	2223
-83122	13027	2181
-83123	13027	2180
-83124	13027	2187
-83125	13027	2186
-83126	13027	2185
-83127	13027	2198
-83128	13027	2189
 83151	13029	2210
 83152	13029	2217
 83153	13029	2216
@@ -19831,23 +19816,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 83803	13088	2255
 83804	13088	2250
 83805	13088	2258
-83806	13089	2212
-83807	13089	2210
-83808	13089	2217
-83809	13089	2228
-83810	13089	2215
-83811	13089	2209
-83812	13089	2232
-83813	13089	2181
-83814	13089	2237
-83815	13089	2192
-83816	13089	2180
-83817	13089	2248
-83818	13089	2195
-83819	13089	2258
-83820	13089	2250
-83821	13089	2184
-83822	13089	2186
 83823	13090	2212
 83824	13090	2210
 83825	13090	2228
@@ -19926,15 +19894,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 83898	13096	2198
 83899	13096	2250
 83900	13096	2205
-83901	13097	2217
-83902	13097	2209
-83903	13097	2181
-83904	13097	2180
-83905	13097	2187
-83906	13097	2195
-83907	13097	2258
-83908	13097	2198
-83909	13097	2179
 83910	13098	2210
 83911	13098	2217
 83912	13098	2215
@@ -20159,16 +20118,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 84131	13116	2180
 84132	13116	2257
 84133	13116	2179
-84134	13117	2239
-84135	13117	2210
-84136	13117	2215
-84137	13117	2228
-84138	13117	2209
-84139	13117	2232
-84140	13117	2237
-84141	13117	2248
-84142	13117	2179
-84143	13117	2205
 84149	13119	2217
 84150	13119	2215
 84151	13119	2209
@@ -20566,20 +20515,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 84543	13147	2258
 84544	13147	2198
 84545	13147	2184
-84546	13148	2210
-84547	13148	2217
-84548	13148	2228
-84549	13148	2209
-84550	13148	2184
-84551	13148	2181
-84552	13148	2257
-84553	13148	2192
-84554	13148	2180
-84555	13148	2248
-84556	13148	2195
-84557	13148	2258
-84558	13148	2198
-84559	13148	2261
 84560	13149	2217
 84561	13149	2228
 84562	13149	2209
@@ -21009,18 +20944,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 85021	13193	2195
 85022	13193	2258
 85023	13193	2179
-85024	13194	2210
-85025	13194	2205
-85026	13194	2228
-85027	13194	2209
-85028	13194	2184
-85029	13194	2181
-85030	13194	2190
-85031	13194	2192
-85032	13194	2180
-85033	13194	2195
-85034	13194	2258
-85035	13194	2186
 85036	13195	2210
 85037	13195	2228
 85038	13195	2209
@@ -21744,19 +21667,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 85769	13273	2181
 85770	13273	2195
 85771	13273	2209
-85772	13274	2210
-85773	13274	2217
-85774	13274	2233
-85775	13274	2221
-85776	13274	2181
-85777	13274	2180
-85778	13274	2187
-85779	13274	2195
-85780	13274	2263
-85781	13274	2204
-85782	13274	2189
-85783	13274	2266
-85784	13274	2264
 85785	13275	2202
 85786	13275	2180
 85787	13275	2210
@@ -21791,12 +21701,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 85816	13278	2204
 85817	13278	2266
 85818	13278	2264
-85819	13279	2210
-85820	13279	2204
-85821	13279	2181
-85822	13279	2195
-85823	13279	2198
-85824	13279	2189
 85825	13280	2239
 85826	13280	2210
 85827	13280	2217
@@ -21936,21 +21840,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 85973	13292	2263
 85974	13292	2266
 85975	13292	2264
-85976	13293	2239
-85977	13293	2210
-85978	13293	2217
-85979	13293	2230
-85980	13293	2233
-85981	13293	2221
-85982	13293	2181
-85983	13293	2180
-85984	13293	2195
-85985	13293	2263
-85986	13293	2198
-85987	13293	2204
-85988	13293	2266
-85989	13293	2267
-85990	13293	2264
 85991	13294	2202
 85992	13294	2210
 85993	13294	2292
@@ -23936,6 +23825,123 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 89042	13724	2254
 89043	13724	2255
 89044	13724	2278
+89045	13097	2209
+89046	13097	2179
+89047	13097	2180
+89048	13097	2181
+89049	13097	2217
+89050	13097	2187
+89051	13097	2258
+89052	13097	2195
+89053	13097	2198
+89054	13117	2209
+89055	13117	2210
+89056	13117	2179
+89057	13117	2215
+89058	13117	2248
+89059	13117	2237
+89060	13117	2228
+89061	13117	2232
+89062	13117	2205
+89063	13117	2239
+89064	13148	2209
+89065	13148	2210
+89066	13148	2180
+89067	13148	2181
+89068	13148	2248
+89069	13148	2217
+89070	13148	2192
+89071	13148	2257
+89072	13148	2258
+89073	13148	2195
+89074	13148	2228
+89075	13148	2261
+89076	13148	2198
+89077	13148	2184
+89078	13274	2210
+89079	13274	2180
+89080	13274	2181
+89081	13274	2217
+89082	13274	2187
+89083	13274	2189
+89084	13274	2221
+89085	13274	2195
+89086	13274	2263
+89087	13274	2264
+89088	13274	2233
+89089	13274	2266
+89090	13274	2204
+89091	13279	2210
+89092	13279	2181
+89093	13279	2189
+89094	13279	2195
+89095	13279	2198
+89096	13279	2204
+89097	13089	2209
+89098	13089	2210
+89099	13089	2180
+89100	13089	2181
+89101	13089	2215
+89102	13089	2248
+89103	13089	2217
+89104	13089	2250
+89105	13089	2237
+89106	13089	2192
+89107	13089	2184
+89108	13089	2258
+89109	13089	2195
+89110	13089	2228
+89111	13089	2232
+89112	13089	2212
+89113	13089	2186
+89114	13293	2210
+89115	13293	2180
+89116	13293	2181
+89117	13293	2217
+89118	13293	2221
+89119	13293	2195
+89120	13293	2239
+89121	13293	2198
+89122	13293	2263
+89123	13293	2264
+89124	13293	2233
+89125	13293	2266
+89126	13293	2267
+89127	13293	2204
+89128	13293	2230
+89129	13194	2209
+89130	13194	2210
+89131	13194	2180
+89132	13194	2181
+89133	13194	2184
+89134	13194	2186
+89135	13194	2190
+89136	13194	2192
+89137	13194	2258
+89138	13194	2195
+89139	13194	2228
+89140	13194	2205
+89160	13027	2273
+89161	13027	2210
+89162	13027	2243
+89163	13027	2180
+89164	13027	2181
+89165	13027	2215
+89166	13027	2184
+89167	13027	2185
+89168	13027	2186
+89169	13027	2187
+89170	13027	2209
+89171	13027	2274
+89172	13027	2222
+89173	13027	2189
+89174	13027	2224
+89175	13027	2257
+89176	13027	2195
+89177	13027	2219
+89178	13027	2198
+89179	13027	2223
+89180	13027	2183
 \.
 
 
@@ -23943,7 +23949,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 -- Name: bagni_bagno_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 89044, true);
+SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 89180, true);
 
 
 --
@@ -24259,6 +24265,8 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 3409	mob	334 0444444	13827	mob-2
 3406	tel	051 0111111	13827	win
 3407	win	051 0222222	13827	tel
+1982	tel	0544 973230	12786	telephone-number-24
+3410	tel	0544 973478	12786	telephone-number-m1
 2601	fax	0544 530548	13264	fax-number-125
 2694	tel	0544 437425	13331	telephone-number-529
 2748	fax	0544 949425	13370	fax-number-156
@@ -24721,7 +24729,6 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 1979	fax	0544 975757	12783	fax-number-7
 1980	tel	0544 72220	12784	telephone-number-22
 1981	tel	0544 72201	12785	telephone-number-23
-1982	tel	0544 973230 - 0544 973478	12786	telephone-number-24
 1983	tel	0544 71454	12787	telephone-number-25
 1984	fax	0543 440947	12787	fax-number-8
 2411	tel	0533 381143	13109	telephone-number-329
@@ -25714,7 +25721,7 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 -- Name: bagni_telephone_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_telephone_id_seq', 3409, true);
+SELECT pg_catalog.setval('bagni_telephone_id_seq', 3410, true);
 
 
 --
@@ -25857,6 +25864,35 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 325	2014-06-12 10:50:51.769042-04	7	9	13831	Bagno Guerrino	1	
 326	2014-06-12 10:58:14.417212-04	7	9	13832	Bagno Olimpia	1	
 327	2014-06-12 10:59:44.308434-04	7	9	13831	Bagno Guerrino	2	address modificato/a.
+328	2014-06-20 10:37:39.363242-04	5	9	12786	Bagno Conchiglia Lido	2	description_en modificato/a. Aggiunto/a Numero di telefono "tel". Cambiato number per Numero di telefono "tel".
+329	2014-06-25 04:06:53.8904-04	7	29	3	marketing model a	1	
+330	2014-06-25 04:07:03.426183-04	7	29	4	marketing model b	1	
+331	2014-06-25 04:09:27.26206-04	7	29	5	marketing winning model	1	
+332	2014-06-26 02:51:25.722612-04	5	30	2	Marketing model A	1	
+333	2014-06-26 02:52:02.637229-04	5	31	6	DA INSERIRE!!!!!	1	
+334	2014-06-26 02:52:29.223548-04	5	31	6	DA INSERIRE!!!!!	2	name e slug modificato/a.
+335	2014-06-26 02:53:41.640069-04	5	30	3	Marketing model B	1	
+336	2014-06-26 02:53:45.786873-04	5	31	7	DA INSERIRE!!!!	1	
+337	2014-06-26 04:49:46.100771-04	7	30	2	Marketing model A	2	path modificato/a.
+338	2014-06-26 04:49:56.615749-04	7	30	3	Marketing model B	2	path modificato/a.
+339	2014-06-26 04:52:59.656249-04	7	29	6	barto	1	
+340	2014-06-26 04:53:19.890229-04	7	33	847	NewsletterSubscription object	1	
+341	2014-06-26 04:55:48.529849-04	7	31	8	prova nuovo template	1	
+342	2014-06-26 04:56:03.2931-04	7	31	8	prova nuovo template	2	name e text modificato/a.
+343	2014-06-26 05:11:25.465583-04	7	30	4	empty	1	
+344	2014-06-26 05:13:24.91738-04	7	31	9	prova template vuotoo model a	1	
+345	2014-06-26 05:19:26.881596-04	7	31	10	Invito al mio nuovo portale	1	
+346	2014-06-26 05:20:20.361059-04	7	31	6	Invito al mio nuovo portale	2	subject, text e template modificato/a.
+347	2014-06-26 05:28:38.797878-04	7	31	11	Prenotazioni online per il tuo stabilimento balneare	1	
+348	2014-06-26 05:34:58.59081-04	7	31	7	Prenotazioni online per il tuo stabilimento balneare	2	subject, text e template modificato/a.
+349	2014-06-26 05:35:52.494488-04	7	31	6	Invito al mio nuovo portale	2	Nessun campo modificato.
+350	2014-06-26 05:36:30.884319-04	7	31	7	Prenotazioni online per il tuo stabilimento balneare	2	Nessun campo modificato.
+351	2014-06-26 05:43:27.538927-04	7	31	12	Invito al mio nuovo portale	1	
+352	2014-06-26 06:08:23.79141-04	7	31	7	Prenotazioni online per il tuo stabilimento balneare	2	Nessun campo modificato.
+353	2014-06-26 06:23:34.653483-04	5	9	13279	Bagno Molo Tre Zero	2	description_en, mail e site modificato/a.
+354	2014-06-26 06:38:16.284556-04	5	9	13089	Bagno Oro	2	description_en, mail e site modificato/a.
+355	2014-06-26 06:42:32.278816-04	5	9	13293	Bagno Waimea	2	description_en e mail modificato/a.
+356	2014-06-26 06:44:40.94101-04	5	9	13194	Bagno Morris	2	description_en, mail e site modificato/a.
 \.
 
 
@@ -25864,7 +25900,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 327, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 356, true);
 
 
 --
@@ -25983,8 +26019,12 @@ fp8pbg80gwtgrpuwy8b882rdie4uuexh	NmQxZGY5MzlmY2RkZDM0YjA0ZGM4OTlmMDBiOTE4Njc5MWE
 gvtg851gf5fop1u5m9ysjt8vcvisk71w	ZWZmY2Y4YWI5N2Q3ZTg0NmEwYWY5ZmMzMzM1ODAyMzViNWZlNmMzYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIxLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 15:42:53.655532-04
 vbq74hzxft9bwmp26bk03xyyr30tposk	YzVjYzg5YTgzMzhkMTY0NTE1Yjk2MzNlMjc4NWFlOWY4Mjg2OWVhMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIyLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 17:17:06.18968-04
 xwuxp28gh1t1pcqgnq8x2a8begdeq6oy	OWQ4MGRiOTUxOTQxYzU4MjUxOTU0NWIyNTY4ZjE1ZDVmNzczZDA5NDp7Il9zZXNzaW9uX2V4cGlyeSI6MTgxNDQwMCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MjN9	2014-07-02 02:45:26.454091-04
-0tlfflmrftz721cfpwl4u0o8xv1zv7rf	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-06-29 12:22:03.254371-04
 2ee07z4axrlpu00sc1bqr5hmozz8a8d3	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-02 10:45:38.52901-04
+pl4uw34a8jwzlk62e42uxl1624t6qr48	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-04 10:33:04.255362-04
+fv891rxa479nzp4lwdic11y7gtyawx9y	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-09 04:05:05.316168-04
+dr3wcrtfgwk18qwgjppnzk87gbm4vgtc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-09 12:34:37.017791-04
+94muu0943qx0g5clv26rbd3m35bzryru	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-10 06:13:20.540027-04
+izfzwtqi1b2wzhei0s9xt0lfgvgwps1j	OGM0NzNiZjFiMDU5OTQyYjU5YjhkOWQ1OTViOTYzYzNmOWZjYzU3OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI0LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-10 13:01:18.351296-04
 \.
 
 
@@ -26034,9 +26074,16 @@ SELECT pg_catalog.setval('managers_manager_id_seq', 1, true);
 
 COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to, sent_on, name, slug, sent_count, status) FROM stdin;
 2	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	2	1	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	12:15:10.686999	Prova invio newsletter	prova-invio-newsletter	4	sent
+6	Invito al mio nuovo portale	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web che nasce con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tIscrivendoti la tua <strong>visibilit&agrave; online </strong>beneficer&agrave; di un sito:\r\n\r\n\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t<li>Elegante, gratuito e <strong>facile</strong> da manutenere</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>In italiano ed <strong>inglese</strong>, che estenderemo presto con russo e tedesco</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>Visibile su pc, <strong>tablet</strong> e <strong>cellulari</strong> (la app per cellulare &egrave; in arrivo!)</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Se s&igrave;, sarai il benvenuto e potrai integrare e migliorare la pagina del tuo bagno con immagini e servizi offerti.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 50%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Personalizza la pagina del tuo bagno</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	3	4	marcobagnari@libero.it; info@bagnosollevante.it; jeffyele@hotmail.com; info@bagnolucia.it; info@bagnogalattico.com; info@zona60.it; info@bagnotrinidad.it; alls1965@alice.it; contatti@bagnoristoro.it; diegosurf23@msn.com; aledalia@hotmail.com; bagnoflamingo63@hotmail.it; mattvince@libero.it; info@spiaggia54riccione.it; info@bagnoarcobaleno.it; info@bagnomorris.com; aiasravenna@virgilio.it; spinabeach48@gmail.com; bagnoveneto@virgilio.it; bagnobelvedere@gmail.com; info@bagnimario65.it; davbax105@libero.it; mazzini333@libero.it; marbellotti@libero.it; direzione@hakunamatataplus.it; info@korasol.it; info@malua.it; casadei_elisa@libero.it; info@bagnosolaris.it; info@bagno70.it; p.ponente102@libero.it; info@lidosangiuliano.it; info@mojitobeach.com; info@hotsand.info; info@adrianocampingvillage.com; info@riccionespiaggia73.com; cristian.giovini@alice.it; spiaggialepalme@leardinigroup.com; info@tikoa.it; astra_13@libero.it; info@bellarivalido89.it; info@spiaggia56riccione.it; info@paradisoristorante.it; bagnodiana@gmail.com; playatamarindo@playatamarindo.it; info@bagnomarconi.com; info@bagnowaimea.it; bagno.silvano123@email.it; hennaut@libero.it; info@baiadimaui.eu; info@bagnoromana.it; bagnolido@email.it; salesvalue@libero.it; info@marinamitu.it; simontemaurizio@libero.it; info@turquoisebeachclub.com; info@bagnocris.it; cinti.giuseppe2008@libero.it; info@bagnomundial.it; info@bagnooro.com; bagniparadise122@libero.it; davide.biz@hotmail.com; info@hotelsanfrancisco.info; stefa50@alice.it; info@salsedine367.it; info@spiaggia68riccione.it; bagnomercurio@gmail.com; info@ristoranteduestelle.it; info@lucaedea.it; alegio.manu@libero.it; info@bagnodorian.it; info@bagno-oasi.it; pinguino.volano@gmail.com; info@bagnomexico.com; info@village60.com; riccardo.ventaglio@alice.it; info@bagnoenrico75.com; info@faro34.it; valececca@libero.it; bagnobussola@libero.it; bagno.serena@fastwebnet.it; info@campingmarepineta.com; info@spiaggia38riccione.it; info@bagniniriccione.it; bagnolevante@libero.it; info@playadelsolriccione.com; info@cesenaticocampingvillage.com; info@marisol74.it; ultimaspiaggia39@libero.it; info@bigmamabeach.it; info@bagnocalipso.com; fabbrimarco.mf@libero.it; info@spiaggia91riccione.it; info@marepineta.com; info@bagnimauro78riccione.it; info@beachvillagericcione.it; danielabugli@libero.it; barby.dani@libero.it; m312009@libero.it; ladyenric@yahoo.it	12:05:54.621619	Marketing model A	marketing-model-a	100	sent
 3	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	2	1	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	12:40:41.500698	Prova 2 invio newsletter	prova-2-invio-newsletter	4	sent
 4	BagniAlMare - la Riviera è online!	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	2	1	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	16:07:23.061036	Prova 3 invio newsletter	prova-3-invio-newsletter	4	sent
 5	Nasce BagniAlMare, il primo portale online degli stabilimenti balneari	<p>Carissimi amici della Riviera,&nbsp;<em>finalmente!</em></p>\r\n\r\n<p>Finalmente &egrave; arrivato il momento di presentarvi un&nbsp;<strong>nuovo spazio web</strong>, il nostro ma soprattutto&nbsp;<strong>il vostro</strong>: si chiama&nbsp;<a href="http://mandrillapp.com/track/click.php?u=30227349&amp;id=7bd244d437a241f69e40ea7971a7d48c&amp;url=http%3A%2F%2Fbagnialmare.com%2Fit&amp;url_id=fbc43da8d29d18539ea4112c529d4087f71eb2aa" target="_blank">BagniAlMare.com</a>&nbsp;<strong>ma .. aspettate un secondo prima di navigare il link!</strong>&nbsp;Lasciateci il piacere di presentarci e presentarvelo di persona.</p>\r\n\r\n<p>Siamo 4 amici di nome Marco, Matteo, Nicola e Marco, esperti di progetti web nonch&eacute; frequentatori della Riviera Adriatica &ldquo;dalla nascita&rdquo;. Da qualche tempo abbiamo deciso di investire le nostre energie in questo nuovo progetto ponendoci alcuni obiettivi principali:</p>\r\n\r\n<ul>\r\n\t<li>creare un&nbsp;<strong>portale di riferimento per il turismo nazionale e internazionale</strong>&nbsp;della Riviera. Il sito &egrave; gi&agrave; navigabile da tutti i principali dispositivi mobili ed &egrave; interamente fruibile in&nbsp;<strong>lingua inglese</strong>. In futuro prevediamo poi di estendere la traduzione ad ulteriori lingue interessate (es. russo e tedesco);</li>\r\n\t<li><strong>avvicinare gli utenti alle vostre strutture balneari</strong>&nbsp;e ai vostri spazi web (siti, pagine Facebook e social) offrendo una funzionalit&agrave; di ricerca semplice, mirata e veloce comprendente anche i possibili servizi da voi offerti;</li>\r\n\t<li>sondare il possibile interesse vostro e degli utenti a poter disporre in futuro di una funzionalit&agrave; di&nbsp;<strong>prenotazione online</strong>. A questo proposito abbiamo attivato un pulsante di test &ldquo;Prenota online&rdquo; nella scheda di dettaglio del bagno in modo da tenere traccia sin da ora dei possibili interessati.</li>\r\n</ul>\r\n\r\n<h2 align="center"><em>Da dove si comincia?</em></h2>\r\n\r\n<p>Abbiamo gi&agrave; popolato il sito con i riferimenti principali delle vostre strutture, che potrete verificare e&nbsp;<strong>aggiornare direttamente</strong>&nbsp;ogni volta che lo vorrete: baster&agrave; registrare il vostro account nell&rsquo;apposita sezione del sito denominata &ldquo;<a href="http://bagnialmare.com/it/accounts/signup">&nbsp;Area Gestori</a>&rdquo; e sarete gi&agrave; pronti a collaborare attivamente e gratuitamente! Inoltre per chi volesse avere una preview di come la vostra vetrina potrebbe apparire, non esitate a sbirciare il seguente&nbsp;<a href="http://bagnialmare.com/it/bagni/villamarina/test/">modello fac-simile.</a><br />\r\n<br />\r\nIn attesa di un qualunque vostro feedback, contatto, consiglio, critica, aggiornamento, non resta davvero che augurarvi/ci una buonissima estate 2014!</p>\r\n	1	1	info@bagno70.it; bagno-azzurro@libero.it; jmcbar@tiscali.it; cmorgav@tin.it; info@spiaggia129.it; contatti@bagnoristoro.it; tavernamolino@libero.it; bagniparadise122@libero.it; info@laspiaggiadelledonne.it; info@bagno90.com; info@marinagrandediviserba.it; informazioni@vincenzo-nives.com; spiaggia23riccione@email.it; info@bagnocesare66.it; toto@toto-beach.it; info@lidocenter.it; info@marysolbagno57.it; bagnoaurora@tiscalinet.it; ali_popescu@yahoo.com; bagno.silvano123@email.it; bagnoettore@libero.it; info@prestigeventi.com; bagno131@gmail.com; diegosurf23@msn.com; info@marinabay.it; info@bagnopomposa.it; info@bagnosayonara.com; elioparma@virgilio.it; info@spiaggia80.it; info@nariz.it; info@lidosangiuliano.it; bagnopassatore@hotmail.it; marco.benvenuto1@gmail.com; lucianidavide@tiscali.it; info@hookipa.it; info@singita.it; info@bagnograziella.com; info@bagnoildavid.it; bagnomarte@gmail.com; info@bagnomexico.com; info@riccione27.com; spiaggialepalme@leardinigroup.com; info@bbkbeach.com; info@bagnogiovanni.com; info@spiaggia53.it; lasvegas49@libero.it; info@bagnoroma.it; info@kuta.it; bagnocarlo65@jumpy.it; playatamarindo@playatamarindo.it; bagno.azzurra@gmail.com; bagnoluca@libero.it; teocommercio@libero.it; aguidolin@email.it; praiabrasil@libero.it; info@bagnomassimo-viserbella.it; fetsabfar@gmail.com; filobagno22@libero.it; info@bagnoaragosta.it; bagnobussola@libero.it; astorcarli@libero.it; bagnoristorante68@libero.it; info@bagnopineta.it; info@tremoschettieri.com; info@bagnomorris.com; info@bagnoaloha.com; silvia@spiaggia59riccione.it; info@beachvillagericcione.it; info@bagnoclasse.it; posta@bagnoambasciata.it; titti66@libero.it; p.ponente102@libero.it; umberto64@libero.it; marcobagnari@libero.it; bagnomercurio@gmail.com; katia.luciani@libero.it; info@basilico4748.com; alezona3@alice.it; info@bagnogiada.it; bagnobelvedere@gmail.com; danielabugli@libero.it; claudio@151riccione.com; info@gallantibeach.it; info@marinamitu.it; info@bagnoclaudia49.it; info@maebabeach.com; info@bagnomiamibeach.com; info@cesenaticocampingvillage.com; derisbeach@gmail.com; cristian.giovini@alice.it; info@sirenetta-paradiso.net; info@spiaggia29e30riccione.com; bagnoisa@gmail.com; jeffyele@hotmail.com; info@bagnotitanus.com; info@bagnoenrico75.com; info@41mastrobeach.it; pinguino.volano@gmail.com; bagno_mulazzani@hotmail.it; info@spiaggia76.it; m312009@libero.it; mosquito-coast@hotmail.it; info@bahiantigua20.it; bagnoarlecchino@libero.it; info@bagnoluciano.it; info@spiaggia91riccione.it; info@bagno125rimini.it; info@bagnosollevante.it; info@chaletdelmare.it; info@bagnoveneziacesenatico.com; dave.mazza@libero.it; acapulco.posa@libero.it; betti_roberto@libero.it; clarissabizzi@libero.it; tarroni.barbara@virgilio.it; info@overbeach.it; info@beach33.com; info@spiaggia127.it; bagnolevante@libero.it; costaverdehotel@costaverdehotel.it; info@bagnoelio.it; alberto@alohabeach.it; info@bagnocris.it; info@pinetabeach.it; ladybeach@live.it; bagno.tiziano@teletu.it; info@laspiaggiadelcuore.com; info@molotrezero.it; gino.farinelli@tiscali.it; direzione@hakunamatataplus.it; gabristella1958@libero.it; glmontebelli@tiscali.it; info@loretta99.com; info@bagnolidotalismano.it; conchiglia08@gmail.com; gianni.cinelife@libero.it; info@bagnifabio84riccione.it; carlosapori@virgilio.it; info@papayabeachvillage.it; simocayman@alice.it; info@bagno50.it; info@spiaggia38riccione.it; waikikibeach16@gmail.com; davide.biz@hotmail.com; info@bellarivalido89.it; info@bagnicristianriccione.com; ladyenric@yahoo.it; alfredo@bagni100.it; vela12estensi@gmail.com; info@bagnileo58riccione.it; bagnoestense@virgilio.it; info@bagnofaustina.it; bagnorenata@bagnorenata.it; lubro1990@libero.it; aiasravenna@virgilio.it; info@bagninovella.it; info@lucaedea.it; info@spiaggia63.it; info@bagnomerida.it; livregg@tin.it; info@bagnomiami.com; info@bagnoitalia.eu; silvano@bagno96silvano.it; info@bagnogranchio.com; spiaggia32riccione@libero.it; info@bagnomara.it; mauro.sap@libero.it; info@vistamaresuite.com; info@bagnohawaii.com; daniele.patrick@aliceposta.it; bagnocapri@libero.it; bagnonautilus@gmail.com; topstory@gesturist.com; info@hbritannia.it; nerimirco@libero.it; antonio.bezzi@tin.it; info@bagnoperla81.it; info@bagnoparadiso.it; info@bagnoluna.it; rickydezordo@gmail.com; mava@bagnibologna.it; info@bagnotequila.com; ipauo@yahoo.it; spinabeach40@hotmail.it; info@bagnoprey.it; info@beach75riccione.it; hennaut@libero.it; massimo@bagno91rimini.it; info@bagnovirna.info; simontemaurizio@libero.it; dunaorsi@gmail.com; v.montironi@yahoo.it; havanabeach@alice.it; info@charliebeach.it; bagnolido@email.it; info@bocabarranca.it; info@ristorantelido.net; progettoulisse82@gmail.com; maurizio@spiaggia51riccione.it; fandangobeach@libero.it; bagno.giorgio@alice.it; info@lidodellesirenericcione.it; info@bagno81rimini.it; info@kamokebeach.it; info@marisol74.it; info.bagnoclaudio@virgilio.it; valececca@libero.it; fabbrimarco.mf@libero.it; spinabeach48@gmail.com; bagnoschiuma1983@libero.it; info@peterpan36.com; bagnozara@libero.it; andrew-power@libero.it; spiaggia136@gmail.com; info@paradisoristorante.it; info@hroyal.it; info@sorayahotel.it; info@ristoranteduestelle.it; info@playadelsolriccione.com; bagni92@riccionespiaggia.com; maury.zanny@libero.it; bagnoveneto@virgilio.it; lellaruffato@libero.it; info@bagnobianconero.com; info@bagnorudy.it; ultimaspiaggia39@libero.it; info@chiccobeach54.it; info@marepineta.com; info@bagnooro.com; bagnovillaggiodelsole@yahoo.it; info@riccionespiaggia73.com; mauriziobarnabe@libero.it; stefania.piraccini@fastwebnet.it; info@bagnocorallo.it; beach007@libero.it; info@aquarama.com; info@bagnoristoranteuropa.com; info@bagno26rimini.com; orietta.guaraldi@libero.it; bagnocayoloco@libero.it; info@bagnosolaris.it; info@bagnotaormina.it; bagnomiocapitano@libero.it; info@bagnimirella120.it; sarabonazza@libero.it; info@bagniricci.it; info@maremotobeach.it; bagnovela@inwind.it; info@bagnocapriccio.it; cimavale@libero.it; info@bufalobeach.com; info@korasol.it; info@bagnoperla.it; info@spiaggiadelbenessere.it; info@adrianocampingvillage.com; andrea@spiaggia77.it; info@bagnoalbatros.it; info@village60.com; salesvalue@libero.it; ivocomandini@libero.it; info@papirriki.it; bagniluciano119@libero.it; info@spiaggia61.it; info@spiaggia54riccione.it; info@bagnoconti.it; casadei_elisa@libero.it; bagnotahiti@yahoo.it; mattvince@libero.it; glipe74@libero.it; info@icamini.org; cocoaspiaggia23@gmail.com; info@bagnogogo.it; info@bagnofloridabeach.it; info@spiaggia90.it; info@hotelsanfrancisco.info; stella_89@hotmail.it; info@bagnimario65.it; gas21viserba@hotmail.it; info@campingmarepineta.com; bagnokiribati@libero.it; info@riviera69.com; francescomichelotti@email.it; kitsune_e@libero.it; bagnokiaorana@yahoo.it; info@bronsonproduzioni.com; info@hotsand.info; info@spiaggia4riccione.com; aledalia@hotmail.com; bagno_jolly@libero.it; bagnowave@libero.it; info@grandhotelrimini.it; bagnogiulia85@libero.it; amerigo59@libero.it; bagnomeridiana@alice.it; info@bagnocarlo17.com; info@tipidaspiaggia.net; ruvido@ruvido.org; bagno6al7@hotmail.it; info@bagnovenere.com; hedonism@libero.it; info@spiaggia68riccione.it; barbaratassi@alice.it; info@bagnofederico.com; info@bagnoadria.com; hotelasiago@libero.it; info@bagnoegisto38.com; bagno.piera@virgilio.it; info@bagnoobelix.it; bagno57pinguino@libero.it; info@bigmamabeach.it; greta.pericoli@hotmail.it; hawaybeach@libero.it; info@spiaggia87.it; bagnofabio28arimini@inwind.it; info@spiaggia56riccione.it; valerianomartini@alice.it; bagno.vanni@libero.it; info@bagni106paola.it; bagniroberto@libero.it; bagnogabbiano@libero.it; info@bagno-romeo.it; parkhotelravenna@geturhotels.com; bagno.matteo@virgilio.it; roberto.albertarelli@fastwebnet.it; astra_13@libero.it; info@bagnomarfisa.com; info@zona60.it; bagno64riccione@gmail.com; info@bagnosport70.it; kontiki_beach@hotmail.com; alls1965@alice.it; lucalbatros@libero.it; info@bagnomeridiano.it; bagno4venti@gmail.com; info@bagnodorian.it; info@bagnorivaverde.it; info@riccionespiaggia28.it; bagnoondablu@live.com; info@battarraesettimio.it; info@bagniniriviera.it; info@bagno-oasi.it; info@birimbaobeach.it; info@bagnosabbiadoro.net; info@salsedine367.it; andrea.spiaggia104@libero.it; andrews@7lidiweb.com; bagni82riccione@alice.it; capohoornbeach@libero.it; info@turquoisebeachclub.com; alegio.manu@libero.it; nevemare@bagnonettuno20.it; info@faro34.it; marbellotti@libero.it; bagnodiana@gmail.com; info@tikoa.it; info@bagnoristorante_ippopotamus.com; info@bagnocorallobeach.it; info@bagnopippo.it; info@centrovacanzericcione.it; info@bagnosaintropez.it; bagnoelioeroby@libero.it; info@lailaiisland.it; info@bagnoangelineri.it; infomalaika@libero.it; ritabilly@live.it; riccardo75@email.it; info@bagnolucciola.it; info@bagnovally.com; info@bagnoschiuma.it; cinti.giuseppe2008@libero.it; azzurrospiaggia@alice.it; info@bagniazzura.it; info@hotelcrocedelsud.it; info@bagnocelli.com; eziogallina@hotmail.it; luminob.luminob@alice.it; raffellielena@libero.it; info@103riccione.it; info@sottomarino54.com; info@bagnomundial.it; info@bagno55rimini.com; riccardo.ventaglio@alice.it; maui1969@libero.it; info@tortugabeach.it; info@fafin.it; bagno.soleluna@libero.it; info@bagnomontecarlo.it; info@bagnokursaal.it; info@spiaggia86riccione.it; bagnovascello@gmail.it; info@bagnocostaazzurra.it; info@bagnolucia.it; info@baiadimaui.eu; info@bagnosarah.it; info@bagno27.it; info@spiaggia69riccione.it; hope852@hotmail.it; cristinagaroia@gmail.com; cimamarcello@gmail.com; bagnoquarantuno-info@deltawt.it; giorgio@villaceleste.eu; info@bagnielio.com; info@malua.it; info@bagnogalattico.com; bagno.marisa@alice.it; patra1960@hotmail.it; info@hoteliberty.com; info@bagnotrinidad.it; bagniprimo@libero.it; bottogian@gmail.com; info@rougehotel.it; bagno.alsole@tin.it; bagnodera@libero.it; info@bagnimauro78riccione.it; angelobandini@libero.it; bagnosole@infinito.it; bagno.chery@libero.it; info@bagnosusanna.it; bagnolescogliere@pec.it; info@bagnocalipso.com; info@riccionebeach72.com; bagnolongbeach@libero.it; bagno.ulisse@alice.it; info@bananabeach.it; info@bagniniriccione.it; info@palacelidohotel.it; bagnopelo@libero.it; info@bagnirina99.it; andrea35beach@libero.it; info@termepuntamarina.com; info@bagnoromana.it; stefa50@alice.it; info@bagnoesperia.com; info@marinamore.it; info@bagnowaimea.it; info@bagno71riccione.it; baroni.g@libero.it; info@dolcelucia.com; faridah@hotmail.it; info@bagnoselene.com; bastonilorenzo@tiscali.it; clararavaglia@alice.it; bagno94@libero.it; agenzia.mario@libero.it; barby.dani@libero.it; info@bagnoarcobaleno.it; bagniluca12riccione@alice.it; info@mojitobeach.com; bagno.serena@fastwebnet.it; info@bagno23.it; enea2081@libero.it; mazzini333@libero.it; matisse.beachvillage@libero.it; mare@spiaggiadonnarosa.com; parasassi23@hotmail.com; info@bagnopaolo.it; bagnorosa63@tiscali.it; bagno.pinguino@libero.it; davbax105@libero.it; info@bagnoromea.com; jamaicabeach64@alice.it; marcolaus@rimini.it; info@bagnomarconi.com; info@bagnokelly.com; bagnoflamingo63@hotmail.it	08:50:34.262596	Welcome Mail	welcome-mail	465	sent
+9	prova template vuotoo model a	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web che nasce con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tIscrivendoti la tua <strong>visibilit&agrave; online </strong>beneficer&agrave; di un sito:\r\n\r\n\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t<li>Elegante, gratuito e <strong>facile</strong> da manutenere</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>In italiano ed <strong>inglese</strong>, che estenderemo presto con russo e tedesco</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>Visibile su pc, <strong>tablet</strong> e <strong>cellulari</strong> (la app per cellulare &egrave; in arrivo!)</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Se s&igrave;, sarai il benvenuto e potrai integrare e migliorare la pagina del tuo bagno con immagini e servizi offerti.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 50%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Personalizza la pagina del tuo bagno</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	6	4	marco.bartolini@gmail.com	11:13:42.100766	prova con template vuoto	prova-barto-empty-template	1	sent
+8	prova nuovo template	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" style="width:100%">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top">\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="width:600px">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width:100%">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family:Arial,sans-serif;font-size:12px">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web che nasce con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tIscrivendoti la tua <strong>visibilit&agrave; online </strong>beneficer&agrave; di un sito:\r\n\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t<li>Elegante, gratuito e <strong>facile</strong> da manutenere</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>In italiano ed <strong>inglese</strong>, che estenderemo presto con russo e tedesco</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>Visibile su pc, <strong>tablet</strong> e <strong>cellulari</strong> (la app per cellulare &egrave; in arrivo!)</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Se s&igrave;, sarai il benvenuto e potrai integrare e migliorare la pagina del tuo bagno con immagini e servizi offerti.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="background-color:#4687f4;border:1px solid #4687f4;border-radius:5px 5px 5px 5px;width:50%">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color:#ffffff;font-family:Arial,sans-serif;font-size:12px;line-height:150%;padding-top:5px;padding-right:10px;padding-bottom:5px;padding-left:10px" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color:#ffffff;text-decoration:none" target="_blank">Personalizza la pagina del tuo bagno</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	6	2	marco.bartolini@gmail.com	10:58:07.217573	prova nuovo template per barto	prova-nuovo-template	1	sent
+10	Invito al mio nuovo portale	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web che nasce con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tIscrivendoti la tua <strong>visibilit&agrave; online </strong>beneficer&agrave; di un sito:\r\n\r\n\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t<li>Elegante, gratuito e <strong>facile</strong> da manutenere</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>In italiano ed <strong>inglese</strong>, che estenderemo presto con russo e tedesco</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>Visibile su pc, <strong>tablet</strong> e <strong>cellulari</strong> (la app per cellulare &egrave; in arrivo!)</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Se s&igrave;, sarai il benvenuto e potrai integrare e migliorare la pagina del tuo bagno con immagini e servizi offerti.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 50%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Personalizza la pagina del tuo bagno</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	2	4	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	11:20:52.543966	prova marketing model A per noi	prova-marketing-model-a	4	sent
+11	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	2	4	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	11:29:05.750337	prova marketing model B per noi	prova-marketing-model-b	4	sent
+7	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	4	4	info@bagnovenere.com; bagnorosa63@tiscali.it; info@bagnograziella.com; sarabonazza@libero.it; dave.mazza@libero.it; bagniluca12riccione@alice.it; katia.luciani@libero.it; info@bagno27.it; lasvegas49@libero.it; info@bagnofloridabeach.it; info@bagnolidotalismano.it; silvano@bagno96silvano.it; info@riviera69.com; info@hoteliberty.com; info@bagni106paola.it; info@bagnielio.com; info@spiaggia4riccione.com; bagnopassatore@hotmail.it; info@beach75riccione.it; info@bagninovella.it; info@bagnoperla81.it; maurizio@spiaggia51riccione.it; glipe74@libero.it; bagnoestense@virgilio.it; filobagno22@libero.it; gabristella1958@libero.it; spiaggia23riccione@email.it; bagnomiocapitano@libero.it; info@fafin.it; toto@toto-beach.it; bagnoelioeroby@libero.it; tavernamolino@libero.it; info@bagnomassimo-viserbella.it; info@bagno90.com; info@bagnofederico.com; info@bagnoschiuma.it; bagnocapri@libero.it; bagno.marisa@alice.it; info@bagnohawaii.com; info@spiaggia76.it; bagnosole@infinito.it; bagnowave@libero.it; info@grandhotelrimini.it; info@spiaggia90.it; info@bagniniriviera.it; nevemare@bagnonettuno20.it; info@bagnoaragosta.it; info@103riccione.it; info@bagnotitanus.com; marcolaus@rimini.it; info@bagno26rimini.com; jamaicabeach64@alice.it; lellaruffato@libero.it; topstory@gesturist.com; astorcarli@libero.it; mauriziobarnabe@libero.it; ali_popescu@yahoo.com; patra1960@hotmail.it; bagno.pinguino@libero.it; conchiglia08@gmail.com; bagnopelo@libero.it; cimamarcello@gmail.com; kontiki_beach@hotmail.com; andrea.spiaggia104@libero.it; info@bagnomeridiano.it; info@molotrezero.it; stella_89@hotmail.it; cimavale@libero.it; bagniluciano119@libero.it; bagnogabbiano@libero.it; info@41mastrobeach.it; info@bagnofaustina.it; havanabeach@alice.it; bagno_jolly@libero.it; dunaorsi@gmail.com; info@charliebeach.it; info@riccionespiaggia28.it; bagnodera@libero.it; ruvido@ruvido.org; maury.zanny@libero.it; bagno.ulisse@alice.it; silvia@spiaggia59riccione.it; info@bagnoristorante_ippopotamus.com; tarroni.barbara@virgilio.it; info@peterpan36.com; info@kuta.it; bagno6al7@hotmail.it; bagni92@riccionespiaggia.com; info@marinamore.it; info@palacelidohotel.it; lucalbatros@libero.it; mosquito-coast@hotmail.it; bagno.vanni@libero.it; parkhotelravenna@geturhotels.com; info@bufalobeach.com; info@spiaggia80.it; info@bananabeach.it; info@kamokebeach.it; info@aquarama.com; bagnoarlecchino@libero.it	12:09:03.411208	Marketing model B	marketing-model-b	100	sent
+12	Invito al mio nuovo portale	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web che nasce con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tIscrivendoti la tua <strong>visibilit&agrave; online </strong>beneficer&agrave; di un sito:\r\n\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t<li>Elegante, gratuito e <strong>facile</strong> da manutenere</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>In italiano ed <strong>inglese</strong>, che estenderemo presto con russo e tedesco</li>\r\n\t\t\t\t\t\t\t\t\t\t<li>Visibile su pc, <strong>tablet</strong> e <strong>cellulari</strong> (la app per cellulare &egrave; in arrivo!)</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Se s&igrave;, sarai il benvenuto e potrai integrare e migliorare la pagina del tuo bagno con immagini e servizi offerti.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 50%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Personalizza la pagina del tuo bagno</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	2	4	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	11:44:17.583627	prova marketing model A per noi -2	prova-marketing-model-a-2	4	sent
 \.
 
 
@@ -26044,7 +26091,7 @@ COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to,
 -- Name: newsletters_newsletter_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletter_id_seq', 5, true);
+SELECT pg_catalog.setval('newsletters_newsletter_id_seq', 12, true);
 
 
 --
@@ -26521,6 +26568,384 @@ COPY newsletters_newslettersubscription (id, email, target_id, hash_field) FROM 
 467	marco.bartolini@gmail.com	2	4e71cbfdd5e246f39ea515168bc8ade6
 468	marco.benvenuto1@gmail.com	2	6b99f193b85f4a6981cfaa4f18ab4332
 469	nicola.valentini@gmail.com	2	b141044ffebf4c5bb779914e96bb9501
+470	ladyenric@yahoo.it	3	244d2559fb9449d2b3bd5defed5361ee
+471	m312009@libero.it	3	46aeef269aaa400cb6c310888eba9f5f
+472	barby.dani@libero.it	3	cc57ffd652544372987ed3a6592485d0
+473	danielabugli@libero.it	3	85cf7cda830e493b86710e49dcb5a8da
+474	info@beachvillagericcione.it	3	fa8d342360974da79030cb648285021d
+475	info@bagnimauro78riccione.it	3	c52f8b5c748c45a98bb4f519f4473967
+476	info@marepineta.com	3	20b337fd645e4089a20a9013e0eb1545
+477	info@spiaggia91riccione.it	3	fa0e98b698c5414bb4eaf70725f86726
+478	fabbrimarco.mf@libero.it	3	53680f82903e47989bbf2c51751b0e7b
+479	info@bagnocalipso.com	3	9c0f98ff440147f18e69372f38004604
+480	info@bigmamabeach.it	3	e7e1ebe88b684307ba47ad0ebfcdf3e7
+481	ultimaspiaggia39@libero.it	3	634a2e805b9f4a19a19544f791cb2bf3
+482	info@marisol74.it	3	7fed2ad5528a4515b6b461445fce0898
+483	info@cesenaticocampingvillage.com	3	6fe0dffbd4654e548ba01fa32d24ebc6
+484	info@playadelsolriccione.com	3	4e75960d7a704f6bb215a7ff33a54604
+485	bagnolevante@libero.it	3	b8e7d39ccb094f659ed00e75b03d2d6a
+486	info@bagniniriccione.it	3	4c5f185633884f8db9427352999d8b41
+487	info@spiaggia38riccione.it	3	0a5b77636fa7442ea497aa78a290db1e
+488	info@campingmarepineta.com	3	a9e02e30788644a48630ac790779c553
+489	bagno.serena@fastwebnet.it	3	4ff9858bf4644c50b6100ede82417b9b
+490	bagnobussola@libero.it	3	c6effdffbd9e4603a056aae5fae73502
+491	valececca@libero.it	3	f257b0aa45a64e2c90bc17e5e94568f4
+492	info@faro34.it	3	dbb85d9c560a41a8862e2c6df4fa45d6
+493	info@bagnoenrico75.com	3	275f8d58befa424d90a4d617e5a6bfc3
+494	riccardo.ventaglio@alice.it	3	915e02beac564be9bc0415a8d4eb15d9
+495	info@village60.com	3	7d1c02514eca41799bd1f069d43fa0be
+496	info@bagnomexico.com	3	ec120a0c149b410cb6979c5286931753
+497	pinguino.volano@gmail.com	3	46690de47ee9448d974fdf90e8fc2c51
+498	info@bagno-oasi.it	3	e1c253d57cfe44d382967d960eb1c0e9
+499	info@bagnodorian.it	3	32dcafe4e85f42779b23502915dfe40f
+500	alegio.manu@libero.it	3	3abc67a0133144fcbe8030b2f2b1b6a8
+501	info@lucaedea.it	3	d9e398876e5942139a6f4edad327cd5c
+502	info@ristoranteduestelle.it	3	48c7ad0c1ff34022a1ab1d5e31524b2c
+503	bagnomercurio@gmail.com	3	3ab6f0b9749540bb8675582fd5d0b1eb
+504	info@spiaggia68riccione.it	3	408e7a9747a04d64a204703fbc4d19d4
+505	info@salsedine367.it	3	820f514d0a084057b7b021cd4b396fa7
+506	stefa50@alice.it	3	b2982db722204749b4b97bd095f9199b
+507	info@hotelsanfrancisco.info	3	c8ce7715327d4165a97f9ddead06637c
+508	davide.biz@hotmail.com	3	4e8bb32fff564e0dbb655ede5b8f598d
+509	bagniparadise122@libero.it	3	5da1a37e98bf4cb580d3857169571a15
+510	info@bagnooro.com	3	0f931e18949244e4bb3e83681a74a6d0
+511	info@bagnomundial.it	3	875def6f89e44d31b6c0c5f798c1c31b
+512	cinti.giuseppe2008@libero.it	3	a8fb742c23544fcdbc8f5da31d4c6bcc
+513	info@bagnocris.it	3	550af8668bf9453eaff3e0f5ea91ff9f
+514	info@turquoisebeachclub.com	3	cf82d71835ed49fea2470aa27eedb26a
+515	simontemaurizio@libero.it	3	7b2993b8aae245dd88e5c5ee238ff286
+516	info@marinamitu.it	3	5ccc9c6e73ae48b1a85aa5a1705058c6
+517	salesvalue@libero.it	3	7c6f249ebe764f9cae51e8c1197d8a2a
+518	bagnolido@email.it	3	67e9fe94a0b64158b435bdff73053629
+519	info@bagnoromana.it	3	6ba32e0129604ba192f98bebf464e307
+520	info@baiadimaui.eu	3	486de00d475b418dbde88cd6a5345ffe
+521	hennaut@libero.it	3	5ea4e76f4304491aa6b8bca1b9330cbb
+522	bagno.silvano123@email.it	3	f6955373f1e34aa7b4d4dc006c208989
+523	info@bagnowaimea.it	3	815face40d504d57a1cb984bc5078b40
+524	info@bagnomarconi.com	3	2e0d3d233cf84396a74ffebd3d4f489e
+525	playatamarindo@playatamarindo.it	3	585c4c3aba524820b948aa4133d007ee
+526	bagnodiana@gmail.com	3	491bb679ae274b8db0e980fcfd87c296
+527	info@paradisoristorante.it	3	82a123f030814d3aafbb5ddb7e94c86d
+528	info@spiaggia56riccione.it	3	1ce546ec7d93444d956aec661d4c51b7
+529	info@bellarivalido89.it	3	a24ded6c4fdd4586bb3b36e19afc8bb8
+530	astra_13@libero.it	3	db599f53484e4863b53a37d0cf6399eb
+531	info@tikoa.it	3	2e85b9286bca45a084773b1f9e1f3a71
+532	spiaggialepalme@leardinigroup.com	3	1663391d40c34feaabfa4d4b9532d1ec
+533	cristian.giovini@alice.it	3	56560972a6cb422183094c26020d6fab
+534	info@riccionespiaggia73.com	3	e01fd2417c2240aa8953b68ddd88e1d0
+535	info@adrianocampingvillage.com	3	61b78d29992f4b78aaadac15d9d59ec2
+536	info@hotsand.info	3	d032bd25cdf844e9ac30d7dc759ec2e0
+537	info@mojitobeach.com	3	ddd6929b69a5464fa65bc769550ab206
+538	info@lidosangiuliano.it	3	4ff4b9850ac04cadb4624a34721f8856
+539	p.ponente102@libero.it	3	69b52e1aa105453ca91738121f07091a
+540	info@bagno70.it	3	a5da80b7f3c94e14962ff701d3517aea
+541	info@bagnosolaris.it	3	58be005cec0e490b9a4d945918144ac7
+542	casadei_elisa@libero.it	3	f0ddd134e2774f81946a2dc04485592f
+543	info@malua.it	3	6119c128ebcd407f937895879eee57b3
+544	info@korasol.it	3	3b8a94f3ee744275b0e6832fd78d8c1f
+545	direzione@hakunamatataplus.it	3	5d88461ad3534720b1be740f6110cb7a
+546	marbellotti@libero.it	3	526f98944a434a9dabb936b7d9b2b4f7
+547	mazzini333@libero.it	3	ad6f085ead804e0cb70761e1ba34bdf8
+548	davbax105@libero.it	3	3cf7aba2b8374201a5783665bf1e1198
+549	info@bagnimario65.it	3	f5b9689908fd47e394bec41b5f3d0ada
+550	bagnobelvedere@gmail.com	3	54cdf08a83484c85b6d57adca4ff4594
+551	bagnoveneto@virgilio.it	3	e5660e9bed6e4cb4a9a4a5a4d5dfc68d
+552	spinabeach48@gmail.com	3	b710e0f389d844368a172066436e2cf6
+553	aiasravenna@virgilio.it	3	036bc0ba2aeb4235aa9967dbaeaf7270
+554	info@bagnomorris.com	3	268a87e6d85e4c50bf52aa1107538318
+555	info@bagnoarcobaleno.it	3	090339a2d64342d995bfcf746b188dfe
+556	info@spiaggia54riccione.it	3	48de0bd9324449b38c85fcdaea8a95f2
+557	mattvince@libero.it	3	e7cee3a1468f457594aebaef2e789076
+558	bagnoflamingo63@hotmail.it	3	97f20d6ba4784b4b9d08ed41c3e83e6e
+559	aledalia@hotmail.com	3	a0f2e0590b424fcb93fdece1052d810f
+560	diegosurf23@msn.com	3	47678a70fa0b4776b6596f8613cf7c22
+561	contatti@bagnoristoro.it	3	25fb2c7426874a9e8b863e7b981889e5
+562	alls1965@alice.it	3	b5552bb776d243fb9f40522635e50ec3
+563	info@bagnotrinidad.it	3	1e91fd0a79144475a7e34355d3c28ba9
+564	info@zona60.it	3	3ea76e4fc0a54c0cad6fb82cd63c6464
+565	info@bagnogalattico.com	3	d7f25917d1794b4c96bdf765c0b57f0e
+566	info@bagnolucia.it	3	981a0271b2dd47e89087eaeb3600a13d
+567	jeffyele@hotmail.com	3	04f644a135b24d3792f759484e5beeae
+568	info@bagnosollevante.it	3	1e68c253b1ef4310961349d56b438f05
+569	marcobagnari@libero.it	3	73cae40177574d198af3a2a297f931af
+570	bagnoarlecchino@libero.it	4	d5f0f5ad88154055beae34ce5137bef2
+571	info@aquarama.com	4	cfc2f9a599a24e2c9091942af8fa3f6e
+572	info@kamokebeach.it	4	905e5172e83347f69bacc22e1a30347d
+573	info@bananabeach.it	4	e0f7e8829b9f4effac2928ac299f4778
+574	info@spiaggia80.it	4	a816e18eefcc4ccbae3d1d476ee1e334
+575	info@bufalobeach.com	4	3f62304fe45b49bb9c1365b74503b743
+576	parkhotelravenna@geturhotels.com	4	320713e62be64458b7160eb2aa468fd2
+577	bagno.vanni@libero.it	4	74ff2adb6f5f4a57b726a55fc80d55cb
+578	mosquito-coast@hotmail.it	4	8d930f3f5f764744b9a8a487ec6de618
+579	lucalbatros@libero.it	4	08c55649ca114f688332704c21574761
+580	info@palacelidohotel.it	4	c21763ae14584bd4a8de1f280062b99e
+581	info@marinamore.it	4	f326ec48f9ec4dcdb8c6bea790b3ef65
+582	bagni92@riccionespiaggia.com	4	566c020748c9493e9b46d689659d58c5
+583	bagno6al7@hotmail.it	4	4aa98b7fa51a46589ed13dbb85e19e10
+584	info@kuta.it	4	8804da3d19054079832044094adfdb83
+585	info@peterpan36.com	4	8aa158d9abca43249daf5cf6bb7f1303
+586	tarroni.barbara@virgilio.it	4	0bf06b12140c46509fa41e8c12c0a4d4
+587	info@bagnoristorante_ippopotamus.com	4	d71c19bf96954c54ae509c7f00830fb9
+588	silvia@spiaggia59riccione.it	4	5f5153afc88244fa8bed8fabf4e57212
+589	bagno.ulisse@alice.it	4	52376176935a4cddaa332842e8c74cbe
+590	maury.zanny@libero.it	4	e5da7a11b51b40c7ad5d29ebd2d90b30
+591	ruvido@ruvido.org	4	03d20eed3eac4812b35926fdf634f2a7
+592	bagnodera@libero.it	4	3778109b559c49cf85631d575480f6b3
+593	info@riccionespiaggia28.it	4	b277a0dcaa1f4c45bb6dbba24950b9f5
+594	info@charliebeach.it	4	6733e5deb4774c02b6972a0545f4c63b
+595	dunaorsi@gmail.com	4	6e0e6847fbde495998ca65e64b749da6
+596	bagno_jolly@libero.it	4	d2d01fd345c04873a17df0c97f1e1af1
+597	havanabeach@alice.it	4	c67133f047d04503b2d60eca5e55d01b
+598	info@bagnofaustina.it	4	0f9d9dd348244d488ddb8ef38a824f40
+599	info@41mastrobeach.it	4	9bf6d837c8fc41d690a23f543737c7fb
+600	bagnogabbiano@libero.it	4	1fb1669ae9a348508adfc78c65d95723
+601	bagniluciano119@libero.it	4	af2fb666384244bca95d3c4031c80204
+602	cimavale@libero.it	4	dd89e50484644d6da7c46e11b9dc36c8
+603	stella_89@hotmail.it	4	56e14ea9c51541289f25c57faf1a151a
+604	info@molotrezero.it	4	a8e7858358db4dfb91c25312436a9f6a
+605	info@bagnomeridiano.it	4	006c8f2f35634e6886687b60312e3b12
+606	andrea.spiaggia104@libero.it	4	532ae2807d3b4be7a29a506168324054
+607	kontiki_beach@hotmail.com	4	4077befe43cb4a12ad9d81ad670dc959
+608	cimamarcello@gmail.com	4	025fb192f9ad431d9cb2dce10827cf13
+609	bagnopelo@libero.it	4	cb91f342297f40babdca0daa39c56965
+610	conchiglia08@gmail.com	4	e48f559f13d3421e8ad1839b52bec230
+611	bagno.pinguino@libero.it	4	0f091ef40fec4fc7965c7537a6d73849
+612	patra1960@hotmail.it	4	7c4df2e7cd5142da9436135913f96de1
+613	ali_popescu@yahoo.com	4	bddd9ad0f55e4ca68d1b80257d81cbf7
+614	mauriziobarnabe@libero.it	4	081fafbdbe8d4e749212a7f0c8a5911f
+615	astorcarli@libero.it	4	eeaadc40af97423e89de6fb07a2571e2
+616	topstory@gesturist.com	4	12658c738ccb4c98b6a8e787ca9d529e
+617	lellaruffato@libero.it	4	a34c8a9c20a24e3f8ca5c3a031394330
+618	jamaicabeach64@alice.it	4	57153e2a22db45e89e66b014dbc835b3
+619	info@bagno26rimini.com	4	f6e472f8415b46c0ba5c3397772889e2
+620	marcolaus@rimini.it	4	abf929a3511045f29db178acb05c0606
+621	info@bagnotitanus.com	4	16395adaeece48b2b655c43744a229c3
+622	info@103riccione.it	4	2461a6dd02984e09b3b25ec6f2d0197f
+623	info@bagnoaragosta.it	4	3181be80f86b492586254c62d792ebca
+624	nevemare@bagnonettuno20.it	4	f3561e095c274e8bb91fe1489346adea
+625	info@bagniniriviera.it	4	e11b55b6b5724a5eb95de3f89ba453ef
+626	info@spiaggia90.it	4	a9f6fe7b8064453d99e8466dc63f0f0a
+627	info@grandhotelrimini.it	4	542dad85f5d243c6a2d657d4705e75d4
+628	bagnowave@libero.it	4	a8072f9523a041d883614f1f05a448f5
+629	bagnosole@infinito.it	4	15cda71bd7ad44f2a36f2d69cdbd009b
+630	info@spiaggia76.it	4	271e4a703cb8452d9de29b78cf867f25
+631	info@bagnohawaii.com	4	fb48a641e6894a1bbff966b1edc59e60
+632	bagno.marisa@alice.it	4	72fb2d3d1da24e7c945c41e7d6ed2be1
+633	bagnocapri@libero.it	4	7445fa13e4084132a18d96b166640d4e
+634	info@bagnoschiuma.it	4	aa58a63b9c5c486195d4962e06edf9c4
+635	info@bagnofederico.com	4	af72ea66916344a6b455b78d5748da32
+636	info@bagno90.com	4	68d5f453ffa64891a83aa4ddc5a032fa
+637	info@bagnomassimo-viserbella.it	4	b9f796705e8d44dfa4e8675223a2fff6
+638	tavernamolino@libero.it	4	528a938dbd4946d0854772d05d5191a7
+639	bagnoelioeroby@libero.it	4	b70f69691f344d1198bebe89507c9c37
+640	toto@toto-beach.it	4	b90af5d688634d03a5d4bc5e13554b1d
+641	info@fafin.it	4	7c0704c9bfab44cab407d3cc9c4e10f3
+642	bagnomiocapitano@libero.it	4	9fb7a928dba547d98541bc9cac515552
+643	spiaggia23riccione@email.it	4	224b404230b34ebfa483816ee968f682
+644	gabristella1958@libero.it	4	1f15d61254b44efaa63b698e8b57e0aa
+645	filobagno22@libero.it	4	5db942ab75344ed4bcc1fa6de2f973ef
+646	bagnoestense@virgilio.it	4	719edd529162448c9f92ac11d012f4f0
+647	glipe74@libero.it	4	ea65d6b2b241454a82bf7f5b7426e5bd
+648	maurizio@spiaggia51riccione.it	4	92117eb972da48aea39118ff0addf3cf
+649	info@bagnoperla81.it	4	3648c2f15b96447d87de40b374eb1c80
+650	info@bagninovella.it	4	d0be35419e1e497ba9f2067b666d9d1c
+651	info@beach75riccione.it	4	6702a0cda57144fd8363c156e646f2cc
+652	bagnopassatore@hotmail.it	4	15d0f152767a404ebcbecd85282bb811
+653	info@spiaggia4riccione.com	4	a417f28b62064496ae32846ed9ce5e9d
+654	info@bagnielio.com	4	2f231423e3514b9aa30696515d052fe0
+655	info@bagni106paola.it	4	488a6582824f47a988c7a8b6522449eb
+656	info@hoteliberty.com	4	5852671282d34cc7ab6c7c4aec2920d1
+657	info@riviera69.com	4	6af389ac91544ba8b4f677e0e3ffb310
+658	silvano@bagno96silvano.it	4	c1b009c9a57e458eb92778b9e24ee4b5
+659	info@bagnolidotalismano.it	4	2b1d3873853849f7a93511b1cd8e4c4c
+660	info@bagnofloridabeach.it	4	6cd3a8422e264b0f8fc3d5a0f9326981
+661	lasvegas49@libero.it	4	e15678e6587a4c93a10dae7aa32c7805
+662	info@bagno27.it	4	fdbab0645f5d474b939e7f59d38bcab0
+663	katia.luciani@libero.it	4	345342ed9864481499a20f082b258103
+664	bagniluca12riccione@alice.it	4	b7489c33d7054a488909019e331c0502
+665	dave.mazza@libero.it	4	d6e35b94a0994cd3ba4bc30f3d9bddd7
+666	sarabonazza@libero.it	4	663ea24c421b434391a95972b0b44e04
+667	info@bagnograziella.com	4	65645140cbc743a6932486c489b20140
+668	bagnorosa63@tiscali.it	4	25af4fed05b444ada8dc1fa064788345
+669	info@bagnovenere.com	4	a8dfc324b37d4f8eb02dd083cda75c7e
+670	info@sirenetta-paradiso.net	5	1a0a01128d72463a908824538174f2f2
+671	maui1969@libero.it	5	99dce8e0c13a44aa8d08e820f09a1511
+672	info@ristorantelido.net	5	6809083a8a7042d5831654e4132c36e4
+673	bagnorenata@bagnorenata.it	5	4042de814e1f48bcad59866fae116701
+674	alfredo@bagni100.it	5	f397ff1c7d9443f39167bc377ac07e30
+675	info@bagnocarlo17.com	5	00700bdab0244c44ae51e9c68028497e
+676	matisse.beachvillage@libero.it	5	50a1c7b7ad7f4aa0af01d4146e5f9e84
+677	v.montironi@yahoo.it	5	b9dc848d192d40778c48de8d400fcd55
+678	ipauo@yahoo.it	5	67110f1604784ee5ad5aa394316d5cc3
+679	info@bagnolucciola.it	5	83dee9eee7814950831b90d736c97553
+680	info@bagnogiada.it	5	2eee02d2fca748beb54b50b9561f7e3c
+681	raffellielena@libero.it	5	a4d93354aeaf401399a0323bb256827c
+682	info@bagnoildavid.it	5	d12b2ead81284aea903f6d47d0d28721
+683	info@bagnomiami.com	5	1464f4de5bce47788729abc5b15ab892
+684	info@rougehotel.it	5	caeb4071055e4aab92e1a991f3c931f7
+685	info.bagnoclaudio@virgilio.it	5	0136c9a9fa554449a068d65688299d31
+686	info@bagno125rimini.it	5	702f0b9da6d54b0c80388e941c7b7d77
+687	info@marinagrandediviserba.it	5	8c9d6c4ebf004140a5bfabc858fe38d6
+688	stefania.piraccini@fastwebnet.it	5	08e9c1510392487f86e462898926d1f2
+689	info@maebabeach.com	5	7ccf077cdddf4c698e30913ea802ec58
+690	info@hroyal.it	5	ac0d65f716c34c62b9edadeb2d2ee41f
+691	azzurrospiaggia@alice.it	5	9c7fa5ca091d414dbedc40fc19e4d9a8
+692	barbaratassi@alice.it	5	ac2577683e864548a631435005ac1eb9
+693	alezona3@alice.it	5	1118c1ae2cb54c8583fa6ac2143ae267
+694	info@spiaggia86riccione.it	5	d91df83fcccd44deac015c3ee8831992
+695	hope852@hotmail.it	5	c5207cf986264ae8809fde854f466a81
+696	info@spiaggia63.it	5	c2a82ba7c4924bb6af9249001d0a4b0d
+697	bagno.giorgio@alice.it	5	651ff740ea0b45bfb23e8fe194342f9c
+698	bagni82riccione@alice.it	5	6e480627b4ac47d9961482d0c735aa8d
+699	info@bagnosayonara.com	5	1364b82287314ecc9a085972fcdc58db
+700	bagno_mulazzani@hotmail.it	5	b03fcc1d6f9044b39e99fb4212bca923
+701	massimo@bagno91rimini.it	5	6872830f4e5749fb86fe1149f0510147
+702	info@sottomarino54.com	5	b70db27794a44eb09cb36451622d2d98
+703	info@spiaggia61.it	5	04e81f86673e4424b8b84441d14baf1c
+704	andrew-power@libero.it	5	6b7b8b86890a497896181af050d860f9
+705	hawaybeach@libero.it	5	c6c65a689bec46e69479ac8663e92e87
+706	info@bagnoobelix.it	5	cef55e96b0ea41aeb2302d7b43de1595
+707	eziogallina@hotmail.it	5	f388c0f9e95c415e8073da9f5913bd3d
+708	clarissabizzi@libero.it	5	37d79e96a6eb444789abfc72a30a41fd
+709	info@bagnoluna.it	5	6eda58221c9347919862c28fe8170c35
+710	bagno.piera@virgilio.it	5	5e3b0f6392d846478eaa00f705cbd646
+711	info@chaletdelmare.it	5	377d7d62eea1405b98c1eaff2b20f475
+712	andrews@7lidiweb.com	5	fa0d518e3d6e4e9d99bd3cf55b9f271f
+713	info@icamini.org	5	5e419cd328a24a4b86c431a024bb91c1
+714	aguidolin@email.it	5	585f8e0636f343a18f32a382fe532aa9
+715	info@battarraesettimio.it	5	4081709aefc349a88cbc1f022b337f83
+716	costaverdehotel@costaverdehotel.it	5	1313a0b90c4d4401a9e237afa0e51110
+717	bagno.chery@libero.it	5	c48145cadaaa4829809d0b2487552be5
+718	bagno-azzurro@libero.it	5	c4828bca390f4b9bb317d4c5025f25d5
+719	teocommercio@libero.it	5	052fdec9fc384d56abbde4b03a4cd616
+720	mauro.sap@libero.it	5	fb5bfd79dcc446fabf65cc06d9e02b6d
+721	info@bagnoadria.com	5	6d629f82ed3949828d94850cc5cb1027
+722	bagnoristorante68@libero.it	5	469a1b316060440c9e8bec06c5259369
+723	info@bagnoesperia.com	5	22c78bd966c047769e91f2ccbe008879
+724	info@bagnoveneziacesenatico.com	5	fa8259ffd50f4c7ead0721e98486808e
+725	fetsabfar@gmail.com	5	27fb2452bfd0422eaf94eb8ca518119d
+726	bagnofabio28arimini@inwind.it	5	cc1540a3769644beaf18984baa200b8f
+727	info@bocabarranca.it	5	57884b5af94e423b9130d3eba54dc6f4
+728	info@spiaggia127.it	5	af1523db3699462eb392ea9c63a48452
+729	cocoaspiaggia23@gmail.com	5	3abd888ff90f46d68dfc95f780a43866
+730	info@bagnoparadiso.it	5	e17b8fcf82c4452585ffaccd7e0ba778
+731	info@bahiantigua20.it	5	90091776d17f4789ac08967348254224
+732	info@bagnomara.it	5	12e4c58bd5ff48719dc001dcdcb65dcd
+733	bagnoquarantuno-info@deltawt.it	5	d9f89bc4fb8746a28d6b9dcba0f3e131
+734	ritabilly@live.it	5	792c1c4e721e440e8b774e35269b28bd
+735	daniele.patrick@aliceposta.it	5	472b7642e6404e8e81c53c60974ddcc7
+736	info@bagnokelly.com	5	d08a000f2f55460b9469c213c75c3aae
+737	info@bagnocesare66.it	5	5d0c4545fef9422a97e56d4b7a8956c6
+738	info@maremotobeach.it	5	6a1edcbd5ab942359add2997a213d649
+739	roberto.albertarelli@fastwebnet.it	5	8b469b0859f84158a7dbcc5be7132922
+740	andrea35beach@libero.it	5	5616526d53814f62a99d877ad4d17fd3
+741	info@overbeach.it	5	26c6cd05346a497eb83dd0953ef408c7
+742	info@bagnotaormina.it	5	6516c71b246b499bb1fea985e3ad5edb
+743	bagnoaurora@tiscalinet.it	5	ac197d12749c488ea337f960caa34e30
+744	info@bagnocelli.com	5	2903bb1c9b5f489fa9175fd355230f28
+745	info@bagnileo58riccione.it	5	d8a36d5fd33844939e8ed5eda20c8023
+746	bagnomeridiana@alice.it	5	bfef6d737a244aa7a77ab19a632440a8
+747	info@bagnokursaal.it	5	b5919be324be48458adbfdcd0c5b0490
+748	bagnoettore@libero.it	5	f0746b9b79af42db8032781414554309
+749	info@bagnoristoranteuropa.com	5	7883d1283e1244b899c4516ee4171c16
+750	info@bagnoaloha.com	5	f70b2c3683484c5aab4161838ee1e15e
+751	info@chiccobeach54.it	5	024369ce16324ed6a152b48a2cdd9ea5
+752	info@bagnifabio84riccione.it	5	481fb04c687843e7b1e44115e8987e4e
+753	greta.pericoli@hotmail.it	5	79d34e2c6e8145b6a475e1a5080d4f8f
+754	betti_roberto@libero.it	5	e1926a17d7e84b6d84e18a6ea78b3902
+755	bagniprimo@libero.it	5	fd2e9c53f62b4a558ff45e43d1eb66df
+756	acapulco.posa@libero.it	5	91b4a7caaed04adbb3036cbf1b952167
+757	info@dolcelucia.com	5	df1271c2e3ff49218c65254c1be3ecd1
+758	info@spiaggiadelbenessere.it	5	d8822f8ea0144378bec6a413652ffcfa
+759	bagnovascello@gmail.it	5	e5534e00baa54fbb8ac3db7669df1290
+760	angelobandini@libero.it	5	f66afdd2a38744b28d2c817a00c31ee7
+761	info@tortugabeach.it	5	babdc466eb904c0499dd028dd3416ed8
+762	info@marinabay.it	5	13adef570efa4a11b2baf22da1f58329
+763	info@lidodellesirenericcione.it	5	43b7a733ac644232a6a58aab07b5d738
+764	bagnonautilus@gmail.com	5	d6c46b10c9c347eba30d719035bec4b8
+765	info@sorayahotel.it	5	75df8f4caa064dfc8fad4262b12f7d52
+766	info@pinetabeach.it	5	5a4a44b2e16649c0812271374e120410
+767	bagnocayoloco@libero.it	5	f34243ecc20146f28bd333084ecaa881
+768	info@bagnotequila.com	5	1ffd9b31ab0e4f3d86be9b716208d00f
+769	faridah@hotmail.it	5	b5b3121a14664aa6baad2a874f8b70fb
+770	clararavaglia@alice.it	5	dcaa10d17ae14e27942b0a1cf555bb85
+771	info@laspiaggiadelcuore.com	5	c6dfb21851b94a7ca975a679339b2f77
+772	bagno4venti@gmail.com	5	cd8a72d42586492094e5b6debedfee83
+773	giorgio@villaceleste.eu	5	44616ba9a27a4142887bdfa5b718fa22
+774	alberto@alohabeach.it	5	c172914804134333bf51da7b7c33f3d8
+775	bagno57pinguino@libero.it	5	33b56d7ada1746a39b30eb2dd043421d
+776	info@bagnorivaverde.it	5	0af2c86ee3c0493fada1d36872043a04
+777	cmorgav@tin.it	5	9d04efc021374e1b9334f10751ca1430
+778	bagnoluca@libero.it	5	461e11f97dbd4f87bcb34d1ace2f54b0
+779	info@bagnovirna.info	5	63cbbee2a0f54ce1a5ef0b1bc6a291d9
+780	bagnoondablu@live.com	5	ecbcf2ed659c445f8cdfd5be692d9281
+781	info@bagnocapriccio.it	5	51f1688cb49945fbb0ed1e6813814764
+782	gino.farinelli@tiscali.it	5	a149a16d6c144672aefadf88bfa83ad7
+783	info@lailaiisland.it	5	f223080bb63e4439ab7815efabce8427
+784	info@tremoschettieri.com	5	cf0b17f1a9634ecea6e1db698c2796d9
+785	bagnokiribati@libero.it	5	f53ff0547e8d4a6b93a62442d738c7a8
+786	gas21viserba@hotmail.it	5	f794f24f7e0b481da5387b99fc6db495
+787	bagnolescogliere@pec.it	5	c7820e3a7de9442689fc1332b47503f6
+788	bagnoschiuma1983@libero.it	5	a8d92589ad6348209e507dde53cea254
+789	capohoornbeach@libero.it	5	50407dabcd8e4661bacbdec140128706
+790	info@bagno23.it	5	c356aa35877949869d3fd7ba78985500
+791	info@bagnobianconero.com	5	2750ed680c0945e9b119ecad35f9e306
+792	luminob.luminob@alice.it	5	f08109d3e4db4280a3a632b27d8fea6b
+793	info@bagnoromea.com	5	1b4bd4bba8614c188a9c643526555ede
+794	info@bagnopineta.it	5	92d281325ea54ff8a5695403e564810a
+795	bagno94@libero.it	5	cd43ae03a8954350aea2dcf970d81a16
+796	info@bagnopomposa.it	5	f5fe86d2443b41f495ff78b152844945
+797	info@riccione27.com	5	4dcfa210dd9e41e58d92e0a3d52503e7
+798	claudio@151riccione.com	5	90c372c126a94148966a38fa45316de6
+799	waikikibeach16@gmail.com	5	e80fa8bb3be14361852fa9f765a205c3
+800	bagno.azzurra@gmail.com	5	f851e63b158e42bd969c4d379b23c9c4
+801	bagnogiulia85@libero.it	5	2cdd793e105043759e275359ca1a6297
+802	info@riccionebeach72.com	5	f708e598baf0469999fea13ddc92c032
+803	gianni.cinelife@libero.it	5	34d8c3a814b542ee9dc9a5ed89f354bf
+804	info@bagnomarfisa.com	5	7939737339574718b68788a19b2dd7d2
+805	info@termepuntamarina.com	5	2f59daf87c7b423dbb9acaca54355151
+806	umberto64@libero.it	5	d2fadb4c3ae84851a023377639c1584d
+807	bagnomarte@gmail.com	5	329b9e3e52f7438abced3e27a5fa338d
+808	bagnokiaorana@yahoo.it	5	e6fab8f3a2084772b0d903d37ce97d57
+809	enea2081@libero.it	5	b15c99931b164e4db4dec2d505957c7c
+810	bagnovillaggiodelsole@yahoo.it	5	c0bd3f25790e43e38e3b9dfe3a818ef8
+811	info@spiaggia69riccione.it	5	649aa112cc874311a1cead169fff8cdd
+812	info@papayabeachvillage.it	5	9477476456184eca9f12f52b4c32d54b
+813	bagnovela@inwind.it	5	f94c813f4d824f879bebb3f2c97c5af6
+814	antonio.bezzi@tin.it	5	167aa92acadb49a38face39dbbbeba1d
+815	info@lidocenter.it	5	02edd44dcbf44272a0687db896dd93b9
+816	info@hotelcrocedelsud.it	5	1409d5004a854aa680578730bfee8035
+817	bagniroberto@libero.it	5	1edfd2098ee54e61abccf771c9643c17
+818	agenzia.mario@libero.it	5	edbe997e309243f793059a1208d855e5
+819	info@bagnoclaudia49.it	5	fe99f249ad064037b1d377478ab6ae32
+820	info@loretta99.com	5	15184c5b14f4432ba66f4c2351c069bf
+821	lubro1990@libero.it	5	8a6cf29e3df148759091bc738de93f70
+822	info@vistamaresuite.com	5	bcd54ecc7f1340f99666ac715d3d143b
+823	valerianomartini@alice.it	5	6d005a1b9db34874b8b2626f49d7ae13
+824	derisbeach@gmail.com	5	ae7e55ed0a5d4b458e91ad37ddca4dec
+825	titti66@libero.it	5	bca98257de954043a3c488fe7cbbfb9f
+826	nerimirco@libero.it	5	88c786b611f048b08fe596fee30bb783
+827	bagno.soleluna@libero.it	5	2be0e6ad6a6e48e18ed04bff53eebc79
+828	info@bronsonproduzioni.com	5	2e4ddafec4b84ae7ac46a0874865b125
+829	ladybeach@live.it	5	777ff6f335df4afcb906a3419b2e430c
+830	info@bagnosport70.it	5	340bc3df5d5f4cf694a8c278feaa6833
+831	kitsune_e@libero.it	5	54004e9d331140309fe069d3caeb3c0d
+832	info@bagnosabbiadoro.net	5	88734c2846d346e2b19168a78d231f86
+833	info@bagnomontecarlo.it	5	1f12c775057c44309beac38d8b7691e6
+834	info@bagnogogo.it	5	5947474645844273a87d2f73e3c6f595
+835	info@bagniazzura.it	5	0d15c21fc4c145099580e19a21d81017
+836	parasassi23@hotmail.com	5	c0491892b14145dab8a8a6bdbce96016
+837	info@bagno50.it	5	c37c466610fd4a6f99078ad780921bd5
+838	info@bagnocostaazzurra.it	5	054e1a40ef3e41048960b5260e9b9f07
+839	spiaggia32riccione@libero.it	5	be17d6d93b464dd4b5e30a3cadfb7017
+840	hedonism@libero.it	5	e044ddc8de2c4a34b497a0ac8aa7d32e
+841	info@spiaggia87.it	5	bcc2c949164f45a58abdbf8c9ae46a46
+842	beach007@libero.it	5	df7a740f95a844ad83c72def07a2893d
+843	bagnocarlo65@jumpy.it	5	4603921174334ae380f926a340d87949
+844	bagno.alsole@tin.it	5	8ceb174d755f4c39a90e48382764cb87
+845	elioparma@virgilio.it	5	6e692f3960034fe58f9500e8ecb8b158
+846	spinabeach40@hotmail.it	5	7236126bff4740a0b76b981fdd8c548b
+847	marco.bartolini@gmail.com	6	e04034e7166247efa6ff6b0c88216bcb
 \.
 
 
@@ -26528,7 +26953,7 @@ COPY newsletters_newslettersubscription (id, email, target_id, hash_field) FROM 
 -- Name: newsletters_newslettersubscription_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 469, true);
+SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 847, true);
 
 
 --
@@ -26538,6 +26963,10 @@ SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 469, true)
 COPY newsletters_newslettertarget (id, name, slug) FROM stdin;
 1	Welcome mail	welcome-mail
 2	4hm	4hm
+3	marketing model a	marketing_model_a
+4	marketing model b	marketing_model_b
+5	marketing winning model	marketing_winning_model
+6	barto	barto
 \.
 
 
@@ -26545,7 +26974,7 @@ COPY newsletters_newslettertarget (id, name, slug) FROM stdin;
 -- Name: newsletters_newslettertarget_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 2, true);
+SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 6, true);
 
 
 --
@@ -26554,6 +26983,9 @@ SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 2, true);
 
 COPY newsletters_newslettertemplate (id, name, path, slug) FROM stdin;
 1	Standard Template	newsletters/template_staff.html	standard-template
+2	Marketing model A	newsletters/marketing_model_a.html	marketing-moel-a
+3	Marketing model B	newsletters/marketing_model_b.html	marketing-model-b
+4	empty	newsletters/empty_template.html	empty
 \.
 
 
@@ -26561,7 +26993,7 @@ COPY newsletters_newslettertemplate (id, name, path, slug) FROM stdin;
 -- Name: newsletters_newslettertemplate_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettertemplate_id_seq', 1, true);
+SELECT pg_catalog.setval('newsletters_newslettertemplate_id_seq', 4, true);
 
 
 --
@@ -26579,6 +27011,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 8	21	info@bagnoegisto38.com
 9	22	spiaggia136@gmail.com
 10	23	info@bagno55rimini.com
+11	24	info@bagnomeridiano.it
 \.
 
 
@@ -26586,7 +27019,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 10, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 11, true);
 
 
 --
