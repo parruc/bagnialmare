@@ -9,11 +9,16 @@
 });*/
 
 $(function(){
-   var internal = new RegExp('^(/|bagnialmare.com|http://bagnialmare.com).*');
-   $('a').each(function(){
-       var href = $(this).attr('href');
-       if(!internal.test(href)){
-           $(this).hide();
-       }
+   // Remove social links (external)
+   $(".social-links").hide();
+
+   // Unwrap external links a tag
+   $('a.external').each(function(){
+       $(this).contents().unwrap();
+   });
+
+   // Make tel link work
+   $('a[href^="tel:"]').click(function(evt){
+       evt.preventDefault();
    });
 });

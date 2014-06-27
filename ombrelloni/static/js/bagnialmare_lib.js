@@ -24,3 +24,9 @@ var ombrelloneIcon = L.icon({
     shadowSize: [41, 41],
     shadowAnchor: [9, 40]
 });
+
+$(function(){
+  $("a[href^='http']:not([href^='http://bagnialmare.com'])").addClass("external");
+  $("a:not([href^='http']), a[href^='http://bagnialmare.com']").addClass("internal");
+});
+
