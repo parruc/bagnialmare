@@ -47,7 +47,7 @@
                 data-toggle="modal" 
                 data-target="#bookModal"
                 data-category="book" 
-                data-action="click" 
+                data-action="{{ object.slug }} - click" 
                 data-label="book-button" >{{ t_book_button }}</button>
       {% endif %}
       {% if object.is_managed %}
