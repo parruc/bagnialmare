@@ -228,6 +228,7 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-1473162-12', 'bagnialmare.com');
       {% block analytics %}
+      ga('require', 'displayfeatures');
       ga('send', 'pageview');
       $(".ga_click").click(function(){
         ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"))
