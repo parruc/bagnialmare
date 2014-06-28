@@ -13176,6 +13176,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 17	22	spiaggia136@gmail.com	t	t
 18	23	info@bagno55rimini.com	t	t
 19	24	info@bagnomeridiano.it	t	t
+20	25	Info@bagnomexico.com	t	t
 \.
 
 
@@ -13183,7 +13184,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 19, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 20, true);
 
 
 --
@@ -13201,6 +13202,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 18	18	2014-06-11 02:37:07.265053-04	2014-06-11 02:37:07.461111-04	3c7f53899e7314606ebf1fda75b7f9b5d6c7e6312172fbadac4c904c8c7d94d9
 19	18	2014-06-11 02:42:50.862288-04	2014-06-11 02:42:51.56942-04	b03043c9dd01bca4577b22219625eaacf7a368476f29a4735fbb7d7319d2875c
 20	19	2014-06-26 12:53:45.248542-04	2014-06-26 12:53:45.494602-04	3a06f85ed049477ce9b53fb2bd1cdec4d0136c1cbbd96eb2db910188feff470c
+21	20	2014-06-27 18:14:32.926904-04	2014-06-27 18:14:33.035347-04	ca2f859b9e106ffd0198b93cb8fbe2ac61ef096dfd6bb6f4b0db4fa6153d8158
 \.
 
 
@@ -13208,7 +13210,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 20, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 21, true);
 
 
 --
@@ -13371,11 +13373,12 @@ SELECT pg_catalog.setval('auth_permission_id_seq', 108, true);
 COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
 22	pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=	2014-06-10 17:17:06.185602-04	f	spiaggia136	fausto	ravaglia	spiaggia136@gmail.com	f	t	2014-06-10 17:15:56.918226-04
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
-7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-06-25 04:05:05.310998-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-06-25 12:34:37.001892-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-06-26 06:13:20.536308-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 24	pbkdf2_sha256$12000$epMiSQuwsn2v$XMqOSbi+TS++FOYVXEpU0SNmuqrCCBTsN4xZQvC3nqo=	2014-06-26 13:01:18.341567-04	f	info4	eros	fabbri	info@bagnomeridiano.it	f	t	2014-06-26 12:53:42.035262-04
-8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-09 05:11:54.824874-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
+8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-27 11:15:16.285401-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
+25	pbkdf2_sha256$12000$Vn85R5b1GMqi$ZfM5hcAbZc3CTsDwycjZaCOIzbx6MjWtRjOVlhF1x38=	2014-06-27 18:15:29.63828-04	f	info5	Rosa	Dallaporta	Info@bagnomexico.com	f	t	2014-06-27 18:14:31.022011-04
+7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-06-27 18:18:50.135202-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 18	pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=	2014-06-09 05:13:37.488704-04	f	mbenvenuto	User	Tester	mbenvenuto@airplus.com	f	t	2014-06-03 08:51:22.754527-04
 19	pbkdf2_sha256$12000$gvuKqtYpU576$e4tpwgv432EUJ847ZBQptllrKE/t1eDaeXP83KfU3Gc=	2014-06-09 04:26:29.294945-04	f	ndefrancesco	Nadia	Defrancesco	ndefrancesco@bagno27.it	f	t	2014-06-09 04:26:29.29501-04
 20	pbkdf2_sha256$12000$I0oDJY31RDCa$oRi8DNR7BjHFyLPTVt603EzOMOe+RYIDRWKQFOuqsLU=	2014-06-10 04:06:02.213327-04	f	info	società	Nettuno	info@centrovacanzericcione.it	f	t	2014-06-10 04:01:46.021113-04
@@ -13402,7 +13405,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 24, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 25, true);
 
 
 --
@@ -13439,6 +13442,7 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname) FROM stdin;
 15	22	t	t	fausto	ravaglia
 16	23	t	t	fabio	pezzei
 17	24	t	t	eros	fabbri
+18	25	t	t	Rosa	Dallaporta
 \.
 
 
@@ -13453,6 +13457,7 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 7	15	13737
 8	16	13465
 9	17	13027
+10	18	13125
 \.
 
 
@@ -13460,14 +13465,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 9, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 10, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 17, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 18, true);
 
 
 --
@@ -14155,7 +14160,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13121	Bagno Cris	cris	27	Lungomare Italia, 9	info@bagnocris.it	www.bagnocris.it	0101000020E6100000000000ECE77C284038F89160065F4640		\N	\N	11	t
 13122	Bagno La Rotonda	la-rotonda	28	Lungomare Italia, 11			0101000020E6100000000000D0B87C2840CDDC9B26F25E4640		\N	\N	11	t
 13124	Bagno Albatros	albatros	30	Lungomare Canarie, 1	lucalbatros@libero.it		0101000020E61000000000009C747C2840C2A7894ED75E4640		\N	\N	11	t
-13125	Bagno Mexico	mexico	31	Lungomare Canarie, 3	info@bagnomexico.com	www.bagnomexico.com	0101000020E610000000000070647C2840C903BB0A755E4640		\N	\N	11	t
 13126	Bagno Giada	giada	32	Lungomare Canarie, 5	info@bagnogiada.it	www.bagnogiada.it	0101000020E6100000000000BC637C2840DC6908D25A5E4640		\N	\N	11	t
 13127	Bagno Capo hoorn	capo-hoorn	33	Lungomare Canarie, 7	capohoornbeach@libero.it	www.bagnocapohoorn.it	0101000020E61000000000000C507C284002DEF69B365E4640		\N	\N	11	t
 13128	Bagno Aloha	aloha	34	Lungomare Canarie, 9	info@bagnoaloha.com	www.bagnoaloha.com	0101000020E610000000000048417C28400B646F61225E4640		\N	\N	11	t
@@ -14206,6 +14210,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13182	Bagno La Cueva	la-cueva	8	Via Spiaggia, 8			0101000020E610000000000058328A2840D134E3C947664640		\N	\N	14	t
 13164	Bagno Eden	eden-2	53	Via Spiaggia, 53	valerianomartini@alice.it		0101000020E6100000000000B862812840428C2C77D8524640	 	 		13	t
 13148	Bagno Honolulu	honolulu	36	Via Spiaggia, 36			0101000020E6100000FFFFFFC3C17F28407B4E26F71A544640	None	None	None	13	t
+13125	Bagno Mexico	mexico	31	Lungomare Canarie, 3	Info@bagnomexico.com	www.bagnomexico.com	0101000020E610000000000070647C2840C903BB0A755E4640		\N	\N	11	t
 13183	Bagno Ristoro	ristoro	9	Via Lungomare del Parco, 5	contatti@bagnoristoro.it	www.bagnoristoro.it	0101000020E610000000000058F78828405E519DDD23664640		\N	\N	14	t
 13184	Bagno Schiuma	schiuma-2	10	Via Lungomare del Parco, 7	bagnoschiuma1983@libero.it		0101000020E6100000000000589D88284054DD282C09664640		\N	\N	14	t
 13185	Bagno Estense	estense	11	Via Lungomare del Parco, 9	bagnoestense@virgilio.it		0101000020E61000000000008093882840BB2E76EE04664640		\N	\N	14	t
@@ -24207,7 +24212,6 @@ COPY bagni_service (id, name, slug, free, name_en, name_it, slug_en, slug_it, ca
 2294	kick boxing	kick-boxing	t	kick boxing	kick boxing	kick-boxing	kick-boxing	29					with kick boxing facilities	with kick boxing facilities	attrezzati per kick boxing	\N	\N	\N
 2273	bancomat accepted	bancomat	t	bancomat accepted	accettazione bancomat	bancomat	bancomat	39					where bancomat is accepted	where bancomat is accepted	che accettano bancomat	\N	\N	\N
 2274	credit cards accepted	credit-cards-accepted	t	credit cards accepted	carte di credito	credit-cards-accepted	accettazione-carte-di-credito	39					where credit cards are accepted	where credit cards are accepted	che accettano carte di credito	\N	\N	\N
-2255	dogs allowed	dogs-allowed	t	dogs allowed	accettazione cani	dogs-allowed	accettazione-cani	34					where dogs are allowed	where dogs are allowed	con accettazione cani e animali domestici	\N	\N	\N
 2272	beach rackets courses	beach-rackets-courses	t	beach rackets courses	corsi di racchettoni	beach-rackets-courses	corsi-di-racchettoni	29					\N	\N	\N	\N	\N	\N
 2268	tasting events	tasting-events	t	tasting events	serate degustazione	tasting-events	serate-degustazione	33					with food and wine tasting events	with food and wine tasting events	con serate di degustazione	\N	\N	\N
 2252	beachwear	beachwear	t	beachwear	articoli da spiaggia	beachwear	articoli-spiaggia	38					with beachwear retail	with beachwear retail	con vendita articoli da spiaggia	\N	\N	\N
@@ -24218,6 +24222,7 @@ COPY bagni_service (id, name, slug, free, name_en, name_it, slug_en, slug_it, ca
 2298	refrigerators	refrigerators	t	refrigerators	frigoriferi	refrigerators	frigoriferi	31					with refrigerator rental	with refrigerator rental	con noleggio frigoriferi	\N	\N	\N
 2262	boat beaching	boat-beaching	t	boat beaching	alaggio barche	boat-beaching	alaggio-barche	32					with boat beaching service	with boat beaching service	con servizio di alaggio barche	\N	\N	\N
 2195	racchettoni	racchettoni	t	beach rackets court	racchettoni	beach-racket-court	racchettoni	29					con campo da racchettoni	with beach racket court	con campo da racchettoni	\N	\N	\N
+2255	pet friendly	pet-friendly	t	pet friendly	pet friendly	pet-friendly	pet-friendly	34					con accettazione cani e animali domestici (pet friendly)	where dogs are allowed	con accettazione cani e animali domestici (pet friendly)	\N	\N	\N
 \.
 
 
@@ -25893,6 +25898,9 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 354	2014-06-26 06:38:16.284556-04	5	9	13089	Bagno Oro	2	description_en, mail e site modificato/a.
 355	2014-06-26 06:42:32.278816-04	5	9	13293	Bagno Waimea	2	description_en e mail modificato/a.
 356	2014-06-26 06:44:40.94101-04	5	9	13194	Bagno Morris	2	description_en, mail e site modificato/a.
+357	2014-06-27 11:01:59.727036-04	8	10	2255	pet friendly	2	name_en, name_it, slug_en, slug_it e seo_name_it modificato/a.
+358	2014-06-27 11:13:29.524821-04	8	10	2255	accettazione cani	2	name_en, name_it, slug_en e slug_it modificato/a.
+359	2014-06-27 11:14:28.070642-04	8	10	2255	pet friendly	2	name_en, name_it, slug_en e slug_it modificato/a.
 \.
 
 
@@ -25900,7 +25908,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 356, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 359, true);
 
 
 --
@@ -26025,6 +26033,10 @@ fv891rxa479nzp4lwdic11y7gtyawx9y	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ
 dr3wcrtfgwk18qwgjppnzk87gbm4vgtc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-09 12:34:37.017791-04
 94muu0943qx0g5clv26rbd3m35bzryru	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-10 06:13:20.540027-04
 izfzwtqi1b2wzhei0s9xt0lfgvgwps1j	OGM0NzNiZjFiMDU5OTQyYjU5YjhkOWQ1OTViOTYzYzNmOWZjYzU3OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI0LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-10 13:01:18.351296-04
+symdgy4tkc4gz1vyvqush3dgsy5tilow	MWFjOGVkZTMxMzZmMjAzNDUyMTBmZjA2ZTAwYzIzNDcyYmNkZjhiNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-11 11:00:05.594676-04
+ghgmiw1e9qjvrvoa1r26k5848leilb5l	MWFjOGVkZTMxMzZmMjAzNDUyMTBmZjA2ZTAwYzIzNDcyYmNkZjhiNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-11 11:15:16.288738-04
+gq55wd885ziofr4urer56r6lrtnyswqk	ZWQ2ZjI3ZTQ4YmVkNzUxYTdlOTM1ZGUyMGM2OWI0MzA0ODRhZDlkZjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI1LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-11 18:15:29.64807-04
+mytrrvrpb6kcjqu2hwv2m746bceb2dac	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-11 18:18:50.138698-04
 \.
 
 
@@ -27012,6 +27024,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 9	22	spiaggia136@gmail.com
 10	23	info@bagno55rimini.com
 11	24	info@bagnomeridiano.it
+12	25	Info@bagnomexico.com
 \.
 
 
@@ -27019,7 +27032,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 11, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 12, true);
 
 
 --
