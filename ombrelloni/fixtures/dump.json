@@ -3230,22 +3230,22 @@
     "category": [
       "accessibility"
     ], 
-    "slug_en": "dogs-allowed", 
+    "slug_en": "pet-friendly", 
     "aliases_it": null, 
-    "name_it": "accettazione cani", 
-    "name": "dogs allowed", 
+    "name_it": "pet friendly", 
+    "name": "pet friendly", 
     "seo_name_en": "where dogs are allowed", 
     "image": "", 
-    "slug_it": "accettazione-cani", 
+    "slug_it": "pet-friendly", 
     "description_en": "", 
     "seo_name": "where dogs are allowed", 
     "free": true, 
-    "seo_name_it": "con accettazione cani e animali domestici", 
+    "seo_name_it": "con accettazione cani e animali domestici (pet friendly)", 
     "description_it": "", 
     "aliases_en": null, 
-    "name_en": "dogs allowed", 
+    "name_en": "pet friendly", 
     "aliases": null, 
-    "slug": "dogs-allowed", 
+    "slug": "pet-friendly", 
     "description": ""
   }
 },
@@ -22849,7 +22849,7 @@
         "tennis-classes"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "petanque"
@@ -22924,7 +22924,7 @@
         "basketball"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 2", 
@@ -23500,7 +23500,7 @@
         "children-entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 10", 
@@ -23632,7 +23632,7 @@
         "schoolchildren"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "children-entertainment"
@@ -23836,7 +23836,7 @@
         "nursery"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "dance-classes"
@@ -24058,7 +24058,7 @@
         "pre-evening-entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "bar"
@@ -24166,7 +24166,7 @@
         "pre-evening-entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 21", 
@@ -26284,7 +26284,7 @@
     ], 
     "address": "Lungomare Canarie, 3", 
     "description_it": null, 
-    "mail": "info@bagnomexico.com", 
+    "mail": "Info@bagnomexico.com", 
     "accepts_booking": true, 
     "slug": "mexico", 
     "neighbourhood": [
@@ -27548,7 +27548,7 @@
         "pre-evening-entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 31", 
@@ -28051,7 +28051,7 @@
         "schoolchildren"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "petanque"
@@ -28249,7 +28249,7 @@
         "pre-evening-entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 42", 
@@ -28372,7 +28372,7 @@
         "canoes"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 44", 
@@ -28486,7 +28486,7 @@
         "schoolchildren"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "bar"
@@ -28960,7 +28960,7 @@
         "pre-evening-entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 54", 
@@ -29137,7 +29137,7 @@
         "basketball"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Spiaggia, 57", 
@@ -30010,7 +30010,7 @@
         "canoes"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "Via Lungomare del Parco, 5", 
@@ -32241,7 +32241,7 @@
         "ping-pong"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "themed-dinner"
@@ -33489,7 +33489,7 @@
         "board-games"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ]
     ], 
     "address": "viale Italia, 50", 
@@ -34699,7 +34699,7 @@
         "basketball"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "catering"
@@ -37936,7 +37936,7 @@
         "fish-barbecue-events"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "themed-dinner"
@@ -40235,7 +40235,7 @@
         "entertainment"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "meat-barbecue-events"
@@ -54462,7 +54462,7 @@
         "board-games"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "hot-showers"
@@ -57564,7 +57564,7 @@
         "schoolchildren"
       ], 
       [
-        "dogs-allowed"
+        "pet-friendly"
       ], 
       [
         "hot-showers"
@@ -67584,6 +67584,16 @@
   }
 },
 {
+  "pk": 21, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 20, 
+    "key": "ca2f859b9e106ffd0198b93cb8fbe2ac61ef096dfd6bb6f4b0db4fa6153d8158", 
+    "sent": "2014-06-27T22:14:33.035Z", 
+    "created": "2014-06-27T22:14:32.926Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||03a12c43bd4c47d1513aa6cfba2e694b", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -68337,7 +68347,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-06-25T08:05:05.310Z", 
+    "last_login": "2014-06-27T22:18:50.135Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
@@ -68355,7 +68365,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-06-09T09:11:54.824Z", 
+    "last_login": "2014-06-27T15:15:16.285Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -68490,6 +68500,24 @@
   }
 },
 {
+  "pk": 25, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info5", 
+    "first_name": "Rosa", 
+    "last_name": "Dallaporta", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-06-27T22:15:29.638Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$Vn85R5b1GMqi$ZfM5hcAbZc3CTsDwycjZaCOIzbx6MjWtRjOVlhF1x38=", 
+    "email": "Info@bagnomexico.com", 
+    "date_joined": "2014-06-27T22:14:31.022Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -68603,6 +68631,18 @@
     ], 
     "primary": true, 
     "email": "info@bagnomeridiano.it"
+  }
+},
+{
+  "pk": 20, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info5"
+    ], 
+    "primary": true, 
+    "email": "Info@bagnomexico.com"
   }
 },
 {
@@ -68812,6 +68852,24 @@
   }
 },
 {
+  "pk": 18, 
+  "model": "authauth.manager", 
+  "fields": {
+    "bagni": [
+      [
+        "mexico"
+      ]
+    ], 
+    "name": "Rosa", 
+    "privacy": true, 
+    "tos": true, 
+    "user": [
+      "info5"
+    ], 
+    "surname": "Dallaporta"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -68919,6 +68977,16 @@
       "info4"
     ], 
     "old_email": "info@bagnomeridiano.it"
+  }
+},
+{
+  "pk": 12, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info5"
+    ], 
+    "old_email": "Info@bagnomexico.com"
   }
 },
 {
