@@ -286,7 +286,7 @@ msgstr ""
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
-msgstr "bagni e stabilimenti balneari della Riviera Adriatica"
+msgstr "stabilimenti balneari della Riviera Adriatica"
 
 #: templates/bagni/bagni.html:12
 msgid "bagni_page_desc"
@@ -560,7 +560,7 @@ msgstr ""
 
 #: templates/bagni/homepage.html:134
 msgid "homepage_title"
-msgstr "bagnialmare: bagni, spiagge e stabilimenti balneari d'Italia"
+msgstr "bagnialmare: esplora i Bagni della Riviera Adriatica"
 
 #: templates/bagni/homepage.html:139
 msgid "homepage_description"
