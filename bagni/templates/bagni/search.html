@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load l10n i18n custom_templatetags %}
+{% load l10n i18n custom_templatetags thumbnail %}
 {% load batch from custom_filters %}
 {% load cache %}
 
@@ -33,6 +33,7 @@
 {% trans "geo_modal_text" as t_geo_modal_text %}
 {% trans "geo_modal_title" as t_geo_modal_title %}
 {% trans "away" as t_away %}
+{% trans "image" as t_image %}
 
 
   <div id="contact-form"></div>
@@ -232,37 +233,44 @@
                 {%  for hit in hits %}
                   <hr class="search-result-separator" />
                   <div class="single-bagno-result-box">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h2 class="single-result-header">
-                            <a href="{{ hit.get_absolute_url }}"
-                               title="{{ t_bagno }} {{ hit.name }}">
+                    <a href="{{ hit.get_absolute_url }}" title="{{ t_bagno }} {{ hit.name }}">
+                      <div class="row">
+                        {% with hit.images.all|first as hit_image %}
+                          {% thumbnail hit_image.image "x125" crop="center" as im %}
+                            <div class="vcenter col-sm-3 hidden-xs pull-right">
+                              <img class="img-responsive img-rounded" src="{{ im.url }}" alt="{{ hit.name|safe }} {{ t_image }}" /
+                              >
+                            {% endthumbnail %}
+                          </div>
+                        {% endwith %}
+                        <div class="col-xs-12 col-sm-9">
+                          <h2 class="single-result-header">
                             {{ hit.name }}, {{ hit.neighbourhood.name }}
-                          </a>
-                        </h2>
-                      </div>
-                      <div class="col-xs-12">
+                          </h2>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
                           <p class="single-result-address">
                             {{ hit.address }} -
                             {{ hit.neighbourhood.name }},
                             {{ hit.neighbourhood.municipality.name }} -
                             {{ hit.neighbourhood.municipality.district.name }}
-                            {% if hit.distance %}<span class="badge">{{hit.distance.km|floatformat:2 }}Km {{ t_away }}</span>{% endif %}
+                            {% if hit.distance %}<span class="badge">{{ hit.distance.km|floatformat:2 }}Km {{ t_away }}</span>{% endif %}
                           </p>
-                       </div>
-                      {% if hit.is_managed %}
-                      <div class="col-xs-12">
-                          <button id="contact-form-button" 
-                                  class="btn btn-primary contact-form-button ga_click"
-                                  data-url="{{ hit.get_contactform_url }}"
-                                  data-category="contact" 
-                                  data-action="mail-popup" 
-                                  data-label="{{ hit.slug }} - search">
-                            {{ t_contact_button }}
-                          </button>
-                      </div> 
-                      {% endif %}
-                    </div>
+                        </div>
+                        {% if hit.is_managed %}
+                        <div class="col-xs-12 col-sm-9">
+                            <button id="contact-form-button" 
+                                    class="btn btn-primary contact-form-button ga_click"
+                                    data-url="{{ hit.get_contactform_url }}"
+                                    data-category="contact" 
+                                    data-action="mail-popup" 
+                                    data-label="{{ hit.slug }} - search">
+                              {{ t_contact_button }}
+                            </button>
+                        </div> 
+                        {% endif %}
+                      </div>
+                    </a>
                   </div>
                 {% endfor %}
                 <div class="pagination">

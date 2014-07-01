@@ -111,8 +111,8 @@
             {% with object.images.all as bagno_images %}
               {% for bagno_image in bagno_images %}
                   <div class="item{% if forloop.first %} active{% endif %}">
-                      {% thumbnail bagno_image.image "350x250" crop="center" as im %}
-                        <img src="{{ im.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
+                      {% thumbnail bagno_image.image "380x260" as im %}
+                        <img class="img-responsive img-rounded" src="{{ im.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
                       {% endthumbnail %}
                   </div>
               {% endfor %}
