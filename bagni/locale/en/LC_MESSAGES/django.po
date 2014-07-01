@@ -285,7 +285,7 @@ msgstr ""
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
-msgstr "beach resorts of the Riviera Adriatica, Italy"
+msgstr "Italian beach resorts"
 
 #: templates/bagni/bagni.html:12
 msgid "bagni_page_desc"
@@ -555,7 +555,7 @@ msgstr ""
 
 #: templates/bagni/homepage.html:134
 msgid "homepage_title"
-msgstr "bagnialmare: beach resorts of Italy"
+msgstr "bagnialmare: find Italian beach resorts"
 
 #: templates/bagni/homepage.html:139
 msgid "homepage_description"
