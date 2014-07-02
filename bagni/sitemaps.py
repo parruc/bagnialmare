@@ -21,15 +21,15 @@ class BagnoStatic(StaticLocalesSitemap):
 class NeighbourhoodFacilitySitemap(LocalesSitemap):
     def items(self):
         ret = []
-        for neighbourhood in Neighbourhood.objects.all():
-            for facility in Service.objects.all():
-                ret.append((neighbourhood, facility))
+        for _service in Service.objects.prefetch_related("bagni__neighbourhood"):
+            for _neighbourhood in _service.bagni.distinct("neighbourhood").values_list("neighbourhood__slug"):
+                ret.append((_neighbourhood[0], _service.slug))
         return ret
 
     def location(self, obj):
         return reverse("bagni-by-facility-and-neighbourhood",
-                kwargs={'facility_slug' : obj[1].slug,
-                        'neighbourhood_slug' : obj[0].slug,
+                kwargs={'facility_slug' : obj[1],
+                        'neighbourhood_slug' : obj[0],
                         })
 
 SITEMAPS = {
