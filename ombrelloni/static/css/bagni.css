@@ -67,6 +67,11 @@ body {
   background-image: linear-gradient(rgb(39, 184, 246), rgb(34, 161, 231));*/
 }
 
+.search-page-img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #signup_form #id_email{
 
 }
