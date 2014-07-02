@@ -18,6 +18,8 @@ class BaseModel(models.Model):
                                   verbose_name=_("Slug"),
                                   unique=True,
                                   editable=True,)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
     def natural_key(self):
         return (self.slug,)

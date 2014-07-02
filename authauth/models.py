@@ -39,6 +39,9 @@ class Manager(models.Model):
                               help_text=_(u"Terms of service definition")
     )
 
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+
     def can_edit(self, obj):
         if obj in self.bagni.all():
             return True
