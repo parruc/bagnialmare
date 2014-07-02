@@ -37,8 +37,9 @@ class ContactView(FormView):
             # If there is already a recipient put us in BCC
             bcc = self.admin_emails
         else:
-            #else we are the receivers directly
-            self.recipients = self.admin_emails
+            #else send it to bagnialmare address and put us in BCC
+            self.recipients = [from_email]
+            bcc = self.admin_emails
         try:
             t = get_template("contacts/email.txt")
             c = Context({"message": form.cleaned_data['message'], })
