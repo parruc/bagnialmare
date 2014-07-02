@@ -18,7 +18,7 @@ class Bagno(BaseModel):
         verbose_name_plural = _('Bagni')
         app_label = 'bagni'
 
-    description = models.TextField(max_length=350, verbose_name=_("Description"),
+    description = models.TextField(blank=True, max_length=350, verbose_name=_("Description"),
                                    validators = [MaxLengthValidator(350)])
     number = models.CharField(max_length=30, blank=True, verbose_name=_("Number"))
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni', verbose_name=_("Languages"))
