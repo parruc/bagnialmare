@@ -1,5 +1,6 @@
+from django.core.cache import cache
+
 from models.bagni import Bagno
-from models.places import Neighbourhood
 from models.services import Service
 
 from ombrelloni.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
@@ -20,16 +21,22 @@ class BagnoStatic(StaticLocalesSitemap):
 
 class NeighbourhoodFacilitySitemap(LocalesSitemap):
     def items(self):
-        ret = []
-        for _service in Service.objects.prefetch_related("bagni__neighbourhood"):
-            for _neighbourhood in _service.bagni.distinct("neighbourhood").values_list("neighbourhood__slug"):
-                ret.append((_neighbourhood[0], _service.slug))
+        ret = cache.get('sitemap_neighbourhood_facilities_items')
+        if ret:
+            return ret
+        ret = set()
+        bagni = Bagno.objects.prefetch_related("neighbourhood", "services")
+        for bagno in bagni:
+            for service in bagno.services.all():
+                ret.add((service.slug, bagno.neighbourhood.slug))
+        ret = list(ret) 
+        cache.set('sitemap_neighbourhood_facilities_items', ret, 60 * 60 * 24)
         return ret
 
     def location(self, obj):
         return reverse("bagni-by-facility-and-neighbourhood",
-                kwargs={'facility_slug' : obj[1],
-                        'neighbourhood_slug' : obj[0],
+                kwargs={'facility_slug' : obj[0],
+                        'neighbourhood_slug' : obj[1],
                         })
 
 SITEMAPS = {
