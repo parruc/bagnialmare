@@ -238,7 +238,7 @@
                         {% with hit.images.all|first as hit_image %}
                           <div class="col-sm-3 hidden-xs pull-right">
                             {% thumbnail hit_image.image "x125" crop="center" as im %}
-                              <img class="img-responsive img-rounded" src="{{ im.url }}" alt="{{ hit.name|safe }} {{ t_image }}" /
+                              <img class="img-responsive img-thumbnail" src="{{ im.url }}" alt="{{ hit.name|safe }} {{ t_image }}" /
                               >
                             {% endthumbnail %}
                           </div>
