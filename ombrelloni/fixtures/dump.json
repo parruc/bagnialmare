@@ -15795,12 +15795,12 @@
   "pk": 12944, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tfronte mare: 59<br />\n\tlettini: 400<br />\n\tcabine: 20<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 1260<br />\n\tdocce aperte: 6</p>", 
+    "site": "http://www.bagnosabrina.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 100<br />\r\n\twc: 6<br />\r\n\tombrelloni: 200<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 59<br />\r\n\tlettini: 400<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 4<br />\r\n\tsuperficie complessiva spiaggia: 1260<br />\r\n\tdocce aperte: 6</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3833179999999992 44.2246590000000026)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tfronte mare: 59<br />\n\tlettini: 400<br />\n\tcabine: 20<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 1260<br />\n\tdocce aperte: 6</p>", 
+    "modified": "2014-07-05T14:59:33.621Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 100<br />\r\n\twc: 6<br />\r\n\tombrelloni: 200<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 59<br />\r\n\tlettini: 400<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 4<br />\r\n\tsuperficie complessiva spiaggia: 1260<br />\r\n\tdocce aperte: 6</p>", 
     "number": "3", 
     "languages": [
       [
@@ -15812,63 +15812,63 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "bar"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "sport-balls"
-      ], 
-      [
-        "table-football"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "beach-soccer"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "basketball"
       ], 
       [
         "baby-park"
       ], 
       [
-        "music"
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
       ], 
       [
         "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "music"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "parking"
+      ], 
+      [
+        "theme-parties"
+      ], 
+      [
+        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 3", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnosabrina.it", 
     "accepts_booking": true, 
-    "slug": "bagno-sabrina-fuorionda", 
+    "slug": "bagno-sabrina", 
     "neighbourhood": [
       "tagliata"
     ], 
-    "name": "Bagno Sabrina - Fuorionda"
+    "name": "Bagno Sabrina "
   }
 },
 {
@@ -15879,8 +15879,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3831752799999997 44.2248366600000011)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-05T15:00:35.962Z", 
+    "description_en": "", 
     "number": "4", 
     "languages": [
       [
@@ -15892,26 +15892,26 @@
     ], 
     "services": [], 
     "address": "Arenile demaniale 4", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "nadir.cesaretti@libero.it", 
     "accepts_booking": true, 
-    "slug": "bagno-picnic-fuorionda", 
+    "slug": "bagno-picnic", 
     "neighbourhood": [
       "tagliata"
     ], 
-    "name": "Bagno Picnic - Fuorionda"
+    "name": "Bagno Picnic"
   }
 },
 {
   "pk": 12946, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\twc: 6<br />\n\tombrelloni: 275<br />\n\twc disabili: 2<br />\n\tfronte mare: 86<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 5000<br />\n\tdocce aperte: 5</p>", 
+    "site": "http://www.bianconerobeach.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 4<br />\r\n\twc: 6<br />\r\n\tombrelloni: 275<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 86<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5000<br />\r\n\tdocce aperte: 5</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3827471199999994 44.2253696399999967)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\twc: 6<br />\n\tombrelloni: 275<br />\n\twc disabili: 2<br />\n\tfronte mare: 86<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 5000<br />\n\tdocce aperte: 5</p>", 
+    "modified": "2014-07-05T15:00:03.593Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 4<br />\r\n\twc: 6<br />\r\n\tombrelloni: 275<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 86<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5000<br />\r\n\tdocce aperte: 5</p>", 
     "number": "7/8/9", 
     "languages": [
       [
@@ -15923,46 +15923,46 @@
     ], 
     "services": [
       [
-        "table-football"
-      ], 
-      [
-        "beauty-treatments"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "sport-balls"
-      ], 
-      [
-        "gymnastics"
-      ], 
-      [
         "disabled"
       ], 
       [
-        "dancing"
-      ], 
-      [
-        "beach-volley"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
-        "ping-pong"
+        "beach-volley"
       ], 
       [
-        "beach-racket-court"
+        "wi-fi"
+      ], 
+      [
+        "children-entertainment"
       ], 
       [
         "tv-area"
       ], 
       [
-        "children-entertainment"
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "beauty-treatments"
       ], 
       [
         "basketball"
@@ -15971,36 +15971,36 @@
         "canoes"
       ], 
       [
-        "entertainment"
+        "gymnastics"
       ], 
       [
-        "bar"
+        "theme-parties"
       ], 
       [
-        "petanque"
+        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 7/8/9", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bianconerobeach.it", 
     "accepts_booking": true, 
-    "slug": "bagno-bianconero-fuorionda", 
+    "slug": "bagno-bianconero-7-8-9", 
     "neighbourhood": [
       "tagliata"
     ], 
-    "name": "Bagno Bianconero - Fuorionda"
+    "name": "Bagno Bianconero"
   }
 },
 {
   "pk": 12947, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2890<br />\n\tfronte mare: 40<br />\n\tdocce aperte: 6<br />\n\twc: 3<br />\n\tdocce chiuse: 3</p>", 
+    "site": "http://www.lepalmebeach.com/", 
+    "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2890<br />\r\n\tfronte mare: 40<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 3<br />\r\n\tdocce chiuse: 3</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3823189599999992 44.2259026199999994)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2890<br />\n\tfronte mare: 40<br />\n\tdocce aperte: 6<br />\n\twc: 3<br />\n\tdocce chiuse: 3</p>", 
+    "modified": "2014-07-05T14:52:10.166Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2890<br />\r\n\tfronte mare: 40<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 3<br />\r\n\tdocce chiuse: 3</p>", 
     "number": "10", 
     "languages": [
       [
@@ -16012,7 +16012,46 @@
     ], 
     "services": [
       [
+        "ping-pong"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "videogames"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
         "dancing"
+      ], 
+      [
+        "beach-basket"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "fitness-area"
       ], 
       [
         "parking"
@@ -16021,51 +16060,12 @@
         "theme-parties"
       ], 
       [
-        "fitness-area"
-      ], 
-      [
-        "beach-basket"
-      ], 
-      [
-        "cabins"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
-        "table-football"
-      ], 
-      [
-        "videogames"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "beach-soccer"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
         "gym"
       ]
     ], 
     "address": "Arenile demaniale 10", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@lepalmebeach.com", 
     "accepts_booking": true, 
     "slug": "bagno-le-palme", 
     "neighbourhood": [
@@ -16082,8 +16082,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3820335200000002 44.2262579400000035)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-05T14:56:24.869Z", 
+    "description_en": "", 
     "number": "12", 
     "languages": [
       [
@@ -16095,8 +16095,8 @@
     ], 
     "services": [], 
     "address": "Arenile dmaniale 12", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "bagnofocaccia12@gmail.com", 
     "accepts_booking": true, 
     "slug": "bagno-focaccia", 
     "neighbourhood": [
@@ -16109,12 +16109,12 @@
   "pk": 12949, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1179<br />\n\tfronte mare: 16<br />\n\tdocce aperte: 2<br />\n\twc: 2</p>", 
+    "site": "http://www.bagnojolly16tagliata.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1179<br />\r\n\tfronte mare: 16<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3814626400000005 44.2269685799999976)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1179<br />\n\tfronte mare: 16<br />\n\tdocce aperte: 2<br />\n\twc: 2</p>", 
+    "modified": "2014-07-05T14:51:35.927Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1179<br />\r\n\tfronte mare: 16<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2</p>", 
     "number": "16", 
     "languages": [
       [
@@ -16126,45 +16126,45 @@
     ], 
     "services": [
       [
-        "dancing"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "cabins"
-      ], 
-      [
-        "table-football"
-      ], 
-      [
-        "videogames"
-      ], 
-      [
-        "baby-park"
       ], 
       [
         "ping-pong"
       ], 
       [
+        "baby-park"
+      ], 
+      [
+        "videogames"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
         "petanque"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "dancing"
       ], 
       [
         "fitness-area"
       ], 
       [
-        "children-entertainment"
+        "theme-parties"
       ]
     ], 
     "address": "Arenile demaniale 16", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "magli.cristiano@libero.it", 
     "accepts_booking": true, 
     "slug": "bagno-jolly-2", 
     "neighbourhood": [
@@ -16177,12 +16177,12 @@
   "pk": 12950, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2700<br />\n\tfronte mare: 36<br />\n\tdocce aperte: 4<br />\n\twc: 4<br />\n\tdocce chiuse: 4</p>", 
+    "site": "http://www.bagnorocchi.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2700<br />\r\n\tfronte mare: 36<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 4<br />\r\n\tdocce chiuse: 4</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3811771999999998 44.2273239000000018)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2700<br />\n\tfronte mare: 36<br />\n\tdocce aperte: 4<br />\n\twc: 4<br />\n\tdocce chiuse: 4</p>", 
+    "modified": "2014-07-05T14:48:57.521Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2700<br />\r\n\tfronte mare: 36<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 4<br />\r\n\tdocce chiuse: 4</p>", 
     "number": "18", 
     "languages": [
       [
@@ -16194,45 +16194,45 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "videogames"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
         "dancing"
       ], 
       [
         "beach-basket"
       ], 
       [
-        "table-football"
-      ], 
-      [
-        "videogames"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
+        "pedal-boats"
       ], 
       [
         "beach-racket-court"
       ], 
       [
         "fitness-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "pedal-boats"
-      ], 
-      [
-        "petanque"
       ]
     ], 
     "address": "Arenile demaniale 18", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnorocchi.it", 
     "accepts_booking": true, 
     "slug": "bagno-rocchi", 
     "neighbourhood": [
@@ -16245,12 +16245,12 @@
   "pk": 12951, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1978<br />\n\tfronte mare: 24<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>", 
+    "site": "http://www.bagnobenvenuti.com/", 
+    "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1978<br />\r\n\tfronte mare: 24<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 5</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3808917600000008 44.2276792199999988)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1978<br />\n\tfronte mare: 24<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>", 
+    "modified": "2014-07-05T14:47:45.180Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1978<br />\r\n\tfronte mare: 24<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 5</p>", 
     "number": "20", 
     "languages": [
       [
@@ -16262,34 +16262,34 @@
     ], 
     "services": [
       [
-        "table-football"
-      ], 
-      [
-        "baby-sitter"
-      ], 
-      [
         "bar"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "dancing"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
         "ping-pong"
+      ], 
+      [
+        "music"
+      ], 
+      [
+        "dancing"
       ], 
       [
         "beach-racket-court"
@@ -16298,18 +16298,18 @@
         "fitness-area"
       ], 
       [
-        "children-entertainment"
+        "baby-sitter"
       ], 
       [
-        "music"
+        "theme-parties"
       ], 
       [
-        "petanque"
+        "gym"
       ]
     ], 
     "address": "Arenile demaniale 20", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnobenvenuti.com", 
     "accepts_booking": true, 
     "slug": "bagno-benvenuti", 
     "neighbourhood": [
@@ -74917,7 +74917,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-sabrina-fuorionda"
+      "bagno-sabrina"
     ], 
     "number": "0544 988060", 
     "name": "tel", 
@@ -74929,7 +74929,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-sabrina-fuorionda"
+      "bagno-sabrina"
     ], 
     "number": "0544 988529", 
     "name": "fax", 
@@ -74941,7 +74941,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-picnic-fuorionda"
+      "bagno-picnic"
     ], 
     "number": "0544 987982", 
     "name": "tel", 
@@ -74953,7 +74953,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-bianconero-fuorionda"
+      "bagno-bianconero-7-8-9"
     ], 
     "number": "0544 987752", 
     "name": "tel", 
