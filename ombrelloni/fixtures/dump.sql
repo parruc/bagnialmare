@@ -14048,8 +14048,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12898	Bagno Cinquantanove mar y sol	bagno-cinquantanove-mar-y-sol	59	Arenile demaniale 59			0101000020E610000062A1D634EFC028404D124BCADD1D4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1815<br />\n\tfronte mare: 18<br />\n\tdocce aperte: 2<br />\n\twc: 3<br />\n\tdocce chiuse: 1</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1815<br />\n\tfronte mare: 18<br />\n\tdocce aperte: 2<br />\n\twc: 3<br />\n\tdocce chiuse: 1</p>	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12902	Bagno Lux	bagno-lux	66	Arenile demaniale 66			0101000020E61000001D52A76482C0284017D78BB0071E4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2049<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 2<br />\n\twc: 3</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2049<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 2<br />\n\twc: 3</p>	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12904	Bagno Lido Le Vele	bagno-lido-le-vele	68	Arenile demaniale 68			0101000020E61000000960BE4D63C028409AA130A9131E4640		\N	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12945	Bagno Picnic - Fuorionda	bagno-picnic-fuorionda	4	Arenile demaniale 4			0101000020E6100000A678E08C2FC4284029D29A72C71C4640		\N	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12948	Bagno Focaccia	bagno-focaccia	12	Arenile dmaniale 12			0101000020E610000064C0C4E599C3284053612A05F61C4640		\N	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13099	Bagno Aragosta	aragosta	27	Via Spiaggia, 27	info@bagnoaragosta.it	www.bagnoaragosta.it	0101000020E6100000000000DCC87E2840B9135442C4544640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12908	Bagno Endas Moorea	bagno-endas-moorea	74	Arenile demaniale 74			0101000020E6100000CD89030906C0284022011F93371E4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1400<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 2<br />\n\twc: 2<br />\n\tdocce chiuse: 1</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1400<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 2<br />\n\twc: 2<br />\n\tdocce chiuse: 1</p>	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12909	Bagno Settebello	bagno-settebello	76	Arenile demaniale 76			0101000020E6100000B9971AF2E6BF2840A5CBC38B431E4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3100<br />\n\tfronte mare: 25<br />\n\tdocce aperte: 3<br />\n\twc: 4<br />\n\tdocce chiuse: 1</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3100<br />\n\tfronte mare: 25<br />\n\tdocce aperte: 3<br />\n\twc: 4<br />\n\tdocce chiuse: 1</p>	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14066,6 +14064,8 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12911	Bagno Jolly	bagno-jolly	79	Arenile Demaniale 79	info@bagnojolly.it		0101000020E61000009C2CBD4FB8BF284069FBBA80551E4640	<h3>Details</h3>\r\n\t<p>wc: 5<br />\r\n\tfronte mare: 39<br />\r\n\tdocce aperte: 3<br />\r\n\tdocce chiuse: 2</p>	<h3>Details</h3>\r\n\t<p>wc: 5<br />\r\n\tfronte mare: 39<br />\r\n\tdocce aperte: 3<br />\r\n\tdocce chiuse: 2</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:15:34.305146-04
 12903	Bagno Oasi	bagno-oasi	67	Arenile demaniale 67	eneacom@tin.it		0101000020E610000013D932D972C02840583CDEAC0D1E4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1000<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1000<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:19:07.816626-04
 12900	Bagno Bruno	bagno-bruno	64	Arenile demaniale 64	info@bagnobruno.it	http://www.bagnobruno.it/	0101000020E61000003044907BA1C02840940CE7B7FB1D4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3949<br />\r\n\tfronte mare: 39<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2<br />\r\n\tdocce chiuse: 2</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3949<br />\r\n\tfronte mare: 39<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2<br />\r\n\tdocce chiuse: 2</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:21:16.450721-04
+12948	Bagno Focaccia	bagno-focaccia	12	Arenile dmaniale 12	bagnofocaccia12@gmail.com		0101000020E610000064C0C4E599C3284053612A05F61C4640				4	t	2014-07-02 18:00:00-04	2014-07-05 10:56:24.86992-04
+12945	Bagno Picnic	bagno-picnic	4	Arenile demaniale 4	nadir.cesaretti@libero.it		0101000020E6100000A678E08C2FC4284029D29A72C71C4640				4	t	2014-07-02 18:00:00-04	2014-07-05 11:00:35.962279-04
 12932	Bagno Sole	bagno-sole	115/116/117	Arenile demaniale 115/116/117			0101000020E610000037275CB388BD28409C3851FC2C1F4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3989<br />\n\tfronte mare: 39<br />\n\tdocce aperte: 1<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 3989<br />\n\tfronte mare: 39<br />\n\tdocce aperte: 1<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13088	Bagno Gabbiano	gabbiano	16	Via Spiaggia, 16	bagnogabbiano@libero.it	www.bagnogabbiano.it	0101000020E6100000000000A8577E2840687EFCA859554640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13090	Bagno Italia	italia	18	Via Spiaggia, 18	info@bagnoitalia.eu		0101000020E61000000000003C697E28404524D5273A554640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14084,13 +14084,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12931	Bagno Sara Beach	bagno-sara-beach	114	Arenile demaniale 114	info@sarabeach.it	http://www.sarabeach.it/	0101000020E610000041A0D03E98BD28405AD3FEFF261F4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2094<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2094<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:02:19.53607-04
 12929	Bagno Andreucci	bagno-andreucci	107	Arenile demaniale 107	b.andreucci@libero.it	http://www.andreuccibeach.it/	0101000020E610000086EFFF0E05BE2840900EBE19FD1E4640	<h3>Details</h3>\r\n\t<p>wc: 5<br />\r\n\tfronte mare: 54<br />\r\n\tdocce aperte: 3<br />\r\n\tdocce chiuse: 2</p>	<h3>Details</h3>\r\n\t<p>wc: 5<br />\r\n\tfronte mare: 54<br />\r\n\tdocce aperte: 3<br />\r\n\tdocce chiuse: 2</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:03:36.123872-04
 12924	Bagno Kiwengwa	bagno-kiwengwa	101	Arenile demaniale 101	artedecor@libero.it		0101000020E6100000C2C5BA5362BE284008AFCF2FD91E4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2000<br />\r\n\tfronte mare: 21<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2000<br />\r\n\tfronte mare: 21<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:05:28.652659-04
-12944	Bagno Sabrina - Fuorionda	bagno-sabrina-fuorionda	3	Arenile demaniale 3			0101000020E6100000AEEFC34142C4284044E048A0C11C4640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tfronte mare: 59<br />\n\tlettini: 400<br />\n\tcabine: 20<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 1260<br />\n\tdocce aperte: 6</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 200<br />\n\twc disabili: 2<br />\n\tfronte mare: 59<br />\n\tlettini: 400<br />\n\tcabine: 20<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 1260<br />\n\tdocce aperte: 6</p>	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13085	Bagno Vela	vela	12	Viale Spiaggia, 12	vela12estensi@gmail.com		0101000020E610000000000080347E2840CD35896A8B554640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12946	Bagno Bianconero - Fuorionda	bagno-bianconero-fuorionda	7/8/9	Arenile demaniale 7/8/9			0101000020E61000008D13366EF7C32840D8A790E9D81C4640	<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\twc: 6<br />\n\tombrelloni: 275<br />\n\twc disabili: 2<br />\n\tfronte mare: 86<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 5000<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\twc: 6<br />\n\tombrelloni: 275<br />\n\twc disabili: 2<br />\n\tfronte mare: 86<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 5000<br />\n\tdocce aperte: 5</p>	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12947	Bagno Le Palme	bagno-le-palme	10	Arenile demaniale 10			0101000020E610000074AE8B4FBFC32840887D8660EA1C4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2890<br />\n\tfronte mare: 40<br />\n\tdocce aperte: 6<br />\n\twc: 3<br />\n\tdocce chiuse: 3</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2890<br />\n\tfronte mare: 40<br />\n\tdocce aperte: 6<br />\n\twc: 3<br />\n\tdocce chiuse: 3</p>	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12949	Bagno Jolly	bagno-jolly-2	16	Arenile demaniale 16			0101000020E610000043E436124FC32840E728724E0D1D4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1179<br />\n\tfronte mare: 16<br />\n\tdocce aperte: 2<br />\n\twc: 2</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1179<br />\n\tfronte mare: 16<br />\n\tdocce aperte: 2<br />\n\twc: 2</p>	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12950	Bagno Rocchi	bagno-rocchi	18	Arenile demaniale 18			0101000020E610000032F66FA829C32840B20C16F3181D4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2700<br />\n\tfronte mare: 36<br />\n\tdocce aperte: 4<br />\n\twc: 4<br />\n\tdocce chiuse: 4</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2700<br />\n\tfronte mare: 36<br />\n\tdocce aperte: 4<br />\n\twc: 4<br />\n\tdocce chiuse: 4</p>	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12951	Bagno Benvenuti	bagno-benvenuti	20	Arenile demaniale 20			0101000020E61000002208A93E04C328407CF0B997241D4640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1978<br />\n\tfronte mare: 24<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1978<br />\n\tfronte mare: 24<br />\n\tdocce aperte: 4<br />\n\twc: 5</p>	\N	4	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12952	Bagno ad nova	bagno-ad-nova		Viale Giosuè Carducci			0101000020E6100000000000409FDA284035144B0B21174640	<h3>Details</h3>\n\t<p>sdraio: 60<br />\n\twc: 5<br />\n\tombrelloni: 120<br />\n\tfronte mare: 40<br />\n\tlettini: 240<br />\n\tcabine: 16<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2000<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 60<br />\n\twc: 5<br />\n\tombrelloni: 120<br />\n\tfronte mare: 40<br />\n\tlettini: 240<br />\n\tcabine: 16<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2000<br />\n\tdocce aperte: 2</p>	\N	5	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12959	Bagno alberto	bagno-alberto		Spiaggia Villamarina			0101000020E610000000000020ADDD2840936D44D390164640	<h3>Details</h3>\n\t<p>lavapiedi: 0<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 110<br />\n\tfronte mare: 24<br />\n\tlettini: 210<br />\n\tcabine: 8<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 0<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 0<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 110<br />\n\tfronte mare: 24<br />\n\tlettini: 210<br />\n\tcabine: 8<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 0<br />\n\tdocce aperte: 5</p>	\N	7	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12961	Bagno andrea	bagno-andrea-2		Viale Giosuè Carducci	maui1969@libero.it		0101000020E6100000000000E04ADA284036D5383D38174640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 25<br />\n\twc: 4<br />\n\tombrelloni: 100<br />\n\tfronte mare: 35<br />\n\tlettini: 200<br />\n\tcabine: 30<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 1820<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 25<br />\n\twc: 4<br />\n\tombrelloni: 100<br />\n\tfronte mare: 35<br />\n\tlettini: 200<br />\n\tcabine: 30<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 1820<br />\n\tdocce aperte: 3</p>	\N	5	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14100,6 +14094,11 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13100	Bagno Vascello	vascello	28	Via Spiaggia, 28			0101000020E610000000000028C87E284045519B41B7544640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-04 05:46:43.11254-04
 13101	Bagno Aquarama	aquarama	29	Via Spiaggia, 29		www.ristoranteaquarama.com/	0101000020E61000000000008CDC7E284003C24DC0A0544640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-04 05:46:44.029304-04
 12958	Bagno alba	bagno-alba		Spiaggia Villamarina	info@bagnoalba.it	http://www.bagnoalba.it/	0101000020E610000000000040B0D82840A1D3539CED164640	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 10<br />\r\n\twc: 3<br />\r\n\tombrelloni: 80<br />\r\n\tfronte mare: 24<br />\r\n\tlettini: 170<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 975<br />\r\n\tdocce aperte: 3</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 10<br />\r\n\twc: 3<br />\r\n\tombrelloni: 80<br />\r\n\tfronte mare: 24<br />\r\n\tlettini: 170<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 975<br />\r\n\tdocce aperte: 3</p>		7	t	2014-07-02 18:00:00-04	2014-07-04 08:23:05.78998-04
+12951	Bagno Benvenuti	bagno-benvenuti	20	Arenile demaniale 20	info@bagnobenvenuti.com	http://www.bagnobenvenuti.com/	0101000020E61000002208A93E04C328407CF0B997241D4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1978<br />\r\n\tfronte mare: 24<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1978<br />\r\n\tfronte mare: 24<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 5</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 10:47:45.180585-04
+12950	Bagno Rocchi	bagno-rocchi	18	Arenile demaniale 18	info@bagnorocchi.it	http://www.bagnorocchi.it/	0101000020E610000032F66FA829C32840B20C16F3181D4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2700<br />\r\n\tfronte mare: 36<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 4<br />\r\n\tdocce chiuse: 4</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2700<br />\r\n\tfronte mare: 36<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 4<br />\r\n\tdocce chiuse: 4</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 10:48:57.521248-04
+12949	Bagno Jolly	bagno-jolly-2	16	Arenile demaniale 16	magli.cristiano@libero.it	http://www.bagnojolly16tagliata.it/	0101000020E610000043E436124FC32840E728724E0D1D4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1179<br />\r\n\tfronte mare: 16<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1179<br />\r\n\tfronte mare: 16<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 10:51:35.927376-04
+12947	Bagno Le Palme	bagno-le-palme	10	Arenile demaniale 10	info@lepalmebeach.com	http://www.lepalmebeach.com/	0101000020E610000074AE8B4FBFC32840887D8660EA1C4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2890<br />\r\n\tfronte mare: 40<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 3<br />\r\n\tdocce chiuse: 3</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2890<br />\r\n\tfronte mare: 40<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 3<br />\r\n\tdocce chiuse: 3</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 10:52:10.166636-04
+12944	Bagno Sabrina 	bagno-sabrina	3	Arenile demaniale 3	info@bagnosabrina.it	http://www.bagnosabrina.it/	0101000020E6100000AEEFC34142C4284044E048A0C11C4640	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 100<br />\r\n\twc: 6<br />\r\n\tombrelloni: 200<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 59<br />\r\n\tlettini: 400<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 4<br />\r\n\tsuperficie complessiva spiaggia: 1260<br />\r\n\tdocce aperte: 6</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 100<br />\r\n\twc: 6<br />\r\n\tombrelloni: 200<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 59<br />\r\n\tlettini: 400<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 4<br />\r\n\tsuperficie complessiva spiaggia: 1260<br />\r\n\tdocce aperte: 6</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 10:59:33.621195-04
 12993	Bagno duemila	bagno-duemila		Viale Giosuè Carducci, 5			0101000020E6100000000000A0F0DD28405E3D3D9A76164640	<h3>Details</h3>\n\t<p>sdraio: 60<br />\n\twc: 3<br />\n\tombrelloni: 170<br />\n\tfronte mare: 38<br />\n\tlettini: 320<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2366<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>sdraio: 60<br />\n\twc: 3<br />\n\tombrelloni: 170<br />\n\tfronte mare: 38<br />\n\tlettini: 320<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2366<br />\n\tdocce aperte: 3</p>	\N	5	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13104	Bagno Delfinus	delfinus	52	Via Mare Jonio	sarabonazza@libero.it		0101000020E6100000000000CCAF7A28406135CEB4D35A4640		\N	\N	10	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12974	Bagno bologna villamarina	bagno-bologna-villamarina		Spiaggia Villamarina			0101000020E61000000000004050DE284046440B9875164640	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 40<br />\n\twc: 5<br />\n\tombrelloni: 100<br />\n\tfronte mare: 34<br />\n\tlettini: 200<br />\n\tcabine: 20<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 1600<br />\n\tdocce aperte: 5</p>	<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 40<br />\n\twc: 5<br />\n\tombrelloni: 100<br />\n\tfronte mare: 34<br />\n\tlettini: 200<br />\n\tcabine: 20<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 1600<br />\n\tdocce aperte: 5</p>	\N	7	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14569,6 +14568,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12846	Bagno Roma	bagno-roma	269	Viale Forli - arenile demaniale 269	alemasorf@aruba.it		0101000020E6100000533E2A1C46B528402C781BE5AA234640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2562<br />\r\n\tfronte mare: 23<br />\r\n\tdocce aperte: 5<br />\r\n\tdocce chiuse: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2562<br />\r\n\tfronte mare: 23<br />\r\n\tdocce aperte: 5<br />\r\n\tdocce chiuse: 5</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:18:04.455635-04
 12835	Bagno Malusi Enzo	bagno-malusi-enzo	258	Viale Enrico Toti - arenile demaniale 258	info@bagnoenzomalusi.com	http://www.bagnoenzomalusi.com/	0101000020E61000008B895B72CDB528408049850C3F234640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3473<br />\r\n\tfronte mare: 33<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5<br />\r\n\tdocce chiuse: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3473<br />\r\n\tfronte mare: 33<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5<br />\r\n\tdocce chiuse: 5</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:31:05.641372-04
 12828	Bagno Giuliano	bagno-giuliano	247	Viale Amilcare Ponchielli - arenile demaniale 247	bagnogiuliano@bagnogiuliano.com	http://www.bagnogiuliano.com/	0101000020E6100000C3D48CC854B62840D51AEF33D3224640	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 20<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2305<br />\r\n\tdocce aperte: 4</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 20<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2305<br />\r\n\tdocce aperte: 4</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:34:55.770966-04
+12946	Bagno Bianconero	bagno-bianconero-7-8-9	7/8/9	Arenile demaniale 7/8/9	info@bianconerobeach.it	http://www.bianconerobeach.it/	0101000020E61000008D13366EF7C32840D8A790E9D81C4640	<h3>Details</h3>\r\n\t<p>lavapiedi: 4<br />\r\n\twc: 6<br />\r\n\tombrelloni: 275<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 86<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5000<br />\r\n\tdocce aperte: 5</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 4<br />\r\n\twc: 6<br />\r\n\tombrelloni: 275<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 86<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5000<br />\r\n\tdocce aperte: 5</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 11:00:03.593692-04
 \.
 
 
@@ -14746,22 +14746,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 21628	12935	69
 21637	12940	68
 21638	12940	69
-21645	12944	68
-21646	12944	69
-21647	12945	68
-21648	12945	69
-21649	12946	68
-21650	12946	69
-21651	12947	68
-21652	12947	69
-21653	12948	68
-21654	12948	69
-21655	12949	68
-21656	12949	69
-21657	12950	68
-21658	12950	69
-21659	12951	68
-21660	12951	69
 21661	12952	68
 21662	12952	69
 21663	12953	68
@@ -16656,6 +16640,22 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23793	12823	69
 23794	12822	68
 23795	12822	69
+23796	12951	68
+23797	12951	69
+23798	12950	68
+23799	12950	69
+23800	12949	68
+23801	12949	69
+23802	12947	68
+23803	12947	69
+23806	12948	68
+23807	12948	69
+23810	12944	68
+23811	12944	69
+23812	12946	68
+23813	12946	69
+23814	12945	68
+23815	12945	69
 \.
 
 
@@ -16663,7 +16663,7 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 -- Name: bagni_bagno_languages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23795, true);
+SELECT pg_catalog.setval('bagni_bagno_languages_id_seq', 23815, true);
 
 
 --
@@ -16686,6 +16686,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90773	12862	2202
 90774	12862	2204
 90775	12862	2205
+90994	12950	2180
 80524	12765	2190
 80525	12765	2183
 80526	12765	2182
@@ -16719,6 +16720,17 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 80554	12767	2186
 80555	12767	2185
 80556	12767	2188
+90995	12950	2181
+90996	12950	2182
+90997	12950	2183
+90998	12950	2184
+90999	12950	2186
+91000	12950	2187
+91001	12950	2190
+91002	12950	2191
+91003	12950	2194
+91004	12950	2195
+91005	12950	2196
 80572	12770	2200
 80573	12770	2183
 80574	12770	2202
@@ -16816,6 +16828,18 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 80728	12780	2179
 80729	12780	2195
 90782	12860	2204
+91006	12949	2210
+91007	12949	2187
+91008	12949	2180
+91009	12949	2182
+91010	12949	2183
+91011	12949	2184
+91012	12949	2185
+91013	12949	2186
+91014	12949	2219
+91015	12949	2190
+91016	12949	2196
+91017	12949	2204
 80788	12785	2211
 80789	12785	2204
 80790	12785	2221
@@ -16866,6 +16890,23 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90802	12858	2230
 90803	12858	2231
 90804	12858	2295
+91018	12947	2187
+91019	12947	2180
+91020	12947	2181
+91021	12947	2182
+91022	12947	2183
+91023	12947	2184
+91024	12947	2185
+91025	12947	2186
+91026	12947	2219
+91027	12947	2190
+91028	12947	2191
+91029	12947	2193
+91030	12947	2195
+91031	12947	2196
+91032	12947	2202
+91033	12947	2204
+91034	12947	2205
 80966	12801	2190
 80967	12801	2204
 80968	12801	2196
@@ -17097,6 +17138,16 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90828	12854	2200
 90829	12854	2202
 90830	12854	2204
+91054	12944	2179
+91055	12944	2180
+91056	12944	2181
+91057	12944	2215
+91058	12944	2184
+91059	12944	2185
+91060	12944	2186
+91061	12944	2187
+91062	12944	2188
+91063	12944	2183
 81556	12870	2183
 81557	12870	2202
 81558	12870	2204
@@ -17136,6 +17187,12 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 81592	12873	2186
 81593	12873	2196
 81594	12873	2189
+91064	12944	2193
+91065	12944	2195
+91066	12944	2198
+91067	12944	2202
+91068	12944	2204
+91069	12944	2206
 81625	12878	2183
 81626	12878	2202
 81627	12878	2190
@@ -17202,6 +17259,25 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90832	12852	2219
 90833	12852	2179
 90834	12852	2181
+91070	12946	2209
+91071	12946	2179
+91072	12946	2180
+91073	12946	2181
+91074	12946	2215
+91075	12946	2184
+91076	12946	2185
+91077	12946	2186
+91078	12946	2187
+91079	12946	2189
+91080	12946	2190
+91081	12946	2183
+91082	12946	2195
+91083	12946	2238
+91084	12946	2198
+91085	12946	2199
+91086	12946	2212
+91087	12946	2204
+91088	12946	2206
 81772	12891	2212
 81773	12891	2183
 81774	12891	2180
@@ -17523,97 +17599,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90864	12840	2179
 90865	12840	2200
 90866	12840	2202
-82373	12944	2202
-82374	12944	2179
-82375	12944	2204
-82376	12944	2215
-82377	12944	2206
-82378	12944	2183
-82379	12944	2181
-82380	12944	2193
-82381	12944	2187
-82382	12944	2195
-82383	12944	2185
-82384	12944	2184
-82385	12944	2198
-82386	12944	2180
-82387	12944	2188
-82388	12944	2186
-82389	12946	2183
-82390	12946	2238
-82391	12946	2204
-82392	12946	2215
-82393	12946	2206
-82394	12946	2212
-82395	12946	2209
-82396	12946	2190
-82397	12946	2181
-82398	12946	2180
-82399	12946	2187
-82400	12946	2195
-82401	12946	2185
-82402	12946	2184
-82403	12946	2198
-82404	12946	2199
-82405	12946	2189
-82406	12946	2179
-82407	12946	2186
-82408	12947	2190
-82409	12947	2202
-82410	12947	2204
-82411	12947	2196
-82412	12947	2191
-82413	12947	2219
-82414	12947	2186
-82415	12947	2183
-82416	12947	2182
-82417	12947	2181
-82418	12947	2193
-82419	12947	2187
-82420	12947	2195
-82421	12947	2185
-82422	12947	2184
-82423	12947	2180
-82424	12947	2205
-82425	12949	2190
-82426	12949	2210
-82427	12949	2204
-82428	12949	2185
-82429	12949	2219
-82430	12949	2183
-82431	12949	2182
-82432	12949	2180
-82433	12949	2187
-82434	12949	2186
-82435	12949	2196
-82436	12949	2184
-82437	12950	2190
-82438	12950	2191
-82439	12950	2183
-82440	12950	2182
-82441	12950	2181
-82442	12950	2180
-82443	12950	2187
-82444	12950	2195
-82445	12950	2196
-82446	12950	2184
-82447	12950	2194
-82448	12950	2186
-82449	12951	2183
-82450	12951	2201
-82451	12951	2179
-82452	12951	2204
-82453	12951	2205
-82454	12951	2185
-82455	12951	2190
-82456	12951	2181
-82457	12951	2180
-82458	12951	2187
-82459	12951	2195
-82460	12951	2196
-82461	12951	2184
-82462	12951	2188
-82463	12951	2186
 82464	12952	2210
 82465	12952	2226
 82466	12952	2230
@@ -23620,6 +23605,21 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 89887	12779	2184
 89888	12779	2185
 89889	12779	2186
+90979	12951	2179
+90980	12951	2180
+90981	12951	2181
+90982	12951	2183
+90983	12951	2184
+90984	12951	2185
+90985	12951	2186
+90986	12951	2187
+90987	12951	2188
+90988	12951	2190
+90989	12951	2195
+90990	12951	2196
+90991	12951	2201
+90992	12951	2204
+90993	12951	2205
 88957	13436	2180
 88958	13436	2214
 88959	13436	2184
@@ -23927,7 +23927,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 -- Name: bagni_bagno_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 90978, true);
+SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 91088, true);
 
 
 --
@@ -26042,6 +26042,16 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 539	2014-07-04 09:36:00.723315-04	5	9	12826	Bagno Peppino	2	description_en, mail e site modificato/a.
 540	2014-07-04 09:37:10.102628-04	5	9	12823	Bagno Paparazzi	2	description_en, mail e site modificato/a.
 541	2014-07-04 09:38:25.043508-04	5	9	12822	Bagno Stefano Beach	2	description_en e mail modificato/a.
+542	2014-07-05 10:47:46.914428-04	6	9	12951	Bagno Benvenuti	2	Changed description_en, mail and site.
+543	2014-07-05 10:48:57.827605-04	6	9	12950	Bagno Rocchi	2	Changed description_en, mail and site.
+544	2014-07-05 10:51:36.466348-04	6	9	12949	Bagno Jolly	2	Changed description_en, mail and site.
+545	2014-07-05 10:52:10.37821-04	6	9	12947	Bagno Le Palme	2	Changed description_en, mail and site.
+546	2014-07-05 10:54:40.072566-04	6	9	12946	Bagno Bianconero	2	Changed name, slug, description_en, mail and site.
+547	2014-07-05 10:56:25.297417-04	6	9	12948	Bagno Focaccia	2	Changed mail.
+548	2014-07-05 10:58:19.627615-04	6	9	12945	Bagno Picnic - Fuorionda	2	Changed mail.
+549	2014-07-05 10:59:33.930457-04	6	9	12944	Bagno Sabrina 	2	Changed name, slug, description_en, mail and site.
+550	2014-07-05 11:00:03.931463-04	6	9	12946	Bagno Bianconero	2	Changed slug.
+551	2014-07-05 11:00:36.28889-04	6	9	12945	Bagno Picnic	2	Changed name and slug.
 \.
 
 
@@ -26049,7 +26059,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 541, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 551, true);
 
 
 --
