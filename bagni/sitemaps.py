@@ -6,6 +6,7 @@ from models.services import Service
 from ombrelloni.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
 
 from django.core.urlresolvers import reverse
+from django.utils.translation import get_language
 
 class BagnoSitemap(LocalesSitemap):
     def items(self):
@@ -21,7 +22,8 @@ class BagnoStatic(StaticLocalesSitemap):
 
 class NeighbourhoodFacilitySitemap(LocalesSitemap):
     def items(self):
-        ret = cache.get('sitemap_neighbourhood_facilities_items')
+        lang = get_language()
+        ret = cache.get('sitemap_neighbourhood_facilities_items_' + lang)
         if ret:
             return ret
         ret = set()
@@ -29,8 +31,8 @@ class NeighbourhoodFacilitySitemap(LocalesSitemap):
         for bagno in bagni:
             for service in bagno.services.all():
                 ret.add((service.slug, bagno.neighbourhood.slug))
-        ret = list(ret) 
-        cache.set('sitemap_neighbourhood_facilities_items', ret, 60 * 60 * 24)
+        ret = list(ret)
+        cache.set('sitemap_neighbourhood_facilities_items_' + lang, ret, 60 * 60 * 24)
         return ret
 
     def location(self, obj):
