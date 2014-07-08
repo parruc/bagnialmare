@@ -2,6 +2,7 @@
 
 {% load l10n i18n custom_templatetags thumbnail %}
 {% load batch from custom_filters %}
+{% load neighbourhood_municipality from custom_filters %}
 {% load cache %}
 
 {% block robot %}noindex, follow{% endblock %}
@@ -251,8 +252,7 @@
                         <div class="col-xs-12 col-sm-9">
                           <p class="single-result-address">
                             {{ hit.address }} -
-                            {{ hit.neighbourhood.name }},
-                            {{ hit.neighbourhood.municipality.name }} -
+                            {{ hit|neighbourhood_municipality }} -
                             {{ hit.neighbourhood.municipality.district.name }}
                             {% if hit.distance %}<span class="badge">{{ hit.distance.km|floatformat:2 }}Km {{ t_away }}</span>{% endif %}
                           </p>
