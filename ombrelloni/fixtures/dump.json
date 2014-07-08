@@ -43917,12 +43917,12 @@
   "pk": 13412, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.grandhotelrimini.it", 
-    "description": "\n<p>Servizi offerti la vasta spiaggia di 11000 mq \u00e8 attrezzata con 7 file di ombrelloni a grande distanza gli uni dagli altri per garantire la necessaria privacy. \n\ngli ombrelloni sono dotati di piccole casseforti per la custodia di piccoli oggetti personali, mentre al punto \u201caccoglienza\u201d all\u2019entrata della spiaggia sono disponibili casseforti pi\u00f9 grandi per la custodia di oggetti ingombranti. \r\nservizio teli mare, salviette rinfrescanti e servizio bar all\u2019ombrellone sono garantiti durante tutta l\u2019estate, oltre al servizio mini-club nell\u2019area predisposta. \r\nil centro benessere estivo \u201cbeach spa\u201d, una struttura in legno coperta da leggeri teli bianchi, propone trattamenti di bellezza e massaggi della tradizione orientale e occidentale in un\u2019atmosfera davvero unica. il bar e ristorante \u201cla dolce vita al mare\u201d in riva al mare e una piscina per bambini completano la gamma dei servizi in spiaggia. \r\nun team dedicato ed esperto di bagnini guidati da spiridione ripaldi \u00e8 responsabile della gestione di tutti gli aspetti della vita in spiaggia. \n\nil costo\u00a0giornaliero per i clienti esterni parte da 70 euro al giorno</p>", 
+    "site": "http://www.grandhotelrimini.it/", 
+    "description": "<p>11000 mq attrezzati con 7 file di ombrelloni a grande distanza gli uni dagli altri per garantire la privacy. Casseforti, teli mare e servizio bar all\u2019ombrellone sono garantiti durante tutta l\u2019estate, oltre al mini-club nell\u2019area predisposta. \r\nProponiamo servizi beauty and spa, bar e ristorante in riva al mare ed una piscina per bambini . </p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5783550000000002 44.0737280000000027)", 
-    "modified": "2014-07-04T09:49:04.126Z", 
-    "description_en": "\n<p>Servizi offerti la vasta spiaggia di 11000 mq \u00e8 attrezzata con 7 file di ombrelloni a grande distanza gli uni dagli altri per garantire la necessaria privacy. \n\ngli ombrelloni sono dotati di piccole casseforti per la custodia di piccoli oggetti personali, mentre al punto \u201caccoglienza\u201d all\u2019entrata della spiaggia sono disponibili casseforti pi\u00f9 grandi per la custodia di oggetti ingombranti. \r\nservizio teli mare, salviette rinfrescanti e servizio bar all\u2019ombrellone sono garantiti durante tutta l\u2019estate, oltre al servizio mini-club nell\u2019area predisposta. \r\nil centro benessere estivo \u201cbeach spa\u201d, una struttura in legno coperta da leggeri teli bianchi, propone trattamenti di bellezza e massaggi della tradizione orientale e occidentale in un\u2019atmosfera davvero unica. il bar e ristorante \u201cla dolce vita al mare\u201d in riva al mare e una piscina per bambini completano la gamma dei servizi in spiaggia. \r\nun team dedicato ed esperto di bagnini guidati da spiridione ripaldi \u00e8 responsabile della gestione di tutti gli aspetti della vita in spiaggia. \n\nil costo\u00a0giornaliero per i clienti esterni parte da 70 euro al giorno</p>", 
+    "modified": "2014-07-07T13:45:53.651Z", 
+    "description_en": "<p>11000 mq attrezzati con 7 file di ombrelloni a grande distanza gli uni dagli altri per garantire la privacy. Casseforti, teli mare e servizio bar all\u2019ombrellone sono garantiti durante tutta l\u2019estate, oltre al mini-club nell\u2019area predisposta. \r\nProponiamo servizi beauty and spa, bar e ristorante in riva al mare ed una piscina per bambini . </p>", 
     "number": "", 
     "languages": [
       [
@@ -43934,8 +43934,8 @@
     ], 
     "services": [], 
     "address": "lungomare tintori", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@grandhotelrimini.com", 
     "accepts_booking": true, 
     "slug": "spiaggia-grand-hotel", 
     "neighbourhood": [
@@ -43986,12 +43986,12 @@
   "pk": 13414, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.turquoisebeachclub.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 25<br />\n\tombrelloni: 350</p>\n<p>Servizi offerti spiaggia di rimini marina centro alla scoperta di un luogo che \u00e8 puro divertimento, relax e intrattenimento, di giorno e di notte. \n\r\nservizi in spiaggia all'avanguardia, dai pi\u00f9 classici ai pi\u00f9 inaspettati, un luogo in cui lasciarsi viziare per tutto lo scorrere della giornata. \n\r\nla struttura si articola nelle seguenti aree\r\narea fun, area fit&sport, area ristorazione (1 ristorante e 3 bar), area disco bar (2 zone lounge) e area mini-club.</p>", 
+    "site": "http://www.turquoisebeachclub.com/", 
+    "description": "<p>Un luogo che \u00e8 puro divertimento, relax e intrattenimento, di giorno e di notte. Servizi in spiaggia all'avanguardia, dai pi\u00f9 classici ai pi\u00f9 inaspettati, un luogo in cui lasciarsi viziare per tuttala giornata. \r\nLa struttura si articola nelle seguenti aree: area fun, area fit&sport, area ristorazione, area disco bar e area mini-club.</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5736597309999993 44.0786719000000033)", 
-    "modified": "2014-07-04T09:49:05.555Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 25<br />\n\tombrelloni: 350</p>\n<p>Servizi offerti spiaggia di rimini marina centro alla scoperta di un luogo che \u00e8 puro divertimento, relax e intrattenimento, di giorno e di notte. \n\r\nservizi in spiaggia all'avanguardia, dai pi\u00f9 classici ai pi\u00f9 inaspettati, un luogo in cui lasciarsi viziare per tutto lo scorrere della giornata. \n\r\nla struttura si articola nelle seguenti aree\r\narea fun, area fit&sport, area ristorazione (1 ristorante e 3 bar), area disco bar (2 zone lounge) e area mini-club.</p>", 
+    "modified": "2014-07-07T13:48:02.682Z", 
+    "description_en": "<p>Un luogo che \u00e8 puro divertimento, relax e intrattenimento, di giorno e di notte. Servizi in spiaggia all'avanguardia, dai pi\u00f9 classici ai pi\u00f9 inaspettati, un luogo in cui lasciarsi viziare per tuttala giornata. \r\nLa struttura si articola nelle seguenti aree: area fun, area fit&sport, area ristorazione, area disco bar e area mini-club.</p>", 
     "number": "2/3/4 sud", 
     "languages": [
       [
@@ -44006,13 +44006,13 @@
         "catering"
       ], 
       [
-        "lockers"
-      ], 
-      [
-        "webcam"
-      ], 
-      [
         "beach-volley"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "lockers"
       ], 
       [
         "playground"
@@ -44021,12 +44021,12 @@
         "basketball"
       ], 
       [
-        "hot-showers"
+        "webcam"
       ]
     ], 
     "address": "Lungomare Tintori, 6", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "infospiaggia@turquoisebeachclub.com", 
     "accepts_booking": true, 
     "slug": "turquoise-beach-club", 
     "neighbourhood": [
@@ -44039,12 +44039,12 @@
   "pk": 13415, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=50&loc=rimini", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5747423739999995 44.0776755999999992)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T13:36:07.314Z", 
+    "description_en": "", 
     "number": "5 sud", 
     "languages": [
       [
@@ -44056,7 +44056,7 @@
     ], 
     "services": [], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "romano", 
@@ -44152,11 +44152,11 @@
   "pk": 13418, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=80&loc=rimini", 
+    "site": "http://www.velarimini.it/", 
     "description": "<h3>Details</h3>\r\n\r\n<p>cabine: 10<br />\r\nombrelloni: 150</p>\r\n\r\n<p>Servizi offerti c/o lo stabilimento si trova un centro nautico con possibilit&agrave; di noleggiare barche, gommoni e moto d&#39;acqua e scuola vela.</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5758250169999997 44.0766793000000021)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-07T13:16:06.663Z", 
     "description_en": "<h3>Details</h3>\r\n\r\n<p>cabine: 10<br />\r\nombrelloni: 150</p>\r\n\r\n<p>Servizi offerti c/o lo stabilimento si trova un centro nautico con possibilit&agrave; di noleggiare barche, gommoni e moto d&#39;acqua e scuola vela.</p>\r\n", 
     "number": "8", 
     "languages": [
@@ -44174,7 +44174,7 @@
     ], 
     "address": "Lungomare Tintori", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "magob8@libero.it", 
     "accepts_booking": true, 
     "slug": "luciano", 
     "neighbourhood": [
@@ -44187,12 +44187,12 @@
   "pk": 13419, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it", 
-    "description": "<h3>Details</h3>\n\t<p>ombrelloni: 70</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>ombrelloni: 70</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5761858980000003 44.0763472000000007)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>ombrelloni: 70</p>", 
+    "modified": "2014-07-07T13:04:11.815Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>ombrelloni: 70</p>", 
     "number": "9 sud", 
     "languages": [
       [
@@ -44207,17 +44207,17 @@
         "lockers"
       ], 
       [
-        "magazines-journals"
+        "playground"
       ], 
       [
         "hot-showers"
       ], 
       [
-        "playground"
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "nove-b", 
@@ -44231,12 +44231,12 @@
   "pk": 13420, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5765467789999992 44.0760150999999993)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T13:03:07.334Z", 
+    "description_en": "", 
     "number": "10 sud", 
     "languages": [
       [
@@ -44248,20 +44248,20 @@
     ], 
     "services": [
       [
-        "basketball"
+        "children-entertainment"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "children-entertainment"
+        "basketball"
       ], 
       [
         "internet"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "delle-rose", 
@@ -44275,12 +44275,12 @@
   "pk": 13421, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 80<br />\n\tombrelloni: 170</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 170</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5769076599999998 44.0756829999999979)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 80<br />\n\tombrelloni: 170</p>", 
+    "modified": "2014-07-07T13:02:48.333Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 170</p>", 
     "number": "11 sud", 
     "languages": [
       [
@@ -44292,14 +44292,14 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "ping-pong"
       ], 
       [
-        "ping-pong"
+        "beach-volley"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "augusto", 
@@ -44313,12 +44313,12 @@
   "pk": 13422, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 120</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5772685410000005 44.0753508999999966)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 120</p>", 
+    "modified": "2014-07-07T13:02:58.130Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>", 
     "number": "12 sud", 
     "languages": [
       [
@@ -44330,7 +44330,7 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "children-entertainment"
       ], 
       [
         "beach-volley"
@@ -44339,11 +44339,11 @@
         "hot-showers"
       ], 
       [
-        "children-entertainment"
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "azzurro", 
@@ -44357,11 +44357,11 @@
   "pk": 13423, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
+    "site": "", 
     "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 110</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5776294219999993 44.0750188000000023)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-07T13:02:35.209Z", 
     "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 110</p>", 
     "number": "13 sud", 
     "languages": [
@@ -44374,10 +44374,10 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "ping-pong"
       ], 
       [
-        "ping-pong"
+        "beach-volley"
       ], 
       [
         "entertainment"
@@ -44398,12 +44398,12 @@
   "pk": 13424, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 62<br />\n\tombrelloni: 224</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 62<br />\r\n\tombrelloni: 224</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5779903030000000 44.0746867000000009)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 62<br />\n\tombrelloni: 224</p>", 
+    "modified": "2014-07-07T13:03:55.464Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 62<br />\r\n\tombrelloni: 224</p>", 
     "number": "14 sud", 
     "languages": [
       [
@@ -44415,17 +44415,17 @@
     ], 
     "services": [
       [
+        "beach-racket-court"
+      ], 
+      [
         "entertainment"
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "beach-racket-court"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "isac", 
@@ -44439,12 +44439,12 @@
   "pk": 13425, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 120</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5783511840000006 44.0743545999999995)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 120</p>", 
+    "modified": "2014-07-07T13:04:17.214Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>", 
     "number": "15 sud", 
     "languages": [
       [
@@ -44456,14 +44456,14 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "beach-volley"
       ], 
       [
-        "beach-volley"
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "oasi", 
@@ -44477,12 +44477,12 @@
   "pk": 13426, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>ombrelloni: 266</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>ombrelloni: 266</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5787120649999995 44.0740224999999981)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>ombrelloni: 266</p>", 
+    "modified": "2014-07-07T13:03:49.545Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>ombrelloni: 266</p>", 
     "number": "16 sud", 
     "languages": [
       [
@@ -44494,6 +44494,9 @@
     ], 
     "services": [
       [
+        "children-entertainment"
+      ], 
+      [
         "basketball"
       ], 
       [
@@ -44504,13 +44507,10 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "children-entertainment"
       ]
     ], 
     "address": "Giorgio Neri", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "giorgio", 
@@ -44524,12 +44524,12 @@
   "pk": 13427, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 31<br />\n\tombrelloni: 120</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 31<br />\r\n\tombrelloni: 120</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5790729460000001 44.0736903999999967)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 31<br />\n\tombrelloni: 120</p>", 
+    "modified": "2014-07-07T13:04:01.512Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 31<br />\r\n\tombrelloni: 120</p>", 
     "number": "17 sud", 
     "languages": [
       [
@@ -44541,20 +44541,20 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "credit-cards-accepted"
       ], 
       [
-        "credit-cards-accepted"
+        "beach-racket-court"
       ], 
       [
         "hot-showers"
       ], 
       [
-        "beach-racket-court"
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "la-spiaggia", 
@@ -44568,12 +44568,12 @@
   "pk": 13428, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 83<br />\n\tombrelloni: 220</p>\n<p>Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilit\u00e0 ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>", 
+    "site": "", 
+    "description": "<p>cabine: 83<br />\r\nombrelloni: 220</p>\r\n<p>Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilit\u00e0 ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5794338270000008 44.0733583000000024)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 83<br />\n\tombrelloni: 220</p>\n<p>Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilit\u00e0 ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>", 
+    "modified": "2014-07-07T13:04:37.501Z", 
+    "description_en": "<p>cabine: 83<br />\r\nombrelloni: 220</p>\r\n<p>Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilit\u00e0 ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>", 
     "number": "18 sud", 
     "languages": [
       [
@@ -44585,7 +44585,7 @@
     ], 
     "services": [
       [
-        "nursery"
+        "children-entertainment"
       ], 
       [
         "beach-racket-court"
@@ -44594,11 +44594,11 @@
         "gym"
       ], 
       [
-        "children-entertainment"
+        "nursery"
       ]
     ], 
     "address": "", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "romeo", 
@@ -44612,12 +44612,12 @@
   "pk": 13429, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5797947079999997 44.0730262000000010)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T13:03:41.428Z", 
+    "description_en": "", 
     "number": "19 sud", 
     "languages": [
       [
@@ -44633,7 +44633,7 @@
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "gastone", 
@@ -44647,12 +44647,12 @@
   "pk": 13430, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 44<br />\n\tombrelloni: 177</p>", 
+    "site": "http://www.bagno20arcobaleno.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 44<br />\r\n\tombrelloni: 177</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5801555890000003 44.0726940999999997)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 44<br />\n\tombrelloni: 177</p>", 
+    "modified": "2014-07-07T12:40:48.774Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 44<br />\r\n\tombrelloni: 177</p>", 
     "number": "20 sud", 
     "languages": [
       [
@@ -44664,21 +44664,21 @@
     ], 
     "services": [
       [
+        "ping-pong"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "hot-showers"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
         "playground"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagno20arcobaleno.it", 
     "accepts_booking": true, 
     "slug": "arcobaleno", 
     "neighbourhood": [
@@ -44691,12 +44691,12 @@
   "pk": 13431, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 48<br />\n\tombrelloni: 165</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5805164699999992 44.0723619999999983)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 48<br />\n\tombrelloni: 165</p>", 
+    "modified": "2014-07-07T13:04:51.303Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>", 
     "number": "21 sud", 
     "languages": [
       [
@@ -44712,7 +44712,7 @@
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "simone", 
@@ -44773,12 +44773,12 @@
   "pk": 13433, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.comitatobagninirimini.it/", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 80<br />\n\tombrelloni: 200</p>\n<p>Tariffe convenzionate con gli alberghi</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 200</p>\r\n<p>Tariffe convenzionate con gli alberghi</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5815991129999993 44.0713657000000012)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 80<br />\n\tombrelloni: 200</p>\n<p>Tariffe convenzionate con gli alberghi</p>", 
+    "modified": "2014-07-07T13:04:45.094Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 200</p>\r\n<p>Tariffe convenzionate con gli alberghi</p>", 
     "number": "24 sud", 
     "languages": [
       [
@@ -44790,20 +44790,20 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
-        "nursery"
+        "ping-pong"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "ping-pong"
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "serafino", 
@@ -44817,12 +44817,12 @@
   "pk": 13434, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 70<br />\n\tombrelloni: 200</p>\n<p>www.comitatobagninirimini.it</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5819599940000000 44.0710335999999998)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 70<br />\n\tombrelloni: 200</p>\n<p>www.comitatobagninirimini.it</p>", 
+    "modified": "2014-07-07T13:37:15.186Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>", 
     "number": "25 sud", 
     "languages": [
       [
@@ -44834,20 +44834,20 @@
     ], 
     "services": [
       [
-        "entertainment"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
-        "petanque"
+        "beach-racket-court"
       ], 
       [
-        "beach-racket-court"
+        "entertainment"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "aldo", 
@@ -44924,7 +44924,7 @@
     "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di\u00a0bocce www.comitatobagninirimini.it \u00a0\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5826817559999995 44.0703693999999970)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-07T12:28:47.357Z", 
     "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di\u00a0bocce www.comitatobagninirimini.it \u00a0\r\n", 
     "number": "27 sud", 
     "languages": [
@@ -44960,7 +44960,7 @@
     ], 
     "address": "Lungomare Tintori - zona Piazza Kennedy", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "info@bagno27.it", 
     "accepts_booking": true, 
     "slug": "bagno-27", 
     "neighbourhood": [
@@ -45026,37 +45026,87 @@
   "pk": 13438, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 160</p>\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "site": "http://bagno28otello.com/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5830426370000001 44.0700373000000027)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 160</p>\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "point": "POINT (12.5830426370000126 44.0700372999999956)", 
+    "modified": "2014-07-07T19:32:43.295Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
     "number": "28 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
         "entertainment"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "gym"
+      ], 
+      [
+        "sport-balls"
+      ], 
+      [
+        "disabled"
+      ], 
+      [
+        "internet"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "windsurf"
+      ], 
+      [
+        "rowing-boats"
+      ], 
+      [
+        "mats-deposit"
       ], 
       [
         "hot-showers"
       ], 
       [
-        "petanque"
+        "pet-friendly"
       ], 
       [
-        "gym"
+        "schoolchildren"
+      ], 
+      [
+        "surfwindsurf-cabin"
+      ], 
+      [
+        "bancomat"
+      ], 
+      [
+        "credit-cards-accepted"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "otello", 
@@ -45070,12 +45120,12 @@
   "pk": 13439, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggia29rimini.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 160</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 35<br />\r\n\tombrelloni: 160</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5834035180000008 44.0697052000000014)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 160</p>", 
+    "modified": "2014-07-07T13:27:08.224Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 35<br />\r\n\tombrelloni: 160</p>", 
     "number": "29 sud", 
     "languages": [
       [
@@ -45087,7 +45137,10 @@
     ], 
     "services": [
       [
-        "nursery"
+        "entertainment"
+      ], 
+      [
+        "ping-pong"
       ], 
       [
         "beach-volley"
@@ -45096,15 +45149,12 @@
         "hot-showers"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
-        "entertainment"
+        "nursery"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@lucafoschi.it", 
     "accepts_booking": true, 
     "slug": "palm-beach", 
     "neighbourhood": [
@@ -45117,12 +45167,12 @@
   "pk": 13440, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
+    "site": "http://www.ristorantenettunorimini.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5842259999999992 44.0680309999999977)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T13:32:41.007Z", 
+    "description_en": "", 
     "number": "", 
     "languages": [
       [
@@ -45134,18 +45184,18 @@
     ], 
     "services": [
       [
-        "basketball"
+        "beach-volley"
       ], 
       [
-        "beach-volley"
+        "basketball"
       ], 
       [
         "playground"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@ristorantenettunorimini.it", 
     "accepts_booking": true, 
     "slug": "bagno-ristorante-nettuno", 
     "neighbourhood": [
@@ -45554,12 +45604,12 @@
   "pk": 13450, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=390&loc=rimini", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 70<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti tornei di briscola\r\n- tutti i mercoled\u00ec alle 16.30, fino alla fine di agosto corso gratuito di piadina romagnola a cura di tina</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti tornei di briscola\r\n- tutti i mercoled\u00ec alle 16.30, fino alla fine di agosto corso gratuito di piadina romagnola a cura di tina</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5870123280000001 44.0663842000000017)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 70<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti tornei di briscola\r\n- tutti i mercoled\u00ec alle 16.30, fino alla fine di agosto corso gratuito di piadina romagnola a cura di tina</p>", 
+    "modified": "2014-07-07T13:36:39.067Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti tornei di briscola\r\n- tutti i mercoled\u00ec alle 16.30, fino alla fine di agosto corso gratuito di piadina romagnola a cura di tina</p>", 
     "number": "39 sud", 
     "languages": [
       [
@@ -45571,20 +45621,20 @@
     ], 
     "services": [
       [
-        "basketball"
-      ], 
-      [
-        "entertainment"
-      ], 
-      [
         "petanque"
       ], 
       [
         "playground"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "entertainment"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "carlo", 
@@ -45699,11 +45749,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 66<br />\n\tombrelloni: 180</p>\n<p>Servizi offerti tornei organizzati dai clienti\r\n- corsi di aquagymn e ginnastica</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 66<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti tornei organizzati dai clienti\r\n- corsi di aquagymn e ginnastica</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5880949710000003 44.0653878999999975)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 66<br />\n\tombrelloni: 180</p>\n<p>Servizi offerti tornei organizzati dai clienti\r\n- corsi di aquagymn e ginnastica</p>", 
+    "modified": "2014-07-07T13:31:43.546Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 66<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti tornei organizzati dai clienti\r\n- corsi di aquagymn e ginnastica</p>", 
     "number": "42 sud", 
     "languages": [
       [
@@ -45715,21 +45765,21 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
-        "beach-racket-court"
+        "children-entertainment"
       ], 
       [
         "petanque"
       ], 
       [
-        "children-entertainment"
+        "beach-racket-court"
+      ], 
+      [
+        "entertainment"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "aarongiulian@libero.it", 
     "accepts_booking": true, 
     "slug": "rimini", 
     "neighbourhood": [
@@ -45883,12 +45933,12 @@
   "pk": 13457, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
+    "site": "http://www.battigia46rimini.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5895384949999993 44.0640594999999990)", 
-    "modified": "2014-07-04T09:49:06.674Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T12:35:11.857Z", 
+    "description_en": "", 
     "number": "46 sud", 
     "languages": [
       [
@@ -45900,15 +45950,15 @@
     ], 
     "services": [
       [
-        "basketball"
+        "children-entertainment"
       ], 
       [
-        "children-entertainment"
+        "basketball"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "madeinrimini@libero.it", 
     "accepts_booking": true, 
     "slug": "bagno-46", 
     "neighbourhood": [
@@ -45962,12 +46012,12 @@
   "pk": 13459, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>", 
+    "site": "http://www.hotelbelsoggiornorimini.it/spiaggia.php", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5906211379999995 44.0630632000000020)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>", 
+    "modified": "2014-07-07T12:58:43.065Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>", 
     "number": "49 sud", 
     "languages": [
       [
@@ -45979,30 +46029,30 @@
     ], 
     "services": [
       [
-        "gym"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
         "children-entertainment"
+      ], 
+      [
+        "petanque"
       ], 
       [
         "hot-showers"
       ], 
       [
-        "petanque"
+        "beach-racket-court"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "gym"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@hotelbelsoggiornorimini.it", 
     "accepts_booking": true, 
     "slug": "giuseppe", 
     "neighbourhood": [
@@ -46162,12 +46212,12 @@
   "pk": 13463, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "\n<p>Servizi offerti biliardino\r\n- piccola palestra</p>", 
+    "site": "http://www.zona53rimini.it/", 
+    "description": "\r\n<p>Servizi offerti biliardino\r\n- piccola palestra</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5920646620000003 44.0617348000000035)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "\n<p>Servizi offerti biliardino\r\n- piccola palestra</p>", 
+    "modified": "2014-07-07T12:39:08.770Z", 
+    "description_en": "\r\n<p>Servizi offerti biliardino\r\n- piccola palestra</p>", 
     "number": "53 sud", 
     "languages": [
       [
@@ -46179,7 +46229,7 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "children-entertainment"
       ], 
       [
         "massages"
@@ -46188,12 +46238,12 @@
         "beach-racket-court"
       ], 
       [
-        "children-entertainment"
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@zona53rimini.it", 
     "accepts_booking": true, 
     "slug": "antonio", 
     "neighbourhood": [
@@ -46338,12 +46388,12 @@
   "pk": 13467, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 110</p>\n<p>Servizi offerti tornei delle varie attivit\u00e0</p>", 
+    "site": "http://www.newbeach57.com/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 110</p>\r\n<p>Servizi offerti tornei delle varie attivit\u00e0</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5935081859999993 44.0604063999999980)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 110</p>\n<p>Servizi offerti tornei delle varie attivit\u00e0</p>", 
+    "modified": "2014-07-07T13:19:10.453Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 110</p>\r\n<p>Servizi offerti tornei delle varie attivit\u00e0</p>", 
     "number": "57 sud", 
     "languages": [
       [
@@ -46355,15 +46405,15 @@
     ], 
     "services": [
       [
-        "hot-showers"
+        "gym"
       ], 
       [
-        "gym"
+        "hot-showers"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@newbeach57.com", 
     "accepts_booking": true, 
     "slug": "new-beach", 
     "neighbourhood": [
@@ -46495,8 +46545,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5956734719999996 44.0584137999999967)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T13:50:14.873Z", 
+    "description_en": "", 
     "number": "63 sud", 
     "languages": [
       [
@@ -46508,8 +46558,8 @@
     ], 
     "services": [], 
     "address": "", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@spiaggia63rimini.net", 
     "accepts_booking": true, 
     "slug": "vittorio", 
     "neighbourhood": [
@@ -46566,12 +46616,12 @@
   "pk": 13472, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggia63a.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 150</p>\n<p>Servizi offerti biliardo e biliardino\r\n- corsi di vela, surf, aquagymn e nuoto</p>", 
+    "site": "http://www.spiaggia63a.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 150</p>\r\n<p>Servizi offerti biliardo e biliardino\r\n- corsi di vela, surf, aquagymn e nuoto</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5956734719999996 44.0584137999999967)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 150</p>\n<p>Servizi offerti biliardo e biliardino\r\n- corsi di vela, surf, aquagymn e nuoto</p>", 
+    "modified": "2014-07-07T12:52:22.957Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 150</p>\r\n<p>Servizi offerti biliardo e biliardino\r\n- corsi di vela, surf, aquagymn e nuoto</p>", 
     "number": "63/A sud", 
     "languages": [
       [
@@ -46583,18 +46633,18 @@
     ], 
     "services": [
       [
-        "beach-volley"
-      ], 
-      [
         "entertainment"
       ], 
       [
         "gym"
+      ], 
+      [
+        "beach-volley"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@spiaggia63a.it", 
     "accepts_booking": true, 
     "slug": "giampietro", 
     "neighbourhood": [
@@ -46657,12 +46707,12 @@
   "pk": 13474, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnocarlo65.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti corsi di aquagymn\r\n- per i clienti pi\u00f9 fedeli e sportivi - possibilit\u00e0 di massaggio per la \"remise en forme\"</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 120</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- per i clienti pi\u00f9 fedeli e sportivi - possibilit\u00e0 di massaggio per la \"remise en forme\"</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5963952339999992 44.0577496000000011)", 
-    "modified": "2014-07-04T09:49:07.677Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti corsi di aquagymn\r\n- per i clienti pi\u00f9 fedeli e sportivi - possibilit\u00e0 di massaggio per la \"remise en forme\"</p>", 
+    "modified": "2014-07-07T12:49:22.708Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 120</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- per i clienti pi\u00f9 fedeli e sportivi - possibilit\u00e0 di massaggio per la \"remise en forme\"</p>", 
     "number": "65 sud", 
     "languages": [
       [
@@ -46674,20 +46724,20 @@
     ], 
     "services": [
       [
-        "basketball"
-      ], 
-      [
-        "magazines-journals"
+        "children-entertainment"
       ], 
       [
         "petanque"
       ], 
       [
-        "children-entertainment"
+        "basketball"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "carlo-2", 
@@ -46801,12 +46851,12 @@
   "pk": 13477, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.riminibeach.it/rimini/stabilimenti-balneari-rimini", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 170</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 170</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5974778769999993 44.0567532999999969)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 170</p>", 
+    "modified": "2014-07-07T13:36:30.038Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 170</p>", 
     "number": "68 sud", 
     "languages": [
       [
@@ -46818,26 +46868,26 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
         "petanque"
       ], 
       [
-        "basketball"
+        "ping-pong"
       ], 
       [
         "entertainment"
       ], 
       [
         "hot-showers"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-68", 
@@ -47025,8 +47075,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5992822820000008 44.0550927999999971)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T13:35:02.929Z", 
+    "description_en": "", 
     "number": "73 sud", 
     "languages": [
       [
@@ -47038,10 +47088,7 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
-        "nursery"
+        "children-entertainment"
       ], 
       [
         "five-a-side"
@@ -47050,12 +47097,15 @@
         "beach-racket-court"
       ], 
       [
-        "children-entertainment"
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare di Vittorio", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "riviera73@alice.it", 
     "accepts_booking": true, 
     "slug": "riviera", 
     "neighbourhood": [
@@ -47109,12 +47159,12 @@
   "pk": 13484, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bulli.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 180</p>\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei di beach volley</p>", 
+    "site": "http://www.bulli.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei di beach volley</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6000040440000003 44.0544286000000014)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 180</p>\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei di beach volley</p>", 
+    "modified": "2014-07-07T12:48:02.992Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei di beach volley</p>", 
     "number": "75 sud", 
     "languages": [
       [
@@ -47126,21 +47176,21 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "children-entertainment"
       ], 
       [
-        "beach-volley"
+        "magazines-journals"
       ], 
       [
         "gym"
       ], 
       [
-        "children-entertainment"
+        "beach-volley"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "beach@bulli.it", 
     "accepts_booking": true, 
     "slug": "bulli-massimo", 
     "neighbourhood": [
@@ -47153,12 +47203,12 @@
   "pk": 13485, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.hedonism76.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 182</p>\n<p>Servizi offerti pista per tornei biglie\n- sms cupido\r\n- lampione dell'amore (come il ponte degli innamorati) -\u00a0gli innamorati si\u00a0promettono amore eterno gettando le chiavi del lucchetto in mare</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 182</p>\r\n<p>Servizi offerti pista per tornei biglie\r\n- sms cupido\r\n- lampione dell'amore (come il ponte degli innamorati) -\u00a0gli innamorati si\u00a0promettono amore eterno gettando le chiavi del lucchetto in mare</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6003649249999992 44.0540965000000000)", 
-    "modified": "2014-07-04T09:46:43.882Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 182</p>\n<p>Servizi offerti pista per tornei biglie\n- sms cupido\r\n- lampione dell'amore (come il ponte degli innamorati) -\u00a0gli innamorati si\u00a0promettono amore eterno gettando le chiavi del lucchetto in mare</p>", 
+    "modified": "2014-07-07T13:00:15.106Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 182</p>\r\n<p>Servizi offerti pista per tornei biglie\r\n- sms cupido\r\n- lampione dell'amore (come il ponte degli innamorati) -\u00a0gli innamorati si\u00a0promettono amore eterno gettando le chiavi del lucchetto in mare</p>", 
     "number": "76 sud", 
     "languages": [
       [
@@ -47170,21 +47220,21 @@
     ], 
     "services": [
       [
-        "basketball"
+        "children-entertainment"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "wi-fi"
+        "basketball"
       ], 
       [
-        "children-entertainment"
+        "wi-fi"
       ]
     ], 
     "address": "", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "hedonism@libero.it", 
     "accepts_booking": true, 
     "slug": "hedonism", 
     "neighbourhood": [
@@ -47197,12 +47247,12 @@
   "pk": 13486, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=780&loc=rimini", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 50</p>\n<p>Servizi offerti corsi di aquagymn e spinning\r\n- tornei delle varie attivit\u00e0</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 50</p>\r\n<p>Servizi offerti corsi di aquagymn e spinning\r\n- tornei delle varie attivit\u00e0</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6010866870000005 44.0534322999999972)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 50</p>\n<p>Servizi offerti corsi di aquagymn e spinning\r\n- tornei delle varie attivit\u00e0</p>", 
+    "modified": "2014-07-07T13:36:47.879Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 50</p>\r\n<p>Servizi offerti corsi di aquagymn e spinning\r\n- tornei delle varie attivit\u00e0</p>", 
     "number": "78 sud", 
     "languages": [
       [
@@ -47214,23 +47264,23 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
-        "nursery"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
-        "petanque"
+        "beach-racket-court"
       ], 
       [
-        "beach-racket-court"
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "guido-e-luca", 
@@ -47244,12 +47294,12 @@
   "pk": 13487, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=790&loc=rimini", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 190</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 60<br />\r\n\tombrelloni: 190</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6014475679999993 44.0531002000000029)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 190</p>", 
+    "modified": "2014-07-07T13:16:55.275Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 60<br />\r\n\tombrelloni: 190</p>", 
     "number": "79 sud", 
     "languages": [
       [
@@ -47261,7 +47311,10 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "playground"
+      ], 
+      [
+        "ping-pong"
       ], 
       [
         "beach-volley"
@@ -47270,14 +47323,11 @@
         "hot-showers"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
-        "playground"
+        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "luciano-2", 
@@ -47407,11 +47457,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 27<br />\n\tombrelloni: 100</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0\r\n- area relax con lettino massaggiante\r\n- area accoglienza animali domestici</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 27<br />\r\n\tombrelloni: 100</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0\r\n- area relax con lettino massaggiante\r\n- area accoglienza animali domestici</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6025302109999995 44.0521038999999988)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 27<br />\n\tombrelloni: 100</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0\r\n- area relax con lettino massaggiante\r\n- area accoglienza animali domestici</p>", 
+    "modified": "2014-07-07T13:28:25.178Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 27<br />\r\n\tombrelloni: 100</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0\r\n- area relax con lettino massaggiante\r\n- area accoglienza animali domestici</p>", 
     "number": "82 sud", 
     "languages": [
       [
@@ -47423,27 +47473,27 @@
     ], 
     "services": [
       [
-        "gym"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
         "beach-volley"
+      ], 
+      [
+        "children-entertainment"
       ], 
       [
         "petanque"
       ], 
       [
-        "children-entertainment"
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "bagnopeterpan@libero.it", 
     "accepts_booking": true, 
     "slug": "peter-pan", 
     "neighbourhood": [
@@ -47506,12 +47556,12 @@
   "pk": 13492, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "\n<p>Servizi offerti area accoglienza animali domestici</p>", 
+    "site": "http://www.bagno84.it/", 
+    "description": "\r\n<p>Servizi offerti area accoglienza animali domestici</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6032519730000008 44.0514397000000031)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "\n<p>Servizi offerti area accoglienza animali domestici</p>", 
+    "modified": "2014-07-07T12:31:54.607Z", 
+    "description_en": "\r\n<p>Servizi offerti area accoglienza animali domestici</p>", 
     "number": "84 sud", 
     "languages": [
       [
@@ -47526,18 +47576,18 @@
         "five-a-side"
       ], 
       [
-        "baby-park"
+        "ping-pong"
       ], 
       [
-        "ping-pong"
+        "baby-park"
       ], 
       [
         "beach-racket-court"
       ]
     ], 
     "address": "Lungomare di Vittorio", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagno84.it", 
     "accepts_booking": true, 
     "slug": "bagno-84", 
     "neighbourhood": [
@@ -48251,11 +48301,41 @@
     "description": "None", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6077156860099446 44.0445167645529949)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-07T14:06:28.799Z", 
     "description_en": "None", 
     "number": "99", 
     "languages": [], 
     "services": [
+      [
+        "board-games"
+      ], 
+      [
+        "cards-table"
+      ], 
+      [
+        "barbecue-area"
+      ], 
+      [
+        "beach-volley-courses"
+      ], 
+      [
+        "wellness-area"
+      ], 
+      [
+        "sandwich-shop"
+      ], 
+      [
+        "table-tournaments"
+      ], 
+      [
+        "picnic-area"
+      ], 
+      [
+        "refrigerators"
+      ], 
+      [
+        "pizzeria"
+      ], 
       [
         "bar"
       ], 
@@ -48396,41 +48476,11 @@
       ], 
       [
         "helmet-deposit"
-      ], 
-      [
-        "board-games"
-      ], 
-      [
-        "cards-table"
-      ], 
-      [
-        "barbecue-area"
-      ], 
-      [
-        "beach-volley-courses"
-      ], 
-      [
-        "wellness-area"
-      ], 
-      [
-        "sandwich-shop"
-      ], 
-      [
-        "table-tournaments"
-      ], 
-      [
-        "picnic-area"
-      ], 
-      [
-        "refrigerators"
-      ], 
-      [
-        "pizzeria"
       ]
     ], 
     "address": "Lungomare di Vittorio 54/a", 
     "description_it": "Il Bagno Loretta 99 \u00e8 il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi. ", 
-    "mail": "", 
+    "mail": "info@loretta99.com", 
     "accepts_booking": true, 
     "slug": "loretta", 
     "neighbourhood": [
@@ -48443,12 +48493,12 @@
   "pk": 13508, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagni100.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 180</p>\n<p>Servizi offerti accesso gratuito all'acquascivolo</p>", 
+    "site": "http://www.bagni100.com/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti accesso gratuito all'acquascivolo</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6090260690000004 44.0461261000000022)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 180</p>\n<p>Servizi offerti accesso gratuito all'acquascivolo</p>", 
+    "modified": "2014-07-07T14:35:00.388Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti accesso gratuito all'acquascivolo</p>", 
     "number": "100 sud", 
     "languages": [
       [
@@ -48463,45 +48513,45 @@
         "credit-cards-accepted"
       ], 
       [
-        "gym"
-      ], 
-      [
-        "magazines-journals"
+        "baby-park"
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "baby-park"
       ], 
       [
         "children-entertainment"
       ], 
       [
         "hot-showers"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagni100.com", 
     "accepts_booking": true, 
-    "slug": "sauro", 
+    "slug": "bagno-100-sole-caliente", 
     "neighbourhood": [
       "marebello"
     ], 
-    "name": "Bagno Sauro"
+    "name": "Bagno 100 Sole Caliente"
   }
 },
 {
   "pk": 13509, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnilupidimare.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 84<br />\n\tombrelloni: 370</p>\n<p>Servizi offerti baby car - pista per macchinine elettriche\r\n- corsi di aerobica\r\n-\u00a0maxi gazebo con acqua nebulizzata \r\n- tornei di bocce e di carte\r\n- mini club (tranne la domenica)</p>", 
+    "site": "http://www.bagnilupidimare.com/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 84<br />\r\n\tombrelloni: 370</p>\r\n<p>Servizi offerti baby car - pista per macchinine elettriche\r\n- corsi di aerobica\r\n-\u00a0maxi gazebo con acqua nebulizzata \r\n- tornei di bocce e di carte\r\n- mini club (tranne la domenica)</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6093869499999993 44.0457940000000008)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 84<br />\n\tombrelloni: 370</p>\n<p>Servizi offerti baby car - pista per macchinine elettriche\r\n- corsi di aerobica\r\n-\u00a0maxi gazebo con acqua nebulizzata \r\n- tornei di bocce e di carte\r\n- mini club (tranne la domenica)</p>", 
+    "modified": "2014-07-07T14:28:15.735Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 84<br />\r\n\tombrelloni: 370</p>\r\n<p>Servizi offerti baby car - pista per macchinine elettriche\r\n- corsi di aerobica\r\n-\u00a0maxi gazebo con acqua nebulizzata \r\n- tornei di bocce e di carte\r\n- mini club (tranne la domenica)</p>", 
     "number": "101/102 sud", 
     "languages": [
       [
@@ -48513,18 +48563,6 @@
     ], 
     "services": [
       [
-        "gym"
-      ], 
-      [
-        "lockers"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "bicycles"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -48535,11 +48573,23 @@
       ], 
       [
         "hot-showers"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnilupidimare.com", 
     "accepts_booking": true, 
     "slug": "lupi-di-mare", 
     "neighbourhood": [
@@ -48599,12 +48649,12 @@
   "pk": 13511, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggiasolleone.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 15<br />\n\tombrelloni: 160</p>\n<p>Servizi offerti accesso gratuito all'acquascivolo</p>", 
+    "site": "http://www.spiaggiasolleone.com/", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6104695929999995 44.0447976999999966)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 15<br />\n\tombrelloni: 160</p>\n<p>Servizi offerti accesso gratuito all'acquascivolo</p>", 
+    "modified": "2014-07-07T14:22:35.896Z", 
+    "description_en": "", 
     "number": "104 sud", 
     "languages": [
       [
@@ -48616,45 +48666,45 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
-        "massages"
-      ], 
-      [
-        "picnic-area"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
-        "petanque"
+        "massages"
       ], 
       [
         "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "picnic-area"
       ]
     ], 
     "address": "Viale Regina Margherita", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
-    "slug": "domenico", 
+    "slug": "solleone", 
     "neighbourhood": [
       "marebello"
     ], 
-    "name": "Bagno Domenico"
+    "name": "Bagno solleone"
   }
 },
 {
   "pk": 13512, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 15<br />\n\tombrelloni: 100</p>\n<p>Servizi offerti tornei di bocce, ping-pong e scala quaranta\r\n- piccola palestra per bambini\r\n- feste ogni 15 gg</p>", 
+    "site": "http://www.marebellobeach.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 15<br />\r\n\tombrelloni: 100</p>\r\n<p>Servizi offerti tornei di bocce, ping-pong e scala quaranta\r\n- piccola palestra per bambini\r\n- feste ogni 15 gg</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6104695929999995 44.0447976999999966)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 15<br />\n\tombrelloni: 100</p>\n<p>Servizi offerti tornei di bocce, ping-pong e scala quaranta\r\n- piccola palestra per bambini\r\n- feste ogni 15 gg</p>", 
+    "modified": "2014-07-07T14:26:58.300Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 15<br />\r\n\tombrelloni: 100</p>\r\n<p>Servizi offerti tornei di bocce, ping-pong e scala quaranta\r\n- piccola palestra per bambini\r\n- feste ogni 15 gg</p>", 
     "number": "104/C sud", 
     "languages": [
       [
@@ -48666,21 +48716,21 @@
     ], 
     "services": [
       [
-        "magazines-journals"
+        "petanque"
+      ], 
+      [
+        "playground"
       ], 
       [
         "hot-showers"
       ], 
       [
-        "petanque"
-      ], 
-      [
-        "playground"
+        "magazines-journals"
       ]
     ], 
     "address": "V.le Regina Margherita", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "ivan.chiara@gmail.com", 
     "accepts_booking": true, 
     "slug": "luigi", 
     "neighbourhood": [
@@ -48693,12 +48743,12 @@
   "pk": 13513, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 9<br />\n\tombrelloni: 100</p>\n<p>Servizi offerti animazione serale (ore 21) per i bambini luned\u00ec - mercoled\u00ec - venerd\u00ec\r\n- animazione diurna per adulti\u00a0marted\u00ec e gioved\u00ec</p>", 
+    "site": "http://www.marebellobeach.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 9<br />\r\n\tombrelloni: 100</p>\r\n<p>Servizi offerti animazione serale (ore 21) per i bambini luned\u00ec - mercoled\u00ec - venerd\u00ec\r\n- animazione diurna per adulti\u00a0marted\u00ec e gioved\u00ec</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6104695929999995 44.0447976999999966)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 9<br />\n\tombrelloni: 100</p>\n<p>Servizi offerti animazione serale (ore 21) per i bambini luned\u00ec - mercoled\u00ec - venerd\u00ec\r\n- animazione diurna per adulti\u00a0marted\u00ec e gioved\u00ec</p>", 
+    "modified": "2014-07-07T14:26:17.481Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 9<br />\r\n\tombrelloni: 100</p>\r\n<p>Servizi offerti animazione serale (ore 21) per i bambini luned\u00ec - mercoled\u00ec - venerd\u00ec\r\n- animazione diurna per adulti\u00a0marted\u00ec e gioved\u00ec</p>", 
     "number": "104/A sud", 
     "languages": [
       [
@@ -48710,16 +48760,10 @@
     ], 
     "services": [
       [
-        "bicycles"
+        "petanque"
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -48728,11 +48772,17 @@
         "hot-showers"
       ], 
       [
-        "petanque"
+        "bicycles"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "playground"
       ]
     ], 
     "address": "V.le Regina Margherita", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "glmontebelli@tiscali.it", 
     "accepts_booking": true, 
     "slug": "europa-2", 
@@ -48746,12 +48796,12 @@
   "pk": 13514, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 28<br />\n\tombrelloni: 130</p>", 
+    "site": "http://www.marebellobeach.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 28<br />\r\n\tombrelloni: 130</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6108304740000001 44.0444656000000023)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 28<br />\n\tombrelloni: 130</p>", 
+    "modified": "2014-07-07T14:49:56.853Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 28<br />\r\n\tombrelloni: 130</p>", 
     "number": "105 sud", 
     "languages": [
       [
@@ -48763,17 +48813,17 @@
     ], 
     "services": [
       [
+        "children-entertainment"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "children-entertainment"
       ]
     ], 
     "address": "V.le Regina Margherita", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "maurizio", 
@@ -48832,11 +48882,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "\n<p>Servizi offerti tornei di ping-pong</p>", 
+    "description": "\r\n<p>Servizi offerti tornei di ping-pong</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6111913550000008 44.0441335000000009)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "\n<p>Servizi offerti tornei di ping-pong</p>", 
+    "modified": "2014-07-07T14:37:00.712Z", 
+    "description_en": "\r\n<p>Servizi offerti tornei di ping-pong</p>", 
     "number": "106 sud", 
     "languages": [
       [
@@ -48851,18 +48901,18 @@
         "children-entertainment"
       ], 
       [
-        "baby-park"
+        "bicycles"
       ], 
       [
-        "bicycles"
+        "baby-park"
       ], 
       [
         "gym"
       ]
     ], 
     "address": "Via delle Colonie", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "marilena.battaglia@libero.it", 
     "accepts_booking": true, 
     "slug": "massimiliano", 
     "neighbourhood": [
@@ -48875,12 +48925,12 @@
   "pk": 13517, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.cocobeach.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 22<br />\n\tombrelloni: 220</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei tra clienti\r\n- animazione per bambini senza baby-sitter\r\n- feste a tema\r\n- un giro in pedal\u00f2 \u00e8 compreso nel prezzo.</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 22<br />\r\n\tombrelloni: 220</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei tra clienti\r\n- animazione per bambini senza baby-sitter\r\n- feste a tema\r\n- un giro in pedal\u00f2 \u00e8 compreso nel prezzo.</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6111913550000008 44.0441335000000009)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 22<br />\n\tombrelloni: 220</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei tra clienti\r\n- animazione per bambini senza baby-sitter\r\n- feste a tema\r\n- un giro in pedal\u00f2 \u00e8 compreso nel prezzo.</p>", 
+    "modified": "2014-07-07T14:28:35.138Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 22<br />\r\n\tombrelloni: 220</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei tra clienti\r\n- animazione per bambini senza baby-sitter\r\n- feste a tema\r\n- un giro in pedal\u00f2 \u00e8 compreso nel prezzo.</p>", 
     "number": "106/B sud", 
     "languages": [
       [
@@ -48892,32 +48942,32 @@
     ], 
     "services": [
       [
-        "nursery"
-      ], 
-      [
-        "bicycles"
-      ], 
-      [
         "beach-volley"
       ], 
       [
         "petanque"
       ], 
       [
-        "playground"
-      ], 
-      [
-        "basketball"
-      ], 
-      [
         "entertainment"
       ], 
       [
         "hot-showers"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "playground"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Via delle Colonie", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "coco-beach", 
@@ -50516,47 +50566,46 @@
   "pk": 13557, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.lidosangiuliano.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 108<br />\n\tombrelloni: 1200</p>\n<p>Associazione consorzio di quattro bagnini Servizi offerti corsi di spinning, aquagymn, yoga e yoga fitness\r\n- tornei di pallavolo, bocce, calcio e carte\r\n- al bagno\u00a0maestrale\u00a0\u00e9 consentito l'accesso in spiaggia ai cani in area riservata - vedi informazioni dettagliate Presso il bagno la Tramontana \u00e8 stata allestita Alibib, la biblioteca ideata dalla scuola media Alighieri - Fermi, insieme alle direzioni didattiche del 2^ e 4^ Circolo e alla Biblioteca Civica Gambalunga.\r\nRomanzi, fumetti, gialli, horror, fantasy ed album per i pi\u00f9 piccoli: Alibib fornisce una scelta di oltre 1.000 titoli, a disposizione dei bagnanti di tutte le et\u00e0 a San Giuliano.\r\nNaturalmente la sezione pi\u00f9 corposa \u00e8 dedicata ai ragazzi in et\u00e0 scolare, ma anche i bambini in et\u00e0 pre-scolare possono trovare una buona selezione di libri illustrati per la prima infanzia con i quali rendere pi\u00f9 piacevole le ore trascorse sotto l\u2019ombrellone. \r\nL\u2019orario previsto \u00e8 tutte le mattine dalle 9 alle 12 e i pomeriggi dalle 16 alle 18.\r\nIl progetto \u00e8 in colaborazione\u00a0con la Sezione Ragazzi Biblioteca Civica Gambalunga tel. 0541.704486</p>", 
+    "site": "http://www.lidosangiuliano.it/", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5668319999999998 44.0757320000000021)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 108<br />\n\tombrelloni: 1200</p>\n<p>Associazione consorzio di quattro bagnini Servizi offerti corsi di spinning, aquagymn, yoga e yoga fitness\r\n- tornei di pallavolo, bocce, calcio e carte\r\n- al bagno\u00a0maestrale\u00a0\u00e9 consentito l'accesso in spiaggia ai cani in area riservata - vedi informazioni dettagliate Presso il bagno la Tramontana \u00e8 stata allestita Alibib, la biblioteca ideata dalla scuola media Alighieri - Fermi, insieme alle direzioni didattiche del 2^ e 4^ Circolo e alla Biblioteca Civica Gambalunga.\r\nRomanzi, fumetti, gialli, horror, fantasy ed album per i pi\u00f9 piccoli: Alibib fornisce una scelta di oltre 1.000 titoli, a disposizione dei bagnanti di tutte le et\u00e0 a San Giuliano.\r\nNaturalmente la sezione pi\u00f9 corposa \u00e8 dedicata ai ragazzi in et\u00e0 scolare, ma anche i bambini in et\u00e0 pre-scolare possono trovare una buona selezione di libri illustrati per la prima infanzia con i quali rendere pi\u00f9 piacevole le ore trascorse sotto l\u2019ombrellone. \r\nL\u2019orario previsto \u00e8 tutte le mattine dalle 9 alle 12 e i pomeriggi dalle 16 alle 18.\r\nIl progetto \u00e8 in colaborazione\u00a0con la Sezione Ragazzi Biblioteca Civica Gambalunga tel. 0541.704486</p>", 
+    "point": "POINT (12.5668319999999945 44.0757320000000092)", 
+    "modified": "2014-07-07T14:09:50.070Z", 
+    "description_en": "", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "nursery"
-      ], 
-      [
-        "bookstore"
+        "sailing"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
         "petanque"
       ], 
       [
+        "ping-pong"
+      ], 
+      [
+        "bookstore"
+      ], 
+      [
         "playground"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "pet-friendly"
       ], 
       [
         "basketball"
       ]
     ], 
     "address": "Via Ortigara - San Giuliano Mare", 
-    "description_it": null, 
-    "mail": "info@lidosangiuliano.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "lido-san-giuliano-maestrale-tramontana-scirocco-e-", 
     "neighbourhood": [
@@ -50569,37 +50618,33 @@
   "pk": 13558, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=10&loc=viserba", 
-    "description": "", 
+    "site": "", 
+    "description": "None", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5607600000000001 44.0760709999999989)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.5607600000000055 44.0760709999999989)", 
+    "modified": "2014-07-07T14:13:59.888Z", 
+    "description_en": "None", 
     "number": "1 nord", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
-        "beach-volley"
+        "playground"
       ], 
       [
         "ping-pong"
       ], 
       [
-        "playground"
+        "beach-volley"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Via Toscanelli", 
-    "description_it": null, 
+    "description_it": "None", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "riviera-2", 
@@ -50613,12 +50658,12 @@
   "pk": 13559, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=20&loc=viserba", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 25<br />\n\tombrelloni: 250</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 25<br />\r\n\tombrelloni: 250</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5595149999999993 44.0767030000000020)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 25<br />\n\tombrelloni: 250</p>", 
+    "modified": "2014-07-07T14:14:29.142Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 25<br />\r\n\tombrelloni: 250</p>", 
     "number": "2 nord", 
     "languages": [
       [
@@ -50630,23 +50675,23 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
-        "baby-park"
+        "petanque"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "petanque"
+        "baby-park"
       ], 
       [
         "playground"
+      ], 
+      [
+        "entertainment"
       ]
     ], 
     "address": "Via Toscanelli", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "edera", 
@@ -50660,37 +50705,33 @@
   "pk": 13560, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=40&loc=viserba", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 130</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 130</p>", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5582709999999995 44.0771650000000008)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 130</p>", 
+    "point": "POINT (12.5582709999999871 44.0771650000000008)", 
+    "modified": "2014-07-07T14:13:46.593Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 130</p>", 
     "number": "3/4 nord", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "entertainment"
       ], 
       [
-        "baby-park"
-      ], 
-      [
         "beach-racket-court"
       ], 
       [
+        "baby-park"
+      ], 
+      [
         "playground"
+      ], 
+      [
+        "pet-friendly"
       ]
     ], 
     "address": "Via Toscanelli", 
-    "description_it": null, 
+    "description_it": "None", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "toni-william", 
@@ -50704,12 +50745,12 @@
   "pk": 13561, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=50&loc=viserba", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5569620000000004 44.0777050000000017)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T14:14:17.853Z", 
+    "description_en": "", 
     "number": "5 nord", 
     "languages": [
       [
@@ -50721,7 +50762,7 @@
     ], 
     "services": [], 
     "address": "Via Toscanelli", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "celli", 
@@ -50779,12 +50820,12 @@
   "pk": 13563, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggeoasi.it/scheda.html?id=70&loc=viserba", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5538176299999993 44.0795698399999978)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-07T14:13:34.949Z", 
+    "description_en": "", 
     "number": "7 nord", 
     "languages": [
       [
@@ -50796,17 +50837,17 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "ping-pong"
       ], 
       [
-        "ping-pong"
+        "beach-volley"
       ], 
       [
         "playground"
       ]
     ], 
     "address": "Via Toscanelli", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "micky", 
@@ -51428,47 +51469,43 @@
   "pk": 13577, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.playatamarindo.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 30<br />\n\tombrelloni: 220</p>\n<p>Servizi offerti \u00a0 corsi di nuoto e balli latino americani, in collaborazione con la uisp di rimini \r\n- tornei di pallavolo, beach volley e beach tennis\r\n- postazione internet su richiesta\r\n- impianto di filo-diffusione, camminamento centrale che si illumina di notte\r\n- dog beach area riservata ai clienti con i loro fedeli amici animali \u00a0- vedi informazioni dettagliate</p>", 
+    "site": "http://www.playatamarindo.it/", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5391354899999996 44.0888943200000014)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 30<br />\n\tombrelloni: 220</p>\n<p>Servizi offerti \u00a0 corsi di nuoto e balli latino americani, in collaborazione con la uisp di rimini \r\n- tornei di pallavolo, beach volley e beach tennis\r\n- postazione internet su richiesta\r\n- impianto di filo-diffusione, camminamento centrale che si illumina di notte\r\n- dog beach area riservata ai clienti con i loro fedeli amici animali \u00a0- vedi informazioni dettagliate</p>", 
+    "point": "POINT (12.5391354899999872 44.0888943200000014)", 
+    "modified": "2014-07-07T14:17:33.304Z", 
+    "description_en": "", 
     "number": "29/30/31/32/33 nord", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "five-a-side"
+        "baby-park"
       ], 
       [
         "internet"
       ], 
       [
-        "lockers"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
+        "five-a-side"
+      ], 
+      [
         "hot-showers"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "beach-racket-court"
       ]
     ], 
     "address": "Via Dati", 
-    "description_it": null, 
-    "mail": "playatamarindo@playatamarindo.it", 
+    "description_it": "None", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "playa-tamarindo", 
     "neighbourhood": [
@@ -52927,11 +52964,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 18<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti tornei di pallavolo e carte</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 18<br />\r\n\tombrelloni: 130</p>\r\n<p>Servizi offerti tornei di pallavolo e carte</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5079621999999997 44.1113301999999976)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 18<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti tornei di pallavolo e carte</p>", 
+    "modified": "2014-07-07T12:30:51.739Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 18<br />\r\n\tombrelloni: 130</p>\r\n<p>Servizi offerti tornei di pallavolo e carte</p>", 
     "number": "72 nord", 
     "languages": [
       [
@@ -52953,8 +52990,8 @@
       ]
     ], 
     "address": "Via San Salvador", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "ondablu72@tiscalinet.it", 
     "accepts_booking": true, 
     "slug": "onda-blu-2", 
     "neighbourhood": [
@@ -55193,23 +55230,16 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "", 
+    "description": "None", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6616814600000005 44.0038593399999982)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.6616814599999881 44.0038593399999840)", 
+    "modified": "2014-07-07T14:38:25.798Z", 
+    "description_en": "None", 
     "number": "79", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Porto", 
-    "description_it": null, 
+    "description_it": "None", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagni-green-beach", 
@@ -55750,31 +55780,103 @@
   "pk": 13698, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagniadolfo.com/", 
-    "description": "", 
+    "site": "http://www.laspiaggiadelledonne.it/", 
+    "description": "None", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6537799999999994 44.0092057800000021)", 
-    "modified": "2014-07-04T09:49:07.912Z", 
-    "description_en": null, 
+    "point": "POINT (12.6534205839920375 44.0091363316282838)", 
+    "modified": "2014-07-07T05:23:40.441Z", 
+    "description_en": "None", 
     "number": "97", 
-    "languages": [
+    "languages": [], 
+    "services": [
       [
-        "italian"
+        "bar"
       ], 
       [
-        "english"
+        "baby-park"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "sport-balls"
+      ], 
+      [
+        "disabled"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "internet"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "trampoline"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "sea-mattresses"
+      ], 
+      [
+        "toilets-for-children"
+      ], 
+      [
+        "mats-deposit"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "yoga"
+      ], 
+      [
+        "bancomat"
+      ], 
+      [
+        "credit-cards-accepted"
+      ], 
+      [
+        "sandwich-shop"
       ]
     ], 
-    "services": [], 
-    "address": "Alba", 
-    "description_it": null, 
+    "address": "Lungomare della Costituzione Zona 97", 
+    "description_it": "Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i pi\u00f9 piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In pi\u00f9 corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "la-spiaggia-delle-donne", 
     "neighbourhood": [
       "riccione"
     ], 
-    "name": "Bagno La Spiaggia delle Donne"
+    "name": "La Spiaggia delle Donne Zona 97"
   }
 },
 {
@@ -69874,6 +69976,18 @@
   }
 },
 {
+  "pk": 7, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "otello"
+    ], 
+    "email": "bagno28otello@gmail.com", 
+    "created": "2014-07-07T18:57:28.647Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
@@ -69909,8 +70023,8 @@
   "fields": {
     "email_address": 14, 
     "key": "087dad2191748bd86d09a679349bb6c5357e71ae358e268da8cf50e53ed8db20", 
-    "sent": "2014-06-09T08:26:31.780Z", 
-    "created": "2014-06-09T08:26:31.653Z"
+    "sent": "2014-07-07T07:54:56Z", 
+    "created": "2014-07-07T07:54:55Z"
   }
 },
 {
@@ -70024,6 +70138,26 @@
   }
 },
 {
+  "pk": 26, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 24, 
+    "key": "56c97aaff2a2cea14192052342392772ff4bb6299989691541110f4f2b34693a", 
+    "sent": "2014-07-07T04:53:22.380Z", 
+    "created": "2014-07-07T04:53:22.148Z"
+  }
+},
+{
+  "pk": 27, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 25, 
+    "key": "589151ee03b630d70f30cdb45ca19bbce09d79b2569c8fe754fa7c0cfc645b0c", 
+    "sent": "2014-07-07T18:32:56.442Z", 
+    "created": "2014-07-07T18:32:56.296Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70059,6 +70193,20 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||07b08917c4daaaf9977b5ac77cafbdd3", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/7f/3a/7f3a59f995ce4efb5d6d41592b4ef7b9.jpg\", \"size\": [167, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||0d0d9b95d77747d7bf215ebe23a54c87", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/82/e5/82e5d54ff72c56b8eac6e0d012a48830.jpg\", \"size\": [93, 125]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||0d8e11290dffd765b858e6fd5d54ce63", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70087,10 +70235,24 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||24dd4c1860d1c46d6d76ca38bb4a755b", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/otello/la-nostra-stella.jpg\", \"size\": [1529, 2048]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||2abe44fff603ec45ac7a83115eb2bb52", 
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/86/c2/86c2484f7627ba35c323aa12cc29b018.jpg\", \"size\": [222, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||2d1b7a28c32da0849c4ea5d2b68450af", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/41/fe/41fe562c69d73d2b727e391f7f46ed60.png\", \"size\": [96, 128]}"
   }
 },
 {
@@ -70133,6 +70295,20 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/23/3d/233d88d50fdd92886d157a322c050d2c.jpg\", \"size\": [301, 260]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||4fe1be36f7a34700b055f029f0f77677", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/e4/3e/e43eae343633769661aa03c99a71c8ba.jpg\", \"size\": [347, 260]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||57a17e6ba7219832ea7473161773bbb7", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/la-spiaggia-delle-donne/spiaggia-per-cani-riccione_1.jpg\", \"size\": [500, 375]}"
   }
 },
 {
@@ -70220,6 +70396,20 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||9fa3a767ffc5715807b5c7962432bef4", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/la-spiaggia-delle-donne/spiaggia-per-cani-riccione.jpg\", \"size\": [375, 500]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||ad98e0945a639bfbdac241abac03ca66", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/c8/01/c801fe7052b1135c1bfa8493564282ea.jpg\", \"size\": [194, 260]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||b4735152f280c37d0fe619a73dc02c62", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70276,10 +70466,24 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||e52f4565e1284f77affec22a50ae0fc7", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/8c/c1/8cc161b362cae6bbf90396cec56d80ae.jpg\", \"size\": [195, 260]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||e567b1d69ef006ec7306d3079e01d7f5", 
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-dallara/entrata-bagno.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||e5e1d2d3d2877b5418ec81be72e59f88", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/88/9f/889ff51fd6e8dbbb7e58c157d58ce8ad.png\", \"size\": [96, 128]}"
   }
 },
 {
@@ -70332,6 +70536,20 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||thumbnails||24dd4c1860d1c46d6d76ca38bb4a755b", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"0d0d9b95d77747d7bf215ebe23a54c87\", \"2d1b7a28c32da0849c4ea5d2b68450af\", \"ad98e0945a639bfbdac241abac03ca66\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||57a17e6ba7219832ea7473161773bbb7", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"4fe1be36f7a34700b055f029f0f77677\", \"07b08917c4daaaf9977b5ac77cafbdd3\"]"
+  }
+},
+{
   "pk": "sorl-thumbnail||thumbnails||7c7ccfbf2e1f69a6dd891b58a069798a", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70357,6 +70575,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"00cd4da465a78e889d9bef8bad616e95\", \"c57fc645a5926f9e17001291d8c7ab06\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||9fa3a767ffc5715807b5c7962432bef4", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"e5e1d2d3d2877b5418ec81be72e59f88\", \"e52f4565e1284f77affec22a50ae0fc7\"]"
   }
 },
 {
@@ -71027,7 +71252,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-04T14:45:50.748Z", 
+    "last_login": "2014-07-07T11:44:12.270Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -71288,6 +71513,42 @@
   }
 },
 {
+  "pk": 29, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "marcomarchetti.ing", 
+    "first_name": "Marco", 
+    "last_name": "Marchetti", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-07T04:53:52.741Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$rdh8idtD4T8F$pbEiPPTZFmOhw01fWS/Sjgmjpatx61h5LwmaQr39ulg=", 
+    "email": "marcomarchetti.ing@gmail.com", 
+    "date_joined": "2014-07-07T04:53:20.098Z"
+  }
+},
+{
+  "pk": 30, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "bagno28otello", 
+    "first_name": "Gabriele", 
+    "last_name": "Giovanardi", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-07T18:58:40.262Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$JXaFzrXdNlbz$4V79rilgGxVM8cp1n/sSAbRNvHoxnP6xIrX8eoVZ4rY=", 
+    "email": "bagno28otello@gmail.com", 
+    "date_joined": "2014-07-07T18:32:54.417Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -71449,6 +71710,30 @@
     ], 
     "primary": true, 
     "email": "infochaplyn@gmail.com"
+  }
+},
+{
+  "pk": 24, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "marcomarchetti.ing"
+    ], 
+    "primary": true, 
+    "email": "marcomarchetti.ing@gmail.com"
+  }
+},
+{
+  "pk": 25, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "bagno28otello"
+    ], 
+    "primary": true, 
+    "email": "bagno28otello@gmail.com"
   }
 },
 {
@@ -71766,6 +72051,46 @@
   }
 },
 {
+  "pk": 22, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Marchetti", 
+    "name": "Marco", 
+    "created": "2014-07-07T04:53:20.328Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-07T04:53:21.506Z", 
+    "user": [
+      "marcomarchetti.ing"
+    ], 
+    "bagni": [
+      [
+        "la-spiaggia-delle-donne"
+      ]
+    ]
+  }
+},
+{
+  "pk": 23, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Giovanardi", 
+    "name": "Gabriele", 
+    "created": "2014-07-07T18:32:54.527Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-07T18:32:55.586Z", 
+    "user": [
+      "bagno28otello"
+    ], 
+    "bagni": [
+      [
+        "otello"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -71916,6 +72241,26 @@
   }
 },
 {
+  "pk": 16, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "marcomarchetti.ing"
+    ], 
+    "old_email": "marcomarchetti.ing@gmail.com"
+  }
+},
+{
+  "pk": 17, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "bagno28otello"
+    ], 
+    "old_email": "bagno28otello@gmail.com"
+  }
+},
+{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -72030,6 +72375,32 @@
     "name": "chaplyn", 
     "image": "images/bagni/bagno-chaplyn/chaplyn.JPG", 
     "slug": "chaplyn"
+  }
+},
+{
+  "pk": 11, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "la-spiaggia-delle-donne"
+    ], 
+    "name": "La Spiaggia delle Donne Riccione", 
+    "image": "images/bagni/la-spiaggia-delle-donne/spiaggia-per-cani-riccione_1.jpg", 
+    "slug": "spiaggia-per-cani-riccione"
+  }
+},
+{
+  "pk": 12, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "otello"
+    ], 
+    "name": "La nostra stella", 
+    "image": "images/bagni/otello/la-nostra-stella.jpg", 
+    "slug": "la-nostra-stella"
   }
 },
 {
@@ -82311,7 +82682,7 @@
     "bagno": [
       "luciano"
     ], 
-    "number": "0541/25916, o cell. 339/1361620, (recapito invernale 0541/25916)", 
+    "number": "0541/25916", 
     "name": "fax", 
     "slug": "fax-number-170"
   }
@@ -83761,7 +84132,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "sauro"
+      "bagno-100-sole-caliente"
     ], 
     "number": "0541 373597", 
     "name": "tel", 
@@ -83773,7 +84144,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "sauro"
+      "bagno-100-sole-caliente"
     ], 
     "number": "338 8420265", 
     "name": "mob", 
@@ -83785,7 +84156,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "sauro"
+      "bagno-100-sole-caliente"
     ], 
     "number": "0541 373597", 
     "name": "fax", 
@@ -83845,7 +84216,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "domenico"
+      "solleone"
     ], 
     "number": "0541 374359", 
     "name": "tel", 
@@ -87051,21 +87422,9 @@
     "bagno": [
       "bagni-green-beach"
     ], 
-    "number": "0541.692632", 
+    "number": "0541 692632", 
     "name": "tel", 
     "slug": "telephone-number-798"
-  }
-},
-{
-  "pk": 3215, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "bagni-green-beach"
-    ], 
-    "number": "bagnini)", 
-    "name": "fax", 
-    "slug": "fax-number-217"
   }
 },
 {
@@ -87435,7 +87794,7 @@
     "bagno": [
       "la-spiaggia-delle-donne"
     ], 
-    "number": "0541.642502", 
+    "number": "0541 642502", 
     "name": "tel", 
     "slug": "telephone-number-816"
   }
@@ -87447,7 +87806,7 @@
     "bagno": [
       "la-spiaggia-delle-donne"
     ], 
-    "number": "339.8866266", 
+    "number": "339 8866266", 
     "name": "mob", 
     "slug": "mobile-number-231"
   }
@@ -87459,7 +87818,7 @@
     "bagno": [
       "la-spiaggia-delle-donne"
     ], 
-    "number": "0541.645275", 
+    "number": "0541 645275", 
     "name": "fax", 
     "slug": "fax-number-218"
   }
@@ -89274,6 +89633,78 @@
     "number": "0544 993487", 
     "name": "tel", 
     "slug": "telephone-number-77-bis"
+  }
+},
+{
+  "pk": 3419, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "la-spiaggia-delle-donne"
+    ], 
+    "number": "338 2646220", 
+    "name": "mob", 
+    "slug": "mob-6"
+  }
+},
+{
+  "pk": 3420, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "luciano"
+    ], 
+    "number": "339/1361620", 
+    "name": "mob", 
+    "slug": "cell-number-607-bis"
+  }
+},
+{
+  "pk": 3421, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "luciano"
+    ], 
+    "number": "0541/25916", 
+    "name": "win", 
+    "slug": "winter-number-607-bis"
+  }
+},
+{
+  "pk": 3422, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "otello"
+    ], 
+    "number": "339/5841447", 
+    "name": "mob", 
+    "slug": "mob-7"
+  }
+},
+{
+  "pk": 3423, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "otello"
+    ], 
+    "number": "335/6569691", 
+    "name": "mob", 
+    "slug": "mob-8"
+  }
+},
+{
+  "pk": 3424, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "otello"
+    ], 
+    "number": "0541/721766", 
+    "name": "win", 
+    "slug": "win-2"
   }
 }
 ]
