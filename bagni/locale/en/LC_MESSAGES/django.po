@@ -279,9 +279,7 @@ msgstr "Beach resorts"
 
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:21
 msgid "bagni_by_facility_and_neighbourhood_sub_header"
-msgstr ""
-"Here you can contacts, addresses and other informations about the beach "
-"resorts"
+msgstr "Here you can find contacts, addresses and other informations about the beach resorts"
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
