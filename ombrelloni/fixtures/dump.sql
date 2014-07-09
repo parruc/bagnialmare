@@ -13204,6 +13204,10 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 22	27	spiaggia23riccione@email.it	t	t
 24	29	marcomarchetti.ing@gmail.com	t	t
 25	30	bagno28otello@gmail.com	t	t
+26	31	info@bagnosaurocervia.it	t	t
+27	32	amaduccig@gmail.com	t	t
+28	6	nicola.valentini@gmail.com	f	f
+29	33	simonegriffi@gmail.com	t	t
 \.
 
 
@@ -13211,7 +13215,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 25, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 29, true);
 
 
 --
@@ -13236,6 +13240,10 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 26	24	2014-07-07 00:53:22.148611-04	2014-07-07 00:53:22.380409-04	56c97aaff2a2cea14192052342392772ff4bb6299989691541110f4f2b34693a
 14	14	2014-07-07 03:54:55-04	2014-07-07 03:54:56-04	087dad2191748bd86d09a679349bb6c5357e71ae358e268da8cf50e53ed8db20
 27	25	2014-07-07 14:32:56.296378-04	2014-07-07 14:32:56.442666-04	589151ee03b630d70f30cdb45ca19bbce09d79b2569c8fe754fa7c0cfc645b0c
+28	26	2014-07-08 09:58:47.735596-04	2014-07-08 09:58:47.87536-04	c2dfb4aedb1d9b3b52da8446221d2b27979899cf4eea27e52e92929bf022da13
+29	27	2014-07-08 10:34:04.169801-04	2014-07-08 10:34:04.355175-04	d1be9aebfebe38f592587b15f807a4fbee364b2fbeb80e5ea7fb3424f5da585b
+30	28	2014-07-08 12:21:23.620994-04	2014-07-08 12:21:25.530129-04	1c028579899b75d2c4040df6cd7ec680da755114da198768b54218a2502bcf48
+31	29	2014-07-08 16:08:28.245006-04	2014-07-08 16:08:28.5138-04	09c01a24a5fd2bc1aaf5d504de93142e892998e2c6a35298b6585160f6c57425
 \.
 
 
@@ -13243,7 +13251,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 27, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 31, true);
 
 
 --
@@ -13405,22 +13413,25 @@ SELECT pg_catalog.setval('auth_permission_id_seq', 108, true);
 
 COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
 22	pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=	2014-06-10 17:17:06.185602-04	f	spiaggia136	fausto	ravaglia	spiaggia136@gmail.com	f	t	2014-06-10 17:15:56.918226-04
-6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-07-03 12:41:16.316642-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
 29	pbkdf2_sha256$12000$rdh8idtD4T8F$pbEiPPTZFmOhw01fWS/Sjgmjpatx61h5LwmaQr39ulg=	2014-07-07 00:53:52.741379-04	f	marcomarchetti.ing	Marco	Marchetti	marcomarchetti.ing@gmail.com	f	t	2014-07-07 00:53:20.098341-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-07-07 07:44:12.270681-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 24	pbkdf2_sha256$12000$epMiSQuwsn2v$XMqOSbi+TS++FOYVXEpU0SNmuqrCCBTsN4xZQvC3nqo=	2014-06-26 13:01:18.341567-04	f	info4	eros	fabbri	info@bagnomeridiano.it	f	t	2014-06-26 12:53:42.035262-04
-8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-06-27 11:15:16.285401-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 30	pbkdf2_sha256$12000$JXaFzrXdNlbz$4V79rilgGxVM8cp1n/sSAbRNvHoxnP6xIrX8eoVZ4rY=	2014-07-07 14:58:40.262203-04	f	bagno28otello	Gabriele	Giovanardi	bagno28otello@gmail.com	f	t	2014-07-07 14:32:54.417723-04
 25	pbkdf2_sha256$12000$Vn85R5b1GMqi$ZfM5hcAbZc3CTsDwycjZaCOIzbx6MjWtRjOVlhF1x38=	2014-06-27 18:15:29.63828-04	f	info5	Rosa	Dallaporta	Info@bagnomexico.com	f	t	2014-06-27 18:14:31.022011-04
-7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-06-27 18:18:50.135202-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
+31	pbkdf2_sha256$12000$lMW9yy2JykK7$tYhq4kavcEYpuT1C+DiQN5sZzYvF2I/oiBF0eOlDxqA=	2014-07-08 10:00:17.051404-04	f	info7	Nazario	Farabegoli	info@bagnosaurocervia.it	f	t	2014-07-08 09:58:45.49539-04
 26	pbkdf2_sha256$12000$PgCQHRDORJaU$fP6AAOoCk1H1uKuTqA5XcJ65mnxdNmOCTI5NjaBA9Q0=	2014-07-01 07:49:39.061965-04	f	info6	Loretta	Casadei	info@loretta99.com	f	t	2014-07-01 07:14:00.345329-04
 18	pbkdf2_sha256$12000$5b2tAmqMLrRy$PWbaRuFkazdQA+RWOz+9iXKdJdATEfLR9pM1QSOtV3s=	2014-06-09 05:13:37.488704-04	f	mbenvenuto	User	Tester	mbenvenuto@airplus.com	f	t	2014-06-03 08:51:22.754527-04
 19	pbkdf2_sha256$12000$gvuKqtYpU576$e4tpwgv432EUJ847ZBQptllrKE/t1eDaeXP83KfU3Gc=	2014-06-09 04:26:29.294945-04	f	ndefrancesco	Nadia	Defrancesco	ndefrancesco@bagno27.it	f	t	2014-06-09 04:26:29.29501-04
+32	pbkdf2_sha256$12000$nPxDpNzmaiQs$eXgmXuh5nscgvAhMCeX317lF2ARG0dZeVuK2gjL5l28=	2014-07-08 10:36:23.66291-04	f	amaduccig	Gianmaria	Amaducci	amaduccig@gmail.com	f	t	2014-07-08 10:34:03.467126-04
 20	pbkdf2_sha256$12000$I0oDJY31RDCa$oRi8DNR7BjHFyLPTVt603EzOMOe+RYIDRWKQFOuqsLU=	2014-06-10 04:06:02.213327-04	f	info	società	Nettuno	info@centrovacanzericcione.it	f	t	2014-06-10 04:01:46.021113-04
 21	pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=	2014-06-10 15:42:53.620993-04	f	info2	Alessandro	Bologna	info@bagnoegisto38.com	f	t	2014-06-10 15:42:30.977587-04
+6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-07-08 12:25:47.316578-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
+8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-07-08 15:11:38.827021-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 27	pbkdf2_sha256$12000$M8DNWk0GsITH$nDMqXwY/f+pyOZesiOq/IXAgnbLctQG6NaN8xPrQ3Jw=	2014-07-03 03:36:54.590939-04	f	spiaggia23riccione	fabio	russo	spiaggia23riccione@email.it	f	t	2014-07-01 09:43:25.018905-04
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.it	f	t	2014-07-02 15:15:51.370099-04
+7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-07-08 15:12:32.139445-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
+33	pbkdf2_sha256$12000$j9OmgKtAiQ0o$FOzocb0UIglY30orXTC1t+BHVVYRv+0fTKvjHuraEHs=	2014-07-08 16:11:36.080259-04	f	simonegriffi	Simone	Griffi	simonegriffi@gmail.com	f	t	2014-07-08 16:08:25.260922-04
 \.
 
 
@@ -13443,7 +13454,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 30, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 33, true);
 
 
 --
@@ -13486,6 +13497,9 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname, created, modifi
 21	28	t	t	gaetano	d'ambra	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 22	29	t	t	Marco	Marchetti	2014-07-07 00:53:20.328392-04	2014-07-07 00:53:21.506995-04
 23	30	t	t	Gabriele	Giovanardi	2014-07-07 14:32:54.527179-04	2014-07-07 14:32:55.58667-04
+24	31	t	t	Nazario	Farabegoli	2014-07-08 09:58:45.603933-04	2014-07-08 09:58:46.981452-04
+25	32	t	t	Gianmaria	Amaducci	2014-07-08 10:34:03.574189-04	2014-07-08 10:34:03.77585-04
+26	33	t	t	Simone	Griffi	2014-07-08 16:08:25.395368-04	2014-07-08 16:08:27.346483-04
 \.
 
 
@@ -13506,6 +13520,9 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 13	21	13317
 14	22	13698
 15	23	13438
+16	24	12782
+17	25	13798
+18	26	12915
 \.
 
 
@@ -13513,14 +13530,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 15, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 18, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 23, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 26, true);
 
 
 --
@@ -13560,9 +13577,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13070	Bagno villa celeste	bagno-villa-celeste		Viale Ludovico de Varthema, 4		www.villaceleste.eu	0101000020E6100000000000D013C7284094B04AE7C11B4640		\N	\N	6	t	2014-07-02 18:00:00-04	2014-07-04 05:49:02.479616-04
 13210	Bagno Paradiso	paradiso	83	Via dei caduti del Mare, 5		http://www.paradisoristorante.it/	0101000020E610000000000014657D284033BB424D87564640	 	 		15	t	2014-07-02 18:00:00-04	2014-07-04 05:49:05.954358-04
 13457	Bagno 46	bagno-46	46 sud	Lungomare Murri	madeinrimini@libero.it	http://www.battigia46rimini.it/	0101000020E6100000208457FDD72D2940C2BF081A33084640				25	t	2014-07-02 18:00:00-04	2014-07-07 08:35:11.857554-04
-13724	Bagno Nettuno	bagno-nettuno-3	122/a	Viale D'Annunzio		http://www.centrovacanzericcione.it/	0101000020E6100000664BD7308F492940D4BB104C0D024640	Dedicato alla famiglia dove puoi trovare vari confort.	None	Dedicato alla famiglia dove puoi trovare vari confort.	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13780	Bagno Acquario Da Leo	bagno-acquario-da-leo	47	Via C. Colombo			0101000020E61000004027FDAFC5F028404F0929B3B1124640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13580	Bagno Egisto	egisto	38 nord	Via Dati 113 h	info@bagnoegisto38.com	http://www.bagnoegisto38.com	0101000020E6100000E77C254EF61029400CD373E2DD0B4640	<h3>Details</h3>\n\t<p>cabine: 23<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di balli latini americani e aquagymn\r\n- tornei di ping-pong\r\n- area benessere con lettini massaggianti (a pagamento)\r\n- area accoglienza animali domestici spiaggia attrezzata parzialmente recintata con gli ombrelloni più larghi rispetto lo standard. gratuitamente è possibile avere a disposizione ciotole, stuoie, sacchetti e la doccia a loro dedicata. un veterinario è reperibile per qualsiasi necessità. all'arrivo è necessario solamente presentare il libretto delle vaccinazioni in direzione e prendere visione del regolamento. si consiglia la prenotazione, in quanto i posti attrezzati sono limitati. Il bagno ha aderito nel 2009 al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.</p>	<h3>Details</h3>\n\t<p>cabine: 23<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di balli latini americani e aquagymn\r\n- tornei di ping-pong\r\n- area benessere con lettini massaggianti (a pagamento)\r\n- area accoglienza animali domestici spiaggia attrezzata parzialmente recintata con gli ombrelloni più larghi rispetto lo standard. gratuitamente è possibile avere a disposizione ciotole, stuoie, sacchetti e la doccia a loro dedicata. un veterinario è reperibile per qualsiasi necessità. all'arrivo è necessario solamente presentare il libretto delle vaccinazioni in direzione e prendere visione del regolamento. si consiglia la prenotazione, in quanto i posti attrezzati sono limitati. Il bagno ha aderito nel 2009 al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.</p>	\N	32	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13094	Bagno Perla	perla	22	Via Spiaggia, 22			0101000020E6100000000000DC9B7E2840DE2EB4A507554640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13831	Bagno Guerrino	bagno-guerrino		Via Ruggero Pascoli			0101000020E6100000090F00C014E5284041B9C1F40D154640	 	 		40	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13832	Bagno Olimpia	bagno-olimpia-20	20	via Forli	info@bagnoolimpia.it	http://www.bagnoolimpia.it/	0101000020E6100000D60AF1EFF2E028406E4E4EC60E164640	 	 		39	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13583,6 +13598,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13161	Bagno Las Vegas	las-vegas	49	Via Tintoretto, 49	lasvegas49@libero.it		0101000020E6100000000000E02B8128403180283E14534640		\N	\N	13	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12921	Bagno Everest	bagno-everest	98	Arenile demaniale 98	informazioni@bagnoeverest.it	http://www.bagnoeverest.it/	0101000020E6100000E03018F690BE2840447FD83AC71E4640				3	t	2014-07-02 18:00:00-04	2014-07-04 06:06:54.646012-04
 12859	Bagno Miami	bagno-miami	282	III Traversa - arenile demaniale 282	info@hotelmiamibeach.com	http://www.hotelmiamibeach.com/	0101000020E6100000402BAA2AA6B42840DEDD6F592A244640				2	t	2014-07-02 18:00:00-04	2014-07-04 09:01:17.749661-04
+13724	Bagno Nettuno	bagno-nettuno-3	122/a	Viale D'Annunzio		http://www.centrovacanzericcione.it/	0101000020E6100000664BD7308F492940D4BB104C0D024640	Dedicato alla famiglia dove puoi trovare vari confort.		Dedicato alla famiglia dove puoi trovare vari confort.	36	t	2014-07-02 18:00:00-04	2014-07-08 10:26:31.177231-04
 13364	Bagno GoGo	bagno-gogo	2	Via Bering Vitus, 105	info.bagnogogo@gmail.com		0101000020E6100000799274CDE4AB2840312592E8652A4640	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 4<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 12<br />\r\n\tdocce chiuse: 2<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 3</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 4<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 12<br />\r\n\tdocce chiuse: 2<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 3</p>		23	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13340	Bagno Azzurra	bagno-azzurra-2		Viale Petrarca, 402	info@bagniazzurra.it	http://www.bagniazzurra.it/	0101000020E610000056FC49F6B49F28405FA4E57ABA344640	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\tombrelloni: 210<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 500<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 2</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\tombrelloni: 210<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 500<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 2</p>		21	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13255	Bagno Associazione Nazionale Marinai d'Italia (A.N.M.I.)	bagno-associazione-nazionale-marinai-ditalia-anmi		Viale delle Nazioni			0101000020E61000003296655FE49128407A0E76D4623D4640		\N	\N	19	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13594,12 +13610,12 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12793	Bagno Daniele	bagno-daniele	197/198	Lungomare Grazia Deledda - arenile demaniale 197/198	bagnodaniele@libero.it		0101000020E61000007C3419B1F6B82840A89175BC32214640	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 20<br />\r\n\twc: 8<br />\r\n\tombrelloni: 200<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 42<br />\r\n\tlettini: 500<br />\r\n\tcabine: 47<br />\r\n\tdocce chiuse: 3<br />\r\n\tsuperficie complessiva spiaggia: 4200<br />\r\n\tdocce aperte: 5</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\tsdraio: 20<br />\r\n\twc: 8<br />\r\n\tombrelloni: 200<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 42<br />\r\n\tlettini: 500<br />\r\n\tcabine: 47<br />\r\n\tdocce chiuse: 3<br />\r\n\tsuperficie complessiva spiaggia: 4200<br />\r\n\tdocce aperte: 5</p>		1	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12792	Bagno Ulisse	bagno-ulisse	195/196	Lungomare Grazia Deledda - arenile demaniale 195/196	bagnoulisse195@hotmail.it		0101000020E610000044BDF76F12B92840BA48C23A25214640	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\twc: 4<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 50<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5500<br />\r\n\tdocce aperte: 6</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 2<br />\r\n\twc: 4<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 50<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5500<br />\r\n\tdocce aperte: 6</p>		1	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13389	Bagno Hotel Asiago	bagno-hotel-asiago		Viale Romagna, 217	hotelasiago@libero.it		0101000020E6100000E6400FB56DB02840C991CEC0C8274640		\N	\N	24	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12782	Bagno Sauro	bagno-sauro	177/178	Lungomare Grazia Deledda - arenile demaniale 177/178	info@bagnosaurocervia.it	http://bagnosaurocervia.it/	0101000020E61000004D8CCA250CBA284064B874ABAB204640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 7314<br />\r\n\tfronte mare: 66<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 6<br />\r\n\tdocce chiuse: 10</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 7314<br />\r\n\tfronte mare: 66<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 6<br />\r\n\tdocce chiuse: 10</p>		1	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13528	Bagno Sandro	sandro	117 sud	via Messina			0101000020E6100000B2AF7C63F63A2940831035762E054640		\N	\N	28	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12771	Bagno Bologna	bagno-bologna	160	Lungomare Grazia Deledda - arenile demaniale 160	info@bagnobologna.it	http://www.bagnobologna.it/	0101000020E6100000F2162EFCF7BA284084CC00DD38204640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 4611<br />\r\n\tfronte mare: 40<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 4611<br />\r\n\tfronte mare: 40<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 5</p>		1	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13397	Bagno Margarita	bagno-margarita		Via Lugo, 372			0101000020E6100000D65240DAFFB02840713B342C46274640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 9<br />\n\twc: 2<br />\n\tombrelloni: 110<br />\n\twc disabili: 1<br />\n\tlettini: 250<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 9<br />\n\twc: 2<br />\n\tombrelloni: 110<br />\n\twc disabili: 1<br />\n\tlettini: 250<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	24	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13825	Bagno da Gigi	bagno-da-gigi	93	Via A. Pinzon 231	michele@bagno93.it	http://www.bagno93.it/	0101000020E6100000D993C0E61CFC28403430F2B226104640	 	 		37	t	2014-07-02 18:00:00-04	2014-07-03 13:15:34.2769-04
 13335	Bagno Wave	bagno-wave		Lungomare Colombo Cristoforo, 26 - 28		http://www.bagnowave.com	0101000020E61000003D85AF3A31952840658B514C1F3A4640		\N	\N	20	t	2014-07-02 18:00:00-04	2014-07-04 05:46:44.713755-04
+12782	Bagno Sauro	bagno-sauro	177/178	Lungomare Grazia Deledda - arenile demaniale 177/178		http://bagnosaurocervia.it/	0101000020E6100000498CCA250CBA284060B874ABAB204640	<p>superficie complessiva spiaggia: 7314<br />\r\nfronte mare: 66<br />\r\ndocce aperte: 6<br />\r\nwc: 6<br />\r\ndocce chiuse: 10</p>		<p>superficie complessiva spiaggia: 7314<br />\r\nfronte mare: 66<br />\r\ndocce aperte: 6<br />\r\nwc: 6<br />\r\ndocce chiuse: 10</p>	1	t	2014-07-02 18:00:00-04	2014-07-08 10:29:59.938331-04
 13527	Bagno Attilio	attilio	116 sud				0101000020E610000035805416C73A29404E62105839054640				28	t	2014-07-02 18:00:00-04	2014-07-04 06:41:46.25177-04
 13401	Bagno Nettuno	bagno-nettuno-2		Via Verghereto			0101000020E610000011A7936C75B12840B2666490BB264640		\N	\N	24	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12763	Bagno Medusa	bagno-medusa	146	Lungomare Grazia Deledda	info@bagnomedusa.com	http://www.bagnomedusa.com/	0101000020E61000006BD44334BABB284007CE1951DA1F4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2143<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 2<br />\r\n\tdocce chiuse: 9</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 2143<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 2<br />\r\n\tdocce chiuse: 9</p>		1	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13621,7 +13637,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12858	Bagno Papeete Beach	bagno-papeete-beach	280bis/281	III Traversa - arenile demaniale 280/281	info@papeetebeach.com	http://www.papeetebeach.com/	0101000020E61000001BF3F8C5BEB42840D7A6B1BD16244640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 5246<br />\r\n\tfronte mare: 63<br />\r\n\tdocce aperte: 8<br />\r\n\twc: 8<br />\r\n\tdocce chiuse: 10</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 5246<br />\r\n\tfronte mare: 63<br />\r\n\tdocce aperte: 8<br />\r\n\twc: 8<br />\r\n\tdocce chiuse: 10</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:02:18.470692-04
 13429	Bagno Gastone	gastone	19 sud	Lungomare Tintori			0101000020E6100000FB811ADADA28294026602AEC58094640				25	t	2014-07-02 18:00:00-04	2014-07-07 09:03:41.42821-04
 13425	Bagno Oasi	oasi	15 sud	Lungomare Tintori			0101000020E610000009C479A51D28294051A7977384094640	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:17.214822-04
-13507	Bagno Loretta 99	loretta	99	Lungomare di Vittorio 54/a	info@loretta99.com	http://www.bagno99.com/	0101000020E61000009B5BA982263729407EF0AFB9B2054640	None	None	Il Bagno Loretta 99 è il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi. 	27	t	2014-07-02 18:00:00-04	2014-07-07 10:06:28.799668-04
+13507	Bagno Loretta 99	loretta	99	Lungomare di Vittorio 54/a		http://www.bagno99.com/	0101000020E61000009B5BA982263729407EF0AFB9B2054640	Il Bagno Loretta 99 è il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi. 		Il Bagno Loretta 99 è il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi. 	27	t	2014-07-02 18:00:00-04	2014-07-08 10:15:00.032814-04
 13466	Bagno Primo	primo	56 sud	Lungomare Murri			0101000020E6100000FF5EE900B12F2940D68D7747C6074640	<h3>Details</h3>\n\t<p>cabine: 16<br />\n\tombrelloni: 180</p>	<h3>Details</h3>\n\t<p>cabine: 16<br />\n\tombrelloni: 180</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13619	Bagni Luca	bagni-luca	12	Fontanelle/Abissinia	bagniluca12riccione@alice.it		0101000020E61000000B1A65C3BB5E2940C182669D92FE4540		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13620	Bagni Guerrino	bagni-guerrino	16	Fontanelle Abissinia			0101000020E61000005176E915055E2940B28E99FAAFFE4540		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13763,10 +13779,10 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13041	Bagno renata	bagno-renata-2		Via Pasubio	bagnorenata@bagnorenata.it	http://www.bagnorenata.it	0101000020E6100000000000F018CF28400BC4F499201A4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 130<br />\n\tfronte mare: 31<br />\n\tlettini: 180<br />\n\tcabine: 38<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 3308<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 130<br />\n\tfronte mare: 31<br />\n\tlettini: 180<br />\n\tcabine: 38<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 3308<br />\n\tdocce aperte: 3</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13637	Bagni Mario	bagni-mario-3	34	Fontanelle Abissinia			0101000020E61000008A153D09CF5A29406E44FF1D34FF4540		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13031	Bagno Nettuno	bagno-nettuno-levante		Viale Venezia,  28			0101000020E610000002000050AADD2840A3DABAC188164640				6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13027	Bagno meridiano	bagno-meridiano	34	Viale Milano, 34		http://www.bagnomeridiano.it/	0101000020E6100000060000307BD2284094AC4A5A29194640	None	<h3>Details</h3>\r\n\t<p>sdraio: 40<br />\r\n\twc: 3<br />\r\n\tombrelloni: 120<br />\r\n\tfronte mare: 30<br />\r\n\tlettini: 190<br />\r\n\tcabine: 29<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2850</p>	None	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13043	Bagno roma	bagno-roma-2		Via Montenero, 54	info@bagnoroma.it	http://www.bagnoroma.it	0101000020E610000000000048C0CF2840D80A5598E1194640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 50<br />\n\twc: 3<br />\n\tombrelloni: 130<br />\n\tfronte mare: 28<br />\n\tlettini: 230<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2240<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 50<br />\n\twc: 3<br />\n\tombrelloni: 130<br />\n\tfronte mare: 28<br />\n\tlettini: 230<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2240<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13050	Bagno sessantanove	bagno-sessantanove		Viale Piave, 69	info@riviera69.com	http://riviera69.com	0101000020E610000000000018D1D02840FAB087D2A0194640	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 240<br />\n\tfronte mare: 43<br />\n\tlettini: 600<br />\n\tcabine: 40<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 5160<br />\n\tdocce aperte: 4</p>	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 240<br />\n\tfronte mare: 43<br />\n\tlettini: 600<br />\n\tcabine: 40<br />\n\tdocce chiuse: 4<br />\n\tsuperficie complessiva spiaggia: 5160<br />\n\tdocce aperte: 4</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13430	Bagno Arcobaleno	arcobaleno	20 sud	Lungomare Tintori	info@bagno20arcobaleno.it	http://www.bagno20arcobaleno.it/	0101000020E610000078B142270A2929405B0E4F0A4E094640	<h3>Details</h3>\r\n\t<p>cabine: 44<br />\r\n\tombrelloni: 177</p>	<h3>Details</h3>\r\n\t<p>cabine: 44<br />\r\n\tombrelloni: 177</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 08:40:48.774312-04
+13027	Bagno meridiano	bagno-meridiano	34	Viale Milano, 34		http://www.bagnomeridiano.it/	0101000020E6100000060000307BD2284094AC4A5A29194640	<p>sdraio: 40<br />\r\nwc: 3<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 190<br />\r\ncabine: 29<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 2850</p>		<p>sdraio: 40<br />\r\nwc: 3<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 190<br />\r\ncabine: 29<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 2850</p>	6	t	2014-07-02 18:00:00-04	2014-07-08 10:30:30.738874-04
 13054	Bagno tahiti	bagno-tahiti		Piazza Ginesio Marconi, 21		www.bagnotahiticesenatico.it	0101000020E6100000000000A091D32840CE52F481A3184640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 100<br />\n\twc: 5<br />\n\tombrelloni: 150<br />\n\tfronte mare: 36<br />\n\tlettini: 300<br />\n\tcabine: 10<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2763<br />\n\tdocce aperte: 4</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 100<br />\n\twc: 5<br />\n\tombrelloni: 150<br />\n\tfronte mare: 36<br />\n\tlettini: 300<br />\n\tcabine: 10<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2763<br />\n\tdocce aperte: 4</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13055	Bagno titanus	bagno-titanus		Via Sabotino	info@bagnotitanus.com	http://www.bagnotitanus.com	0101000020E61000000000000858D228408A55305828194640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 80<br />\n\twc: 3<br />\n\tombrelloni: 110<br />\n\tfronte mare: 26<br />\n\tlettini: 220<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2340<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 80<br />\n\twc: 3<br />\n\tombrelloni: 110<br />\n\tfronte mare: 26<br />\n\tlettini: 220<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2340<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13059	Bagno tosca	bagno-tosca		Viale Lungomare Ponente, 84	info@hotelcrocedelsud.it	www.hotelcroceselsud.it	0101000020E610000000000070D8CB2840EBB114348B1A4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 11<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1290<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 11<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1290<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13789,7 +13805,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13416	Bagno Alfredo & Vanni	alfredo-vanni	6 sud	Lungomare Tintori			0101000020E6100000A71810EF7326294072874D64E6094640	\n<p>Servizi offerti servizi per cani</p>	\n<p>Servizi offerti servizi per cani</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13662	Bagno Spiaggia 61	spiaggia-61	61	Riccione centro	info@spiaggia61.it	http://www.spiaggia61.it/	0101000020E610000060843AF6FD55294009D51753FAFF4540		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13615	Bagni Cesare Zona 2	bagni-cesare-zona-2	2	Fontanelle Abissinia			0101000020E61000005D331A7584602940E6E4663449FE4540		\N	\N	35	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13627	Bagni Malibù	bagni-malibu	23	Fontanelle Abissinia	spiaggia23riccione@email.it		0101000020E6100000CB175166C55C294098E3B25DE3FE4540		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13432	Bagno Sirena Beach	sirena-beach	22/23 sud	Leardini Alessandra	info@bagno23.it	http://www.bagno23.it	0101000020E6100000711093C168292940C56A984638094640	<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 200</p>	<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 200</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13437	Bagno Fabio	fabio	28/A sud	Lungomare Tintori	bagnofabio28arimini@inwind.it	http://www.bagnofabio28arimini.it	0101000020E61000005D2D8490842A2940058074FBF6084640	<h3>Details</h3>\n\t<p>cabine: 22<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti moto d'acqua (a pagamento)\r\n- scuola di ballo latin-americano  Acceso ai cani</p>	<h3>Details</h3>\n\t<p>cabine: 22<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti moto d'acqua (a pagamento)\r\n- scuola di ballo latin-americano  Acceso ai cani</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13441	Bagno Marino	marino	30 sud	Lungomare Murri			0101000020E6100000568CD42AE32A29406FDCBD37E1084640	<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 160</p>	<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 160</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13803,8 +13818,9 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13433	Bagno Serafino	serafino	24 sud	Lungomare Tintori			0101000020E61000006A6FE35BC729294030C7E18222094640	<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 200</p>\r\n<p>Tariffe convenzionate con gli alberghi</p>	<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 200</p>\r\n<p>Tariffe convenzionate con gli alberghi</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:45.0941-04
 13431	Bagno Simone	simone	21 sud	Lungomare Tintori			0101000020E6100000F4E06A743929294090BC732843094640	<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>	<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:51.30339-04
 13415	Bagno Romano	romano	5 sud	Lungomare Tintori			0101000020E61000002AE9E7A1442629403DD92846F1094640				25	t	2014-07-02 18:00:00-04	2014-07-07 09:36:07.314202-04
-13438	Bagno Otello	otello	28 sud	Lungomare Tintori		http://bagno28otello.com/	0101000020E6100000642D8490842A2940048074FBF6084640	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 15:32:43.295604-04
+13438	Bagno Otello	otello	28 sud	Lungomare Tintori		http://bagno28otello.com/	0101000020E6100000642D8490842A2940048074FBF6084640	\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	25	t	2014-07-02 18:00:00-04	2014-07-08 10:15:23.262714-04
 13434	Bagno Aldo	aldo	25 sud	Lungomare Tintori			0101000020E6100000E79E0BA9F6292940657506A117094640	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:37:15.186344-04
+13627	Bagni Malibù	bagni-malibu	23	Fontanelle Abissinia			0101000020E6100000CB175166C55C294098E3B25DE3FE4540				36	t	2014-07-02 18:00:00-04	2014-07-08 10:15:59.103239-04
 13445	Bagno La Dolce Vita	la-dolce-vita	34 sud	Lungomare Murri			0101000020E6100000494A755FA02B2940449550B0B5084640	<h3>Details</h3>\n\t<p>cabine: 115<br />\n\tombrelloni: 220</p>	<h3>Details</h3>\n\t<p>cabine: 115<br />\n\tombrelloni: 220</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13446	Bagno Paci Cristian	paci-cristian	35 sud	Lungomare Murri			0101000020E6100000C5799DACCF2B2940794375CEAA084640	<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 160</p>	<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 160</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13447	Bagno Nicoletta	nicoletta	36 sud	Lungomare Murri	carlosapori@virgilio.it	http://www.bagno36.it	0101000020E610000042A9C5F9FE2B2940AEF199EC9F084640	\n<p>Servizi offerti</p>	\n<p>Servizi offerti</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13942,7 +13958,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13764	Bagno Antonio	bagno-antonio-2	23	Via C. Colombo			0101000020E6100000FE6D6F307DEC284037C271C492134640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13766	Bagno Elmo	bagno-elmo	24	Via C. Colombo			0101000020E6100000B8986AE0AAEC2840607EB96389134640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13767	Bagno Gigi	bagno-gigi	25	Via C. Colombo			0101000020E610000072C36590D8EC28408F03010380134640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13737	Bagno Marano Beach	marano-beach	135/136	Marano	spiaggia136@gmail.com	http://www.maranobeach.it	0101000020E610000082E7DEC3254729408BA7FD5A87024640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13770	Bagno Pierino	bagno-pierino	32	Via C. Colombo			0101000020E610000071CA446018EE2840BF83F65D3E134640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13772	Bagno Imperiale	bagno-imperiale-2	33bis	Via C. Colombo			0101000020E61000002BF53F1046EE2840E83F3EFD34134640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13773	Bagno Toni	bagno-toni	34	Via C. Colombo			0101000020E6100000E51F3BC073EE284017C5859C2B134640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13958,6 +13973,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13758	Bagno Romano	bagno-romano	17	Via C. Colombo	info@bagnoromano.eu	http://www.bagnoromano.eu/	0101000020E6100000BA918B106BEB28402FFEC308CB134640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:39:40.542578-04
 13722	Bagni Giovanni	bagni-giovanni	121	Fogliano			0101000020E6100000D2C6116BF14929400243FBFD07024640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-04 05:46:43.57028-04
 13739	Bagno Hakuna Matata Plus	hakuna-matata-plus	138	Marano		http://www.hakunamatataplus.it/	0101000020E6100000836E2F698C4629405F4FC7A5A2024640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-04 05:49:06.172993-04
+13737	Bagno Marano Beach	marano-beach	135/136	Marano		http://www.maranobeach.it/	0101000020E610000087E7DEC32547294089A7FD5A87024640				36	t	2014-07-02 18:00:00-04	2014-07-08 10:25:59.433671-04
 13786	Bagno Carlo	bagno-carlo-3	53	Via C. Colombo			0101000020E61000009D27E0CFD7F1284057CDD66E79124640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13787	Bagno Wanda	bagno-wanda-2	54	Via C. Colombo			0101000020E6100000E3FCE41FAAF128402E118FCF82124640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13792	Bagno N. 58 Guerrino	bagno-n-58-guerrino	58	Via A. Pinzon			0101000020E6100000493AEB1875F32840AE83279612124640		\N	\N	37	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13984,7 +14000,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13096	Bagno Pineta	pineta	24	Via Spiaggia, 24	info@pinetabeach.it	www.pinetabeach.it	0101000020E6100000000000A0AA7E28406BE693C4EF544640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13803	Bagno Lido	bagno-lido-3	72	Via A. Pinzon	stefano___ricci@alice.it	http://www.bagnolido72.it/	0101000020E6100000A32E23A77DF62840B2D498156C114640	None	None	None	37	t	2014-07-02 18:00:00-04	2014-07-03 12:59:47.605294-04
 13804	Bagno Romano	bagno-romano-73	73	Via A. Pinzon	direzione@bagnoromano73.com	http://www.bagnoromano73.com/	0101000020E6100000F5BA021FB5F62840133BFC3060114640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:18:25.455147-04
-13798	Bagno 65	bagno-65	65	Via A. Pinzon	amaduccig@gmail.com	https://www.facebook.com/Bagno65	0101000020E610000079340760F9F42840312CE055BF114640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:36:09.711812-04
 13793	Bagno Gino	bagno-gino-59-60	59/60	Via A. Pinzon	nordest59@alice.it	http://bagnogino5960.it/	0101000020E610000096C6CA90ACF3284008218BB106124640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:37:27.921336-04
 13785	Bagno Paradise	bagno-paradise	52	Via C. Colombo	castel1975@gmail.com	https://www.facebook.com/pages/Bagno-52-Paradise-Bellaria-Tel-3472242650/14	0101000020E6100000E3FCE41FAAF128402E118FCF82124640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:45:21.451879-04
 13809	Afrika Beach	afrika-beach	77/77bis/78/78bis/79/79bis	Via A. Pinzon		http://www.afrikabeach.it/	0101000020E610000027EC80FE92F7284084428A9E30114640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:52:36.574739-04
@@ -13992,6 +14007,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12853	Bagno Bicio Papao	bagno-bicio-papao	276	Viale Spalato - arenile demaniale 276	info@biciopapao.it	http://www.biciopapao.it/	0101000020E6100000D38296FCEFB42840C7383586EF234640				2	t	2014-07-02 18:00:00-04	2014-07-04 09:07:32.204927-04
 12826	Bagno Peppino	bagno-peppino	245	Viale Nicolò Paganini - arenile demaniale 245	info@bagnopeppino.it	http://www.bagnopeppino.it/	0101000020E61000009E9CDB636DB62840CEE33098BF224640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3155<br />\r\n\tfronte mare: 28<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3155<br />\r\n\tfronte mare: 28<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:36:00.466022-04
 12822	Bagno Stefano Beach	bagno-stefano-beach	241	Viale Pietro Mascagni - arenile demaniale 241	zanetti-fo@libero.it		0101000020E6100000562C799A9EB62840BE75B46098224640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1500<br />\r\n\tfronte mare: 23<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1500<br />\r\n\tfronte mare: 23<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:38:24.877911-04
+13798	Bagno 65	bagno-65	65	Via A. Pinzon		https://www.facebook.com/Bagno65	0101000020E610000074340760F9F428402F2CE055BF114640				37	t	2014-07-02 18:00:00-04	2014-07-08 10:50:47.755913-04
 12824	Bagno Sesto	bagno-sesto	242bis	Viale Pietro Mascagni - arenile demaniale 242			0101000020E610000068C8D14C92B628404291932EA2224640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2860<br />\n\tfronte mare: 26<br />\n\tdocce aperte: 2<br />\n\twc: 4</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 2860<br />\n\tfronte mare: 26<br />\n\tdocce aperte: 2<br />\n\twc: 4</p>	\N	2	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12825	Bagno Aurelia	bagno-aurelia	243	Viale Due Giugno - arenile demaniale 243			0101000020E61000007A642AFF85B62840C6AC72FCAB224640	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 2</p>	<h3>Details</h3>\n\t<p>wc: 6<br />\n\tfronte mare: 20<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 2</p>	\N	2	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12831	Bagno Dino	bagno-dino	251/252	Viale Gaspare Spontini - arenile demaniale 251/252			0101000020E61000000C45EF9123B62840E5886B6BFA224640		\N	\N	2	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14064,7 +14080,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12919	Bagno Green Beach Bamby	bagno-green-beach-bamby	93	Arenile demaniale 93			0101000020E6100000118E5EAFDEBE2840FD843C4DA91E4640	<h3>Details</h3>\n\t<p>sdraio: 50<br />\n\twc: 10<br />\n\tombrelloni: 100<br />\n\twc disabili: 1<br />\n\tlettini: 200<br />\n\tcabine: 6<br />\n\tdocce chiuse: 6<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>sdraio: 50<br />\n\twc: 10<br />\n\tombrelloni: 100<br />\n\twc disabili: 1<br />\n\tlettini: 200<br />\n\tcabine: 6<br />\n\tdocce chiuse: 6<br />\n\tdocce aperte: 3</p>	\N	3	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12984	Bagno chery	bagno-chery		Viale dei Pini, 103			0101000020E610000000000020F2C52840D2CA8093381C4640		\N	\N	8	t	2014-07-02 18:00:00-04	2014-07-04 05:46:41.528577-04
 12918	Bagno Garden - Le Lidò	bagno-garden-le-lido	89/90	Arenile demaniale 89/90	info@garden-lido.it	http://www.garden-lido.it/	0101000020E6100000397230DD1CBF2840F7EFF25B911E4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1600<br />\r\n\tfronte mare: 20<br />\r\n\twc: 2</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1600<br />\r\n\tfronte mare: 20<br />\r\n\twc: 2</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:08:49.218362-04
-12915	Bagno Playa del Carmen	bagno-playa-del-carmen	84	Arenile Demaniale 84	info@playadelcarmen84.it	http://www.playadelcarmen84.it/	0101000020E61000006ACF76966ABF2840B0F5566E731E4640				3	t	2014-07-02 18:00:00-04	2014-07-04 06:10:37.379361-04
 12907	Bagno Giardino	bagno-giardino	72/73	arenile demaniale 72/73	info@bagnogiardino.it	http://www.bagnogiardino.it/it/	0101000020E6100000E17BEC1F25C028409F367A9A2B1E4640	<h3>Details</h3>\r\n\t<p>wc: 6<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 40<br />\r\n\tdocce chiuse: 3<br />\r\n\tsuperficie complessiva spiaggia: 4140<br />\r\n\tdocce aperte: 4</p>	<h3>Details</h3>\r\n\t<p>wc: 6<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 40<br />\r\n\tdocce chiuse: 3<br />\r\n\tsuperficie complessiva spiaggia: 4140<br />\r\n\tdocce aperte: 4</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:17:12.388998-04
 12911	Bagno Jolly	bagno-jolly	79	Arenile Demaniale 79	info@bagnojolly.it		0101000020E61000009C2CBD4FB8BF284069FBBA80551E4640	<h3>Details</h3>\r\n\t<p>wc: 5<br />\r\n\tfronte mare: 39<br />\r\n\tdocce aperte: 3<br />\r\n\tdocce chiuse: 2</p>	<h3>Details</h3>\r\n\t<p>wc: 5<br />\r\n\tfronte mare: 39<br />\r\n\tdocce aperte: 3<br />\r\n\tdocce chiuse: 2</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:15:34.305146-04
 12903	Bagno Oasi	bagno-oasi	67	Arenile demaniale 67	eneacom@tin.it		0101000020E610000013D932D972C02840583CDEAC0D1E4640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1000<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1000<br />\r\n\tfronte mare: 20<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>		3	t	2014-07-02 18:00:00-04	2014-07-04 06:19:07.816626-04
@@ -14205,7 +14220,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13182	Bagno La Cueva	la-cueva	8	Via Spiaggia, 8			0101000020E610000000000058328A2840D134E3C947664640		\N	\N	14	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13164	Bagno Eden	eden-2	53	Via Spiaggia, 53	valerianomartini@alice.it		0101000020E6100000000000B862812840428C2C77D8524640	 	 		13	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13148	Bagno Honolulu	honolulu	36	Via Spiaggia, 36			0101000020E6100000FFFFFFC3C17F28407B4E26F71A544640	None	None	None	13	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13125	Bagno Mexico	mexico	31	Lungomare Canarie, 3	Info@bagnomexico.com	www.bagnomexico.com	0101000020E610000000000070647C2840C903BB0A755E4640		\N	\N	11	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13183	Bagno Ristoro	ristoro	9	Via Lungomare del Parco, 5	contatti@bagnoristoro.it	www.bagnoristoro.it	0101000020E610000000000058F78828405E519DDD23664640		\N	\N	14	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13184	Bagno Schiuma	schiuma-2	10	Via Lungomare del Parco, 7	bagnoschiuma1983@libero.it		0101000020E6100000000000589D88284054DD282C09664640		\N	\N	14	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13186	Bagno Azzurra	azzurra	12	Via Lungomare del Parco, 11	bagno.azzurra@gmail.com		0101000020E6100000000000304D882840BDF4CCF9EF654640		\N	\N	14	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14233,6 +14247,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13204	Bagno Nettuno	nettuno-2	75	Piazza 5 Maggio		www.bagnonettuno.com	0101000020E6100000000000C4107C2840E2BF57ECD6564640		\N	\N	15	t	2014-07-02 18:00:00-04	2014-07-04 05:49:02.821289-04
 13192	Bagno Ippopotamus	ippopotamus	62	Via dei Mille, 42			0101000020E61000000000006C3C7B2840CCBEB5A694574640		\N	\N	15	t	2014-07-02 18:00:00-04	2014-07-04 05:49:03.191239-04
 13208	Bagno Due stelle	due-stelle	80	Piazzale Medaglie d'Oro D.L. Nav., 3		www.paginegialle.it/ristoranteduestelle	0101000020E6100000000000B8A37C2840583DF36CAB564640		\N	\N	15	t	2014-07-02 18:00:00-04	2014-07-04 05:49:05.187938-04
+13125	Bagno Mexico	mexico	31	Lungomare Canarie, 3		http://www.bagnomexico.com/	0101000020E610000001000070647C2840C603BB0A755E4640				11	t	2014-07-02 18:00:00-04	2014-07-08 10:26:19.4661-04
 13215	Bagno Conchiglia	bagno-conchiglia		Via al Mare, 8	conchiglia08@gmail.com		0101000020E610000079B29B19FD902840CCEF3499F1464640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\twc disabili: 1<br />\n\tlettini: 200<br />\n\tcabine: 5<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\twc disabili: 1<br />\n\tlettini: 200<br />\n\tcabine: 5<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>	\N	16	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13217	Bagno Molo	bagno-molo		Via Casalborsetti, 199			0101000020E610000062BEBC00FB90284035B39602D2464640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 4<br />\n\twc: 4<br />\n\tombrelloni: 96<br />\n\twc disabili: 1<br />\n\tlettini: 350<br />\n\tcabine: 7<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 4<br />\n\twc: 4<br />\n\tombrelloni: 96<br />\n\twc disabili: 1<br />\n\tlettini: 350<br />\n\tcabine: 7<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 2</p>	\N	16	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13218	Bagno Oasi	bagno-oasi-2		Via Leggero, 12			0101000020E61000007E52EDD3F1902840DF313CF6B3464640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\twc disabili: 2<br />\n\tlettini: 250<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\twc disabili: 2<br />\n\tlettini: 250<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>	\N	16	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14504,13 +14519,13 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13493	Bagno Luca & Dea	luca-dea	85/A sud	Lungomare Di Vittorio	info@lucaedea.it	http://www.lucaedea.it	0101000020E61000001DC076BE0C352940DD499FB18A064640	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti corsi di ginnastica\r\n- tornei delle varie attività</p>	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti corsi di ginnastica\r\n- tornei delle varie attività</p>	\N	26	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13110	Bagno Pinguino	pinguino	57	Via San Daniele, 3	bagno57pinguino@libero.it		0101000020E610000000000064AE7A2840585DC22B345A4640		\N	\N	10	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13105	Bagno Mattia	mattia	53	Via Mare Jonio	sarabonazza@libero.it		0101000020E6100000000000487F7A28403CB5C619B35A4640		\N	\N	10	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13465	Bagno Paolo e Fabio	paolo-e-fabio	55 sud	Lungomare Murri	info@bagno55rimini.com	http://www.bagno55rimini.com	0101000020E6100000822FC1B3812F2940A1DF5229D1074640	<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti  campi sportivi illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n- 2 vasche idromassaggio (6 e 10 posti) a pagamento - 3 € per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori sono a disposizione per dare lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>	<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti  campi sportivi illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n- 2 vasche idromassaggio (6 e 10 posti) a pagamento - 3 € per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori sono a disposizione per dare lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13553	Bagno Mario	mario	147 sud	Lungomare Spadazzi		http://www.spiaggeoasi.it/scheda.html?id=1470&loc=rimini	0101000020E61000004D40326E81402940BF7A81FEE7034640	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 200</p>	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 200</p>	\N	29	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13547	Bagno Dino	dino-2	140 sud	Lungomare Spadazzi		http://www.spiaggeoasi.it/scheda.html?id=1400&loc=rimini	0101000020E6100000E4F31852363F29404BB7802B34044640	<h3>Details</h3>\n\t<p>cabine: 38<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti tornei di bocce</p>	<h3>Details</h3>\n\t<p>cabine: 38<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti tornei di bocce</p>	\N	29	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13253	Bagno Bango Mama Rumba	bango-mama-rumba		Via Guerra Teseo, 8	jeffyele@hotmail.com		0101000020E61000003C1570CFF38F284088F2052D24404640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 30<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\twc disabili: 1<br />\n\tlettini: 250<br />\n\tcabine: 10<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 30<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\twc disabili: 1<br />\n\tlettini: 250<br />\n\tcabine: 10<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 2</p>	\N	18	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13533	Bagno Silvano	silvano	123 sud		bagno.silvano123@email.it	http://www.bagnosilvano123.it	0101000020E61000009DCC6D32123C2940C225112BED044640	<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 150</p>	<h3>Details</h3>\n\t<p>cabine: 40<br />\n\tombrelloni: 150</p>	\N	28	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13502	Bagno Luciano	luciano-3	92 sud				0101000020E6100000860C90DA57362940510DA0843E064640	\n<p>Servizi offerti tornei delle varie attività</p>	\n<p>Servizi offerti tornei delle varie attività</p>	\N	26	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13428	Bagno Romeo	romeo	18 sud				0101000020E61000007F52F28CAB282940F1B105CE63094640	<p>cabine: 83<br />\r\nombrelloni: 220</p>\r\n<p>Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilità ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>	<p>cabine: 83<br />\r\nombrelloni: 220</p>\r\n<p>Bagnino ECOLOGICO - partecipa al progetto sulla gestione eco-compatibile di un stabilimento balneare, secondo i principi dello sviluppo sostenibile: ridurre i consumi energetici, contenere i consumi idrici, aumentare la sensibilità ambientale dei turisti e degli operatori, rifiuti recuperabili, ecc.</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:37.501014-04
+13465	Bagno Paolo e Fabio	paolo-e-fabio	55 sud	Lungomare Murri		http://www.bagno55rimini.com/	0101000020E6100000822FC1B3812F29409EDF5229D1074640	<p>Campi sportivi illuminati,\r\n tornei di beach volley, beach tennis, basket, ping-pong e carte,\r\n2 vasche idromassaggio a pagamento, \r\nescursioni serali, \r\nOmbrelloni effetto ventilato, \r\nPet friendly, \r\nNordic walking</p>		<p>Campi sportivi illuminati,\r\n tornei di beach volley, beach tennis, basket, ping-pong e carte,\r\n2 vasche idromassaggio a pagamento, \r\nescursioni serali, \r\nOmbrelloni effetto ventilato, \r\nPet friendly, \r\nNordic walking</p>	25	t	2014-07-02 18:00:00-04	2014-07-08 10:28:17.693764-04
 13501	Bagno Massimo	massimo	91 sud	Lungomare Di Vittorio	massimo@bagno91rimini.it	http://www.bagno91rimini.it	0101000020E610000009DD678D283629401C5F7B6649064640	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attività</p>	<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attività</p>	\N	26	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13554	Bagno Luciano	luciano-4	148/148/A sud	Viale Principe di Piemonte	info@bagnoluciano.it	http://www.bagnoluciano.it	0101000020E6100000C96F5ABBB0402940F428A61CDD034640	<h3>Details</h3>\n\t<p>cabine: 41<br />\n\tombrelloni: 213</p>\n<p>Servizi offerti tornei delle varie attività</p>	<h3>Details</h3>\n\t<p>cabine: 41<br />\n\tombrelloni: 213</p>\n<p>Servizi offerti tornei delle varie attività</p>	\N	29	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13548	Bagno Anna	anna	141 sud	Lungomare Spadazzi			0101000020E61000006123419F653F29408065A54929044640	<h3>Details</h3>\n\t<p>cabine: 10</p>\n<p>Servizi offerti tornei di bocce organizzati dall'animazione</p>	<h3>Details</h3>\n\t<p>cabine: 10</p>\n<p>Servizi offerti tornei di bocce organizzati dall'animazione</p>	\N	29	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14519,7 +14534,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13212	Bagno Adriatico	bagno-adriatico-3		Via Leggero, 14/b		http://bagnoadriatico.it/	0101000020E61000003162669FC7902840B260E28FA2464640	<div class="jqDnR" id="idTextPanel" style="margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px; line-height: normal;">\r\n<p style="margin: 0px 0px 10px; padding: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 10px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula mattis placerat. Duis lobortis massa imperdiet quam. Suspendisse potenti. Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Sed libero. Aliquam erat volutpat. Etiam vitae tortor. Morbi vestibulum volutpat enim. Aliquam eu nunc. Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n	<div class="jqDnR" id="idTextPanel" style="margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px; line-height: normal;">\r\n<p style="margin: 0px 0px 10px; padding: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 10px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula mattis placerat. Duis lobortis massa imperdiet quam. Suspendisse potenti. Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Sed libero. Aliquam erat volutpat. Etiam vitae tortor. Morbi vestibulum volutpat enim. Aliquam eu nunc. Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n	<div class="jqDnR" id="idTextPanel" style="margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px; line-height: normal;">\r\n<p style="margin: 0px 0px 10px; padding: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 10px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula mattis placerat. Duis lobortis massa imperdiet quam. Suspendisse potenti. Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Sed libero. Aliquam erat volutpat. Etiam vitae tortor. Morbi vestibulum volutpat enim. Aliquam eu nunc. Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n	16	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12784	Bagno Dallara	bagno-dallara	183	Lungomare Grazia Deledda - arenile demaniale 183	enricobedeschi@alice.it		0101000020E6100000F2F12EE9B8B928402B938E30D4204640	 	 		1	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13200	Bagno Bufalo Beach	bufalo-beach	70	Via dei Mille, 22			0101000020E61000000000009C937B2840491C342B0E574640				15	t	2014-07-02 18:00:00-04	2014-07-03 03:38:59.628817-04
-13317	Bagno Chaplyn 	bagno-chaplyn	42	Via della Fontana, 78			0101000020E6100000FA2EA99D8B9928404C0A00B7EA374640	\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>	\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>		20	t	2014-07-02 18:00:00-04	2014-07-03 08:44:31.478771-04
 13489	No problem	no-problem	81 sud	Lungomare di Vittorio - Bellariva	info@bagno81rimini.it	http://www.bagno81rimini.it/	0101000020E61000002B02D6894F34294008910C39B6064640	cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attività\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- accesso per i cani - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedalò dell'amore\r\n- noleggio pedalò, canoa	cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attività\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- accesso per i cani - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedalò dell'amore\r\n- noleggio pedalò, canoa		25	t	2014-07-02 18:00:00-04	2014-07-03 08:52:20.34583-04
 13746	Bagno Arancio	bagno-arancio	2	Via C. Colombo	info@bagnoarancio2.it	http://www.bagnoarancio2.it/	0101000020E6100000EA34D3C0BDE828409F7891B357144640				37	t	2014-07-02 18:00:00-04	2014-07-03 12:53:16.965342-04
 13762	Bagno 21	bagno-21	21	Via C. Colombo	info@bagno21.com	http://www.bagno21.com/	0101000020E6100000891879D021EC2840DF80E285A5134640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:06:08.575911-04
@@ -14571,7 +14585,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12835	Bagno Malusi Enzo	bagno-malusi-enzo	258	Viale Enrico Toti - arenile demaniale 258	info@bagnoenzomalusi.com	http://www.bagnoenzomalusi.com/	0101000020E61000008B895B72CDB528408049850C3F234640	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3473<br />\r\n\tfronte mare: 33<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5<br />\r\n\tdocce chiuse: 5</p>	<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 3473<br />\r\n\tfronte mare: 33<br />\r\n\tdocce aperte: 3<br />\r\n\twc: 5<br />\r\n\tdocce chiuse: 5</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:31:05.641372-04
 12828	Bagno Giuliano	bagno-giuliano	247	Viale Amilcare Ponchielli - arenile demaniale 247	bagnogiuliano@bagnogiuliano.com	http://www.bagnogiuliano.com/	0101000020E6100000C3D48CC854B62840D51AEF33D3224640	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 20<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2305<br />\r\n\tdocce aperte: 4</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 3<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 20<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2305<br />\r\n\tdocce aperte: 4</p>		2	t	2014-07-02 18:00:00-04	2014-07-04 09:34:55.770966-04
 12946	Bagno Bianconero	bagno-bianconero-7-8-9	7/8/9	Arenile demaniale 7/8/9	info@bianconerobeach.it	http://www.bianconerobeach.it/	0101000020E61000008D13366EF7C32840D8A790E9D81C4640	<h3>Details</h3>\r\n\t<p>lavapiedi: 4<br />\r\n\twc: 6<br />\r\n\tombrelloni: 275<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 86<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5000<br />\r\n\tdocce aperte: 5</p>	<h3>Details</h3>\r\n\t<p>lavapiedi: 4<br />\r\n\twc: 6<br />\r\n\tombrelloni: 275<br />\r\n\twc disabili: 2<br />\r\n\tfronte mare: 86<br />\r\n\tdocce chiuse: 2<br />\r\n\tsuperficie complessiva spiaggia: 5000<br />\r\n\tdocce aperte: 5</p>		4	t	2014-07-02 18:00:00-04	2014-07-05 11:00:03.593692-04
-13698	La Spiaggia delle Donne Zona 97	la-spiaggia-delle-donne	97	Lungomare della Costituzione Zona 97		http://www.laspiaggiadelledonne.it/	0101000020E6100000DC8E8D248D4E294042C61A612B014640	Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i più piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In più corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.	None	Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i più piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In più corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.	36	t	2014-07-02 18:00:00-04	2014-07-07 01:23:40.441971-04
 13436	Bagno 27	bagno-27	27 sud	Lungomare Tintori - zona Piazza Kennedy	info@bagno27.it	http://www.bagno27.it/	0101000020E6100000E0FD5B43552A2940CFD14FDD01094640	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di bocce www.comitatobagninirimini.it  \r\n	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 130</p>\r\n<p>Associazione consorzio marina riminese-confesercenti Servizi offerti scacchiera gigante - vengono organizzati tornei di scacchi ed anche di bocce www.comitatobagninirimini.it  \r\n		25	t	2014-07-02 18:00:00-04	2014-07-07 08:28:47.357215-04
 13463	Bagno Antonio	antonio	53 sud	Lungomare Murri	info@zona53rimini.it	http://www.zona53rimini.it/	0101000020E610000089D07019232F2940378309EDE6074640	\r\n<p>Servizi offerti biliardino\r\n- piccola palestra</p>	\r\n<p>Servizi offerti biliardino\r\n- piccola palestra</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 08:39:08.77065-04
 13484	Bagno Bulli Massimo	bulli-massimo	75 sud	Lungomare Di Vittorio	beach@bulli.it	http://www.bulli.it/	0101000020E61000003FE5E4BA33332940C97B3084F7064640	<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei di beach volley</p>	<h3>Details</h3>\r\n\t<p>cabine: 50<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei di beach volley</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 08:48:02.992416-04
@@ -14579,6 +14592,10 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13426	Bagno Giorgio	giorgio	16 sud	Giorgio Neri			0101000020E610000085F3A1F24C2829408655BC9179094640	<h3>Details</h3>\r\n\t<p>ombrelloni: 266</p>	<h3>Details</h3>\r\n\t<p>ombrelloni: 266</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:03:49.545742-04
 13418	Bagno Luciano	luciano	8	Lungomare Tintori	magob8@libero.it	http://www.velarimini.it/	0101000020E6100000A0776089D2262940DDE396A0D0094640	<h3>Details</h3>\r\n\r\n<p>cabine: 10<br />\r\nombrelloni: 150</p>\r\n\r\n<p>Servizi offerti c/o lo stabilimento si trova un centro nautico con possibilit&agrave; di noleggiare barche, gommoni e moto d&#39;acqua e scuola vela.</p>\r\n	<h3>Details</h3>\r\n\r\n<p>cabine: 10<br />\r\nombrelloni: 150</p>\r\n\r\n<p>Servizi offerti c/o lo stabilimento si trova un centro nautico con possibilit&agrave; di noleggiare barche, gommoni e moto d&#39;acqua e scuola vela.</p>\r\n		25	t	2014-07-02 18:00:00-04	2014-07-07 09:16:06.663-04
 13412	Bagno Spiaggia Grand Hotel	spiaggia-grand-hotel		lungomare tintori	info@grandhotelrimini.com	http://www.grandhotelrimini.it/	0101000020E6100000C7F484251E28294056664AEB6F094640	<p>11000 mq attrezzati con 7 file di ombrelloni a grande distanza gli uni dagli altri per garantire la privacy. Casseforti, teli mare e servizio bar all’ombrellone sono garantiti durante tutta l’estate, oltre al mini-club nell’area predisposta. \r\nProponiamo servizi beauty and spa, bar e ristorante in riva al mare ed una piscina per bambini . </p>	<p>11000 mq attrezzati con 7 file di ombrelloni a grande distanza gli uni dagli altri per garantire la privacy. Casseforti, teli mare e servizio bar all’ombrellone sono garantiti durante tutta l’estate, oltre al mini-club nell’area predisposta. \r\nProponiamo servizi beauty and spa, bar e ristorante in riva al mare ed una piscina per bambini . </p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:45:53.651759-04
+13317	Bagno Chaplyn 	bagno-chaplyn	42	Via della Fontana, 78			0101000020E6100000FA2EA99D8B992840490A00B7EA374640	\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>	\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>	\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>	20	t	2014-07-02 18:00:00-04	2014-07-08 10:14:36.907099-04
+13698	La Spiaggia delle Donne Zona 97	la-spiaggia-delle-donne	97	Lungomare della Costituzione Zona 97		http://www.laspiaggiadelledonne.it/	0101000020E6100000DC8E8D248D4E294042C61A612B014640	Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i più piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In più corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.		Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i più piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In più corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.	36	t	2014-07-02 18:00:00-04	2014-07-08 10:15:48.16483-04
+13580	Bagno Egisto	egisto	38 nord	Via Dati 113 h		http://www.bagnoegisto38.com/	0101000020E6100000E87C254EF61029400CD373E2DD0B4640	Balli latini americani e aquagym\r\nArea benessere con lettini massaggianti (a pagamento)\r\nPet friendly: ciotole, sacchetti, doccia dedicata e veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti attrezzati limitati: prenotateli.\r\nDal 2009 aderiamo al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.		Balli latini americani e aquagym\r\nArea benessere con lettini massaggianti (a pagamento)\r\nPet friendly: ciotole, sacchetti, doccia dedicata e veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti attrezzati limitati: prenotateli.\r\nDal 2009 aderiamo al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.	32	t	2014-07-02 18:00:00-04	2014-07-08 10:25:35.216118-04
+12915	Bagno Playa del Carmen	bagno-playa-del-carmen	84	Arenile Demaniale 84		http://www.playadelcarmen84.it/	0101000020E610000070CF76966ABF2840B0F5566E731E4640	Playa del Carmen 84... piccolo, caldo, verde, elegante, artistico, sportivo.... Cucina di classe ma non eccessiva, aperitivi carichi e con Live Bands every Sunday, animazione per i più piccoli, Sport set sui due campi professionali e tutta l'energia e il divertimento che un bagno al mare può e deve offrire!! come onnnn!!		Playa del Carmen 84... piccolo, caldo, verde, elegante, artistico, sportivo.... Cucina di classe ma non eccessiva, aperitivi carichi e con Live Bands every Sunday, animazione per i più piccoli, Sport set sui due campi professionali e tutta l'energia e il divertimento che un bagno al mare può e deve offrire!! come onnnn!!	3	t	2014-07-02 18:00:00-04	2014-07-08 16:32:31.683813-04
 \.
 
 
@@ -15094,8 +15111,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22004	13123	69
 22005	13124	68
 22006	13124	69
-22007	13125	68
-22008	13125	69
 22009	13126	68
 22010	13126	69
 22011	13127	68
@@ -15704,8 +15719,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22682	13462	69
 22685	13464	68
 22686	13464	69
-22687	13465	68
-22688	13465	69
 22689	13466	68
 22690	13466	69
 22693	13468	68
@@ -15868,8 +15881,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 22914	13578	69
 22915	13579	68
 22916	13579	69
-22917	13580	68
-22918	13580	69
 22919	13581	68
 22920	13581	69
 22921	13582	68
@@ -15960,8 +15971,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23008	13625	69
 23835	13459	68
 23836	13459	69
-23011	13627	68
-23012	13627	69
 23013	13628	68
 23014	13628	69
 23015	13629	68
@@ -16176,8 +16185,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23228	13735	69
 23229	13736	68
 23230	13736	69
-23231	13737	68
-23232	13737	69
 23233	13738	68
 23234	13738	69
 23235	13739	68
@@ -16408,8 +16415,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23555	12784	69
 23556	12783	68
 23557	12783	69
-23558	12782	68
-23559	12782	69
 23560	12781	68
 23561	12781	69
 23562	12779	68
@@ -16464,8 +16469,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23613	13755	69
 23614	13779	68
 23615	13779	69
-23616	13798	68
-23617	13798	69
 23618	13793	68
 23619	13793	69
 23620	13758	68
@@ -16512,8 +16515,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23667	12918	69
 23668	12916	68
 23669	12916	69
-23670	12915	68
-23671	12915	69
 23674	12911	68
 23675	12911	69
 23676	12907	68
@@ -16752,16 +16753,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 80590	12770	2195
 91265	13467	2205
 91266	13467	2254
-91376	13507	2278
-91377	13507	2279
-91378	13507	2283
-91379	13507	2285
-91380	13507	2287
-91381	13507	2289
-91382	13507	2293
-91383	13507	2296
-91384	13507	2298
-91385	13507	2299
 91456	13517	2181
 91457	13517	2186
 80605	12772	2202
@@ -16872,6 +16863,25 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91392	13557	2230
 91393	13557	2255
 91394	13557	2198
+91638	13317	2210
+91639	13317	2180
+91640	13317	2181
+91641	13317	2248
+91642	13317	2217
+91643	13317	2187
+91644	13317	2189
+91645	13317	2221
+91646	13317	2195
+91647	13317	2230
+91648	13317	2233
+91649	13317	2264
+91650	13317	2265
+91651	13317	2266
+91652	13317	2267
+91653	13317	2204
+91654	13317	2205
+91655	13317	2263
+91656	13317	2239
 80788	12785	2211
 80789	12785	2204
 80790	12785	2221
@@ -16981,6 +16991,76 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91475	13508	2254
 91476	13508	2231
 91477	13508	2205
+91657	13507	2179
+91658	13507	2180
+91659	13507	2181
+91660	13507	2183
+91661	13507	2184
+91662	13507	2185
+91663	13507	2186
+91664	13507	2187
+91665	13507	2188
+91666	13507	2189
+91667	13507	2191
+91668	13507	2192
+91669	13507	2193
+91670	13507	2194
+91671	13507	2195
+91672	13507	2196
+91673	13507	2197
+91674	13507	2201
+91675	13507	2204
+91676	13507	2205
+91677	13507	2209
+91678	13507	2210
+91679	13507	2211
+91680	13507	2212
+91681	13507	2214
+91682	13507	2215
+91683	13507	2219
+91684	13507	2220
+91685	13507	2223
+91686	13507	2224
+91687	13507	2226
+91688	13507	2230
+91689	13507	2231
+91690	13507	2232
+91691	13507	2234
+91692	13507	2241
+91693	13507	2243
+91694	13507	2246
+91695	13507	2247
+91696	13507	2253
+91697	13507	2254
+91698	13507	2255
+91699	13507	2258
+91700	13507	2259
+91701	13507	2261
+91702	13507	2272
+91703	13507	2275
+91704	13507	2278
+91705	13507	2279
+91706	13507	2283
+91707	13507	2285
+91708	13507	2287
+91709	13507	2289
+91710	13507	2293
+91711	13507	2296
+91712	13507	2298
+91713	13507	2299
+91882	13798	2180
+91883	13798	2278
+91884	13798	2184
+91885	13798	2187
+91886	13798	2199
+91887	13798	2253
+91888	13798	2254
+91889	13798	2223
+91890	13798	2230
+91891	13798	2231
+91892	13798	2202
+91893	13798	2236
+91894	13798	2206
 81102	12816	2183
 81103	12816	2202
 81104	12816	2179
@@ -17180,6 +17260,29 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91479	13516	2225
 91480	13516	2180
 91481	13516	2205
+91714	13438	2180
+91715	13438	2181
+91716	13438	2184
+91717	13438	2187
+91718	13438	2189
+91719	13438	2193
+91720	13438	2194
+91721	13438	2195
+91722	13438	2205
+91723	13438	2206
+91724	13438	2209
+91725	13438	2214
+91726	13438	2215
+91727	13438	2219
+91728	13438	2235
+91729	13438	2247
+91730	13438	2253
+91731	13438	2254
+91732	13438	2255
+91733	13438	2258
+91734	13438	2269
+91735	13438	2273
+91736	13438	2274
 90813	12854	2179
 90814	12854	2180
 90815	12854	2181
@@ -17267,6 +17370,16 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91482	13514	2184
 91483	13514	2181
 91484	13514	2189
+91737	13698	2179
+91738	13698	2180
+91739	13698	2183
+91740	13698	2184
+91741	13698	2187
+91742	13698	2189
+91743	13698	2194
+91744	13698	2206
+91745	13698	2209
+91746	13698	2210
 81625	12878	2183
 81626	12878	2202
 81627	12878	2190
@@ -17290,6 +17403,22 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 81645	12880	2187
 81646	12880	2179
 81647	12880	2199
+91747	13698	2214
+91748	13698	2215
+91749	13698	2219
+91750	13698	2222
+91751	13698	2226
+91752	13698	2230
+91753	13698	2231
+91754	13698	2236
+91755	13698	2243
+91756	13698	2253
+91757	13698	2255
+91758	13698	2258
+91759	13698	2261
+91760	13698	2273
+91761	13698	2274
+91762	13698	2289
 81681	12883	2190
 81682	12883	2204
 81683	12883	2205
@@ -17421,6 +17550,15 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 81829	12898	2185
 81830	12898	2184
 81831	12898	2180
+91763	13580	2180
+91764	13580	2217
+91765	13580	2187
+91766	13580	2227
+91767	13580	2197
+91768	13580	2230
+91769	13580	2195
+91770	13580	2296
+91771	13580	2295
 81859	12901	2200
 81860	12901	2190
 81861	12901	2204
@@ -17585,6 +17723,13 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 82094	12923	2180
 82095	12923	2189
 82096	12923	2195
+91772	13125	2209
+91773	13125	2179
+91774	13125	2180
+91775	13125	2181
+91776	13125	2215
+91777	13125	2184
+91778	13125	2217
 82111	12926	2219
 82112	12926	2183
 82113	12926	2182
@@ -17614,6 +17759,16 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 82137	12928	2204
 82138	12928	2219
 82139	12928	2183
+91779	13125	2186
+91780	13125	2190
+91781	13125	2192
+91782	13125	2257
+91783	13125	2258
+91784	13125	2195
+91785	13125	2228
+91786	13125	2198
+91787	13125	2212
+91788	13125	2230
 82140	12928	2181
 82141	12928	2180
 82142	12928	2187
@@ -17692,6 +17847,57 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 82256	12935	2199
 82257	12935	2179
 82258	12935	2205
+91789	13724	2180
+91790	13724	2181
+91791	13724	2183
+91792	13724	2184
+91793	13724	2186
+91794	13724	2187
+91795	13724	2189
+91796	13724	2194
+91797	13724	2195
+91798	13724	2197
+91799	13724	2199
+91800	13724	2205
+91801	13724	2209
+91802	13724	2211
+91803	13724	2212
+91804	13724	2215
+91805	13724	2217
+91806	13724	2219
+91807	13724	2223
+91808	13724	2231
+91809	13724	2243
+91810	13724	2247
+91811	13724	2248
+91812	13724	2253
+91813	13724	2254
+91814	13724	2255
+91815	13724	2278
+92003	12915	2179
+92004	12915	2180
+92005	12915	2181
+92006	12915	2183
+92007	12915	2184
+92008	12915	2185
+92009	12915	2187
+92010	12915	2188
+92011	12915	2189
+92012	12915	2193
+92013	12915	2195
+92014	12915	2197
+92015	12915	2199
+92016	12915	2201
+92017	12915	2204
+92018	12915	2207
+92019	12915	2208
+92020	12915	2209
+92021	12915	2210
+92022	12915	2211
+92023	12915	2212
+92024	12915	2213
+92025	12915	2215
+92026	12915	2219
 82318	12940	2204
 82319	12940	2219
 82320	12940	2183
@@ -17702,6 +17908,22 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 82325	12940	2185
 82326	12940	2189
 82327	12940	2179
+92027	12915	2220
+92028	12915	2221
+92029	12915	2222
+92030	12915	2230
+92031	12915	2231
+92032	12915	2233
+92033	12915	2236
+92034	12915	2243
+92035	12915	2244
+92036	12915	2249
+92037	12915	2253
+92038	12915	2254
+92039	12915	2258
+92040	12915	2261
+92041	12915	2263
+92042	12915	2264
 90858	12840	2219
 90859	12840	2180
 90860	12840	2183
@@ -17711,26 +17933,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90864	12840	2179
 90865	12840	2200
 90866	12840	2202
-91141	13698	2179
-91142	13698	2180
-91143	13698	2183
-91144	13698	2184
-91145	13698	2187
-91146	13698	2189
-91147	13698	2194
-91148	13698	2206
-91149	13698	2209
-91150	13698	2210
-91151	13698	2214
-91152	13698	2215
-91153	13698	2219
-91154	13698	2222
-91155	13698	2226
-91156	13698	2230
-91157	13698	2231
-91158	13698	2236
-91159	13698	2243
-91160	13698	2253
 82464	12952	2210
 82465	12952	2226
 82466	12952	2230
@@ -17798,12 +18000,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 82528	12957	2186
 82529	12957	2185
 82530	12957	2189
-91161	13698	2255
-91162	13698	2258
-91163	13698	2261
-91164	13698	2273
-91165	13698	2274
-91166	13698	2289
 91235	13427	2274
 91236	13427	2195
 82539	12959	2210
@@ -17829,6 +18025,26 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91428	13577	2255
 91429	13577	2226
 91430	13577	2195
+91816	13465	2186
+91817	13465	2187
+91818	13465	2189
+91819	13465	2195
+91820	13465	2197
+91821	13465	2237
+92043	12915	2266
+92044	12915	2268
+92045	12915	2269
+92046	12915	2271
+92047	12915	2273
+92048	12915	2274
+92049	12915	2275
+92050	12915	2278
+92051	12915	2281
+92052	12915	2286
+92053	12915	2289
+92054	12915	2290
+92055	12915	2291
+92056	12915	2293
 82548	12960	2194
 82549	12960	2186
 82550	12960	2185
@@ -18572,11 +18788,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91434	13511	2230
 91435	13511	2231
 91436	13511	2296
-91579	13438	2180
-91580	13438	2181
-91581	13438	2184
-91582	13438	2187
-91583	13438	2189
 83303	13045	2189
 83304	13045	2210
 83305	13045	2180
@@ -18592,18 +18803,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 83315	13046	2199
 83316	13046	2187
 83317	13046	2189
-91584	13438	2193
-91585	13438	2194
-91586	13438	2195
-91587	13438	2205
-91588	13438	2206
-91589	13438	2209
-91590	13438	2214
-91591	13438	2215
-91592	13438	2219
-91593	13438	2235
-91594	13438	2247
-91595	13438	2253
 83330	13048	2210
 83331	13048	2214
 83332	13048	2209
@@ -19506,23 +19705,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 84233	13124	2198
 84234	13124	2179
 84235	13124	2186
-84236	13125	2212
-84237	13125	2217
-84238	13125	2228
-84239	13125	2215
-84240	13125	2230
-84241	13125	2184
-84242	13125	2181
-84243	13125	2190
-84244	13125	2257
-84245	13125	2192
-84246	13125	2180
-84247	13125	2195
-84248	13125	2186
-84249	13125	2209
-84250	13125	2198
-84251	13125	2179
-84252	13125	2258
 84253	13126	2203
 84254	13126	2217
 84255	13126	2215
@@ -20001,11 +20183,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91248	13428	2230
 91442	13513	2195
 91443	13513	2197
-91596	13438	2254
-91597	13438	2255
-91598	13438	2258
-91599	13438	2269
-91600	13438	2273
 84740	13165	2210
 84741	13165	2228
 84742	13165	2209
@@ -20026,7 +20203,13 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 84757	13166	2184
 84758	13166	2257
 84759	13166	2258
-91601	13438	2274
+91822	12782	2210
+91823	12782	2180
+91824	12782	2181
+91825	12782	2182
+91826	12782	2183
+91827	12782	2184
+91828	12782	2185
 84768	13168	2210
 84769	13168	2215
 84770	13168	2209
@@ -20051,6 +20234,12 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 84789	13169	2184
 84790	13170	2212
 84791	13170	2210
+91829	12782	2186
+91830	12782	2187
+91831	12782	2190
+91832	12782	2191
+91833	12782	2195
+91834	12782	2196
 84792	13170	2209
 84793	13170	2232
 84794	13170	2192
@@ -22082,12 +22271,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 86980	13464	2198
 86981	13464	2186
 86982	13464	2184
-86983	13465	2237
-86984	13465	2187
-86985	13465	2186
-86986	13465	2197
-86987	13465	2189
-86988	13465	2195
 86989	13466	2189
 86990	13466	2186
 86991	13466	2184
@@ -22322,12 +22505,27 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 87323	13533	2225
 87324	13533	2189
 87325	13533	2184
+91835	13027	2273
+91836	13027	2210
+91837	13027	2243
 87336	13535	2226
 87337	13535	2225
 87338	13535	2237
 87339	13535	2181
 87340	13535	2184
 87341	13535	2189
+91838	13027	2180
+91839	13027	2181
+91840	13027	2215
+91841	13027	2184
+91842	13027	2185
+91843	13027	2186
+91844	13027	2187
+91845	13027	2209
+91846	13027	2274
+91847	13027	2222
+91848	13027	2189
+91849	13027	2224
 87354	13538	2198
 87355	13538	2230
 87356	13538	2225
@@ -22418,6 +22616,12 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 87441	13555	2230
 87442	13555	2195
 87443	13555	2205
+91850	13027	2257
+91851	13027	2195
+91852	13027	2219
+91853	13027	2198
+91854	13027	2223
+91855	13027	2183
 87444	13555	2296
 87445	13556	2198
 87446	13556	2181
@@ -22502,15 +22706,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 87555	13579	2195
 87556	13579	2186
 87557	13579	2184
-87558	13580	2217
-87559	13580	2227
-87560	13580	2197
-87561	13580	2296
-87562	13580	2295
-87563	13580	2180
-87564	13580	2187
-87565	13580	2195
-87566	13580	2230
 87567	13581	2231
 87568	13581	2217
 87569	13581	2205
@@ -23030,12 +23225,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91197	13474	2198
 91198	13474	2231
 91259	13418	2200
-91329	13507	2179
-91330	13507	2180
-91331	13507	2181
-91332	13507	2183
-91333	13507	2184
-91334	13507	2185
 90133	13489	2243
 90134	13489	2180
 90135	13489	2181
@@ -23062,7 +23251,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 90209	12899	2199
 90210	12899	2202
 90211	12899	2204
-91335	13507	2186
 90338	12931	2187
 90339	12931	2180
 90340	12931	2181
@@ -23268,19 +23456,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 89690	12808	2199
 89691	12808	2201
 89692	12808	2204
-89855	12782	2210
-89856	12782	2180
-89857	12782	2181
-89858	12782	2182
-89859	12782	2183
-89860	12782	2184
-89861	12782	2185
-89862	12782	2186
-89863	12782	2187
-89864	12782	2190
-89865	12782	2191
-89866	12782	2195
-89867	12782	2196
 89963	12769	2179
 89964	12769	2180
 89965	12769	2181
@@ -23633,73 +23808,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91262	13487	2181
 91263	13487	2254
 91264	13487	2231
-91336	13507	2187
-91337	13507	2188
-91338	13507	2189
-91339	13507	2191
-91340	13507	2192
-91341	13507	2193
-91342	13507	2194
-91343	13507	2195
-91344	13507	2196
-91345	13507	2197
-91346	13507	2201
-91347	13507	2204
-91348	13507	2205
-91349	13507	2209
-91350	13507	2210
-91351	13507	2211
-91352	13507	2212
-91353	13507	2214
-91354	13507	2215
-91355	13507	2219
-91356	13507	2220
-91357	13507	2223
-91358	13507	2224
-91359	13507	2226
-91360	13507	2230
-91361	13507	2231
-91362	13507	2232
-91363	13507	2234
-91364	13507	2241
-91365	13507	2243
-91366	13507	2246
-91367	13507	2247
-91368	13507	2253
-91369	13507	2254
-91370	13507	2255
-91371	13507	2258
-91372	13507	2259
-91373	13507	2261
-91374	13507	2272
-91375	13507	2275
-89018	13724	2180
-89019	13724	2181
-89020	13724	2183
-89021	13724	2184
-89022	13724	2186
-89023	13724	2187
-89024	13724	2189
-89025	13724	2194
-89026	13724	2195
-89027	13724	2197
-89028	13724	2199
-89029	13724	2205
-89030	13724	2209
-89031	13724	2211
-89032	13724	2212
-89033	13724	2215
-89034	13724	2217
-89035	13724	2219
-89036	13724	2223
-89037	13724	2231
-89038	13724	2243
-89039	13724	2247
-89040	13724	2248
-89041	13724	2253
-89042	13724	2254
-89043	13724	2255
-89044	13724	2278
 89045	13097	2209
 89046	13097	2179
 89047	13097	2180
@@ -23815,27 +23923,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 89741	12800	2211
 89742	12800	2204
 89743	12800	2207
-89160	13027	2273
-89161	13027	2210
-89162	13027	2243
-89163	13027	2180
-89164	13027	2181
-89165	13027	2215
-89166	13027	2184
-89167	13027	2185
-89168	13027	2186
-89169	13027	2187
-89170	13027	2209
-89171	13027	2274
-89172	13027	2222
-89173	13027	2189
-89174	13027	2224
-89175	13027	2257
-89176	13027	2195
-89177	13027	2219
-89178	13027	2198
-89179	13027	2223
-89180	13027	2183
 89181	13261	2208
 89182	13261	2210
 89183	13261	2211
@@ -23925,25 +24012,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 89991	12763	2183
 89992	12763	2184
 89993	12763	2185
-90104	13317	2210
-90105	13317	2180
-90106	13317	2181
-90107	13317	2248
-90108	13317	2217
-90109	13317	2187
-90110	13317	2189
-90111	13317	2221
-90112	13317	2195
-90113	13317	2230
-90114	13317	2233
-90115	13317	2264
-90116	13317	2265
-90117	13317	2266
-90118	13317	2267
-90119	13317	2204
-90120	13317	2205
-90121	13317	2263
-90122	13317	2239
 90238	12939	2187
 90239	12939	2180
 90240	12939	2181
@@ -23973,7 +24041,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 -- Name: bagni_bagno_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 91601, true);
+SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 92056, true);
 
 
 --
@@ -24011,6 +24079,8 @@ COPY bagni_image (id, name, slug, image, bagno_id, description) FROM stdin;
 10	chaplyn	chaplyn	images/bagni/bagno-chaplyn/chaplyn.JPG	13317	
 11	La Spiaggia delle Donne Riccione	spiaggia-per-cani-riccione	images/bagni/la-spiaggia-delle-donne/spiaggia-per-cani-riccione_1.jpg	13698	
 12	La nostra stella	la-nostra-stella	images/bagni/otello/la-nostra-stella.jpg	13438	
+13	Zona relax	zona-relax	images/bagni/bagno-65/zona-relax.jpg	13798	
+14	Noi!	il-bar	images/bagni/bagno-playa-del-carmen/il-bar_1.jpg	12915	
 \.
 
 
@@ -24018,7 +24088,7 @@ COPY bagni_image (id, name, slug, image, bagno_id, description) FROM stdin;
 -- Name: bagni_image_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_image_id_seq', 12, true);
+SELECT pg_catalog.setval('bagni_image_id_seq', 14, true);
 
 
 --
@@ -24156,10 +24226,8 @@ COPY bagni_service (id, name, slug, free, name_en, name_it, slug_en, slug_it, ca
 2241	pool	pool	t	pool	biliardo	pool	biliardo	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2240	sun terrace	sun-terrace	t	sun terrace	terrazza prendisole	sun-terrace	terrazza-prendisole	36					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2238	beauty treatments	beauty-treatments	t	beauty treatments	trattamenti estetici	beauty-treatments	trattamenti-estetici	37					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-2237	tub	tub	t	tub	idromassaggio	tub	idromassaggio	36					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2233	aperitif	aperitif	t	aperitif	aperitivo	aperitif	aperitivo	33					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2232	swimming pool	swimming-pool	t	swimming pool	piscina	swimming-pool	piscina	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-2231	magazines/journals	magazines-journals	t	magazines/journals	riviste/giornalini	magazines-journals	riviste-giornalini	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2228	evening entertainment	evening-entertainment	t	evening entertainment	animazione serale	evening-entertainment	animazione-serale	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2227	massages	massages	t	massages	massaggi	massages	massaggi	37					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2224	games	games	t	games	giochi di società	games	giochi-di-societa	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -24211,7 +24279,6 @@ COPY bagni_service (id, name, slug, free, name_en, name_it, slug_en, slug_it, ca
 2277	video store	video-store	t	video store	videoteca	video-store	videoteca	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2275	helmet deposit	helmet-deposit	t	helmet deposit	deposito caschi	helmet-deposit	deposito-caschi	32					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2270	mooring	mooring	t	mooring	rimessaggio barche	mooring	rimessaggio-barche	32					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-2269	surf/windsurf cabin	surfwindsurf-cabin	t	surf/windsurf cabin	cabina surf/windsurf	surfwindsurf-cabin	cabina-surfwindsurf	32					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2266	themed dinner	themed-dinner	t	themed dinner	cene a tema	themed-dinner	cene-a-tema	33					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2264	meat barbecue events	meat-barbecue-events	t	meat barbecue events	grigliate di carne	meat-barbecue-events	grigliate-di-carne	33					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2263	fish barbecue events	fish-barbecue-events	t	fish barbecue events	grigliate di pesce	fish-barbecue-events	grigliate-di-pesce	33					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -24241,11 +24308,14 @@ COPY bagni_service (id, name, slug, free, name_en, name_it, slug_en, slug_it, ca
 2286	private functions	private-functions	t	private functions	feste private	private-functions	feste-private	32					available for private functions	available for private functions	con organizzazione feste private	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2279	cards table	cards-table	t	cards table	tavolo da gioco	cards-table	tavolo-da-gioco	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2209	disabled	disabled	t	disabled	disabili	disabled	disabili	34					with disabled access	with disabled access	con servizi accessibili ai disabili	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-2236	sea mattresses	sea-mattresses	t	sea mattresses	canotti/materassini	sea-mattresses	canotti-materassini	31					with sea mattress rental	with sea mattress rental	con noleggio canotti e materassini	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2298	refrigerators	refrigerators	t	refrigerators	frigoriferi	refrigerators	frigoriferi	31					with refrigerator rental	with refrigerator rental	con noleggio frigoriferi	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2262	boat beaching	boat-beaching	t	boat beaching	alaggio barche	boat-beaching	alaggio-barche	32					with boat beaching service	with boat beaching service	con servizio di alaggio barche	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2195	racchettoni	racchettoni	t	beach rackets court	racchettoni	beach-racket-court	racchettoni	29					con campo da racchettoni	with beach racket court	con campo da racchettoni	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 2255	pet friendly	pet-friendly	t	pet friendly	pet friendly	pet-friendly	pet-friendly	34					con accettazione cani e animali domestici (pet friendly)	where dogs are allowed	con accettazione cani e animali domestici (pet friendly)	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
+2237	jacuzzi	jacuzzi	t	jacuzzi	idromassaggio	jacuzzi	idromassaggio	36					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-08 05:58:04.414298-04
+2236	canotti e materassini	canotti-materassini	t	sea mattresses	canotti e materassini	sea-mattresses	canotti-materassini	31					con noleggio canotti e materassini	with sea mattress rental	con noleggio canotti e materassini	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-08 12:11:25.281519-04
+2231	riviste giornalini	riviste-giornalini	t	magazines and journals	riviste giornalini	magazines-journals	riviste-giornalini	30					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-08 12:12:30.656266-04
+2269	cabina surf e windsurf	cabina-surf-windsurf	t	surf windsurf cabin	cabina surf e windsurf	surf-windsurf-cabin	cabina-surf-windsurf	32					\N	\N	\N	\N	\N	\N	2014-07-02 18:00:00-04	2014-07-08 12:14:09.420113-04
 \.
 
 
@@ -24480,8 +24550,6 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 2152	tel	0544 987856	12912	telephone-number-145
 2153	tel	0544 988061	12913	telephone-number-146
 2154	mob	339 3085097 - 334 1224270	12914	mobile-number-21
-2155	tel	0544 987746	12915	telephone-number-147
-2156	mob	392 7928231	12915	mobile-number-22
 2157	tel	0544 987548	12916	telephone-number-148
 2158	mob	335 1415391 - 347 4624446	12917	mobile-number-23
 2159	tel	0544 987996	12918	telephone-number-149
@@ -24557,6 +24625,7 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 2231	tel	0547 82710	12973	telephone-number-201
 2232	fax	0547 82710	12973	fax-number-56
 2233	tel	0547 86284	12974	telephone-number-202
+2156	mob	3663136326	12915	mobile-number-22
 2234	tel	0547 83263	12975	telephone-number-203
 2235	fax	0547 83263	12975	fax-number-57
 2236	tel	0547 672500	12976	telephone-number-204
@@ -25711,7 +25780,6 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 3368	tel	0541 331012	13795	telephone-number-905
 3369	tel	0541 331573	13796	telephone-number-906
 3370	tel	0541 331361	13797	telephone-number-907
-3371	tel	0541 332080	13798	telephone-number-908
 3372	tel	0541 330892	13799	telephone-number-909
 3373	tel	0541 330616	13800	telephone-number-910
 3374	tel	0541 332042	13801	telephone-number-911
@@ -25727,6 +25795,7 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 3397	tel	0541 330231	13824	telephone-number-934
 3378	mob	3925685666	13805	telephone-number-915
 3382	mob	3386645111	13809	telephone-number-919
+3371	mob	3384005808	13798	telephone-number-908
 3398	tel	338 2711706	13825	telephone-number-935
 3422	mob	339/5841447	13438	mob-7
 3423	mob	335/6569691	13438	mob-8
@@ -26167,6 +26236,39 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 611	2014-07-07 10:35:03.942246-04	6	9	13508	Bagno 100 Sole Caliente	2	Changed name and slug.
 612	2014-07-07 10:37:03.050075-04	6	9	13516	Bagno Massimiliano	2	Changed description_en and mail.
 613	2014-07-07 10:50:00.572687-04	6	9	13514	Bagno Maurizio	2	Changed description_en and site.
+614	2014-07-08 03:13:17.621178-04	7	29	8	gestori igea Marina	1	
+615	2014-07-08 03:13:34.077005-04	7	29	9	gestori Milano Marittima	1	
+616	2014-07-08 03:13:48.001115-04	7	29	10	gestori Pinarella	1	
+617	2014-07-08 03:13:59.350982-04	7	29	11	gestori Rivazzurra	1	
+618	2014-07-08 03:14:14.336798-04	7	29	12	gestori Tagliata	1	
+619	2014-07-08 03:14:32.501152-04	7	29	13	gestori Villamrina	1	
+620	2014-07-08 03:16:10.784646-04	7	29	13	gestori Villamarina	2	name modificato/a.
+621	2014-07-08 03:18:55.857654-04	7	33	885	NewsletterSubscription object	3	
+622	2014-07-08 03:18:55.860108-04	7	33	884	NewsletterSubscription object	3	
+623	2014-07-08 03:18:55.861606-04	7	33	883	NewsletterSubscription object	3	
+624	2014-07-08 03:18:55.862809-04	7	33	882	NewsletterSubscription object	3	
+625	2014-07-08 03:18:55.864133-04	7	33	881	NewsletterSubscription object	3	
+626	2014-07-08 03:18:55.865775-04	7	33	880	NewsletterSubscription object	3	
+627	2014-07-08 03:18:55.867293-04	7	33	879	NewsletterSubscription object	3	
+628	2014-07-08 03:18:55.868765-04	7	33	878	NewsletterSubscription object	3	
+629	2014-07-08 03:21:29.223084-04	7	33	899	NewsletterSubscription object	3	
+630	2014-07-08 03:21:29.226495-04	7	33	898	NewsletterSubscription object	3	
+631	2014-07-08 03:21:29.228114-04	7	33	897	NewsletterSubscription object	3	
+632	2014-07-08 03:21:29.229589-04	7	33	896	NewsletterSubscription object	3	
+633	2014-07-08 03:21:29.231094-04	7	33	895	NewsletterSubscription object	3	
+634	2014-07-08 03:21:29.232573-04	7	33	894	NewsletterSubscription object	3	
+635	2014-07-08 03:21:29.234011-04	7	33	893	NewsletterSubscription object	3	
+636	2014-07-08 03:21:29.235458-04	7	33	892	NewsletterSubscription object	3	
+637	2014-07-08 03:39:15.372142-04	7	31	16	Prenotazioni online per il tuo stabilimento balneare	1	
+638	2014-07-08 03:39:56.966241-04	7	31	17	Prenotazioni online per il tuo stabilimento balneare	1	
+639	2014-07-08 03:40:38.115155-04	7	31	18	Prenotazioni online per il tuo stabilimento balneare	1	
+640	2014-07-08 03:41:17.103619-04	7	31	19	Prenotazioni online per il tuo stabilimento balneare	1	
+641	2014-07-08 03:41:55.493141-04	7	31	20	Prenotazioni online per il tuo stabilimento balneare	1	
+642	2014-07-08 03:42:34.859336-04	7	31	21	Prenotazioni online per il tuo stabilimento balneare	1	
+643	2014-07-08 05:58:04.448707-04	6	10	2237	jacuzzi	2	Changed name_en and slug_en.
+644	2014-07-08 12:11:25.28453-04	5	10	2236	canotti e materassini	2	name_it modificato/a.
+645	2014-07-08 12:12:30.658623-04	5	10	2231	riviste giornalini	2	name_en e name_it modificato/a.
+646	2014-07-08 12:14:09.422727-04	5	10	2269	cabina surf e windsurf	2	name_en, name_it, slug_en e slug_it modificato/a.
 \.
 
 
@@ -26174,7 +26276,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 613, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 646, true);
 
 
 --
@@ -26265,6 +26367,7 @@ kvjdv4pgxh8wzp0rm4h9fwiznwjufct8	OTljZjFiZjVjOTU5YWIxMTU4ZWJjMDdlMDk2MTBhOTY3MTY
 11env1qqjsrfqfbr1ou4vt7z9jswcg7y	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-05-12 08:53:44.551299-04
 am5v3nc0bwvzr25jqevjtavi8lhrg3om	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-05-25 13:03:04.556787-04
 5lskdd2s9rg6kwv5ffqacubpoiqsqoss	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-05-12 19:41:26.076653-04
+kysqp1s1ftxt4ksxny57lz72tz7fm958	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-22 12:25:47.32007-04
 u0k40btll9pvm66e777shmk7aeo24kcg	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-05-22 05:15:49.316695-04
 n0z3cbns88y17jalrggfaoxossej206c	MGQ5MjgyZmRiZjZiMjU1NzhmZDEwNzAyMDc4NDk5ZDFiY2QxMjA2OTp7ImFjY291bnRfdXNlciI6OSwiYWNjb3VudF92ZXJpZmllZF9lbWFpbCI6bnVsbH0=	2014-05-22 05:28:23.664885-04
 f0monnxui51rth0x4krmvxg84aey2qmg	NTM5MmU4Yjg0YmJmZjRiN2IxNTA0NjM5MWE4M2UyODMxMzEyYzcxYTp7ImFjY291bnRfdXNlciI6MTAsImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGx9	2014-05-22 05:41:55.9064-04
@@ -26293,25 +26396,28 @@ fp8pbg80gwtgrpuwy8b882rdie4uuexh	NmQxZGY5MzlmY2RkZDM0YjA0ZGM4OTlmMDBiOTE4Njc5MWE
 gvtg851gf5fop1u5m9ysjt8vcvisk71w	ZWZmY2Y4YWI5N2Q3ZTg0NmEwYWY5ZmMzMzM1ODAyMzViNWZlNmMzYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIxLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 15:42:53.655532-04
 vbq74hzxft9bwmp26bk03xyyr30tposk	YzVjYzg5YTgzMzhkMTY0NTE1Yjk2MzNlMjc4NWFlOWY4Mjg2OWVhMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjIyLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-06-24 17:17:06.18968-04
 xwuxp28gh1t1pcqgnq8x2a8begdeq6oy	OWQ4MGRiOTUxOTQxYzU4MjUxOTU0NWIyNTY4ZjE1ZDVmNzczZDA5NDp7Il9zZXNzaW9uX2V4cGlyeSI6MTgxNDQwMCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MjN9	2014-07-02 02:45:26.454091-04
+dl7h807zk7nk8gyszxve8b7pn4tggmey	NjJkNTg2ZDg3NDZhN2ExODdiMDI5MjYzN2M0ZjhiYjlkNGM2ZWQ0Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjMyLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-22 10:36:23.667275-04
 2ee07z4axrlpu00sc1bqr5hmozz8a8d3	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-02 10:45:38.52901-04
 pl4uw34a8jwzlk62e42uxl1624t6qr48	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-04 10:33:04.255362-04
+embajsv7syzix47qnpi5jht8md78p5qn	ZmM3ZWYyYjU4ODI5M2I1N2NkNmVkZWFiYTU5YjUwYzk5YTZkYzEyNTp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-22 15:11:38.843958-04
 dr3wcrtfgwk18qwgjppnzk87gbm4vgtc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-09 12:34:37.017791-04
+j6bym2jvj0y6nty3z577pevag9oicn0i	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-22 15:12:32.143486-04
 izfzwtqi1b2wzhei0s9xt0lfgvgwps1j	OGM0NzNiZjFiMDU5OTQyYjU5YjhkOWQ1OTViOTYzYzNmOWZjYzU3OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI0LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-10 13:01:18.351296-04
+qtuu73ja2fezr2ptlo1qewqmfjkoydkw	YWUxN2Q2NjFjNDI5ODhmNDNkMjVhYjI0ZTY4ZGE5NjdiZmQwZTJlYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjMzLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-22 16:11:36.087269-04
 symdgy4tkc4gz1vyvqush3dgsy5tilow	MWFjOGVkZTMxMzZmMjAzNDUyMTBmZjA2ZTAwYzIzNDcyYmNkZjhiNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-11 11:00:05.594676-04
 ghgmiw1e9qjvrvoa1r26k5848leilb5l	MWFjOGVkZTMxMzZmMjAzNDUyMTBmZjA2ZTAwYzIzNDcyYmNkZjhiNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-11 11:15:16.288738-04
 gq55wd885ziofr4urer56r6lrtnyswqk	ZWQ2ZjI3ZTQ4YmVkNzUxYTdlOTM1ZGUyMGM2OWI0MzA0ODRhZDlkZjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI1LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-11 18:15:29.64807-04
-mytrrvrpb6kcjqu2hwv2m746bceb2dac	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-11 18:18:50.138698-04
 38iky8w1nhzgac80q401y6dziox2ze26	NGYyNjU3NDUwYjhhYjM2MDM0ZDA1YTRiZDAxYjBlZWNlMmZhMGJkMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI2LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-15 07:49:39.071405-04
 atm4w9mnxju0nnnuw07e42t4b5ddyqwc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-16 11:28:30.768053-04
 t7wo8emou5lad5hadyb9yxez6k5fxwvk	ZjMzNTcyOTg1ZjQ1YTNhM2Y5NTY5MTZmNTA0MGNlZGEwNGEyNzdkOTp7ImFjY291bnRfdXNlciI6MjgsIl9zZXNzaW9uX2V4cGlyeSI6MCwiYWNjb3VudF92ZXJpZmllZF9lbWFpbCI6bnVsbH0=	2014-07-16 15:21:53.041523-04
 wzbn0zwco60xa4n4sgd77m2g9dwkwsth	ZDZjMWI2MzcwODU5Y2ZhMmM0ZDQ2ZTRmZTYyYjcyY2UyMmQzNDM5Mzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI3LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-17 03:36:54.597662-04
 qhbor3usg0ia8b003dfdjzwr275fwksd	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-17 05:19:11.334963-04
-fu9maddxpqrjz4f8zlntev7lve2binyq	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-17 12:41:16.32043-04
 dafi453k2kl1wrcnmfrotepqy31d57ir	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-18 10:45:50.753163-04
 qhvvn8zb2q6tam8q3opef06iz9hgozou	ODYyNmVlYmJkZjE0OGVkMzViMjFlMWY1YmVkZGY0YWJlYjMzNzk0NDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI5LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-21 00:53:52.756378-04
 glh68r0dr5js8eimp679q3i3ppu2lup2	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-21 07:44:12.274958-04
-h21z4xjx1taygzgdu1bd6or9bsg95wzw	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-21 09:38:16.414121-04
 synbnpw7y8th24vilpp9uot4hfh8geoa	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-21 15:32:53.794909-04
+xgsi1rwjwdyaus18oiwnbliq42cp65qw	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-22 03:12:36.021245-04
+pljppru60gkoskex7g8vbds62ci5oyb6	Y2RhNTdlZmQyZjJkY2IxOGM4MTBlOTBlZDdmMDM0ODNiNDFiOTFkMTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjMxLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-22 10:00:17.072356-04
 \.
 
 
@@ -26374,6 +26480,12 @@ COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to,
 13	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<strong>Per registrarti basta un minuto:</strong> <a href="http://bagnialmare.com/it/accounts/signup/" target="_blank">bagnialmare.com/it/accounts/signup</a><br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	2	4	nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com	09:13:03.751397	Marketing model C per noi	marketing-model-c-per-noi	4	sent	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 14	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<strong>Per registrarti basta un minuto:</strong> <a href="http://bagnialmare.com/it/accounts/signup/" target="_blank">bagnialmare.com/it/accounts/signup</a><br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	5	4	spinabeach40@hotmail.it; elioparma@virgilio.it; bagno.alsole@tin.it; bagnocarlo65@jumpy.it; beach007@libero.it; info@spiaggia87.it; hedonism@libero.it; spiaggia32riccione@libero.it; info@bagnocostaazzurra.it; info@bagno50.it; parasassi23@hotmail.com; info@bagniazzura.it; info@bagnogogo.it; info@bagnomontecarlo.it; info@bagnosabbiadoro.net; kitsune_e@libero.it; info@bagnosport70.it; ladybeach@live.it; info@bronsonproduzioni.com; bagno.soleluna@libero.it; nerimirco@libero.it; titti66@libero.it; derisbeach@gmail.com; valerianomartini@alice.it; info@vistamaresuite.com; lubro1990@libero.it; info@loretta99.com; info@bagnoclaudia49.it; agenzia.mario@libero.it; bagniroberto@libero.it; info@hotelcrocedelsud.it; info@lidocenter.it; antonio.bezzi@tin.it; bagnovela@inwind.it; info@papayabeachvillage.it; info@spiaggia69riccione.it; bagnovillaggiodelsole@yahoo.it; enea2081@libero.it; bagnokiaorana@yahoo.it; bagnomarte@gmail.com; umberto64@libero.it; info@termepuntamarina.com; info@bagnomarfisa.com; gianni.cinelife@libero.it; info@riccionebeach72.com; bagnogiulia85@libero.it; bagno.azzurra@gmail.com; waikikibeach16@gmail.com; claudio@151riccione.com; info@riccione27.com; info@bagnopomposa.it; bagno94@libero.it; info@bagnopineta.it; info@bagnoromea.com; luminob.luminob@alice.it; info@bagnobianconero.com; info@bagno23.it; capohoornbeach@libero.it; bagnoschiuma1983@libero.it; bagnolescogliere@pec.it; gas21viserba@hotmail.it; bagnokiribati@libero.it; info@tremoschettieri.com; info@lailaiisland.it; gino.farinelli@tiscali.it; info@bagnocapriccio.it; bagnoondablu@live.com; info@bagnovirna.info; bagnoluca@libero.it; cmorgav@tin.it; info@bagnorivaverde.it; bagno57pinguino@libero.it; alberto@alohabeach.it; giorgio@villaceleste.eu; bagno4venti@gmail.com; info@laspiaggiadelcuore.com; clararavaglia@alice.it; faridah@hotmail.it; info@bagnotequila.com; bagnocayoloco@libero.it; info@pinetabeach.it; info@sorayahotel.it; bagnonautilus@gmail.com; info@lidodellesirenericcione.it; info@marinabay.it; info@tortugabeach.it; angelobandini@libero.it; bagnovascello@gmail.it; info@spiaggiadelbenessere.it; info@dolcelucia.com; acapulco.posa@libero.it; bagniprimo@libero.it; betti_roberto@libero.it; greta.pericoli@hotmail.it; info@bagnifabio84riccione.it; info@chiccobeach54.it; info@bagnoaloha.com; info@bagnoristoranteuropa.com; bagnoettore@libero.it; info@bagnokursaal.it; bagnomeridiana@alice.it; info@bagnileo58riccione.it; info@bagnocelli.com; bagnoaurora@tiscalinet.it; info@bagnotaormina.it; info@overbeach.it; andrea35beach@libero.it; roberto.albertarelli@fastwebnet.it; info@maremotobeach.it; info@bagnocesare66.it; info@bagnokelly.com; daniele.patrick@aliceposta.it; ritabilly@live.it; bagnoquarantuno-info@deltawt.it; info@bagnomara.it; info@bahiantigua20.it; info@bagnoparadiso.it; cocoaspiaggia23@gmail.com; info@spiaggia127.it; info@bocabarranca.it; bagnofabio28arimini@inwind.it; fetsabfar@gmail.com; info@bagnoveneziacesenatico.com; info@bagnoesperia.com; bagnoristorante68@libero.it; info@bagnoadria.com; mauro.sap@libero.it; teocommercio@libero.it; bagno-azzurro@libero.it; bagno.chery@libero.it; costaverdehotel@costaverdehotel.it; info@battarraesettimio.it; aguidolin@email.it; info@icamini.org; andrews@7lidiweb.com; info@chaletdelmare.it; bagno.piera@virgilio.it; info@bagnoluna.it; clarissabizzi@libero.it; eziogallina@hotmail.it; info@bagnoobelix.it; hawaybeach@libero.it; andrew-power@libero.it; info@spiaggia61.it; info@sottomarino54.com; massimo@bagno91rimini.it; bagno_mulazzani@hotmail.it; info@bagnosayonara.com; bagni82riccione@alice.it; bagno.giorgio@alice.it; info@spiaggia63.it; hope852@hotmail.it; info@spiaggia86riccione.it; alezona3@alice.it; barbaratassi@alice.it; azzurrospiaggia@alice.it; info@hroyal.it; info@maebabeach.com; stefania.piraccini@fastwebnet.it; info@marinagrandediviserba.it; info@bagno125rimini.it; info.bagnoclaudio@virgilio.it; info@rougehotel.it; info@bagnomiami.com; info@bagnoildavid.it; raffellielena@libero.it; info@bagnogiada.it; info@bagnolucciola.it; ipauo@yahoo.it; v.montironi@yahoo.it; matisse.beachvillage@libero.it; info@bagnocarlo17.com; alfredo@bagni100.it; bagnorenata@bagnorenata.it; info@ristorantelido.net; maui1969@libero.it; info@sirenetta-paradiso.net	11:34:31.770355	Marketing model C	markeing-model-c	177	sent	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 15	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	7	4	sergino411@libero.it; maicol23@libero.it; magnani@bagnorenato.it; info@summerdream.it; info@playacaribe.it; info@lidobeachcervia.com; info@fantiniclub.com; info@conchiglialido.it; info@cerviamare.com; info@balmor.it; info@bagnosolosole.com; info@bagnosilverio.it; info@bagnosavini.it; info@bagnosaurocervia.it; info@bagnomedusa.com; info@bagnoitalia211.com; info@bagnoimperiale.com; info@bagnofranco.it; info@bagnodover.com; info@bagnobologna.it; info@bagno169.com; fabiocantelli@alice.it; enricobedeschi@alice.it; bagnoulisse195@hotmail.it; bagnomercuriali@libero.it; bagnolina187@virgilio.it; bagnogildo@agenzialewa.com; bagnodaniele@libero.it; bagnoazzurro@libero.it; a.farnedi@libero.it	11:37:50.836578	marketing model b cervia	marketing-model-b-cervia	30	sent	2014-07-03 05:35:20.810003-04	2014-07-03 05:37:50.864934-04
+17	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	9	4	zanetti-fo@libero.it; virtualbeach299@yahoo.it; targhini308@hotmail.it; staff@bagnoholidayvillage.it; staff@attiliobeach.it; patrickbaldassari1@gmail.com; massari.ciarly@libero.it; info@rougehotel.it; info@pinobeach.it; info@peperittima.it; info@papeetebeach.com; info@oscarspiaggia.com; info@lidohotel.it; info@hotelroyalmilanomarittima.com; info@hotelmiamibeach.com; info@flamingobeach.it; info@corallobeach279.it; info@castabeach.com; info@biciopapao.it; info@bellettinihotel.it; info@bagnoumberto.com; info@bagnoreste.com; info@bagnopeppino.it; info@bagnomarilena.it; info@bagnomalusi.com; info@bagnoking.com; info@bagnogallia.it; info@bagnoenzomalusi.com; info@bagnodelpino.it; info@bagnoalbacore.it; info@bagno300.it; info@bagnidario.it; info@acapulcohotels.it; info@286.it; gianni@selecthotels.it; bussolalido@tin.it; bastonimariaelena@libero.it; bagnotonino@libero.it; bagnosamuele@milanomarittima.it; bagnopatti323@libero.it; bagnogiuliano@bagnogiuliano.com; bagno340@gmail.com; alemasorf@aruba.it	09:50:36.988446	marketing model b milano marittima	marketing-model-b-milano-marittima	43	sent	2014-07-08 03:39:56.965001-04	2014-07-08 03:50:36.989887-04
+16	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	8	4	stefano___ricci@alice.it; nordest59@alice.it; michele@bagno93.it; info@pagurobeach.it; info@bagnoromano.eu; info@bagnopiciacia.it; info@bagnoarancio2.it; info@bagno50.com; info@bagno21.com; direzione@bagnoromano73.com; castel1975@gmail.com; bagnocarlo23bis@libero.it; bagno14fin@hotmail.it; amaduccig@gmail.com; alberto.quadrelli@virgilio.it	09:46:08.310783	marketing model b igea marina	marketing-model-b-igea-marina	15	sent	2014-07-08 03:39:15.36951-04	2014-07-08 03:46:08.312759-04
+18	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	10	4	vanillabeach@virgilio.it; partesotti@libero.it; lerri@bagnobianchi.it; informazioni@bagnoeverest.it; info@villabeach.it; info@sarabeach.it; info@playadelcarmen84.it; info@garden-lido.it; info@bagnovittorio.it; info@bagnosolaris.it; info@bagnopineta.com; info@bagnopaola.it; info@bagnojolly.it; info@bagnoitaliagiuliana.it; info@bagnogiardino.it; info@bagnofrancocervia.it; info@bagnodelfino.com; info@bagnobruno.it; info@bagnoannapinarella.it; eneacom@tin.it; bagnoangela119@libero.it; b.andreucci@libero.it; artedecor@libero.it	09:52:11.293727	marketing model b pinarella	marketing-model-b-pinarella	23	sent	2014-07-08 03:40:38.113817-04	2014-07-08 03:52:11.295128-04
+21	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	13	4	mattvince@libero.it; info@bagnorobertocesenatico.it; info@bagnoitaliacesenatico.com; info@bagnoideal.it; info@bagnoalba.it	09:54:15.826616	marketing model b villamarina	marketing-model-b-villamarina	5	sent	2014-07-08 03:42:34.858053-04	2014-07-08 03:54:15.827879-04
+19	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	11	4	info@rivazzurravillage.it; info@bagnoangelo108.it; info@bagno125rimini.it; info@bagno118.com; info@bagno115rimini.it; casadeiprimo@libero.it; bagno.silvano123@email.it	09:52:46.738919	marketing model b rivazzurra	marketing-model-b-rivazzurra	7	sent	2014-07-08 03:41:17.102321-04	2014-07-08 03:52:46.740881-04
+20	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	12	4	info@bagnosabrina.it; nadir.cesaretti@libero.it; info@bianconerobeach.it; info@lepalmebeach.com; bagnofocaccia12@gmail.com; magli.cristiano@libero.it; info@bagnorocchi.it; info@bagnobenvenuti.com	09:53:33.182325	marketing model b tagliata	marketing-model-b-tagliata	8	sent	2014-07-08 03:41:55.491928-04	2014-07-08 03:53:33.184236-04
 \.
 
 
@@ -26381,7 +26493,7 @@ COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to,
 -- Name: newsletters_newsletter_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletter_id_seq', 15, true);
+SELECT pg_catalog.setval('newsletters_newsletter_id_seq', 21, true);
 
 
 --
@@ -27266,6 +27378,107 @@ COPY newsletters_newslettersubscription (id, email, target_id, hash_field) FROM 
 875	magnani@bagnorenato.it	7	3026ff7cee6643c5a53897e0ce6bd2fe
 876	maicol23@libero.it	7	9098492241dc42f58ad6c99752a6b5b8
 877	sergino411@libero.it	7	7e9fc60fd6a04df7999323c9bb44bf8a
+887	info@bagnoalba.it	13	ee1046f9638e470e8bda2d382fafb036
+888	info@bagnoideal.it	13	99b7de64e5f24db39a1876cba24b1131
+889	info@bagnoitaliacesenatico.com	13	74a3b487dd41459fab7fb67c97c94a1d
+890	info@bagnorobertocesenatico.it	13	5be61f46343b4cf299b863d7904e4331
+891	mattvince@libero.it	13	ea95047d76884b8b82ff73079e76a10c
+901	info@bagnobenvenuti.com	12	e31ef9dbd1464b209f8f812d740b6143
+902	info@bagnorocchi.it	12	be40f8adbef94b7fb39d78dce67eae62
+903	magli.cristiano@libero.it	12	e76e6177feb34555bfefbc05e47df6a6
+904	bagnofocaccia12@gmail.com	12	1fbfd3fa98264331829135d40dfbf444
+905	info@lepalmebeach.com	12	a1a28caa028d4d6ebd545e4410008ab1
+906	info@bianconerobeach.it	12	15f691f282f14591bc39b5445dc3302c
+907	nadir.cesaretti@libero.it	12	b00f3c678d8a4af59e253b55fc26f851
+908	info@bagnosabrina.it	12	36766b8af24d463f914a5a0be7efeb8d
+909	bagno.silvano123@email.it	11	1393218427b4416fb1592cfa84dacd50
+910	casadeiprimo@libero.it	11	a149f4d3e872491eb4d21d3177e43d30
+911	info@bagno115rimini.it	11	e879b9ebdde84dc7afec63bd155c2a42
+912	info@bagno118.com	11	dbfe8b715fcc45d0bfe4b980aa6cfb3f
+913	info@bagno125rimini.it	11	632826cdd8d64d609f5dd0d73a595410
+914	info@bagnoangelo108.it	11	35eabb5908d14c28a5673b4d6e45b230
+915	info@rivazzurravillage.it	11	21f7c29baa8c4460a0756b4cc231ef0b
+916	artedecor@libero.it	10	38e18674bfb74ee1b36ae8cac38b70ff
+917	b.andreucci@libero.it	10	f59dd4e76afb4820bffd9ea327008df1
+918	bagnoangela119@libero.it	10	c1884652883d44a3a5f4ee0dd6487a96
+919	eneacom@tin.it	10	7f7901bef2244ab5879d151566fc25f6
+920	info@bagnoannapinarella.it	10	b3e49ac486244507841b743406f5ae1e
+921	info@bagnobruno.it	10	e8f7b47592484f27ae922b26b9373332
+922	info@bagnodelfino.com	10	ced2cb469eca4a0989aa26395ac32e06
+923	info@bagnofrancocervia.it	10	462d54b5ffe746a2b19f7df84c79e625
+924	info@bagnogiardino.it	10	3ead34daba8f44a78da9f04a824cd428
+925	info@bagnoitaliagiuliana.it	10	59b2a0d8e07d44a3a09429279c0255b1
+926	info@bagnojolly.it	10	e30eea8b8c7b4b49af0ba2f55cbb40b4
+927	info@bagnopaola.it	10	4a4e16cec762445882663374f3ed7e6c
+928	info@bagnopineta.com	10	bc663e7562a940cd94f69635073181fd
+929	info@bagnosolaris.it	10	8b24c5a7e72e402fa538843f1d283d9a
+930	info@bagnovittorio.it	10	acbf482742eb4b7ab8569532a7d44271
+931	info@garden-lido.it	10	fd40ad004e2a4d77bd8fd242084c6f34
+932	info@playadelcarmen84.it	10	09431292f8f74cf0a7c40eff02686dd5
+933	info@sarabeach.it	10	5367e6ab45d847aab8b12c67026f0968
+934	info@villabeach.it	10	79482c790bc145079404531680652505
+935	informazioni@bagnoeverest.it	10	1dda6b707cee40c1aa3e1a3450273f1a
+936	lerri@bagnobianchi.it	10	766c9f2d22304d67b8b19b8b1649c6e1
+937	partesotti@libero.it	10	648e08b4c3be4c1a9e0c934228890ee8
+938	vanillabeach@virgilio.it	10	30175612cbf441c598f4fa4b5505a9e7
+939	alemasorf@aruba.it	9	4eab974a7c6e4b42884430853866588a
+940	bagno340@gmail.com	9	ce83778a6e9842b6b68ad81e58149c0f
+941	bagnogiuliano@bagnogiuliano.com	9	357cc1628e024264bf6ce0115c4ffd11
+942	bagnopatti323@libero.it	9	4f7f72fa152c48f29167ac9702bc10e9
+943	bagnosamuele@milanomarittima.it	9	06ed94cee3964f35a5063648d39be822
+944	bagnotonino@libero.it	9	770bc289204b4f34b0d7af93407bb242
+945	bastonimariaelena@libero.it	9	65cc9b90834a4d3f91e7f6c7591a71eb
+946	bussolalido@tin.it	9	12a4b6365c15469298f8ebde9a55ee89
+947	gianni@selecthotels.it	9	7b5c1a384c8c4dff9dbbe9706d7e9cd7
+948	info@286.it	9	81aa1ad1cd9947f29432bf9411604832
+949	info@acapulcohotels.it	9	3664e0cc40ab4993a8d0f49041715b18
+950	info@bagnidario.it	9	a51369f6721e4a3d8b789e5cb5b545a5
+951	info@bagno300.it	9	186b53118d824418b03c7e6fe61f7cbe
+952	info@bagnoalbacore.it	9	85b452f99a0a42d8920b67395abb03cd
+953	info@bagnodelpino.it	9	4d685df23bbe43889dcf2b81152fa9cc
+954	info@bagnoenzomalusi.com	9	aa631f54925b471b90f0da9d017711cb
+955	info@bagnogallia.it	9	b348deb7b7d84f8d98ef8d08692eb51a
+956	info@bagnoking.com	9	e7756a056ce5404aacff34e5a2d4bffd
+957	info@bagnomalusi.com	9	e8bde777663e4be1ae253e66b5fb8077
+958	info@bagnomarilena.it	9	7e5c708b9b1544a0b2d8501920eade32
+959	info@bagnopeppino.it	9	04063bbba3e44de1b0f70e1e29d606a2
+960	info@bagnoreste.com	9	2230da0eb45c44118d8a5e47ca7a1585
+961	info@bagnoumberto.com	9	01d47f0434ed4b59aa1400f3c70eeff3
+962	info@bellettinihotel.it	9	8d25807ab70b4ce7985aee75645fd47b
+963	info@biciopapao.it	9	c06a1f788d10433dbcfed2e2a292264f
+964	info@castabeach.com	9	7056105c018041ea8c53caf1dbb68a09
+965	info@corallobeach279.it	9	9c55cdd362a74a87be92e71763358567
+966	info@flamingobeach.it	9	69e61b391b2e4b9e91f0ff14c66f544f
+967	info@hotelmiamibeach.com	9	5352e59e131b4948ac4161fec8663201
+968	info@hotelroyalmilanomarittima.com	9	bdb085c9a2fb41f7acff4e7d7bddc539
+969	info@lidohotel.it	9	63d629d618da41be9968ae1923c94e29
+970	info@oscarspiaggia.com	9	c9122737af2b4a21a22e52b82def16c0
+971	info@papeetebeach.com	9	72e6b83df77f4b499927ba9a270df8cd
+972	info@peperittima.it	9	d54b2b5f1d0547d08d204551d3a0caad
+973	info@pinobeach.it	9	64d87382077d4c46bccb86968d3875f3
+974	info@rougehotel.it	9	7c55c4e7d8ea4c15a42c9cb7f5b7f220
+975	massari.ciarly@libero.it	9	dcbce07c0a33466b954a9a71f25f0ea5
+976	patrickbaldassari1@gmail.com	9	7c5bacd7f5e240478b9cff43f8c907ad
+977	staff@attiliobeach.it	9	145b8bb2bea44c849c95a747e9b8d4c8
+978	staff@bagnoholidayvillage.it	9	07b731893b6445b68f55f6469a4ba216
+979	targhini308@hotmail.it	9	86a3fbc37310455eae3b0dd6caa4af89
+980	virtualbeach299@yahoo.it	9	955860f942d94a868e75b723d323efa5
+981	zanetti-fo@libero.it	9	fcaa2287666c4ce0a8f6a8d64b72ae82
+982	alberto.quadrelli@virgilio.it	8	802d488375064ad794eb378031cfb4a7
+983	amaduccig@gmail.com	8	9bfad8acdc39402b867158b4b0507f25
+984	bagno14fin@hotmail.it	8	b8c1dba65f0c4391bb814b4f4724aa8e
+985	bagnocarlo23bis@libero.it	8	e1c5275bda734c95aa6522a6990e25dd
+986	castel1975@gmail.com	8	813f0d3b55954176a334a30a83760a73
+987	direzione@bagnoromano73.com	8	78f201c9969f4f56b65ce670bb80cd50
+988	info@bagno21.com	8	2ff36f9d0a3e45bead9c82d56d40f304
+989	info@bagno50.com	8	c6ee7c0fba3a468ea2f53b02d3f01702
+990	info@bagnoarancio2.it	8	3c914e2d223947f78e4f94dd8c0d2cb2
+991	info@bagnopiciacia.it	8	0ef7e74878ad40fc97bd4203e806bcd7
+992	info@bagnoromano.eu	8	0cb224eebf894da5af0d35cc1a555e5d
+993	info@pagurobeach.it	8	31cdc56bb699476cb725b5d025f7fb07
+994	michele@bagno93.it	8	ecc250c74a2f40a19c9269548cb447b9
+995	nordest59@alice.it	8	a185afe3a29748919b1b4151ad143f21
+996	stefano___ricci@alice.it	8	69533a5e83ee4329a5ff0edb22fc9f66
 \.
 
 
@@ -27273,7 +27486,7 @@ COPY newsletters_newslettersubscription (id, email, target_id, hash_field) FROM 
 -- Name: newsletters_newslettersubscription_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 877, true);
+SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 996, true);
 
 
 --
@@ -27288,6 +27501,12 @@ COPY newsletters_newslettertarget (id, name, slug, created, modified) FROM stdin
 6	barto	barto	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 5	marketing model c	marketing_model_c	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 7	gestori Cervia	gestori-cervia	2014-07-03 05:16:57.57519-04	2014-07-03 05:16:57.575275-04
+8	gestori igea Marina	gestori-igea-marina	2014-07-08 03:13:17.588494-04	2014-07-08 03:13:17.588559-04
+9	gestori Milano Marittima	gestori-milano-marittima	2014-07-08 03:13:34.075723-04	2014-07-08 03:13:34.075787-04
+10	gestori Pinarella	gestori-pinarella	2014-07-08 03:13:47.999941-04	2014-07-08 03:13:48.000004-04
+11	gestori Rivazzurra	gestori-rivazzurra	2014-07-08 03:13:59.350022-04	2014-07-08 03:13:59.350071-04
+12	gestori Tagliata	gestori-tagliata	2014-07-08 03:14:14.335328-04	2014-07-08 03:14:14.335403-04
+13	gestori Villamarina	gestori-villamarina	2014-07-08 03:14:32.500197-04	2014-07-08 03:16:10.783187-04
 \.
 
 
@@ -27295,7 +27514,7 @@ COPY newsletters_newslettertarget (id, name, slug, created, modified) FROM stdin
 -- Name: newsletters_newslettertarget_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 7, true);
+SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 13, true);
 
 
 --
@@ -27339,6 +27558,9 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 15	28	infochaplyn@gmail.it
 16	29	marcomarchetti.ing@gmail.com
 17	30	bagno28otello@gmail.com
+18	31	info@bagnosaurocervia.it
+19	32	amaduccig@gmail.com
+20	33	simonegriffi@gmail.com
 \.
 
 
@@ -27346,7 +27568,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 17, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 20, true);
 
 
 --
@@ -31345,12 +31567,26 @@ sorl-thumbnail||image||e5e1d2d3d2877b5418ec81be72e59f88	{"storage": "django.core
 sorl-thumbnail||thumbnails||9fa3a767ffc5715807b5c7962432bef4	["e5e1d2d3d2877b5418ec81be72e59f88", "e52f4565e1284f77affec22a50ae0fc7"]
 sorl-thumbnail||image||57a17e6ba7219832ea7473161773bbb7	{"storage": "django.core.files.storage.FileSystemStorage", "name": "images/bagni/la-spiaggia-delle-donne/spiaggia-per-cani-riccione_1.jpg", "size": [500, 375]}
 sorl-thumbnail||image||07b08917c4daaaf9977b5ac77cafbdd3	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/7f/3a/7f3a59f995ce4efb5d6d41592b4ef7b9.jpg", "size": [167, 125]}
-sorl-thumbnail||thumbnails||57a17e6ba7219832ea7473161773bbb7	["4fe1be36f7a34700b055f029f0f77677", "07b08917c4daaaf9977b5ac77cafbdd3"]
+sorl-thumbnail||image||7949f1e29e5877ba63099bf70a0ee18e	{"storage": "django.core.files.storage.FileSystemStorage", "name": "images/bagni/bagno-65/zona-relax.jpg", "size": [2048, 1536]}
 sorl-thumbnail||image||24dd4c1860d1c46d6d76ca38bb4a755b	{"storage": "django.core.files.storage.FileSystemStorage", "name": "images/bagni/otello/la-nostra-stella.jpg", "size": [1529, 2048]}
 sorl-thumbnail||image||ad98e0945a639bfbdac241abac03ca66	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/c8/01/c801fe7052b1135c1bfa8493564282ea.jpg", "size": [194, 260]}
 sorl-thumbnail||image||0d0d9b95d77747d7bf215ebe23a54c87	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/82/e5/82e5d54ff72c56b8eac6e0d012a48830.jpg", "size": [93, 125]}
 sorl-thumbnail||image||2d1b7a28c32da0849c4ea5d2b68450af	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/41/fe/41fe562c69d73d2b727e391f7f46ed60.png", "size": [96, 128]}
+sorl-thumbnail||thumbnails||57a17e6ba7219832ea7473161773bbb7	["4fe1be36f7a34700b055f029f0f77677", "07b08917c4daaaf9977b5ac77cafbdd3", "49f96a36dfae68d533c1756616f42233"]
 sorl-thumbnail||thumbnails||24dd4c1860d1c46d6d76ca38bb4a755b	["0d0d9b95d77747d7bf215ebe23a54c87", "2d1b7a28c32da0849c4ea5d2b68450af", "ad98e0945a639bfbdac241abac03ca66"]
+sorl-thumbnail||image||49f96a36dfae68d533c1756616f42233	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/8c/20/8c20b3d0a93e8be063eaf0ba19df0263.png", "size": [171, 128]}
+sorl-thumbnail||image||067b9cbedf1768207521285f891bd84a	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/ec/f2/ecf2f8f62a0e87961dd93f942f72b8ab.jpg", "size": [347, 260]}
+sorl-thumbnail||image||feb03be2b52df8cb2cb2ba319c217620	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/d6/c4/d6c4c189ee6711026fab5b8a4be511a6.jpg", "size": [167, 125]}
+sorl-thumbnail||thumbnails||7949f1e29e5877ba63099bf70a0ee18e	["067b9cbedf1768207521285f891bd84a", "feb03be2b52df8cb2cb2ba319c217620"]
+sorl-thumbnail||image||7e7fcbc23bfecb4187180d58f435c27f	{"storage": "django.core.files.storage.FileSystemStorage", "name": "images/bagni/bagno-playa-del-carmen/il-bar.jpg", "size": [960, 640]}
+sorl-thumbnail||image||7ee1c10e1fc880ad019700168606010c	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/e1/85/e1852dd92742ad445b6406044037dc22.jpg", "size": [380, 253]}
+sorl-thumbnail||image||c90770f5d05da543819d42618cf1a4d4	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/67/90/6790134960d10d7710ded00bdb5ff038.png", "size": [192, 128]}
+sorl-thumbnail||image||5fe0f45d20bea65e8a0d029b9ca89b1a	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/8f/f3/8ff36885573dce4d14f3093b08be097a.jpg", "size": [188, 125]}
+sorl-thumbnail||thumbnails||7e7fcbc23bfecb4187180d58f435c27f	["7ee1c10e1fc880ad019700168606010c", "5fe0f45d20bea65e8a0d029b9ca89b1a", "c90770f5d05da543819d42618cf1a4d4"]
+sorl-thumbnail||image||e17a0eb71019379f643c48a3e059c014	{"storage": "django.core.files.storage.FileSystemStorage", "name": "images/bagni/bagno-playa-del-carmen/il-bar_1.jpg", "size": [960, 640]}
+sorl-thumbnail||image||081a87e609794288b9ee67d6baf95477	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/56/e0/56e08c85b0ec81cbc6249e3bf635a828.jpg", "size": [380, 253]}
+sorl-thumbnail||image||73fd4f763441e2775f52f183c1e0a093	{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/ac/c9/acc9c7da215a5c36d0bae0eb5f4638fc.jpg", "size": [188, 125]}
+sorl-thumbnail||thumbnails||e17a0eb71019379f643c48a3e059c014	["73fd4f763441e2775f52f183c1e0a093", "081a87e609794288b9ee67d6baf95477"]
 \.
 
 
