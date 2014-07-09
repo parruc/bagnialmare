@@ -2856,20 +2856,20 @@
     ], 
     "slug_en": "magazines-journals", 
     "aliases_it": null, 
-    "name_it": "riviste/giornalini", 
-    "name": "magazines/journals", 
+    "name_it": "riviste giornalini", 
+    "name": "magazines and journals", 
     "created": "2014-07-02T22:00:00Z", 
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "riviste-giornalini", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-08T16:12:30.656Z", 
     "description_en": "", 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
     "description_it": "", 
     "aliases_en": null, 
-    "name_en": "magazines/journals", 
+    "name_en": "magazines and journals", 
     "aliases": null, 
     "slug": "magazines-journals", 
     "description": ""
@@ -2996,13 +2996,13 @@
     ], 
     "slug_en": "sea-mattresses", 
     "aliases_it": null, 
-    "name_it": "canotti/materassini", 
+    "name_it": "canotti e materassini", 
     "name": "sea mattresses", 
     "created": "2014-07-02T22:00:00Z", 
     "seo_name_en": "with sea mattress rental", 
     "image": "", 
     "slug_it": "canotti-materassini", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-08T16:11:25.281Z", 
     "description_en": "", 
     "seo_name": "with sea mattress rental", 
     "free": true, 
@@ -3022,24 +3022,24 @@
     "category": [
       "comfort-and-relax"
     ], 
-    "slug_en": "tub", 
+    "slug_en": "jacuzzi", 
     "aliases_it": null, 
     "name_it": "idromassaggio", 
-    "name": "tub", 
+    "name": "jacuzzi", 
     "created": "2014-07-02T22:00:00Z", 
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "idromassaggio", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-07-08T09:58:04.414Z", 
     "description_en": "", 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
     "description_it": "", 
     "aliases_en": null, 
-    "name_en": "tub", 
+    "name_en": "jacuzzi", 
     "aliases": null, 
-    "slug": "tub", 
+    "slug": "jacuzzi", 
     "description": ""
   }
 },
@@ -3918,24 +3918,24 @@
     "category": [
       "extras"
     ], 
-    "slug_en": "surfwindsurf-cabin", 
+    "slug_en": "surf-windsurf-cabin", 
     "aliases_it": null, 
-    "name_it": "cabina surf/windsurf", 
-    "name": "surf/windsurf cabin", 
+    "name_it": "cabina surf e windsurf", 
+    "name": "surf windsurf cabin", 
     "created": "2014-07-02T22:00:00Z", 
     "seo_name_en": null, 
     "image": "", 
-    "slug_it": "cabina-surfwindsurf", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "slug_it": "cabina-surf-windsurf", 
+    "modified": "2014-07-08T16:14:09.420Z", 
     "description_en": "", 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
     "description_it": "", 
     "aliases_en": null, 
-    "name_en": "surf/windsurf cabin", 
+    "name_en": "surf windsurf cabin", 
     "aliases": null, 
-    "slug": "surfwindsurf-cabin", 
+    "slug": "surf-windsurf-cabin", 
     "description": ""
   }
 },
@@ -6068,20 +6068,13 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://bagnosaurocervia.it/", 
-    "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 7314<br />\r\n\tfronte mare: 66<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 6<br />\r\n\tdocce chiuse: 10</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.3633739289999998 44.2552389450000021)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 7314<br />\r\n\tfronte mare: 66<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 6<br />\r\n\tdocce chiuse: 10</p>", 
+    "point": "POINT (12.3633739289999927 44.2552389449999737)", 
+    "modified": "2014-07-08T14:29:59.938Z", 
+    "description_en": "", 
     "number": "177/178", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "catering"
@@ -6124,8 +6117,8 @@
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 177/178", 
-    "description_it": "", 
-    "mail": "info@bagnosaurocervia.it", 
+    "description_it": "<p>superficie complessiva spiaggia: 7314<br />\r\nfronte mare: 66<br />\r\ndocce aperte: 6<br />\r\nwc: 6<br />\r\ndocce chiuse: 10</p>", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-sauro", 
     "neighbourhood": [
@@ -13884,22 +13877,178 @@
     "site": "http://www.playadelcarmen84.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.3738600749999996 44.2378976749999993)", 
-    "modified": "2014-07-04T10:10:37.379Z", 
+    "point": "POINT (12.3738600750000103 44.2378976749999993)", 
+    "modified": "2014-07-08T20:32:31.683Z", 
     "description_en": "", 
     "number": "84", 
-    "languages": [
+    "languages": [], 
+    "services": [
       [
-        "italian"
+        "bar"
       ], 
       [
-        "english"
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "music"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "playground"
+      ], 
+      [
+        "canoes"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "theme-parties"
+      ], 
+      [
+        "live-concerts"
+      ], 
+      [
+        "happy-hour"
+      ], 
+      [
+        "disabled"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "sports-tournaments"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "dj-set"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "green-area"
+      ], 
+      [
+        "footvolley"
+      ], 
+      [
+        "trampoline"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "aperitif"
+      ], 
+      [
+        "sea-mattresses"
+      ], 
+      [
+        "toilets-for-children"
+      ], 
+      [
+        "clothing"
+      ], 
+      [
+        "sea-volley"
+      ], 
+      [
+        "mats-deposit"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "yoga"
+      ], 
+      [
+        "fish-barbecue-events"
+      ], 
+      [
+        "meat-barbecue-events"
+      ], 
+      [
+        "themed-dinner"
+      ], 
+      [
+        "tasting-events"
+      ], 
+      [
+        "surf-windsurf-cabin"
+      ], 
+      [
+        "cocktail-bar"
+      ], 
+      [
+        "bancomat"
+      ], 
+      [
+        "credit-cards-accepted"
+      ], 
+      [
+        "helmet-deposit"
+      ], 
+      [
+        "board-games"
+      ], 
+      [
+        "veranda"
+      ], 
+      [
+        "private-functions"
+      ], 
+      [
+        "sandwich-shop"
+      ], 
+      [
+        "dance-parties"
+      ], 
+      [
+        "celiac-cooking"
+      ], 
+      [
+        "table-tournaments"
       ]
     ], 
-    "services": [], 
     "address": "Arenile Demaniale 84", 
-    "description_it": "", 
-    "mail": "info@playadelcarmen84.it", 
+    "description_it": "Playa del Carmen 84... piccolo, caldo, verde, elegante, artistico, sportivo.... Cucina di classe ma non eccessiva, aperitivi carichi e con Live Bands every Sunday, animazione per i pi\u00f9 piccoli, Sport set sui due campi professionali e tutta l'energia e il divertimento che un bagno al mare pu\u00f2 e deve offrire!! come onnnn!!", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-playa-del-carmen", 
     "neighbourhood": [
@@ -14150,7 +14299,7 @@
         "gymnastics"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beach-volley"
@@ -16478,7 +16627,7 @@
         "disabled"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "baby-park"
@@ -20673,11 +20822,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagnomeridiano.it/", 
-    "description": "<h3>Details</h3>\r\n\t<p>sdraio: 40<br />\r\n\twc: 3<br />\r\n\tombrelloni: 120<br />\r\n\tfronte mare: 30<br />\r\n\tlettini: 190<br />\r\n\tcabine: 29<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2850</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4110960960388290 44.1965744843120376)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>sdraio: 40<br />\r\n\twc: 3<br />\r\n\tombrelloni: 120<br />\r\n\tfronte mare: 30<br />\r\n\tlettini: 190<br />\r\n\tcabine: 29<br />\r\n\tdocce chiuse: 1<br />\r\n\tsuperficie complessiva spiaggia: 2850</p>", 
+    "modified": "2014-07-08T14:30:30.738Z", 
+    "description_en": "", 
     "number": "34", 
     "languages": [], 
     "services": [
@@ -20746,7 +20895,7 @@
       ]
     ], 
     "address": "Viale Milano, 34", 
-    "description_it": "None", 
+    "description_it": "<p>sdraio: 40<br />\r\nwc: 3<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 190<br />\r\ncabine: 29<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 2850</p>", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-meridiano", 
@@ -20831,7 +20980,7 @@
         "massages"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "sun-terrace"
@@ -24040,7 +24189,7 @@
         "acquagym"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "dancing"
@@ -24490,7 +24639,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -24780,7 +24929,7 @@
         "dance-classes"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -24860,7 +25009,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -25105,7 +25254,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -26275,7 +26424,7 @@
         "wi-fi"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "schoolchildren"
@@ -26585,7 +26734,7 @@
         "disabled"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "baby-park"
@@ -26637,7 +26786,7 @@
         "swimming-lessons"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "evening-entertainment"
@@ -26696,7 +26845,7 @@
         "catering"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ]
     ], 
     "address": "Lungomare Italia, 5", 
@@ -27167,77 +27316,70 @@
   "pk": 13125, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnomexico.com", 
+    "site": "http://www.bagnomexico.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2429537773132324 44.7379468358190664)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.2429537773132342 44.7379468358190451)", 
+    "modified": "2014-07-08T14:26:19.466Z", 
+    "description_en": "", 
     "number": "31", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "gymnastics"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "dancing"
-      ], 
-      [
-        "pre-evening-entertainment"
-      ], 
-      [
-        "acquagym"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
         "disabled"
-      ], 
-      [
-        "basketball"
       ], 
       [
         "bar"
       ], 
       [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
+        "acquagym"
+      ], 
+      [
+        "pre-evening-entertainment"
+      ], 
+      [
         "schoolchildren"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "evening-entertainment"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "nursery"
       ]
     ], 
     "address": "Lungomare Canarie, 3", 
-    "description_it": null, 
-    "mail": "Info@bagnomexico.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "mexico", 
     "neighbourhood": [
@@ -28717,7 +28859,7 @@
         "acquagym"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beach-volley"
@@ -28791,7 +28933,7 @@
         "acquagym"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "pre-evening-entertainment"
@@ -29934,7 +30076,7 @@
         "sailing"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ]
     ], 
     "address": "Via Spiaggia, 53", 
@@ -30043,7 +30185,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -30551,7 +30693,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -31696,7 +31838,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -32124,7 +32266,7 @@
         "swimming-pool"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ]
     ], 
     "address": "Via dei Mille, 22", 
@@ -32563,7 +32705,7 @@
         "beach-volley"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "acquagym"
@@ -33216,7 +33358,7 @@
         "tasting-events"
       ], 
       [
-        "surfwindsurf-cabin"
+        "surf-windsurf-cabin"
       ], 
       [
         "beach-racket-court"
@@ -37077,7 +37219,7 @@
         "beach-racket-court"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "cocktail-bar"
@@ -39092,11 +39234,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
+    "description": "\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2998933095000105 44.4368504285999677)", 
-    "modified": "2014-07-03T12:44:31.478Z", 
-    "description_en": "\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
+    "point": "POINT (12.2998933095000105 44.4368504285999464)", 
+    "modified": "2014-07-08T14:14:36.907Z", 
+    "description_en": "\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
     "number": "42", 
     "languages": [], 
     "services": [
@@ -39159,7 +39301,7 @@
       ]
     ], 
     "address": "Via della Fontana, 78", 
-    "description_it": "", 
+    "description_it": "\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-chaplyn", 
@@ -44996,7 +45138,7 @@
         "magazines-journals"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beach-racket-court"
@@ -45027,11 +45169,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://bagno28otello.com/", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "description": "\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5830426370000126 44.0700372999999956)", 
-    "modified": "2014-07-07T19:32:43.295Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "modified": "2014-07-08T14:15:23.262Z", 
+    "description_en": "\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
     "number": "28 sud", 
     "languages": [], 
     "services": [
@@ -45096,7 +45238,7 @@
         "schoolchildren"
       ], 
       [
-        "surfwindsurf-cabin"
+        "surf-windsurf-cabin"
       ], 
       [
         "bancomat"
@@ -45106,7 +45248,7 @@
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": "", 
+    "description_it": "\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "otello", 
@@ -46297,44 +46439,37 @@
   "pk": 13465, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagno55rimini.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti \u00a0campi sportivi\u00a0illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n-\u00a02 vasche idromassaggio (6 e 10 posti)\u00a0a pagamento - 3\u00a0\u20ac per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori\u00a0sono a disposizione per dare\u00a0lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>", 
+    "site": "http://www.bagno55rimini.com/", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5927864239999998 44.0610706000000008)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 42<br />\n\tombrelloni: 240</p>\n<p>Servizi offerti \u00a0campi sportivi\u00a0illuminati\r\n- tornei di beach volley, beach tennis, basket, ping-pong e carte\r\n-\u00a02 vasche idromassaggio (6 e 10 posti)\u00a0a pagamento - 3\u00a0\u20ac per persona\r\n- escursioni serali s.marino, gradara, montebello, italia in miniatura, oltremare, ottocento festival, festa delle streghe, ecc.\r\n- ombrelloni con effetto ventilato\r\n- accesso ai cani\r\n- nordic walking un gruppo di istruttori\u00a0sono a disposizione per dare\u00a0lezioni e accompagnare per escursini i turisti che sceglieranno rimini anche nel periodo invernale</p>", 
+    "point": "POINT (12.5927864239999998 44.0610705999999794)", 
+    "modified": "2014-07-08T14:28:17.693Z", 
+    "description_en": "", 
     "number": "55 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
-      [
-        "tub"
-      ], 
-      [
-        "ping-pong"
-      ], 
       [
         "petanque"
       ], 
       [
-        "playground"
+        "ping-pong"
       ], 
       [
         "entertainment"
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "playground"
+      ], 
+      [
+        "jacuzzi"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "info@bagno55rimini.com", 
+    "description_it": "<p>Campi sportivi\u00a0illuminati,\r\n tornei di beach volley, beach tennis, basket, ping-pong e carte,\r\n2 vasche idromassaggio a pagamento, \r\nescursioni serali, \r\nOmbrelloni effetto ventilato, \r\nPet friendly, \r\nNordic walking</p>", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "paolo-e-fabio", 
     "neighbourhood": [
@@ -46511,7 +46646,7 @@
         "bicycles"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beach-racket-court"
@@ -47623,7 +47758,7 @@
         "magazines-journals"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "baby-park"
@@ -47676,7 +47811,7 @@
         "nursery"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beach-volley"
@@ -47729,7 +47864,7 @@
         "lockers"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "magazines-journals"
@@ -48298,44 +48433,14 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagno99.com/", 
-    "description": "None", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6077156860099446 44.0445167645529949)", 
-    "modified": "2014-07-07T14:06:28.799Z", 
-    "description_en": "None", 
+    "modified": "2014-07-08T14:15:00.032Z", 
+    "description_en": "", 
     "number": "99", 
     "languages": [], 
     "services": [
-      [
-        "board-games"
-      ], 
-      [
-        "cards-table"
-      ], 
-      [
-        "barbecue-area"
-      ], 
-      [
-        "beach-volley-courses"
-      ], 
-      [
-        "wellness-area"
-      ], 
-      [
-        "sandwich-shop"
-      ], 
-      [
-        "table-tournaments"
-      ], 
-      [
-        "picnic-area"
-      ], 
-      [
-        "refrigerators"
-      ], 
-      [
-        "pizzeria"
-      ], 
       [
         "bar"
       ], 
@@ -48476,11 +48581,41 @@
       ], 
       [
         "helmet-deposit"
+      ], 
+      [
+        "board-games"
+      ], 
+      [
+        "cards-table"
+      ], 
+      [
+        "barbecue-area"
+      ], 
+      [
+        "beach-volley-courses"
+      ], 
+      [
+        "wellness-area"
+      ], 
+      [
+        "sandwich-shop"
+      ], 
+      [
+        "table-tournaments"
+      ], 
+      [
+        "picnic-area"
+      ], 
+      [
+        "refrigerators"
+      ], 
+      [
+        "pizzeria"
       ]
     ], 
     "address": "Lungomare di Vittorio 54/a", 
     "description_it": "Il Bagno Loretta 99 \u00e8 il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi. ", 
-    "mail": "info@loretta99.com", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "loretta", 
     "neighbourhood": [
@@ -49602,7 +49737,7 @@
         "bicycles"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beach-volley"
@@ -50078,7 +50213,7 @@
         "nursery"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "petanque"
@@ -50213,7 +50348,7 @@
         "lockers"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "magazines-journals"
@@ -51618,24 +51753,23 @@
   "pk": 13580, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnoegisto38.com", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 23<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di balli latini americani e aquagymn\r\n- tornei di ping-pong\r\n- area benessere con lettini massaggianti (a pagamento)\r\n- area accoglienza animali domestici\u00a0spiaggia attrezzata parzialmente recintata con gli ombrelloni pi\u00f9 larghi rispetto lo standard. gratuitamente\u00a0\u00e8 possibile avere a disposizione ciotole, stuoie, sacchetti e la doccia a loro dedicata.\u00a0un veterinario \u00e8 reperibile per qualsiasi necessit\u00e0. all'arrivo \u00e8 necessario solamente presentare il libretto delle vaccinazioni in direzione e prendere visione del regolamento. si consiglia la prenotazione, in quanto i posti\u00a0attrezzati\u00a0sono limitati. Il bagno ha aderito nel 2009 al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.</p>", 
+    "site": "http://www.bagnoegisto38.com/", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5331291599999997 44.0927088800000035)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 23<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di balli latini americani e aquagymn\r\n- tornei di ping-pong\r\n- area benessere con lettini massaggianti (a pagamento)\r\n- area accoglienza animali domestici\u00a0spiaggia attrezzata parzialmente recintata con gli ombrelloni pi\u00f9 larghi rispetto lo standard. gratuitamente\u00a0\u00e8 possibile avere a disposizione ciotole, stuoie, sacchetti e la doccia a loro dedicata.\u00a0un veterinario \u00e8 reperibile per qualsiasi necessit\u00e0. all'arrivo \u00e8 necessario solamente presentare il libretto delle vaccinazioni in direzione e prendere visione del regolamento. si consiglia la prenotazione, in quanto i posti\u00a0attrezzati\u00a0sono limitati. Il bagno ha aderito nel 2009 al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.</p>", 
+    "point": "POINT (12.5331291600000014 44.0927088800000035)", 
+    "modified": "2014-07-08T14:25:35.216Z", 
+    "description_en": "", 
     "number": "38 nord", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "five-a-side"
+      ], 
+      [
+        "ping-pong"
       ], 
       [
         "massages"
@@ -51644,27 +51778,21 @@
         "playground"
       ], 
       [
-        "picnic-area"
-      ], 
-      [
-        "webcam"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
+        "nursery"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "nursery"
+        "picnic-area"
+      ], 
+      [
+        "webcam"
       ]
     ], 
     "address": "Via Dati 113 h", 
-    "description_it": null, 
-    "mail": "info@bagnoegisto38.com", 
+    "description_it": "Balli latini americani e aquagym\r\nArea benessere con lettini massaggianti (a pagamento)\r\nPet friendly: ciotole, sacchetti, doccia dedicata e\u00a0veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti\u00a0attrezzati\u00a0limitati: prenotateli.\r\nDal 2009 aderiamo al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "egisto", 
     "neighbourhood": [
@@ -53590,21 +53718,14 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6811935400000007 43.9913136600000030)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-08T14:15:59.103Z", 
+    "description_en": "", 
     "number": "23", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Fontanelle Abissinia", 
-    "description_it": null, 
-    "mail": "spiaggia23riccione@email.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagni-malibu", 
     "neighbourhood": [
@@ -55781,11 +55902,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.laspiaggiadelledonne.it/", 
-    "description": "None", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6534205839920375 44.0091363316282838)", 
-    "modified": "2014-07-07T05:23:40.441Z", 
-    "description_en": "None", 
+    "modified": "2014-07-08T14:15:48.164Z", 
+    "description_en": "", 
     "number": "97", 
     "languages": [], 
     "services": [
@@ -56628,11 +56749,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.centrovacanzericcione.it/", 
-    "description": "None", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6436705839930248 44.0160307962138688)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "None", 
+    "modified": "2014-07-08T14:26:31.177Z", 
+    "description_en": "", 
     "number": "122/a", 
     "languages": [], 
     "services": [
@@ -57105,25 +57226,18 @@
   "pk": 13737, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.maranobeach.it", 
+    "site": "http://www.maranobeach.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6389600000000009 44.0197557199999991)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.6389600000000097 44.0197557199999849)", 
+    "modified": "2014-07-08T14:25:59.433Z", 
+    "description_en": "", 
     "number": "135/136", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Marano", 
-    "description_it": null, 
-    "mail": "spiaggia136@gmail.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "marano-beach", 
     "neighbourhood": [
@@ -58999,22 +59113,55 @@
     "site": "https://www.facebook.com/Bagno65", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4784650810999995 44.1386515945999989)", 
-    "modified": "2014-07-03T17:36:09.711Z", 
+    "point": "POINT (12.4784650810999906 44.1386515945999847)", 
+    "modified": "2014-07-08T14:50:47.755Z", 
     "description_en": "", 
     "number": "65", 
-    "languages": [
+    "languages": [], 
+    "services": [
       [
-        "italian"
+        "baby-park"
       ], 
       [
-        "english"
+        "board-games"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "canoes"
+      ], 
+      [
+        "mats-deposit"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "bookstore"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "parking"
+      ], 
+      [
+        "sea-mattresses"
+      ], 
+      [
+        "sport-balls"
       ]
     ], 
-    "services": [], 
     "address": "Via A. Pinzon", 
     "description_it": "", 
-    "mail": "amaduccig@gmail.com", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-65", 
     "neighbourhood": [
@@ -59622,7 +59769,7 @@
         "aperitif"
       ], 
       [
-        "tub"
+        "jacuzzi"
       ], 
       [
         "beauty-treatments"
@@ -59926,6 +60073,66 @@
     "name": "gestori Cervia", 
     "modified": "2014-07-03T09:16:57.575Z", 
     "slug": "gestori-cervia"
+  }
+},
+{
+  "pk": 8, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-08T07:13:17.588Z", 
+    "name": "gestori igea Marina", 
+    "modified": "2014-07-08T07:13:17.588Z", 
+    "slug": "gestori-igea-marina"
+  }
+},
+{
+  "pk": 9, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-08T07:13:34.075Z", 
+    "name": "gestori Milano Marittima", 
+    "modified": "2014-07-08T07:13:34.075Z", 
+    "slug": "gestori-milano-marittima"
+  }
+},
+{
+  "pk": 10, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-08T07:13:47.999Z", 
+    "name": "gestori Pinarella", 
+    "modified": "2014-07-08T07:13:48.000Z", 
+    "slug": "gestori-pinarella"
+  }
+},
+{
+  "pk": 11, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-08T07:13:59.350Z", 
+    "name": "gestori Rivazzurra", 
+    "modified": "2014-07-08T07:13:59.350Z", 
+    "slug": "gestori-rivazzurra"
+  }
+},
+{
+  "pk": 12, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-08T07:14:14.335Z", 
+    "name": "gestori Tagliata", 
+    "modified": "2014-07-08T07:14:14.335Z", 
+    "slug": "gestori-tagliata"
+  }
+},
+{
+  "pk": 13, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-08T07:14:32.500Z", 
+    "name": "gestori Villamarina", 
+    "modified": "2014-07-08T07:16:10.783Z", 
+    "slug": "gestori-villamarina"
   }
 },
 {
@@ -60277,6 +60484,138 @@
     "sent_on": "11:37:50.836", 
     "sent_count": 30, 
     "slug": "marketing-model-b-cervia", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 16, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing model b igea marina", 
+    "created": "2014-07-08T07:39:15.369Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-08T07:46:08.312Z", 
+    "sent_to": "stefano___ricci@alice.it; nordest59@alice.it; michele@bagno93.it; info@pagurobeach.it; info@bagnoromano.eu; info@bagnopiciacia.it; info@bagnoarancio2.it; info@bagno50.com; info@bagno21.com; direzione@bagnoromano73.com; castel1975@gmail.com; bagnocarlo23bis@libero.it; bagno14fin@hotmail.it; amaduccig@gmail.com; alberto.quadrelli@virgilio.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-igea-marina"
+    ], 
+    "sent_on": "09:46:08.310", 
+    "sent_count": 15, 
+    "slug": "marketing-model-b-igea-marina", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 17, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing model b milano marittima", 
+    "created": "2014-07-08T07:39:56.965Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-08T07:50:36.989Z", 
+    "sent_to": "zanetti-fo@libero.it; virtualbeach299@yahoo.it; targhini308@hotmail.it; staff@bagnoholidayvillage.it; staff@attiliobeach.it; patrickbaldassari1@gmail.com; massari.ciarly@libero.it; info@rougehotel.it; info@pinobeach.it; info@peperittima.it; info@papeetebeach.com; info@oscarspiaggia.com; info@lidohotel.it; info@hotelroyalmilanomarittima.com; info@hotelmiamibeach.com; info@flamingobeach.it; info@corallobeach279.it; info@castabeach.com; info@biciopapao.it; info@bellettinihotel.it; info@bagnoumberto.com; info@bagnoreste.com; info@bagnopeppino.it; info@bagnomarilena.it; info@bagnomalusi.com; info@bagnoking.com; info@bagnogallia.it; info@bagnoenzomalusi.com; info@bagnodelpino.it; info@bagnoalbacore.it; info@bagno300.it; info@bagnidario.it; info@acapulcohotels.it; info@286.it; gianni@selecthotels.it; bussolalido@tin.it; bastonimariaelena@libero.it; bagnotonino@libero.it; bagnosamuele@milanomarittima.it; bagnopatti323@libero.it; bagnogiuliano@bagnogiuliano.com; bagno340@gmail.com; alemasorf@aruba.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-milano-marittima"
+    ], 
+    "sent_on": "09:50:36.988", 
+    "sent_count": 43, 
+    "slug": "marketing-model-b-milano-marittima", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 18, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing model b pinarella", 
+    "created": "2014-07-08T07:40:38.113Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-08T07:52:11.295Z", 
+    "sent_to": "vanillabeach@virgilio.it; partesotti@libero.it; lerri@bagnobianchi.it; informazioni@bagnoeverest.it; info@villabeach.it; info@sarabeach.it; info@playadelcarmen84.it; info@garden-lido.it; info@bagnovittorio.it; info@bagnosolaris.it; info@bagnopineta.com; info@bagnopaola.it; info@bagnojolly.it; info@bagnoitaliagiuliana.it; info@bagnogiardino.it; info@bagnofrancocervia.it; info@bagnodelfino.com; info@bagnobruno.it; info@bagnoannapinarella.it; eneacom@tin.it; bagnoangela119@libero.it; b.andreucci@libero.it; artedecor@libero.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-pinarella"
+    ], 
+    "sent_on": "09:52:11.293", 
+    "sent_count": 23, 
+    "slug": "marketing-model-b-pinarella", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 19, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing model b rivazzurra", 
+    "created": "2014-07-08T07:41:17.102Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-08T07:52:46.740Z", 
+    "sent_to": "info@rivazzurravillage.it; info@bagnoangelo108.it; info@bagno125rimini.it; info@bagno118.com; info@bagno115rimini.it; casadeiprimo@libero.it; bagno.silvano123@email.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-rivazzurra"
+    ], 
+    "sent_on": "09:52:46.738", 
+    "sent_count": 7, 
+    "slug": "marketing-model-b-rivazzurra", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 20, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing model b tagliata", 
+    "created": "2014-07-08T07:41:55.491Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-08T07:53:33.184Z", 
+    "sent_to": "info@bagnosabrina.it; nadir.cesaretti@libero.it; info@bianconerobeach.it; info@lepalmebeach.com; bagnofocaccia12@gmail.com; magli.cristiano@libero.it; info@bagnorocchi.it; info@bagnobenvenuti.com", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-tagliata"
+    ], 
+    "sent_on": "09:53:33.182", 
+    "sent_count": 8, 
+    "slug": "marketing-model-b-tagliata", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 21, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing model b villamarina", 
+    "created": "2014-07-08T07:42:34.858Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-08T07:54:15.827Z", 
+    "sent_to": "mattvince@libero.it; info@bagnorobertocesenatico.it; info@bagnoitaliacesenatico.com; info@bagnoideal.it; info@bagnoalba.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-villamarina"
+    ], 
+    "sent_on": "09:54:15.826", 
+    "sent_count": 5, 
+    "slug": "marketing-model-b-villamarina", 
     "subject": "Prenotazioni online per il tuo stabilimento balneare"
   }
 },
@@ -69928,6 +70267,1117 @@
   }
 },
 {
+  "pk": 887, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ee1046f9638e470e8bda2d382fafb036", 
+    "email": "info@bagnoalba.it", 
+    "target": [
+      "gestori-villamarina"
+    ]
+  }
+},
+{
+  "pk": 888, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "99b7de64e5f24db39a1876cba24b1131", 
+    "email": "info@bagnoideal.it", 
+    "target": [
+      "gestori-villamarina"
+    ]
+  }
+},
+{
+  "pk": 889, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "74a3b487dd41459fab7fb67c97c94a1d", 
+    "email": "info@bagnoitaliacesenatico.com", 
+    "target": [
+      "gestori-villamarina"
+    ]
+  }
+},
+{
+  "pk": 890, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5be61f46343b4cf299b863d7904e4331", 
+    "email": "info@bagnorobertocesenatico.it", 
+    "target": [
+      "gestori-villamarina"
+    ]
+  }
+},
+{
+  "pk": 891, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ea95047d76884b8b82ff73079e76a10c", 
+    "email": "mattvince@libero.it", 
+    "target": [
+      "gestori-villamarina"
+    ]
+  }
+},
+{
+  "pk": 901, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e31ef9dbd1464b209f8f812d740b6143", 
+    "email": "info@bagnobenvenuti.com", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 902, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "be40f8adbef94b7fb39d78dce67eae62", 
+    "email": "info@bagnorocchi.it", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 903, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e76e6177feb34555bfefbc05e47df6a6", 
+    "email": "magli.cristiano@libero.it", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 904, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1fbfd3fa98264331829135d40dfbf444", 
+    "email": "bagnofocaccia12@gmail.com", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 905, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a1a28caa028d4d6ebd545e4410008ab1", 
+    "email": "info@lepalmebeach.com", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 906, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "15f691f282f14591bc39b5445dc3302c", 
+    "email": "info@bianconerobeach.it", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 907, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b00f3c678d8a4af59e253b55fc26f851", 
+    "email": "nadir.cesaretti@libero.it", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 908, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "36766b8af24d463f914a5a0be7efeb8d", 
+    "email": "info@bagnosabrina.it", 
+    "target": [
+      "gestori-tagliata"
+    ]
+  }
+},
+{
+  "pk": 909, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1393218427b4416fb1592cfa84dacd50", 
+    "email": "bagno.silvano123@email.it", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 910, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a149f4d3e872491eb4d21d3177e43d30", 
+    "email": "casadeiprimo@libero.it", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 911, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e879b9ebdde84dc7afec63bd155c2a42", 
+    "email": "info@bagno115rimini.it", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 912, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dbfe8b715fcc45d0bfe4b980aa6cfb3f", 
+    "email": "info@bagno118.com", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 913, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "632826cdd8d64d609f5dd0d73a595410", 
+    "email": "info@bagno125rimini.it", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 914, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "35eabb5908d14c28a5673b4d6e45b230", 
+    "email": "info@bagnoangelo108.it", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 915, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "21f7c29baa8c4460a0756b4cc231ef0b", 
+    "email": "info@rivazzurravillage.it", 
+    "target": [
+      "gestori-rivazzurra"
+    ]
+  }
+},
+{
+  "pk": 916, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "38e18674bfb74ee1b36ae8cac38b70ff", 
+    "email": "artedecor@libero.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 917, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f59dd4e76afb4820bffd9ea327008df1", 
+    "email": "b.andreucci@libero.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 918, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c1884652883d44a3a5f4ee0dd6487a96", 
+    "email": "bagnoangela119@libero.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 919, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7f7901bef2244ab5879d151566fc25f6", 
+    "email": "eneacom@tin.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 920, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b3e49ac486244507841b743406f5ae1e", 
+    "email": "info@bagnoannapinarella.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 921, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e8f7b47592484f27ae922b26b9373332", 
+    "email": "info@bagnobruno.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 922, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ced2cb469eca4a0989aa26395ac32e06", 
+    "email": "info@bagnodelfino.com", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 923, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "462d54b5ffe746a2b19f7df84c79e625", 
+    "email": "info@bagnofrancocervia.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 924, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3ead34daba8f44a78da9f04a824cd428", 
+    "email": "info@bagnogiardino.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 925, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "59b2a0d8e07d44a3a09429279c0255b1", 
+    "email": "info@bagnoitaliagiuliana.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 926, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e30eea8b8c7b4b49af0ba2f55cbb40b4", 
+    "email": "info@bagnojolly.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 927, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4a4e16cec762445882663374f3ed7e6c", 
+    "email": "info@bagnopaola.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 928, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bc663e7562a940cd94f69635073181fd", 
+    "email": "info@bagnopineta.com", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 929, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8b24c5a7e72e402fa538843f1d283d9a", 
+    "email": "info@bagnosolaris.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 930, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "acbf482742eb4b7ab8569532a7d44271", 
+    "email": "info@bagnovittorio.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 931, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fd40ad004e2a4d77bd8fd242084c6f34", 
+    "email": "info@garden-lido.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 932, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "09431292f8f74cf0a7c40eff02686dd5", 
+    "email": "info@playadelcarmen84.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 933, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5367e6ab45d847aab8b12c67026f0968", 
+    "email": "info@sarabeach.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 934, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "79482c790bc145079404531680652505", 
+    "email": "info@villabeach.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 935, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "1dda6b707cee40c1aa3e1a3450273f1a", 
+    "email": "informazioni@bagnoeverest.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 936, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "766c9f2d22304d67b8b19b8b1649c6e1", 
+    "email": "lerri@bagnobianchi.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 937, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "648e08b4c3be4c1a9e0c934228890ee8", 
+    "email": "partesotti@libero.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 938, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "30175612cbf441c598f4fa4b5505a9e7", 
+    "email": "vanillabeach@virgilio.it", 
+    "target": [
+      "gestori-pinarella"
+    ]
+  }
+},
+{
+  "pk": 939, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4eab974a7c6e4b42884430853866588a", 
+    "email": "alemasorf@aruba.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 940, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ce83778a6e9842b6b68ad81e58149c0f", 
+    "email": "bagno340@gmail.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 941, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "357cc1628e024264bf6ce0115c4ffd11", 
+    "email": "bagnogiuliano@bagnogiuliano.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 942, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4f7f72fa152c48f29167ac9702bc10e9", 
+    "email": "bagnopatti323@libero.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 943, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "06ed94cee3964f35a5063648d39be822", 
+    "email": "bagnosamuele@milanomarittima.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 944, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "770bc289204b4f34b0d7af93407bb242", 
+    "email": "bagnotonino@libero.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 945, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "65cc9b90834a4d3f91e7f6c7591a71eb", 
+    "email": "bastonimariaelena@libero.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 946, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "12a4b6365c15469298f8ebde9a55ee89", 
+    "email": "bussolalido@tin.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 947, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7b5c1a384c8c4dff9dbbe9706d7e9cd7", 
+    "email": "gianni@selecthotels.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 948, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "81aa1ad1cd9947f29432bf9411604832", 
+    "email": "info@286.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 949, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3664e0cc40ab4993a8d0f49041715b18", 
+    "email": "info@acapulcohotels.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 950, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a51369f6721e4a3d8b789e5cb5b545a5", 
+    "email": "info@bagnidario.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 951, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "186b53118d824418b03c7e6fe61f7cbe", 
+    "email": "info@bagno300.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 952, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "85b452f99a0a42d8920b67395abb03cd", 
+    "email": "info@bagnoalbacore.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 953, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4d685df23bbe43889dcf2b81152fa9cc", 
+    "email": "info@bagnodelpino.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 954, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "aa631f54925b471b90f0da9d017711cb", 
+    "email": "info@bagnoenzomalusi.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 955, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b348deb7b7d84f8d98ef8d08692eb51a", 
+    "email": "info@bagnogallia.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 956, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e7756a056ce5404aacff34e5a2d4bffd", 
+    "email": "info@bagnoking.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 957, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e8bde777663e4be1ae253e66b5fb8077", 
+    "email": "info@bagnomalusi.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 958, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7e5c708b9b1544a0b2d8501920eade32", 
+    "email": "info@bagnomarilena.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 959, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "04063bbba3e44de1b0f70e1e29d606a2", 
+    "email": "info@bagnopeppino.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 960, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2230da0eb45c44118d8a5e47ca7a1585", 
+    "email": "info@bagnoreste.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 961, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "01d47f0434ed4b59aa1400f3c70eeff3", 
+    "email": "info@bagnoumberto.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 962, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8d25807ab70b4ce7985aee75645fd47b", 
+    "email": "info@bellettinihotel.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 963, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c06a1f788d10433dbcfed2e2a292264f", 
+    "email": "info@biciopapao.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 964, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7056105c018041ea8c53caf1dbb68a09", 
+    "email": "info@castabeach.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 965, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9c55cdd362a74a87be92e71763358567", 
+    "email": "info@corallobeach279.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 966, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "69e61b391b2e4b9e91f0ff14c66f544f", 
+    "email": "info@flamingobeach.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 967, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5352e59e131b4948ac4161fec8663201", 
+    "email": "info@hotelmiamibeach.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 968, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "bdb085c9a2fb41f7acff4e7d7bddc539", 
+    "email": "info@hotelroyalmilanomarittima.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 969, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "63d629d618da41be9968ae1923c94e29", 
+    "email": "info@lidohotel.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 970, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c9122737af2b4a21a22e52b82def16c0", 
+    "email": "info@oscarspiaggia.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 971, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "72e6b83df77f4b499927ba9a270df8cd", 
+    "email": "info@papeetebeach.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 972, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d54b2b5f1d0547d08d204551d3a0caad", 
+    "email": "info@peperittima.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 973, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "64d87382077d4c46bccb86968d3875f3", 
+    "email": "info@pinobeach.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 974, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7c55c4e7d8ea4c15a42c9cb7f5b7f220", 
+    "email": "info@rougehotel.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 975, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "dcbce07c0a33466b954a9a71f25f0ea5", 
+    "email": "massari.ciarly@libero.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 976, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7c5bacd7f5e240478b9cff43f8c907ad", 
+    "email": "patrickbaldassari1@gmail.com", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 977, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "145b8bb2bea44c849c95a747e9b8d4c8", 
+    "email": "staff@attiliobeach.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 978, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "07b731893b6445b68f55f6469a4ba216", 
+    "email": "staff@bagnoholidayvillage.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 979, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "86a3fbc37310455eae3b0dd6caa4af89", 
+    "email": "targhini308@hotmail.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 980, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "955860f942d94a868e75b723d323efa5", 
+    "email": "virtualbeach299@yahoo.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 981, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fcaa2287666c4ce0a8f6a8d64b72ae82", 
+    "email": "zanetti-fo@libero.it", 
+    "target": [
+      "gestori-milano-marittima"
+    ]
+  }
+},
+{
+  "pk": 982, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "802d488375064ad794eb378031cfb4a7", 
+    "email": "alberto.quadrelli@virgilio.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 983, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9bfad8acdc39402b867158b4b0507f25", 
+    "email": "amaduccig@gmail.com", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 984, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "b8c1dba65f0c4391bb814b4f4724aa8e", 
+    "email": "bagno14fin@hotmail.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 985, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e1c5275bda734c95aa6522a6990e25dd", 
+    "email": "bagnocarlo23bis@libero.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 986, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "813f0d3b55954176a334a30a83760a73", 
+    "email": "castel1975@gmail.com", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 987, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "78f201c9969f4f56b65ce670bb80cd50", 
+    "email": "direzione@bagnoromano73.com", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 988, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2ff36f9d0a3e45bead9c82d56d40f304", 
+    "email": "info@bagno21.com", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 989, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c6ee7c0fba3a468ea2f53b02d3f01702", 
+    "email": "info@bagno50.com", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 990, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3c914e2d223947f78e4f94dd8c0d2cb2", 
+    "email": "info@bagnoarancio2.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 991, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0ef7e74878ad40fc97bd4203e806bcd7", 
+    "email": "info@bagnopiciacia.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 992, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0cb224eebf894da5af0d35cc1a555e5d", 
+    "email": "info@bagnoromano.eu", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 993, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "31cdc56bb699476cb725b5d025f7fb07", 
+    "email": "info@pagurobeach.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 994, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "ecc250c74a2f40a19c9269548cb447b9", 
+    "email": "michele@bagno93.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 995, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a185afe3a29748919b1b4151ad143f21", 
+    "email": "nordest59@alice.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 996, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "69533a5e83ee4329a5ff0edb22fc9f66", 
+    "email": "stefano___ricci@alice.it", 
+    "target": [
+      "gestori-igea-marina"
+    ]
+  }
+},
+{
   "pk": 3, 
   "model": "userfeedback.userfeedback", 
   "fields": {
@@ -70158,6 +71608,46 @@
   }
 },
 {
+  "pk": 28, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 26, 
+    "key": "c2dfb4aedb1d9b3b52da8446221d2b27979899cf4eea27e52e92929bf022da13", 
+    "sent": "2014-07-08T13:58:47.875Z", 
+    "created": "2014-07-08T13:58:47.735Z"
+  }
+},
+{
+  "pk": 29, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 27, 
+    "key": "d1be9aebfebe38f592587b15f807a4fbee364b2fbeb80e5ea7fb3424f5da585b", 
+    "sent": "2014-07-08T14:34:04.355Z", 
+    "created": "2014-07-08T14:34:04.169Z"
+  }
+},
+{
+  "pk": 30, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 28, 
+    "key": "1c028579899b75d2c4040df6cd7ec680da755114da198768b54218a2502bcf48", 
+    "sent": "2014-07-08T16:21:25.530Z", 
+    "created": "2014-07-08T16:21:23.620Z"
+  }
+},
+{
+  "pk": 31, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 29, 
+    "key": "09c01a24a5fd2bc1aaf5d504de93142e892998e2c6a35298b6585160f6c57425", 
+    "sent": "2014-07-08T20:08:28.513Z", 
+    "created": "2014-07-08T20:08:28.245Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70186,6 +71676,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||067b9cbedf1768207521285f891bd84a", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/ec/f2/ecf2f8f62a0e87961dd93f942f72b8ab.jpg\", \"size\": [347, 260]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||07057f84c038d2018de6ceae6075bc54", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70197,6 +71694,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/7f/3a/7f3a59f995ce4efb5d6d41592b4ef7b9.jpg\", \"size\": [167, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||081a87e609794288b9ee67d6baf95477", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/56/e0/56e08c85b0ec81cbc6249e3bf635a828.jpg\", \"size\": [380, 253]}"
   }
 },
 {
@@ -70277,6 +71781,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||49f96a36dfae68d533c1756616f42233", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/8c/20/8c20b3d0a93e8be063eaf0ba19df0263.png\", \"size\": [171, 128]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||4d3d599134f1eb08808b56f6fa8a1e75", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70326,6 +71837,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||5fe0f45d20bea65e8a0d029b9ca89b1a", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/8f/f3/8ff36885573dce4d14f3093b08be097a.jpg\", \"size\": [188, 125]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||62dfc74972fbd418d4e4ff377144f7bc", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70347,10 +71865,38 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||73fd4f763441e2775f52f183c1e0a093", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/ac/c9/acc9c7da215a5c36d0bae0eb5f4638fc.jpg\", \"size\": [188, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||7949f1e29e5877ba63099bf70a0ee18e", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-65/zona-relax.jpg\", \"size\": [2048, 1536]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||7c7ccfbf2e1f69a6dd891b58a069798a", 
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-anita/bagno-anita.jpg\", \"size\": [958, 539]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||7e7fcbc23bfecb4187180d58f435c27f", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-playa-del-carmen/il-bar.jpg\", \"size\": [960, 640]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||7ee1c10e1fc880ad019700168606010c", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/e1/85/e1852dd92742ad445b6406044037dc22.jpg\", \"size\": [380, 253]}"
   }
 },
 {
@@ -70424,6 +71970,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||c90770f5d05da543819d42618cf1a4d4", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/67/90/6790134960d10d7710ded00bdb5ff038.png\", \"size\": [192, 128]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||cf4c53a715b101f47a5003ee1a1615a2", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70463,6 +72016,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/70/69/706974179a3c9daa9a409a7f8381a556.jpg\", \"size\": [173, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||e17a0eb71019379f643c48a3e059c014", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-playa-del-carmen/il-bar_1.jpg\", \"size\": [960, 640]}"
   }
 },
 {
@@ -70515,6 +72075,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||feb03be2b52df8cb2cb2ba319c217620", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/d6/c4/d6c4c189ee6711026fab5b8a4be511a6.jpg\", \"size\": [167, 125]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||ff5fe650aeec60866e4808e1e1f735d7", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70546,7 +72113,14 @@
   "pk": "sorl-thumbnail||thumbnails||57a17e6ba7219832ea7473161773bbb7", 
   "model": "thumbnail.kvstore", 
   "fields": {
-    "value": "[\"4fe1be36f7a34700b055f029f0f77677\", \"07b08917c4daaaf9977b5ac77cafbdd3\"]"
+    "value": "[\"4fe1be36f7a34700b055f029f0f77677\", \"07b08917c4daaaf9977b5ac77cafbdd3\", \"49f96a36dfae68d533c1756616f42233\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||7949f1e29e5877ba63099bf70a0ee18e", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"067b9cbedf1768207521285f891bd84a\", \"feb03be2b52df8cb2cb2ba319c217620\"]"
   }
 },
 {
@@ -70554,6 +72128,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"fc4553fbab3709c5f66457d5fa9acdef\", \"43228d0b503415e5e8ddbe0560fa1a6f\", \"58bd96011fa0ae2b80574ada538f5716\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||7e7fcbc23bfecb4187180d58f435c27f", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"7ee1c10e1fc880ad019700168606010c\", \"5fe0f45d20bea65e8a0d029b9ca89b1a\", \"c90770f5d05da543819d42618cf1a4d4\"]"
   }
 },
 {
@@ -70582,6 +72163,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"e5e1d2d3d2877b5418ec81be72e59f88\", \"e52f4565e1284f77affec22a50ae0fc7\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||e17a0eb71019379f643c48a3e059c014", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"73fd4f763441e2775f52f183c1e0a093\", \"081a87e609794288b9ee67d6baf95477\"]"
   }
 },
 {
@@ -71270,7 +72858,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-03T16:41:16.316Z", 
+    "last_login": "2014-07-08T16:25:47.316Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
@@ -71288,7 +72876,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-06-27T22:18:50.135Z", 
+    "last_login": "2014-07-08T19:12:32.139Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
@@ -71306,7 +72894,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-06-27T15:15:16.285Z", 
+    "last_login": "2014-07-08T19:11:38.827Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -71549,6 +73137,60 @@
   }
 },
 {
+  "pk": 31, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info7", 
+    "first_name": "Nazario", 
+    "last_name": "Farabegoli", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-08T14:00:17.051Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$lMW9yy2JykK7$tYhq4kavcEYpuT1C+DiQN5sZzYvF2I/oiBF0eOlDxqA=", 
+    "email": "info@bagnosaurocervia.it", 
+    "date_joined": "2014-07-08T13:58:45.495Z"
+  }
+},
+{
+  "pk": 32, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "amaduccig", 
+    "first_name": "Gianmaria", 
+    "last_name": "Amaducci", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-08T14:36:23.662Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$nPxDpNzmaiQs$eXgmXuh5nscgvAhMCeX317lF2ARG0dZeVuK2gjL5l28=", 
+    "email": "amaduccig@gmail.com", 
+    "date_joined": "2014-07-08T14:34:03.467Z"
+  }
+},
+{
+  "pk": 33, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "simonegriffi", 
+    "first_name": "Simone", 
+    "last_name": "Griffi", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-08T20:11:36.080Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$j9OmgKtAiQ0o$FOzocb0UIglY30orXTC1t+BHVVYRv+0fTKvjHuraEHs=", 
+    "email": "simonegriffi@gmail.com", 
+    "date_joined": "2014-07-08T20:08:25.260Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -71734,6 +73376,54 @@
     ], 
     "primary": true, 
     "email": "bagno28otello@gmail.com"
+  }
+},
+{
+  "pk": 26, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info7"
+    ], 
+    "primary": true, 
+    "email": "info@bagnosaurocervia.it"
+  }
+},
+{
+  "pk": 27, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "amaduccig"
+    ], 
+    "primary": true, 
+    "email": "amaduccig@gmail.com"
+  }
+},
+{
+  "pk": 28, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "inge"
+    ], 
+    "primary": false, 
+    "email": "nicola.valentini@gmail.com"
+  }
+},
+{
+  "pk": 29, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "simonegriffi"
+    ], 
+    "primary": true, 
+    "email": "simonegriffi@gmail.com"
   }
 },
 {
@@ -72091,6 +73781,66 @@
   }
 },
 {
+  "pk": 24, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Farabegoli", 
+    "name": "Nazario", 
+    "created": "2014-07-08T13:58:45.603Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-08T13:58:46.981Z", 
+    "user": [
+      "info7"
+    ], 
+    "bagni": [
+      [
+        "bagno-sauro"
+      ]
+    ]
+  }
+},
+{
+  "pk": 25, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Amaducci", 
+    "name": "Gianmaria", 
+    "created": "2014-07-08T14:34:03.574Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-08T14:34:03.775Z", 
+    "user": [
+      "amaduccig"
+    ], 
+    "bagni": [
+      [
+        "bagno-65"
+      ]
+    ]
+  }
+},
+{
+  "pk": 26, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Griffi", 
+    "name": "Simone", 
+    "created": "2014-07-08T20:08:25.395Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-08T20:08:27.346Z", 
+    "user": [
+      "simonegriffi"
+    ], 
+    "bagni": [
+      [
+        "bagno-playa-del-carmen"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -72261,6 +74011,36 @@
   }
 },
 {
+  "pk": 18, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info7"
+    ], 
+    "old_email": "info@bagnosaurocervia.it"
+  }
+},
+{
+  "pk": 19, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "amaduccig"
+    ], 
+    "old_email": "amaduccig@gmail.com"
+  }
+},
+{
+  "pk": 20, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "simonegriffi"
+    ], 
+    "old_email": "simonegriffi@gmail.com"
+  }
+},
+{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -72401,6 +74181,32 @@
     "name": "La nostra stella", 
     "image": "images/bagni/otello/la-nostra-stella.jpg", 
     "slug": "la-nostra-stella"
+  }
+},
+{
+  "pk": 13, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "bagno-65"
+    ], 
+    "name": "Zona relax", 
+    "image": "images/bagni/bagno-65/zona-relax.jpg", 
+    "slug": "zona-relax"
+  }
+},
+{
+  "pk": 14, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "bagno-playa-del-carmen"
+    ], 
+    "name": "Noi!", 
+    "image": "images/bagni/bagno-playa-del-carmen/il-bar_1.jpg", 
+    "slug": "il-bar"
   }
 },
 {
@@ -74828,25 +76634,13 @@
   }
 },
 {
-  "pk": 2155, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "bagno-playa-del-carmen"
-    ], 
-    "number": "0544 987746", 
-    "name": "tel", 
-    "slug": "telephone-number-147"
-  }
-},
-{
   "pk": 2156, 
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
       "bagno-playa-del-carmen"
     ], 
-    "number": "392 7928231", 
+    "number": "3663136326", 
     "name": "mob", 
     "slug": "mobile-number-22"
   }
@@ -89282,8 +91076,8 @@
     "bagno": [
       "bagno-65"
     ], 
-    "number": "0541 332080", 
-    "name": "tel", 
+    "number": "3384005808", 
+    "name": "mob", 
     "slug": "telephone-number-908"
   }
 },
