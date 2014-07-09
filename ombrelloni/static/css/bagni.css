@@ -550,12 +550,8 @@ button {
   top: 4px;
 }
 
-.navbar-default .navbar-brand:hover > .homizio {
-  color: #F9BF16;
-}
-
-.homepage-body-class .navbar-default .navbar-brand:hover > .homizio {
-  color: #EB604B;
+.navbar-default .navbar-brand:hover > .homizio{
+  color: #3b3b3b;
 }
 
 
