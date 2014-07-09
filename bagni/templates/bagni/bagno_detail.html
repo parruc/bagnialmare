@@ -252,11 +252,10 @@
     {{ object|neighbourhood_municipality }}
 {% endblock pagetitle %}
 
-{% block description %}
+{% block description %}{% spaceless %}
 {% trans "bagno_detail_description" as t_bagno_detail_description %}
+{{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.
 {% if object.description %}
-  {{ object.description }}
-{% else %}
-  {{ t_bagno_detail_description|capfirst }} {% if object.number %}{{ object.number }} - {% endif %}{{ object.name }}, {{ object|neighbourhood_municipality }}.
+    {{ object.description|striptags }}
 {% endif %}
-{% endblock description %}
+{% endspaceless %}{% endblock description %}
