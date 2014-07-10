@@ -60136,6 +60136,16 @@
   }
 },
 {
+  "pk": 14, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-09T18:16:51.177Z", 
+    "name": "gestori 9 luglio", 
+    "modified": "2014-07-09T18:16:51.177Z", 
+    "slug": "gestori-9-luglio"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertemplate", 
   "fields": {
@@ -60616,6 +60626,28 @@
     "sent_on": "09:54:15.826", 
     "sent_count": 5, 
     "slug": "marketing-model-b-villamarina", 
+    "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 22, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "marketing 9 luglio", 
+    "created": "2014-07-09T18:26:34.873Z", 
+    "text": "<center>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"backgroundTable\" style=\"width: 100%;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align=\"center\" valign=\"top\"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"templateBody\" style=\"width: 600px;\">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class=\"bodyContent\" valign=\"top\"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border=\"0\" cellpadding=\"20\" cellspacing=\"0\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t<div style=\"font-family: Arial, sans-serif; font-size: 12px;\">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border=\"0\" cell=\"padding=&quot;0&quot;\" cellspacing=\"0\" style=\"background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align=\"center\" style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;\" valign=\"middle\"><a href=\"http://bagnialmare.com/it/accounts/signup/\" style=\"color: #ffffff; text-decoration: none;\" target=\"_blank\">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href=\"http://bagnialmare.com/it\" target=\"_blank\">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n", 
+    "modified": "2014-07-09T18:34:27.411Z", 
+    "sent_to": "michele@bagno93.it; info@idelfinibeachvillage.com; bagnini@altamareabeachvillage.it; info@bagnoolimpia.it; info@bagnogiulia85.com; monicabiu@hotmail.it; magiusnc@gmail.com; ozor@libero.it; info@molotrezero.com; info@bagniazzurra.it; info.bagnogogo@gmail.com; marfisa26@virgilio.it; info@bagnobianconero.it; info@bagnovenezia.com; bagnotequila@libero.it; sweet.lucy@virgilio.it; marilena.battaglia@libero.it; info@bagnilupidimare.com; info@bagni100.com; info@loretta99.com; ivan.chiara@gmail.com; info@spiaggia63rimini.net; infospiaggia@turquoisebeachclub.com; aarongiulian@libero.it; bagnopeterpan@libero.it; info@lucafoschi.it; magob8@libero.it; hedonism@libero.it; info@spiaggia63a.it; beach@bulli.it; info@bagno20arcobaleno.it; info@zona53rimini.it; madeinrimini@libero.it; info@bagno84.it; ondablu72@tiscalinet.it; info@bagno27.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-9-luglio"
+    ], 
+    "sent_on": "20:34:27.410", 
+    "sent_count": 36, 
+    "slug": "marketing-9-luglio", 
     "subject": "Prenotazioni online per il tuo stabilimento balneare"
   }
 },
@@ -71374,6 +71406,402 @@
     "email": "stefano___ricci@alice.it", 
     "target": [
       "gestori-igea-marina"
+    ]
+  }
+},
+{
+  "pk": 997, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c63cca61e0d94c92aaea116b9221338f", 
+    "email": "info@bagno27.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 998, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "93da2bd58c8f438cb0449fb5816282f7", 
+    "email": "ondablu72@tiscalinet.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 999, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3ff9263cec6a432ebf988eded51b8648", 
+    "email": "info@bagno84.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1000, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "756df3b123874083b8c6e12bc88b6113", 
+    "email": "madeinrimini@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1001, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f3cdbfef3abb4132b5fc8b3550f7054d", 
+    "email": "info@zona53rimini.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1002, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6479f400df9b48a1943be5b783626de8", 
+    "email": "info@bagno20arcobaleno.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1003, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "eef176168ab44f369080b0feffd32d40", 
+    "email": "beach@bulli.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1004, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "07043dddf669411a959360bf8e82bab2", 
+    "email": "info@spiaggia63a.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1005, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "c423ab989dcb4cc284d9ea6f1162e3e1", 
+    "email": "hedonism@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1006, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4ca3f7abeb774662b0fe95eae5053755", 
+    "email": "magob8@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1007, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "08d4a82df9114c8aacf5b1b96c2f0787", 
+    "email": "info@lucafoschi.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1008, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d9ec4000cea6416a83412ecd6c705cd2", 
+    "email": "bagnopeterpan@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1009, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "71217f1bb73f461cb296c0db803802d2", 
+    "email": "aarongiulian@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1010, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "6bcb41a8a17c46c6a5fe96b2c381e1b4", 
+    "email": "infospiaggia@turquoisebeachclub.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1011, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7344afa4c04844d4b97a7f78f89f5801", 
+    "email": "info@spiaggia63rimini.net", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1012, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5046ecb3ba0c432f9d98b656bc1f3a9d", 
+    "email": "ivan.chiara@gmail.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1013, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8d2288e4fbe54dfca712513f2216366f", 
+    "email": "info@loretta99.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1014, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "57a00a6b9f5644aa93e204609d414b0c", 
+    "email": "info@bagni100.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1015, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "09b068b5b5c74330a21361655f392ab7", 
+    "email": "info@bagnilupidimare.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1016, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "8ffc1f95c8b046518bccdd70a86a93b3", 
+    "email": "marilena.battaglia@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1017, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3db3c47c685a45de85a7add9198753c9", 
+    "email": "sweet.lucy@virgilio.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1018, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a126bdf8cfc54f5d966bb00532ed78e9", 
+    "email": "bagnotequila@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1019, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "308cf44eeb1c4d71bfcaf49916b9476e", 
+    "email": "info@bagnovenezia.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1020, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fe8b1b9dac6c4c258f3fc0c4573664a7", 
+    "email": "info@bagnobianconero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1021, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "97c45d5f570846d4bf16dd4102f62dd0", 
+    "email": "marfisa26@virgilio.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1022, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3e0850eda59c4c52bb8102ed4ba14622", 
+    "email": "info.bagnogogo@gmail.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1023, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7c87bb64becb4cb686f98a5a6cfbcfa4", 
+    "email": "info@bagniazzurra.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1024, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "558449b75bfe4cd48156fb1ce1f2ef14", 
+    "email": "info@molotrezero.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1025, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a707306190494599aad835a8d63c74f0", 
+    "email": "ozor@libero.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1026, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d9a477b3cdd44b19a1349259c953c154", 
+    "email": "magiusnc@gmail.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1027, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "4854f703fe2247299314e78c97648b7f", 
+    "email": "monicabiu@hotmail.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1028, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3332d21101464fbc87d9d8265f23b7e7", 
+    "email": "info@bagnogiulia85.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1029, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "fa26da589d594903a22aaa60c44bef44", 
+    "email": "info@bagnoolimpia.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1030, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2c4894dd671d43248d6bf54fd3f86bb9", 
+    "email": "bagnini@altamareabeachvillage.it", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1031, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "74e5215e5818473faa5c786500b21dac", 
+    "email": "info@idelfinibeachvillage.com", 
+    "target": [
+      "gestori-9-luglio"
+    ]
+  }
+},
+{
+  "pk": 1032, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7bb8dcbd13e34428bcd76ea88d6c5fef", 
+    "email": "michele@bagno93.it", 
+    "target": [
+      "gestori-9-luglio"
     ]
   }
 },
