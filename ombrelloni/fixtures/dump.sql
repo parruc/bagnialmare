@@ -26269,6 +26269,8 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 644	2014-07-08 12:11:25.28453-04	5	10	2236	canotti e materassini	2	name_it modificato/a.
 645	2014-07-08 12:12:30.658623-04	5	10	2231	riviste giornalini	2	name_en e name_it modificato/a.
 646	2014-07-08 12:14:09.422727-04	5	10	2269	cabina surf e windsurf	2	name_en, name_it, slug_en e slug_it modificato/a.
+647	2014-07-09 14:16:51.208959-04	7	29	14	gestori 9 luglio	1	
+648	2014-07-09 14:26:34.875132-04	7	31	22	Prenotazioni online per il tuo stabilimento balneare	1	
 \.
 
 
@@ -26276,7 +26278,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 646, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 648, true);
 
 
 --
@@ -26486,6 +26488,7 @@ COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to,
 21	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	13	4	mattvince@libero.it; info@bagnorobertocesenatico.it; info@bagnoitaliacesenatico.com; info@bagnoideal.it; info@bagnoalba.it	09:54:15.826616	marketing model b villamarina	marketing-model-b-villamarina	5	sent	2014-07-08 03:42:34.858053-04	2014-07-08 03:54:15.827879-04
 19	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	11	4	info@rivazzurravillage.it; info@bagnoangelo108.it; info@bagno125rimini.it; info@bagno118.com; info@bagno115rimini.it; casadeiprimo@libero.it; bagno.silvano123@email.it	09:52:46.738919	marketing model b rivazzurra	marketing-model-b-rivazzurra	7	sent	2014-07-08 03:41:17.102321-04	2014-07-08 03:52:46.740881-04
 20	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	12	4	info@bagnosabrina.it; nadir.cesaretti@libero.it; info@bianconerobeach.it; info@lepalmebeach.com; bagnofocaccia12@gmail.com; magli.cristiano@libero.it; info@bagnorocchi.it; info@bagnobenvenuti.com	09:53:33.182325	marketing model b tagliata	marketing-model-b-tagliata	8	sent	2014-07-08 03:41:55.491928-04	2014-07-08 03:53:33.184236-04
+22	Prenotazioni online per il tuo stabilimento balneare	<center>\r\n<table border="0" cellpadding="0" cellspacing="0" id="backgroundTable" style="width: 100%;">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td align="center" valign="top"><!-- // Begin Template Body \\\\ -->\r\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" id="templateBody" style="width: 600px;">\r\n\t\t\t\t<tbody>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td class="bodyContent" valign="top"><!-- // Begin Module: Standard Content \\\\ -->\r\n\t\t\t\t\t\t<table border="0" cellpadding="20" cellspacing="0" style="width: 100%;">\r\n\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td valign="top">\r\n\t\t\t\t\t\t\t\t\t<div style="font-family: Arial, sans-serif; font-size: 12px;">Ciao,<br />\r\n\t\t\t\t\t\t\t\t\tmi chiamo Marco e ti scrivo per segnalarti un nuovo progetto web con lo scopo di dare visibilit&agrave; <strong>internazionale</strong> agli stabilimenti balneari della Riviera Romagnola introducendo un nuovo servizio di <strong>prenotazione online</strong>.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tVuoi partecipare anche tu <strong>gratuitamente</strong> a questo progetto? Puoi iscriverti adesso e cominciare a migliorare la tua pagina con foto e servizi offerti dalla tua struttura balneare.<br />\r\n\t\t\t\t\t\t\t\t\t&nbsp;\r\n\t\t\t\t\t\t\t\t\t<table border="0" cell="padding=&quot;0&quot;" cellspacing="0" style="background-color: #4687f4; border: 1px solid #4687f4; border-radius: 5px 5px 5px 5px; width: 30%;">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td align="center" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; line-height: 150%; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" valign="middle"><a href="http://bagnialmare.com/it/accounts/signup/" style="color: #ffffff; text-decoration: none;" target="_blank">Iscriviti ora al servizio</a></td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tNon intendo rubarti altro tempo, se hai domande non esitare a contattarmi.<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tBuon lavoro e Buona estate 2014,<br />\r\n\t\t\t\t\t\t\t\t\t<br />\r\n\t\t\t\t\t\t\t\t\tMarco<br />\r\n\t\t\t\t\t\t\t\t\t<a href="http://bagnialmare.com/it" target="_blank">BagniAlMare.com</a></div>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t<!-- // End Module: Standard Content \\\\ --></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</tbody>\r\n\t\t\t</table>\r\n\t\t\t<!-- // End Template Body \\\\ --></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</center>\r\n	14	4	michele@bagno93.it; info@idelfinibeachvillage.com; bagnini@altamareabeachvillage.it; info@bagnoolimpia.it; info@bagnogiulia85.com; monicabiu@hotmail.it; magiusnc@gmail.com; ozor@libero.it; info@molotrezero.com; info@bagniazzurra.it; info.bagnogogo@gmail.com; marfisa26@virgilio.it; info@bagnobianconero.it; info@bagnovenezia.com; bagnotequila@libero.it; sweet.lucy@virgilio.it; marilena.battaglia@libero.it; info@bagnilupidimare.com; info@bagni100.com; info@loretta99.com; ivan.chiara@gmail.com; info@spiaggia63rimini.net; infospiaggia@turquoisebeachclub.com; aarongiulian@libero.it; bagnopeterpan@libero.it; info@lucafoschi.it; magob8@libero.it; hedonism@libero.it; info@spiaggia63a.it; beach@bulli.it; info@bagno20arcobaleno.it; info@zona53rimini.it; madeinrimini@libero.it; info@bagno84.it; ondablu72@tiscalinet.it; info@bagno27.it	20:34:27.410163	marketing 9 luglio	marketing-9-luglio	36	sent	2014-07-09 14:26:34.873852-04	2014-07-09 14:34:27.411435-04
 \.
 
 
@@ -26493,7 +26496,7 @@ COPY newsletters_newsletter (id, subject, text, target_id, template_id, sent_to,
 -- Name: newsletters_newsletter_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletter_id_seq', 21, true);
+SELECT pg_catalog.setval('newsletters_newsletter_id_seq', 22, true);
 
 
 --
@@ -27479,6 +27482,42 @@ COPY newsletters_newslettersubscription (id, email, target_id, hash_field) FROM 
 994	michele@bagno93.it	8	ecc250c74a2f40a19c9269548cb447b9
 995	nordest59@alice.it	8	a185afe3a29748919b1b4151ad143f21
 996	stefano___ricci@alice.it	8	69533a5e83ee4329a5ff0edb22fc9f66
+997	info@bagno27.it	14	c63cca61e0d94c92aaea116b9221338f
+998	ondablu72@tiscalinet.it	14	93da2bd58c8f438cb0449fb5816282f7
+999	info@bagno84.it	14	3ff9263cec6a432ebf988eded51b8648
+1000	madeinrimini@libero.it	14	756df3b123874083b8c6e12bc88b6113
+1001	info@zona53rimini.it	14	f3cdbfef3abb4132b5fc8b3550f7054d
+1002	info@bagno20arcobaleno.it	14	6479f400df9b48a1943be5b783626de8
+1003	beach@bulli.it	14	eef176168ab44f369080b0feffd32d40
+1004	info@spiaggia63a.it	14	07043dddf669411a959360bf8e82bab2
+1005	hedonism@libero.it	14	c423ab989dcb4cc284d9ea6f1162e3e1
+1006	magob8@libero.it	14	4ca3f7abeb774662b0fe95eae5053755
+1007	info@lucafoschi.it	14	08d4a82df9114c8aacf5b1b96c2f0787
+1008	bagnopeterpan@libero.it	14	d9ec4000cea6416a83412ecd6c705cd2
+1009	aarongiulian@libero.it	14	71217f1bb73f461cb296c0db803802d2
+1010	infospiaggia@turquoisebeachclub.com	14	6bcb41a8a17c46c6a5fe96b2c381e1b4
+1011	info@spiaggia63rimini.net	14	7344afa4c04844d4b97a7f78f89f5801
+1012	ivan.chiara@gmail.com	14	5046ecb3ba0c432f9d98b656bc1f3a9d
+1013	info@loretta99.com	14	8d2288e4fbe54dfca712513f2216366f
+1014	info@bagni100.com	14	57a00a6b9f5644aa93e204609d414b0c
+1015	info@bagnilupidimare.com	14	09b068b5b5c74330a21361655f392ab7
+1016	marilena.battaglia@libero.it	14	8ffc1f95c8b046518bccdd70a86a93b3
+1017	sweet.lucy@virgilio.it	14	3db3c47c685a45de85a7add9198753c9
+1018	bagnotequila@libero.it	14	a126bdf8cfc54f5d966bb00532ed78e9
+1019	info@bagnovenezia.com	14	308cf44eeb1c4d71bfcaf49916b9476e
+1020	info@bagnobianconero.it	14	fe8b1b9dac6c4c258f3fc0c4573664a7
+1021	marfisa26@virgilio.it	14	97c45d5f570846d4bf16dd4102f62dd0
+1022	info.bagnogogo@gmail.com	14	3e0850eda59c4c52bb8102ed4ba14622
+1023	info@bagniazzurra.it	14	7c87bb64becb4cb686f98a5a6cfbcfa4
+1024	info@molotrezero.com	14	558449b75bfe4cd48156fb1ce1f2ef14
+1025	ozor@libero.it	14	a707306190494599aad835a8d63c74f0
+1026	magiusnc@gmail.com	14	d9a477b3cdd44b19a1349259c953c154
+1027	monicabiu@hotmail.it	14	4854f703fe2247299314e78c97648b7f
+1028	info@bagnogiulia85.com	14	3332d21101464fbc87d9d8265f23b7e7
+1029	info@bagnoolimpia.it	14	fa26da589d594903a22aaa60c44bef44
+1030	bagnini@altamareabeachvillage.it	14	2c4894dd671d43248d6bf54fd3f86bb9
+1031	info@idelfinibeachvillage.com	14	74e5215e5818473faa5c786500b21dac
+1032	michele@bagno93.it	14	7bb8dcbd13e34428bcd76ea88d6c5fef
 \.
 
 
@@ -27486,7 +27525,7 @@ COPY newsletters_newslettersubscription (id, email, target_id, hash_field) FROM 
 -- Name: newsletters_newslettersubscription_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 996, true);
+SELECT pg_catalog.setval('newsletters_newslettersubscription_id_seq', 1032, true);
 
 
 --
@@ -27507,6 +27546,7 @@ COPY newsletters_newslettertarget (id, name, slug, created, modified) FROM stdin
 11	gestori Rivazzurra	gestori-rivazzurra	2014-07-08 03:13:59.350022-04	2014-07-08 03:13:59.350071-04
 12	gestori Tagliata	gestori-tagliata	2014-07-08 03:14:14.335328-04	2014-07-08 03:14:14.335403-04
 13	gestori Villamarina	gestori-villamarina	2014-07-08 03:14:32.500197-04	2014-07-08 03:16:10.783187-04
+14	gestori 9 luglio	gestori-9-luglio	2014-07-09 14:16:51.177572-04	2014-07-09 14:16:51.17764-04
 \.
 
 
@@ -27514,7 +27554,7 @@ COPY newsletters_newslettertarget (id, name, slug, created, modified) FROM stdin
 -- Name: newsletters_newslettertarget_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 13, true);
+SELECT pg_catalog.setval('newsletters_newslettertarget_id_seq', 14, true);
 
 
 --
