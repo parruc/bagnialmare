@@ -4,7 +4,7 @@ from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.validators import MaxLengthValidator
-#from ckeditor.fields import RichTextField
+from ckeditor.fields import RichTextField
 
 
 from . import BaseModel
@@ -18,7 +18,7 @@ class Bagno(BaseModel):
         verbose_name_plural = _('Bagni')
         app_label = 'bagni'
 
-    description = models.TextField(blank=True, max_length=350, verbose_name=_("Description"),
+    description = RichTextField(blank=True, max_length=350, verbose_name=_("Description"),
                                    validators = [MaxLengthValidator(350)])
     number = models.CharField(max_length=30, blank=True, verbose_name=_("Number"))
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni', verbose_name=_("Languages"))
