@@ -13413,11 +13413,12 @@ SELECT pg_catalog.setval('auth_permission_id_seq', 108, true);
 
 COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
 22	pbkdf2_sha256$12000$XDrENqDUSeEx$fS/n0wLiMXc55IGNfjQUAahUo1KY0rbN8QIU7GtUviw=	2014-06-10 17:17:06.185602-04	f	spiaggia136	fausto	ravaglia	spiaggia136@gmail.com	f	t	2014-06-10 17:15:56.918226-04
+30	pbkdf2_sha256$12000$JXaFzrXdNlbz$4V79rilgGxVM8cp1n/sSAbRNvHoxnP6xIrX8eoVZ4rY=	2014-07-10 07:38:02.50146-04	f	bagno28otello	Gabriele	Giovanardi	bagno28otello@gmail.com	f	t	2014-07-07 14:32:54.417723-04
+6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-07-10 08:02:53.570741-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
 29	pbkdf2_sha256$12000$rdh8idtD4T8F$pbEiPPTZFmOhw01fWS/Sjgmjpatx61h5LwmaQr39ulg=	2014-07-07 00:53:52.741379-04	f	marcomarchetti.ing	Marco	Marchetti	marcomarchetti.ing@gmail.com	f	t	2014-07-07 00:53:20.098341-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-07-07 07:44:12.270681-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 24	pbkdf2_sha256$12000$epMiSQuwsn2v$XMqOSbi+TS++FOYVXEpU0SNmuqrCCBTsN4xZQvC3nqo=	2014-06-26 13:01:18.341567-04	f	info4	eros	fabbri	info@bagnomeridiano.it	f	t	2014-06-26 12:53:42.035262-04
-30	pbkdf2_sha256$12000$JXaFzrXdNlbz$4V79rilgGxVM8cp1n/sSAbRNvHoxnP6xIrX8eoVZ4rY=	2014-07-07 14:58:40.262203-04	f	bagno28otello	Gabriele	Giovanardi	bagno28otello@gmail.com	f	t	2014-07-07 14:32:54.417723-04
 25	pbkdf2_sha256$12000$Vn85R5b1GMqi$ZfM5hcAbZc3CTsDwycjZaCOIzbx6MjWtRjOVlhF1x38=	2014-06-27 18:15:29.63828-04	f	info5	Rosa	Dallaporta	Info@bagnomexico.com	f	t	2014-06-27 18:14:31.022011-04
 31	pbkdf2_sha256$12000$lMW9yy2JykK7$tYhq4kavcEYpuT1C+DiQN5sZzYvF2I/oiBF0eOlDxqA=	2014-07-08 10:00:17.051404-04	f	info7	Nazario	Farabegoli	info@bagnosaurocervia.it	f	t	2014-07-08 09:58:45.49539-04
 26	pbkdf2_sha256$12000$PgCQHRDORJaU$fP6AAOoCk1H1uKuTqA5XcJ65mnxdNmOCTI5NjaBA9Q0=	2014-07-01 07:49:39.061965-04	f	info6	Loretta	Casadei	info@loretta99.com	f	t	2014-07-01 07:14:00.345329-04
@@ -13426,7 +13427,6 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 32	pbkdf2_sha256$12000$nPxDpNzmaiQs$eXgmXuh5nscgvAhMCeX317lF2ARG0dZeVuK2gjL5l28=	2014-07-08 10:36:23.66291-04	f	amaduccig	Gianmaria	Amaducci	amaduccig@gmail.com	f	t	2014-07-08 10:34:03.467126-04
 20	pbkdf2_sha256$12000$I0oDJY31RDCa$oRi8DNR7BjHFyLPTVt603EzOMOe+RYIDRWKQFOuqsLU=	2014-06-10 04:06:02.213327-04	f	info	società	Nettuno	info@centrovacanzericcione.it	f	t	2014-06-10 04:01:46.021113-04
 21	pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=	2014-06-10 15:42:53.620993-04	f	info2	Alessandro	Bologna	info@bagnoegisto38.com	f	t	2014-06-10 15:42:30.977587-04
-6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-07-08 12:25:47.316578-04	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-07-08 15:11:38.827021-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 27	pbkdf2_sha256$12000$M8DNWk0GsITH$nDMqXwY/f+pyOZesiOq/IXAgnbLctQG6NaN8xPrQ3Jw=	2014-07-03 03:36:54.590939-04	f	spiaggia23riccione	fabio	russo	spiaggia23riccione@email.it	f	t	2014-07-01 09:43:25.018905-04
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.it	f	t	2014-07-02 15:15:51.370099-04
@@ -13747,7 +13747,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12966	Bagno arlecchino	bagno-arlecchino		Viale Venezia	bagnoarlecchino@libero.it	http://www.bagnoaurora-arlecchino.com	0101000020E6100000000000801BD32840A8526BF9FA184640	<h3>Details</h3>\n\t<p>sdraio: 25<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 22<br />\n\tlettini: 160<br />\n\tcabine: 14<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1760<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 25<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 22<br />\n\tlettini: 160<br />\n\tcabine: 14<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1760<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12967	Bagno aurora	bagno-aurora-2		Via Montello, 24	bagnoaurora@tiscalinet.it	http://www.bagnoaurora-arlecchino.com	0101000020E6100000000000C080D32840CF8CC3C6E2184640		\N	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12969	Bagno belvedere	bagno-belvedere		Viale Lungomare Ponente, 78	bagnobelvedere@gmail.com	http://bagnobelvedere.com	0101000020E6100000C03FF47BAECA28408FAC34F5901A4640		\N	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-12975	Bagno brasil	bagno-brasil		Viale Milano, 33	praiabrasil@libero.it	http://www.praiabrasil.it	0101000020E610000000000000ABD22840D3FA645C2A194640	<h3>Details</h3>\n\t<p>lavapiedi: 3<br />\n\tsdraio: 50<br />\n\twc: 4<br />\n\tombrelloni: 160<br />\n\tfronte mare: 33<br />\n\tlettini: 290<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2970<br />\n\tdocce aperte: 3</p>	<h3>Details</h3>\n\t<p>lavapiedi: 3<br />\n\tsdraio: 50<br />\n\twc: 4<br />\n\tombrelloni: 160<br />\n\tfronte mare: 33<br />\n\tlettini: 290<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2970<br />\n\tdocce aperte: 3</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12976	Bagno britannia	bagno-britannia		Viale Giosuè Carducci, 129	info@hbritannia.it	http://www.hbritannia.it	0101000020E6100000000000208CD128408CD110EB6E194640	<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 80<br />\n\tfronte mare: 45<br />\n\tlettini: 160<br />\n\tcabine: 54<br />\n\tdocce chiuse: 16<br />\n\tsuperficie complessiva spiaggia: 5400<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 80<br />\n\tfronte mare: 45<br />\n\tlettini: 160<br />\n\tcabine: 54<br />\n\tdocce chiuse: 16<br />\n\tsuperficie complessiva spiaggia: 5400<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12978	Bagno camping cesenatico	bagno-camping-cesenatico		Viale Cristoforo Colombo	info@cesenaticocampingvillage.com	http://www.cesenaticocampingvillage.com	0101000020E6100000000000A0CAC7284056AF23589A1B4640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 0<br />\n\twc: 7<br />\n\tombrelloni: 490<br />\n\tfronte mare: 102<br />\n\tlettini: 200<br />\n\tcabine: 12<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 5100<br />\n\tdocce aperte: 6</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 0<br />\n\twc: 7<br />\n\tombrelloni: 490<br />\n\tfronte mare: 102<br />\n\tlettini: 200<br />\n\tcabine: 12<br />\n\tdocce chiuse: 0<br />\n\tsuperficie complessiva spiaggia: 5100<br />\n\tdocce aperte: 6</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12982	Bagno casali	bagno-casali		Via Montenero, 53			0101000020E6100000000000A0E0CF28409F09EEDAE2194640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 16<br />\n\twc: 5<br />\n\tombrelloni: 130<br />\n\tfronte mare: 34<br />\n\tlettini: 300<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3718<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 16<br />\n\twc: 5<br />\n\tombrelloni: 130<br />\n\tfronte mare: 34<br />\n\tlettini: 300<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3718<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13818,7 +13817,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13433	Bagno Serafino	serafino	24 sud	Lungomare Tintori			0101000020E61000006A6FE35BC729294030C7E18222094640	<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 200</p>\r\n<p>Tariffe convenzionate con gli alberghi</p>	<h3>Details</h3>\r\n\t<p>cabine: 80<br />\r\n\tombrelloni: 200</p>\r\n<p>Tariffe convenzionate con gli alberghi</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:45.0941-04
 13431	Bagno Simone	simone	21 sud	Lungomare Tintori			0101000020E6100000F4E06A743929294090BC732843094640	<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>	<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:51.30339-04
 13415	Bagno Romano	romano	5 sud	Lungomare Tintori			0101000020E61000002AE9E7A1442629403DD92846F1094640				25	t	2014-07-02 18:00:00-04	2014-07-07 09:36:07.314202-04
-13438	Bagno Otello	otello	28 sud	Lungomare Tintori		http://bagno28otello.com/	0101000020E6100000642D8490842A2940048074FBF6084640	\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n- accesso ai cani www.comitatobagninirimini.it</p>	25	t	2014-07-02 18:00:00-04	2014-07-08 10:15:23.262714-04
+13438	Bagno Otello	otello	28 sud	Lungomare Tintori		http://bagno28otello.com/	0101000020E6100000642D8490842A2940048074FBF6084640	Il Bagno Otello vi offre anche: lettino con cuscino, accesso ai cani dog beach, ingresso per  disabili, 40 cabine, 160 ombrelloni-Wifi free.\r\nTroverete tutte le informazione su prezzi e servizi andando nel nostro sito.\r\n	Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.	Il Bagno Otello vi offre anche: lettino con cuscino, accesso ai cani dog beach, ingresso per  disabili, 40 cabine, 160 ombrelloni-Wifi free.\r\nTroverete tutte le informazione su prezzi e servizi andando nel nostro sito.\r\n	25	t	2014-07-02 18:00:00-04	2014-07-10 07:47:08.662434-04
 13434	Bagno Aldo	aldo	25 sud	Lungomare Tintori			0101000020E6100000E79E0BA9F6292940657506A117094640	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:37:15.186344-04
 13627	Bagni Malibù	bagni-malibu	23	Fontanelle Abissinia			0101000020E6100000CB175166C55C294098E3B25DE3FE4540				36	t	2014-07-02 18:00:00-04	2014-07-08 10:15:59.103239-04
 13445	Bagno La Dolce Vita	la-dolce-vita	34 sud	Lungomare Murri			0101000020E6100000494A755FA02B2940449550B0B5084640	<h3>Details</h3>\n\t<p>cabine: 115<br />\n\tombrelloni: 220</p>	<h3>Details</h3>\n\t<p>cabine: 115<br />\n\tombrelloni: 220</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -14596,6 +14595,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13698	La Spiaggia delle Donne Zona 97	la-spiaggia-delle-donne	97	Lungomare della Costituzione Zona 97		http://www.laspiaggiadelledonne.it/	0101000020E6100000DC8E8D248D4E294042C61A612B014640	Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i più piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In più corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.		Alla Spiaggia delle Donne trovi: animazione tutti i giorni per i più piccoli grande parco giochi, nursery con fasciatoio, ping-pong, bigliardino e tanto altro; abbiamo 10 postazioni autorizzate dal comune di Riccione per ospitare i nostri ospiti a 4 zampe. In più corso di piadina romagnola e scuola di Stand Up Paddle SUP e noleggio tavole.	36	t	2014-07-02 18:00:00-04	2014-07-08 10:15:48.16483-04
 13580	Bagno Egisto	egisto	38 nord	Via Dati 113 h		http://www.bagnoegisto38.com/	0101000020E6100000E87C254EF61029400CD373E2DD0B4640	Balli latini americani e aquagym\r\nArea benessere con lettini massaggianti (a pagamento)\r\nPet friendly: ciotole, sacchetti, doccia dedicata e veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti attrezzati limitati: prenotateli.\r\nDal 2009 aderiamo al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.		Balli latini americani e aquagym\r\nArea benessere con lettini massaggianti (a pagamento)\r\nPet friendly: ciotole, sacchetti, doccia dedicata e veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti attrezzati limitati: prenotateli.\r\nDal 2009 aderiamo al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.	32	t	2014-07-02 18:00:00-04	2014-07-08 10:25:35.216118-04
 12915	Bagno Playa del Carmen	bagno-playa-del-carmen	84	Arenile Demaniale 84		http://www.playadelcarmen84.it/	0101000020E610000070CF76966ABF2840B0F5566E731E4640	Playa del Carmen 84... piccolo, caldo, verde, elegante, artistico, sportivo.... Cucina di classe ma non eccessiva, aperitivi carichi e con Live Bands every Sunday, animazione per i più piccoli, Sport set sui due campi professionali e tutta l'energia e il divertimento che un bagno al mare può e deve offrire!! come onnnn!!		Playa del Carmen 84... piccolo, caldo, verde, elegante, artistico, sportivo.... Cucina di classe ma non eccessiva, aperitivi carichi e con Live Bands every Sunday, animazione per i più piccoli, Sport set sui due campi professionali e tutta l'energia e il divertimento che un bagno al mare può e deve offrire!! come onnnn!!	3	t	2014-07-02 18:00:00-04	2014-07-08 16:32:31.683813-04
+12975	Praia Brasil	praia-brasil		Viale Milano, 33		http://www.praiabrasil.it/	0101000020E610000006000000ABD22840D0FA645C2A194640			None	6	t	2014-07-02 18:00:00-04	2014-07-10 08:11:21.558756-04
 \.
 
 
@@ -14831,8 +14831,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23850	13426	69
 21705	12974	68
 21706	12974	69
-21707	12975	68
-21708	12975	69
 21709	12976	68
 21710	12976	69
 21711	12977	68
@@ -17260,29 +17258,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91479	13516	2225
 91480	13516	2180
 91481	13516	2205
-91714	13438	2180
-91715	13438	2181
-91716	13438	2184
-91717	13438	2187
-91718	13438	2189
-91719	13438	2193
-91720	13438	2194
-91721	13438	2195
-91722	13438	2205
-91723	13438	2206
-91724	13438	2209
-91725	13438	2214
-91726	13438	2215
-91727	13438	2219
-91728	13438	2235
-91729	13438	2247
-91730	13438	2253
-91731	13438	2254
-91732	13438	2255
-91733	13438	2258
-91734	13438	2269
-91735	13438	2273
-91736	13438	2274
 90813	12854	2179
 90814	12854	2180
 90815	12854	2181
@@ -17419,6 +17394,18 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91760	13698	2273
 91761	13698	2274
 91762	13698	2289
+92149	13438	2180
+92150	13438	2181
+92151	13438	2184
+92152	13438	2187
+92153	13438	2189
+92154	13438	2193
+92155	13438	2194
+92156	13438	2195
+92157	13438	2205
+92158	13438	2206
+92159	13438	2209
+92160	13438	2214
 81681	12883	2190
 81682	12883	2204
 81683	12883	2205
@@ -17433,6 +17420,17 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 81692	12883	2184
 81693	12883	2187
 81694	12883	2179
+92161	13438	2215
+92162	13438	2219
+92163	13438	2235
+92164	13438	2247
+92165	13438	2253
+92166	13438	2254
+92167	13438	2255
+92168	13438	2258
+92169	13438	2269
+92170	13438	2273
+92171	13438	2274
 81707	12885	2183
 81708	12885	2202
 81709	12885	2204
@@ -18123,19 +18121,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 82623	12974	2189
 82624	12974	2210
 82625	12974	2180
-82626	12975	2201
-82627	12975	2210
-82628	12975	2217
-82629	12975	2209
-82630	12975	2223
-82631	12975	2221
-82632	12975	2181
-82633	12975	2180
-82634	12975	2187
-82635	12975	2186
-82636	12975	2185
-82637	12975	2198
-82638	12975	2189
 82639	12976	2239
 82640	12976	2210
 82641	12976	2214
@@ -22622,6 +22607,22 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91853	13027	2198
 91854	13027	2223
 91855	13027	2183
+92200	12975	2209
+92201	12975	2210
+92202	12975	2180
+92203	12975	2181
+92204	12975	2214
+92205	12975	2215
+92206	12975	2184
+92207	12975	2185
+92208	12975	2186
+92209	12975	2187
+92210	12975	2189
+92211	12975	2223
+92212	12975	2221
+92213	12975	2198
+92214	12975	2201
+92215	12975	2230
 87444	13555	2296
 87445	13556	2198
 87446	13556	2181
@@ -24041,7 +24042,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 -- Name: bagni_bagno_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 92056, true);
+SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 92215, true);
 
 
 --
@@ -26271,6 +26272,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 646	2014-07-08 12:14:09.422727-04	5	10	2269	cabina surf e windsurf	2	name_en, name_it, slug_en e slug_it modificato/a.
 647	2014-07-09 14:16:51.208959-04	7	29	14	gestori 9 luglio	1	
 648	2014-07-09 14:26:34.875132-04	7	31	22	Prenotazioni online per il tuo stabilimento balneare	1	
+649	2014-07-10 08:11:22.694696-04	6	9	12975	Praia Brasil	2	Changed slug.
 \.
 
 
@@ -26278,7 +26280,7 @@ COPY django_admin_log (id, action_time, user_id, content_type_id, object_id, obj
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('django_admin_log_id_seq', 648, true);
+SELECT pg_catalog.setval('django_admin_log_id_seq', 649, true);
 
 
 --
@@ -26369,7 +26371,6 @@ kvjdv4pgxh8wzp0rm4h9fwiznwjufct8	OTljZjFiZjVjOTU5YWIxMTU4ZWJjMDdlMDk2MTBhOTY3MTY
 11env1qqjsrfqfbr1ou4vt7z9jswcg7y	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-05-12 08:53:44.551299-04
 am5v3nc0bwvzr25jqevjtavi8lhrg3om	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-05-25 13:03:04.556787-04
 5lskdd2s9rg6kwv5ffqacubpoiqsqoss	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-05-12 19:41:26.076653-04
-kysqp1s1ftxt4ksxny57lz72tz7fm958	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-22 12:25:47.32007-04
 u0k40btll9pvm66e777shmk7aeo24kcg	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-05-22 05:15:49.316695-04
 n0z3cbns88y17jalrggfaoxossej206c	MGQ5MjgyZmRiZjZiMjU1NzhmZDEwNzAyMDc4NDk5ZDFiY2QxMjA2OTp7ImFjY291bnRfdXNlciI6OSwiYWNjb3VudF92ZXJpZmllZF9lbWFpbCI6bnVsbH0=	2014-05-22 05:28:23.664885-04
 f0monnxui51rth0x4krmvxg84aey2qmg	NTM5MmU4Yjg0YmJmZjRiN2IxNTA0NjM5MWE4M2UyODMxMzEyYzcxYTp7ImFjY291bnRfdXNlciI6MTAsImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGx9	2014-05-22 05:41:55.9064-04
@@ -26406,10 +26407,12 @@ dr3wcrtfgwk18qwgjppnzk87gbm4vgtc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM
 j6bym2jvj0y6nty3z577pevag9oicn0i	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-22 15:12:32.143486-04
 izfzwtqi1b2wzhei0s9xt0lfgvgwps1j	OGM0NzNiZjFiMDU5OTQyYjU5YjhkOWQ1OTViOTYzYzNmOWZjYzU3OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI0LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-10 13:01:18.351296-04
 qtuu73ja2fezr2ptlo1qewqmfjkoydkw	YWUxN2Q2NjFjNDI5ODhmNDNkMjVhYjI0ZTY4ZGE5NjdiZmQwZTJlYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjMzLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-22 16:11:36.087269-04
-symdgy4tkc4gz1vyvqush3dgsy5tilow	MWFjOGVkZTMxMzZmMjAzNDUyMTBmZjA2ZTAwYzIzNDcyYmNkZjhiNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-11 11:00:05.594676-04
 ghgmiw1e9qjvrvoa1r26k5848leilb5l	MWFjOGVkZTMxMzZmMjAzNDUyMTBmZjA2ZTAwYzIzNDcyYmNkZjhiNzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6OH0=	2014-07-11 11:15:16.288738-04
 gq55wd885ziofr4urer56r6lrtnyswqk	ZWQ2ZjI3ZTQ4YmVkNzUxYTdlOTM1ZGUyMGM2OWI0MzA0ODRhZDlkZjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI1LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-11 18:15:29.64807-04
+dasvicau893gv850luj85n8agrwqr3rz	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-24 07:47:29.920588-04
+mf9o97j8oln0b80i2lnfxgxmzuv5jn1f	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-24 08:02:53.574986-04
 38iky8w1nhzgac80q401y6dziox2ze26	NGYyNjU3NDUwYjhhYjM2MDM0ZDA1YTRiZDAxYjBlZWNlMmZhMGJkMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI2LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-15 07:49:39.071405-04
+uy2djyd54dxr1ds0gn350inpfls20bo4	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-24 08:06:05.344679-04
 atm4w9mnxju0nnnuw07e42t4b5ddyqwc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-16 11:28:30.768053-04
 t7wo8emou5lad5hadyb9yxez6k5fxwvk	ZjMzNTcyOTg1ZjQ1YTNhM2Y5NTY5MTZmNTA0MGNlZGEwNGEyNzdkOTp7ImFjY291bnRfdXNlciI6MjgsIl9zZXNzaW9uX2V4cGlyeSI6MCwiYWNjb3VudF92ZXJpZmllZF9lbWFpbCI6bnVsbH0=	2014-07-16 15:21:53.041523-04
 wzbn0zwco60xa4n4sgd77m2g9dwkwsth	ZDZjMWI2MzcwODU5Y2ZhMmM0ZDQ2ZTRmZTYyYjcyY2UyMmQzNDM5Mzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI3LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-17 03:36:54.597662-04
@@ -26417,7 +26420,6 @@ qhbor3usg0ia8b003dfdjzwr275fwksd	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM
 dafi453k2kl1wrcnmfrotepqy31d57ir	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-18 10:45:50.753163-04
 qhvvn8zb2q6tam8q3opef06iz9hgozou	ODYyNmVlYmJkZjE0OGVkMzViMjFlMWY1YmVkZGY0YWJlYjMzNzk0NDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI5LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-21 00:53:52.756378-04
 glh68r0dr5js8eimp679q3i3ppu2lup2	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-21 07:44:12.274958-04
-synbnpw7y8th24vilpp9uot4hfh8geoa	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-21 15:32:53.794909-04
 xgsi1rwjwdyaus18oiwnbliq42cp65qw	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2014-07-22 03:12:36.021245-04
 pljppru60gkoskex7g8vbds62ci5oyb6	Y2RhNTdlZmQyZjJkY2IxOGM4MTBlOTBlZDdmMDM0ODNiNDFiOTFkMTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjMxLCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-22 10:00:17.072356-04
 \.
