@@ -8,12 +8,12 @@ from django.db.models import signals
 from django.conf import settings
 from django.utils.translation import get_language, activate, deactivate
 
-from whoosh import fields, index, qparser, sorting, query
+from whoosh import fields, index, qparser, sorting, query, analysis
 
 from .models import Bagno, Service, Language
 
 WHOOSH_SCHEMA = fields.Schema(id=fields.ID(stored=True, unique=True),
-                              text=fields.TEXT(),
+                              text=fields.TEXT(analyzer=analysis.StandardAnalyzer(minsize=1)),
                               services=fields.IDLIST(stored=True, expression=re.compile(r"[^#]+"),),
                               languages=fields.IDLIST(stored=True, expression=re.compile(r"[^#]+"),),
                               )
