@@ -137,7 +137,6 @@
               </ul>
             </li>
             {% else %}
-            {% comment %}
             <li>
               <a href="{% url 'account_login' %}"
                   title="{{ t_login }}"
@@ -145,7 +144,6 @@
               <strong>{{ t_login|capfirst }}</strong>
               </a>
             </li>
-            {% endcomment %}
             <li>
               <a href="{% url 'account_signup' %}"
                  title="{{ t_are_you_manager }}">
