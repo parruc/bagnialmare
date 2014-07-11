@@ -17687,33 +17687,47 @@
   "pk": 12975, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.praiabrasil.it", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 3<br />\n\tsdraio: 50<br />\n\twc: 4<br />\n\tombrelloni: 160<br />\n\tfronte mare: 33<br />\n\tlettini: 290<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2970<br />\n\tdocce aperte: 3</p>", 
+    "site": "http://www.praiabrasil.it/", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4114608764648438 44.1966052525582640)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 3<br />\n\tsdraio: 50<br />\n\twc: 4<br />\n\tombrelloni: 160<br />\n\tfronte mare: 33<br />\n\tlettini: 290<br />\n\tcabine: 20<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 2970<br />\n\tdocce aperte: 3</p>", 
+    "point": "POINT (12.4114608764648544 44.1966052525582427)", 
+    "modified": "2014-07-10T12:11:21.558Z", 
+    "description_en": "", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "baby-sitter"
+        "disabled"
       ], 
       [
         "catering"
       ], 
       [
-        "five-a-side"
+        "baby-park"
       ], 
       [
-        "disabled"
+        "beach-volley"
+      ], 
+      [
+        "internet"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "entertainment"
       ], 
       [
         "bookstore"
@@ -17722,36 +17736,24 @@
         "footvolley"
       ], 
       [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
         "basketball"
       ], 
       [
-        "entertainment"
+        "baby-sitter"
+      ], 
+      [
+        "nursery"
       ]
     ], 
     "address": "Viale Milano, 33", 
-    "description_it": null, 
-    "mail": "praiabrasil@libero.it", 
+    "description_it": "None", 
+    "mail": "", 
     "accepts_booking": true, 
-    "slug": "bagno-brasil", 
+    "slug": "praia-brasil", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno brasil"
+    "name": "Praia Brasil"
   }
 },
 {
@@ -45169,11 +45171,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://bagno28otello.com/", 
-    "description": "\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "description": "Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5830426370000126 44.0700372999999956)", 
-    "modified": "2014-07-08T14:15:23.262Z", 
-    "description_en": "\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "modified": "2014-07-10T11:47:08.662Z", 
+    "description_en": "Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.", 
     "number": "28 sud", 
     "languages": [], 
     "services": [
@@ -45248,7 +45250,7 @@
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": "\t<p>cabine: 40<br />\r\n\tombrelloni: 160</p>\r\n<p>Servizi offerti parco giochi con gonfiabili\r\n- lettino con cuscino\r\n-\u00a0accesso ai cani www.comitatobagninirimini.it</p>", 
+    "description_it": "Il Bagno Otello vi offre anche: lettino con cuscino, accesso ai cani dog beach, ingresso per  disabili, 40 cabine, 160 ombrelloni-Wifi free.\r\nTroverete tutte le informazione su prezzi e servizi andando nel nostro sito.\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "otello", 
@@ -73286,7 +73288,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-08T16:25:47.316Z", 
+    "last_login": "2014-07-10T12:02:53.570Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
@@ -73556,7 +73558,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2014-07-07T18:58:40.262Z", 
+    "last_login": "2014-07-10T11:38:02.501Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$JXaFzrXdNlbz$4V79rilgGxVM8cp1n/sSAbRNvHoxnP6xIrX8eoVZ4rY=", 
@@ -77978,7 +77980,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-brasil"
+      "praia-brasil"
     ], 
     "number": "0547 83263", 
     "name": "tel", 
@@ -77990,7 +77992,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-brasil"
+      "praia-brasil"
     ], 
     "number": "0547 83263", 
     "name": "fax", 
