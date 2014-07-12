@@ -59301,24 +59301,17 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagnolido72.it/", 
-    "description": "None", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4814274053999892 44.1361109729999868)", 
-    "modified": "2014-07-03T16:59:47.605Z", 
-    "description_en": "None", 
+    "modified": "2014-07-11T12:31:23.876Z", 
+    "description_en": "", 
     "number": "72", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Via A. Pinzon", 
-    "description_it": "None", 
-    "mail": "stefano___ricci@alice.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-lido-3", 
     "neighbourhood": [
@@ -72078,6 +72071,16 @@
   }
 },
 {
+  "pk": 32, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 30, 
+    "key": "5ddefdc91e77855db6e21577e8c56bbccbe7584c2ee19ecd25b664083d72f94d", 
+    "sent": "2014-07-11T12:12:57.304Z", 
+    "created": "2014-07-11T12:12:57.062Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -73621,6 +73624,24 @@
   }
 },
 {
+  "pk": 34, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "stefano___ricci", 
+    "first_name": "stefano", 
+    "last_name": "ricci", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-11T12:12:54.056Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$XKjE6dyuPrHn$8nUh11D/tXesF4vtnuMge0zmRkJnqTxEemig/P7MJJ0=", 
+    "email": "stefano___ricci@alice.it", 
+    "date_joined": "2014-07-11T12:12:54.056Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -73854,6 +73875,18 @@
     ], 
     "primary": true, 
     "email": "simonegriffi@gmail.com"
+  }
+},
+{
+  "pk": 30, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "stefano___ricci"
+    ], 
+    "primary": true, 
+    "email": "stefano___ricci@alice.it"
   }
 },
 {
@@ -74271,6 +74304,26 @@
   }
 },
 {
+  "pk": 27, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "ricci", 
+    "name": "stefano", 
+    "created": "2014-07-11T12:12:54.618Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-11T12:12:56.248Z", 
+    "user": [
+      "stefano___ricci"
+    ], 
+    "bagni": [
+      [
+        "bagno-lido-3"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -74468,6 +74521,16 @@
       "simonegriffi"
     ], 
     "old_email": "simonegriffi@gmail.com"
+  }
+},
+{
+  "pk": 21, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "stefano___ricci"
+    ], 
+    "old_email": "stefano___ricci@alice.it"
   }
 },
 {
