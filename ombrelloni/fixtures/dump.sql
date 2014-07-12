@@ -13208,6 +13208,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 27	32	amaduccig@gmail.com	t	t
 28	6	nicola.valentini@gmail.com	f	f
 29	33	simonegriffi@gmail.com	t	t
+30	34	stefano___ricci@alice.it	f	t
 \.
 
 
@@ -13215,7 +13216,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 29, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 30, true);
 
 
 --
@@ -13244,6 +13245,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 29	27	2014-07-08 10:34:04.169801-04	2014-07-08 10:34:04.355175-04	d1be9aebfebe38f592587b15f807a4fbee364b2fbeb80e5ea7fb3424f5da585b
 30	28	2014-07-08 12:21:23.620994-04	2014-07-08 12:21:25.530129-04	1c028579899b75d2c4040df6cd7ec680da755114da198768b54218a2502bcf48
 31	29	2014-07-08 16:08:28.245006-04	2014-07-08 16:08:28.5138-04	09c01a24a5fd2bc1aaf5d504de93142e892998e2c6a35298b6585160f6c57425
+32	30	2014-07-11 08:12:57.062329-04	2014-07-11 08:12:57.304421-04	5ddefdc91e77855db6e21577e8c56bbccbe7584c2ee19ecd25b664083d72f94d
 \.
 
 
@@ -13251,7 +13253,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 31, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 32, true);
 
 
 --
@@ -13418,6 +13420,7 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
 29	pbkdf2_sha256$12000$rdh8idtD4T8F$pbEiPPTZFmOhw01fWS/Sjgmjpatx61h5LwmaQr39ulg=	2014-07-07 00:53:52.741379-04	f	marcomarchetti.ing	Marco	Marchetti	marcomarchetti.ing@gmail.com	f	t	2014-07-07 00:53:20.098341-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-07-07 07:44:12.270681-04	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
+34	pbkdf2_sha256$12000$XKjE6dyuPrHn$8nUh11D/tXesF4vtnuMge0zmRkJnqTxEemig/P7MJJ0=	2014-07-11 08:12:54.056436-04	f	stefano___ricci	stefano	ricci	stefano___ricci@alice.it	f	t	2014-07-11 08:12:54.056516-04
 24	pbkdf2_sha256$12000$epMiSQuwsn2v$XMqOSbi+TS++FOYVXEpU0SNmuqrCCBTsN4xZQvC3nqo=	2014-06-26 13:01:18.341567-04	f	info4	eros	fabbri	info@bagnomeridiano.it	f	t	2014-06-26 12:53:42.035262-04
 25	pbkdf2_sha256$12000$Vn85R5b1GMqi$ZfM5hcAbZc3CTsDwycjZaCOIzbx6MjWtRjOVlhF1x38=	2014-06-27 18:15:29.63828-04	f	info5	Rosa	Dallaporta	Info@bagnomexico.com	f	t	2014-06-27 18:14:31.022011-04
 31	pbkdf2_sha256$12000$lMW9yy2JykK7$tYhq4kavcEYpuT1C+DiQN5sZzYvF2I/oiBF0eOlDxqA=	2014-07-08 10:00:17.051404-04	f	info7	Nazario	Farabegoli	info@bagnosaurocervia.it	f	t	2014-07-08 09:58:45.49539-04
@@ -13454,7 +13457,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 33, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 34, true);
 
 
 --
@@ -13500,6 +13503,7 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname, created, modifi
 24	31	t	t	Nazario	Farabegoli	2014-07-08 09:58:45.603933-04	2014-07-08 09:58:46.981452-04
 25	32	t	t	Gianmaria	Amaducci	2014-07-08 10:34:03.574189-04	2014-07-08 10:34:03.77585-04
 26	33	t	t	Simone	Griffi	2014-07-08 16:08:25.395368-04	2014-07-08 16:08:27.346483-04
+27	34	t	t	stefano	ricci	2014-07-11 08:12:54.618699-04	2014-07-11 08:12:56.248591-04
 \.
 
 
@@ -13523,6 +13527,7 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 16	24	12782
 17	25	13798
 18	26	12915
+19	27	13803
 \.
 
 
@@ -13530,14 +13535,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 18, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 19, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 26, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 27, true);
 
 
 --
@@ -13997,7 +14002,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12820	Bagno Tonni	bagno-tonni	239	Viale Pietro Mascagni - arenile demaniale 239			0101000020E610000031F4C735B7B62840B63EF6C484224640	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1765<br />\n\tfronte mare: 17<br />\n\tdocce aperte: 2<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1765<br />\n\tfronte mare: 17<br />\n\tdocce aperte: 2<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>	\N	2	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12821	Bagno Gilberto	bagno-gilberto	240	Viale Pietro Mascagni - arenile demaniale 240			0101000020E6100000439020E8AAB628403A5AD5928E224640	<h3>Details</h3>\n\t<p>fronte mare: 18<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 2</p>	<h3>Details</h3>\n\t<p>fronte mare: 18<br />\n\tdocce aperte: 3<br />\n\tdocce chiuse: 2</p>	\N	2	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13096	Bagno Pineta	pineta	24	Via Spiaggia, 24	info@pinetabeach.it	www.pinetabeach.it	0101000020E6100000000000A0AA7E28406BE693C4EF544640		\N	\N	9	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
-13803	Bagno Lido	bagno-lido-3	72	Via A. Pinzon	stefano___ricci@alice.it	http://www.bagnolido72.it/	0101000020E6100000A32E23A77DF62840B2D498156C114640	None	None	None	37	t	2014-07-02 18:00:00-04	2014-07-03 12:59:47.605294-04
+13803	Bagno Lido	bagno-lido-3	72	Via A. Pinzon		http://www.bagnolido72.it/	0101000020E6100000A32E23A77DF62840B2D498156C114640				37	t	2014-07-02 18:00:00-04	2014-07-11 08:31:23.876689-04
 13804	Bagno Romano	bagno-romano-73	73	Via A. Pinzon	direzione@bagnoromano73.com	http://www.bagnoromano73.com/	0101000020E6100000F5BA021FB5F62840133BFC3060114640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:18:25.455147-04
 13793	Bagno Gino	bagno-gino-59-60	59/60	Via A. Pinzon	nordest59@alice.it	http://bagnogino5960.it/	0101000020E610000096C6CA90ACF3284008218BB106124640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:37:27.921336-04
 13785	Bagno Paradise	bagno-paradise	52	Via C. Colombo	castel1975@gmail.com	https://www.facebook.com/pages/Bagno-52-Paradise-Bellaria-Tel-3472242650/14	0101000020E6100000E3FCE41FAAF128402E118FCF82124640				37	t	2014-07-02 18:00:00-04	2014-07-03 13:45:21.451879-04
@@ -16445,8 +16450,6 @@ COPY bagni_bagno_languages (id, bagno_id, language_id) FROM stdin;
 23589	13489	69
 23590	13746	68
 23591	13746	69
-23592	13803	68
-23593	13803	69
 23594	13762	68
 23595	13762	69
 23915	13512	68
@@ -26413,6 +26416,7 @@ dasvicau893gv850luj85n8agrwqr3rz	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM
 mf9o97j8oln0b80i2lnfxgxmzuv5jn1f	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2014-07-24 08:02:53.574986-04
 38iky8w1nhzgac80q401y6dziox2ze26	NGYyNjU3NDUwYjhhYjM2MDM0ZDA1YTRiZDAxYjBlZWNlMmZhMGJkMDp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI2LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-15 07:49:39.071405-04
 uy2djyd54dxr1ds0gn350inpfls20bo4	NWI4ZTgyNjQ4ZDI4NzAxZTEyMDI0MWJiYmE0MTZhMzA1ZmM3YjkzYTp7fQ==	2014-07-24 08:06:05.344679-04
+r537joiqr2hp99k8mr9mbwh26gpaoxdm	YWRkNTMwNjgyZDM1NTdkMzc2YjMzMjUyMWE4MDQ4MmUxNTRmMThiNjp7ImFjY291bnRfdXNlciI6MzQsImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGx9	2014-07-25 08:12:57.318016-04
 atm4w9mnxju0nnnuw07e42t4b5ddyqwc	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-07-16 11:28:30.768053-04
 t7wo8emou5lad5hadyb9yxez6k5fxwvk	ZjMzNTcyOTg1ZjQ1YTNhM2Y5NTY5MTZmNTA0MGNlZGEwNGEyNzdkOTp7ImFjY291bnRfdXNlciI6MjgsIl9zZXNzaW9uX2V4cGlyeSI6MCwiYWNjb3VudF92ZXJpZmllZF9lbWFpbCI6bnVsbH0=	2014-07-16 15:21:53.041523-04
 wzbn0zwco60xa4n4sgd77m2g9dwkwsth	ZDZjMWI2MzcwODU5Y2ZhMmM0ZDQ2ZTRmZTYyYjcyY2UyMmQzNDM5Mzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjI3LCJhY2NvdW50X3ZlcmlmaWVkX2VtYWlsIjpudWxsfQ==	2014-07-17 03:36:54.597662-04
@@ -27603,6 +27607,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 18	31	info@bagnosaurocervia.it
 19	32	amaduccig@gmail.com
 20	33	simonegriffi@gmail.com
+21	34	stefano___ricci@alice.it
 \.
 
 
@@ -27610,7 +27615,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 20, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 21, true);
 
 
 --
