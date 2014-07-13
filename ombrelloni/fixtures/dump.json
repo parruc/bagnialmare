@@ -4738,16 +4738,100 @@
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "pizzeria", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-12T17:36:31.552Z", 
+    "description_en": "", 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
-    "description_it": null, 
+    "description_it": "", 
     "aliases_en": null, 
     "name_en": "pizzeria", 
     "aliases": null, 
     "slug": "pizzeria", 
+    "description": ""
+  }
+},
+{
+  "pk": 2300, 
+  "model": "bagni.service", 
+  "fields": {
+    "category": [
+      "sport-and-wellness"
+    ], 
+    "slug_en": "sparring-vlup", 
+    "aliases_it": null, 
+    "name_it": "sparring VLUP", 
+    "name": "sparring VLUP", 
+    "created": "2014-07-12T17:36:07.934Z", 
+    "seo_name_en": null, 
+    "image": "", 
+    "slug_it": "sparring-vlup", 
+    "modified": "2014-07-12T18:07:16.062Z", 
+    "description_en": "The new beach tennis wall", 
+    "seo_name": null, 
+    "free": true, 
+    "seo_name_it": null, 
+    "description_it": "Il nuovo muro del beach tennis", 
+    "aliases_en": null, 
+    "name_en": "sparring VLUP", 
+    "aliases": null, 
+    "slug": "sparring-vlup", 
+    "description": "The new beach tennis wall"
+  }
+},
+{
+  "pk": 2301, 
+  "model": "bagni.service", 
+  "fields": {
+    "category": [
+      "rent"
+    ], 
+    "slug_en": "strollers", 
+    "aliases_it": null, 
+    "name_it": "passeggini", 
+    "name": "strollers", 
+    "created": "2014-07-12T19:36:47.786Z", 
+    "seo_name_en": null, 
+    "image": "", 
+    "slug_it": "passeggini", 
+    "modified": "2014-07-12T19:36:47.786Z", 
+    "description_en": "", 
+    "seo_name": null, 
+    "free": true, 
+    "seo_name_it": null, 
+    "description_it": "", 
+    "aliases_en": null, 
+    "name_en": "strollers", 
+    "aliases": null, 
+    "slug": "strollers", 
+    "description": ""
+  }
+},
+{
+  "pk": 2302, 
+  "model": "bagni.service", 
+  "fields": {
+    "category": [
+      "rent"
+    ], 
+    "slug_en": "deckchairs", 
+    "aliases_it": null, 
+    "name_it": "spiaggine", 
+    "name": "deckchairs", 
+    "created": "2014-07-12T19:40:57.614Z", 
+    "seo_name_en": null, 
+    "image": "", 
+    "slug_it": "spiaggine", 
+    "modified": "2014-07-12T19:40:57.614Z", 
+    "description_en": "", 
+    "seo_name": null, 
+    "free": true, 
+    "seo_name_it": null, 
+    "description_it": "", 
+    "aliases_en": null, 
+    "name_en": "deckchairs", 
+    "aliases": null, 
+    "slug": "deckchairs", 
     "description": ""
   }
 },
@@ -30527,68 +30611,61 @@
   "pk": 13172, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnokursaal.it", 
-    "description": "", 
+    "site": "http://www.bagnokursaal.it/", 
+    "description": "None", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2524917125701904 44.6424525498701641)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.2524917125701993 44.6424525498701286)", 
+    "modified": "2014-07-12T19:49:56.908Z", 
+    "description_en": "None", 
     "number": "61", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "gymnastics"
+        "disabled"
       ], 
       [
         "catering"
       ], 
       [
-        "baby-sitter"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "swimming-pool"
-      ], 
-      [
-        "acquagym"
-      ], 
-      [
-        "beach-volley"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
         "swimming-lessons"
       ], 
       [
-        "beach-racket-court"
-      ], 
-      [
-        "schoolchildren"
+        "acquagym"
       ], 
       [
         "pre-evening-entertainment"
       ], 
       [
-        "bar"
+        "schoolchildren"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "swimming-pool"
+      ], 
+      [
+        "gymnastics"
       ], 
       [
         "children-entertainment"
       ]
     ], 
     "address": "Via Spiaggia, 61", 
-    "description_it": null, 
-    "mail": "info@bagnokursaal.it", 
+    "description_it": "None", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "kursaal", 
     "neighbourhood": [
@@ -47532,21 +47609,26 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagno81rimini.it/", 
-    "description": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- accesso per i cani - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n-\u00a0noleggio pedal\u00f2, canoa", 
+    "description": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- DOG BEACH - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n- noleggio pedal\u00f2, canoa", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6021693300000006 44.0524360000000001)", 
-    "modified": "2014-07-03T12:52:20.345Z", 
-    "description_en": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- accesso per i cani - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n-\u00a0noleggio pedal\u00f2, canoa", 
+    "point": "POINT (12.6021693300000059 44.0524360000000001)", 
+    "modified": "2014-07-12T19:00:29.044Z", 
+    "description_en": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- DOG BEACH - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n- noleggio pedal\u00f2, canoa", 
     "number": "81 sud", 
-    "languages": [
+    "languages": [], 
+    "services": [
       [
-        "italian"
+        "hot-showers"
       ], 
       [
-        "english"
-      ]
-    ], 
-    "services": [
+        "pet-friendly"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "playground"
+      ], 
       [
         "toilets-for-children"
       ], 
@@ -47567,26 +47649,17 @@
       ], 
       [
         "footvolley"
-      ], 
-      [
-        "hot-showers"
-      ], 
-      [
-        "lockers"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare di Vittorio - Bellariva", 
-    "description_it": "", 
-    "mail": "info@bagno81rimini.it", 
+    "description_it": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- DOG BEACH - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n- noleggio pedal\u00f2, canoa", 
+    "mail": "", 
     "accepts_booking": true, 
-    "slug": "no-problem", 
+    "slug": "no-problem-rimini-dog-no-problem", 
     "neighbourhood": [
       "rimini"
     ], 
-    "name": "No problem"
+    "name": "Bagni No Problem e Rimini Dog No Problem"
   }
 },
 {
@@ -48152,28 +48225,15 @@
   "pk": 13501, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagno91rimini.it", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0</p>", 
+    "site": "http://www.bagno91rimini.it/", 
+    "description": "<h3>Details</h3>\r\n\t<p>cabine: 17<br />\r\n\tombrelloni: 130</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0</p>", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6057781400000000 44.0491150000000005)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 17<br />\n\tombrelloni: 130</p>\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0</p>", 
+    "point": "POINT (12.6057781400000017 44.0491149999999720)", 
+    "modified": "2014-07-12T18:22:43.594Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 17<br />\r\n\tombrelloni: 130</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei delle varie attivit\u00e0</p>", 
     "number": "91 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
-      [
-        "massages"
-      ], 
-      [
-        "nursery"
-      ], 
       [
         "beach-volley"
       ], 
@@ -48181,18 +48241,27 @@
         "entertainment"
       ], 
       [
+        "massages"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "sparring-vlup"
+      ], 
+      [
         "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
-    "description_it": null, 
-    "mail": "massimo@bagno91rimini.it", 
+    "description_it": "None", 
+    "mail": "", 
     "accepts_booking": true, 
-    "slug": "massimo", 
+    "slug": "massimo-e-chiara", 
     "neighbourhood": [
       "bellariva"
     ], 
-    "name": "Bagno Massimo"
+    "name": "Bagno Massimo e Chiara"
   }
 },
 {
@@ -56888,24 +56957,21 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagnicristianriccione.com/", 
-    "description": "", 
+    "description": "None", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6436399999999995 44.0164241599999997)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.6436399999999907 44.0164241599999855)", 
+    "modified": "2014-07-12T18:10:12.772Z", 
+    "description_en": "None", 
     "number": "123", 
-    "languages": [
+    "languages": [], 
+    "services": [
       [
-        "italian"
-      ], 
-      [
-        "english"
+        "sparring-vlup"
       ]
     ], 
-    "services": [], 
     "address": "Marano", 
-    "description_it": null, 
-    "mail": "info@bagnicristianriccione.com", 
+    "description_it": "None", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagni-cristian-e-marta", 
     "neighbourhood": [
@@ -71861,6 +71927,18 @@
   }
 },
 {
+  "pk": 8, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-doge"
+    ], 
+    "email": "", 
+    "created": "2014-07-12T22:34:45.690Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
@@ -72155,6 +72233,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/ae/9d/ae9dd2692edc02f36a62d23fda4558bb.jpg\", \"size\": [125, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||18fabafe7f0515d2d808a7da878c8222", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/0d/fd/0dfd472c1b4c6f60ee987aed839e74ff.png\", \"size\": [171, 128]}"
   }
 },
 {
@@ -72553,7 +72638,7 @@
   "pk": "sorl-thumbnail||thumbnails||7949f1e29e5877ba63099bf70a0ee18e", 
   "model": "thumbnail.kvstore", 
   "fields": {
-    "value": "[\"067b9cbedf1768207521285f891bd84a\", \"feb03be2b52df8cb2cb2ba319c217620\"]"
+    "value": "[\"067b9cbedf1768207521285f891bd84a\", \"feb03be2b52df8cb2cb2ba319c217620\", \"18fabafe7f0515d2d808a7da878c8222\"]"
   }
 },
 {
@@ -73327,7 +73412,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-08T19:11:38.827Z", 
+    "last_login": "2014-07-12T18:53:34.376Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -86023,7 +86108,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "no-problem"
+      "no-problem-rimini-dog-no-problem"
     ], 
     "number": "0541 388926;  ", 
     "name": "tel", 
@@ -86215,7 +86300,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "massimo"
+      "massimo-e-chiara"
     ], 
     "number": "335 5849400 - 333 1973357", 
     "name": "mob", 
@@ -91855,7 +91940,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "no-problem"
+      "no-problem-rimini-dog-no-problem"
     ], 
     "number": "339 4494512", 
     "name": "mob", 
