@@ -73376,7 +73376,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-10T12:02:53.570Z", 
+    "last_login": "2014-07-13T16:12:01.279Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
@@ -73718,7 +73718,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2014-07-11T12:12:54.056Z", 
+    "last_login": "2014-07-13T19:54:28.157Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$XKjE6dyuPrHn$8nUh11D/tXesF4vtnuMge0zmRkJnqTxEemig/P7MJJ0=", 
@@ -73966,7 +73966,7 @@
   "pk": 30, 
   "model": "account.emailaddress", 
   "fields": {
-    "verified": false, 
+    "verified": true, 
     "user": [
       "stefano___ricci"
     ], 
