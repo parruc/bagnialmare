@@ -45,16 +45,9 @@ body {
   margin: 10px auto 0px auto;
   text-align: center;
 }
-
-/* Set the fixed height of the footer here */
-#footer {
-  height: 40px;
-  padding-top: 10px
-}
-
-#footer.hp-footer p
+.twitter-follow-button, .twitter-share-button
 {
-    color: #ffffff;
+  display: inline;
 }
 
 /* Move down content because we have a fixed navbar that is 70px tall */
@@ -515,6 +508,20 @@ button {
     background-color: #EB604B;
     height: 70px;
     padding: 10px 0px;
+}
+
+.footer{
+  background-color: #EB604B;
+  color: #F9BF16;
+}
+
+.social{
+  padding: 10px 0px;
+}
+
+.homepage-body-class .footer
+{
+  background-color: #F9BF16;
 }
 
 .navbar-collapse{
