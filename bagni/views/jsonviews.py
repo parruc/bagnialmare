@@ -7,7 +7,6 @@ from django.views.generic.list import BaseListView
 from django.contrib.gis import geos
 
 from ..models import Service, District, Municipality, Neighbourhood, Bagno
-from ..constants import MY_POSITION
 
 import logging
 logging.basicConfig()
@@ -71,7 +70,6 @@ class JsonAutocompletePlaces(JSONResponseMixin, BaseDetailView):
         results += list(District.objects.filter(name__icontains=query))
         names = list(set([r.name for r in results]))
         names.sort()
-        names.insert(0, MY_POSITION)
         context = {'success':names}
         return self.render_to_response(context)
 
