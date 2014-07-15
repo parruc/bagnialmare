@@ -16482,7 +16482,7 @@
     "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1978<br />\r\n\tfronte mare: 24<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 5</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3808917600000008 44.2276792199999988)", 
-    "modified": "2014-07-05T14:47:45.180Z", 
+    "modified": "2014-07-14T17:13:35.538Z", 
     "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1978<br />\r\n\tfronte mare: 24<br />\r\n\tdocce aperte: 4<br />\r\n\twc: 5</p>", 
     "number": "20", 
     "languages": [
@@ -16542,7 +16542,7 @@
     ], 
     "address": "Arenile demaniale 20", 
     "description_it": "", 
-    "mail": "info@bagnobenvenuti.com", 
+    "mail": "Info@bagnobenvenuti.com", 
     "accepts_booking": true, 
     "slug": "bagno-benvenuti", 
     "neighbourhood": [
@@ -39315,8 +39315,8 @@
     "site": "", 
     "description": "\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2998933095000105 44.4368504285999464)", 
-    "modified": "2014-07-08T14:14:36.907Z", 
+    "point": "POINT (12.2998933095000105 44.4368504285999180)", 
+    "modified": "2014-07-14T14:56:07.494Z", 
     "description_en": "\t<p>lavapiedi: 1<br />\r\n\twc: 2<br />\r\n\tombrelloni: 80<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 140<br />\r\n\tcabine: 10<br />\r\n\tdocce chiuse: 1<br />\r\n\tcabine disabili: 1<br />\r\n\tdocce aperte: 2</p>", 
     "number": "42", 
     "languages": [], 
@@ -48507,7 +48507,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6077156860099446 44.0445167645529949)", 
-    "modified": "2014-07-08T14:15:00.032Z", 
+    "modified": "2014-07-14T15:02:16.134Z", 
     "description_en": "", 
     "number": "99", 
     "languages": [], 
@@ -59725,11 +59725,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagnialmare.com/", 
-    "description": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare right now.", 
+    "description": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "Welcome to the world of BagniAlMare.\r\nThis is just an example of an ideal resort window, you'll be able to personalize your private one as soon as your account is registered!\r\nJoin BagniAlMare right now.", 
+    "modified": "2014-07-14T14:52:15.575Z", 
+    "description_en": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "number": "1", 
     "languages": [], 
     "services": [
@@ -59866,9 +59866,6 @@
         "schoolchildren"
       ], 
       [
-        "fish-barbecue-events"
-      ], 
-      [
         "meat-barbecue-events"
       ], 
       [
@@ -59936,8 +59933,8 @@
       ]
     ], 
     "address": "Riviera Adriatica, Estate 2014", 
-    "description_it": "Benvenuti nel mondo di BagniAlMare.com.\r\nQuesto \u00e8 un esempio di vetrina ideale di uno stabilimento balneare. \r\nPer gestire e personalizzare la vetrina privata del tuo bagno baster\u00e0 registrare il tuo account in pochi click a partire dall'Area Gestori.\r\nCrea subito il tuo spazio su BagniAlMare.com!", 
-    "mail": "bagnowelcome@matteoparrucci.it", 
+    "description_it": "<p>Benvenuti nel mondo di BagniAlMare.com. Questo &egrave; un esempio di vetrina ideale di uno stabilimento balneare. Per gestire e personalizzare la vetrina privata del tuo bagno baster&agrave; registrare il tuo account in pochi click a partire dall&#39;Area Gestori.</p>\r\n\r\n<p>Crea subito il tuo spazio su BagniAlMare.com!</p>\r\n", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "test", 
     "neighbourhood": [
@@ -72159,6 +72156,26 @@
   }
 },
 {
+  "pk": 33, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 31, 
+    "key": "927ed6fea9aff89530cae6ea704e269f1b3e75c30dc1f9daa61b99e2637b5f34", 
+    "sent": "2014-07-14T17:13:36.484Z", 
+    "created": "2014-07-14T17:13:36.187Z"
+  }
+},
+{
+  "pk": 34, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 31, 
+    "key": "1c18f1a96741614b86d6bfa1b81c1635d06f27c66a9d7ff56fd00e5149947e83", 
+    "sent": "2014-07-14T17:19:11.934Z", 
+    "created": "2014-07-14T17:19:11.770Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -72359,6 +72376,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/8f/f3/8ff36885573dce4d14f3093b08be097a.jpg\", \"size\": [188, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||60494901dd7a23277946476fb7fdde6d", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/38/80/3880083d346ea73c95fc89462519d432.png\", \"size\": [192, 128]}"
   }
 },
 {
@@ -72687,7 +72711,7 @@
   "pk": "sorl-thumbnail||thumbnails||e17a0eb71019379f643c48a3e059c014", 
   "model": "thumbnail.kvstore", 
   "fields": {
-    "value": "[\"73fd4f763441e2775f52f183c1e0a093\", \"081a87e609794288b9ee67d6baf95477\"]"
+    "value": "[\"73fd4f763441e2775f52f183c1e0a093\", \"081a87e609794288b9ee67d6baf95477\", \"60494901dd7a23277946476fb7fdde6d\"]"
   }
 },
 {
@@ -73358,7 +73382,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-07T11:44:12.270Z", 
+    "last_login": "2014-07-14T14:51:52.731Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -73376,7 +73400,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-13T16:12:01.279Z", 
+    "last_login": "2014-07-14T14:50:34.685Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
@@ -73727,6 +73751,24 @@
   }
 },
 {
+  "pk": 35, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info8", 
+    "first_name": "Andrea ", 
+    "last_name": "Benvenuti", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-14T17:13:33.418Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$pR5OajQT0n0Q$jQwUqr26bOOU/YTCCZnnC0SigXLpjmqU1cU8zd50hrI=", 
+    "email": "Info@bagnobenvenuti.com", 
+    "date_joined": "2014-07-14T17:13:33.418Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -73972,6 +74014,18 @@
     ], 
     "primary": true, 
     "email": "stefano___ricci@alice.it"
+  }
+},
+{
+  "pk": 31, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "info8"
+    ], 
+    "primary": true, 
+    "email": "Info@bagnobenvenuti.com"
   }
 },
 {
@@ -74409,6 +74463,26 @@
   }
 },
 {
+  "pk": 28, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Benvenuti", 
+    "name": "Andrea ", 
+    "created": "2014-07-14T17:13:33.615Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-14T17:13:35.359Z", 
+    "user": [
+      "info8"
+    ], 
+    "bagni": [
+      [
+        "bagno-benvenuti"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -74616,6 +74690,16 @@
       "stefano___ricci"
     ], 
     "old_email": "stefano___ricci@alice.it"
+  }
+},
+{
+  "pk": 22, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info8"
+    ], 
+    "old_email": "Info@bagnobenvenuti.com"
   }
 },
 {
