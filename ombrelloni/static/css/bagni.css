@@ -428,7 +428,8 @@ img.hp-form-image
                 url('/static/img/spinning-wheel.gif?v=4')
                 50% 50%
                 no-repeat;
-}
+   background-size: 90px 90px;
+ }
 
 .loading {
     overflow: hidden;
