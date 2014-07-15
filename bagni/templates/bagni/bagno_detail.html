@@ -101,7 +101,13 @@
              rel="nofollow">
               {{ object.site|non_href_url }}</a>
           {% endif %}
-        </p> 
+        </p>
+        <h3>{% trans "Share this page" %}</h3>
+        <p> 
+          <a href="https://twitter.com/share" data-count="none" class="twitter-share-button" data-lang="it" data-hashtags="bagnialmare"></a>
+        </p><div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div></p>
+          <p><div class="fb-share-button"></div></p>
+        </p>
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
@@ -155,7 +161,8 @@
                        data-x="{{ object.point.x|unlocalize }}"
                        data-y="{{ object.point.y|unlocalize }}"
                        data-name="{{ object.name }}"
-                       data-address="{{ object.address }}"></div>
+                       data-address="{{ object.address }}">
+      </div>
     </div>
   </div>
   <div class="row">
