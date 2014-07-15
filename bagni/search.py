@@ -59,14 +59,15 @@ def update_index(sender, langs=LANGS, **kwargs):
         activate(lang)
         writer = ix.writer()
         obj = kwargs['instance']
-        if kwargs['created']:
-            writer.add_document(**obj.index_features())
+        if "created" in kwargs and kwargs['created']:
+                writer.add_document(**obj.index_features())
         else:
             writer.update_document(**obj.index_features())
         writer.commit()
     activate(old_language)
 
 signals.post_save.connect(update_index, sender=Bagno)
+signals.m2m_changed.connect(update_index, sender=Bagno.services.through)
 
 
 def recreate_data(sender=None, langs=LANGS, **kwargs):
