@@ -19,6 +19,7 @@
 {% block content %}
 {% trans "bagni_by_facility_and_neighbourhood_header" as t_bagni_by_facility_and_neighbourhood_header %}
 {% trans "bagni_by_facility_and_neighbourhood_sub_header" as t_bagni_by_facility_and_neighbourhood_sub_header %}
+{% trans "bagni_by_facility_and_neighbourhood_other_places" as t_bagni_by_facility_and_neighbourhood_other_places %}
 {% comment %}
     Stabilimenti balneari con -facility.name- a -neighbourhood.name-
     Questo e' l'elenco dei bagni/spiagge/stabilimenti-balneari di -neighbourhood.name-.
@@ -26,7 +27,12 @@
   <div class="row">
       <div class="col-xs-12">
           <h1>{{ t_bagni_by_facility_and_neighbourhood_header }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}</h1>
-          <p>{{ t_bagni_by_facility_and_neighbourhood_sub_header }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}.</p>
+           {% if bagni|length == 0 %}
+           <br>
+           <p>{% trans "service_detail_no_result" %} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}. <a href="{% url 'service' slug=facility.slug %}">{{t_bagni_by_facility_and_neighbourhood_other_places}}.</a></p>     
+           {% else %}
+           <p>{{ t_bagni_by_facility_and_neighbourhood_sub_header }} {% if facility.seo_name %}{{ facility.seo_name }}{% else %}{% trans "with" %} {{ facility.name }}{% endif %} {% trans "in" %} {{ neighbourhood|pretty_neighbourhood }}.</p>
+           {% endif %}
       </div>
   </div>
   <br>

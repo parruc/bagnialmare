@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-25 22:57+0200\n"
+"POT-Creation-Date: 2014-07-16 17:06+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -69,39 +69,39 @@ msgstr ""
 "^stabilimenti-balneari/servizi/(?P<facility_slug>[-\\w]+)/(?"
 "P<neighbourhood_slug>[-\\w]+)/$"
 
-#: urls.py:25
+#: urls.py:24
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
 msgstr "^localita/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:27
+#: urls.py:26
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
 msgstr "^comune/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:28
+#: urls.py:27
 msgid "^municipalities/$"
 msgstr "^comuni/$"
 
-#: urls.py:29
+#: urls.py:28
 msgid "^district/(?P<slug>[-\\w]+)/$"
 msgstr "^provincia/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:30
+#: urls.py:29
 msgid "^districts/$"
 msgstr "^province/$"
 
-#: urls.py:31
+#: urls.py:30
 msgid "^json/autocomplete/places$"
 msgstr ""
 
-#: urls.py:32
+#: urls.py:31
 msgid "^json/autocomplete/searchterms$"
 msgstr ""
 
-#: urls.py:33
+#: urls.py:32
 msgid "^json/neighbourhood/(?P<id>\\d+)/$"
 msgstr "^json/localita/(?P<id>\\d+)/$"
 
-#: urls.py:34
+#: urls.py:33
 msgid ""
 "^json/bbox/(?P<x1>[\\.\\-\\+\\d]+)/(?P<y1>[\\.\\-\\+\\d]+)/(?P<x2>[\\.\\-\\+"
 "\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
@@ -253,8 +253,9 @@ msgstr "Stabilimenti balneari"
 
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:10
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:16
-#: templates/bagni/bagni-by-facility-and-neighbourhood.html:28
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
 #: templates/bagni/service_detail.html:9
 #: templates/bagni/service_detail.html:18
 #: templates/bagni/service_detail.html:37
@@ -265,8 +266,9 @@ msgstr "con"
 
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:10
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:16
-#: templates/bagni/bagni-by-facility-and-neighbourhood.html:28
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
 msgid "in"
 msgstr "a"
 
@@ -283,6 +285,15 @@ msgid "bagni_by_facility_and_neighbourhood_sub_header"
 msgstr ""
 "Qui puoi trovare contatti, indirizzi e altre informazioni sugli stabilimenti "
 "balneari"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:22
+msgid "bagni_by_facility_and_neighbourhood_other_places"
+msgstr "Ma puoi trovarne in queste località"
+
+#: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
+#: templates/bagni/service_detail.html:25
+msgid "service_detail_no_result"
+msgstr "Non abbiamo trovato nessuno stabilimento balneare"
 
 #: templates/bagni/bagni.html:7
 msgid "bagni_page_pagetitle"
@@ -328,12 +339,12 @@ msgid "contact_structure"
 msgstr "Contatta la struttura"
 
 #: templates/bagni/bagno_contacts.html:5 templates/bagni/bagno_list.html:7
-#: templates/bagni/district_detail.html:8 templates/bagni/search.html:14
+#: templates/bagni/district_detail.html:8 templates/bagni/search.html:15
 #: templates/bagni/servicecategory_detail.html:6
 msgid "bagno"
 msgstr "bagno"
 
-#: templates/bagni/bagno_detail.html:10 templates/bagni/search.html:27
+#: templates/bagni/bagno_detail.html:10 templates/bagni/search.html:28
 msgid "contact_button"
 msgstr "Contatta la struttura"
 
@@ -357,7 +368,7 @@ msgstr "Modifica il tuo bagno"
 msgid "are_you_the_manager"
 msgstr "Sei il gestore?"
 
-#: templates/bagni/bagno_detail.html:16
+#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:37
 msgid "image"
 msgstr "immagine"
 
@@ -434,12 +445,12 @@ msgstr "puoi farlo usando la nostra"
 msgid "bagno_detail_desc_5"
 msgstr "pagina di ricerca"
 
-#: templates/bagni/bagno_detail.html:227 templates/bagni/homepage.html:97
-#: templates/bagni/homepage.html.py:111 templates/bagni/search.html:379
+#: templates/bagni/bagno_detail.html:229 templates/bagni/homepage.html:97
+#: templates/bagni/homepage.html.py:111 templates/bagni/search.html:393
 msgid "Close"
 msgstr "Chiudi"
 
-#: templates/bagni/bagno_detail.html:254
+#: templates/bagni/bagno_detail.html:256
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -457,11 +468,11 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/bagni/bagno_edit.html:240
+#: templates/bagni/bagno_edit.html:244
 msgid "Save"
 msgstr "Salva"
 
-#: templates/bagni/bagno_edit.html:245
+#: templates/bagni/bagno_edit.html:249
 #, python-format
 msgid ""
 "\n"
@@ -504,11 +515,11 @@ msgstr "città"
 msgid "home_heading"
 msgstr "Tutte le informazioni che cercate sui bagni della Riviera Adriatica"
 
-#: templates/bagni/homepage.html:15 templates/bagni/search.html:11
+#: templates/bagni/homepage.html:15 templates/bagni/search.html:12
 msgid "what"
 msgstr "bagno o servizio?"
 
-#: templates/bagni/homepage.html:16 templates/bagni/search.html:20
+#: templates/bagni/homepage.html:16 templates/bagni/search.html:21
 msgid "near_to"
 msgstr "vicino a"
 
@@ -520,12 +531,12 @@ msgstr "mostra l'elenco dei servizi"
 msgid "home_show_facility"
 msgstr "mostra l'elenco dei servizi"
 
-#: templates/bagni/homepage.html:19 templates/bagni/search.html:21
+#: templates/bagni/homepage.html:19 templates/bagni/search.html:22
 #: views/search.py:42
 msgid "near_me"
 msgstr "qui vicino"
 
-#: templates/bagni/homepage.html:20 templates/bagni/search.html:22
+#: templates/bagni/homepage.html:20 templates/bagni/search.html:23
 msgid "near_me_tooltip"
 msgstr "cerca vicino alla mia posizione"
 
@@ -537,14 +548,14 @@ msgstr "cerca"
 msgid "home_modal_header"
 msgstr "fai click su un servizio per selezionarlo"
 
-#: templates/bagni/homepage.html:23 templates/bagni/search.html:33
+#: templates/bagni/homepage.html:23 templates/bagni/search.html:34
 msgid "geo_modal_text"
 msgstr ""
 "Non hai accettato di condividere la tua posizioneo o il tuo dispositivo non "
 "è riuscito a calcolarla.Puoi compilare il campo 'Vicino a' con il tuo "
 "indirizzo attuale."
 
-#: templates/bagni/homepage.html:24 templates/bagni/search.html:34
+#: templates/bagni/homepage.html:24 templates/bagni/search.html:35
 msgid "geo_modal_title"
 msgstr "Non riusciamo a stabilire la tua posizione"
 
@@ -625,75 +636,75 @@ msgstr "Localita"
 msgid "no_neighbourhood"
 msgstr "Nessuna localita"
 
-#: templates/bagni/search.html:12
+#: templates/bagni/search.html:13
 msgid "where"
 msgstr "vicino a"
 
-#: templates/bagni/search.html:13
+#: templates/bagni/search.html:14
 msgid "search"
 msgstr "Cerca"
 
-#: templates/bagni/search.html:15
+#: templates/bagni/search.html:16
 msgid "filter_by_facility"
 msgstr "filtra per servizio"
 
-#: templates/bagni/search.html:16
+#: templates/bagni/search.html:17
 msgid "active_filters"
 msgstr "filtri attivi"
 
-#: templates/bagni/search.html:17
+#: templates/bagni/search.html:18
 msgid "active_filter"
 msgstr "filtro attivo"
 
-#: templates/bagni/search.html:18
+#: templates/bagni/search.html:19
 msgid "results_for"
 msgstr "risultati per"
 
-#: templates/bagni/search.html:19
+#: templates/bagni/search.html:20
 msgid "results"
 msgstr "risultati"
 
-#: templates/bagni/search.html:23
+#: templates/bagni/search.html:24
 msgid "filters"
 msgstr "filtri"
 
-#: templates/bagni/search.html:24
+#: templates/bagni/search.html:25
 msgid "list_view"
 msgstr "lista"
 
-#: templates/bagni/search.html:25
+#: templates/bagni/search.html:26
 msgid "map_view"
 msgstr "mappa"
 
-#: templates/bagni/search.html:26
+#: templates/bagni/search.html:27
 msgid "your_location"
 msgstr "la tua posizione"
 
-#: templates/bagni/search.html:28
+#: templates/bagni/search.html:29
 msgid "previous"
 msgstr "precedente"
 
-#: templates/bagni/search.html:29
+#: templates/bagni/search.html:30
 msgid "next"
 msgstr "successivo"
 
-#: templates/bagni/search.html:30
+#: templates/bagni/search.html:31
 msgid "first"
 msgstr "primo"
 
-#: templates/bagni/search.html:31
+#: templates/bagni/search.html:32
 msgid "last"
 msgstr "ultimo"
 
-#: templates/bagni/search.html:32
+#: templates/bagni/search.html:33
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:35
+#: templates/bagni/search.html:36
 msgid "away"
 msgstr "di distanza"
 
-#: templates/bagni/search.html:275
+#: templates/bagni/search.html:289
 #, python-format
 msgid ""
 "\n"
@@ -702,11 +713,11 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:395
+#: templates/bagni/search.html:409
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:400
+#: templates/bagni/search.html:414
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
@@ -725,10 +736,6 @@ msgstr "Dove trovare stabilimenti balneari"
 #: templates/bagni/service_detail.html:24
 msgid "service_detail_sub_header"
 msgstr "questo è l'elenco delle località che che hanno stabilimenti balneari"
-
-#: templates/bagni/service_detail.html:25
-msgid "service_detail_no_result"
-msgstr "Non abbiamo trovato nessuno stabilimento balneare"
 
 #: templates/bagni/service_list.html:6
 msgid "no_service"
