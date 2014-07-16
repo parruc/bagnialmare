@@ -60064,6 +60064,37 @@
   }
 },
 {
+  "pk": 13834, 
+  "model": "bagni.bagno", 
+  "fields": {
+    "site": "", 
+    "description": "", 
+    "created": "2014-07-15T23:05:53.139Z", 
+    "point": null, 
+    "modified": "2014-07-15T23:05:53.139Z", 
+    "description_en": "", 
+    "number": "18", 
+    "languages": [
+      [
+        "italian"
+      ], 
+      [
+        "english"
+      ]
+    ], 
+    "services": [], 
+    "address": "Via Litoranea Nord, 18", 
+    "description_it": "", 
+    "mail": "", 
+    "accepts_booking": true, 
+    "slug": "spiaggia-i-gabbiani", 
+    "neighbourhood": [
+      "misano-adriatico"
+    ], 
+    "name": "Spiaggia i gabbiani"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -73382,7 +73413,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-14T14:51:52.731Z", 
+    "last_login": "2014-07-15T23:04:50.552Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -73418,7 +73449,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-08T19:12:32.139Z", 
+    "last_login": "2014-07-15T05:43:18.651Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
