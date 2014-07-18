@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-16 17:06+0200\n"
+"POT-Creation-Date: 2014-07-18 11:46+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -18,50 +18,54 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: urls.py:11
-msgid "^terms$"
+msgid "^concorso2014/$"
 msgstr ""
 
 #: urls.py:12
-msgid "^privacy$"
+msgid "^terms/$"
 msgstr ""
 
 #: urls.py:13
-msgid "^conditions$"
+msgid "^privacy/$"
 msgstr ""
 
 #: urls.py:14
-msgid "^bagni/$"
+msgid "^conditions/$"
 msgstr ""
 
 #: urls.py:15
+msgid "^bagni/$"
+msgstr ""
+
+#: urls.py:16
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
 msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:16
+#: urls.py:17
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 
-#: urls.py:17
+#: urls.py:18
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
 msgstr "^bagno/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
 
-#: urls.py:18
+#: urls.py:19
 msgid "^search/$"
 msgstr "^cerca/$"
 
-#: urls.py:19
+#: urls.py:20
 msgid "^service-categories/$"
 msgstr "^categorie-servizi/$"
 
-#: urls.py:20
+#: urls.py:21
 msgid "^service-category/(?P<slug>[-\\w]+)/$"
 msgstr "^categoria-servizi/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:22
+#: urls.py:23
 msgid "^services/(?P<slug>[-\\w]+)/$"
 msgstr "^servizi/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:23
+#: urls.py:24
 msgid ""
 "^stabilimenti-balneari/services/(?P<facility_slug>[-\\w]+)/(?"
 "P<neighbourhood_slug>[-\\w]+)/$"
@@ -69,39 +73,39 @@ msgstr ""
 "^stabilimenti-balneari/servizi/(?P<facility_slug>[-\\w]+)/(?"
 "P<neighbourhood_slug>[-\\w]+)/$"
 
-#: urls.py:24
+#: urls.py:25
 msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
 msgstr "^localita/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:26
+#: urls.py:27
 msgid "^municipality/(?P<slug>[-\\w]+)/$"
 msgstr "^comune/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:27
+#: urls.py:28
 msgid "^municipalities/$"
 msgstr "^comuni/$"
 
-#: urls.py:28
+#: urls.py:29
 msgid "^district/(?P<slug>[-\\w]+)/$"
 msgstr "^provincia/(?P<slug>[-\\w]+)/$"
 
-#: urls.py:29
+#: urls.py:30
 msgid "^districts/$"
 msgstr "^province/$"
 
-#: urls.py:30
+#: urls.py:31
 msgid "^json/autocomplete/places$"
 msgstr ""
 
-#: urls.py:31
+#: urls.py:32
 msgid "^json/autocomplete/searchterms$"
 msgstr ""
 
-#: urls.py:32
+#: urls.py:33
 msgid "^json/neighbourhood/(?P<id>\\d+)/$"
 msgstr "^json/localita/(?P<id>\\d+)/$"
 
-#: urls.py:33
+#: urls.py:34
 msgid ""
 "^json/bbox/(?P<x1>[\\.\\-\\+\\d]+)/(?P<y1>[\\.\\-\\+\\d]+)/(?P<x2>[\\.\\-\\+"
 "\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
