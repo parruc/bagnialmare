@@ -58,3 +58,9 @@ class ManagerTermsView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(ManagerTermsView, self).get_context_data(**kwargs)
         return context
+
+class Concorso2014View(TemplateView):
+    template_name = "bagni/concorso2014.html"
+    def get_context_data(self, **kwargs):
+        context = super(Concorso2014View, self).get_context_data(**kwargs)
+        return context

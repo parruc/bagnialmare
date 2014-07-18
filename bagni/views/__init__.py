@@ -14,6 +14,7 @@ from .pages import AboutUsView; AboutUsView  # pyflakes
 from .pages import UserTermsAndPrivacyView; UserTermsAndPrivacyView  # pyflakes
 from .pages import ManagerPrivacyView; ManagerPrivacyView  # pyflakes
 from .pages import ManagerTermsView; ManagerTermsView  # pyflakes
+from .pages import Concorso2014View; Concorso2014View  # pyflakes
 
 from .places import NeighbourhoodView; NeighbourhoodView  # pyflakes
 from .places import NeighbourhoodsView; NeighbourhoodsView  # pyflakes

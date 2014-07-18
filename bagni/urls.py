@@ -8,6 +8,7 @@ urlpatterns = patterns(
     '',
     url(r'^$', views.HomepageView.as_view(), name="homepage",),
 #    url(_(r'^about-us$'), views.AboutUsView.as_view(), name="about-us",),
+    url(_(r'^concorso2014$'), views.Concorso2014View.as_view(), name="concorso-2014",),
     url(_(r'^terms$'), views.UserTermsAndPrivacyView.as_view(), name="user-terms",),
     url(_(r'^privacy$'), views.ManagerPrivacyView.as_view(), name="manager-privacy",),
     url(_(r'^conditions$'), views.ManagerTermsView.as_view(), name="manager-terms",),
