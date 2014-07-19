@@ -60235,6 +60235,26 @@
   }
 },
 {
+  "pk": 15, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-18T10:34:17.271Z", 
+    "name": "gestori iscritti 18 Luglio 2014", 
+    "modified": "2014-07-18T10:34:17.271Z", 
+    "slug": "gestori-18-luglio-2014"
+  }
+},
+{
+  "pk": 16, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2014-07-18T11:50:36.996Z", 
+    "name": "chaplyn resend", 
+    "modified": "2014-07-18T11:50:36.996Z", 
+    "slug": "chaplyn-resend"
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertemplate", 
   "fields": {
@@ -60738,6 +60758,94 @@
     "sent_count": 36, 
     "slug": "marketing-9-luglio", 
     "subject": "Prenotazioni online per il tuo stabilimento balneare"
+  }
+},
+{
+  "pk": 23, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "test concorso 2014", 
+    "created": "2014-07-18T09:25:56.997Z", 
+    "text": "<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Inviaci qualche scatto del tuo bagno e conquista la prima pagina di bagnialmare.com per tutto il mese di </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Agosto 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> oltre ad un</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> link diretto</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> alla pagina del tuo bagno.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Tutti i bagni registrati al portale possono partecipare: </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">i migliori fotografi siete voi</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Cosa si vince? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare valuter&agrave; le proposte fotografiche ricevute e </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">pubblicher&agrave; direttamente in home page, per tutto il mese di Agosto 2014 la foto giudicata pi&ugrave; idonea</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">includendo</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">una menzione speciale per il vincitore e il link alla relativa vetrina su Bagnialmare </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">anche attraverso le nostre pagine social.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Amici, confidiamo sulla vostra creativit&agrave; e attendiamo le vostre foto !</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Buona giornata e Buon lavoro</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Il team di Bagnialmare</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\">&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">REGOLAMENTO </span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Quante &nbsp;e quali foto posso inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare accetter&agrave; fino a un massimo di 3 foto per stabilimento. Le fotografie canditate alla scelta rispetteranno i seguenti requisiti:</span></span></p>\r\n\r\n<ul style=\"margin-top:0pt;margin-bottom:0pt;\">\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:0pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono inquadrature di persone facilmente identificabili, tantomeno se minori</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:0pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono riferimenti espliciti a marchi (ivi compreso quello della struttura stessa)</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Includono uno spazio all&rsquo;aperto in Riviera in una bella giornata di sole</span></span></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Come inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Potete inviare le foto in formato idoneo (es. .JPG, .PNG) direttamente via email a </span><a href=\"mailto:info@bagnialmare.com\" style=\"text-decoration:none;\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">info@bagnialmare.com</span></a><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">, dichiarando come oggetto &ldquo;concorso fotografico 2014&rdquo; , accettiamo anche link su dropbox, google photo, facebook, flickr e in generale immagini di vostra propriet&agrave; gi&agrave; pubblicate altrove</span></span></p>\r\n\r\n<p><span id=\"docs-internal-guid-3317a563-48c9-9d33-79b7-bc3c2918aba3\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Entro quando? &nbsp;</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Bagnialmare accetter&agrave; fotografie </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">da ora e fino a luned&igrave; 28 Luglio 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">. Il giorno 1 agosto sar&agrave; proclamato il vincitore sulle nostre pagine social, con il rimando alla nuova home page</span></span></p>\r\n\r\n<p><span style=\"color: rgb(67, 67, 67); font-family: Calibri; font-size: 15px; line-height: 17.25px; white-space: pre-wrap;\">http://bagnialmare.com/it/concorso2014</span></p>\r\n", 
+    "modified": "2014-07-18T09:26:08.132Z", 
+    "sent_to": "marco.bartolini@gmail.com", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "barto"
+    ], 
+    "sent_on": "11:26:08.119", 
+    "sent_count": 1, 
+    "slug": "test-concorso-2014", 
+    "subject": "il tuo bagno in prima pagina!"
+  }
+},
+{
+  "pk": 24, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "test2 concorso 2014", 
+    "created": "2014-07-18T09:29:13.126Z", 
+    "text": "<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><strong>BRUTTI FROCI,&nbsp;</strong>mi date conferma che la mail si vede bene? Avendo cambiato l&#39;editor non vorrei che non potendo editare l&#39;html come prima le cose cambino ... Barto</p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\">&nbsp;</p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Inviaci qualche scatto del tuo bagno e conquista la prima pagina di bagnialmare.com per tutto il mese di </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Agosto 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> oltre ad un</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> link diretto</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> alla pagina del tuo bagno.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Tutti i bagni registrati al portale possono partecipare: </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">i migliori fotografi siete voi</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Cosa si vince? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare valuter&agrave; le proposte fotografiche ricevute e </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">pubblicher&agrave; direttamente in home page, per tutto il mese di Agosto 2014 la foto giudicata pi&ugrave; idonea</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">includendo</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">una menzione speciale per il vincitore e il link alla relativa vetrina su Bagnialmare </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">anche attraverso le nostre pagine social.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Amici, confidiamo sulla vostra creativit&agrave; e attendiamo le vostre foto !</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Buona giornata e Buon lavoro</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Il team di Bagnialmare</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\">&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">REGOLAMENTO</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Quante &nbsp;e quali foto posso inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare accetter&agrave; fino a un massimo di 3 foto per stabilimento. Le fotografie canditate alla scelta rispetteranno i seguenti requisiti:</span></span></p>\r\n\r\n<ul style=\"margin-top:0pt;margin-bottom:0pt;\">\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:0pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono inquadrature di persone facilmente identificabili, tantomeno se minori</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:0pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono riferimenti espliciti a marchi (ivi compreso quello della struttura stessa)</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Includono uno spazio all&rsquo;aperto in Riviera in una bella giornata di sole</span></span></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.1500000000000001;margin-top:0pt;margin-bottom:10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Come inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Potete inviare le foto in formato idoneo (es. .JPG, .PNG) direttamente via email a </span><a href=\"mailto:info@bagnialmare.com\" style=\"text-decoration:none;\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">info@bagnialmare.com</span></a><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">, dichiarando come oggetto &ldquo;concorso fotografico 2014&rdquo; , accettiamo anche link su dropbox, google photo, facebook, flickr e in generale immagini di vostra propriet&agrave; gi&agrave; pubblicate altrove</span></span></p>\r\n\r\n<p><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Entro quando? &nbsp;</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Bagnialmare accetter&agrave; fotografie </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">da ora e fino a luned&igrave; 28 Luglio 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">. Il giorno 1 agosto sar&agrave; proclamato il vincitore sulle nostre pagine social, con il rimando alla nuova home page</span></span></p>\r\n\r\n<p><span style=\"color: rgb(67, 67, 67); font-family: Calibri; font-size: 15px; line-height: 17.25px; white-space: pre-wrap;\">http://bagnialmare.com/it/concorso2014</span></p>\r\n", 
+    "modified": "2014-07-18T09:29:23.848Z", 
+    "sent_to": "nicola.valentini@gmail.com; marco.benvenuto1@gmail.com; marco.bartolini@gmail.com; parruc@gmail.com", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "4hm"
+    ], 
+    "sent_on": "11:29:23.846", 
+    "sent_count": 4, 
+    "slug": "test2-concorso-2014", 
+    "subject": "il tuo bagno in prima pagina!"
+  }
+},
+{
+  "pk": 25, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "concorso 2014", 
+    "created": "2014-07-18T10:11:58.972Z", 
+    "text": "<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Inviaci qualche scatto del tuo bagno e conquista la prima pagina di bagnialmare.com per tutto il mese di </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Agosto 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> oltre ad un</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> link diretto</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> alla pagina del tuo bagno.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Tutti i bagni registrati al portale possono partecipare: </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">i migliori fotografi siete voi</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Cosa si vince? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare valuter&agrave; le proposte fotografiche ricevute e </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">pubblicher&agrave; direttamente in home page, per tutto il mese di Agosto 2014 la foto giudicata pi&ugrave; idonea</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">includendo</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">una menzione speciale per il vincitore e il link alla relativa vetrina su Bagnialmare </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">anche attraverso le nostre pagine social.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Amici, confidiamo sulla vostra creativit&agrave; e attendiamo le vostre foto !</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Buona giornata e Buon lavoro</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Il team di Bagnialmare</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\">&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">REGOLAMENTO</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Quante &nbsp;e quali foto posso inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare accetter&agrave; fino a un massimo di 3 foto per stabilimento. Le fotografie canditate alla scelta rispetteranno i seguenti requisiti:</span></span></p>\r\n\r\n<ul style=\"margin-top: 0pt; margin-bottom: 0pt;\">\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 0pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono inquadrature di persone facilmente identificabili, tantomeno se minori</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 0pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono riferimenti espliciti a marchi (ivi compreso quello della struttura stessa)</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Includono uno spazio all&rsquo;aperto in Riviera in una bella giornata di sole</span></span></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Come inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Potete inviare le foto in formato idoneo (es. .JPG, .PNG) direttamente via email a </span><a href=\"mailto:info@bagnialmare.com\" style=\"text-decoration: none;\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">info@bagnialmare.com</span></a><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">, dichiarando come oggetto &ldquo;concorso fotografico 2014&rdquo; , accettiamo anche link su dropbox, google photo, facebook, flickr e in generale immagini di vostra propriet&agrave; gi&agrave; pubblicate altrove</span></span></p>\r\n\r\n<p><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Entro quando? &nbsp;</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Bagnialmare accetter&agrave; fotografie </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">da ora e fino a luned&igrave; 28 Luglio 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">. Il giorno 1 agosto sar&agrave; proclamato il vincitore sulle nostre pagine social, con il rimando alla nuova home page</span></span></p>\r\n\r\n<p><span style=\"color: rgb(67, 67, 67); font-family: Calibri; font-size: 15px; line-height: 17.25px; white-space: pre-wrap;\">http://bagnialmare.com/it/concorso2014</span></p>\r\n", 
+    "modified": "2014-07-18T11:09:56.532Z", 
+    "sent_to": "infochaplyn@gmail.it; mbenvenuto@airplus.com; simonegriffi@gmail.com; info@bagnoegisto38.com; marcomarchetti.ing@gmail.com; info@bagno55rimini.com; Info@bagnomexico.com; Info@bagnobenvenuti.com; amaduccig@gmail.com; stefano___ricci@alice.it; spiaggia136@gmail.com; spiaggia23riccione@email.it; bagno28otello@gmail.com; info@bagnomeridiano.it; info@loretta99.com; info@bagnosaurocervia.it; info@centrovacanzericcione.it", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "gestori-18-luglio-2014"
+    ], 
+    "sent_on": "13:09:56.529", 
+    "sent_count": 17, 
+    "slug": "concorso-2014", 
+    "subject": "Il tuo bagno in prima pagina!"
+  }
+},
+{
+  "pk": 26, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "concorso 2014 chaplyn", 
+    "created": "2014-07-18T11:53:18.504Z", 
+    "text": "<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Inviaci qualche scatto del tuo bagno e conquista la prima pagina di bagnialmare.com per tutto il mese di </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Agosto 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> oltre ad un</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> link diretto</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> alla pagina del tuo bagno.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Tutti i bagni registrati al portale possono partecipare: </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">i migliori fotografi siete voi</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Cosa si vince? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare valuter&agrave; le proposte fotografiche ricevute e </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">pubblicher&agrave; direttamente in home page, per tutto il mese di Agosto 2014 la foto giudicata pi&ugrave; idonea</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">includendo</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">una menzione speciale per il vincitore e il link alla relativa vetrina su Bagnialmare </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">anche attraverso le nostre pagine social.</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Amici, confidiamo sulla vostra creativit&agrave; e attendiamo le vostre foto !</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Buona giornata e Buon lavoro</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Il team di Bagnialmare</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\">&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">REGOLAMENTO</span></span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Quante &nbsp;e quali foto posso inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">&nbsp;Bagnialmare accetter&agrave; fino a un massimo di 3 foto per stabilimento. Le fotografie canditate alla scelta rispetteranno i seguenti requisiti:</span></span></p>\r\n\r\n<ul style=\"margin-top: 0pt; margin-bottom: 0pt;\">\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 0pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono inquadrature di persone facilmente identificabili, tantomeno se minori</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 0pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Non contengono riferimenti espliciti a marchi (ivi compreso quello della struttura stessa)</span></span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\" style=\"list-style-type: disc; font-size: 15px; font-family: Arial; color: rgb(67, 67, 67); vertical-align: baseline; background-color: transparent;\">\r\n\t<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-family: Calibri; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Includono uno spazio all&rsquo;aperto in Riviera in una bella giornata di sole</span></span></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\" style=\"line-height: 1.1500000000000001; margin-top: 0pt; margin-bottom: 10pt;\"><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Come inviare? </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Potete inviare le foto in formato idoneo (es. .JPG, .PNG) direttamente via email a </span><a href=\"mailto:info@bagnialmare.com\" style=\"text-decoration: none;\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">info@bagnialmare.com</span></a><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">, dichiarando come oggetto &ldquo;concorso fotografico 2014&rdquo; , accettiamo anche link su dropbox, google photo, facebook, flickr e in generale immagini di vostra propriet&agrave; gi&agrave; pubblicate altrove</span></span></p>\r\n\r\n<p><span id=\"docs-internal-guid-3317a563-48cc-8cc7-fa48-8cc7d9ce2fc5\"><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; font-style: italic; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Entro quando? &nbsp;</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">Bagnialmare accetter&agrave; fotografie </span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); font-weight: bold; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">da ora e fino a luned&igrave; 28 Luglio 2014</span><span style=\"font-size: 15px; font-family: Calibri; color: rgb(67, 67, 67); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">. Il giorno 1 agosto sar&agrave; proclamato il vincitore sulle nostre pagine social, con il rimando alla nuova home page</span></span></p>\r\n\r\n<p><span style=\"color: rgb(67, 67, 67); font-family: Calibri; font-size: 15px; line-height: 17.25px; white-space: pre-wrap;\">http://bagnialmare.com/it/concorso2014</span></p>\r\n", 
+    "modified": "2014-07-18T11:53:39.147Z", 
+    "sent_to": "infochaplyn@gmail.com", 
+    "template": [
+      "empty"
+    ], 
+    "target": [
+      "chaplyn-resend"
+    ], 
+    "sent_on": "13:53:39.146", 
+    "sent_count": 1, 
+    "slug": "concorso-2014-chaplyn", 
+    "subject": "Il tuo bagno in prima pagina!"
   }
 },
 {
@@ -71895,6 +72003,204 @@
   }
 },
 {
+  "pk": 1033, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "5f62b1f138c2484c9d374f70ebadcc05", 
+    "email": "info@centrovacanzericcione.it", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1034, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "9c202ef41d97474292882a2c08ff19b6", 
+    "email": "info@bagnosaurocervia.it", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1035, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "f8f657912bcb4191aedf93bb75f6c4ef", 
+    "email": "info@loretta99.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1036, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "234270218c724018af971b606fe7a74b", 
+    "email": "info@bagnomeridiano.it", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1037, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "03568804b08f4ab6b0165720604e3c6f", 
+    "email": "bagno28otello@gmail.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1038, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "42d50f5cd38b4141a71af08c05ea61c5", 
+    "email": "spiaggia23riccione@email.it", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1039, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "db3f2aa5f0104427b18d80f4e4909390", 
+    "email": "spiaggia136@gmail.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1040, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "30d0900bbf52491a98e67e5f9d490b38", 
+    "email": "stefano___ricci@alice.it", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1041, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "93766ff111c34c06b9eab9bacb29a58d", 
+    "email": "amaduccig@gmail.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1042, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "0f3b1d67543f4eb6b1a1a5b8e9c8d40b", 
+    "email": "Info@bagnobenvenuti.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1043, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "3351f852b1da481c96969f6bcbdd73c2", 
+    "email": "Info@bagnomexico.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1044, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "502ed7709f2d419da2397e5d785e2738", 
+    "email": "info@bagno55rimini.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1045, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "2ed238cfa6c644549197628af500e0e8", 
+    "email": "marcomarchetti.ing@gmail.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1046, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e09f7d3fbaf445cab601ccda001636ee", 
+    "email": "info@bagnoegisto38.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1047, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "7502f5d28dbf41dc8725e7ce2e20141a", 
+    "email": "simonegriffi@gmail.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1048, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "295d6edd99164164acefb539191d60fb", 
+    "email": "mbenvenuto@airplus.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1049, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "e0090fd0e8304e43ba0fd2d90dc11c18", 
+    "email": "infochaplyn@gmail.com", 
+    "target": [
+      "gestori-18-luglio-2014"
+    ]
+  }
+},
+{
+  "pk": 1050, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "a17df531bc514660b3a593c54d45a5eb", 
+    "email": "infochaplyn@gmail.com", 
+    "target": [
+      "chaplyn-resend"
+    ]
+  }
+},
+{
   "pk": 3, 
   "model": "userfeedback.userfeedback", 
   "fields": {
@@ -73467,7 +73773,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-12T18:53:34.376Z", 
+    "last_login": "2014-07-18T09:47:11.924Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -73669,7 +73975,7 @@
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=", 
-    "email": "infochaplyn@gmail.it", 
+    "email": "infochaplyn@gmail.com", 
     "date_joined": "2014-07-02T19:15:51.370Z"
   }
 },
