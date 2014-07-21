@@ -60071,7 +60071,7 @@
     "description": "", 
     "created": "2014-07-15T23:05:53.139Z", 
     "point": null, 
-    "modified": "2014-07-15T23:05:53.139Z", 
+    "modified": "2014-07-20T21:20:26.363Z", 
     "description_en": "", 
     "number": "18", 
     "languages": [
@@ -60085,7 +60085,7 @@
     "services": [], 
     "address": "Via Litoranea Nord, 18", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "igabbianibeach@hotmail.it", 
     "accepts_booking": true, 
     "slug": "spiaggia-i-gabbiani", 
     "neighbourhood": [
@@ -72513,6 +72513,16 @@
   }
 },
 {
+  "pk": 35, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 32, 
+    "key": "5a4c082b10cf933eefc613d68232e9ec12899326ff3d47592c89fb9d4d3b1fff", 
+    "sent": "2014-07-20T21:20:27.056Z", 
+    "created": "2014-07-20T21:20:26.919Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -74106,6 +74116,24 @@
   }
 },
 {
+  "pk": 36, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "igabbianibeach", 
+    "first_name": "fabrizio", 
+    "last_name": "signorini", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2014-07-20T21:22:12.057Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$XdtWL7enAmzs$cP8cfJrO3D7QUD0+fet4O/jIQTaELyZol+SmuAGmZgU=", 
+    "email": "igabbianibeach@hotmail.it", 
+    "date_joined": "2014-07-20T21:20:24.766Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -74363,6 +74391,18 @@
     ], 
     "primary": true, 
     "email": "Info@bagnobenvenuti.com"
+  }
+},
+{
+  "pk": 32, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "igabbianibeach"
+    ], 
+    "primary": true, 
+    "email": "igabbianibeach@hotmail.it"
   }
 },
 {
@@ -74820,6 +74860,26 @@
   }
 },
 {
+  "pk": 29, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "signorini", 
+    "name": "fabrizio", 
+    "created": "2014-07-20T21:20:24.944Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2014-07-20T21:20:26.192Z", 
+    "user": [
+      "igabbianibeach"
+    ], 
+    "bagni": [
+      [
+        "spiaggia-i-gabbiani"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -75037,6 +75097,16 @@
       "info8"
     ], 
     "old_email": "Info@bagnobenvenuti.com"
+  }
+},
+{
+  "pk": 23, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "igabbianibeach"
+    ], 
+    "old_email": "igabbianibeach@hotmail.it"
   }
 },
 {
