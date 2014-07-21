@@ -83,7 +83,7 @@ class Bagno(BaseModel):
 
     def get_ordered_telephones(self):
         return sorted(
-                list(self.telephones.all()),
+                list(self.telephones.exclude(number=u'')),
                 key = lambda x: Telephone.TELEPHONE_ORDERING.get(x.name, 7)
                 )
 
