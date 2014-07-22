@@ -4,6 +4,7 @@ from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from sorl.thumbnail import ImageField
+from ckeditor.fields import RichTextField
 
 from . import BaseModel
 
@@ -16,7 +17,7 @@ class ServiceCategory(BaseModel):
         verbose_name_plural = _('Service Category')
         app_label = 'bagni'
 
-    description = models.TextField(max_length=2000)
+    description = RichTextField(blank=True, max_length=2000, verbose_name=_("Description"),)
     order = models.IntegerField()
     image = ImageField(upload_to="images/servicecategories", verbose_name=_("Image"), blank=True, null=True )
 
@@ -33,7 +34,7 @@ class Service(BaseModel):
         verbose_name_plural = _('Services')
         app_label = 'bagni'
 
-    description = models.TextField(max_length=2000, blank=True)
+    description = RichTextField(blank=True, max_length=2000, verbose_name=_("Description"),)
 
     # TODO: A regime mettere  obbligatorio cateogry
     seo_name =  models.CharField(max_length=100, blank=True, null=True,)
