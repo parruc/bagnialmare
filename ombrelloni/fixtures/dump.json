@@ -60067,25 +60067,118 @@
   "pk": 13834, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
+    "site": "https://www.facebook.com/francesco.signorini.96343", 
     "description": "", 
     "created": "2014-07-15T23:05:53.139Z", 
-    "point": null, 
-    "modified": "2014-07-20T21:20:26.363Z", 
+    "point": "POINT (12.6936510187655571 43.9834335639604888)", 
+    "modified": "2014-07-21T16:53:22.397Z", 
     "description_en": "", 
     "number": "18", 
-    "languages": [
+    "languages": [], 
+    "services": [
       [
-        "italian"
+        "bar"
       ], 
       [
-        "english"
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "playground"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "parking"
+      ], 
+      [
+        "disabled"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "green-area"
+      ], 
+      [
+        "trampoline"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "magazines-journals"
+      ], 
+      [
+        "solarium"
+      ], 
+      [
+        "sea-volley"
+      ], 
+      [
+        "mats-deposit"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "cocktail-bar"
+      ], 
+      [
+        "helmet-deposit"
+      ], 
+      [
+        "wellness-area"
+      ], 
+      [
+        "sandwich-shop"
+      ], 
+      [
+        "celiac-cooking"
+      ], 
+      [
+        "table-tournaments"
+      ], 
+      [
+        "picnic-area"
+      ], 
+      [
+        "double-sun-bed"
+      ], 
+      [
+        "pizzeria"
+      ], 
+      [
+        "deckchairs"
       ]
     ], 
-    "services": [], 
     "address": "Via Litoranea Nord, 18", 
     "description_it": "", 
-    "mail": "igabbianibeach@hotmail.it", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "spiaggia-i-gabbiani", 
     "neighbourhood": [
@@ -73729,7 +73822,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-15T23:04:50.552Z", 
+    "last_login": "2014-07-21T12:19:01.610Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -92568,6 +92661,30 @@
     "number": "0541/721766", 
     "name": "win", 
     "slug": "win-2"
+  }
+},
+{
+  "pk": 3427, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "spiaggia-i-gabbiani"
+    ], 
+    "number": "", 
+    "name": "mob", 
+    "slug": "mob-11"
+  }
+},
+{
+  "pk": 3428, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "spiaggia-i-gabbiani"
+    ], 
+    "number": "", 
+    "name": "win", 
+    "slug": "win-3"
   }
 }
 ]
