@@ -47,6 +47,13 @@
           </p>
       </div>
   </div>
+  {% if object.description %}
+  <div class="row">
+      <div class="col-xs-12">
+        {{ object.description|safe }}
+      </div>
+  </div>
+  {% endif %}
   <div class="row">
       <div class="col-xs-12">
               {% regroup object.bagni.all|dictsort:"neighbourhood.name"|dictsort:"neighbourhood.municipality.name" by neighbourhood as neighborhood_list %}
