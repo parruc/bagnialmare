@@ -17,7 +17,7 @@ class ServiceCategory(BaseModel):
         verbose_name_plural = _('Service Category')
         app_label = 'bagni'
 
-    description = RichTextField(blank=True, max_length=2000, verbose_name=_("Description"),)
+    description = RichTextField(blank=True, max_length=2000, verbose_name=_("Description"), config_name='admin', )
     order = models.IntegerField()
     image = ImageField(upload_to="images/servicecategories", verbose_name=_("Image"), blank=True, null=True )
 
@@ -34,7 +34,7 @@ class Service(BaseModel):
         verbose_name_plural = _('Services')
         app_label = 'bagni'
 
-    description = RichTextField(blank=True, max_length=2000, verbose_name=_("Description"),)
+    description = RichTextField(blank=True, max_length=2000, verbose_name=_("Description"), config_name='admin', )
 
     # TODO: A regime mettere  obbligatorio cateogry
     seo_name =  models.CharField(max_length=100, blank=True, null=True,)
