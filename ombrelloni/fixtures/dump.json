@@ -4836,6 +4836,34 @@
   }
 },
 {
+  "pk": 2303, 
+  "model": "bagni.service", 
+  "fields": {
+    "category": [
+      "games-and-entertainment"
+    ], 
+    "slug_en": "bookcrossing", 
+    "aliases_it": null, 
+    "name_it": "bookcrossing", 
+    "name": "bookcrossing", 
+    "created": "2014-07-22T09:07:50.177Z", 
+    "seo_name_en": "that offer bookcrossing", 
+    "image": "images/services/SignLogo.png", 
+    "slug_it": "bookcrossing", 
+    "modified": "2014-07-22T09:25:12.359Z", 
+    "description_en": "<h2>What is BookCrossing?</h2>\r\n\r\n<p>It&#39;s the World&#39;s Library. It&#39;s a smart social networking site. It&#39;s a celebration of literature and a place where books get new life. BookCrossing is the act of giving a book a unique identity so, as the book is passed from reader to reader, it can be tracked and thus connecting its readers.</p>\r\n\r\n<h2>How it works</h2>\r\n\r\n<p>Label. Share. Follow. Breath new life into books instead of letting your old favorites collect dust - pass them along to another reader. Our online archival and tracking system allows members to connect with other readers, journal and review literature and trade and follow their books as lives are changed through &ldquo;reading and releasing&rdquo;. Users are able to tag and track their individual books by marking them with BCIDs (BookCrossing Identity Numbers). Each BCID is unique to each book &ndash; once it&rsquo;s registered on our site, the book can then be followed and journaled forever. BookCrossing is free to join and free to play. So don&#39;t be &#39;shelf&#39;ish with your books - read and release!</p>\r\n\r\n<p><span style=\"line-height: 1.6;\">Here the </span><a href=\"http://www.bookcrossing.com/\" rel=\"nofollow\" style=\"line-height: 1.6;\" target=\"_blank\">bookcrossing</a><span style=\"line-height: 1.6;\"> website</span></p>\r\n", 
+    "seo_name": "that offer bookcrossing", 
+    "free": true, 
+    "seo_name_it": "con servizio di bookcrossing", 
+    "description_it": "<h2>Che cos&rsquo;&egrave; il BookCrossing?</h2>\r\n\r\n<p>L&#39;idea viene concretizzata da Ron Hornbaker e da sua moglie Kaori. L&#39;iniziativa prende il nome dalla giustapposizione dei termini Book e Crossing e sta ad indicare l&#39;intersezione tra le vite di chi legge i libri, che appunto si toccano, seppur solo virtualmente, tramite un volume.</p>\r\n\r\n<p>Il meccanismo del Bookcrossing ruota intorno all&#39;esistenza di un sito web attraverso il quale &egrave; possibile dotare i volumi di un codice identificativo unico (BCID - Bookcrossing ID) che permetter&agrave; di seguire i loro spostamenti a livello mondiale, sempre che venga utilizzato il sito web ad ogni passaggio.</p>\r\n\r\n<h2>Come funziona il BookCrossing</h2>\r\n\r\n<p>1 Prendi in prestito un libro.<br />\r\n<span style=\"line-height: 1.6;\">2 Leggilo!<br />\r\n3 Vai sul sito www.bookcrossing.com e inserisci il codice BCID che trovi all&rsquo;interno del libro, contribuisci a tracciare il viaggio del libro!<br />\r\n4 Riporta il libro presso una &ldquo;Zona Scambio&rdquo;.<br />\r\n5 Ricomincia da capo! </span></p>\r\n\r\n<p><span style=\"line-height: 1.6;\">Qui il sito del </span><a href=\"http://www.bookcrossing.com/\" rel=\"nofollow\" style=\"line-height: 1.6;\" target=\"_blank\">bookcrossing</a></p>\r\n", 
+    "aliases_en": null, 
+    "name_en": "bookcrossing", 
+    "aliases": null, 
+    "slug": "bookcrossing", 
+    "description": "<h2>What is BookCrossing?</h2>\r\n\r\n<p>It&#39;s the World&#39;s Library. It&#39;s a smart social networking site. It&#39;s a celebration of literature and a place where books get new life. BookCrossing is the act of giving a book a unique identity so, as the book is passed from reader to reader, it can be tracked and thus connecting its readers.</p>\r\n\r\n<h2>How it works</h2>\r\n\r\n<p>Label. Share. Follow. Breath new life into books instead of letting your old favorites collect dust - pass them along to another reader. Our online archival and tracking system allows members to connect with other readers, journal and review literature and trade and follow their books as lives are changed through &ldquo;reading and releasing&rdquo;. Users are able to tag and track their individual books by marking them with BCIDs (BookCrossing Identity Numbers). Each BCID is unique to each book &ndash; once it&rsquo;s registered on our site, the book can then be followed and journaled forever. BookCrossing is free to join and free to play. So don&#39;t be &#39;shelf&#39;ish with your books - read and release!</p>\r\n\r\n<p><span style=\"line-height: 1.6;\">Here the </span><a href=\"http://www.bookcrossing.com/\" rel=\"nofollow\" style=\"line-height: 1.6;\" target=\"_blank\">bookcrossing</a><span style=\"line-height: 1.6;\"> website</span></p>\r\n"
+  }
+},
+{
   "pk": 12763, 
   "model": "bagni.bagno", 
   "fields": {
@@ -57632,8 +57660,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4559669719000006 44.1577816830000032)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-07-22T09:26:27.073Z", 
+    "description_en": "", 
     "number": "6", 
     "languages": [
       [
@@ -57643,9 +57671,13 @@
         "english"
       ]
     ], 
-    "services": [], 
+    "services": [
+      [
+        "bookcrossing"
+      ]
+    ], 
     "address": "Via C. Colombo", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-federico-2", 
@@ -58252,7 +58284,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4629383199999992 44.1520579199999972)", 
-    "modified": "2014-07-03T18:06:11.851Z", 
+    "modified": "2014-07-22T09:26:51.268Z", 
     "description_en": "", 
     "number": "26/27/28/29", 
     "languages": [
@@ -58263,7 +58295,11 @@
         "english"
       ]
     ], 
-    "services": [], 
+    "services": [
+      [
+        "bookcrossing"
+      ]
+    ], 
     "address": "Via C. Colombo", 
     "description_it": "", 
     "mail": "", 
@@ -58562,7 +58598,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4674696963000002 44.1483374741000034)", 
-    "modified": "2014-07-03T17:17:00.060Z", 
+    "modified": "2014-07-22T09:27:08.192Z", 
     "description_en": "", 
     "number": "39/40/41/42/43/44", 
     "languages": [
@@ -58573,7 +58609,11 @@
         "english"
       ]
     ], 
-    "services": [], 
+    "services": [
+      [
+        "bookcrossing"
+      ]
+    ], 
     "address": "Via C. Colombo", 
     "description_it": "", 
     "mail": "info@pagurobeach.it", 
@@ -59027,7 +59067,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4759259460000003 44.1408292703000029)", 
-    "modified": "2014-07-03T17:37:27.921Z", 
+    "modified": "2014-07-22T09:27:38.751Z", 
     "description_en": "", 
     "number": "59/60", 
     "languages": [
@@ -59038,7 +59078,11 @@
         "english"
       ]
     ], 
-    "services": [], 
+    "services": [
+      [
+        "bookcrossing"
+      ]
+    ], 
     "address": "Via A. Pinzon", 
     "description_it": "", 
     "mail": "nordest59@alice.it", 
@@ -59511,7 +59555,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4848129188999994 44.1332074054000003)", 
-    "modified": "2014-07-03T17:57:41.536Z", 
+    "modified": "2014-07-22T09:27:56.055Z", 
     "description_en": "", 
     "number": "80/81/82/83/84/85/86", 
     "languages": [
@@ -59522,7 +59566,11 @@
         "english"
       ]
     ], 
-    "services": [], 
+    "services": [
+      [
+        "bookcrossing"
+      ]
+    ], 
     "address": "Via A. Pinzon", 
     "description_it": "", 
     "mail": "", 
@@ -73810,6 +73858,15 @@
     "applied": "2014-07-03T09:14:33.135Z", 
     "app_name": "newsletters", 
     "migration": "0007_auto__add_field_newslettertarget_created__add_field_newslettertarget_m"
+  }
+},
+{
+  "pk": 75, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-07-22T09:23:50.353Z", 
+    "app_name": "bagni", 
+    "migration": "0037_auto__chg_field_service_description__chg_field_service_description_en_"
   }
 },
 {
