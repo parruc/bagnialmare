@@ -21,13 +21,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
 
-  {% cache 600 base_lang_link %}
   {% for lang in LANGUAGES %}
     {% with lang.0 as lang_code %}
       <link rel="alternate" hreflang="{{ lang_code }}" href="{% change_lang lang_code %}" title="{{ lang.1 }}" />
     {% endwith %}
   {% endfor %}
-  {% endcache %}
 
   <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png">
   <!--[if IE]>
