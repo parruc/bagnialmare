@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
 {% load i18n %}
+
+{% block description %}
+  {% trans "Termini e condizione del trattamento dei dati personali del sito bagnialmare.com" %}
+{% endblock %}
+
 {% block content %}
+{% blocktrans %}
 <div class="col-xs-8 col-xs-offset-2">
     <h1>INFORMATIVA SULLA TUTELA DEI DATI PERSONALI E CONSENSO AL TRATTAMENTO DEGLI STESSI (D.L. 196/2003)</h1>
     <p>
@@ -71,4 +77,5 @@
     Google. Google non assocerà il vostro indirizzo IP a nessun altro dato posseduto da Google. Potete rifiutarvi di usare i cookies selezionando l’impostazione appropriata sul vostro browser, ma ciò potrebbe impedirvi di utilizzare tutte le funzionalità del Portale. Utilizzando questo Portale, voi acconsentite al trattamento dei Vostri dati da parte di Google per le modalità e i fini sopraindicati. 
     </p>
 </div>
+{% endblocktrans %}
 {% endblock %}

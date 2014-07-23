@@ -247,10 +247,9 @@
 </script>
 {% endblock specific_js %}
 
-{% block pagetitle %}
-    {{ object.name }},
-    {{ object|neighbourhood_municipality }}
-{% endblock pagetitle %}
+{% block pagetitle %}{% spaceless %}
+{{ object.name }} {% trans "in" %} {{ object|neighbourhood_municipality }}
+{% endspaceless %}{% endblock pagetitle %}
 
 {% block description %}{% spaceless %}
 {% trans "bagno_detail_description" as t_bagno_detail_description %}
