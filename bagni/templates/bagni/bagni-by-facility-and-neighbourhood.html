@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load i18n %}
+{% load i18n thumbnail %}
 
 {% load neighbourhood_municipality from custom_filters %}
 {% load pretty_neighbourhood from custom_filters %}
@@ -35,13 +35,6 @@
            {% endif %}
       </div>
   </div>
-    {% if facility.description %}
-      <div class="row">
-          <div class="col-xs-12">
-              {{ facility.description|safe }}
-          </div>
-      </div>
-  {% endif %}
   <div class="row">
       <div class="col-xs-12">
            <ul>
@@ -54,5 +47,17 @@
            </ul>
       </div>
   </div>
+    {% if facility.description %}
+      <div class="row">
+          <div class="col-xs-12">
+               {% if facility.image %}
+                   {% thumbnail facility.image "200x200" as im %}
+                       <img class="service-image pull-right  img-responsive img-rounded" src="{{ im.url }}" alt="{{ facility.name|safe }}" />
+                   {% endthumbnail %}
+               {% endif %}
+              {{ facility.description|safe }}
+          </div>
+      </div>
+  {% endif %}
 
 {% endblock %}

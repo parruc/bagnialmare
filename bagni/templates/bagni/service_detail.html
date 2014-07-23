@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load i18n %}
+{% load i18n thumbnail %}
 {% load url from future %}
 {% load pretty_neighbourhood from custom_filters %}
 
@@ -47,22 +47,31 @@
           </p>
       </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12">
+      {% regroup object.bagni.all|dictsort:"neighbourhood.name"|dictsort:"neighbourhood.municipality.name" by neighbourhood as neighborhood_list %}
+      {% for n in neighborhood_list %}
+        <h4>
+          <a href="{% url 'bagni-by-facility-and-neighbourhood' facility_slug=object.slug neighbourhood_slug=n.grouper.slug %}">
+            {{ n.grouper|pretty_neighbourhood }}
+          </a>
+        </h4>
+      {% empty %}
+        <h3>{{ t_service_detail_no_result }} {% if object.seo_name %}{{ object.seo_name }}{% else %}{% trans "with" %} {{ object.name }}{% endif %}</h3>
+      {% endfor %}
+    </div>
+  </div>
+
   {% if object.description %}
   <div class="row">
       <div class="col-xs-12">
+        {% if object.image %}
+            {% thumbnail object.image "200x200" as im %}
+            <img class="service-image pull-right  img-responsive img-rounded" src="{{ im.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
+            {% endthumbnail %}
+        {% endif %}
         {{ object.description|safe }}
       </div>
   </div>
   {% endif %}
-  <div class="row">
-      <div class="col-xs-12">
-              {% regroup object.bagni.all|dictsort:"neighbourhood.name"|dictsort:"neighbourhood.municipality.name" by neighbourhood as neighborhood_list %}
-              {% for n in neighborhood_list %}
-                  <h4><a href="{% url 'bagni-by-facility-and-neighbourhood' facility_slug=object.slug neighbourhood_slug=n.grouper.slug %}">{{ n.grouper|pretty_neighbourhood }}</a></h4>
-              {% empty %}
-                  <h3>{{ t_service_detail_no_result }} {% if object.seo_name %}{{ object.seo_name }}{% else %}{% trans "with" %} {{ object.name }}{% endif %}</h3>
-              {% endfor %}
-      </div>
-  </div>
-
 {% endblock %}

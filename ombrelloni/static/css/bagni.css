@@ -229,6 +229,9 @@ body {
     left: 5%;
     position: absolute;
 }
+.service-image{
+    margin-left: 10px;
+}
 
 .my-bold{
     font-weight: 700;
