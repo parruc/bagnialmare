@@ -1852,19 +1852,19 @@
     "name": "pedal boats", 
     "created": "2014-07-02T22:00:00Z", 
     "seo_name_en": "with pedal boat rental", 
-    "image": "", 
+    "image": "images/services/Tretboot_gelb.JPG", 
     "slug_it": "pedalo", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
+    "modified": "2014-07-23T09:38:14.103Z", 
+    "description_en": "<h2>Pedal on the sea</h2>\r\n\r\n<p>Hard to imagine anything more <strong>relaxing</strong> than a <strong>paddle boat</strong>. An experience to live with <strong>family</strong>, <strong>friends</strong>, touched by the sea breeze and gently embraced by a landscape that leaves each time without words; the same landscape which Mina used to sing about:</p>\r\n\r\n<p><q><em>We will see the parasols<br />\r\nfar away<br />\r\nnobody will see us</em></q></p>\r\n", 
     "seo_name": "with pedal boat rental", 
     "free": true, 
     "seo_name_it": "con noleggio pedal\u00f2", 
-    "description_it": "", 
+    "description_it": "<h2>Una pedalata sul mare</h2>\r\n\r\n<p>Difficile immaginarsi qualcosa di pi&ugrave;&nbsp;<strong>rilassante&nbsp;</strong>di un&rsquo;uscita in&nbsp;<strong>pedal&ograve;</strong>. Un&rsquo;esperienza da vivere in&nbsp;<strong>famiglia</strong>, con gli&nbsp;<strong>amici</strong>, sfiorati dalla brezza marina e dolcemente abbracciati da un paesaggio che lascia ogni volta senza parole; quello stesso paesaggio di cui cantava Mina:</p>\r\n\r\n<p><em><q>vedremo gli ombrelloni&nbsp;<br />\r\nlontano lontano<br />\r\nnessuno ci vedra&#39; vedra&#39; vedra&#39;</q></em></p>\r\n", 
     "aliases_en": null, 
     "name_en": "pedal boats", 
     "aliases": null, 
     "slug": "pedal-boats", 
-    "description": ""
+    "description": "<h2>Pedal on the sea</h2>\r\n\r\n<p>Hard to imagine anything more <strong>relaxing</strong> than a <strong>paddle boat</strong>. An experience to live with <strong>family</strong>, <strong>friends</strong>, touched by the sea breeze and gently embraced by a landscape that leaves each time without words; the same landscape which Mina used to sing about:</p>\r\n\r\n<p><q><em>We will see the parasols<br />\r\nfar away<br />\r\nnobody will see us</em></q></p>\r\n"
   }
 },
 {
@@ -3280,19 +3280,19 @@
     "name": "waterslide", 
     "created": "2014-07-02T22:00:00Z", 
     "seo_name_en": null, 
-    "image": "", 
+    "image": "images/services/acquascivolo.jpg", 
     "slug_it": "acquascivolo", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
+    "modified": "2014-07-23T09:11:41.809Z", 
+    "description_en": "<h2>Waterslides on the beach</h2>\r\n\r\n<p>Curved, sinusoidal, helical, twisted or <strong>kamikaze</strong>: which is your favorite <strong>water slide</strong>? In the <strong>beach resorts</strong> that offer this facility you can sometimes find a real <strong>water park</strong> in miniature. Of course, after the adrenaline rush of the descent you can relax in the <strong>swimming pool by the sea</strong> ... Priceless!</p>\r\n", 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
-    "description_it": "", 
+    "description_it": "<h2>Gli acquascivoli in spiaggia</h2>\r\n\r\n<p><span style=\"color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; line-height: 21px;\">Curvo, sinusoidale, ad elica, intrecciato o <strong>kamikaze</strong>: qualunque sia il tuo <strong>acquascivolo</strong> preferito negli <strong>stabilimenti balneari</strong> che offrono questo servizio potrai a volte trovare un vero e proprio&nbsp;<strong>parco acquatico</strong> in miniatura. Ovviamente dopo l&#39;adrenalina della discesa potrai rilassarti nella<strong>&nbsp;piscina in riva al mare</strong>... Impagabile!!!</span></p>\r\n", 
     "aliases_en": null, 
     "name_en": "waterslide", 
     "aliases": null, 
     "slug": "waterslide", 
-    "description": ""
+    "description": "<h2>Waterslides on the beach</h2>\r\n\r\n<p>Curved, sinusoidal, helical, twisted or <strong>kamikaze</strong>: which is your favorite <strong>water slide</strong>? In the <strong>beach resorts</strong> that offer this facility you can sometimes find a real <strong>water park</strong> in miniature. Of course, after the adrenaline rush of the descent you can relax in the <strong>swimming pool by the sea</strong> ... Priceless!</p>\r\n"
   }
 },
 {
@@ -12856,26 +12856,34 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1815<br />\n\tfronte mare: 18<br />\n\tdocce aperte: 2<br />\n\twc: 3<br />\n\tdocce chiuse: 1</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.3768250000000002 44.2333309999999997)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1815<br />\n\tfronte mare: 18<br />\n\tdocce aperte: 2<br />\n\twc: 3<br />\n\tdocce chiuse: 1</p>", 
+    "point": "POINT (12.3768250000000037 44.2333309999999926)", 
+    "modified": "2014-07-23T13:03:06.991Z", 
+    "description_en": "", 
     "number": "59", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "dancing"
+        "ping-pong"
       ], 
       [
-        "fitness-area"
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "videogames"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
       ], 
       [
         "cabins"
@@ -12884,35 +12892,20 @@
         "green-area"
       ], 
       [
-        "table-football"
-      ], 
-      [
-        "videogames"
-      ], 
-      [
-        "beach-volley"
+        "dancing"
       ], 
       [
         "beach-soccer"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
         "beach-racket-court"
       ], 
       [
-        "tv-area"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "baby-park"
+        "fitness-area"
       ]
     ], 
     "address": "Arenile demaniale 59", 
-    "description_it": null, 
+    "description_it": "<h3><span style=\"font-size: 13px; line-height: 1.6;\">superficie complessiva spiaggia: 1815</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">fronte mare: 18</span></h3>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-cinquantanove-mar-y-sol", 
@@ -13310,48 +13303,41 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1946<br />\n\tfronte mare: 19<br />\n\tdocce aperte: 2<br />\n\twc: 2<br />\n\tdocce chiuse: 1</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.3756390300000003 44.2351576699999995)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 1946<br />\n\tfronte mare: 19<br />\n\tdocce aperte: 2<br />\n\twc: 2<br />\n\tdocce chiuse: 1</p>", 
+    "point": "POINT (12.3756390300000056 44.2351576699999924)", 
+    "modified": "2014-07-23T12:59:46.742Z", 
+    "description_en": "", 
     "number": "69", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "theme-parties"
-      ], 
-      [
-        "table-football"
+        "baby-park"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "baby-park"
+        "table-football"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
+        "children-entertainment"
       ], 
       [
         "tv-area"
       ], 
       [
-        "children-entertainment"
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "theme-parties"
       ]
     ], 
     "address": "Arenile demaniale 69", 
-    "description_it": null, 
+    "description_it": "<p>superficie complessiva spiaggia: 1946<br />\r\nfronte mare: 19<br />\r\ndocce aperte: 2<br />\r\nwc: 2<br />\r\ndocce chiuse: 1</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-alta-marea", 
@@ -20100,56 +20086,49 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 189<br />\n\tfronte mare: 25<br />\n\tlettini: 380<br />\n\tcabine: 5<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 2</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4279618263244629 44.1780490841392535)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 189<br />\n\tfronte mare: 25<br />\n\tlettini: 380<br />\n\tcabine: 5<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 2</p>", 
+    "point": "POINT (12.4279618263244558 44.1780490841392393)", 
+    "modified": "2014-07-23T13:01:40.618Z", 
+    "description_en": "", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "catering"
+        "sun-terrace"
       ], 
       [
-        "five-a-side"
+        "catering"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
+        "tv-area"
       ], 
       [
         "petanque"
       ], 
       [
-        "tv-area"
+        "entertainment"
+      ], 
+      [
+        "pedal-boats"
       ], 
       [
         "canoes"
       ], 
       [
-        "entertainment"
-      ], 
-      [
-        "sun-terrace"
+        "five-a-side"
       ]
     ], 
     "address": "Spiaggia Villamarina", 
-    "description_it": null, 
+    "description_it": "<h3><span style=\"font-size: 13px; line-height: 1.6;\">ombrelloni: 189</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">fronte mare: 25</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">lettini: 380</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">superficie complessiva spiaggia: 1750mq</span></h3>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-internazionale-villamarina", 
     "neighbourhood": [
-      "villamarina"
+      "pinarella"
     ], 
     "name": "Bagno internazionale villamarina"
   }
@@ -25544,11 +25523,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "None", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2474491596221782 44.6630444196077079)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "None", 
+    "modified": "2014-07-23T12:54:37.393Z", 
+    "description_en": "", 
     "number": "25", 
     "languages": [], 
     "services": [
@@ -25581,7 +25560,7 @@
       ]
     ], 
     "address": "Via Spiaggia, 25", 
-    "description_it": "None", 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "kapogiro", 
@@ -32996,20 +32975,13 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://bagnoadriatico.it/", 
-    "description": "<div class=\"jqDnR\" id=\"idTextPanel\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px; line-height: normal;\">\r\n<p style=\"margin: 0px 0px 10px; padding: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 10px;\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula mattis placerat. Duis lobortis massa imperdiet quam. Suspendisse potenti. Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Sed libero. Aliquam erat volutpat. Etiam vitae tortor. Morbi vestibulum volutpat enim. Aliquam eu nunc. Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2827729999999935 44.5518359999999944)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<div class=\"jqDnR\" id=\"idTextPanel\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px; line-height: normal;\">\r\n<p style=\"margin: 0px 0px 10px; padding: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 10px;\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula mattis placerat. Duis lobortis massa imperdiet quam. Suspendisse potenti. Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Sed libero. Aliquam erat volutpat. Etiam vitae tortor. Morbi vestibulum volutpat enim. Aliquam eu nunc. Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n", 
+    "modified": "2014-07-23T12:56:27.344Z", 
+    "description_en": "", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "catering"
@@ -33025,7 +32997,7 @@
       ]
     ], 
     "address": "Via Leggero, 14/b", 
-    "description_it": "<div class=\"jqDnR\" id=\"idTextPanel\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px; line-height: normal;\">\r\n<p style=\"margin: 0px 0px 10px; padding: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 10px;\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula mattis placerat. Duis lobortis massa imperdiet quam. Suspendisse potenti. Pellentesque commodo eros a enim. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Sed libero. Aliquam erat volutpat. Etiam vitae tortor. Morbi vestibulum volutpat enim. Aliquam eu nunc. Nunc sed turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Nulla porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque dapibus hendrerit tortor. Praesent egestas tristique nibh. Sed a libero. Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam at tortor in tellus interdum sagittis. Aliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem. Morbi nec metus. Phasellus blandit leo ut odio. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. In auctor lobortis lacus. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Quisque id mi. Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue. Curabitur vestibulum aliquam leo. Praesent egestas neque eu enim. In hac habitasse platea dictumst. Fusce a quam. Etiam ut purus mattis mauris sodales aliquam. Curabitur nisi. Quisque malesuada placerat nisl. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Mauris sollicitudin fermentum libero. Praesent nonummy mi in odio. Nunc interdum lacus sit amet orci. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Morbi mollis tellus ac sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Fusce vel dui. Sed in libero ut nibh placerat accumsan. Proin faucibus arcu quis ante. In consectetuer turpis ut velit. Nulla sit amet est. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Praesent nec nisl a purus blandit viverra. Praesent ac massa at ligula laoreet iaculis. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce pharetra convallis urna. Quisque ut nisi. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Suspendisse non nisl sit amet velit hendrerit rutrum. Ut leo. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Suspendisse eu ligula. Nulla facilisi. Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci. Fusce ac felis sit amet ligula pharetra condimentum. Maecenas egestas arcu quis ligula</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n", 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-adriatico-3", 
@@ -48297,33 +48269,26 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "\n<p>Servizi offerti tornei delle varie attivit\u00e0</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6061390210000006 44.0487828999999991)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "\n<p>Servizi offerti tornei delle varie attivit\u00e0</p>", 
+    "point": "POINT (12.6061390210000077 44.0487828999999849)", 
+    "modified": "2014-07-23T13:03:42.554Z", 
+    "description_en": "", 
     "number": "92 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "beach-racket-court"
+        "petanque"
       ], 
       [
-        "petanque"
+        "beach-racket-court"
       ], 
       [
         "playground"
       ]
     ], 
     "address": "", 
-    "description_it": null, 
+    "description_it": "<p>Servizi offerti tornei delle varie attivit&agrave;</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "luciano-3", 
@@ -49160,20 +49125,13 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 22<br />\r\n\tombrelloni: 220</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei tra clienti\r\n- animazione per bambini senza baby-sitter\r\n- feste a tema\r\n- un giro in pedal\u00f2 \u00e8 compreso nel prezzo.</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6111913550000008 44.0441335000000009)", 
-    "modified": "2014-07-07T14:28:35.138Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 22<br />\r\n\tombrelloni: 220</p>\r\n<p>Servizi offerti corsi di aquagymn\r\n- tornei tra clienti\r\n- animazione per bambini senza baby-sitter\r\n- feste a tema\r\n- un giro in pedal\u00f2 \u00e8 compreso nel prezzo.</p>", 
+    "point": "POINT (12.6111913550000043 44.0441334999999796)", 
+    "modified": "2014-07-23T12:59:23.848Z", 
+    "description_en": "", 
     "number": "106/B sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "beach-volley"
@@ -49201,7 +49159,7 @@
       ]
     ], 
     "address": "Via delle Colonie", 
-    "description_it": "", 
+    "description_it": "<h3><span style=\"font-size: 13px; line-height: 1.6;\">Servizi aggiuntivi: corsi di aquagymn - tornei tra clienti - animazione per bambini senza baby-sitter - feste a tema - un giro in pedal&ograve; &egrave; compreso nel prezzo.</span></h3>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "coco-beach", 
@@ -49297,39 +49255,32 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 47<br />\n\tombrelloni: 150</p>\n<p>Servizi offerti tornei di bocce, ping-pong e tiro alla fune</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6122739979999992 44.0431371999999968)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 47<br />\n\tombrelloni: 150</p>\n<p>Servizi offerti tornei di bocce, ping-pong e tiro alla fune</p>", 
+    "point": "POINT (12.6122739980000009 44.0431371999999897)", 
+    "modified": "2014-07-23T13:03:28.270Z", 
+    "description_en": "", 
     "number": "109 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "children-entertainment"
       ], 
       [
-        "hot-showers"
+        "toilets-for-children"
       ], 
       [
         "gym"
       ], 
       [
-        "toilets-for-children"
+        "hot-showers"
+      ], 
+      [
+        "magazines-journals"
       ]
     ], 
     "address": "Via Regina Margherita", 
-    "description_it": null, 
+    "description_it": "<h3><span style=\"font-size: 13px; line-height: 1.6;\">cabine: 47</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">ombrelloni: 150</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">Servizi offerti tornei di bocce, ping-pong e tiro alla fune</span></h3>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "tony", 
@@ -49432,20 +49383,13 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "https://sites.google.com/site/bagno112rimini/", 
-    "description": "\r\n<p>Servizi offerti corsi di aquagym e ginnastica; risveglio muscolare</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6133566409999993 44.0421408999999997)", 
-    "modified": "2014-07-04T10:45:17.185Z", 
-    "description_en": "\r\n<p>Servizi offerti corsi di aquagym e ginnastica; risveglio muscolare</p>", 
+    "point": "POINT (12.6133566409999958 44.0421408999999855)", 
+    "modified": "2014-07-23T13:00:05.715Z", 
+    "description_en": "", 
     "number": "112 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "baby-park"
@@ -49467,8 +49411,8 @@
       ]
     ], 
     "address": "di Casadei Primo", 
-    "description_it": "", 
-    "mail": "casadeiprimo@libero.it", 
+    "description_it": "<p>Servizi offerti corsi di aquagym e ginnastica; risveglio muscolare</p>\r\n", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "paolo", 
     "neighbourhood": [
@@ -49723,36 +49667,29 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "\n<p>Servizi offerti cassette di sicurezza (a pagamento)</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6158828080000003 44.0398161999999971)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "\n<p>Servizi offerti cassette di sicurezza (a pagamento)</p>", 
+    "point": "POINT (12.6158828079999967 44.0398161999999900)", 
+    "modified": "2014-07-23T12:56:01.816Z", 
+    "description_en": "", 
     "number": "119/120 sud", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "lockers"
       ], 
       [
-        "nursery"
+        "ping-pong"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "ping-pong"
+        "nursery"
       ]
     ], 
     "address": "", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "il-gabbiano", 
@@ -50940,11 +50877,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 130</p>", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5582709999999871 44.0771650000000008)", 
-    "modified": "2014-07-07T14:13:46.593Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 20<br />\r\n\tombrelloni: 130</p>", 
+    "modified": "2014-07-23T13:07:09.324Z", 
+    "description_en": "", 
     "number": "3/4 nord", 
     "languages": [], 
     "services": [
@@ -50965,7 +50902,7 @@
       ]
     ], 
     "address": "Via Toscanelli", 
-    "description_it": "None", 
+    "description_it": "<h3><span style=\"font-size: 13px; line-height: 1.6;\">cabine: 20</span><br />\r\n<span style=\"font-size: 13px; line-height: 1.6;\">ombrelloni: 130</span></h3>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "toni-william", 
@@ -72783,6 +72720,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||32a1f29d59c3eb2b8e2fdc29dea640d1", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/70/0f/700f9e65a69b56e490986aa2735e01b9.jpg\", \"size\": [200, 131]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||4093467e977df9f2d293dcf88a8056fe", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -72801,6 +72745,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/0d/1b/0d1b341193887a0f9bd5ba846a86b648.jpg\", \"size\": [380, 214]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||4340f38e4db77af816040cfc30622c30", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/services/SignLogo.png\", \"size\": [462, 462]}"
   }
 },
 {
@@ -72881,6 +72832,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||681c45aaee6bb6bc0e68fc13a8ba76cc", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/6e/43/6e4375dd648930ec0f1752fe991435ce.jpg\", \"size\": [260, 260]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||72dc2cc3ac39a28d655bdb9651e1e6b5", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -72909,6 +72867,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||7b1c33ac867187011ab53ac28e360015", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/services/Tretboot_gelb.JPG\", \"size\": [800, 440]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||7c7ccfbf2e1f69a6dd891b58a069798a", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -72927,6 +72892,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/e1/85/e1852dd92742ad445b6406044037dc22.jpg\", \"size\": [380, 253]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||8039082edda20a12b48c1aa9a56e0e33", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/services/acquascivolo.jpg\", \"size\": [942, 618]}"
   }
 },
 {
@@ -72969,6 +72941,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/d8/5b/d85b8dfdbb02b26d6b6705c9607d1740.jpg\", \"size\": [350, 250]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||99252950b554944c649c2c92431d0f37", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/bb/b6/bbb6e55345d6c1fe13fa156e0374fd6d.jpg\", \"size\": [200, 200]}"
   }
 },
 {
@@ -73077,6 +73056,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||e7d0d20bfee917edfcd9f34ec9112de5", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/32/0a/320a0a784b82e0d0cb55ceaae8d6ac28.jpg\", \"size\": [200, 110]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||ee3633d60e9c5870357f02ecef8f2a06", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -73140,6 +73126,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||thumbnails||4340f38e4db77af816040cfc30622c30", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"681c45aaee6bb6bc0e68fc13a8ba76cc\", \"99252950b554944c649c2c92431d0f37\"]"
+  }
+},
+{
   "pk": "sorl-thumbnail||thumbnails||57a17e6ba7219832ea7473161773bbb7", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -73154,6 +73147,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||thumbnails||7b1c33ac867187011ab53ac28e360015", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"e7d0d20bfee917edfcd9f34ec9112de5\"]"
+  }
+},
+{
   "pk": "sorl-thumbnail||thumbnails||7c7ccfbf2e1f69a6dd891b58a069798a", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -73165,6 +73165,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"7ee1c10e1fc880ad019700168606010c\", \"5fe0f45d20bea65e8a0d029b9ca89b1a\", \"c90770f5d05da543819d42618cf1a4d4\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||8039082edda20a12b48c1aa9a56e0e33", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"32a1f29d59c3eb2b8e2fdc29dea640d1\"]"
   }
 },
 {
