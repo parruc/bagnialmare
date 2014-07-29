@@ -72351,6 +72351,18 @@
   }
 },
 {
+  "pk": 9, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-dombachi"
+    ], 
+    "email": "", 
+    "created": "2014-07-28T15:13:31.800Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
