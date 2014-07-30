@@ -72364,6 +72364,18 @@
 },
 {
   "pk": 10, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "coco-beach"
+    ], 
+    "email": "jessica.salvian@gmail.com", 
+    "created": "2014-07-29T06:57:03.007Z"
+  }
+},
+{
+  "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
     "email_address": 10, 
