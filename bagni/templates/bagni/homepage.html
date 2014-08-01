@@ -123,7 +123,7 @@
 <script type="text/javascript">
     //Trying to preload image
     img1 = new Image();
-    img1.src = "{{ STATIC_URL }}img/ombrelloni.jpg";
+    img1.src = "{{ STATIC_URL }}img/otellohp.jpg";
     $(function() {
     $.backstretch(img1.src);
 });
@@ -144,7 +144,7 @@
 {% trans "terms_and_privacy" as t_terms_and_privacy %}
   <div id="footer" class="hp-footer">
     <div class="container centered-text">
-      <p class="small">&#169; 2014 BagniAlMare  | photo by <a href="https://www.flickr.com/photos/97928958@N00/1302842154" title="photo credits" rel="nofollow">orsorama</a> | <a href="{% url 'user-terms' %}" target="_blank" title="{{ t_terms_and_privacy }}">{{ t_terms_and_privacy }}</a></p>
+      <p class="small">&#169; 2014 BagniAlMare  | photo by <a href="http://bagnialmare.com/it/bagni/rimini/otello/" title="photo credits" rel="nofollow">Bagno Otello</a> | <a href="{% url 'user-terms' %}" target="_blank" title="{{ t_terms_and_privacy }}">{{ t_terms_and_privacy }}</a></p>
     </div>
   </div>
 {% endblock footer %}
