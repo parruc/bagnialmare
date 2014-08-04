@@ -24158,77 +24158,70 @@
   "pk": 13078, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnocalipso.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2460114955902100 44.6710639585969176)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.2460114955902135 44.6710639585968963)", 
+    "modified": "2014-08-03T09:40:56.118Z", 
+    "description_en": "", 
     "number": "5", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "gymnastics"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "schoolchildren"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "acquagym"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
         "disabled"
-      ], 
-      [
-        "pre-evening-entertainment"
       ], 
       [
         "bar"
       ], 
       [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "children-entertainment"
       ], 
       [
+        "five-a-side"
+      ], 
+      [
         "dance-classes"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "acquagym"
+      ], 
+      [
+        "pre-evening-entertainment"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "evening-entertainment"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "petanque"
       ]
     ], 
     "address": "Via spiaggia, 5", 
-    "description_it": null, 
-    "mail": "info@bagnocalipso.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "calipso", 
     "neighbourhood": [
@@ -73946,7 +73939,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-15T05:43:18.651Z", 
+    "last_login": "2014-08-03T09:47:58.059Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=", 
