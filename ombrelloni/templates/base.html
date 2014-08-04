@@ -103,13 +103,13 @@
             <li>
               <a href="{% url 'contact-form' %}"
                  title="{{ t_contact }}">
-                <strong>{{ t_contact|title }}</strong>
+                {{ t_contact|title }}
               </a>
             </li>
             <li>
               <a href="{% url 'search' %}"
                  title="{{ t_search }}">
-                <strong>{{ t_search }}</strong>
+                 {{ t_search }}
               </a>
             </li>
             {% if user.is_authenticated %}
@@ -121,15 +121,16 @@
                 <a href="{{ bagno.get_edit_url }}"
                     title="{{ t_edit }}"
                     rel="nofollow">
-                    <strong>{{ t_edit|capfirst }} {{ bagno.name }}</strong>
+                    {{ t_edit|capfirst }} {{ bagno.name }}
                   </a>
-                </li>
+                  </li>
+
                 {% endfor %}
                 <li>
                   <a href="{% url 'account_logout' %}"
                       title="{{ t_logout }}"
                       rel="nofollow">
-                    <strong>{{ t_logout|capfirst }}</strong>
+                    {{ t_logout|capfirst }}
                   </a>
                 </li>
               </ul>
@@ -139,13 +140,13 @@
               <a href="{% url 'account_login' %}"
                   title="{{ t_login }}"
                   rel="nofollow">
-              <strong>{{ t_login|capfirst }}</strong>
+              {{ t_login|capfirst }}
               </a>
             </li>
             <li>
               <a href="{% url 'account_signup' %}"
                  title="{{ t_are_you_manager }}">
-                <strong>{{ t_are_you_manager|capfirst }}</strong>
+                {{ t_are_you_manager|capfirst }}
               </a>
             </li>
             {% endif %}
@@ -153,7 +154,7 @@
             <li>
             <a href="{% url 'about-us' %}"
                title="{{ t_about_us }}">
-                <strong>{{ t_about_us|title }}</strong>
+                {{ t_about_us|title }}
               </a>
             </li>
             {% endcomment %}
