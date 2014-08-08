@@ -72368,6 +72368,18 @@
   }
 },
 {
+  "pk": 11, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "prestige"
+    ], 
+    "email": "", 
+    "created": "2014-08-07T16:02:12.627Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
