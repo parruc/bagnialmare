@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-23 09:20-0400\n"
+"POT-Creation-Date: 2014-08-09 00:43+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -273,7 +273,7 @@ msgstr "with"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:251
+#: templates/bagni/bagno_detail.html:258
 msgid "in"
 msgstr "in"
 
@@ -418,41 +418,45 @@ msgid "book_button"
 msgstr "Book online"
 
 #: templates/bagni/bagno_detail.html:27
+msgid "get_quote_button"
+msgstr "Request a quote"
+
+#: templates/bagni/bagno_detail.html:28
 msgid "email_address"
 msgstr "Email address"
 
-#: templates/bagni/bagno_detail.html:28
+#: templates/bagni/bagno_detail.html:29
 msgid "phone_not_yet_available"
 msgstr "phone contacts not yet available"
 
-#: templates/bagni/bagno_detail.html:29
+#: templates/bagni/bagno_detail.html:30
 msgid "bagno_detail_desc_1"
 msgstr "Welcome to the page of"
 
-#: templates/bagni/bagno_detail.html:30
+#: templates/bagni/bagno_detail.html:31
 msgid "bagno_detail_desc_2"
 msgstr ""
 "here you can find the address, contacts and the list of facilities provided "
 "by this structure"
 
-#: templates/bagni/bagno_detail.html:31
+#: templates/bagni/bagno_detail.html:32
 msgid "bagno_detail_desc_3"
 msgstr "If you are lookin for more beach resorts in"
 
-#: templates/bagni/bagno_detail.html:32
+#: templates/bagni/bagno_detail.html:33
 msgid "bagno_detail_desc_4"
 msgstr " you can use our"
 
-#: templates/bagni/bagno_detail.html:33
+#: templates/bagni/bagno_detail.html:34
 msgid "bagno_detail_desc_5"
 msgstr "search page"
 
-#: templates/bagni/bagno_detail.html:229 templates/bagni/homepage.html:97
+#: templates/bagni/bagno_detail.html:236 templates/bagni/homepage.html:97
 #: templates/bagni/homepage.html.py:111 templates/bagni/search.html:393
 msgid "Close"
 msgstr "Close"
 
-#: templates/bagni/bagno_detail.html:256
+#: templates/bagni/bagno_detail.html:262
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 

@@ -24,6 +24,7 @@
 {% trans "book_modal_text_2" as t_book_modal_text_2 %}
 {% trans "book_modal_submit_button" as t_book_modal_submit_button %}
 {% trans "book_button" as t_book_button %}
+{% trans "get_quote_button" as t_get_quote_button %}
 {% trans "email_address" as t_email_address %}
 {% trans "phone_not_yet_available" as t_phone_not_yet_available %}
 {% trans "bagno_detail_desc_1" as t_bagno_detail_desc_1%}
@@ -42,13 +43,23 @@
     </div>
     <div class="col-xs-12">
       {% if object.accepts_booking %}
-        <button id="book-button" 
+          {% if object.id|divisibleby:"2" %}
+              <button id="book-button" 
                 class="btn btn-lg book-button-xs ga_click" 
                 data-toggle="modal" 
                 data-target="#bookModal"
                 data-category="book" 
                 data-action="click" 
                 data-label="{{ object.slug }} - book-button" >{{ t_book_button }}</button>
+          {% else %}
+              <button id="book-button" 
+                class="btn btn-lg book-button-xs ga_click" 
+                data-toggle="modal" 
+                data-target="#bookModal"
+                data-category="get_quote" 
+                data-action="click" 
+                data-label="{{ object.slug }} - get_quote-button" >{{ t_get_quote_button }}</button>
+          {% endif %}
       {% endif %}
       {% if object.is_managed %}
             <button id="contact-form-button"
@@ -62,10 +73,6 @@
             {% if can_edit %}
               <a href="{{ object.get_edit_url }}" class="btn btn-lg btn-primary bagno-detail-button" rel="nofollow">{{ t_modify_bagno }}</a>
             {% endif %} 
-      {% else %}
-            {% if not user.is_authenticated %}
-              <a href="{% url 'authauth_signup' %}?selected={{ object.pk }}" class="btn btn-lg btn-primary bagno-detail-button" rel="nofollow">{{ t_are_you_the_manager }}</a>
-            {% endif %}
       {% endif %}
     </div>
   </div>
