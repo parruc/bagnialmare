@@ -31195,8 +31195,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2699153423309326 44.7990658149152594)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-08-09T09:27:57.255Z", 
+    "description_en": "", 
     "number": "8", 
     "languages": [
       [
@@ -31208,35 +31208,35 @@
     ], 
     "services": [
       [
-        "wi-fi"
-      ], 
-      [
         "disabled"
       ], 
       [
-        "basketball"
-      ], 
-      [
-        "beach-volley"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
-        "beach-racket-court"
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
       ], 
       [
         "schoolchildren"
       ], 
       [
+        "beach-racket-court"
+      ], 
+      [
         "boat-beaching"
       ], 
       [
-        "bar"
+        "basketball"
       ]
     ], 
     "address": "Via Spiaggia, 8", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "la-cueva", 
@@ -73915,7 +73915,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-21T12:19:01.610Z", 
+    "last_login": "2014-08-09T09:25:45.578Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -81843,7 +81843,7 @@
     "bagno": [
       "la-cueva"
     ], 
-    "number": "0533 354917 / 355308", 
+    "number": "0533355308", 
     "name": "tel", 
     "slug": "telephone-number-393"
   }
