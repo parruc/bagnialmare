@@ -43,15 +43,6 @@
     </div>
     <div class="col-xs-12">
       {% if object.accepts_booking %}
-          {% if object.id|divisibleby:"2" %}
-              <button id="book-button" 
-                class="btn btn-lg book-button-xs ga_click" 
-                data-toggle="modal" 
-                data-target="#bookModal"
-                data-category="book" 
-                data-action="click" 
-                data-label="{{ object.slug }} - book-button" >{{ t_book_button }}</button>
-          {% else %}
               <button id="book-button" 
                 class="btn btn-lg book-button-xs ga_click" 
                 data-toggle="modal" 
@@ -59,7 +50,6 @@
                 data-category="get_quote" 
                 data-action="click" 
                 data-label="{{ object.slug }} - get_quote-button" >{{ t_get_quote_button }}</button>
-          {% endif %}
       {% endif %}
       {% if object.is_managed %}
             <button id="contact-form-button"

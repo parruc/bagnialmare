@@ -398,7 +398,7 @@ msgstr "facility informations yet not available"
 
 #: templates/bagni/bagno_detail.html:22
 msgid "book_modal_title"
-msgstr "Book parasol and deckchairs online"
+msgstr "Request a quote online"
 
 #: templates/bagni/bagno_detail.html:23
 msgid "book_modal_text_1"
