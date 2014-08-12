@@ -401,17 +401,17 @@ msgstr "informazioni non ancora disponibili"
 
 #: templates/bagni/bagno_detail.html:22
 msgid "book_modal_title"
-msgstr "Prenota ombrellone e lettino online"
+msgstr "Richiedi un preventivo online"
 
 #: templates/bagni/bagno_detail.html:23
 msgid "book_modal_text_1"
 msgstr ""
-"La prenotazione online non è ancora disponibile. Stiamo lavorando per "
-"attivarla questa estate"
+"Il preventivo online è ancora disponibile per questo bagno. Stiamo lavorando per "
+"attivarlo a breve"
 
 #: templates/bagni/bagno_detail.html:24
 msgid "book_modal_text_2"
-msgstr "Inserisci qui la tua email se vuoi essere avvertito quando sarà pronta"
+msgstr "Inserisci la tua email se vuoi essere avvertito quando la funzionalità sarà disponibile"
 
 #: templates/bagni/bagno_detail.html:25
 msgid "book_modal_submit_button"
