@@ -72380,6 +72380,18 @@
   }
 },
 {
+  "pk": 12, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "stefano"
+    ], 
+    "email": "urluc@libero.it", 
+    "created": "2014-08-12T21:39:47.360Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
