@@ -72392,6 +72392,18 @@
   }
 },
 {
+  "pk": 13, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "ippopotamus"
+    ], 
+    "email": "", 
+    "created": "2014-08-16T12:56:41.531Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
