@@ -72404,6 +72404,18 @@
   }
 },
 {
+  "pk": 14, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "la-spiaggia-delle-donne"
+    ], 
+    "email": "konomi_ervin@libero.it", 
+    "created": "2014-08-20T11:29:07.482Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
