@@ -72416,6 +72416,30 @@
   }
 },
 {
+  "pk": 15, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "marisa"
+    ], 
+    "email": "cristina.vittoria07@libero.it", 
+    "created": "2014-08-21T23:15:49.892Z"
+  }
+},
+{
+  "pk": 16, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "marisa"
+    ], 
+    "email": "cristina.vittoria07@libero.it", 
+    "created": "2014-08-21T23:17:39.562Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
