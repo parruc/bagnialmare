@@ -72440,6 +72440,18 @@
   }
 },
 {
+  "pk": 17, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-sogno-del-mare"
+    ], 
+    "email": "sognodelmare@gmail.com", 
+    "created": "2014-09-20T22:21:59.197Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
