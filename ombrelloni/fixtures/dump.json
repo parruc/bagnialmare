@@ -72452,6 +72452,18 @@
   }
 },
 {
+  "pk": 18, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-duna-degli-orsi"
+    ], 
+    "email": "stefano.bruno.volley@alice.it", 
+    "created": "2014-10-16T18:53:58.761Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
