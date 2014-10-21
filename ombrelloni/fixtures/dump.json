@@ -72464,6 +72464,18 @@
   }
 },
 {
+  "pk": 19, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "aragosta"
+    ], 
+    "email": "info@bagnoaragosta.it", 
+    "created": "2014-10-20T17:22:16.690Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
