@@ -1201,13 +1201,13 @@
     "created": "2014-07-02T22:00:00Z", 
     "image": "", 
     "slug_it": "bambini_e_famiglie", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "Services for children", 
-    "order": 3, 
-    "description_it": "Servizi per bambini", 
+    "modified": "2014-11-13T15:07:44.256Z", 
+    "description_en": "<p>Services for children</p>\r\n", 
+    "order": 2, 
+    "description_it": "<p>Servizi per bambini</p>\r\n", 
     "name_en": "children & families", 
     "slug": "children_and_families", 
-    "description": "Services for children"
+    "description": "<p>Services for children</p>\r\n"
   }
 },
 {
@@ -1353,51 +1353,13 @@
     "created": "2014-07-02T22:00:00Z", 
     "image": "", 
     "slug_it": "comfort-e-relax", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "Available services for comfort and relaxation", 
-    "order": 8, 
-    "description_it": "Servizi di comfort e relax", 
+    "modified": "2014-11-13T15:07:12.713Z", 
+    "description_en": "<p>Available services for comfort and relaxation</p>\r\n", 
+    "order": 3, 
+    "description_it": "<p>Servizi di comfort e relax</p>\r\n", 
     "name_en": "comfort & relax", 
     "slug": "comfort-and-relax", 
-    "description": "Available services for comfort and relaxation"
-  }
-},
-{
-  "pk": 37, 
-  "model": "bagni.servicecategory", 
-  "fields": {
-    "slug_en": "beauty-and-spa", 
-    "name_it": "beauty e spa", 
-    "name": "beauty & spa", 
-    "created": "2014-07-02T22:00:00Z", 
-    "image": "", 
-    "slug_it": "beauty-e-spa", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "Available services for beauty and health care", 
-    "order": 2, 
-    "description_it": "Servizi per la cura del benessere e della bellezza", 
-    "name_en": "beauty & spa", 
-    "slug": "beauty-and-spa", 
-    "description": "Available services for beauty and health care"
-  }
-},
-{
-  "pk": 38, 
-  "model": "bagni.servicecategory", 
-  "fields": {
-    "slug_en": "retail", 
-    "name_it": "commercio", 
-    "name": "retail", 
-    "created": "2014-07-02T22:00:00Z", 
-    "image": "", 
-    "slug_it": "commercio", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "Available local trades", 
-    "order": 13, 
-    "description_it": "Attivit\u00e0 commerciali annesse", 
-    "name_en": "retail", 
-    "slug": "retail", 
-    "description": "Available local trades"
+    "description": "<p>Available services for comfort and relaxation</p>\r\n"
   }
 },
 {
@@ -2064,34 +2026,6 @@
   }
 },
 {
-  "pk": 2202, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "extras"
-    ], 
-    "slug_en": "parking", 
-    "aliases_it": null, 
-    "name_it": "parcheggio", 
-    "name": "parking", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "parcheggio", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "parking", 
-    "aliases": null, 
-    "slug": "parking", 
-    "description": ""
-  }
-},
-{
   "pk": 2203, 
   "model": "bagni.service", 
   "fields": {
@@ -2176,34 +2110,6 @@
   }
 },
 {
-  "pk": 2206, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "rent"
-    ], 
-    "slug_en": "sport-balls", 
-    "aliases_it": null, 
-    "name_it": "palloni", 
-    "name": "sport balls", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": "with sport ball rental", 
-    "image": "", 
-    "slug_it": "palloni", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": "with sport ball rental", 
-    "free": true, 
-    "seo_name_it": "con noleggio palloni", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "sport balls", 
-    "aliases": null, 
-    "slug": "sport-balls", 
-    "description": ""
-  }
-},
-{
   "pk": 2207, 
   "model": "bagni.service", 
   "fields": {
@@ -2256,34 +2162,6 @@
     "name_en": "happy hour", 
     "aliases": null, 
     "slug": "happy-hour", 
-    "description": ""
-  }
-},
-{
-  "pk": 2209, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "accessibility"
-    ], 
-    "slug_en": "disabled", 
-    "aliases_it": null, 
-    "name_it": "disabili", 
-    "name": "disabled", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": "with disabled access", 
-    "image": "", 
-    "slug_it": "disabili", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": "with disabled access", 
-    "free": true, 
-    "seo_name_it": "con servizi accessibili ai disabili", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "disabled", 
-    "aliases": null, 
-    "slug": "disabled", 
     "description": ""
   }
 },
@@ -2740,7 +2618,7 @@
   "model": "bagni.service", 
   "fields": {
     "category": [
-      "beauty-and-spa"
+      "sport-and-wellness"
     ], 
     "slug_en": "massages", 
     "aliases_it": null, 
@@ -2750,7 +2628,7 @@
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "massaggi", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-11-13T15:01:56.949Z", 
     "description_en": "", 
     "seo_name": null, 
     "free": true, 
@@ -2848,34 +2726,6 @@
   }
 },
 {
-  "pk": 2231, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "games-and-entertainment"
-    ], 
-    "slug_en": "magazines-journals", 
-    "aliases_it": null, 
-    "name_it": "riviste giornalini", 
-    "name": "magazines and journals", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "riviste-giornalini", 
-    "modified": "2014-07-08T16:12:30.656Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "magazines and journals", 
-    "aliases": null, 
-    "slug": "magazines-journals", 
-    "description": ""
-  }
-},
-{
   "pk": 2232, 
   "model": "bagni.service", 
   "fields": {
@@ -2928,34 +2778,6 @@
     "name_en": "aperitif", 
     "aliases": null, 
     "slug": "aperitif", 
-    "description": ""
-  }
-},
-{
-  "pk": 2234, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "technology"
-    ], 
-    "slug_en": "fax", 
-    "aliases_it": null, 
-    "name_it": "fax", 
-    "name": "fax", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "fax", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": null, 
-    "aliases_en": null, 
-    "name_en": "fax", 
-    "aliases": null, 
-    "slug": "fax", 
     "description": ""
   }
 },
@@ -3048,7 +2870,7 @@
   "model": "bagni.service", 
   "fields": {
     "category": [
-      "beauty-and-spa"
+      "sport-and-wellness"
     ], 
     "slug_en": "beauty-treatments", 
     "aliases_it": null, 
@@ -3058,7 +2880,7 @@
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "trattamenti-estetici", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-11-13T15:02:19.638Z", 
     "description_en": "", 
     "seo_name": null, 
     "free": true, 
@@ -3076,7 +2898,7 @@
   "model": "bagni.service", 
   "fields": {
     "category": [
-      "beauty-and-spa"
+      "sport-and-wellness"
     ], 
     "slug_en": "solarium", 
     "aliases_it": null, 
@@ -3086,12 +2908,12 @@
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "solarium", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T15:01:06.313Z", 
+    "description_en": "", 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
-    "description_it": null, 
+    "description_it": "", 
     "aliases_en": null, 
     "name_en": "solarium", 
     "aliases": null, 
@@ -3180,90 +3002,6 @@
     "name_en": "juke box", 
     "aliases": null, 
     "slug": "juke-box", 
-    "description": ""
-  }
-},
-{
-  "pk": 2243, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "children_and_families"
-    ], 
-    "slug_en": "toilets-for-children", 
-    "aliases_it": null, 
-    "name_it": "wc per bimbi", 
-    "name": "toilets for children", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "wc-per-bimbi", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "toilets for children", 
-    "aliases": null, 
-    "slug": "toilets-for-children", 
-    "description": ""
-  }
-},
-{
-  "pk": 2244, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "retail"
-    ], 
-    "slug_en": "clothing", 
-    "aliases_it": null, 
-    "name_it": "abbigliamento", 
-    "name": "clothing", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": "with clothing retail", 
-    "image": "", 
-    "slug_it": "abbigliamento", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": "with clothing retail", 
-    "free": true, 
-    "seo_name_it": "con vendita abbigliamento", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "clothing", 
-    "aliases": null, 
-    "slug": "clothing", 
-    "description": ""
-  }
-},
-{
-  "pk": 2245, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "retail"
-    ], 
-    "slug_en": "ticket-office", 
-    "aliases_it": null, 
-    "name_it": "biglietteria", 
-    "name": "ticket office", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "biglietteria", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": "con vendita biglietti", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "ticket office", 
-    "aliases": null, 
-    "slug": "ticket-office", 
     "description": ""
   }
 },
@@ -3432,62 +3170,6 @@
     "name_en": "kitesurf", 
     "aliases": null, 
     "slug": "kitesurf", 
-    "description": ""
-  }
-},
-{
-  "pk": 2252, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "retail"
-    ], 
-    "slug_en": "beachwear", 
-    "aliases_it": null, 
-    "name_it": "articoli da spiaggia", 
-    "name": "beachwear", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": "with beachwear retail", 
-    "image": "", 
-    "slug_it": "articoli-spiaggia", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": "with beachwear retail", 
-    "free": true, 
-    "seo_name_it": "con vendita articoli da spiaggia", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "beachwear", 
-    "aliases": null, 
-    "slug": "beachwear", 
-    "description": ""
-  }
-},
-{
-  "pk": 2253, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "extras"
-    ], 
-    "slug_en": "mats-deposit", 
-    "aliases_it": null, 
-    "name_it": "deposito materassini", 
-    "name": "mats deposit", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "deposito-materassini", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "mats deposit", 
-    "aliases": null, 
-    "slug": "mats-deposit", 
     "description": ""
   }
 },
@@ -3712,34 +3394,6 @@
     "name_en": "yoga", 
     "aliases": null, 
     "slug": "yoga", 
-    "description": ""
-  }
-},
-{
-  "pk": 2262, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "extras"
-    ], 
-    "slug_en": "boat-beaching", 
-    "aliases_it": null, 
-    "name_it": "alaggio barche", 
-    "name": "boat beaching", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": "with boat beaching service", 
-    "image": "", 
-    "slug_it": "alaggio-barche", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": "with boat beaching service", 
-    "free": true, 
-    "seo_name_it": "con servizio di alaggio barche", 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "boat beaching", 
-    "aliases": null, 
-    "slug": "boat-beaching", 
     "description": ""
   }
 },
@@ -4136,34 +3790,6 @@
   }
 },
 {
-  "pk": 2277, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "games-and-entertainment"
-    ], 
-    "slug_en": "video-store", 
-    "aliases_it": null, 
-    "name_it": "videoteca", 
-    "name": "video store", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "videoteca", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "video store", 
-    "aliases": null, 
-    "slug": "video-store", 
-    "description": ""
-  }
-},
-{
   "pk": 2278, 
   "model": "bagni.service", 
   "fields": {
@@ -4216,62 +3842,6 @@
     "name_en": "cards table", 
     "aliases": null, 
     "slug": "cards-table", 
-    "description": ""
-  }
-},
-{
-  "pk": 2280, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "comfort-and-relax"
-    ], 
-    "slug_en": "hammocks", 
-    "aliases_it": null, 
-    "name_it": "amache", 
-    "name": "hammocks", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "amache", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": "", 
-    "aliases_en": null, 
-    "name_en": "hammocks", 
-    "aliases": null, 
-    "slug": "hammocks", 
-    "description": ""
-  }
-},
-{
-  "pk": 2281, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "comfort-and-relax"
-    ], 
-    "slug_en": "veranda", 
-    "aliases_it": null, 
-    "name_it": "veranda", 
-    "name": "veranda", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "veranda", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": null, 
-    "aliases_en": null, 
-    "name_en": "veranda", 
-    "aliases": null, 
-    "slug": "veranda", 
     "description": ""
   }
 },
@@ -4392,7 +3962,7 @@
   "model": "bagni.service", 
   "fields": {
     "category": [
-      "beauty-and-spa"
+      "sport-and-wellness"
     ], 
     "slug_en": "wellness-area", 
     "aliases_it": null, 
@@ -4402,7 +3972,7 @@
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "area-benessere", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2014-11-13T15:01:36.959Z", 
     "description_en": "", 
     "seo_name": null, 
     "free": true, 
@@ -4608,34 +4178,6 @@
     "name_en": "kick boxing", 
     "aliases": null, 
     "slug": "kick-boxing", 
-    "description": ""
-  }
-},
-{
-  "pk": 2295, 
-  "model": "bagni.service", 
-  "fields": {
-    "category": [
-      "technology"
-    ], 
-    "slug_en": "webcam", 
-    "aliases_it": null, 
-    "name_it": "webcam", 
-    "name": "webcam", 
-    "created": "2014-07-02T22:00:00Z", 
-    "seo_name_en": null, 
-    "image": "", 
-    "slug_it": "webcam", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
-    "seo_name": null, 
-    "free": true, 
-    "seo_name_it": null, 
-    "description_it": null, 
-    "aliases_en": null, 
-    "name_en": "webcam", 
-    "aliases": null, 
-    "slug": "webcam", 
     "description": ""
   }
 },
@@ -5305,9 +4847,6 @@
         "table-football"
       ], 
       [
-        "parking"
-      ], 
-      [
         "sailing"
       ], 
       [
@@ -5462,25 +5001,16 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "bar"
       ], 
       [
         "theme-parties"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
         "live-concerts"
       ], 
       [
         "happy-hour"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "table-football"
@@ -5655,9 +5185,6 @@
         "basketball"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -5699,22 +5226,13 @@
         "gymnastics"
       ], 
       [
-        "parking"
-      ], 
-      [
         "catering"
       ], 
       [
         "theme-parties"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
         "happy-hour"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "table-football"
@@ -5795,9 +5313,6 @@
       ], 
       [
         "fitness-area"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 167", 
@@ -6702,9 +6217,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -6742,9 +6254,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 195/196", 
@@ -6827,16 +6336,10 @@
         "gymnastics"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ], 
       [
         "gym"
-      ], 
-      [
-        "sport-balls"
       ], 
       [
         "live-concerts"
@@ -7259,9 +6762,6 @@
         "canoes"
       ], 
       [
-        "parking"
-      ], 
-      [
         "sports-tournaments"
       ], 
       [
@@ -7549,9 +7049,6 @@
         "happy-hour"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -7586,9 +7083,6 @@
       ], 
       [
         "gymnastics"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Lungomare Gabriele D'Annunzio - arenile demaniale 211", 
@@ -7666,9 +7160,6 @@
       ], 
       [
         "gymnastics"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -7817,9 +7308,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -7860,9 +7348,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Lungomare Gabriele D'Annunzio - arenile demaniale 216", 
@@ -7971,9 +7456,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -8014,9 +7496,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ], 
       [
         "dj-set"
@@ -8190,9 +7669,6 @@
         "table-football"
       ], 
       [
-        "parking"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -8255,9 +7731,6 @@
         "gymnastics"
       ], 
       [
-        "parking"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -8265,9 +7738,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "sport-balls"
       ], 
       [
         "pilates"
@@ -8406,9 +7876,6 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ], 
       [
@@ -8467,9 +7934,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "cabins"
       ], 
@@ -8628,9 +8092,6 @@
         "beach-racket-court"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -8726,9 +8187,6 @@
     "services": [
       [
         "table-football"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -8888,9 +8346,6 @@
         "beach-racket-court"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -8925,9 +8380,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "beach-basket"
       ], 
@@ -8976,9 +8428,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -9003,13 +8452,7 @@
         "beach-racket-court"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Viale Amilcare Ponchielli - arenile demaniale 247", 
@@ -9045,9 +8488,6 @@
     "services": [
       [
         "children-entertainment"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "Viale Domenico Cimarosa - arenile demaniale 248", 
@@ -9104,9 +8544,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Viale Domenico Cimarosa - arenile demaniale 250", 
@@ -9172,9 +8609,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -9212,9 +8646,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Viale Francesco Baracca - arenile demaniale 253", 
@@ -9416,9 +8847,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "Viale Enrico Toti - arenile demaniale 258", 
@@ -9573,9 +9001,6 @@
         "surf"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -9633,9 +9058,6 @@
       ], 
       [
         "surf"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "Viale Corsica  - arenile demaniale 262", 
@@ -9669,9 +9091,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "table-football"
       ], 
@@ -9816,9 +9235,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "Viale Zara - arenile demaniale 266", 
@@ -9958,9 +9374,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "Viale Forli - arenile demaniale 269", 
@@ -10354,9 +9767,6 @@
         "surf"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -10393,9 +9803,6 @@
     "services": [
       [
         "cabins"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "II Traversa - arenile demaniale 278", 
@@ -10485,9 +9892,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "tv-area"
       ], 
@@ -10587,9 +9991,6 @@
         "fitness-area"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ], 
       [
@@ -10609,12 +10010,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "webcam"
       ]
     ], 
     "address": "III Traversa - arenile demaniale 280/281", 
@@ -10695,9 +10090,6 @@
         "ping-pong"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -10732,9 +10124,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "bar"
       ], 
@@ -10825,9 +10214,6 @@
         "fitness-area"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ], 
       [
@@ -10866,9 +10252,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -10899,13 +10282,7 @@
         "gymnastics"
       ], 
       [
-        "parking"
-      ], 
-      [
         "table-football"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "V Traversa - arenile demaniale 286", 
@@ -10941,9 +10318,6 @@
     "services": [
       [
         "tv-area"
-      ], 
-      [
-        "parking"
       ], 
       [
         "ping-pong"
@@ -10987,9 +10361,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -11021,9 +10392,6 @@
       ], 
       [
         "gymnastics"
-      ], 
-      [
-        "sport-balls"
       ], 
       [
         "live-concerts"
@@ -11179,9 +10547,6 @@
         "happy-hour"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -11267,9 +10632,6 @@
     "services": [
       [
         "table-football"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -11529,9 +10891,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "VIII Traversa - arenile demaniale 297", 
@@ -11594,9 +10953,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "VIII Traversa - arenile demaniale 298", 
@@ -11659,9 +11015,6 @@
       ], 
       [
         "fitness-area"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "IX Traversa - arenile demaniale 299", 
@@ -11728,9 +11081,6 @@
     "services": [
       [
         "table-football"
-      ], 
-      [
-        "parking"
       ], 
       [
         "dancing"
@@ -11891,9 +11241,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -11937,9 +11284,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "XI traversa - arenile demaniale 304/305", 
@@ -11973,9 +11317,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -12013,13 +11354,7 @@
         "gymnastics"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "XI - XII traversa - arenile demaniale 305", 
@@ -12061,9 +11396,6 @@
       ], 
       [
         "gym"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "nursery"
@@ -12159,9 +11491,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "parking"
       ]
     ], 
     "address": "XIII traversa - arenile demaniale 308", 
@@ -12197,9 +11526,6 @@
     "services": [
       [
         "table-football"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -12300,9 +11626,6 @@
     "services": [
       [
         "table-football"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -12705,9 +12028,6 @@
         "table-football"
       ], 
       [
-        "parking"
-      ], 
-      [
         "tv-area"
       ], 
       [
@@ -12775,9 +12095,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "five-a-side"
       ], 
@@ -12976,9 +12293,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -13368,9 +12682,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -13396,9 +12707,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 70/71", 
@@ -13452,9 +12760,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "arenile demaniale 72/73", 
@@ -13637,12 +12942,6 @@
         "theme-parties"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "table-football"
       ], 
       [
@@ -13753,9 +13052,6 @@
         "baby-sitter"
       ], 
       [
-        "fax"
-      ], 
-      [
         "theme-parties"
       ]
     ], 
@@ -13790,9 +13086,6 @@
       ]
     ], 
     "services": [
-      [
-        "sport-balls"
-      ], 
       [
         "table-football"
       ], 
@@ -13854,9 +13147,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ], 
       [
         "bookstore"
@@ -14033,9 +13323,6 @@
         "happy-hour"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -14066,25 +13353,13 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "aperitif"
       ], 
       [
         "sea-mattresses"
       ], 
       [
-        "toilets-for-children"
-      ], 
-      [
-        "clothing"
-      ], 
-      [
         "sea-volley"
-      ], 
-      [
-        "mats-deposit"
       ], 
       [
         "hot-showers"
@@ -14124,9 +13399,6 @@
       ], 
       [
         "board-games"
-      ], 
-      [
-        "veranda"
       ], 
       [
         "private-functions"
@@ -14213,9 +13485,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "parking"
       ], 
       [
         "sailing"
@@ -14450,9 +13719,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -14502,9 +13768,6 @@
       ], 
       [
         "gym"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "arenile demaniale 94/95/96", 
@@ -14854,9 +14117,6 @@
         "cabins"
       ], 
       [
-        "fax"
-      ], 
-      [
         "table-football"
       ], 
       [
@@ -14915,9 +14175,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "catering"
       ], 
@@ -15091,13 +14348,7 @@
         "wi-fi"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
         "happy-hour"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "dj-set"
@@ -15325,9 +14576,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -15362,9 +14610,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ], 
       [
         "dj-set"
@@ -15828,9 +15073,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -15880,9 +15122,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 125", 
@@ -15916,9 +15155,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -15960,9 +15196,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 126", 
@@ -16098,13 +15331,7 @@
         "basketball"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 3", 
@@ -16170,9 +15397,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "bar"
       ], 
       [
@@ -16222,9 +15446,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Arenile demaniale 7/8/9", 
@@ -16299,9 +15520,6 @@
       ], 
       [
         "fitness-area"
-      ], 
-      [
-        "parking"
       ], 
       [
         "theme-parties"
@@ -16610,9 +15828,6 @@
         "tv-area"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "canoes"
       ], 
       [
@@ -16658,9 +15873,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -16722,9 +15934,6 @@
         "lockers"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "jacuzzi"
       ], 
       [
@@ -16782,12 +15991,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "beach-volley"
@@ -16870,9 +16073,6 @@
         "tv-area"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "basketball"
       ], 
       [
@@ -16918,12 +16118,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -17079,9 +16273,6 @@
         "internet"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -17150,12 +16341,6 @@
         "catering"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "footvolley"
       ], 
       [
@@ -17215,9 +16400,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -17266,9 +16448,6 @@
       ], 
       [
         "gym"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -17328,9 +16507,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -17395,12 +16571,6 @@
         "five-a-side"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "bicycles"
       ], 
       [
@@ -17461,9 +16631,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bookstore"
@@ -17674,9 +16841,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "windsurf"
       ], 
       [
@@ -17795,9 +16959,6 @@
     "languages": [], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -17882,9 +17043,6 @@
       ], 
       [
         "internet"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "table-football"
@@ -18096,9 +17254,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -18164,9 +17319,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -18212,9 +17364,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "footvolley"
@@ -18298,9 +17447,6 @@
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "basketball"
@@ -18412,9 +17558,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -18477,16 +17620,10 @@
         "lockers"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bicycles"
       ], 
       [
         "bookstore"
-      ], 
-      [
-        "webcam"
       ], 
       [
         "baby-park"
@@ -18623,9 +17760,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "footvolley"
       ], 
       [
@@ -18680,9 +17814,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "baby-park"
@@ -18788,9 +17919,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -18835,9 +17963,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -18866,9 +17991,6 @@
       ], 
       [
         "pedal-boats"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "five-a-side"
@@ -18910,9 +18032,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -19042,16 +18161,10 @@
         "tv-area"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "basketball"
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "Viale Carso, 42", 
@@ -19087,9 +18200,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -19149,9 +18259,6 @@
       ], 
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bookstore"
@@ -19216,9 +18323,6 @@
         "internet"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bicycles"
       ], 
       [
@@ -19276,9 +18380,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bookstore"
@@ -19393,9 +18494,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -19450,9 +18548,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -19520,9 +18615,6 @@
         "lockers"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -19577,12 +18669,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -19668,15 +18754,6 @@
         "pedal-boats"
       ], 
       [
-        "ticket-office"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "clothing"
-      ], 
-      [
         "ping-pong"
       ], 
       [
@@ -19719,9 +18796,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -19780,9 +18854,6 @@
         "lockers"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -19837,9 +18908,6 @@
       ], 
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -20034,9 +19102,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -20154,9 +19219,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -20260,9 +19322,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -20338,12 +19397,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bookstore"
@@ -20430,9 +19483,6 @@
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "basketball"
@@ -20532,9 +19582,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -20592,9 +19639,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -20657,9 +19701,6 @@
       ], 
       [
         "pedal-boats"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -20801,12 +19842,6 @@
         "catering"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "bicycles"
       ], 
       [
@@ -20864,9 +19899,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bookstore"
@@ -20930,9 +19962,6 @@
         "catering"
       ], 
       [
-        "toilets-for-children"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -20952,9 +19981,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "credit-cards-accepted"
@@ -21079,9 +20105,6 @@
         "sun-terrace"
       ], 
       [
-        "toilets-for-children"
-      ], 
-      [
         "swimming-lessons"
       ]
     ], 
@@ -21189,9 +20212,6 @@
       ], 
       [
         "internet"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "bookstore"
@@ -21451,9 +20471,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "baby-park"
@@ -22135,9 +21152,6 @@
         "internet"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -22221,9 +21235,6 @@
         "lockers"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "baby-sitter"
       ]
     ], 
@@ -22263,9 +21274,6 @@
       ], 
       [
         "internet"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -22327,9 +21335,6 @@
         "lockers"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "bookstore"
       ], 
       [
@@ -22386,9 +21391,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -22411,9 +21413,6 @@
       ], 
       [
         "bar"
-      ], 
-      [
-        "beachwear"
       ]
     ], 
     "address": "Viale Piave, 69", 
@@ -22451,12 +21450,6 @@
         "catering"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "table-football"
       ], 
       [
@@ -22479,9 +21472,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "mats-deposit"
       ]
     ], 
     "address": "Viale Giosu\u00e8 Carducci", 
@@ -22522,16 +21512,10 @@
         "internet"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "nursery"
       ], 
       [
         "bicycles"
-      ], 
-      [
-        "fax"
       ], 
       [
         "bookstore"
@@ -22550,9 +21534,6 @@
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "ping-pong"
@@ -22600,9 +21581,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "baby-park"
@@ -22661,9 +21639,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -22715,9 +21690,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -22782,9 +21754,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -22837,9 +21806,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -22953,12 +21919,6 @@
         "catering"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -23016,12 +21976,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bookstore"
@@ -23086,9 +22040,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -23149,9 +22100,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -23216,12 +22164,6 @@
         "catering"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "bicycles"
       ], 
       [
@@ -23275,9 +22217,6 @@
         "catering"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -23300,9 +22239,6 @@
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "basketball"
@@ -23405,9 +22341,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "footvolley"
       ], 
       [
@@ -23494,9 +22427,6 @@
         "tv-area"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "basketball"
       ], 
       [
@@ -23536,12 +22466,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "webcam"
       ], 
       [
         "footvolley"
@@ -23603,9 +22527,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -23643,9 +22564,6 @@
       ], 
       [
         "baby-sitter"
-      ], 
-      [
-        "clothing"
       ], 
       [
         "pedal-boats"
@@ -23717,9 +22635,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -23774,12 +22689,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "magazines-journals"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "baby-park"
@@ -23912,9 +22821,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -23992,9 +22898,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -24063,9 +22966,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -24125,9 +23025,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -24167,9 +23064,6 @@
     "number": "5", 
     "languages": [], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -24266,9 +23160,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -24349,9 +23240,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -24417,9 +23305,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -24477,9 +23362,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -24568,9 +23450,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -24648,9 +23527,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -24716,9 +23592,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -24782,9 +23655,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -24855,9 +23725,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -24926,9 +23793,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -24990,9 +23854,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -25084,9 +23945,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -25216,9 +24074,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -25275,9 +24130,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -25329,9 +24181,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -25405,9 +24254,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -25470,9 +24316,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -25524,9 +24367,6 @@
     "number": "25", 
     "languages": [], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -25583,9 +24423,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -25661,9 +24498,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -25721,9 +24555,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -25785,9 +24616,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -25839,9 +24667,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -25909,9 +24734,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -25952,9 +24774,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "children-entertainment"
       ], 
@@ -26018,9 +24837,6 @@
         "five-a-side"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -26081,9 +24897,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -26154,9 +24967,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -26209,9 +25019,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "schoolchildren"
       ], 
@@ -26288,9 +25095,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-lessons"
@@ -26385,9 +25189,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -26477,9 +25278,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-lessons"
       ], 
       [
@@ -26554,9 +25352,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -26617,9 +25412,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -26687,9 +25479,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "acquagym"
       ], 
       [
@@ -26747,9 +25536,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "dancing"
@@ -26817,9 +25603,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "jacuzzi"
       ], 
       [
@@ -26856,9 +25639,6 @@
     "number": "23", 
     "languages": [], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -26919,9 +25699,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -26970,9 +25747,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -27040,9 +25814,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -27088,9 +25859,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -27165,9 +25933,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -27251,9 +26016,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -27348,9 +26110,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -27411,9 +26170,6 @@
     "number": "31", 
     "languages": [], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -27504,9 +26260,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -27584,9 +26337,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -27662,9 +26412,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -27745,9 +26492,6 @@
       ], 
       [
         "sailing"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bar"
@@ -27842,9 +26586,6 @@
         "sailing"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -27896,12 +26637,12 @@
   "pk": 13131, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.tremoschettieri.com", 
+    "site": "http://www.tremoschettieri.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2361838817596436 44.7268800105362558)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T14:35:58.681Z", 
+    "description_en": "", 
     "number": "37", 
     "languages": [
       [
@@ -27913,25 +26654,10 @@
     ], 
     "services": [
       [
-        "sailing"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "disabled"
+        "bar"
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "boat-beaching"
-      ], 
-      [
-        "acquagym"
-      ], 
-      [
-        "pedal-boats"
       ], 
       [
         "petanque"
@@ -27940,17 +26666,29 @@
         "schoolchildren"
       ], 
       [
+        "acquagym"
+      ], 
+      [
         "pre-evening-entertainment"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "evening-entertainment"
       ], 
       [
         "canoes"
       ], 
       [
-        "bar"
+        "sailing"
+      ], 
+      [
+        "mooring"
       ]
     ], 
     "address": "Via Capanno Garibaldi, 22", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@tremoschettieri.com", 
     "accepts_booking": true, 
     "slug": "3-moschettieri", 
@@ -27991,9 +26729,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -28064,9 +26799,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -28107,9 +26839,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "baby-park"
       ], 
@@ -28162,9 +26891,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -28227,9 +26953,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -28312,9 +27035,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -28395,9 +27115,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -28470,9 +27187,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -28552,9 +27266,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -28620,9 +27331,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -28677,9 +27385,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -28744,9 +27449,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -28803,9 +27505,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -28860,9 +27559,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -28936,9 +27632,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -29010,9 +27703,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -29070,9 +27760,6 @@
     "number": "36", 
     "languages": [], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -29151,9 +27838,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -29202,9 +27886,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -29269,9 +27950,6 @@
         "wi-fi"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -29329,9 +28007,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -29470,9 +28145,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -29529,9 +28201,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -29586,9 +28255,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "windsurf"
@@ -29656,9 +28322,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -29718,9 +28381,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -29775,9 +28435,6 @@
     "services": [
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -29849,9 +28506,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -29934,9 +28588,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -29996,9 +28647,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -30055,9 +28703,6 @@
         "five-a-side"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -30110,9 +28755,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -30203,9 +28845,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -30260,9 +28899,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -30321,9 +28957,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -30381,9 +29014,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -30448,9 +29078,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -30511,9 +29138,6 @@
       ], 
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -30621,9 +29245,6 @@
     "languages": [], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -30695,9 +29316,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -30758,9 +29376,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -30837,9 +29452,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -30890,9 +29502,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -30933,9 +29542,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "beach-volley"
       ], 
@@ -30982,9 +29588,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "acquagym"
@@ -31037,9 +29640,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -31088,9 +29688,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -31149,9 +29746,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -31195,7 +29789,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2699153423309326 44.7990658149152594)", 
-    "modified": "2014-08-09T09:27:57.255Z", 
+    "modified": "2014-11-13T14:35:20.684Z", 
     "description_en": "", 
     "number": "8", 
     "languages": [
@@ -31207,9 +29801,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "bar"
       ], 
@@ -31229,10 +29820,10 @@
         "beach-racket-court"
       ], 
       [
-        "boat-beaching"
+        "basketball"
       ], 
       [
-        "basketball"
+        "mooring"
       ]
     ], 
     "address": "Via Spiaggia, 8", 
@@ -31250,12 +29841,12 @@
   "pk": 13183, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnoristoro.it", 
+    "site": "http://www.bagnoristoro.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2675120830535889 44.7979695337441939)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T14:34:59.173Z", 
+    "description_en": "", 
     "number": "9", 
     "languages": [
       [
@@ -31270,19 +29861,19 @@
         "catering"
       ], 
       [
-        "wi-fi"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "windsurf"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "sailing"
+        "wi-fi"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "pet-friendly"
       ], 
       [
         "pedal-boats"
@@ -31291,20 +29882,17 @@
         "beach-racket-court"
       ], 
       [
-        "schoolchildren"
-      ], 
-      [
-        "boat-beaching"
-      ], 
-      [
         "canoes"
       ], 
       [
-        "pet-friendly"
+        "sailing"
+      ], 
+      [
+        "mooring"
       ]
     ], 
     "address": "Via Lungomare del Parco, 5", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "contatti@bagnoristoro.it", 
     "accepts_booking": true, 
     "slug": "ristoro", 
@@ -31334,9 +29922,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "beach-volley"
       ], 
@@ -31375,8 +29960,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2667503356933594 44.7970254971564472)", 
-    "modified": "2014-07-04T09:46:45.225Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T14:34:25.572Z", 
+    "description_en": "", 
     "number": "11", 
     "languages": [
       [
@@ -31391,23 +29976,20 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
-      ], 
-      [
-        "beach-racket-court"
       ], 
       [
         "schoolchildren"
       ], 
       [
-        "boat-beaching"
+        "beach-racket-court"
+      ], 
+      [
+        "mooring"
       ]
     ], 
     "address": "Via Lungomare del Parco, 9", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "estense", 
@@ -31425,8 +30007,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2662138938903809 44.7963859797250521)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T14:33:54.127Z", 
+    "description_en": "", 
     "number": "12", 
     "languages": [
       [
@@ -31438,35 +30020,32 @@
     ], 
     "services": [
       [
-        "gymnastics"
-      ], 
-      [
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
-        "schoolchildren"
+        "gymnastics"
       ], 
       [
         "beach-volley"
       ], 
       [
+        "children-entertainment"
+      ], 
+      [
         "acquagym"
+      ], 
+      [
+        "schoolchildren"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "children-entertainment"
-      ], 
-      [
-        "boat-beaching"
+        "mooring"
       ]
     ], 
     "address": "Via Lungomare del Parco, 11", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "bagno.azzurra@gmail.com", 
     "accepts_booking": true, 
     "slug": "azzurra", 
@@ -31484,8 +30063,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2649049758911133 44.7947795415819527)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T14:20:58.724Z", 
+    "description_en": "", 
     "number": "13", 
     "languages": [
       [
@@ -31497,41 +30076,38 @@
     ], 
     "services": [
       [
-        "gymnastics"
-      ], 
-      [
         "catering"
       ], 
       [
-        "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "schoolchildren"
+        "gymnastics"
       ], 
       [
         "beach-volley"
       ], 
       [
+        "children-entertainment"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
         "acquagym"
+      ], 
+      [
+        "schoolchildren"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "children-entertainment"
+        "evening-entertainment"
       ], 
       [
-        "boat-beaching"
+        "mooring"
       ]
     ], 
     "address": "Via Lungomare del Parco, 13", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "lellaruffato@libero.it", 
     "accepts_booking": true, 
     "slug": "ipanema", 
@@ -31568,9 +30144,6 @@
         "catering"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -31595,12 +30168,12 @@
   "pk": 13189, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnopinguino.com", 
+    "site": "http://www.bagnopinguino.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2637248039245605 44.7930055555609314)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-11-13T14:20:18.755Z", 
+    "description_en": "", 
     "number": "15", 
     "languages": [
       [
@@ -31612,22 +30185,7 @@
     ], 
     "services": [
       [
-        "solarium"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
-        "swimming-pool"
       ], 
       [
         "windsurf"
@@ -31636,7 +30194,16 @@
         "beach-volley"
       ], 
       [
-        "sailing"
+        "wi-fi"
+      ], 
+      [
+        "swimming-lessons"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "schoolchildren"
       ], 
       [
         "pedal-boats"
@@ -31645,23 +30212,26 @@
         "beach-racket-court"
       ], 
       [
-        "schoolchildren"
-      ], 
-      [
-        "boat-beaching"
-      ], 
-      [
-        "ping-pong"
+        "evening-entertainment"
       ], 
       [
         "canoes"
       ], 
       [
-        "swimming-lessons"
+        "swimming-pool"
+      ], 
+      [
+        "sailing"
+      ], 
+      [
+        "mooring"
+      ], 
+      [
+        "solarium"
       ]
     ], 
     "address": "Via Lungomare del Parco, 17", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "pinguino.volano@gmail.com", 
     "accepts_booking": true, 
     "slug": "pinguino-2", 
@@ -31696,9 +30266,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "children-entertainment"
@@ -31758,9 +30325,6 @@
     "services": [
       [
         "sailing"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "baby-park"
@@ -31826,9 +30390,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -31908,9 +30469,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -31969,9 +30527,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -32044,9 +30599,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -32098,9 +30650,6 @@
     "services": [
       [
         "sailing"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -32156,9 +30705,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -32207,9 +30753,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -32268,9 +30811,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -32311,9 +30851,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -32380,9 +30917,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -32431,9 +30965,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "dancing"
@@ -32501,9 +31032,6 @@
     ], 
     "services": [
       [
-        "disabled"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -32552,9 +31080,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "beach-volley"
@@ -32613,9 +31138,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -32658,9 +31180,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -32714,9 +31233,6 @@
       ], 
       [
         "evening-entertainment"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "schoolchildren"
@@ -32773,9 +31289,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "swimming-pool"
@@ -32840,9 +31353,6 @@
         "evening-entertainment"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
@@ -32901,9 +31411,6 @@
       ]
     ], 
     "services": [
-      [
-        "disabled"
-      ], 
       [
         "catering"
       ], 
@@ -33120,9 +31627,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "catering"
       ], 
@@ -34421,9 +32925,6 @@
         "theme-parties"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "footvolley"
       ], 
       [
@@ -34788,13 +33289,7 @@
         "theme-parties"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
         "happy-hour"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "bicycles"
@@ -34824,12 +33319,6 @@
         "solarium"
       ], 
       [
-        "hammocks"
-      ], 
-      [
-        "veranda"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -34857,9 +33346,6 @@
         "credit-cards-accepted"
       ], 
       [
-        "video-store"
-      ], 
-      [
         "alcohol-tester"
       ], 
       [
@@ -34870,9 +33356,6 @@
       ], 
       [
         "bancomat"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "nursery"
@@ -35602,9 +34085,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "fish-barbecue-events"
@@ -36723,9 +35203,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "disabled"
       ]
     ], 
     "address": "viale delle Nazioni, 82", 
@@ -36823,9 +35300,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "baby-park"
       ], 
@@ -38050,9 +36524,6 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -39233,16 +37704,10 @@
         "canoes"
       ], 
       [
-        "parking"
-      ], 
-      [
         "theme-parties"
       ], 
       [
         "live-concerts"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "fish-barbecue-events"
@@ -39535,9 +38000,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "barbecue-area"
@@ -39950,9 +38412,6 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "kick-boxing"
       ], 
       [
@@ -40008,9 +38467,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "beach-racket-court"
       ], 
@@ -40197,9 +38653,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "catering"
       ], 
@@ -40547,9 +39000,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "entertainment"
@@ -42732,9 +41182,6 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -42876,9 +41323,6 @@
     ], 
     "services": [
       [
-        "parking"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -42966,9 +41410,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "baby-park"
       ], 
@@ -43441,9 +41882,6 @@
       ]
     ], 
     "services": [
-      [
-        "parking"
-      ], 
       [
         "catering"
       ], 
@@ -44233,9 +42671,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "webcam"
       ]
     ], 
     "address": "Lungomare Tintori, 6", 
@@ -44425,9 +42860,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -44551,9 +42983,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -44671,9 +43100,6 @@
     "services": [
       [
         "beach-volley"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -44762,9 +43188,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -45011,9 +43434,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -45167,9 +43587,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Tintori - zona Piazza Kennedy", 
@@ -45205,9 +43622,6 @@
     "services": [
       [
         "gym"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "jacuzzi"
@@ -45277,12 +43691,6 @@
         "gym"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "internet"
       ], 
       [
@@ -45296,9 +43704,6 @@
       ], 
       [
         "rowing-boats"
-      ], 
-      [
-        "mats-deposit"
       ], 
       [
         "hot-showers"
@@ -45486,9 +43891,6 @@
         "basketball"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -45606,9 +44008,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -45652,9 +44051,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "nursery"
       ], 
@@ -45879,9 +44275,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -45927,9 +44320,6 @@
     "services": [
       [
         "wi-fi"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "picnic-area"
@@ -46033,9 +44423,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -46112,9 +44499,6 @@
     "services": [
       [
         "credit-cards-accepted"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "beach-volley"
@@ -46258,9 +44642,6 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "gym"
       ]
     ], 
@@ -46355,9 +44736,6 @@
         "lockers"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -46450,9 +44828,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -46938,9 +45313,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -47028,9 +45400,6 @@
         "gym"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "double-sun-bed"
       ], 
       [
@@ -47088,9 +45457,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -47207,9 +45573,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -47253,9 +45616,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "petanque"
       ], 
@@ -47305,9 +45665,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare di Vittorio", 
@@ -47341,9 +45698,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "beach-volley"
       ], 
@@ -47384,9 +45738,6 @@
     "services": [
       [
         "children-entertainment"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "gym"
@@ -47481,9 +45832,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -47528,9 +45876,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -47623,9 +45968,6 @@
         "playground"
       ], 
       [
-        "toilets-for-children"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -47688,9 +46030,6 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "gym"
       ]
     ], 
@@ -47727,9 +46066,6 @@
     "services": [
       [
         "gym"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "petanque"
@@ -47821,9 +46157,6 @@
     "services": [
       [
         "gym"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "jacuzzi"
@@ -47935,9 +46268,6 @@
         "jacuzzi"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -47945,9 +46275,6 @@
       ], 
       [
         "children-entertainment"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -48319,9 +46646,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -48559,9 +46883,6 @@
         "gym"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -48595,28 +46916,16 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "swimming-pool"
       ], 
       [
-        "fax"
-      ], 
-      [
         "pool"
-      ], 
-      [
-        "toilets-for-children"
       ], 
       [
         "waterslide"
       ], 
       [
         "rowing-boats"
-      ], 
-      [
-        "mats-deposit"
       ], 
       [
         "hot-showers"
@@ -48717,9 +47026,6 @@
         "hot-showers"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "gym"
       ]
     ], 
@@ -48811,9 +47117,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -48870,9 +47173,6 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "picnic-area"
       ]
     ], 
@@ -48915,9 +47215,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "V.le Regina Margherita", 
@@ -49227,9 +47524,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "V.le Regina Margherita", 
@@ -49260,16 +47554,10 @@
         "children-entertainment"
       ], 
       [
-        "toilets-for-children"
-      ], 
-      [
         "gym"
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Via Regina Margherita", 
@@ -49303,9 +47591,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "ping-pong"
       ], 
@@ -49639,9 +47924,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "via Messina", 
@@ -49955,9 +48237,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -49992,9 +48271,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "playground"
       ], 
       [
@@ -50002,9 +48278,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -50052,9 +48325,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -50090,9 +48360,6 @@
     "services": [
       [
         "credit-cards-accepted"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "beach-volley"
@@ -50142,9 +48409,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -50187,9 +48451,6 @@
     "services": [
       [
         "five-a-side"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "baby-park"
@@ -50235,9 +48496,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "nursery"
       ], 
@@ -50330,9 +48588,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "ping-pong"
       ], 
       [
@@ -50380,9 +48635,6 @@
         "jacuzzi"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -50390,9 +48642,6 @@
       ], 
       [
         "playground"
-      ], 
-      [
-        "toilets-for-children"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -50426,9 +48675,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "baby-park"
       ], 
@@ -50476,9 +48722,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "baby-park"
       ], 
@@ -50565,9 +48808,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "ping-pong"
       ], 
       [
@@ -50608,9 +48848,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "nursery"
       ], 
@@ -50802,9 +49039,6 @@
       ], 
       [
         "pet-friendly"
-      ], 
-      [
-        "magazines-journals"
       ]
     ], 
     "address": "Via Toscanelli", 
@@ -51089,9 +49323,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "baby-park"
       ], 
       [
@@ -51134,9 +49365,6 @@
     "services": [
       [
         "refrigerators"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "beach-volley"
@@ -51233,9 +49461,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -51328,9 +49553,6 @@
     "services": [
       [
         "five-a-side"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "picnic-area"
@@ -51508,9 +49730,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "baby-park"
       ], 
@@ -51814,9 +50033,6 @@
       ], 
       [
         "picnic-area"
-      ], 
-      [
-        "webcam"
       ]
     ], 
     "address": "Via Dati 113 h", 
@@ -51850,9 +50066,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "five-a-side"
       ], 
@@ -51897,9 +50110,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "ping-pong"
       ], 
@@ -52031,9 +50241,6 @@
     "services": [
       [
         "basketball"
-      ], 
-      [
-        "magazines-journals"
       ], 
       [
         "petanque"
@@ -52870,9 +51077,6 @@
         "basketball"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "five-a-side"
       ], 
       [
@@ -53043,9 +51247,6 @@
     ], 
     "services": [
       [
-        "magazines-journals"
-      ], 
-      [
         "picnic-area"
       ], 
       [
@@ -53177,9 +51378,6 @@
       ]
     ], 
     "services": [
-      [
-        "magazines-journals"
-      ], 
       [
         "five-a-side"
       ], 
@@ -55961,12 +54159,6 @@
         "pedal-boats"
       ], 
       [
-        "sport-balls"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -55988,16 +54180,7 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "sea-mattresses"
-      ], 
-      [
-        "toilets-for-children"
-      ], 
-      [
-        "mats-deposit"
       ], 
       [
         "pet-friendly"
@@ -56823,9 +55006,6 @@
         "gym"
       ], 
       [
-        "disabled"
-      ], 
-      [
         "sports-tournaments"
       ], 
       [
@@ -56844,19 +55024,10 @@
         "bookstore"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "toilets-for-children"
-      ], 
-      [
         "rowing-boats"
       ], 
       [
         "swimming-lessons"
-      ], 
-      [
-        "mats-deposit"
       ], 
       [
         "hot-showers"
@@ -59177,9 +57348,6 @@
         "canoes"
       ], 
       [
-        "mats-deposit"
-      ], 
-      [
         "hot-showers"
       ], 
       [
@@ -59189,16 +57357,7 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
-        "parking"
-      ], 
-      [
         "sea-mattresses"
-      ], 
-      [
-        "sport-balls"
       ]
     ], 
     "address": "Via A. Pinzon", 
@@ -59751,9 +57910,6 @@
         "baby-sitter"
       ], 
       [
-        "parking"
-      ], 
-      [
         "gym"
       ], 
       [
@@ -59761,9 +57917,6 @@
       ], 
       [
         "happy-hour"
-      ], 
-      [
-        "disabled"
       ], 
       [
         "catering"
@@ -59820,19 +57973,7 @@
         "sun-terrace"
       ], 
       [
-        "toilets-for-children"
-      ], 
-      [
-        "clothing"
-      ], 
-      [
-        "ticket-office"
-      ], 
-      [
         "rowing-boats"
-      ], 
-      [
-        "beachwear"
       ], 
       [
         "hot-showers"
@@ -59872,12 +58013,6 @@
       ], 
       [
         "board-games"
-      ], 
-      [
-        "hammocks"
-      ], 
-      [
-        "veranda"
       ], 
       [
         "barbecue-area"
@@ -60082,12 +58217,6 @@
         "basketball"
       ], 
       [
-        "parking"
-      ], 
-      [
-        "disabled"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -60103,16 +58232,10 @@
         "nursery"
       ], 
       [
-        "magazines-journals"
-      ], 
-      [
         "solarium"
       ], 
       [
         "sea-volley"
-      ], 
-      [
-        "mats-deposit"
       ], 
       [
         "hot-showers"
@@ -74011,7 +72134,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-11-06T23:09:56.050Z", 
+    "last_login": "2014-11-13T14:16:36.913Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
