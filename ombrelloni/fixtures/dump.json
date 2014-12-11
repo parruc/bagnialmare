@@ -1398,6 +1398,7 @@
     "slug_it": "bar", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1426,6 +1427,7 @@
     "slug_it": "baby-park", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1452,12 +1454,13 @@
     "seo_name_en": null, 
     "image": "", 
     "slug_it": "beach-volley", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2014-12-10T16:06:20.717Z", 
+    "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
-    "description_it": null, 
+    "description_it": "", 
     "aliases_en": null, 
     "name_en": "beach volley", 
     "aliases": null, 
@@ -1482,6 +1485,7 @@
     "slug_it": "videogiochi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1510,6 +1514,7 @@
     "slug_it": "calcio-balilla", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1538,6 +1543,7 @@
     "slug_it": "animazione-per-bambini", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1566,6 +1572,7 @@
     "slug_it": "spazio-tv", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1594,6 +1601,7 @@
     "slug_it": "bocce", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with petanque court", 
     "free": true, 
     "seo_name_it": "con campo da bocce", 
@@ -1622,6 +1630,7 @@
     "slug_it": "ping-pong", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1650,6 +1659,7 @@
     "slug_it": "musica", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1678,6 +1688,7 @@
     "slug_it": "animazione", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1706,6 +1717,7 @@
     "slug_it": "dancing", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1734,6 +1746,7 @@
     "slug_it": "beach-basket", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1762,6 +1775,7 @@
     "slug_it": "acquagym", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1790,6 +1804,7 @@
     "slug_it": "beach-soccer", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1818,6 +1833,7 @@
     "slug_it": "pedalo", 
     "modified": "2014-07-23T09:38:14.103Z", 
     "description_en": "<h2>Pedal on the sea</h2>\r\n\r\n<p>Hard to imagine anything more <strong>relaxing</strong> than a <strong>paddle boat</strong>. An experience to live with <strong>family</strong>, <strong>friends</strong>, touched by the sea breeze and gently embraced by a landscape that leaves each time without words; the same landscape which Mina used to sing about:</p>\r\n\r\n<p><q><em>We will see the parasols<br />\r\nfar away<br />\r\nnobody will see us</em></q></p>\r\n", 
+    "hidden": false, 
     "seo_name": "with pedal boat rental", 
     "free": true, 
     "seo_name_it": "con noleggio pedal\u00f2", 
@@ -1846,6 +1862,7 @@
     "slug_it": "racchettoni", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with beach racket court", 
     "free": true, 
     "seo_name_it": "con campo da racchettoni", 
@@ -1874,6 +1891,7 @@
     "slug_it": "area-fitness", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1902,6 +1920,7 @@
     "slug_it": "parco-giochi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1930,6 +1949,7 @@
     "slug_it": "basket", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -1958,6 +1978,7 @@
     "slug_it": "canoe", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with canoe facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per canoa", 
@@ -1986,6 +2007,7 @@
     "slug_it": "surf", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with surf facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per surf", 
@@ -2014,6 +2036,7 @@
     "slug_it": "baby-sitter", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2042,6 +2065,7 @@
     "slug_it": "vela", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with sailing boat facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per vela", 
@@ -2070,6 +2094,7 @@
     "slug_it": "feste-a-tema", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2098,6 +2123,7 @@
     "slug_it": "palestra", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2126,6 +2152,7 @@
     "slug_it": "concerti-live", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2154,6 +2181,7 @@
     "slug_it": "happy-hour", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2182,6 +2210,7 @@
     "slug_it": "ristorazione", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2210,6 +2239,7 @@
     "slug_it": "tornei-sportivi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with sports tournaments", 
     "free": true, 
     "seo_name_it": "con organizzazione tornei sportivi", 
@@ -2238,6 +2268,7 @@
     "slug_it": "ginnastica", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with gymnastics session", 
     "free": true, 
     "seo_name_it": "con sessioni di ginnastica", 
@@ -2266,6 +2297,7 @@
     "slug_it": "dj-set", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2294,6 +2326,7 @@
     "slug_it": "internet", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2322,6 +2355,7 @@
     "slug_it": "wi-fi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2350,6 +2384,7 @@
     "slug_it": "tennis", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with tennis court", 
     "free": true, 
     "seo_name_it": "con campo da tennis", 
@@ -2378,6 +2413,7 @@
     "slug_it": "calcetto", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with five a side pitch", 
     "free": true, 
     "seo_name_it": "con campo da calcetto", 
@@ -2406,6 +2442,7 @@
     "slug_it": "cabine", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2434,6 +2471,7 @@
     "slug_it": "area-verde", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2462,6 +2500,7 @@
     "slug_it": "calcio-tennis", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with footvolley court", 
     "free": true, 
     "seo_name_it": "con campo da calcio tennis", 
@@ -2490,6 +2529,7 @@
     "slug_it": "trampolino-elastico", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2518,6 +2558,7 @@
     "slug_it": "libreria", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2546,6 +2587,7 @@
     "slug_it": "giochi-di-societa", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2574,6 +2616,7 @@
     "slug_it": "biciclette", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with bicycles rental", 
     "free": true, 
     "seo_name_it": "con noleggio biciclette", 
@@ -2602,6 +2645,7 @@
     "slug_it": "custodia-valori", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with lockers", 
     "free": true, 
     "seo_name_it": "con servizio di custodia valori", 
@@ -2630,6 +2674,7 @@
     "slug_it": "massaggi", 
     "modified": "2014-11-13T15:01:56.949Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2658,6 +2703,7 @@
     "slug_it": "animazione-serale", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2686,6 +2732,7 @@
     "slug_it": "pilates", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with pilates facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per pilates", 
@@ -2714,6 +2761,7 @@
     "slug_it": "nursery", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2742,6 +2790,7 @@
     "slug_it": "piscina", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2770,6 +2819,7 @@
     "slug_it": "aperitivo", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2798,6 +2848,7 @@
     "slug_it": "windsurf", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with windsurf facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per windsurf", 
@@ -2826,6 +2877,7 @@
     "slug_it": "canotti-materassini", 
     "modified": "2014-07-08T16:11:25.281Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with sea mattress rental", 
     "free": true, 
     "seo_name_it": "con noleggio canotti e materassini", 
@@ -2854,6 +2906,7 @@
     "slug_it": "idromassaggio", 
     "modified": "2014-07-08T09:58:04.414Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2882,6 +2935,7 @@
     "slug_it": "trattamenti-estetici", 
     "modified": "2014-11-13T15:02:19.638Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2910,6 +2964,7 @@
     "slug_it": "solarium", 
     "modified": "2014-11-13T15:01:06.313Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2938,6 +2993,7 @@
     "slug_it": "terrazza-prendisole", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2966,6 +3022,7 @@
     "slug_it": "biliardo", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -2994,6 +3051,7 @@
     "slug_it": "juke-box", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3022,6 +3080,7 @@
     "slug_it": "acquascivolo", 
     "modified": "2014-07-23T09:11:41.809Z", 
     "description_en": "<h2>Waterslides on the beach</h2>\r\n\r\n<p>Curved, sinusoidal, helical, twisted or <strong>kamikaze</strong>: which is your favorite <strong>water slide</strong>? In the <strong>beach resorts</strong> that offer this facility you can sometimes find a real <strong>water park</strong> in miniature. Of course, after the adrenaline rush of the descent you can relax in the <strong>swimming pool by the sea</strong> ... Priceless!</p>\r\n", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3050,6 +3109,7 @@
     "slug_it": "mosconi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with rowing boat rental", 
     "free": true, 
     "seo_name_it": "con noleggio mosconi", 
@@ -3078,6 +3138,7 @@
     "slug_it": "corsi-di-nuoto", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3106,6 +3167,7 @@
     "slug_it": "sea-volley", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with sea volley facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per sea volley", 
@@ -3134,6 +3196,7 @@
     "slug_it": "corsi-di-ballo", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3162,6 +3225,7 @@
     "slug_it": "kitesurf", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with kitesurf facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per kitesurf", 
@@ -3190,6 +3254,7 @@
     "slug_it": "docce-calde", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3218,6 +3283,7 @@
     "slug_it": "pet-friendly", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "where dogs are allowed", 
     "free": true, 
     "seo_name_it": "con accettazione cani e animali domestici (pet friendly)", 
@@ -3246,6 +3312,7 @@
     "slug_it": "corsi-di-tennis", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3274,6 +3341,7 @@
     "slug_it": "animazione-preserale", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3302,6 +3370,7 @@
     "slug_it": "scolaresche", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "where schoolchildren are accepted", 
     "free": true, 
     "seo_name_it": "con accettazione scolaresche", 
@@ -3330,6 +3399,7 @@
     "slug_it": "spinning", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with spinning facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per spinning", 
@@ -3358,6 +3428,7 @@
     "slug_it": "idrobike", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with idrobike facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per idrobike", 
@@ -3386,6 +3457,7 @@
     "slug_it": "yoga", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with yoga facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per yoga", 
@@ -3414,6 +3486,7 @@
     "slug_it": "grigliate-di-pesce", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3442,6 +3515,7 @@
     "slug_it": "grigliate-di-carne", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3470,6 +3544,7 @@
     "slug_it": "karaoke", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3498,6 +3573,7 @@
     "slug_it": "cene-a-tema", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3526,6 +3602,7 @@
     "slug_it": "piano-bar", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3554,6 +3631,7 @@
     "slug_it": "serate-degustazione", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with food and wine tasting events", 
     "free": true, 
     "seo_name_it": "con serate di degustazione", 
@@ -3582,6 +3660,7 @@
     "slug_it": "cabina-surf-windsurf", 
     "modified": "2014-07-08T16:14:09.420Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3610,6 +3689,7 @@
     "slug_it": "rimessaggio-barche", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3638,6 +3718,7 @@
     "slug_it": "cocktail-bar", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3666,6 +3747,7 @@
     "slug_it": "corsi-di-racchettoni", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3694,6 +3776,7 @@
     "slug_it": "bancomat", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "where bancomat is accepted", 
     "free": true, 
     "seo_name_it": "che accettano bancomat", 
@@ -3722,6 +3805,7 @@
     "slug_it": "accettazione-carte-di-credito", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "where credit cards are accepted", 
     "free": true, 
     "seo_name_it": "che accettano carte di credito", 
@@ -3750,6 +3834,7 @@
     "slug_it": "deposito-caschi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3778,6 +3863,7 @@
     "slug_it": "alcohol-tester", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": null, 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3806,6 +3892,7 @@
     "slug_it": "giochi-da-tavolo", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3834,6 +3921,7 @@
     "slug_it": "tavolo-da-gioco", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3862,6 +3950,7 @@
     "slug_it": "area-barbecue", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3890,6 +3979,7 @@
     "slug_it": "ultimate-freesbee", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with ultimate freesbee court", 
     "free": true, 
     "seo_name_it": "con campo da ultimate freesbee", 
@@ -3918,6 +4008,7 @@
     "slug_it": "corsi-di-beach-volley", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -3946,6 +4037,7 @@
     "slug_it": "feste-private", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "available for private functions", 
     "free": true, 
     "seo_name_it": "con organizzazione feste private", 
@@ -3974,6 +4066,7 @@
     "slug_it": "area-benessere", 
     "modified": "2014-11-13T15:01:36.959Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4002,6 +4095,7 @@
     "slug_it": "dodgeball", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with dodgeball facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per dodgeball", 
@@ -4030,6 +4124,7 @@
     "slug_it": "paninoteca", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4058,6 +4153,7 @@
     "slug_it": "feste-danzanti", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4086,6 +4182,7 @@
     "slug_it": "cucina-per-celiaci", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4114,6 +4211,7 @@
     "slug_it": "discoteca", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4142,6 +4240,7 @@
     "slug_it": "tornei-da-tavolo", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4170,6 +4269,7 @@
     "slug_it": "kick-boxing", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with kick boxing facilities", 
     "free": true, 
     "seo_name_it": "attrezzati per kick boxing", 
@@ -4198,6 +4298,7 @@
     "slug_it": "area-picnic", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4226,6 +4327,7 @@
     "slug_it": "lettini-matrimoniali", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4254,6 +4356,7 @@
     "slug_it": "frigoriferi", 
     "modified": "2014-07-02T22:00:00Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": "with refrigerator rental", 
     "free": true, 
     "seo_name_it": "con noleggio frigoriferi", 
@@ -4282,6 +4385,7 @@
     "slug_it": "pizzeria", 
     "modified": "2014-07-12T17:36:31.552Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4310,6 +4414,7 @@
     "slug_it": "sparring-vlup", 
     "modified": "2014-07-12T18:07:16.062Z", 
     "description_en": "The new beach tennis wall", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4338,6 +4443,7 @@
     "slug_it": "passeggini", 
     "modified": "2014-07-12T19:36:47.786Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4366,6 +4472,7 @@
     "slug_it": "spiaggine", 
     "modified": "2014-07-12T19:40:57.614Z", 
     "description_en": "", 
+    "hidden": false, 
     "seo_name": null, 
     "free": true, 
     "seo_name_it": null, 
@@ -4394,6 +4501,7 @@
     "slug_it": "bookcrossing", 
     "modified": "2014-07-22T09:25:12.359Z", 
     "description_en": "<h2>What is BookCrossing?</h2>\r\n\r\n<p>It&#39;s the World&#39;s Library. It&#39;s a smart social networking site. It&#39;s a celebration of literature and a place where books get new life. BookCrossing is the act of giving a book a unique identity so, as the book is passed from reader to reader, it can be tracked and thus connecting its readers.</p>\r\n\r\n<h2>How it works</h2>\r\n\r\n<p>Label. Share. Follow. Breath new life into books instead of letting your old favorites collect dust - pass them along to another reader. Our online archival and tracking system allows members to connect with other readers, journal and review literature and trade and follow their books as lives are changed through &ldquo;reading and releasing&rdquo;. Users are able to tag and track their individual books by marking them with BCIDs (BookCrossing Identity Numbers). Each BCID is unique to each book &ndash; once it&rsquo;s registered on our site, the book can then be followed and journaled forever. BookCrossing is free to join and free to play. So don&#39;t be &#39;shelf&#39;ish with your books - read and release!</p>\r\n\r\n<p><span style=\"line-height: 1.6;\">Here the </span><a href=\"http://www.bookcrossing.com/\" rel=\"nofollow\" style=\"line-height: 1.6;\" target=\"_blank\">bookcrossing</a><span style=\"line-height: 1.6;\"> website</span></p>\r\n", 
+    "hidden": false, 
     "seo_name": "that offer bookcrossing", 
     "free": true, 
     "seo_name_it": "con servizio di bookcrossing", 
@@ -4606,9 +4714,6 @@
         "tv-area"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -4643,6 +4748,9 @@
       ], 
       [
         "petanque"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Lungomare Grazia Deledda", 
@@ -4764,6 +4872,9 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -4794,16 +4905,10 @@
         "fitness-area"
       ], 
       [
-        "playground"
-      ], 
-      [
         "basketball"
       ], 
       [
         "canoes"
-      ], 
-      [
-        "surf"
       ], 
       [
         "baby-sitter"
@@ -4841,9 +4946,6 @@
     ], 
     "services": [
       [
-        "surf"
-      ], 
-      [
         "table-football"
       ], 
       [
@@ -4860,9 +4962,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-volley"
@@ -4893,6 +4992,12 @@
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "wi-fi"
       ]
     ], 
     "address": "Lungomare Grazia Deledda", 
@@ -4927,6 +5032,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -4957,16 +5065,10 @@
         "dancing"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-racket-court"
       ], 
       [
         "fitness-area"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 160", 
@@ -5090,9 +5192,6 @@
         "tv-area"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "table-football"
       ], 
       [
@@ -5115,6 +5214,9 @@
       ], 
       [
         "pedal-boats"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 163", 
@@ -5362,9 +5464,6 @@
         "table-football"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -5384,6 +5483,9 @@
       ], 
       [
         "petanque"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 168", 
@@ -5418,6 +5520,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -5425,9 +5530,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "wi-fi"
@@ -5455,9 +5557,6 @@
       ], 
       [
         "table-football"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 169", 
@@ -5492,6 +5591,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -5523,9 +5625,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "bar"
@@ -5572,9 +5671,6 @@
         "theme-parties"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "footvolley"
       ], 
       [
@@ -5603,6 +5699,9 @@
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 174", 
@@ -5704,6 +5803,9 @@
     "languages": [], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -5732,9 +5834,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-racket-court"
@@ -5775,6 +5874,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -5806,9 +5908,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-soccer"
@@ -5898,9 +5997,6 @@
         "table-football"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -5923,6 +6019,9 @@
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 184", 
@@ -6140,6 +6239,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "table-football"
       ], 
       [
@@ -6153,9 +6255,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-volley"
@@ -6288,6 +6387,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -6337,9 +6439,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ], 
       [
         "live-concerts"
@@ -6599,9 +6698,6 @@
         "lockers"
       ], 
       [
-        "massages"
-      ], 
-      [
         "fitness-area"
       ], 
       [
@@ -6646,6 +6742,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -6674,9 +6773,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-racket-court"
@@ -7117,6 +7213,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -7139,9 +7238,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "acquagym"
@@ -7197,6 +7293,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -7225,9 +7324,6 @@
       ], 
       [
         "music"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "pedal-boats"
@@ -7308,6 +7404,12 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -7315,9 +7417,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "table-football"
@@ -7339,9 +7438,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "basketball"
@@ -7382,6 +7478,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -7410,9 +7509,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "pedal-boats"
@@ -7564,6 +7660,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -7589,9 +7688,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "pedal-boats"
@@ -7805,6 +7901,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "table-football"
       ], 
       [
@@ -7815,9 +7914,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-volley"
@@ -7988,10 +8084,10 @@
     ], 
     "services": [
       [
-        "dancing"
+        "basketball"
       ], 
       [
-        "beach-basket"
+        "dancing"
       ], 
       [
         "table-football"
@@ -8050,6 +8146,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -8078,9 +8177,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-soccer"
@@ -8381,7 +8477,7 @@
     ], 
     "services": [
       [
-        "beach-basket"
+        "basketball"
       ], 
       [
         "baby-park"
@@ -8680,6 +8776,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -8701,9 +8800,6 @@
         "cabins"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "pedal-boats"
       ], 
       [
@@ -8714,9 +8810,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Viale Francesco Baracca - arenile demaniale 254", 
@@ -8785,9 +8878,6 @@
       ], 
       [
         "music"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Viale Francesco Baracca - arenile deamaniale 255", 
@@ -8974,6 +9064,9 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -8996,9 +9089,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "surf"
       ], 
       [
         "theme-parties"
@@ -9036,6 +9126,9 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "cabins"
       ], 
       [
@@ -9055,9 +9148,6 @@
       ], 
       [
         "bar"
-      ], 
-      [
-        "surf"
       ]
     ], 
     "address": "Viale Corsica  - arenile demaniale 262", 
@@ -9148,13 +9238,13 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "table-football"
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "dancing"
@@ -9331,6 +9421,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -9356,9 +9449,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "bicycles"
@@ -9533,9 +9623,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ], 
       [
         "tv-area"
@@ -9719,6 +9806,12 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -9749,9 +9842,6 @@
         "dancing"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "pedal-boats"
       ], 
       [
@@ -9762,9 +9852,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "surf"
       ], 
       [
         "theme-parties"
@@ -9955,6 +10042,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -9979,9 +10069,6 @@
         "dancing"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-soccer"
       ], 
       [
@@ -9997,9 +10084,6 @@
         "sports-tournaments"
       ], 
       [
-        "internet"
-      ], 
-      [
         "cabins"
       ], 
       [
@@ -10010,6 +10094,9 @@
       ], 
       [
         "nursery"
+      ], 
+      [
+        "wi-fi"
       ]
     ], 
     "address": "III Traversa - arenile demaniale 280/281", 
@@ -10215,9 +10302,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "IV Traversa - arenile demaniale 285", 
@@ -10256,9 +10340,6 @@
       ], 
       [
         "baby-park"
-      ], 
-      [
-        "internet"
       ], 
       [
         "wi-fi"
@@ -10507,9 +10588,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "VI Traversa - arenile demaniale 290", 
@@ -10544,6 +10622,9 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "happy-hour"
       ], 
       [
@@ -10563,9 +10644,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "surf"
       ]
     ], 
     "address": "VI Traversa - arenile demaniale 291", 
@@ -10631,13 +10709,13 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "table-football"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "cabins"
@@ -10705,13 +10783,13 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "dancing"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "table-football"
@@ -11247,9 +11325,6 @@
         "baby-park"
       ], 
       [
-        "internet"
-      ], 
-      [
         "wi-fi"
       ], 
       [
@@ -11275,9 +11350,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "surf"
       ], 
       [
         "baby-sitter"
@@ -11389,13 +11461,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "dancing"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ], 
       [
         "nursery"
@@ -11631,9 +11703,6 @@
         "theme-parties"
       ], 
       [
-        "playground"
-      ], 
-      [
         "dancing"
       ], 
       [
@@ -11749,6 +11818,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -11782,9 +11854,6 @@
         "dancing"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "sports-tournaments"
       ], 
       [
@@ -11795,9 +11864,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "XVI traversa - arenile demaniale 313/316", 
@@ -11966,7 +12032,7 @@
     ], 
     "services": [
       [
-        "beach-basket"
+        "basketball"
       ], 
       [
         "dancing"
@@ -12025,13 +12091,13 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "table-football"
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "cabins"
@@ -12395,16 +12461,16 @@
     ], 
     "services": [
       [
-        "surf"
+        "basketball"
+      ], 
+      [
+        "wi-fi"
       ], 
       [
         "dancing"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "cabins"
@@ -13007,6 +13073,12 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -13014,9 +13086,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "table-football"
@@ -13035,9 +13104,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "lockers"
@@ -13272,6 +13338,12 @@
     "languages": [], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
+        "games"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -13303,9 +13375,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "canoes"
@@ -13371,9 +13440,6 @@
         "yoga"
       ], 
       [
-        "fish-barbecue-events"
-      ], 
-      [
         "meat-barbecue-events"
       ], 
       [
@@ -13398,16 +13464,7 @@
         "helmet-deposit"
       ], 
       [
-        "board-games"
-      ], 
-      [
         "private-functions"
-      ], 
-      [
-        "sandwich-shop"
-      ], 
-      [
-        "dance-parties"
       ], 
       [
         "celiac-cooking"
@@ -13505,9 +13562,6 @@
         "nursery"
       ], 
       [
-        "windsurf"
-      ], 
-      [
         "sea-mattresses"
       ]
     ], 
@@ -13574,13 +13628,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "ping-pong"
       ], 
       [
         "baby-park"
-      ], 
-      [
-        "massages"
       ], 
       [
         "table-football"
@@ -13611,9 +13665,6 @@
       ], 
       [
         "canoes"
-      ], 
-      [
-        "surf"
       ], 
       [
         "bar"
@@ -13654,13 +13705,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "bar"
-      ], 
-      [
-        "gym"
       ], 
       [
         "gymnastics"
@@ -13719,6 +13770,12 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -13758,16 +13815,10 @@
         "canoes"
       ], 
       [
-        "surf"
-      ], 
-      [
         "gymnastics"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "arenile demaniale 94/95/96", 
@@ -13864,13 +13915,13 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "catering"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "cabins"
@@ -14105,13 +14156,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "internet"
       ], 
       [
         "cabins"
@@ -14241,6 +14292,12 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -14248,9 +14305,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "table-football"
@@ -14272,9 +14326,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-soccer"
@@ -14332,9 +14383,6 @@
       ]
     ], 
     "services": [
-      [
-        "surf"
-      ], 
       [
         "gymnastics"
       ], 
@@ -14502,6 +14550,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "dancing"
       ], 
       [
@@ -14509,9 +14560,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "cabins"
@@ -14752,9 +14800,6 @@
       ], 
       [
         "bar"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Arenile demaniale 120", 
@@ -14869,6 +14914,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -14897,9 +14945,6 @@
       ], 
       [
         "dancing"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "tennis"
@@ -15080,9 +15125,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "wi-fi"
@@ -15433,9 +15475,6 @@
         "beach-racket-court"
       ], 
       [
-        "beauty-treatments"
-      ], 
-      [
         "basketball"
       ], 
       [
@@ -15480,6 +15519,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -15510,9 +15552,6 @@
         "dancing"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-soccer"
       ], 
       [
@@ -15523,9 +15562,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Arenile demaniale 10", 
@@ -15683,9 +15719,6 @@
         "dancing"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "pedal-boats"
       ], 
       [
@@ -15693,6 +15726,9 @@
       ], 
       [
         "fitness-area"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Arenile demaniale 18", 
@@ -15767,9 +15803,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Arenile demaniale 20", 
@@ -15931,6 +15964,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "lockers"
       ], 
       [
@@ -15950,9 +15986,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Giosu\u00e8 Carducci", 
@@ -16267,10 +16300,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "catering"
       ], 
       [
         "bookstore"
@@ -16444,10 +16477,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -16838,10 +16871,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "music"
       ], 
       [
-        "windsurf"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -16968,9 +17001,6 @@
         "beach-volley"
       ], 
       [
-        "internet"
-      ], 
-      [
         "wi-fi"
       ], 
       [
@@ -17036,13 +17066,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "solarium"
       ], 
       [
         "catering"
-      ], 
-      [
-        "internet"
       ], 
       [
         "table-football"
@@ -17092,13 +17122,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "gym"
       ], 
       [
         "footvolley"
@@ -17363,6 +17393,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -17385,9 +17418,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Via Montenero, 53", 
@@ -17605,16 +17635,16 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "catering"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "internet"
       ], 
       [
         "lockers"
@@ -17813,6 +17843,12 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -17835,12 +17871,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
-      ], 
-      [
-        "juke-box"
       ]
     ], 
     "address": "Viale Giosu\u00e8 Carducci, 4/C", 
@@ -18317,10 +18347,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "catering"
       ], 
       [
         "bicycles"
@@ -18727,22 +18757,22 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "catering"
       ], 
       [
-        "gym"
-      ], 
-      [
-        "internet"
-      ], 
-      [
         "lockers"
-      ], 
-      [
-        "massages"
       ], 
       [
         "beach-volley"
@@ -18904,6 +18934,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
@@ -18935,9 +18968,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ], 
       [
         "waterslide"
@@ -19099,6 +19129,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -19130,9 +19163,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Lungomare Ponente, 88", 
@@ -19160,7 +19190,7 @@
     "languages": [], 
     "services": [
       [
-        "sun-terrace"
+        "solarium"
       ], 
       [
         "catering"
@@ -19322,6 +19352,12 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -19352,16 +19388,10 @@
         "lockers"
       ], 
       [
-        "massages"
-      ], 
-      [
         "basketball"
       ], 
       [
         "canoes"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Viale Lungomare Ponente, 76", 
@@ -19697,6 +19727,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -19719,9 +19752,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Piave", 
@@ -19756,6 +19786,15 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "solarium"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
@@ -19763,12 +19802,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "internet"
       ], 
       [
         "nursery"
@@ -19799,9 +19832,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ], 
       [
         "tennis"
@@ -19895,6 +19925,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -19926,9 +19959,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Lungomare Ponente, 83", 
@@ -20045,6 +20075,18 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "solarium"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -20075,13 +20117,7 @@
         "baby-sitter"
       ], 
       [
-        "gym"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "internet"
       ], 
       [
         "five-a-side"
@@ -20096,13 +20132,7 @@
         "lockers"
       ], 
       [
-        "massages"
-      ], 
-      [
         "jacuzzi"
-      ], 
-      [
-        "sun-terrace"
       ], 
       [
         "swimming-lessons"
@@ -20208,10 +20238,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "catering"
       ], 
       [
         "bookstore"
@@ -20405,6 +20435,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -20433,9 +20466,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Lungomare Ponente, 87", 
@@ -20591,6 +20621,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -20607,9 +20640,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale dei Pini, 99", 
@@ -20697,13 +20727,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "solarium"
       ], 
       [
         "catering"
-      ], 
-      [
-        "internet"
       ], 
       [
         "lockers"
@@ -20771,10 +20801,13 @@
     ], 
     "services": [
       [
-        "catering"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "solarium"
+      ], 
+      [
+        "catering"
       ], 
       [
         "beach-volley"
@@ -20802,9 +20835,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Spiaggia Zadina", 
@@ -20839,13 +20869,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "internet"
       ], 
       [
         "beach-volley"
@@ -20897,9 +20927,6 @@
       ]
     ], 
     "services": [
-      [
-        "sun-terrace"
-      ], 
       [
         "catering"
       ], 
@@ -20963,13 +20990,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "catering"
-      ], 
-      [
-        "internet"
       ], 
       [
         "lockers"
@@ -21143,13 +21170,13 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "catering"
-      ], 
-      [
-        "internet"
       ], 
       [
         "bookstore"
@@ -21205,6 +21232,9 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -21212,9 +21242,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "tv-area"
@@ -21270,16 +21297,16 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "catering"
       ], 
       [
-        "internet"
-      ], 
-      [
         "bicycles"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "beach-volley"
@@ -21329,6 +21356,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -21354,9 +21384,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Giosu\u00e8 Carducci", 
@@ -21506,10 +21533,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "catering"
       ], 
       [
         "nursery"
@@ -21807,6 +21834,9 @@
     ], 
     "services": [
       [
+        "basketball"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -21826,9 +21856,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "lockers"
@@ -21866,6 +21893,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -21879,9 +21909,6 @@
       ], 
       [
         "pedal-boats"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Spiaggia Villamarina", 
@@ -21916,6 +21943,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -21935,9 +21965,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ], 
       [
         "beach-racket-court"
@@ -22099,6 +22126,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -22124,9 +22154,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Viale Lungomare Ponente", 
@@ -22527,6 +22554,12 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -22534,9 +22567,6 @@
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "internet"
       ], 
       [
         "tv-area"
@@ -22552,9 +22582,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "massages"
       ], 
       [
         "basketball"
@@ -22738,6 +22765,9 @@
     ], 
     "services": [
       [
+        "solarium"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -22775,9 +22805,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "sun-terrace"
       ]
     ], 
     "address": "Via Montello, 23", 
@@ -22886,13 +22913,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "gym"
       ], 
       [
         "wi-fi"
@@ -22957,13 +22984,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -23013,13 +23040,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -23065,6 +23092,9 @@
     "languages": [], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -23099,9 +23129,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "nursery"
@@ -23145,6 +23172,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -23152,9 +23182,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -23228,13 +23255,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "sailing"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -23355,19 +23382,19 @@
     ], 
     "services": [
       [
-        "catering"
+        "fitness-area"
       ], 
       [
-        "evening-entertainment"
+        "entertainment"
+      ], 
+      [
+        "catering"
       ], 
       [
         "wi-fi"
       ], 
       [
         "swimming-pool"
-      ], 
-      [
-        "spinning"
       ], 
       [
         "beach-volley"
@@ -23441,13 +23468,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -23518,13 +23545,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -23651,10 +23678,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "children-entertainment"
@@ -23716,13 +23743,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -23781,13 +23808,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -23855,6 +23882,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -23889,9 +23919,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -23935,13 +23962,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -24121,13 +24148,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -24307,13 +24334,16 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -24338,9 +24368,6 @@
       ], 
       [
         "dance-classes"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Via Spiaggia, 24", 
@@ -24424,6 +24451,12 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -24451,13 +24484,7 @@
         "beach-racket-court"
       ], 
       [
-        "evening-entertainment"
-      ], 
-      [
         "nursery"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Via Spiaggia, 26", 
@@ -24492,10 +24519,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "children-entertainment"
@@ -24551,10 +24578,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "children-entertainment"
@@ -24610,10 +24637,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "swimming-pool"
@@ -24660,13 +24687,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "children-entertainment"
@@ -24964,7 +24991,7 @@
     ], 
     "services": [
       [
-        "evening-entertainment"
+        "entertainment"
       ], 
       [
         "beach-volley"
@@ -25070,6 +25097,12 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "dancing"
       ], 
       [
@@ -25092,9 +25125,6 @@
       ], 
       [
         "sailing"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-lessons"
@@ -25139,9 +25169,6 @@
         "nursery"
       ], 
       [
-        "spinning"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -25180,10 +25207,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "five-a-side"
       ], 
       [
         "wi-fi"
@@ -25254,6 +25281,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "dancing"
       ], 
       [
@@ -25273,9 +25303,6 @@
       ], 
       [
         "sailing"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-lessons"
@@ -25399,6 +25426,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -25406,9 +25436,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -25526,13 +25553,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -25594,10 +25621,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "wi-fi"
@@ -25640,6 +25667,12 @@
     "languages": [], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -25655,13 +25688,7 @@
         "jacuzzi"
       ], 
       [
-        "evening-entertainment"
-      ], 
-      [
         "swimming-pool"
-      ], 
-      [
-        "gym"
       ], 
       [
         "solarium"
@@ -25699,10 +25726,10 @@
     ], 
     "services": [
       [
-        "schoolchildren"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "schoolchildren"
       ], 
       [
         "catering"
@@ -25805,10 +25832,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "wi-fi"
@@ -25852,6 +25879,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -25871,9 +25901,6 @@
       ], 
       [
         "baby-park"
-      ], 
-      [
-        "spinning"
       ], 
       [
         "children-entertainment"
@@ -25920,6 +25947,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -25927,9 +25957,6 @@
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -26003,6 +26030,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -26010,9 +26040,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -26095,6 +26122,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -26102,9 +26132,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -26171,6 +26198,9 @@
     "languages": [], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -26205,9 +26235,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "basketball"
@@ -26325,13 +26352,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -26405,10 +26432,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "wi-fi"
@@ -26476,6 +26503,9 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
         "dancing"
       ], 
       [
@@ -26527,9 +26557,6 @@
         "wi-fi"
       ], 
       [
-        "windsurf"
-      ], 
-      [
         "schoolchildren"
       ], 
       [
@@ -26571,6 +26598,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -26578,9 +26608,6 @@
       ], 
       [
         "wi-fi"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "sailing"
@@ -26654,6 +26681,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -26673,9 +26703,6 @@
       ], 
       [
         "pedal-boats"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "canoes"
@@ -26719,13 +26746,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -26940,6 +26967,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
@@ -26947,9 +26977,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "wi-fi"
@@ -27023,6 +27050,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -27030,9 +27060,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "schoolchildren"
@@ -27106,10 +27133,10 @@
     ], 
     "services": [
       [
-        "sailing"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "sailing"
       ], 
       [
         "wi-fi"
@@ -27180,10 +27207,10 @@
     ], 
     "services": [
       [
-        "sailing"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "sailing"
       ], 
       [
         "wi-fi"
@@ -27254,6 +27281,12 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -27261,9 +27294,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "schoolchildren"
@@ -27279,9 +27309,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "spinning"
       ], 
       [
         "children-entertainment"
@@ -27378,13 +27405,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "children-entertainment"
@@ -27440,13 +27467,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "children-entertainment"
@@ -27502,7 +27529,7 @@
     ], 
     "services": [
       [
-        "evening-entertainment"
+        "entertainment"
       ], 
       [
         "schoolchildren"
@@ -27555,10 +27582,10 @@
     ], 
     "services": [
       [
-        "sailing"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "sailing"
       ], 
       [
         "swimming-pool"
@@ -27623,13 +27650,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "baby-sitter"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -27697,10 +27724,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "swimming-pool"
@@ -27761,6 +27788,9 @@
     "languages": [], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -27786,9 +27816,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "yoga"
@@ -27832,10 +27859,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "five-a-side"
       ], 
       [
         "beach-volley"
@@ -27879,13 +27906,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -27941,10 +27968,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "wi-fi"
@@ -28000,13 +28027,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -28074,6 +28101,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -28081,9 +28111,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -28139,10 +28166,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -28195,10 +28222,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "schoolchildren"
@@ -28251,13 +28278,13 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "beach-volley"
@@ -28316,10 +28343,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "children-entertainment"
@@ -28375,10 +28402,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "five-a-side"
       ], 
       [
         "children-entertainment"
@@ -28499,13 +28526,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -28576,16 +28603,16 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -28641,10 +28668,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "five-a-side"
       ], 
       [
         "schoolchildren"
@@ -28839,10 +28866,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -28957,6 +28984,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -28973,9 +29003,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ]
     ], 
     "address": "Via Spiaggia, 56", 
@@ -29069,13 +29096,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -29369,19 +29396,19 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "catering"
       ], 
       [
-        "evening-entertainment"
-      ], 
-      [
         "swimming-pool"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "beach-volley"
@@ -29446,10 +29473,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "schoolchildren"
@@ -29502,13 +29529,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ]
     ], 
     "address": "Via Spiaggia, 56", 
@@ -29634,10 +29661,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "baby-park"
@@ -29684,10 +29711,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "five-a-side"
       ], 
       [
         "children-entertainment"
@@ -29746,6 +29773,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -29765,9 +29795,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ]
     ], 
     "address": "Via Lungomare del Parco, 1", 
@@ -29858,10 +29885,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "music"
       ], 
       [
-        "windsurf"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -30076,6 +30103,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -30098,9 +30128,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "mooring"
@@ -30185,10 +30212,13 @@
     ], 
     "services": [
       [
-        "catering"
+        "music"
       ], 
       [
-        "windsurf"
+        "entertainment"
+      ], 
+      [
+        "catering"
       ], 
       [
         "beach-volley"
@@ -30210,9 +30240,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "canoes"
@@ -30262,10 +30289,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "five-a-side"
       ], 
       [
         "children-entertainment"
@@ -30380,6 +30407,12 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -30387,9 +30420,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "schoolchildren"
@@ -30408,9 +30438,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "spinning"
       ], 
       [
         "children-entertainment"
@@ -30463,10 +30490,10 @@
     ], 
     "services": [
       [
-        "solarium"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "solarium"
       ], 
       [
         "children-entertainment"
@@ -30528,6 +30555,12 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -30553,12 +30586,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Via dei Mille, 34", 
@@ -30593,10 +30620,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "schoolchildren"
@@ -30702,7 +30729,7 @@
     ], 
     "services": [
       [
-        "evening-entertainment"
+        "entertainment"
       ], 
       [
         "beach-volley"
@@ -30805,10 +30832,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -30852,6 +30879,9 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -30874,9 +30904,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -30961,10 +30988,13 @@
     ], 
     "services": [
       [
-        "gymnastics"
+        "fitness-area"
       ], 
       [
-        "evening-entertainment"
+        "entertainment"
+      ], 
+      [
+        "gymnastics"
       ], 
       [
         "dancing"
@@ -30980,9 +31010,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "spinning"
       ], 
       [
         "children-entertainment"
@@ -31073,13 +31100,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "beach-volley"
@@ -31129,13 +31156,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "catering"
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "baby-park"
@@ -31176,10 +31203,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "schoolchildren"
@@ -31229,10 +31256,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "entertainment"
       ], 
       [
-        "evening-entertainment"
+        "catering"
       ], 
       [
         "schoolchildren"
@@ -31344,13 +31371,13 @@
     ], 
     "services": [
       [
+        "entertainment"
+      ], 
+      [
         "gymnastics"
       ], 
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "swimming-pool"
@@ -31569,6 +31596,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -31579,9 +31609,6 @@
       ], 
       [
         "swimming-lessons"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "theme-parties"
@@ -31916,6 +31943,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -31941,9 +31971,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "baby-park"
@@ -32062,6 +32089,12 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32086,9 +32119,6 @@
         "aperitif"
       ], 
       [
-        "windsurf"
-      ], 
-      [
         "meat-barbecue-events"
       ], 
       [
@@ -32102,9 +32132,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "ping-pong"
@@ -32154,6 +32181,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32185,9 +32215,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -32228,6 +32255,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -32238,9 +32268,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -32343,6 +32370,12 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32350,9 +32383,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "gym"
       ], 
       [
         "aperitif"
@@ -32371,9 +32401,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "basketball"
@@ -32420,6 +32447,9 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32433,9 +32463,6 @@
       ], 
       [
         "aperitif"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "footvolley"
@@ -32491,6 +32518,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32519,9 +32549,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -32615,7 +32642,7 @@
     ], 
     "services": [
       [
-        "surf"
+        "wi-fi"
       ], 
       [
         "aperitif"
@@ -32659,6 +32686,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32687,9 +32717,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -32739,6 +32766,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -32767,9 +32797,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "basketball"
@@ -32910,6 +32937,12 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "pedal-boats"
       ], 
       [
@@ -32919,9 +32952,6 @@
         "canoes"
       ], 
       [
-        "surf"
-      ], 
-      [
         "theme-parties"
       ], 
       [
@@ -32929,9 +32959,6 @@
       ], 
       [
         "swimming-lessons"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -33067,6 +33094,12 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -33085,9 +33118,6 @@
         "aperitif"
       ], 
       [
-        "windsurf"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -33101,9 +33131,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -33144,6 +33171,12 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -33162,9 +33195,6 @@
         "aperitif"
       ], 
       [
-        "windsurf"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -33175,9 +33205,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -33274,10 +33301,13 @@
     ], 
     "services": [
       [
-        "beach-racket-court"
+        "dancing"
       ], 
       [
-        "playground"
+        "games"
+      ], 
+      [
+        "beach-racket-court"
       ], 
       [
         "basketball"
@@ -33302,9 +33332,6 @@
       ], 
       [
         "swimming-lessons"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -33368,9 +33395,6 @@
       ], 
       [
         "cards-table"
-      ], 
-      [
-        "board-games"
       ], 
       [
         "pet-friendly"
@@ -33470,6 +33494,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -33492,9 +33519,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "theme-parties"
@@ -33544,6 +33568,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -33575,9 +33602,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "ping-pong"
@@ -33692,6 +33716,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -33708,9 +33735,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -33989,6 +34013,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -34011,9 +34038,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -34057,6 +34081,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -34085,9 +34112,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -34212,9 +34236,6 @@
         "catering"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -34318,6 +34339,9 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -34328,9 +34352,6 @@
       ], 
       [
         "aperitif"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "beach-volley"
@@ -34421,6 +34442,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "happy-hour"
       ], 
       [
@@ -34445,9 +34469,6 @@
         "entertainment"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "swimming-lessons"
       ], 
       [
@@ -34458,9 +34479,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "footvolley"
@@ -34544,6 +34562,12 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -34553,13 +34577,7 @@
         "theme-parties"
       ], 
       [
-        "evening-entertainment"
-      ], 
-      [
         "pilates"
-      ], 
-      [
-        "massages"
       ], 
       [
         "aperitif"
@@ -34718,7 +34736,7 @@
     ], 
     "services": [
       [
-        "surf"
+        "wi-fi"
       ], 
       [
         "dj-set"
@@ -34780,6 +34798,9 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -34808,9 +34829,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "massages"
       ], 
       [
         "theme-parties"
@@ -34944,6 +34962,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -34969,9 +34990,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -35015,6 +35033,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -35022,9 +35043,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "aperitif"
@@ -35040,9 +35058,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "theme-parties"
@@ -35095,6 +35110,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -35104,16 +35122,10 @@
         "cocktail-bar"
       ], 
       [
-        "gym"
-      ], 
-      [
         "theme-parties"
       ], 
       [
         "aperitif"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "beach-volley"
@@ -35230,6 +35242,9 @@
     "languages": [], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -35252,9 +35267,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "meat-barbecue-events"
@@ -35342,10 +35354,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "bar"
       ], 
       [
-        "massages"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -35395,6 +35407,12 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -35402,9 +35420,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ], 
       [
         "aperitif"
@@ -35423,9 +35438,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -35466,6 +35478,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -35482,9 +35497,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "theme-parties"
@@ -35578,6 +35590,12 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -35585,9 +35603,6 @@
       ], 
       [
         "five-a-side"
-      ], 
-      [
-        "gym"
       ], 
       [
         "happy-hour"
@@ -35603,9 +35618,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "theme-parties"
@@ -35655,6 +35667,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -35673,9 +35688,6 @@
         "footvolley"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -35689,9 +35701,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -35735,6 +35744,9 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
         "beach-rackets-courses"
       ], 
       [
@@ -35757,9 +35769,6 @@
       ], 
       [
         "footvolley"
-      ], 
-      [
-        "massages"
       ], 
       [
         "beach-racket-court"
@@ -35803,6 +35812,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -35822,9 +35834,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -35915,6 +35924,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -35934,9 +35946,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -35977,6 +35986,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -36005,9 +36017,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "wellness-area"
       ]
     ], 
     "address": "Viale delle Nazioni, 242/b", 
@@ -36042,7 +36051,7 @@
     ], 
     "services": [
       [
-        "beach-basket"
+        "dancing"
       ], 
       [
         "acquagym"
@@ -36061,9 +36070,6 @@
       ], 
       [
         "footvolley"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "yoga"
@@ -36140,6 +36146,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -36168,9 +36177,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "theme-parties"
@@ -36220,6 +36226,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "happy-hour"
       ], 
       [
@@ -36235,9 +36244,6 @@
         "entertainment"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "footvolley"
       ], 
       [
@@ -36245,9 +36251,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "meat-barbecue-events"
@@ -36300,10 +36303,10 @@
     ], 
     "services": [
       [
-        "sandwich-shop"
+        "dancing"
       ], 
       [
-        "dance-parties"
+        "bar"
       ], 
       [
         "catering"
@@ -36391,6 +36394,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -36404,9 +36410,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -36447,6 +36450,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -36469,9 +36475,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "meat-barbecue-events"
@@ -36770,9 +36773,6 @@
       ], 
       [
         "happy-hour"
-      ], 
-      [
-        "beach-basket"
       ], 
       [
         "beach-volley"
@@ -37125,6 +37125,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "dj-set"
       ], 
       [
@@ -37153,9 +37156,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -37199,6 +37199,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -37215,9 +37218,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -37695,6 +37695,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "table-tournaments"
       ], 
       [
@@ -37708,9 +37711,6 @@
       ], 
       [
         "live-concerts"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -37780,6 +37780,12 @@
     "languages": [], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -37826,12 +37832,6 @@
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "solarium"
@@ -37916,6 +37916,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -37944,9 +37947,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "pet-friendly"
@@ -38232,6 +38232,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -38257,9 +38260,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "themed-dinner"
@@ -38521,22 +38521,25 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "catering"
       ], 
       [
         "theme-parties"
       ], 
       [
-        "internet"
-      ], 
-      [
         "nursery"
       ], 
       [
         "aperitif"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "beach-volley"
@@ -38549,9 +38552,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "spinning"
       ], 
       [
         "children-entertainment"
@@ -38738,6 +38738,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "solarium"
       ], 
       [
@@ -38760,9 +38763,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -39137,13 +39137,16 @@
     ], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "beach-volley"
@@ -39156,9 +39159,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "canoes"
@@ -39364,6 +39364,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -39380,9 +39383,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -39937,9 +39937,6 @@
         "solarium"
       ], 
       [
-        "sandwich-shop"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -40097,9 +40094,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "happy-hour"
@@ -40297,6 +40291,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -40313,9 +40310,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -40660,9 +40654,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "live-concerts"
@@ -41132,10 +41123,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "music"
       ], 
       [
-        "windsurf"
+        "catering"
       ], 
       [
         "beach-volley"
@@ -41883,10 +41874,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "bar"
       ], 
       [
-        "massages"
+        "catering"
       ], 
       [
         "baby-park"
@@ -42031,9 +42022,6 @@
     "services": [
       [
         "catering"
-      ], 
-      [
-        "evening-entertainment"
       ], 
       [
         "table-football"
@@ -42393,6 +42381,9 @@
     ], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "gymnastics"
       ], 
       [
@@ -42412,9 +42403,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "fish-barbecue-events"
       ], 
       [
         "entertainment"
@@ -42455,10 +42443,10 @@
     ], 
     "services": [
       [
-        "catering"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "catering"
       ], 
       [
         "wi-fi"
@@ -42655,6 +42643,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "catering"
       ], 
       [
@@ -42665,9 +42656,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "playground"
       ], 
       [
         "basketball"
@@ -42736,7 +42724,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -42771,6 +42759,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "basketball"
       ], 
       [
@@ -42781,9 +42772,6 @@
       ], 
       [
         "picnic-area"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Tintori, 10 a/b", 
@@ -42818,7 +42806,7 @@
     ], 
     "services": [
       [
-        "surf"
+        "wi-fi"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -42853,10 +42841,10 @@
     ], 
     "services": [
       [
-        "lockers"
+        "baby-park"
       ], 
       [
-        "playground"
+        "lockers"
       ], 
       [
         "hot-showers"
@@ -42894,6 +42882,9 @@
     ], 
     "services": [
       [
+        "wi-fi"
+      ], 
+      [
         "children-entertainment"
       ], 
       [
@@ -42901,9 +42892,6 @@
       ], 
       [
         "basketball"
-      ], 
-      [
-        "internet"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -43222,13 +43210,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "children-entertainment"
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "gym"
       ], 
       [
         "nursery"
@@ -43301,6 +43289,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -43308,9 +43299,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Tintori", 
@@ -43512,7 +43500,7 @@
     ], 
     "services": [
       [
-        "internet"
+        "wi-fi"
       ], 
       [
         "lockers"
@@ -43571,10 +43559,10 @@
     ], 
     "services": [
       [
-        "baby-park"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "baby-park"
       ], 
       [
         "children-entertainment"
@@ -43621,16 +43609,16 @@
     ], 
     "services": [
       [
-        "gym"
+        "baby-park"
+      ], 
+      [
+        "fitness-area"
       ], 
       [
         "jacuzzi"
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -43664,6 +43652,12 @@
     "languages": [], 
     "services": [
       [
+        "music"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -43688,19 +43682,10 @@
         "beach-racket-court"
       ], 
       [
-        "gym"
-      ], 
-      [
-        "internet"
-      ], 
-      [
         "wi-fi"
       ], 
       [
         "cabins"
-      ], 
-      [
-        "windsurf"
       ], 
       [
         "rowing-boats"
@@ -43803,13 +43788,13 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "basketball"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -43888,6 +43873,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "basketball"
       ], 
       [
@@ -43895,9 +43883,6 @@
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -43967,13 +43952,13 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "beach-racket-court"
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -44231,10 +44216,10 @@
     ], 
     "services": [
       [
-        "petanque"
+        "baby-park"
       ], 
       [
-        "playground"
+        "petanque"
       ], 
       [
         "basketball"
@@ -44275,6 +44260,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "beach-volley"
       ], 
       [
@@ -44282,9 +44270,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -44319,6 +44304,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "wi-fi"
       ], 
       [
@@ -44326,9 +44314,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "hot-showers"
@@ -44627,6 +44612,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "children-entertainment"
       ], 
       [
@@ -44640,9 +44628,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -44692,9 +44677,6 @@
         "ping-pong"
       ], 
       [
-        "playground"
-      ], 
-      [
         "entertainment"
       ], 
       [
@@ -44733,6 +44715,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "lockers"
       ], 
       [
@@ -44740,9 +44725,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -44821,10 +44803,10 @@
     ], 
     "services": [
       [
-        "children-entertainment"
+        "bar"
       ], 
       [
-        "massages"
+        "children-entertainment"
       ], 
       [
         "beach-racket-court"
@@ -44896,6 +44878,9 @@
     "languages": [], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "petanque"
       ], 
       [
@@ -44906,9 +44891,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "jacuzzi"
@@ -44987,10 +44969,10 @@
     ], 
     "services": [
       [
-        "gym"
+        "hot-showers"
       ], 
       [
-        "hot-showers"
+        "fitness-area"
       ]
     ], 
     "address": "Lungomare Murri", 
@@ -45025,10 +45007,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "five-a-side"
       ], 
       [
         "wi-fi"
@@ -45041,9 +45023,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "hot-showers"
@@ -45081,13 +45060,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "five-a-side"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "internet"
       ], 
       [
         "bicycles"
@@ -45215,10 +45194,10 @@
     ], 
     "services": [
       [
-        "entertainment"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "entertainment"
       ], 
       [
         "beach-volley"
@@ -45397,7 +45376,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "double-sun-bed"
@@ -45491,10 +45470,10 @@
     ], 
     "services": [
       [
-        "petanque"
+        "baby-park"
       ], 
       [
-        "playground"
+        "petanque"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -45573,16 +45552,16 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "hot-showers"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare di Vittorio", 
@@ -45699,10 +45678,10 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "baby-park"
       ], 
       [
-        "playground"
+        "beach-volley"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -45737,10 +45716,10 @@
     ], 
     "services": [
       [
-        "children-entertainment"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "children-entertainment"
       ], 
       [
         "beach-volley"
@@ -45866,7 +45845,7 @@
     ], 
     "services": [
       [
-        "playground"
+        "baby-park"
       ], 
       [
         "ping-pong"
@@ -45910,13 +45889,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "credit-cards-accepted"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "internet"
       ], 
       [
         "beach-racket-court"
@@ -45963,9 +45942,6 @@
       ], 
       [
         "lockers"
-      ], 
-      [
-        "playground"
       ], 
       [
         "baby-park"
@@ -46018,6 +45994,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "beach-volley"
       ], 
       [
@@ -46028,9 +46007,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -46065,7 +46041,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "petanque"
@@ -46156,7 +46132,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "jacuzzi"
@@ -46206,7 +46182,7 @@
     ], 
     "services": [
       [
-        "internet"
+        "wi-fi"
       ], 
       [
         "nursery"
@@ -46259,7 +46235,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "lockers"
@@ -46347,22 +46323,19 @@
     ], 
     "services": [
       [
-        "gym"
+        "bar"
       ], 
       [
-        "internet"
+        "fitness-area"
       ], 
       [
-        "massages"
+        "wi-fi"
       ], 
       [
         "baby-park"
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -46453,10 +46426,10 @@
     ], 
     "services": [
       [
-        "refrigerators"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "refrigerators"
       ], 
       [
         "bicycles"
@@ -46509,7 +46482,7 @@
     ], 
     "services": [
       [
-        "massages"
+        "bar"
       ], 
       [
         "aperitif"
@@ -46555,22 +46528,22 @@
     "languages": [], 
     "services": [
       [
+        "bar"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "beach-volley"
       ], 
       [
         "entertainment"
       ], 
       [
-        "massages"
-      ], 
-      [
         "nursery"
       ], 
       [
         "sparring-vlup"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -46598,13 +46571,13 @@
     "languages": [], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "petanque"
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "", 
@@ -46680,6 +46653,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "lockers"
       ], 
       [
@@ -46690,9 +46666,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -46730,6 +46703,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "lockers"
       ], 
       [
@@ -46740,9 +46716,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "", 
@@ -46793,9 +46766,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -46822,6 +46792,12 @@
     "number": "99", 
     "languages": [], 
     "services": [
+      [
+        "basketball"
+      ], 
+      [
+        "dancing"
+      ], 
       [
         "bar"
       ], 
@@ -46853,9 +46829,6 @@
         "entertainment"
       ], 
       [
-        "beach-basket"
-      ], 
-      [
         "acquagym"
       ], 
       [
@@ -46871,16 +46844,10 @@
         "fitness-area"
       ], 
       [
-        "playground"
-      ], 
-      [
         "baby-sitter"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "gym"
       ], 
       [
         "catering"
@@ -46890,9 +46857,6 @@
       ], 
       [
         "gymnastics"
-      ], 
-      [
-        "internet"
       ], 
       [
         "wi-fi"
@@ -46937,9 +46901,6 @@
         "schoolchildren"
       ], 
       [
-        "spinning"
-      ], 
-      [
         "yoga"
       ], 
       [
@@ -46949,9 +46910,6 @@
         "helmet-deposit"
       ], 
       [
-        "board-games"
-      ], 
-      [
         "cards-table"
       ], 
       [
@@ -46959,12 +46917,6 @@
       ], 
       [
         "beach-volley-courses"
-      ], 
-      [
-        "wellness-area"
-      ], 
-      [
-        "sandwich-shop"
       ], 
       [
         "table-tournaments"
@@ -47026,7 +46978,7 @@
         "hot-showers"
       ], 
       [
-        "gym"
+        "fitness-area"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -47061,6 +47013,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "beach-volley"
       ], 
       [
@@ -47080,9 +47035,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Lungomare Di Vittorio", 
@@ -47161,13 +47113,13 @@
     ], 
     "services": [
       [
+        "bar"
+      ], 
+      [
         "petanque"
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "massages"
       ], 
       [
         "nursery"
@@ -47208,10 +47160,10 @@
     ], 
     "services": [
       [
-        "petanque"
+        "baby-park"
       ], 
       [
-        "playground"
+        "petanque"
       ], 
       [
         "hot-showers"
@@ -47249,6 +47201,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "petanque"
       ], 
       [
@@ -47265,9 +47220,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "V.le Regina Margherita", 
@@ -47387,6 +47339,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "children-entertainment"
       ], 
       [
@@ -47394,9 +47349,6 @@
       ], 
       [
         "baby-park"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "Via delle Colonie", 
@@ -47424,6 +47376,9 @@
     "languages": [], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "beach-volley"
       ], 
       [
@@ -47437,9 +47392,6 @@
       ], 
       [
         "bicycles"
-      ], 
-      [
-        "playground"
       ], 
       [
         "nursery"
@@ -47551,10 +47503,10 @@
     "languages": [], 
     "services": [
       [
-        "children-entertainment"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "children-entertainment"
       ], 
       [
         "hot-showers"
@@ -47636,13 +47588,13 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "bicycles"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "", 
@@ -47670,6 +47622,9 @@
     "languages": [], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -47683,9 +47638,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "di Casadei Primo", 
@@ -47720,6 +47672,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "lockers"
       ], 
       [
@@ -47730,9 +47685,6 @@
       ], 
       [
         "bicycles"
-      ], 
-      [
-        "gym"
       ]
     ], 
     "address": "di Casadei Fausto", 
@@ -48183,10 +48135,10 @@
     ], 
     "services": [
       [
-        "entertainment"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "entertainment"
       ], 
       [
         "children-entertainment"
@@ -48224,6 +48176,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "bicycles"
       ], 
       [
@@ -48231,9 +48186,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -48271,10 +48223,10 @@
     ], 
     "services": [
       [
-        "playground"
+        "baby-park"
       ], 
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "petanque"
@@ -48312,6 +48264,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "bicycles"
       ], 
       [
@@ -48319,9 +48274,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -48372,9 +48324,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -48460,9 +48409,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -48544,13 +48490,13 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "entertainment"
       ], 
       [
         "bicycles"
-      ], 
-      [
-        "gym"
       ], 
       [
         "children-entertainment"
@@ -48588,10 +48534,10 @@
     ], 
     "services": [
       [
-        "ping-pong"
+        "baby-park"
       ], 
       [
-        "playground"
+        "ping-pong"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -48626,6 +48572,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "credit-cards-accepted"
       ], 
       [
@@ -48639,9 +48588,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -48683,9 +48629,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "petanque"
@@ -48732,9 +48675,6 @@
         "beach-racket-court"
       ], 
       [
-        "playground"
-      ], 
-      [
         "petanque"
       ]
     ], 
@@ -48770,10 +48710,10 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "baby-park"
       ], 
       [
-        "playground"
+        "beach-volley"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -48808,13 +48748,13 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "ping-pong"
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Lungomare Spadazzi", 
@@ -48896,6 +48836,9 @@
     ], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
         "lockers"
       ], 
       [
@@ -48903,9 +48846,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "gym"
       ], 
       [
         "picnic-area"
@@ -48943,13 +48883,13 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "basketball"
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Viale Principe di Piemonte", 
@@ -48992,9 +48932,6 @@
         "bookstore"
       ], 
       [
-        "playground"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -49002,6 +48939,9 @@
       ], 
       [
         "basketball"
+      ], 
+      [
+        "baby-park"
       ]
     ], 
     "address": "Via Ortigara - San Giuliano Mare", 
@@ -49029,7 +48969,7 @@
     "languages": [], 
     "services": [
       [
-        "playground"
+        "baby-park"
       ], 
       [
         "ping-pong"
@@ -49082,9 +49022,6 @@
         "baby-park"
       ], 
       [
-        "playground"
-      ], 
-      [
         "entertainment"
       ]
     ], 
@@ -49120,9 +49057,6 @@
       ], 
       [
         "baby-park"
-      ], 
-      [
-        "playground"
       ], 
       [
         "pet-friendly"
@@ -49235,13 +49169,13 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "ping-pong"
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Via Toscanelli", 
@@ -49276,6 +49210,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "beach-volley"
       ], 
       [
@@ -49286,9 +49223,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "", 
@@ -49374,9 +49308,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -49515,9 +49446,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Via Toscanelli", 
@@ -49565,9 +49493,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Via Toscanelli", 
@@ -49640,6 +49565,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "beach-volley"
       ], 
       [
@@ -49647,9 +49575,6 @@
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Via Toscanelli", 
@@ -49816,6 +49741,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "credit-cards-accepted"
       ], 
       [
@@ -49826,9 +49754,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ], 
       [
         "entertainment"
@@ -49862,10 +49787,10 @@
     "languages": [], 
     "services": [
       [
-        "baby-park"
+        "wi-fi"
       ], 
       [
-        "internet"
+        "baby-park"
       ], 
       [
         "children-entertainment"
@@ -49931,9 +49856,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "petanque"
@@ -50011,6 +49933,9 @@
     "languages": [], 
     "services": [
       [
+        "bar"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -50018,12 +49943,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "massages"
-      ], 
-      [
-        "playground"
       ], 
       [
         "nursery"
@@ -50067,16 +49986,16 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "five-a-side"
       ], 
       [
-        "gym"
-      ], 
-      [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "", 
@@ -50111,6 +50030,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "ping-pong"
       ], 
       [
@@ -50118,9 +50040,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "Via Porto Palos", 
@@ -50278,10 +50197,10 @@
     ], 
     "services": [
       [
-        "five-a-side"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "five-a-side"
       ], 
       [
         "lockers"
@@ -50331,7 +50250,7 @@
     ], 
     "services": [
       [
-        "evening-entertainment"
+        "entertainment"
       ], 
       [
         "lockers"
@@ -50390,9 +50309,6 @@
         "ping-pong"
       ], 
       [
-        "playground"
-      ], 
-      [
         "basketball"
       ], 
       [
@@ -50431,7 +50347,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "picnic-area"
@@ -50481,6 +50397,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "picnic-area"
       ], 
       [
@@ -50488,9 +50407,6 @@
       ], 
       [
         "ping-pong"
-      ], 
-      [
-        "playground"
       ], 
       [
         "basketball"
@@ -50531,7 +50447,7 @@
     ], 
     "services": [
       [
-        "gym"
+        "fitness-area"
       ], 
       [
         "picnic-area"
@@ -50675,10 +50591,10 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "fitness-area"
       ], 
       [
-        "gym"
+        "beach-volley"
       ], 
       [
         "entertainment"
@@ -50809,9 +50725,6 @@
       ]
     ], 
     "services": [
-      [
-        "evening-entertainment"
-      ], 
       [
         "nursery"
       ], 
@@ -50983,9 +50896,6 @@
     ], 
     "services": [
       [
-        "playground"
-      ], 
-      [
         "beach-volley"
       ], 
       [
@@ -51030,10 +50940,10 @@
     ], 
     "services": [
       [
-        "beach-volley"
+        "baby-park"
       ], 
       [
-        "playground"
+        "beach-volley"
       ], 
       [
         "entertainment"
@@ -51156,16 +51066,16 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "lockers"
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "gym"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "", 
@@ -51247,6 +51157,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "picnic-area"
       ], 
       [
@@ -51254,9 +51167,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ], 
       [
         "beach-racket-court"
@@ -51508,6 +51418,9 @@
     ], 
     "services": [
       [
+        "baby-park"
+      ], 
+      [
         "entertainment"
       ], 
       [
@@ -51518,9 +51431,6 @@
       ], 
       [
         "petanque"
-      ], 
-      [
-        "playground"
       ]
     ], 
     "address": "via Porto Palos, 38/F", 
@@ -54162,9 +54072,6 @@
         "catering"
       ], 
       [
-        "internet"
-      ], 
-      [
         "wi-fi"
       ], 
       [
@@ -54196,9 +54103,6 @@
       ], 
       [
         "credit-cards-accepted"
-      ], 
-      [
-        "sandwich-shop"
       ]
     ], 
     "address": "Lungomare della Costituzione Zona 97", 
@@ -54970,6 +54874,12 @@
     "languages": [], 
     "services": [
       [
+        "fitness-area"
+      ], 
+      [
+        "games"
+      ], 
+      [
         "baby-park"
       ], 
       [
@@ -54997,13 +54907,7 @@
         "beach-racket-court"
       ], 
       [
-        "playground"
-      ], 
-      [
         "canoes"
-      ], 
-      [
-        "gym"
       ], 
       [
         "sports-tournaments"
@@ -55034,9 +54938,6 @@
       ], 
       [
         "pet-friendly"
-      ], 
-      [
-        "board-games"
       ]
     ], 
     "address": "Viale D'Annunzio", 
@@ -57336,9 +57237,6 @@
         "baby-park"
       ], 
       [
-        "board-games"
-      ], 
-      [
         "children-entertainment"
       ], 
       [
@@ -57358,6 +57256,9 @@
       ], 
       [
         "sea-mattresses"
+      ], 
+      [
+        "games"
       ]
     ], 
     "address": "Via A. Pinzon", 
@@ -57910,9 +57811,6 @@
         "baby-sitter"
       ], 
       [
-        "gym"
-      ], 
-      [
         "live-concerts"
       ], 
       [
@@ -57926,9 +57824,6 @@
       ], 
       [
         "dj-set"
-      ], 
-      [
-        "internet"
       ], 
       [
         "wi-fi"
@@ -57949,12 +57844,6 @@
         "bicycles"
       ], 
       [
-        "massages"
-      ], 
-      [
-        "evening-entertainment"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -57964,13 +57853,7 @@
         "jacuzzi"
       ], 
       [
-        "beauty-treatments"
-      ], 
-      [
         "solarium"
-      ], 
-      [
-        "sun-terrace"
       ], 
       [
         "rowing-boats"
@@ -58012,22 +57895,10 @@
         "helmet-deposit"
       ], 
       [
-        "board-games"
-      ], 
-      [
         "barbecue-area"
       ], 
       [
         "beach-volley-courses"
-      ], 
-      [
-        "wellness-area"
-      ], 
-      [
-        "sandwich-shop"
-      ], 
-      [
-        "dance-parties"
       ], 
       [
         "celiac-cooking"
@@ -58043,6 +57914,12 @@
       ], 
       [
         "pizzeria"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
+        "games"
       ]
     ], 
     "address": "Riviera Adriatica, Estate 2014", 
@@ -58190,6 +58067,9 @@
     "languages": [], 
     "services": [
       [
+        "dancing"
+      ], 
+      [
         "bar"
       ], 
       [
@@ -58209,9 +58089,6 @@
       ], 
       [
         "beach-racket-court"
-      ], 
-      [
-        "playground"
       ], 
       [
         "basketball"
@@ -58251,12 +58128,6 @@
       ], 
       [
         "helmet-deposit"
-      ], 
-      [
-        "wellness-area"
-      ], 
-      [
-        "sandwich-shop"
       ], 
       [
         "celiac-cooking"
@@ -72125,6 +71996,15 @@
   }
 },
 {
+  "pk": 76, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2014-12-10T15:44:42.402Z", 
+    "app_name": "bagni", 
+    "migration": "0038_auto__add_field_service_hidden"
+  }
+},
+{
   "pk": 5, 
   "model": "auth.user", 
   "fields": {
@@ -72134,7 +72014,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-11-13T14:16:36.913Z", 
+    "last_login": "2014-12-10T15:53:53.363Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
