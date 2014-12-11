@@ -42,6 +42,7 @@ class Service(BaseModel):
     category = models.ForeignKey(ServiceCategory, blank=True, null=True, related_name='services', verbose_name=_("Category"),)
     image = ImageField(upload_to="images/services", verbose_name=_("Image"), blank=True, null=True)
     free = models.BooleanField(default=True,)
+    hidden = models.BooleanField(default=False,)
 
     @models.permalink
     def get_absolute_url(self):

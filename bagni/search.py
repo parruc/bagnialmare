@@ -135,7 +135,7 @@ def search(q, filters, groups, query_string, max_facets=5):
         facet_groups = {}
         active_facets = []
         querysets = {}
-        querysets['services'] = Service.objects.values('slug', 'name',
+        querysets['services'] = Service.objects.values('slug', 'name', 'hidden',
                                                        'category__slug',
                                                        'category__name',
                                                        'category__order')
@@ -163,6 +163,8 @@ def search(q, filters, groups, query_string, max_facets=5):
                         if o['slug'] == facet_slug:
                             obj = o
                             break
+                    if obj['hidden']:
+                        continue
                     group_slug = obj['category__slug']
                     group_name = obj['category__name']
                     group_order = obj['category__order']
