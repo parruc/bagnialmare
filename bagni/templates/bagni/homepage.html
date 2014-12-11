@@ -83,11 +83,13 @@
         <div id="collapse{{ forloop.counter }}" class="collapse {% if forloop.counter < 3 %} in {% endif %}" >
           <div class="row">
           {% for facility in facility_category.services.all %}
-            <div class="col-sm-3 col-xs-4 modal-facility-row">
-              <p>
-                <a href="#" onclick="populateWhatField(this)">{% trans facility.name %}</a>
-              </p>
-            </div>
+		{% if not facility.hidden %}
+		    <div class="col-sm-3 col-xs-4 modal-facility-row">
+		      <p>
+		        <a href="#" onclick="populateWhatField(this)">{% trans facility.name %}</a>
+		      </p>
+		    </div>
+		{% endif %}
           {% endfor %}
           </div>
         </div>

@@ -32,6 +32,8 @@ class SearchView(TemplateView):
         q = self.request.GET.get('q', "").strip()
         try:
             selected_facet = Service.objects.get(name__iexact=q)
+            if selected_facet.hidden:
+                selected_facet = None
         except ObjectDoesNotExist:
             selected_facet = None
         page = self.request.GET.get('p', "1")

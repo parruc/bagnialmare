@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from ..models.services import ServiceCategory
+from ..models.services import ServiceCategory, Service
 
 import logging
 logging.basicConfig()
@@ -15,7 +15,7 @@ class HomepageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(HomepageView, self).get_context_data(**kwargs)
-        context.update({'facility_categories': self.queryset.all().order_by('order')})
+        context.update({'facility_categories': self.queryset.filter(order__lt=10).order_by('order')})
         return context
 
 
