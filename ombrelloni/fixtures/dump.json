@@ -71176,10 +71176,10 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-11-06T16:17:10.517Z", 
+    "last_login": "2014-12-17T13:45:19.031Z", 
     "groups": [], 
     "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=", 
+    "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
     "email": "nicola.valentini@gmail.com", 
     "date_joined": "2014-04-27T16:38:16Z"
   }
