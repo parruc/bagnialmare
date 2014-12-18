@@ -13438,11 +13438,11 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 35	pbkdf2_sha256$12000$pR5OajQT0n0Q$jQwUqr26bOOU/YTCCZnnC0SigXLpjmqU1cU8zd50hrI=	2014-07-14 13:13:33.418234-04	f	info8	Andrea 	Benvenuti	Info@bagnobenvenuti.com	f	t	2014-07-14 13:13:33.41836-04
 21	pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=	2014-06-10 15:42:53.620993-04	f	info2	Alessandro	Bologna	info@bagnoegisto38.com	f	t	2014-06-10 15:42:30.977587-04
 27	pbkdf2_sha256$12000$M8DNWk0GsITH$nDMqXwY/f+pyOZesiOq/IXAgnbLctQG6NaN8xPrQ3Jw=	2014-07-03 03:36:54.590939-04	f	spiaggia23riccione	fabio	russo	spiaggia23riccione@email.it	f	t	2014-07-01 09:43:25.018905-04
-6	pbkdf2_sha256$12000$vy0r0ftsK0bW$q/e++/EFuIJfnFuEbiUhk3D/mfupLiQUKLr+KM9sq0E=	2014-11-06 11:17:10.51791-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 8	pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=	2014-07-18 05:47:11.92466-04	t	benve	Marco	Benvenuto	marco.benvenuto1@gmail.com	t	t	2014-04-28 08:49:04-04
 33	pbkdf2_sha256$12000$j9OmgKtAiQ0o$FOzocb0UIglY30orXTC1t+BHVVYRv+0fTKvjHuraEHs=	2014-07-08 16:11:36.080259-04	f	simonegriffi	Simone	Griffi	simonegriffi@gmail.com	f	t	2014-07-08 16:08:25.260922-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-12-10 10:53:53.36386-05	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.com	f	t	2014-07-02 15:15:51.370099-04
+6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2014-12-17 08:45:19.031499-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 \.
 
 
@@ -25902,6 +25902,7 @@ l35r5e9wn4gvlzpkdanhnlz4cnh0uszs	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ
 6oi5buiqgj1y0u0uy24nv9x6eli4eb1q	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-11-27 09:16:36.918929-05
 upop15f5l0j9ib9y4x0ko6vqzgxr1pi2	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-12-24 10:53:53.369652-05
 oedtymdvqgii0zd47uciwj62yp9u8j2b	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-08-23 05:25:45.585329-04
+mg1md5im4gniuk67s75b753l35mkzvju	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2014-12-31 08:45:19.036187-05
 \.
 
 
