@@ -13425,7 +13425,6 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 36	pbkdf2_sha256$12000$XdtWL7enAmzs$cP8cfJrO3D7QUD0+fet4O/jIQTaELyZol+SmuAGmZgU=	2014-07-20 17:22:12.057004-04	f	igabbianibeach	fabrizio	signorini	igabbianibeach@hotmail.it	f	t	2014-07-20 17:20:24.766338-04
 23	pbkdf2_sha256$12000$9HGSWgDAfogg$LQl8XdSbUvJf680fL9nKQOo+HSCLesS9V/pBeqkWcG4=	2014-06-11 02:45:26.391524-04	f	info3	fabio	pezzei	info@bagno55rimini.com	f	t	2014-06-11 02:37:05.174293-04
 29	pbkdf2_sha256$12000$rdh8idtD4T8F$pbEiPPTZFmOhw01fWS/Sjgmjpatx61h5LwmaQr39ulg=	2014-07-07 00:53:52.741379-04	f	marcomarchetti.ing	Marco	Marchetti	marcomarchetti.ing@gmail.com	f	t	2014-07-07 00:53:20.098341-04
-7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-08-03 05:47:58.059513-04	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 24	pbkdf2_sha256$12000$epMiSQuwsn2v$XMqOSbi+TS++FOYVXEpU0SNmuqrCCBTsN4xZQvC3nqo=	2014-06-26 13:01:18.341567-04	f	info4	eros	fabbri	info@bagnomeridiano.it	f	t	2014-06-26 12:53:42.035262-04
 25	pbkdf2_sha256$12000$Vn85R5b1GMqi$ZfM5hcAbZc3CTsDwycjZaCOIzbx6MjWtRjOVlhF1x38=	2014-06-27 18:15:29.63828-04	f	info5	Rosa	Dallaporta	Info@bagnomexico.com	f	t	2014-06-27 18:14:31.022011-04
 34	pbkdf2_sha256$12000$XKjE6dyuPrHn$8nUh11D/tXesF4vtnuMge0zmRkJnqTxEemig/P7MJJ0=	2014-07-13 15:54:28.157134-04	f	stefano___ricci	stefano	ricci	stefano___ricci@alice.it	f	t	2014-07-11 08:12:54.056516-04
@@ -13443,6 +13442,7 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-12-10 10:53:53.36386-05	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.com	f	t	2014-07-02 15:15:51.370099-04
 6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2014-12-17 08:45:19.031499-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
+7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-12-28 11:23:54.90763-05	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 \.
 
 
@@ -25903,6 +25903,7 @@ l35r5e9wn4gvlzpkdanhnlz4cnh0uszs	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ
 upop15f5l0j9ib9y4x0ko6vqzgxr1pi2	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-12-24 10:53:53.369652-05
 oedtymdvqgii0zd47uciwj62yp9u8j2b	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-08-23 05:25:45.585329-04
 mg1md5im4gniuk67s75b753l35mkzvju	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2014-12-31 08:45:19.036187-05
+p9km09qmr1e908a6t1cpm14jc881rfu8	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2015-01-11 11:23:54.911903-05
 \.
 
 
