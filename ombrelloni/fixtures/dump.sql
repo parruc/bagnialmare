@@ -13441,8 +13441,8 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 33	pbkdf2_sha256$12000$j9OmgKtAiQ0o$FOzocb0UIglY30orXTC1t+BHVVYRv+0fTKvjHuraEHs=	2014-07-08 16:11:36.080259-04	f	simonegriffi	Simone	Griffi	simonegriffi@gmail.com	f	t	2014-07-08 16:08:25.260922-04
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-12-10 10:53:53.36386-05	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.com	f	t	2014-07-02 15:15:51.370099-04
-6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2014-12-17 08:45:19.031499-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-12-28 11:23:54.90763-05	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
+6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2015-01-03 12:14:57.421944-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 \.
 
 
@@ -25904,6 +25904,7 @@ upop15f5l0j9ib9y4x0ko6vqzgxr1pi2	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM
 oedtymdvqgii0zd47uciwj62yp9u8j2b	NmQxMDUzYzg3ZTI4Mjk2ZmYyMmNiMWM0MmI0NTFkMjM3YjM5ODk5OTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6NX0=	2014-08-23 05:25:45.585329-04
 mg1md5im4gniuk67s75b753l35mkzvju	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2014-12-31 08:45:19.036187-05
 p9km09qmr1e908a6t1cpm14jc881rfu8	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2015-01-11 11:23:54.911903-05
+4dxp01f7btv43garo9yh8pyymgdy0ac4	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2015-01-17 12:14:57.451965-05
 \.
 
 
@@ -31177,6 +31178,7 @@ COPY userfeedback_userfeedback (id, email, created, notified, bagno_id) FROM std
 17	sognodelmare@gmail.com	2014-09-20 18:21:59.197552-04	f	12847
 18	stefano.bruno.volley@alice.it	2014-10-16 14:53:58.761026-04	f	13264
 19	info@bagnoaragosta.it	2014-10-20 13:22:16.690484-04	f	13099
+20	robintur@alice.it	2015-01-03 03:53:12.719833-05	f	13053
 \.
 
 
@@ -31184,7 +31186,7 @@ COPY userfeedback_userfeedback (id, email, created, notified, bagno_id) FROM std
 -- Name: userfeedback_userfeedback_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('userfeedback_userfeedback_id_seq', 19, true);
+SELECT pg_catalog.setval('userfeedback_userfeedback_id_seq', 20, true);
 
 
 --
