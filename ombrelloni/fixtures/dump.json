@@ -69614,6 +69614,18 @@
   }
 },
 {
+  "pk": 20, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-stella-2"
+    ], 
+    "email": "robintur@alice.it", 
+    "created": "2015-01-03T08:53:12.719Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
@@ -71176,7 +71188,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-12-17T13:45:19.031Z", 
+    "last_login": "2015-01-03T17:14:57.421Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
