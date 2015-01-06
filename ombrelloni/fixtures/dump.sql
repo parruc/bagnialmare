@@ -31179,6 +31179,7 @@ COPY userfeedback_userfeedback (id, email, created, notified, bagno_id) FROM std
 18	stefano.bruno.volley@alice.it	2014-10-16 14:53:58.761026-04	f	13264
 19	info@bagnoaragosta.it	2014-10-20 13:22:16.690484-04	f	13099
 20	robintur@alice.it	2015-01-03 03:53:12.719833-05	f	13053
+21	C.SUZZI@CONFARTIGIANATOFC.IT	2015-01-05 10:40:48.537512-05	f	12925
 \.
 
 
@@ -31186,7 +31187,7 @@ COPY userfeedback_userfeedback (id, email, created, notified, bagno_id) FROM std
 -- Name: userfeedback_userfeedback_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('userfeedback_userfeedback_id_seq', 20, true);
+SELECT pg_catalog.setval('userfeedback_userfeedback_id_seq', 21, true);
 
 
 --
