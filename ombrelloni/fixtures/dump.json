@@ -69626,6 +69626,18 @@
   }
 },
 {
+  "pk": 21, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-dombachi"
+    ], 
+    "email": "C.SUZZI@CONFARTIGIANATOFC.IT", 
+    "created": "2015-01-05T15:40:48.537Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
