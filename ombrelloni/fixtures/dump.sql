@@ -13442,7 +13442,7 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 5	pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=	2014-12-10 10:53:53.36386-05	t	parruc	Matteo	Parrucci	parruc@gmail.com	t	t	2014-04-27 12:36:54-04
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.com	f	t	2014-07-02 15:15:51.370099-04
 7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-12-28 11:23:54.90763-05	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
-6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2015-01-12 11:36:29.223459-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
+6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2015-01-21 12:54:04.786475-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
 \.
 
 
@@ -25906,6 +25906,7 @@ mg1md5im4gniuk67s75b753l35mkzvju	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDh
 p9km09qmr1e908a6t1cpm14jc881rfu8	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ5Y2FlYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6N30=	2015-01-11 11:23:54.911903-05
 4dxp01f7btv43garo9yh8pyymgdy0ac4	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2015-01-17 12:14:57.451965-05
 npgluyfduku0g5uv89zq989ovzyuzu95	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2015-01-26 11:36:29.228461-05
+bslvorapuc1nc66hf8q7v2h9jwcjoiyf	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2015-02-04 12:54:04.7911-05
 \.
 
 
