@@ -48934,22 +48934,64 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5391354899999872 44.0888943200000014)", 
-    "modified": "2014-07-07T14:17:33.304Z", 
+    "modified": "2015-01-24T23:31:25.217Z", 
     "description_en": "", 
     "number": "29/30/31/32/33 nord", 
     "languages": [], 
     "services": [
       [
-        "wi-fi"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
         "children-entertainment"
       ], 
       [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "happy-hour"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "five-a-side"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "aperitif"
+      ], 
+      [
+        "swimming-lessons"
       ], 
       [
         "hot-showers"
@@ -48958,14 +49000,17 @@
         "pet-friendly"
       ], 
       [
-        "lockers"
+        "cocktail-bar"
       ], 
       [
-        "beach-racket-court"
+        "beach-volley-courses"
+      ], 
+      [
+        "picnic-area"
       ]
     ], 
     "address": "Via Dati", 
-    "description_it": "None", 
+    "description_it": "<p>None</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "playa-tamarindo", 
@@ -51008,7 +51053,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6811935400000007 43.9913136600000030)", 
-    "modified": "2014-07-08T14:15:59.103Z", 
+    "modified": "2015-01-24T16:51:24.530Z", 
     "description_en": "", 
     "number": "23", 
     "languages": [], 
@@ -69888,6 +69933,16 @@
   }
 },
 {
+  "pk": 36, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 33, 
+    "key": "f0452ee3766e59be94fe3aa96bc11be7c61b06372c261ade5b10eb64b90e77dc", 
+    "sent": "2015-01-24T23:24:07.625Z", 
+    "created": "2015-01-24T23:24:07.369Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -71587,6 +71642,24 @@
   }
 },
 {
+  "pk": 37, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "elenalazzarini", 
+    "first_name": "Elena", 
+    "last_name": "Lazzarini", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2015-01-24T23:32:00.707Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$I5HnuHHZEw1E$D5ZbPVDFjmdNKXHZ81O3teS4gf2BDJQnp146z6LM+0g=", 
+    "email": "elenalazzarini@hotmail.com", 
+    "date_joined": "2015-01-24T23:24:05.326Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -71856,6 +71929,18 @@
     ], 
     "primary": true, 
     "email": "igabbianibeach@hotmail.it"
+  }
+},
+{
+  "pk": 33, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "elenalazzarini"
+    ], 
+    "primary": true, 
+    "email": "elenalazzarini@hotmail.com"
   }
 },
 {
@@ -72333,6 +72418,26 @@
   }
 },
 {
+  "pk": 30, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Lazzarini", 
+    "name": "Elena", 
+    "created": "2015-01-24T23:24:05.507Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2015-01-24T23:24:06.778Z", 
+    "user": [
+      "elenalazzarini"
+    ], 
+    "bagni": [
+      [
+        "playa-tamarindo"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -72560,6 +72665,16 @@
       "igabbianibeach"
     ], 
     "old_email": "igabbianibeach@hotmail.it"
+  }
+},
+{
+  "pk": 24, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "elenalazzarini"
+    ], 
+    "old_email": "elenalazzarini@hotmail.com"
   }
 },
 {
@@ -86586,7 +86701,7 @@
     "bagno": [
       "bagni-malibu"
     ], 
-    "number": "331.1398546", 
+    "number": "331 1398546", 
     "name": "mob", 
     "slug": "mobile-number-184"
   }
