@@ -13212,6 +13212,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 30	34	stefano___ricci@alice.it	t	t
 31	35	Info@bagnobenvenuti.com	f	t
 32	36	igabbianibeach@hotmail.it	t	t
+33	37	elenalazzarini@hotmail.com	t	t
 \.
 
 
@@ -13219,7 +13220,7 @@ COPY account_emailaddress (id, user_id, email, verified, "primary") FROM stdin;
 -- Name: account_emailaddress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailaddress_id_seq', 32, true);
+SELECT pg_catalog.setval('account_emailaddress_id_seq', 33, true);
 
 
 --
@@ -13252,6 +13253,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 30	28	2014-07-08 12:21:23.620994-04	2014-07-08 12:21:25.530129-04	1c028579899b75d2c4040df6cd7ec680da755114da198768b54218a2502bcf48
 31	29	2014-07-08 16:08:28.245006-04	2014-07-08 16:08:28.5138-04	09c01a24a5fd2bc1aaf5d504de93142e892998e2c6a35298b6585160f6c57425
 32	30	2014-07-11 08:12:57.062329-04	2014-07-11 08:12:57.304421-04	5ddefdc91e77855db6e21577e8c56bbccbe7584c2ee19ecd25b664083d72f94d
+36	33	2015-01-24 18:24:07.369693-05	2015-01-24 18:24:07.625769-05	f0452ee3766e59be94fe3aa96bc11be7c61b06372c261ade5b10eb64b90e77dc
 \.
 
 
@@ -13259,7 +13261,7 @@ COPY account_emailconfirmation (id, email_address_id, created, sent, key) FROM s
 -- Name: account_emailconfirmation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 35, true);
+SELECT pg_catalog.setval('account_emailconfirmation_id_seq', 36, true);
 
 
 --
@@ -13443,6 +13445,7 @@ COPY auth_user (id, password, last_login, is_superuser, username, first_name, la
 28	pbkdf2_sha256$12000$kmCfEZbDS4ZO$y+djLfyRcrA/ca5MW6qFKARF+b5gvgNmGNQNvdhBf9o=	2014-07-03 05:14:47.006737-04	f	infochaplyn	gaetano	d'ambra	infochaplyn@gmail.com	f	t	2014-07-02 15:15:51.370099-04
 7	pbkdf2_sha256$12000$IiM3ezznp21S$dvxYc0joZF+Hs7m4jTwnZ0fGk4aJWkY7BtarPQ2MnJg=	2014-12-28 11:23:54.90763-05	t	barto	Marco	Bartolini	marco.bartolini@gmail.com	t	t	2014-04-28 08:48:31-04
 6	pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=	2015-01-21 12:54:04.786475-05	t	inge	Nicola	Valentini	nicola.valentini@gmail.com	t	t	2014-04-27 12:38:16-04
+37	pbkdf2_sha256$12000$I5HnuHHZEw1E$D5ZbPVDFjmdNKXHZ81O3teS4gf2BDJQnp146z6LM+0g=	2015-01-24 18:32:00.707043-05	f	elenalazzarini	Elena	Lazzarini	elenalazzarini@hotmail.com	f	t	2015-01-24 18:24:05.326645-05
 \.
 
 
@@ -13465,7 +13468,7 @@ SELECT pg_catalog.setval('auth_user_groups_id_seq', 1, false);
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('auth_user_id_seq', 36, true);
+SELECT pg_catalog.setval('auth_user_id_seq', 37, true);
 
 
 --
@@ -13514,6 +13517,7 @@ COPY authauth_manager (id, user_id, privacy, tos, name, surname, created, modifi
 27	34	t	t	stefano	ricci	2014-07-11 08:12:54.618699-04	2014-07-11 08:12:56.248591-04
 28	35	t	t	Andrea 	Benvenuti	2014-07-14 13:13:33.615386-04	2014-07-14 13:13:35.359027-04
 29	36	t	t	fabrizio	signorini	2014-07-20 17:20:24.944668-04	2014-07-20 17:20:26.192571-04
+30	37	t	t	Elena	Lazzarini	2015-01-24 18:24:05.507327-05	2015-01-24 18:24:06.778785-05
 \.
 
 
@@ -13540,6 +13544,7 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 19	27	13803
 20	28	12951
 21	29	13834
+22	30	13577
 \.
 
 
@@ -13547,14 +13552,14 @@ COPY authauth_manager_bagni (id, manager_id, bagno_id) FROM stdin;
 -- Name: authauth_manager_bagni_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 21, true);
+SELECT pg_catalog.setval('authauth_manager_bagni_id_seq', 22, true);
 
 
 --
 -- Name: authauth_manager_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('authauth_manager_id_seq', 29, true);
+SELECT pg_catalog.setval('authauth_manager_id_seq', 30, true);
 
 
 --
@@ -13747,7 +13752,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 12956	Bagno adua	bagno-adua		Viale Bologna			0101000020E6100000000000A01BD128406A20143090194640	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 240<br />\n\tcabine: 17<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 4080<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 240<br />\n\tcabine: 17<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 4080<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 12957	Bagno al sole	bagno-al-sole		Viale Lungomare Ponente	bagno.alsole@tin.it		0101000020E6100000000000E0D2CA284009AFBC9CBE1A4640	<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 160<br />\n\tcabine: 19<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1530<br />\n\tdocce aperte: 2</p>	<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 160<br />\n\tcabine: 19<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1530<br />\n\tdocce aperte: 2</p>	\N	6	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13424	Bagno Isac	isac	14 sud	Lungomare Tintori			0101000020E61000008C945158EE2729401CF972558F094640	<h3>Details</h3>\r\n\t<p>cabine: 62<br />\r\n\tombrelloni: 224</p>	<h3>Details</h3>\r\n\t<p>cabine: 62<br />\r\n\tombrelloni: 224</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:03:55.464672-04
-13577	Bagno Playa Tamarindo	playa-tamarindo	29/30/31/32/33 nord	Via Dati		http://www.playatamarindo.it/	0101000020E610000065532391091429409F999AE3600B4640	None		None	32	t	2014-07-02 18:00:00-04	2014-07-07 10:17:33.304279-04
 13517	Bagno Coco Beach	coco-beach	106/B sud	Via delle Colonie			0101000020E610000059A5C212EE3829403794A12AA6054640	<h3><span style="font-size: 13px; line-height: 1.6;">Servizi aggiuntivi: corsi di aquagymn - tornei tra clienti - animazione per bambini senza baby-sitter - feste a tema - un giro in pedal&ograve; &egrave; compreso nel prezzo.</span></h3>\r\n		<h3><span style="font-size: 13px; line-height: 1.6;">Servizi aggiuntivi: corsi di aquagymn - tornei tra clienti - animazione per bambini senza baby-sitter - feste a tema - un giro in pedal&ograve; &egrave; compreso nel prezzo.</span></h3>\r\n	27	t	2014-07-02 18:00:00-04	2014-07-23 08:59:23.848702-04
 13667	Bagni Cesare	bagni-cesare	66	Riccione centro	info@bagnocesare66.it	http://www.bagnocesare66.it	0101000020E6100000B7F75F9D19552940F6A397071F004640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13613	Bagno Kamoke Beach	kamoke-beach	76 nord	via Porto Palos, 38/F	info@kamokebeach.it	http://www.kamokebeach.it	0101000020E610000000E185A56802294043EC653E940E4640	<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 260</p>\n<p>Servizi offerti corsi di ginnastica\r\n- tornei di beach volley, ping-pong e bocce Il bagno fa parte del consorzio Quality Beach, marchio di qualità per i servizi offerti, tra i quali c'è una particolare attenzione verso i disabili. Sono a disposizione:\r\n2 lettini rialzati\r\n1 poltrona per l'ingresso in acqua\r\n1 passerella larga 1 metro fino alla battigia\r\nbagno e spogliatoio attrezzato per l'ingresso di carrozzine</p>	<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 260</p>\n<p>Servizi offerti corsi di ginnastica\r\n- tornei di beach volley, ping-pong e bocce Il bagno fa parte del consorzio Quality Beach, marchio di qualità per i servizi offerti, tra i quali c'è una particolare attenzione verso i disabili. Sono a disposizione:\r\n2 lettini rialzati\r\n1 poltrona per l'ingresso in acqua\r\n1 passerella larga 1 metro fino alla battigia\r\nbagno e spogliatoio attrezzato per l'ingresso di carrozzine</p>	\N	34	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13833,7 +13837,6 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13431	Bagno Simone	simone	21 sud	Lungomare Tintori			0101000020E6100000F4E06A743929294090BC732843094640	<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>	<h3>Details</h3>\r\n\t<p>cabine: 48<br />\r\n\tombrelloni: 165</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:04:51.30339-04
 13415	Bagno Romano	romano	5 sud	Lungomare Tintori			0101000020E61000002AE9E7A1442629403DD92846F1094640				25	t	2014-07-02 18:00:00-04	2014-07-07 09:36:07.314202-04
 13434	Bagno Aldo	aldo	25 sud	Lungomare Tintori			0101000020E6100000E79E0BA9F6292940657506A117094640	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>www.comitatobagninirimini.it</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:37:15.186344-04
-13627	Bagni Malibù	bagni-malibu	23	Fontanelle Abissinia			0101000020E6100000CB175166C55C294098E3B25DE3FE4540				36	t	2014-07-02 18:00:00-04	2014-07-08 10:15:59.103239-04
 13445	Bagno La Dolce Vita	la-dolce-vita	34 sud	Lungomare Murri			0101000020E6100000494A755FA02B2940449550B0B5084640	<h3>Details</h3>\n\t<p>cabine: 115<br />\n\tombrelloni: 220</p>	<h3>Details</h3>\n\t<p>cabine: 115<br />\n\tombrelloni: 220</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13446	Bagno Paci Cristian	paci-cristian	35 sud	Lungomare Murri			0101000020E6100000C5799DACCF2B2940794375CEAA084640	<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 160</p>	<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 160</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13447	Bagno Nicoletta	nicoletta	36 sud	Lungomare Murri	carlosapori@virgilio.it	http://www.bagno36.it	0101000020E610000042A9C5F9FE2B2940AEF199EC9F084640	\n<p>Servizi offerti</p>	\n<p>Servizi offerti</p>	\N	25	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
@@ -13856,6 +13859,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13718	Bagni Sirio	bagni-sirio	117	Fogliano			0101000020E61000007BBDFBE3BD4A294092B8439AE3014640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13719	Bagni Monica	bagni-monica	118	Fogliano			0101000020E6100000D13FC1C58A4A29402E9B31B3EC014640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
 13720	Bagni Luciano	bagni-luciano	119	Fogliano	bagniluciano119@libero.it	http://www.bagniluciano119.it/home_.html	0101000020E610000027C286A7574A2940CA7D1FCCF5014640		\N	\N	36	t	2014-07-02 18:00:00-04	2014-07-02 18:00:00-04
+13627	Bagni Malibù	bagni-malibu	23	Fontanelle Abissinia			0101000020E6100000CB175166C55C294098E3B25DE3FE4540				36	t	2014-07-02 18:00:00-04	2015-01-24 11:51:24.530949-05
 13459	Bagno Giuseppe	giuseppe	49 sud	Lungomare Murri	info@hotelbelsoggiornorimini.it	http://www.hotelbelsoggiornorimini.it/spiaggia.php	0101000020E61000009612D0E4652E294062CA767412084640	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>	<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 08:58:43.065714-04
 13453	Bagno Rimini	rimini	42 sud	Lungomare Murri	aarongiulian@libero.it		0101000020E61000002EC6B6C81A2D2940ED0676A15E084640	<h3>Details</h3>\r\n\t<p>cabine: 66<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti tornei organizzati dai clienti\r\n- corsi di aquagymn e ginnastica</p>	<h3>Details</h3>\r\n\t<p>cabine: 66<br />\r\n\tombrelloni: 180</p>\r\n<p>Servizi offerti tornei organizzati dai clienti\r\n- corsi di aquagymn e ginnastica</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:31:43.546803-04
 13450	Bagno Carlo	carlo	39 sud	Lungomare Murri			0101000020E6100000B8373EE18C2C29404EFC07477F084640	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti tornei di briscola\r\n- tutti i mercoledì alle 16.30, fino alla fine di agosto corso gratuito di piadina romagnola a cura di tina</p>	<h3>Details</h3>\r\n\t<p>cabine: 70<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti tornei di briscola\r\n- tutti i mercoledì alle 16.30, fino alla fine di agosto corso gratuito di piadina romagnola a cura di tina</p>		25	t	2014-07-02 18:00:00-04	2014-07-07 09:36:39.067317-04
@@ -14614,6 +14618,7 @@ COPY bagni_bagno (id, name, slug, number, address, mail, site, point, descriptio
 13145	Bagno Roma	roma	33	Via Spiaggia, 33	agenzia.mario@libero.it	www.agenziaturisticamario.com	0101000020E6100000000000A0047F2840BF77D7D93E544640		\N	\N	13	t	2014-07-02 18:00:00-04	2014-12-11 11:56:25.694411-05
 13168	Mar Y Sol Bagno 57	mar-y-sol-bagno-57	57	Via Spiaggia, 57	info@marysolbagno57.it	www.marysolbagno57.it	0101000020E6100000000000B8E981284029A1DEEF9D524640		\N	\N	13	t	2014-07-02 18:00:00-04	2014-12-11 11:56:32.60029-05
 13027	Bagno meridiano	bagno-meridiano	34	Viale Milano, 34		http://www.bagnomeridiano.it/	0101000020E6100000060000307BD2284094AC4A5A29194640			<p>sdraio: 40<br />\r\nwc: 3<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 190<br />\r\ncabine: 29<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 2850</p>	6	t	2014-07-02 18:00:00-04	2014-12-11 11:56:36.245511-05
+13577	Bagno Playa Tamarindo	playa-tamarindo	29/30/31/32/33 nord	Via Dati		http://www.playatamarindo.it/	0101000020E610000065532391091429409F999AE3600B4640	<p>None</p>\r\n		<p>None</p>\r\n	32	t	2014-07-02 18:00:00-04	2015-01-24 18:31:25.217582-05
 \.
 
 
@@ -17337,7 +17342,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 93247	13420	2215
 93248	12927	2215
 93249	12960	2215
-93250	13577	2215
 93251	12976	2215
 93252	12987	2215
 93253	13000	2215
@@ -18259,13 +18263,6 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 91301	13450	2186
 91303	13450	2198
 91304	13450	2189
-91423	13577	2180
-91425	13577	2184
-91426	13577	2217
-91427	13577	2254
-91428	13577	2255
-91429	13577	2226
-91430	13577	2195
 91816	13465	2186
 91817	13465	2187
 91818	13465	2189
@@ -23451,6 +23448,29 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 93501	13168	2189
 93502	13184	2189
 93503	13164	2189
+93504	13577	2179
+93505	13577	2180
+93506	13577	2181
+93507	13577	2183
+93508	13577	2184
+93509	13577	2186
+93510	13577	2187
+93511	13577	2189
+93512	13577	2194
+93513	13577	2195
+93514	13577	2208
+93515	13577	2215
+93516	13577	2217
+93517	13577	2219
+93518	13577	2226
+93519	13577	2230
+93520	13577	2233
+93521	13577	2248
+93522	13577	2254
+93523	13577	2255
+93524	13577	2271
+93525	13577	2285
+93526	13577	2296
 \.
 
 
@@ -23458,7 +23478,7 @@ COPY bagni_bagno_services (id, bagno_id, service_id) FROM stdin;
 -- Name: bagni_bagno_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 93503, true);
+SELECT pg_catalog.setval('bagni_bagno_services_id_seq', 93526, true);
 
 
 --
@@ -24911,7 +24931,6 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 3115	mob	(luca)	13624	mobile-number-181
 3116	mob	347.8516008	13625	mobile-number-182
 3117	mob	335.7010179	13626	mobile-number-183
-3118	mob	331.1398546	13627	mobile-number-184
 3119	tel	600483 - 0541.612717	13628	telephone-number-757
 3120	fax	0541.612717	13628	fax-number-207
 3121	mob	338.3233969	13629	mobile-number-185
@@ -25182,6 +25201,7 @@ COPY bagni_telephone (id, name, number, bagno_id, slug) FROM stdin;
 3422	mob	339/5841447	13438	mob-7
 3423	mob	335/6569691	13438	mob-8
 3424	win	0541/721766	13438	win-2
+3118	mob	331 1398546	13627	mobile-number-184
 \.
 
 
@@ -25907,6 +25927,8 @@ p9km09qmr1e908a6t1cpm14jc881rfu8	NmY0ZGFhZDZiMGRlOWU0MWNkNTIzY2Q5ZjlhZDA3OTFkMGQ
 4dxp01f7btv43garo9yh8pyymgdy0ac4	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2015-01-17 12:14:57.451965-05
 npgluyfduku0g5uv89zq989ovzyuzu95	MGVmZDVhYjU0MmUwOWU1ZWYzMDY4MGJkNjYzYjNmYjY0ZDhiNGRlOTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Nn0=	2015-01-26 11:36:29.228461-05
 bslvorapuc1nc66hf8q7v2h9jwcjoiyf	ZDg5MjNjNTRjODAxOWE4Y2FlZGEzYmZkOWYxOWJjM2NhMTYxM2E5Nzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjZ9	2015-02-04 12:54:04.7911-05
+unr0svrqki0yspc7z78kg86hwktjn4jd	NWNjYjJlNWY0MDY1M2UwMDY1Njk0NzcxNDYxMDBmNDgzOGVlNGI3ODp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiYWNjb3VudF91c2VyIjozNywiX2F1dGhfdXNlcl9pZCI6MzcsImFjY291bnRfdmVyaWZpZWRfZW1haWwiOm51bGx9	2015-02-07 18:27:21.481636-05
+191rm5pj5ge03p5edpa0m74j0geskxrk	MzBhNDdiNDk4OTBiYzE0NjEzNjBiOGNiMDU2NDEwOGQ2N2VkZWMzODp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYWxsYXV0aC5hY2NvdW50LmF1dGhfYmFja2VuZHMuQXV0aGVudGljYXRpb25CYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6Mzd9	2015-02-07 18:32:00.711389-05
 \.
 
 
@@ -27115,6 +27137,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 21	34	stefano___ricci@alice.it
 22	35	Info@bagnobenvenuti.com
 23	36	igabbianibeach@hotmail.it
+24	37	elenalazzarini@hotmail.com
 \.
 
 
@@ -27122,7 +27145,7 @@ COPY newsletters_newsletteruser (id, user_id, old_email) FROM stdin;
 -- Name: newsletters_newsletteruser_id_seq; Type: SEQUENCE SET; Schema: public; Owner: ombrelloni
 --
 
-SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 23, true);
+SELECT pg_catalog.setval('newsletters_newsletteruser_id_seq', 24, true);
 
 
 --
