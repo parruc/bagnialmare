@@ -48934,7 +48934,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5391354899999872 44.0888943200000014)", 
-    "modified": "2015-01-24T23:31:25.217Z", 
+    "modified": "2015-01-25T22:25:05.540Z", 
     "description_en": "", 
     "number": "29/30/31/32/33 nord", 
     "languages": [], 
@@ -70069,6 +70069,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||3549160e43fe486608b1e33172358e8e", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/76/16/76168c70c6505150aff75b96ed031127.jpg\", \"size\": [380, 213]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||4093467e977df9f2d293dcf88a8056fe", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70377,6 +70384,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||e1d8952133e9f73f2a488a74bddaec65", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/playa-tamarindo/tamarindo.jpg\", \"size\": [3264, 1832]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||e52f4565e1284f77affec22a50ae0fc7", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70395,6 +70409,20 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/88/9f/889ff51fd6e8dbbb7e58c157d58ce8ad.png\", \"size\": [96, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||e6c9f03de52464d0b3c3ae826f961ff7", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/96/95/9695369601a1dd8232ba8cf74819a972.png\", \"size\": [228, 128]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||e7030206197931ce0fe978b87c75fc57", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/cd/3b/cd3b360b03a041646873b0548a4a4603.jpg\", \"size\": [223, 125]}"
   }
 },
 {
@@ -70549,6 +70577,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"73fd4f763441e2775f52f183c1e0a093\", \"081a87e609794288b9ee67d6baf95477\", \"60494901dd7a23277946476fb7fdde6d\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||e1d8952133e9f73f2a488a74bddaec65", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"3549160e43fe486608b1e33172358e8e\", \"e6c9f03de52464d0b3c3ae826f961ff7\", \"e7030206197931ce0fe978b87c75fc57\"]"
   }
 },
 {
@@ -71651,7 +71686,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2015-01-24T23:32:00.707Z", 
+    "last_login": "2015-01-25T22:23:02.274Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$I5HnuHHZEw1E$D5ZbPVDFjmdNKXHZ81O3teS4gf2BDJQnp146z6LM+0g=", 
@@ -72844,6 +72879,19 @@
     "name": "Noi!", 
     "image": "images/bagni/bagno-playa-del-carmen/il-bar_1.jpg", 
     "slug": "il-bar"
+  }
+},
+{
+  "pk": 15, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "playa-tamarindo"
+    ], 
+    "name": "tamarindo", 
+    "image": "images/bagni/playa-tamarindo/tamarindo.jpg", 
+    "slug": "tamarindo"
   }
 },
 {
