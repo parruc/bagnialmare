@@ -69695,6 +69695,30 @@
   }
 },
 {
+  "pk": 23, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-palm-beach"
+    ], 
+    "email": "damsdifabbridanilo@gmeil.it", 
+    "created": "2015-02-01T11:11:18.619Z"
+  }
+},
+{
+  "pk": 24, 
+  "model": "userfeedback.userfeedback", 
+  "fields": {
+    "notified": false, 
+    "bagno": [
+      "bagno-palm-beach"
+    ], 
+    "email": "damsdifabbridanilo@gmeil.it", 
+    "created": "2015-02-01T11:11:37.395Z"
+  }
+},
+{
   "pk": 10, 
   "model": "account.emailconfirmation", 
   "fields": {
