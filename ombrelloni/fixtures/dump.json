@@ -49124,8 +49124,8 @@
     "site": "http://www.bagnoegisto38.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5331291600000014 44.0927088800000035)", 
-    "modified": "2014-07-08T14:25:35.216Z", 
+    "point": "POINT (12.5347731103681426 44.0913559463038922)", 
+    "modified": "2015-02-03T18:52:55.399Z", 
     "description_en": "", 
     "number": "38 nord", 
     "languages": [], 
@@ -49137,23 +49137,74 @@
         "baby-park"
       ], 
       [
-        "five-a-side"
+        "beach-volley"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
-        "nursery"
+        "music"
+      ], 
+      [
+        "acquagym"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "pedal-boats"
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "pilates"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "karaoke"
+      ], 
+      [
+        "tasting-events"
+      ], 
+      [
+        "mooring"
       ], 
       [
         "picnic-area"
       ]
     ], 
     "address": "Via Dati 113 h", 
-    "description_it": "Balli latini americani e aquagym\r\nArea benessere con lettini massaggianti (a pagamento)\r\nPet friendly: ciotole, sacchetti, doccia dedicata e\u00a0veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti\u00a0attrezzati\u00a0limitati: prenotateli.\r\nDal 2009 aderiamo al progetto spiaggia ecosostenibile ed accessibile con la provincia di Rimini.", 
+    "description_it": "<p><strong>Balli latini americani e aquagym Area benessere con lettini massaggianti (a pagamento) Pet friendly: ciotole, sacchetti, doccia dedicata e veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti attrezzati limitati: prenotateli.</strong></p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "egisto", 
@@ -70265,6 +70316,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||7cfa6880fade00114c989a5e53299dd7", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/11/41/114147403217830d862769c6198b55c1.jpg\", \"size\": [380, 252]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||7e7fcbc23bfecb4187180d58f435c27f", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70370,6 +70428,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||cd301489b49783c051bf5d97861cd285", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/egisto/bagno-egisto-reception.jpg\", \"size\": [640, 425]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||cf4c53a715b101f47a5003ee1a1615a2", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70409,6 +70474,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/70/69/706974179a3c9daa9a409a7f8381a556.jpg\", \"size\": [173, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||dea988fec618347ac32b9fb7ee8d67be", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/65/1e/651e2081860c23fe07fc39e69b493e0a.jpg\", \"size\": [188, 125]}"
   }
 },
 {
@@ -70605,6 +70677,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"e5e1d2d3d2877b5418ec81be72e59f88\", \"e52f4565e1284f77affec22a50ae0fc7\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||cd301489b49783c051bf5d97861cd285", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"7cfa6880fade00114c989a5e53299dd7\", \"dea988fec618347ac32b9fb7ee8d67be\"]"
   }
 },
 {
@@ -71433,7 +71512,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2014-06-10T19:42:53.620Z", 
+    "last_login": "2015-02-03T18:43:56.840Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=", 
@@ -72927,6 +73006,19 @@
     "name": "tamarindo", 
     "image": "images/bagni/playa-tamarindo/tamarindo.jpg", 
     "slug": "tamarindo"
+  }
+},
+{
+  "pk": 16, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "egisto"
+    ], 
+    "name": "Bagno Egisto Reception", 
+    "image": "images/bagni/egisto/bagno-egisto-reception.jpg", 
+    "slug": "bagno-egisto-reception"
   }
 },
 {
@@ -90243,6 +90335,18 @@
     "number": "", 
     "name": "win", 
     "slug": "win-3"
+  }
+},
+{
+  "pk": 3429, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "egisto"
+    ], 
+    "number": "", 
+    "name": "mob", 
+    "slug": "mob-9"
   }
 }
 ]
