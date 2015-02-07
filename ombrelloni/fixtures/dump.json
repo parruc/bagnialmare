@@ -49124,8 +49124,8 @@
     "site": "http://www.bagnoegisto38.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5347731103681426 44.0913559463038922)", 
-    "modified": "2015-02-03T18:52:55.399Z", 
+    "point": "POINT (12.5347731103681461 44.0913559463038993)", 
+    "modified": "2015-02-06T18:47:43.103Z", 
     "description_en": "", 
     "number": "38 nord", 
     "languages": [], 
@@ -49204,7 +49204,7 @@
       ]
     ], 
     "address": "Via Dati 113 h", 
-    "description_it": "<p><strong>Balli latini americani e aquagym Area benessere con lettini massaggianti (a pagamento) Pet friendly: ciotole, sacchetti, doccia dedicata e veterinario reperibile. Presentate il libretto delle vaccinazioni. Posti attrezzati limitati: prenotateli.</strong></p>\r\n", 
+    "description_it": "<p>Il Bagno Egisto 38 &egrave; la spiaggia a Viserba di Rimini ideale per le famiglie in Riviera Romagnola con i bimbi.Siamo rinomati per lo Zucchero Filato,le Bolle Giganti,Palloncini Modellabili,Baby Club,Trucca Bimbi, Karaoke,Danza del Ventre,Hip Pop,Lanterne Volanti,Body Painting,Cioccolato Piadina no glutine per i celiaci.&nbsp;</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "egisto", 
@@ -70401,6 +70401,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||aa338aaa53f6d5544eb62f92810d5b21", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/63/59/635913745b5e802a4b15ea03d260f9fa.png\", \"size\": [193, 128]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||ad98e0945a639bfbdac241abac03ca66", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70684,7 +70691,7 @@
   "pk": "sorl-thumbnail||thumbnails||cd301489b49783c051bf5d97861cd285", 
   "model": "thumbnail.kvstore", 
   "fields": {
-    "value": "[\"7cfa6880fade00114c989a5e53299dd7\", \"dea988fec618347ac32b9fb7ee8d67be\"]"
+    "value": "[\"7cfa6880fade00114c989a5e53299dd7\", \"aa338aaa53f6d5544eb62f92810d5b21\", \"dea988fec618347ac32b9fb7ee8d67be\"]"
   }
 },
 {
@@ -71513,7 +71520,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2015-02-03T18:43:56.840Z", 
+    "last_login": "2015-02-06T18:35:28.924Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$diXOT4COXoLA$FFO0gfWeccQcuJJk1dQSwxjBJgf+bkQvENNk1Y7ey+g=", 
