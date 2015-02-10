@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block specific_css %}
+<link href="{{ STATIC_URL }}css/bootstrapValidator.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block specific_js %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrapValidator.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <h1>{% trans "Booking details" %}</h1>
+      <form method="post" enctype="multipart/form-data" role="form" id="edit_form">
+      {% csrf_token %}
+      {% for field in form %}
+        <div class="form-group">
+          <label class="my-brown" for="id_start">{{ field.label }}:</label>
+          {{ field.errors }}
+          {{ field }}
+        </div>
+      {% endfor %}
+    </form>
+  </div>
+</div>
+{% endblock %}

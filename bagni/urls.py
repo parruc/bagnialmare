@@ -16,6 +16,7 @@ urlpatterns = patterns(
     url(_(r'^bagni/(?P<neighbourhood>[-\w]+)/(?P<slug>[-\w]+)/$'), views.BagnoView.as_view(), name="bagno"),
     url(_(r'^bagni/(?P<neighbourhood>[-\w]+)/(?P<slug>[-\w]+)/edit/$'), views.BagnoEdit.as_view(), name="bagno-edit"),
     url(_(r'^bagni/(?P<neighbourhood>[-\w]+)/(?P<slug>[-\w]+)/contacts/$'), views.BagnoContacts.as_view(), name="bagno-contacts"),
+    url(_(r'^bagni/(?P<neighbourhood>[-\w]+)/(?P<slug>[-\w]+)/book/$'), views.BagnoBooking.as_view(), name="bagno-booking"),
     url(_(r'^search/$'), views.SearchView.as_view(), name="search"),
     url(_(r'^service-categories/$'), views.ServiceCategoriesView.as_view(), name="service-categories"),
     url(_(r'^service-category/(?P<slug>[-\w]+)/$'), views.ServiceCategoryView.as_view(), name="service-category"),

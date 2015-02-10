@@ -2,6 +2,7 @@ from .bagni import BagniView; BagniView  # pyflakes
 from .bagni import BagnoView; BagnoView  # pyflakes
 from .bagni import BagnoEdit; BagnoEdit  # pyflakes
 from .bagni import BagnoContacts; BagnoContacts  # pyflakes
+from .bagni import BagnoBooking; BagnoBooking  # pyflakes
 from .bagni import BagniByFacilityAndNeighbourhoodView; BagniByFacilityAndNeighbourhoodView
 
 from .jsonviews import JsonAutocompletePlaces; JsonAutocompletePlaces  # pyflakes

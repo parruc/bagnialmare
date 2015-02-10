@@ -12,6 +12,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from contacts.views import ContactView
 from contacts.forms import ContactForm
+from booking.views import BookingView
 
 from ..models import Bagno, ServiceCategory, District, Service, Neighbourhood
 from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
@@ -22,11 +23,11 @@ logger = logging.getLogger("bagni.console")
 
 
 class BagniByFacilityAndNeighbourhoodView(TemplateView):
-    """ List of bagni in the neighbourhood offering the facility 
+    """ List of bagni in the neighbourhood offering the facility
     """
-    
+
     template_name = "bagni/bagni-by-facility-and-neighbourhood.html"
-    
+
     def get_context_data(self, **kwargs):
         context = super(BagniByFacilityAndNeighbourhoodView, self).get_context_data(**kwargs)
         facility_slug = str(self.kwargs['facility_slug'])
@@ -39,7 +40,7 @@ class BagniByFacilityAndNeighbourhoodView(TemplateView):
         context.update({'neighbourhood': neighbourhood})
         context.update({'facility': facility})
         context.update({'bagni': bagni_with_facility_in_neighbourhood})
-        #add facility name or obj? 
+        #add facility name or obj?
         #add neighbourhood name or obj?
         return context
 
@@ -151,6 +152,10 @@ class BagnoEdit(UpdateView):
         context['telephone_formset'] = TelephoneFormSet(instance = self.object)
         context['image_formset'] = ImageFormSet(instance = self.object)
         return context
+
+
+class BagnoBooking(BookingView):
+    pass
 
 
 class BagnoContacts(ContactView):
