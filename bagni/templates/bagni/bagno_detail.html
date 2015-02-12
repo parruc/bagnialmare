@@ -19,12 +19,6 @@
 {% trans "facilities" as t_facilities %}
 {% trans "facility" as t_facility %}
 {% trans "facility_info_not_available" as t_facility_info_not_available %}
-{% trans "book_modal_title" as t_book_modal_title %}
-{% trans "book_modal_text_1" as t_book_modal_text_1 %}
-{% trans "book_modal_text_2" as t_book_modal_text_2 %}
-{% trans "book_modal_submit_button" as t_book_modal_submit_button %}
-{% trans "book_button" as t_book_button %}
-{% trans "get_quote_button" as t_get_quote_button %}
 {% trans "email_address" as t_email_address %}
 {% trans "phone_not_yet_available" as t_phone_not_yet_available %}
 {% trans "bagno_detail_desc_1" as t_bagno_detail_desc_1%}
@@ -35,6 +29,7 @@
 
 
 <div id="contact-form"></div>
+<div id="booking-form"></div>
 <div class="bagno-detail-wrapper-div">
   <div class="row bagno-header-row">
     <div class="col-sm-9 col-xs-12">
@@ -43,20 +38,19 @@
     </div>
     <div class="col-xs-12">
       {% if object.accepts_booking %}
-              <button id="book-button" 
-                class="btn btn-lg book-button-xs ga_click" 
-                data-toggle="modal" 
-                data-target="#bookModal"
-                data-category="get_quote" 
-                data-action="click" 
-                data-label="{{ object.slug }} - get_quote-button" >{{ t_get_quote_button }}</button>
+              <button id="book-button"
+                class="btn btn-lg book-button-xs ga_click"
+                data-url="{{ object.get_booking_url }}"
+                data-category="book"
+                data-action="click"
+                data-label="{{ object.slug }} - book-button" >{% trans "book_button" %}</a>
       {% endif %}
       {% if object.is_managed %}
             <button id="contact-form-button"
                     class="contact-form-button btn btn-lg btn-primary bagno-detail-button ga_click"
                     data-url="{{ object.get_contactform_url }}"
-                    data-category="contact" 
-                    data-action="mail-popup" 
+                    data-category="contact"
+                    data-action="mail-popup"
                     data-label="{{ object.slug }} - detail">
                 {{ t_contact_button }}
              </button>
@@ -98,7 +92,7 @@
              rel="nofollow">
               {{ object.site|non_href_url }}</a>
           {% endif %}
-        </p> 
+        </p>
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
@@ -208,44 +202,22 @@
   </div>
 </div>
 
-{% if object.accepts_booking %}
-<div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content hp-facility-modal">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title my-bold" id="myModalLabel">{{ t_book_modal_title }}</h3>
-      </div>
-      <div class="modal-body">
-         <p>{{ t_book_modal_text_1 }}.<br>{{ t_book_modal_text_2 }}.</p>
-         <form id="book-online-form" action="{% url 'user-feedback-form' %}" method="post" role="form">
-            {% csrf_token %}
-            <div class="form-group">
-                <label class="sr-only" for="id_email">{{ form.email.label }}</label>
-                <div id="id_email_errors"></div>
-                <input id="id_email" class="form-control" name="email" type="text" placeholder="{{ t_email_address }}" />
-            </div>
-            <input type="hidden" name="bagno" value="{{ object.pk }}" />
-            <button class="btn btn-primary" type="submit" >{{ t_book_modal_submit_button }}</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
-         </form>
-       </div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
 {% endblock content %}
+
+
+{% block specific_css %}
+<!--link href="{{ STATIC_URL }}css/slider.css" rel="stylesheet" type="text/css"/-->
+<link href="{{ STATIC_URL }}css/datepicker.css" rel="stylesheet" type="text/css"/>
+<link href="{{ STATIC_URL }}css/booking.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
 
 {% block specific_js %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/single_map.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/contact_dialog.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
-<script>
-       $( '#book-online-form').ajaxForm(function(){
-         $('#bookModal').modal('hide')
-        });
-</script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/locales/bootstrap-datepicker.it.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/booking.js"></script>
 {% endblock specific_js %}
 
 {% block pagetitle %}{% spaceless %}

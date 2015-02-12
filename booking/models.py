@@ -9,8 +9,10 @@ class Booking(models.Model):
 
     bagno = models.ForeignKey("bagni.Bagno", related_name='bookings',
                               verbose_name=_("Bagno"),)
-    start = models.DateField(default=date.today)
-    end = models.DateField(default=date.today)
+    start = models.DateField(verbose_name=_("From"),
+                             default=date.today)
+    end = models.DateField(verbose_name=_("To"),
+                           default=date.today)
     sunbeds = models.IntegerField(verbose_name=_("Number of subnbeds"),
                                   default=2)
     umbrellas = models.IntegerField(verbose_name=_("Number of umbrellas"),
@@ -18,7 +20,7 @@ class Booking(models.Model):
     email = models.EmailField(max_length=100,
                               verbose_name=_("Email"),)
     cell = models.CharField(max_length=100,
-                            verbose_name=_("Cellphone"),
+                            verbose_name=_("Mobile"),
                             null=False,
                             blank=True,)
     created = models.DateTimeField(auto_now_add=True)

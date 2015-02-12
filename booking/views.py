@@ -1,4 +1,5 @@
 from django.views.generic.edit import CreateView
+
 from .forms import BookingForm
 
 import logging
@@ -9,3 +10,8 @@ logger = logging.getLogger(__name__)
 class BookingView(CreateView):
     form_class = BookingForm
     template_name = "booking/booking.html"
+
+
+class BookingModalView(CreateView):
+    form_class = BookingForm
+    template_name = "booking/booking_modal.html"
