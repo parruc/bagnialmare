@@ -47,7 +47,7 @@ msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
 
 #: urls.py:18
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
-msgstr "^bagno/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
 
 #: urls.py:19
 msgid "^search/$"
