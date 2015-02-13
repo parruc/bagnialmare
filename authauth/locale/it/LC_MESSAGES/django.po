@@ -356,7 +356,7 @@ msgstr ""
 "\n"
 "Nel caso ti fossi dimenticato, il tuo username è %(username)s.\n"
 "\n"
-"A presto, dal team di $(site_domain)s\n"
+"A presto, dal team di %(site_domain)s\n"
 
 #: templates/account/email/password_reset_key_subject.txt:3
 msgid "Password Reset E-mail"
