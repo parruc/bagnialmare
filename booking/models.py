@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+from datetime import date
+
+from django.contrib.gis.db import models
+from django.utils.translation import ugettext_lazy as _
+
+
+class Booking(models.Model):
+
+    bagno = models.ForeignKey("bagni.Bagno", related_name='bookings',
+                              verbose_name=_("Bagno"),)
+    start = models.DateField(verbose_name=_("From"),
+                             default=date.today)
+    end = models.DateField(verbose_name=_("To"),
+                           default=date.today)
+    sunbeds = models.IntegerField(verbose_name=_("Number of subnbeds"),
+                                  default=2)
+    umbrellas = models.IntegerField(verbose_name=_("Number of umbrellas"),
+                                    default=1)
+    email = models.EmailField(max_length=100,
+                              verbose_name=_("Email"),)
+    cell = models.CharField(max_length=100,
+                            verbose_name=_("Mobile"),
+                            null=False,
+                            blank=True,)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+
+    def natural_key(self):
+        return (self.slug,)
+
+    def get_by_natural_key(self, slug):
+        return self.get(slug=slug)
+
+    def __unicode__(self):
+        return self.name

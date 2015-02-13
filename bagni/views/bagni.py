@@ -12,6 +12,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from contacts.views import ContactView
 from contacts.forms import ContactForm
+from booking.views import BookingModalView
 
 from ..models import Bagno, ServiceCategory, District, Service, Neighbourhood
 from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
@@ -22,11 +23,11 @@ logger = logging.getLogger("bagni.console")
 
 
 class BagniByFacilityAndNeighbourhoodView(TemplateView):
-    """ List of bagni in the neighbourhood offering the facility 
+    """ List of bagni in the neighbourhood offering the facility
     """
-    
+
     template_name = "bagni/bagni-by-facility-and-neighbourhood.html"
-    
+
     def get_context_data(self, **kwargs):
         context = super(BagniByFacilityAndNeighbourhoodView, self).get_context_data(**kwargs)
         facility_slug = str(self.kwargs['facility_slug'])
@@ -39,7 +40,7 @@ class BagniByFacilityAndNeighbourhoodView(TemplateView):
         context.update({'neighbourhood': neighbourhood})
         context.update({'facility': facility})
         context.update({'bagni': bagni_with_facility_in_neighbourhood})
-        #add facility name or obj? 
+        #add facility name or obj?
         #add neighbourhood name or obj?
         return context
 
@@ -116,9 +117,9 @@ class BagnoEdit(UpdateView):
         self.object = self.get_object()
         form = BagnoForm(data=request.POST)
         telephone_formset = TelephoneFormSet(request.POST,
-                instance = self.object)
+                instance=self.object)
         image_formset = ImageFormSet(request.POST, request.FILES,
-                instance = self.object)
+                instance=self.object)
         if not telephone_formset.is_valid() or not image_formset.is_valid() or not form.is_valid():
             for index, t_error in enumerate(telephone_formset.errors):
                 for field, error_messages in t_error.iteritems():
@@ -134,22 +135,45 @@ class BagnoEdit(UpdateView):
                         logger.error(_msg)
             return self.render_to_response(
                     self.get_context_data(
-                        telephone_formset = telephone_formset,
-                        image_formset = image_formset,
-                        form = form,
+                        telephone_formset=telephone_formset,
+                        image_formset=image_formset,
+                        form=form,
                     )
                 )
         else:
-            #telephone_formset.save(commit=False)
-            #image_formset.save(commit=False)
+            # telephone_formset.save(commit=False)
+            # image_formset.save(commit=False)
             telephone_formset.save()
             image_formset.save()
             return super(BagnoEdit, self).post(request, *args, **kwargs)
 
     def get_context_data(self, *args, **kwargs):
         context = super(BagnoEdit, self).get_context_data(*args, **kwargs)
-        context['telephone_formset'] = TelephoneFormSet(instance = self.object)
-        context['image_formset'] = ImageFormSet(instance = self.object)
+        context['telephone_formset'] = TelephoneFormSet(instance=self.object)
+        context['image_formset'] = ImageFormSet(instance=self.object)
+        return context
+
+
+class BagnoBooking(BookingModalView):
+
+    def form_valid(self, form):
+        msg = _("Thank you for your booking request. We will let you know the\
+                 result as soon as possible")
+        messages.add_message(self.request, messages.INFO, msg)
+        return super(BagnoBooking, self).form_valid(form)
+
+    def get_bagno(self):
+        if "slug" not in self.kwargs:
+            raise Http404()
+        return Bagno.objects.get(slug=self.kwargs['slug'])
+
+    def get_success_url(self):
+        bagno = self.get_bagno()
+        return bagno.get_absolute_url()
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(BagnoBooking, self).get_context_data(*args, **kwargs)
+        context['bagno'] = self.get_bagno()
         return context
 
 
@@ -161,7 +185,7 @@ class BagnoContacts(ContactView):
     success_message = _("We forwarded your message to the beach resort. As soon as possible you'll receive a feedback to the email address provided.")
 
     def dispatch(self, request, *args, **kwargs):
-        if not "slug" in kwargs:
+        if "slug" not in kwargs:
             raise ObjectDoesNotExist
         slug = kwargs['slug']
         self.object = Bagno.objects.get(slug=slug)
@@ -172,7 +196,6 @@ class BagnoContacts(ContactView):
         self.form = self.get_form(self.form_class)
         self.submit_url = self.object.get_contactform_url()
         return super(BagnoContacts, self).dispatch(request, *args, **kwargs)
-
 
     def get_context_data(self, *args, **kwargs):
         context = super(BagnoContacts, self).get_context_data(*args, **kwargs)

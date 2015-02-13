@@ -1,0 +1,75 @@
+{% load i18n l10n %}
+{% csrf_token %}
+<input type="hidden" value="{{ bagno.pk }}" name="{{ form.bagno.name }}" id="id_bagno"/>
+{{ form.non_field_errors }}
+<fieldset>
+  <legend>{% trans "When" %}</legend>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label class="my-brown" for="id_start">{{ form.start.label }}*:</label>
+        {{ form.start.errors }}
+        <input id="id_start" class="form-control date-control" name="{{ form.start.name }}"
+               type="text" value="{% firstof request.POST.start form.start.value|date:'SHORT_DATE_FORMAT' %}" />
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label class="my-brown" for="id_end">{{ form.end.label }}*:</label>
+        {{ form.end.errors }}
+        <input id="id_end" class="form-control date-control" name="{{ form.end.name }}"
+               type="text" value="{% firstof request.POST.end form.end.value|date:'SHORT_DATE_FORMAT' %}" />
+      </div>
+    </div>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>{% trans "What" %}</legend>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label class="my-brown" for="id_umbrellas">{{ form.umbrellas.label }}*:</label>
+        {{ form.sunbeds.errors }}
+        <input id="id_umbrellas" class="form-control slider-control"
+               name="{{ form.umbrellas.name }}" type="number" min="0"
+               value="{% firstof request.POST.umbrellas form.umbrellas.value '1' %}" />
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label class="my-brown" for="id_sunbeds">{{ form.sunbeds.label }}*:</label>
+        {{ form.sunbeds.errors }}
+        <input id="id_sunbeds" class="form-control slider-control"
+               name="{{ form.sunbeds.name }}" type="number" min="0"
+               value="{% firstof request.POST.sunbeds form.sunbeds.value '1' %}" />
+      </div>
+    </div>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>{% trans "Contact info" %}</legend>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <label class="my-brown" for="id_email">{{ form.email.label }}*:</label>
+        {{ form.email.errors }}
+        <input id="id_email" class="form-control" name="{{ form.email.name }}"
+               type="email" value="{% firstof request.POST.email form.email.value '' %}" />
+      </div>
+    </div>
+  <div class="col-xs-6">
+    <div class="form-group">
+      <label class="my-brown" for="id_cell">{{ form.cell.label }}:</label>
+      {{ form.cell.errors }}
+      <input id="id_cell" class="form-control" name="{{ form.cell.name }}"
+             type="text" value="{% firstof request.POST.cell form.cell.value '' %}" />
+    </div>
+  </div>
+</div>
+</fieldset>
+<script type="text/javascript">
+  $(function(){
+      var language = $("html").attr("lang");
+      $(".date-control").datepicker({language: language, autoclose: true});
+    });
+</script>

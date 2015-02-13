@@ -10,6 +10,7 @@ from ckeditor.fields import RichTextField
 from . import BaseModel
 from . import Telephone
 
+
 class Bagno(BaseModel):
     """ The model for Bagno object
     """
@@ -104,7 +105,11 @@ class Bagno(BaseModel):
 
     @models.permalink
     def get_contactform_url(self):
-        return ("bagno-contacts", [self.neighbourhood.slug, self.slug] )
+        return ("bagno-contacts", [self.neighbourhood.slug, self.slug])
+
+    @models.permalink
+    def get_booking_url(self):
+        return ("bagno-booking", [self.neighbourhood.slug, self.slug])
 
     def is_managed(self):
         return len(self.managers.all()) > 0
