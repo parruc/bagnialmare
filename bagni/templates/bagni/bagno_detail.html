@@ -33,7 +33,7 @@
 <div class="bagno-detail-wrapper-div">
   <div class="row bagno-header-row">
     <div class="col-sm-9 col-xs-12">
-      <h1 class="bagno-detail-header">{{ object.name|safe }}</h1>
+        <h1 class="bagno-detail-header">{{ object.name|safe }} {% trans "in" %} {{ object.neighbourhood }}</h1>
       <p class="bagno-detail-address">{{ object.address }} - {{ object|neighbourhood_municipality }}</p>
     </div>
     <div class="col-xs-12">
