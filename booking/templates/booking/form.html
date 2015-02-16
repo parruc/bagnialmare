@@ -59,10 +59,10 @@
     </div>
   <div class="col-xs-6">
     <div class="form-group">
-      <label class="my-brown" for="id_cell">{{ form.cell.label }}:</label>
-      {{ form.cell.errors }}
-      <input id="id_cell" class="form-control" name="{{ form.cell.name }}"
-             type="text" value="{% firstof request.POST.cell form.cell.value '' %}" />
+      <label class="my-brown" for="id_mobile">{{ form.mobile.label }}:</label>
+      {{ form.mobile.errors }}
+      <input id="id_mobile" class="form-control" name="{{ form.mobile.name }}"
+             type="text" value="{% firstof request.POST.mobile form.mobile.value '' %}" />
     </div>
   </div>
 </div>

@@ -17,8 +17,9 @@ from .models import Bagno, Service, Image, Telephone
 import logging
 logging.getLogger(__name__)
 
-IMAGE_THUMB_HEIGHT = 128 #in pixels
+IMAGE_THUMB_HEIGHT = 128  # in pixels
 NO_PHOTO_IMAGE_PATH = '/static/img/no_images.png'
+
 
 class ThumbnailImageWidget(forms.FileInput):
     """ A ImageField Widget for admin that shows a thumbnail. """

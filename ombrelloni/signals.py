@@ -1,8 +1,11 @@
+# -*- coding: utf-8 -*-
 from django.db.models import signals
 from django.conf import settings
 from django.core.mail import send_mail
 from authauth.models import Manager
 from bagni.models import Bagno
+from booking.models import Booking
+from booking.signals import mail_for_booking
 
 
 def mail_admin(sender, instance, created, **kwargs):
@@ -20,3 +23,5 @@ def mail_admin(sender, instance, created, **kwargs):
 
 signals.post_save.connect(mail_admin, sender=Manager)
 signals.post_save.connect(mail_admin, sender=Bagno)
+
+signals.post_save.connect(mail_for_booking, sender=Booking)
