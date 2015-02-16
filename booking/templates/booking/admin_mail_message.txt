@@ -1,0 +1,9 @@
+{% load i18n %}
+{% blocktrans %}The beach resort {{ bagno_name }} received a booking request.
+
+Here it isthe details:
+
+Bagno: {{ bagno_name }}
+When: from {{ start }} to {{ end }}
+What: {{ umbrellas }} umbrealla(s) and {{ sunbeds }} sunbed(s)
+Contact: by mail at {{ email }} or by mobile phone at {{ mobile }}{% endblocktrans %}

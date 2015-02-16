@@ -1,0 +1,2 @@
+{% load i18n %}
+{% trans "[bagnialmare.com booking] You received a booking request" %}

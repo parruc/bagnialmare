@@ -1,0 +1,13 @@
+{% load i18n %}
+
+{% blocktrans %}Hi {{ bagno_name }},
+
+    We received a booking request for your beach resort Here the details:
+
+When: from {{ start }} to {{ end }}
+What: {{ umbrellas }} umbrealla(s) and {{ sunbeds }} sunbed(s)
+Contact: by mail at {{ email }} or by mobile phone at {{ mobile }}
+
+Let the user hear from you as soon as possible.
+
+The team of Bagnialmare{% endblocktrans %}
