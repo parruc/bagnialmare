@@ -57401,6 +57401,23 @@
 },
 {
   "pk": 1, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-07-05", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-02-16T18:36:19.159Z", 
+    "modified": "2015-02-16T18:36:19.159Z", 
+    "start": "2015-07-01", 
+    "email": "m.parrucci@unibo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
     "created": "2014-07-02T22:00:00Z", 
@@ -71384,6 +71401,24 @@
   }
 },
 {
+  "pk": 77, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2015-02-16T18:15:42.983Z", 
+    "app_name": "booking", 
+    "migration": "0001_initial"
+  }
+},
+{
+  "pk": 78, 
+  "model": "south.migrationhistory", 
+  "fields": {
+    "applied": "2015-02-16T18:15:43.049Z", 
+    "app_name": "booking", 
+    "migration": "0002_auto__del_field_booking_cell__add_field_booking_mobile"
+  }
+},
+{
   "pk": 5, 
   "model": "auth.user", 
   "fields": {
@@ -71393,7 +71428,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-01-29T11:57:35.681Z", 
+    "last_login": "2015-02-16T18:16:06.879Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
