@@ -57417,6 +57417,23 @@
   }
 },
 {
+  "pk": 2, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-02-17", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-02-17T14:41:06.055Z", 
+    "modified": "2015-02-17T14:41:06.055Z", 
+    "start": "2015-02-17", 
+    "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
