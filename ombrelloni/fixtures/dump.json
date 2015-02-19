@@ -57434,6 +57434,57 @@
   }
 },
 {
+  "pk": 3, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-dallara"
+    ], 
+    "end": "2015-05-14", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-02-18T20:05:47.879Z", 
+    "modified": "2015-02-18T20:05:47.879Z", 
+    "start": "2015-05-12", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 0
+  }
+},
+{
+  "pk": 4, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-dallara"
+    ], 
+    "end": "2015-02-18", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-02-18T20:14:05.433Z", 
+    "modified": "2015-02-18T20:14:05.433Z", 
+    "start": "2015-02-18", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 5, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-02-20", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-02-18T20:42:26.959Z", 
+    "modified": "2015-02-18T20:42:26.959Z", 
+    "start": "2015-02-18", 
+    "email": "marco.bartolini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
