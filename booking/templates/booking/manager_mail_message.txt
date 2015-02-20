@@ -1,13 +1,11 @@
 {% load i18n %}
 
-{% blocktrans %}Hi {{ bagno_name }},
+{% blocktrans %}Hi {{ bagno_name }}{% endblocktrans %},
 
-    We received a booking request for your beach resort Here the details:
+     {% trans "We received a booking request for your beach resort Here the details" %}:
 
-When: from {{ start }} to {{ end }}
-What: {{ umbrellas }} umbrealla(s) and {{ sunbeds }} sunbed(s)
-Contact: by mail at {{ email }} or by mobile phone at {{ mobile }}
+{% include 'booking/details.txt' %}
 
-Let the user hear from you as soon as possible.
+{% trans "Let the user hear from you as soon as possible." %}
 
-The team of Bagnialmare{% endblocktrans %}
+{% trans "The team of Bagnialmare" %}

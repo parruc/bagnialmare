@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-16 18:22+0100\n"
+"POT-Creation-Date: 2015-02-20 16:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,26 +61,53 @@ msgstr ""
 msgid "Mobile"
 msgstr ""
 
-#: signals.py:13
+#: signals.py:29
 msgid "managed"
 msgstr ""
 
-#: signals.py:14
+#: signals.py:30
 msgid "not managed (WE HAVE TO CALL)"
 msgstr ""
 
 #: templates/booking/admin_mail_message.txt:2
 #, python-format
-msgid ""
-"The beach resort %(bagno_name)s received a booking request.\n"
-"\n"
-"Here it isthe details:\n"
-"\n"
-"Bagno: %(bagno_name)s\n"
-"State: %(managed_state)s\n"
-"When: from %(start)s to %(end)s\n"
-"What: %(umbrellas)s umbrealla(s) and %(sunbeds)s sunbed(s)\n"
-"Contact: by mail at %(email)s or by mobile phone at %(mobile)s"
+msgid "The beach resort %(bagno_name)s received a booking request."
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:4
+#: templates/booking/user_mail_message.txt:4
+msgid "Here it is the details"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:6
+#: templates/booking/user_mail_message.txt:6
+#, python-format
+msgid "Where: %(bagno_name)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:7
+#, python-format
+msgid "State: %(managed_state)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:10
+#, python-format
+msgid "We can contact %(bagno_name)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:11
+#, python-format
+msgid "Calling: %(bagno_phones)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:12
+#, python-format
+msgid "Mailing the manager: %(bagno_managers_mail)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:13
+#, python-format
+msgid "Mailing the beach resort: %(bagno_mail)s"
 msgstr ""
 
 #: templates/booking/admin_mail_subject.txt:2
@@ -100,12 +127,46 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: templates/booking/form.html:6
-msgid "When"
+#: templates/booking/details.html:2 templates/booking/details.txt:1
+#, python-format
+msgid "When: from %(start)s to %(end)s"
 msgstr ""
 
+#: templates/booking/details.html:3 templates/booking/details.txt:2
 #: templates/booking/form.html:27
 msgid "What"
+msgstr ""
+
+#: templates/booking/details.html:3 templates/booking/details.txt:2
+#, python-format
+msgid "%(umbrellas)sumbrella"
+msgid_plural "%(umbrellas)s umbrellas"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/booking/details.html:3 templates/booking/details.txt:2
+msgid "and"
+msgstr ""
+
+#: templates/booking/details.html:3 templates/booking/details.txt:2
+#, python-format
+msgid "%(sunbeds)s sunbed"
+msgid_plural "%(sunbeds)s sunbeds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/booking/details.html:4 templates/booking/details.txt:3
+#, python-format
+msgid "Contact: by mail at %(email)s"
+msgstr ""
+
+#: templates/booking/details.html:4 templates/booking/details.txt:3
+#, python-format
+msgid "or by mobile phone at %(mobile)s"
+msgstr ""
+
+#: templates/booking/form.html:6
+msgid "When"
 msgstr ""
 
 #: templates/booking/form.html:50
@@ -114,20 +175,36 @@ msgstr ""
 
 #: templates/booking/manager_mail_message.txt:3
 #, python-format
-msgid ""
-"Hi %(bagno_name)s,\n"
-"\n"
-"    We received a booking request for your beach resort Here the details:\n"
-"\n"
-"When: from %(start)s to %(end)s\n"
-"What: %(umbrellas)s umbrealla(s) and %(sunbeds)s sunbed(s)\n"
-"Contact: by mail at %(email)s or by mobile phone at %(mobile)s\n"
-"\n"
-"Let the user hear from you as soon as possible.\n"
-"\n"
-"The team of Bagnialmare"
+msgid "Hi %(bagno_name)s"
+msgstr ""
+
+#: templates/booking/manager_mail_message.txt:5
+msgid "We received a booking request for your beach resort Here the details"
+msgstr ""
+
+#: templates/booking/manager_mail_message.txt:9
+msgid "Let the user hear from you as soon as possible."
+msgstr ""
+
+#: templates/booking/manager_mail_message.txt:11
+#: templates/booking/user_mail_message.txt:11
+msgid "The team of Bagnialmare"
 msgstr ""
 
 #: templates/booking/manager_mail_subject.txt:2
 msgid "[bagnialmare.com booking] You received a booking request"
+msgstr ""
+
+#: templates/booking/user_mail_message.txt:2
+#, python-format
+msgid "The beach resort %(bagno_name)s received your booking request."
+msgstr ""
+
+#: templates/booking/user_mail_message.txt:9
+msgid "You will be contacted by the manager as soon as possible"
+msgstr ""
+
+#: templates/booking/user_mail_subject.txt:2
+#, python-format
+msgid "[bagnialmare.com booking] Booking request received for %(bagno_name)s"
 msgstr ""

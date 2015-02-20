@@ -1,0 +1,11 @@
+{% load i18n %}
+{% blocktrans %}The beach resort {{ bagno_name }} received your booking request.{% endblocktrans %}
+
+{% trans "Here it is the details" %}:
+
+{% blocktrans %}Where: {{ bagno_name }}{% endblocktrans %}
+{% include 'booking/details.txt' %}
+
+{% trans "You will be contacted by the manager as soon as possible" %}.
+
+{% trans "The team of Bagnialmare" %}
