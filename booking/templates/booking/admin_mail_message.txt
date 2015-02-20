@@ -1,10 +1,13 @@
 {% load i18n %}
-{% blocktrans %}The beach resort {{ bagno_name }} received a booking request.
+{% blocktrans %}The beach resort {{ bagno_name }} received a booking request.{% endblocktrans %}
 
-Here it isthe details:
+{% trans "Here it is the details" %}:
 
-Bagno: {{ bagno_name }}
-State: {{ managed_state }}
-When: from {{ start }} to {{ end }}
-What: {{ umbrellas }} umbrealla(s) and {{ sunbeds }} sunbed(s)
-Contact: by mail at {{ email }} or by mobile phone at {{ mobile }}{% endblocktrans %}
+{% blocktrans %}Where: {{ bagno_name }}{% endblocktrans %}
+{% blocktrans %}State: {{ managed_state }}{% endblocktrans %}
+{% include 'booking/details.txt' %}
+
+{% blocktrans %}We can contact {{ bagno_name }}{% endblocktrans %}:
+- {% blocktrans %}Calling: {{ bagno_phones }}{% endblocktrans %}
+- {% blocktrans %}Mailing the manager: {{ bagno_managers_mail }}{% endblocktrans %}
+- {% blocktrans %}Mailing the beach resort: {{ bagno_mail }}{% endblocktrans %}

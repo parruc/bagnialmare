@@ -1,0 +1,2 @@
+{% load i18n %}
+{% blocktrans %}[bagnialmare.com booking] Booking request received for {{ bagno_name }}{% endblocktrans %}
