@@ -38853,41 +38853,34 @@
   "pk": 13352, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagno-oasi.it", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 240<br />\n\twc disabili: 1<br />\n\tlettini: 350<br />\n\tcabine: 30<br />\n\tdocce chiuse: 3<br />\n\tdocce aperte: 2</p>", 
+    "site": "http://www.bagno-oasi.it/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 2<br />\r\nsdraio: 100<br />\r\nwc: 6<br />\r\nombrelloni: 240<br />\r\nwc disabili: 1<br />\r\nlettini: 350<br />\r\ncabine: 30<br />\r\ndocce chiuse: 3<br />\r\ndocce aperte: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3089233440000001 44.4184500799999995)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 100<br />\n\twc: 6<br />\n\tombrelloni: 240<br />\n\twc disabili: 1<br />\n\tlettini: 350<br />\n\tcabine: 30<br />\n\tdocce chiuse: 3<br />\n\tdocce aperte: 2</p>", 
+    "modified": "2015-02-19T15:11:54.240Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 2<br />\r\nsdraio: 100<br />\r\nwc: 6<br />\r\nombrelloni: 240<br />\r\nwc disabili: 1<br />\r\nlettini: 350<br />\r\ncabine: 30<br />\r\ndocce chiuse: 3<br />\r\ndocce aperte: 2</p>\r\n", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
-      [
-        "entertainment"
-      ], 
       [
         "catering"
       ], 
       [
-        "beach-volley"
+        "beach-racket-court"
+      ], 
+      [
+        "entertainment"
       ], 
       [
         "petanque"
       ], 
       [
-        "beach-racket-court"
+        "beach-volley"
       ]
     ], 
     "address": "Viale Petrarca, 220", 
-    "description_it": null, 
-    "mail": "info@bagno-oasi.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-oasi-4", 
     "neighbourhood": [
@@ -71497,7 +71490,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-02-16T18:16:06.879Z", 
+    "last_login": "2015-02-19T09:24:03.397Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -71533,7 +71526,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-02-02T16:25:13.703Z", 
+    "last_login": "2015-02-19T15:09:13.552Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$pMFP9UrGappG$AeDiG5AAlOvwOob+k3JFhSPE3Tm7BIY7BNIp4aiqXN8=", 
@@ -82319,7 +82312,7 @@
     "bagno": [
       "bagno-oasi-4"
     ], 
-    "number": "0544 1930667", 
+    "number": "0544 1766444", 
     "name": "tel", 
     "slug": "telephone-number-549"
   }
@@ -90458,6 +90451,18 @@
     "number": "", 
     "name": "mob", 
     "slug": "mob-9"
+  }
+},
+{
+  "pk": 3430, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "bagno-oasi-4"
+    ], 
+    "number": "0544 1761241", 
+    "name": "fax", 
+    "slug": "fax"
   }
 }
 ]
