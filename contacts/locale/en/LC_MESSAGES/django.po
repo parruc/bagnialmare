@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-28 20:56+0200\n"
+"POT-Creation-Date: 2015-02-24 12:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,29 +27,25 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: views.py:42
+#: views.py:22
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
 msgstr ""
 
-#: views.py:45
+#: views.py:59
 msgid ""
-"Error sending the mail: Contact me at                    info at bagnialmare "
+"Error sending the mail: Contact us at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"
-msgstr ""
-
-#: templates/contacts/contacts.html:9
-msgid "Want to drop us a line"
 msgstr ""
 
 #: templates/contacts/contacts.html:20
 msgid "contacts_pagetitle"
 msgstr "contact the bagnialmare.com team"
 
-#: templates/contacts/contacts.html:22
+#: templates/contacts/contacts.html:26
 msgid "contacts_page_description"
 msgstr "contact the bagnialmare.com team"
 
-#: templates/contacts/contacts.html:24
+#: templates/contacts/contacts.html:30
 msgid "Contacts"
 msgstr ""
 
@@ -61,6 +57,19 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: templates/contacts/info.html:2
-msgid "contacts_main_text"
-msgstr "Nice to meet you, we are the bagnialmare.com team. In this website we want to organise all the information about the beach resorts in the Riviera Adriatica to make it accessible and useful. We are happy to answer your questions and listen to your suggestions. Use the form below to send us a message"
+#: templates/contacts/info.html:3
+msgid "About us"
+msgstr ""
+
+#: templates/contacts/info.html:5
+msgid ""
+"We are four guys from Forlì, a city near Rimini. Every and each of us has "
+"spent summers over summers in the beach resorts of the Adriatic sea playing "
+"beach volley, sunbathing, swimming etc. We love Adriatic coast because it "
+"fits every kind of tourism: nightlife, nature or historical; and now we are "
+"happy to share our knowledge that came from experience.\n"
+"\n"
+"Enjoy the website and if you need to ask something feel free to drop us a "
+"line filling the form below. We will be happy to answer your questions and "
+"listen to your suggestions"
+msgstr ""

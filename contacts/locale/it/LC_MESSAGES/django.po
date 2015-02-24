@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-28 20:56+0200\n"
+"POT-Creation-Date: 2015-02-24 12:08+0100\n"
 "PO-Revision-Date: 2014-04-02 19:58+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -28,31 +28,30 @@ msgstr "Il tuo indirizzo email"
 msgid "Message"
 msgstr "Messaggio"
 
-#: views.py:42
+#: views.py:22
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
-msgstr "Grazie per averci contattato, risponderemo al più presto all'indirizzo email fornitoci."
+msgstr ""
+"Grazie per averci contattato, risponderemo al più presto all'indirizzo email "
+"fornitoci."
 
-#: views.py:45
+#: views.py:59
+#, fuzzy
 msgid ""
-"Error sending the mail: Contact me at                    info at bagnialmare "
+"Error sending the mail: Contact us at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"
 msgstr ""
 "Errore di invio e-mail: Contattami a info at bagnialmare punto com per "
 "informarci dell'errore. Grazie."
 
-#: templates/contacts/contacts.html:9
-msgid "Want to drop us a line"
-msgstr "Vuoi mandarci un messaggio"
-
 #: templates/contacts/contacts.html:20
 msgid "contacts_pagetitle"
 msgstr "contatta il team di bagnialmare.com"
 
-#: templates/contacts/contacts.html:22
+#: templates/contacts/contacts.html:26
 msgid "contacts_page_description"
 msgstr "contatta il team di bagnialmare.com"
 
-#: templates/contacts/contacts.html:24
+#: templates/contacts/contacts.html:30
 msgid "Contacts"
 msgstr "Contatti"
 
@@ -64,25 +63,28 @@ msgstr "Invia il tuo messaggio"
 msgid "Close"
 msgstr "Chiudi"
 
-#: templates/contacts/info.html:2
-msgid "contacts_main_text"
-msgstr "Piacere di conoscerti, siamo il team di bagnialmare.com. In questo sito vogliamo organizzare e rendere accessibili online tutte le informazioni sugli stabilimenti balneari della Riviera Adriatica. Saremo lieti di rispondere alle tue domande ed ascoltare i tuoi suggerimenti: usa la form sottostante per scriverci un messaggio"
+#: templates/contacts/info.html:3
+msgid "About us"
+msgstr "Chi siamo"
 
-#~ msgid ""
-#~ "Nice to meet you, we are the bagnialmare.com team. In this website we "
-#~ "want to organise all the information about the beach resorts in the "
-#~ "Riviera Adriatica to make it accessible and useful. We are happy to "
-#~ "answer your questions and listen to your suggestions. Use the form below "
-#~ "to send us a message."
-#~ msgstr ""
-#~ "Piacere di conoscerti, siamo il team di bagnialmare.com . In questo sito "
-#~ "vogliamo organizzare e rendere accessibili a tutti le informazioni degli "
-#~ "stabilimenti balneari della Riviera Adriatica Saremo felici di rispondere "
-#~ "alle tue domande e raccogliere i tuoi suggerimenti: usa il form qui sotto "
-#~ "per scriverci un messaggio"
-
-#~ msgid "Subject"
-#~ msgstr "Oggetto"
-
-#~ msgid "Send a copy to your address"
-#~ msgstr "Invia una copia al tuo indirizzo"
+#: templates/contacts/info.html:5
+msgid ""
+"We are four guys from Forlì, a city near Rimini. Every and each of us has "
+"spent summers over summers in the beach resorts of the Adriatic sea playing "
+"beach volley, sunbathing, swimming etc. We love Adriatic coast because it "
+"fits every kind of tourism: nightlife, nature or historical; and now we are "
+"happy to share our knowledge that came from experience.\n"
+"\n"
+"Enjoy the website and if you need to ask something feel free to drop us a "
+"line filling the form below. We will be happy to answer your questions and "
+"listen to your suggestions"
+msgstr ""
+"Siamo quattro ragazzi di Forlì (vicino a Rimini). Tutti noi abbiamo passato "
+"intere estati tra gli stabilimenti balneari della riviera adriatica giocando "
+"a beach volley, prendendo il sole, nuotando ecc. Amiamo questa costa perché "
+"propone qualcosa per ogni tipo di turismo: naturalistico, storico, della movida ecc "
+"così abbiamo deciso di condividere quello che sappiamo e che deriva dall'esperienza.\n"
+"\n"
+"Ora goditi il sito e se volessi chiederci qualcosa o avessi consigli da darci scrivici "
+"riempendo il form sottostante. Saremo felici di rispondere alle tue domande e di prendere "
+"in considerazione i tuoi suggerimenti"
