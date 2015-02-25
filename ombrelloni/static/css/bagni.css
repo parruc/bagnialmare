@@ -70,13 +70,15 @@ body {
   margin-top: 130px;
 }
 
-.search-button {
-  /*background-color: #0097D5;
-  border-color: #0097D5;*/
-  /*border-color: rgb(22, 137, 199);
-  border: 1px solid rgb(16, 111, 169);
-  background-color: rgb(39, 184, 246);
-  background-image: linear-gradient(rgb(39, 184, 246), rgb(34, 161, 231));*/
+.btn.search-button{
+    color: #FFFFFF;
+    background-color: #EB604B;
+    border-color: #EB604B;
+}
+.btn.search-button:hover{
+    color: #FFFFFF;
+    background-color: #EB351A;
+    border-color: #EB351A;
 }
 
 .search-page-img {
@@ -252,53 +254,16 @@ body {
     margin-top: 10px;
 }
 
-.book-button{
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(37, 139, 228);
-    border-color: rgb(37, 139, 228);
-}
-
-
-.book-button:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(50, 118, 177);
-    border-color: rgb(40, 94, 142);
-}
-
-
-.book-button:visited{
-    color: rgb(255, 255, 255);
-    background-color: rgb(37, 139, 228);
-    border-color: rgb(37, 139, 228);
-}
-
-
-.book-button:focus{
-    color: rgb(255, 255, 255);
-    background-color: rgb(50, 118, 177);
-    border-color: rgb(40, 94, 142);
-}
-
-.book-button-xs{
+.btn.book-button{
     margin-bottom: 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(37, 139, 228);
-    border-color: rgb(37, 139, 228);
+    color: #FFFFFF;
+    background-color: #EB604B;
+    border-color: #EB604B;
 }
 
-
-.book-button-xs:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(50, 118, 177);
-    border-color: rgb(40, 94, 142);
-}
-
-
-.book-button-xs:visited{
-    color: rgb(255, 255, 255);
-    background-color: rgb(37, 139, 228);
-    border-color: rgb(37, 139, 228);
+.btn.book-button:hover{
+    background-color: #EB351A;
+    border-color: #EB351A;
 }
 
 .bagno-detail-button{
@@ -306,15 +271,8 @@ body {
     font-family: Helvetica Neue, sans-serif;
 }
 
-
 .bagno-detail-contact-title{
     margin-top: 0px;
-}
-
-.book-button-xs:focus{
-    color: rgb(255, 255, 255);
-    background-color: rgb(50, 118, 177);
-    border-color: rgb(40, 94, 142);
 }
 
 .bagno-header-row{
@@ -379,14 +337,6 @@ img.hp-form-image
 .search-page-label{
     padding-left: 15px;
 }
-.search-page-button{
-    /*background-color: #0097D5;
-    border-color: #0097D5;*/
-    /*border: 1px solid rgb(16, 111, 169);
-    background-color: rgb(39, 184, 246);
-    background-image: linear-gradient(rgb(39, 184, 246), rgb(34, 161, 231));*/
-}
-
 .search-page-search-row{
     position: relative;
 }
@@ -564,23 +514,13 @@ button {
   font-size: 17px;
 }
 .btn-primary {
-     background-color: #EB604B/*#00A0B0*/;
-     border-color: #EB604B/*#00A0B0*/;
+     background-color: #258BE4;
+     border-color: #258BE4;
 }
 
 .btn-primary:hover {
-     background-color: #EB351A/*#00A0B0*/;
-     border-color: #EB351A/*#00A0B0*/;
-}
-
-.btn-primary:focus {
-     background-color: #EB351A/*#00A0B0*/;
-     border-color: #EB351A/*#00A0B0*/;
-}
-
-.btn-primary:visited {
-     background-color: #EB351A/*#00A0B0*/;
-     border-color: #EB351A/*#00A0B0*/;
+     background-color: #3276B1;
+     border-color: #3276B1;
 }
 
 .hp-what-input {
