@@ -119,8 +119,8 @@ msgid "Booking details"
 msgstr "Dettagli della prenotazione"
 
 #: templates/booking/booking.html:24 templates/booking/booking_modal.html:12
-msgid "Book"
-msgstr "Prenota"
+msgid "Request a quote"
+msgstr "Richiedi un preventivo"
 
 #: templates/booking/booking_modal.html:13
 msgid "Close"
