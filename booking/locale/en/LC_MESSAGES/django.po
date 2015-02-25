@@ -120,7 +120,7 @@ msgid "Booking details"
 msgstr ""
 
 #: templates/booking/booking.html:24 templates/booking/booking_modal.html:12
-msgid "Book"
+msgid "Request a quote"
 msgstr ""
 
 #: templates/booking/booking_modal.html:13
