@@ -57478,6 +57478,23 @@
   }
 },
 {
+  "pk": 6, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-dallara"
+    ], 
+    "end": "2015-02-27", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-02-27T20:43:49.512Z", 
+    "modified": "2015-02-27T20:43:49.512Z", 
+    "start": "2015-02-27", 
+    "email": "nicolavalentini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
