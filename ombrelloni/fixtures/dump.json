@@ -57512,6 +57512,23 @@
   }
 },
 {
+  "pk": 8, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "lido"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 4, 
+    "mobile": "", 
+    "created": "2015-03-04T19:33:33.453Z", 
+    "modified": "2015-03-04T19:33:33.453Z", 
+    "start": "2015-07-18", 
+    "email": "gucciardo@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
