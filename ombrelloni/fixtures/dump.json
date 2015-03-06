@@ -24977,11 +24977,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": " ", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2447884082794189 44.7440738363792292)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": " ", 
+    "modified": "2015-03-05T19:26:18.131Z", 
+    "description_en": "", 
     "number": "24", 
     "languages": [
       [
@@ -24993,7 +24993,7 @@
     ], 
     "services": [
       [
-        "entertainment"
+        "jacuzzi"
       ], 
       [
         "schoolchildren"
@@ -25002,7 +25002,7 @@
         "catering"
       ], 
       [
-        "jacuzzi"
+        "entertainment"
       ]
     ], 
     "address": "Lungomare Italia, 5", 
@@ -57529,6 +57529,23 @@
   }
 },
 {
+  "pk": 9, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-playa-del-sol"
+    ], 
+    "end": "2015-08-27", 
+    "sunbeds": 2, 
+    "mobile": "3486561030", 
+    "created": "2015-03-05T12:52:00.692Z", 
+    "modified": "2015-03-05T12:52:00.692Z", 
+    "start": "2015-08-02", 
+    "email": "aanaclerio@kpmg.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -71558,7 +71575,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-02-25T22:04:19.793Z", 
+    "last_login": "2015-03-05T19:02:55.631Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
@@ -71576,7 +71593,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-02-19T15:09:13.552Z", 
+    "last_login": "2015-03-05T18:08:23.579Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$pMFP9UrGappG$AeDiG5AAlOvwOob+k3JFhSPE3Tm7BIY7BNIp4aiqXN8=", 
@@ -71594,7 +71611,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2014-07-18T09:47:11.924Z", 
+    "last_login": "2015-03-05T19:21:32.558Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -78756,25 +78773,13 @@
   }
 },
 {
-  "pk": 2421, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "lido"
-    ], 
-    "number": "0533 371462", 
-    "name": "tel", 
-    "slug": "telephone-number-336"
-  }
-},
-{
   "pk": 2422, 
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
       "lido"
     ], 
-    "number": "335 5915608", 
+    "number": "392 7121386", 
     "name": "mob", 
     "slug": "mobile-number-40"
   }
