@@ -4,6 +4,7 @@
 {% trans "Here it is the details" %}:
 
 {% blocktrans %}Where: {{ bagno_name }}{% endblocktrans %}
+{% blocktrans %}url: {{ bagno_url }}{% endblocktrans %}
 {% blocktrans %}State: {{ managed_state }}{% endblocktrans %}
 {% include 'booking/details.txt' %}
 
@@ -11,3 +12,5 @@
 - {% blocktrans %}Calling: {{ bagno_phones }}{% endblocktrans %}
 - {% blocktrans %}Mailing the manager: {{ bagno_managers_mail }}{% endblocktrans %}
 - {% blocktrans %}Mailing the beach resort: {{ bagno_mail }}{% endblocktrans %}
+- {% blocktrans %}Registration url: {{ bagno_registration_url }}{% endblocktrans %}
+
