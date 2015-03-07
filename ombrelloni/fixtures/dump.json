@@ -55527,18 +55527,11 @@
     "site": "http://www.playadelsolvillage.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4629383199999992 44.1520579199999972)", 
-    "modified": "2014-07-22T09:26:51.268Z", 
+    "point": "POINT (12.4629383200000063 44.1520579199999972)", 
+    "modified": "2015-03-06T08:00:36.092Z", 
     "description_en": "", 
     "number": "26/27/28/29", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "bookcrossing"
@@ -57542,6 +57535,40 @@
     "modified": "2015-03-05T12:52:00.692Z", 
     "start": "2015-08-02", 
     "email": "aanaclerio@kpmg.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 10, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2015-08-31", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-06T09:53:38.591Z", 
+    "modified": "2015-03-06T09:53:38.591Z", 
+    "start": "2015-08-01", 
+    "email": "vivianeniye@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 11, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2015-08-31", 
+    "sunbeds": 2, 
+    "mobile": "3335601121", 
+    "created": "2015-03-06T09:56:23.927Z", 
+    "modified": "2015-03-06T09:56:23.927Z", 
+    "start": "2015-08-06", 
+    "email": "vivianeniye@gmail.com", 
     "umbrellas": 1
   }
 },
@@ -70175,6 +70202,16 @@
   }
 },
 {
+  "pk": 37, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 34, 
+    "key": "24924d7a5e4372bd2b32f7c25f749b921fe4e61a2c2c83afd316b68312df963e", 
+    "sent": "2015-03-06T07:41:06.865Z", 
+    "created": "2015-03-06T07:41:06.597Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70371,6 +70408,20 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||55d15c96526995aa4e71d90711c4d438", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/a3/40/a340b6c14d378a2e9c0ba659e1b28eaa.jpg\", \"size\": [380, 238]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||56eb99d8b2fd61278ec7ab4c1a7332b0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/af/58/af5884702a9b68ada1f33302c736c62b.png\", \"size\": [205, 128]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||57a17e6ba7219832ea7473161773bbb7", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70382,6 +70433,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/9a/4b/9a4bf71c0cefd1ff5996f200bcb875ed.jpg\", \"size\": [125, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||58c9f78bff10b8757f0c690206f6e091", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-playa-del-sol/playani-doc.JPG\", \"size\": [800, 500]}"
   }
 },
 {
@@ -70637,6 +70695,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||df0317cd3a287996f7f7006c8e903e89", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/4a/e7/4ae76c7b00b9390765732458e72671af.jpg\", \"size\": [200, 125]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||e17a0eb71019379f643c48a3e059c014", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70767,6 +70832,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"4fe1be36f7a34700b055f029f0f77677\", \"07b08917c4daaaf9977b5ac77cafbdd3\", \"49f96a36dfae68d533c1756616f42233\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||58c9f78bff10b8757f0c690206f6e091", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"55d15c96526995aa4e71d90711c4d438\", \"56eb99d8b2fd61278ec7ab4c1a7332b0\", \"df0317cd3a287996f7f7006c8e903e89\"]"
   }
 },
 {
@@ -71980,6 +72052,24 @@
   }
 },
 {
+  "pk": 38, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info9", 
+    "first_name": "Alessandro", 
+    "last_name": "Vasini", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2015-03-06T07:42:39.873Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$N4zyGvwFIlTX$M9C3IanfY0ZHJNd259KHT8vFa1wdPgtK6MOB5nDwoeU=", 
+    "email": "info@playadelsolvillage.it", 
+    "date_joined": "2015-03-06T07:41:04.508Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -72261,6 +72351,18 @@
     ], 
     "primary": true, 
     "email": "elenalazzarini@hotmail.com"
+  }
+},
+{
+  "pk": 34, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info9"
+    ], 
+    "primary": true, 
+    "email": "info@playadelsolvillage.it"
   }
 },
 {
@@ -72758,6 +72860,26 @@
   }
 },
 {
+  "pk": 31, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Vasini", 
+    "name": "Alessandro", 
+    "created": "2015-03-06T07:41:04.725Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2015-03-06T07:41:05.956Z", 
+    "user": [
+      "info9"
+    ], 
+    "bagni": [
+      [
+        "bagno-playa-del-sol"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -72998,6 +73120,16 @@
   }
 },
 {
+  "pk": 25, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info9"
+    ], 
+    "old_email": "info@playadelsolvillage.it"
+  }
+},
+{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -73190,6 +73322,19 @@
     "name": "Bagno Egisto Reception", 
     "image": "images/bagni/egisto/bagno-egisto-reception.jpg", 
     "slug": "bagno-egisto-reception"
+  }
+},
+{
+  "pk": 17, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "bagno-playa-del-sol"
+    ], 
+    "name": "Playani DOC info@playadelsolvillage.it", 
+    "image": "images/bagni/bagno-playa-del-sol/playani-doc.JPG", 
+    "slug": "playani-doc"
   }
 },
 {
@@ -89699,8 +89844,8 @@
     "bagno": [
       "bagno-playa-del-sol"
     ], 
-    "number": "0541 349235", 
-    "name": "tel", 
+    "number": "335 352531", 
+    "name": "mob", 
     "slug": "telephone-number-879"
   }
 },
