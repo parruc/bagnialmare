@@ -26496,7 +26496,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2401320934295654 44.7133789705789439)", 
-    "modified": "2014-12-11T16:56:24.694Z", 
+    "modified": "2015-03-08T09:21:28.189Z", 
     "description_en": null, 
     "number": "49", 
     "languages": [
@@ -26553,7 +26553,7 @@
     ], 
     "address": "Via Mare Adriatico, 87", 
     "description_it": null, 
-    "mail": "", 
+    "mail": "boscolo.luisella@libero.it", 
     "accepts_booking": true, 
     "slug": "pic-nic", 
     "neighbourhood": [
@@ -56780,7 +56780,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4848129188999994 44.1332074054000003)", 
-    "modified": "2014-07-22T09:27:56.055Z", 
+    "modified": "2015-03-08T18:31:53.282Z", 
     "description_en": "", 
     "number": "80/81/82/83/84/85/86", 
     "languages": [
@@ -56798,7 +56798,7 @@
     ], 
     "address": "Via A. Pinzon", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "matchingworksheetmaker@gmail.com", 
     "accepts_booking": true, 
     "slug": "solaria-beach", 
     "neighbourhood": [
@@ -70213,6 +70213,36 @@
   }
 },
 {
+  "pk": 38, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 35, 
+    "key": "f3c239552b07c14818f0ed8d6a0d14f49dba3265506cb2c70ad0c49be85afa28", 
+    "sent": "2015-03-08T09:21:28.884Z", 
+    "created": "2015-03-08T09:21:28.596Z"
+  }
+},
+{
+  "pk": 39, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 28, 
+    "key": "24f0860b7bcbe1db8f1da5a6b1fdd44c9ac8d91ebeddaf8635372b51ad97148c", 
+    "sent": "2015-03-08T12:12:51.370Z", 
+    "created": "2015-03-08T12:12:50.401Z"
+  }
+},
+{
+  "pk": 40, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 36, 
+    "key": "7aa579d4925d98c2607f9fcea8541d82ed3c9d942875497d821454d2b965162d", 
+    "sent": "2015-03-08T18:31:53.846Z", 
+    "created": "2015-03-08T18:31:53.752Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -71648,7 +71678,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-05T19:02:55.631Z", 
+    "last_login": "2015-03-08T18:49:34.416Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
@@ -72071,6 +72101,42 @@
   }
 },
 {
+  "pk": 39, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "boscolo.luisella", 
+    "first_name": "luisella", 
+    "last_name": "boscolo", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2015-03-08T09:22:34.791Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$o6qx9J3FkuRb$uB8SxVornjUvGNw2QH09wkmm/eD6DWePPdo6kyqh5LU=", 
+    "email": "boscolo.luisella@libero.it", 
+    "date_joined": "2015-03-08T09:21:26.602Z"
+  }
+},
+{
+  "pk": 40, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "matchingworksheetmaker", 
+    "first_name": "Inge", 
+    "last_name": "Ingez", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2015-03-08T18:46:34.520Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$273n8w1Qdp5A$AU3ic8bNAKj3rpTchR2zE76X3LGe1LKno4cgWZ0JC/c=", 
+    "email": "matchingworksheetmaker@gmail.com", 
+    "date_joined": "2015-03-08T18:31:51.288Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -72286,11 +72352,11 @@
   "pk": 28, 
   "model": "account.emailaddress", 
   "fields": {
-    "verified": false, 
+    "verified": true, 
     "user": [
       "inge"
     ], 
-    "primary": false, 
+    "primary": true, 
     "email": "nicola.valentini@gmail.com"
   }
 },
@@ -72364,6 +72430,30 @@
     ], 
     "primary": true, 
     "email": "info@playadelsolvillage.it"
+  }
+},
+{
+  "pk": 35, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "boscolo.luisella"
+    ], 
+    "primary": true, 
+    "email": "boscolo.luisella@libero.it"
+  }
+},
+{
+  "pk": 36, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "matchingworksheetmaker"
+    ], 
+    "primary": true, 
+    "email": "matchingworksheetmaker@gmail.com"
   }
 },
 {
@@ -72881,6 +72971,46 @@
   }
 },
 {
+  "pk": 32, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "boscolo", 
+    "name": "luisella", 
+    "created": "2015-03-08T09:21:26.774Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2015-03-08T09:21:27.950Z", 
+    "user": [
+      "boscolo.luisella"
+    ], 
+    "bagni": [
+      [
+        "pic-nic"
+      ]
+    ]
+  }
+},
+{
+  "pk": 33, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Ingez", 
+    "name": "Inge", 
+    "created": "2015-03-08T18:31:51.432Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2015-03-08T18:31:52.989Z", 
+    "user": [
+      "matchingworksheetmaker"
+    ], 
+    "bagni": [
+      [
+        "solaria-beach"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -73128,6 +73258,26 @@
       "info9"
     ], 
     "old_email": "info@playadelsolvillage.it"
+  }
+},
+{
+  "pk": 26, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "boscolo.luisella"
+    ], 
+    "old_email": "boscolo.luisella@libero.it"
+  }
+},
+{
+  "pk": 27, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "matchingworksheetmaker"
+    ], 
+    "old_email": "matchingworksheetmaker@gmail.com"
   }
 },
 {
