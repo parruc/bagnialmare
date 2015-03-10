@@ -26492,39 +26492,44 @@
   "pk": 13140, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
+    "site": "http://www.facebook.com/BagnoPicNic", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2401320934295654 44.7133789705789439)", 
-    "modified": "2015-03-08T09:21:28.189Z", 
-    "description_en": null, 
+    "point": "POINT (12.2401320934295672 44.7133789705789297)", 
+    "modified": "2015-03-09T22:30:09.366Z", 
+    "description_en": "", 
     "number": "49", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "fitness-area"
+        "bar"
+      ], 
+      [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "music"
       ], 
       [
         "entertainment"
-      ], 
-      [
-        "gymnastics"
-      ], 
-      [
-        "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "schoolchildren"
       ], 
       [
         "dancing"
@@ -26533,27 +26538,75 @@
         "acquagym"
       ], 
       [
-        "baby-park"
-      ], 
-      [
         "beach-racket-court"
       ], 
       [
-        "children-entertainment"
+        "fitness-area"
       ], 
       [
-        "idrobike"
+        "theme-parties"
       ], 
       [
-        "bar"
+        "live-concerts"
       ], 
       [
-        "petanque"
+        "happy-hour"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "sports-tournaments"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "dj-set"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "pilates"
+      ], 
+      [
+        "aperitif"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "karaoke"
+      ], 
+      [
+        "themed-dinner"
+      ], 
+      [
+        "cocktail-bar"
+      ], 
+      [
+        "beach-rackets-courses"
+      ], 
+      [
+        "bancomat"
+      ], 
+      [
+        "private-functions"
       ]
     ], 
     "address": "Via Mare Adriatico, 87", 
-    "description_it": null, 
-    "mail": "boscolo.luisella@libero.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "pic-nic", 
     "neighbourhood": [
@@ -70375,6 +70428,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||37bdaa9745a1ac17609b4aea22977aeb", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/fb/6a/fb6abdbefa33cdda64d3fe2d10495ef9.jpg\", \"size\": [347, 260]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||4093467e977df9f2d293dcf88a8056fe", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70480,6 +70540,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||5d17fe6f80d028366d99cc2271f2bc63", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/15/28/15283b17c18330dcf380f3cfff96cb51.jpg\", \"size\": [167, 125]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||5fe0f45d20bea65e8a0d029b9ca89b1a", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -70540,6 +70607,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/services/Tretboot_gelb.JPG\", \"size\": [800, 440]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||7b5a7c53a620324acfe41828163846be", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/fe/dd/fedd4d60e82793db1ebe7eef95b5e4b3.png\", \"size\": [171, 128]}"
   }
 },
 {
@@ -70645,6 +70719,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/c8/01/c801fe7052b1135c1bfa8493564282ea.jpg\", \"size\": [194, 260]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||b202bf8b8cbeb6e59e1857e64001463f", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/pic-nic/bagno-pic-nic.JPG\", \"size\": [640, 480]}"
   }
 },
 {
@@ -70932,6 +71013,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"e5e1d2d3d2877b5418ec81be72e59f88\", \"e52f4565e1284f77affec22a50ae0fc7\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||b202bf8b8cbeb6e59e1857e64001463f", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"37bdaa9745a1ac17609b4aea22977aeb\", \"7b5a7c53a620324acfe41828163846be\", \"5d17fe6f80d028366d99cc2271f2bc63\"]"
   }
 },
 {
@@ -72109,7 +72197,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2015-03-08T09:22:34.791Z", 
+    "last_login": "2015-03-09T20:16:55.475Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$o6qx9J3FkuRb$uB8SxVornjUvGNw2QH09wkmm/eD6DWePPdo6kyqh5LU=", 
@@ -73485,6 +73573,19 @@
     "name": "Playani DOC info@playadelsolvillage.it", 
     "image": "images/bagni/bagno-playa-del-sol/playani-doc.JPG", 
     "slug": "playani-doc"
+  }
+},
+{
+  "pk": 18, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "pic-nic"
+    ], 
+    "name": "Bagno Pic Nic", 
+    "image": "images/bagni/pic-nic/bagno-pic-nic.JPG", 
+    "slug": "bagno-pic-nic"
   }
 },
 {
@@ -90813,6 +90914,18 @@
     "number": "0544 1761241", 
     "name": "fax", 
     "slug": "fax"
+  }
+},
+{
+  "pk": 3432, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "number": "0533 380344", 
+    "name": "fax", 
+    "slug": "fax-2"
   }
 }
 ]
