@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-16 18:31+0100\n"
+"POT-Creation-Date: 2015-03-10 11:30-0400\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -278,7 +278,7 @@ msgstr "with"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:224
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:235
 msgid "in"
 msgstr "in"
 
@@ -435,7 +435,35 @@ msgstr "search page"
 msgid "book_button"
 msgstr "Book online"
 
-#: templates/bagni/bagno_detail.html:228
+#: templates/bagni/bagno_detail.html:96
+msgid "Share on socials"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:99
+msgid "Share on Facebook"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:99
+msgid "Facebook logo"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:102
+msgid "Share on Twitter"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:102
+msgid "Twitteri logo"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:105
+msgid "Share on Google+"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:105
+msgid "Google+ logo"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:239
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 

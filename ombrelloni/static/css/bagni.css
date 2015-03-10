@@ -46,6 +46,14 @@ body {
   text-align: center;
 }
 
+#share-buttons img {
+    width: 36px;
+    padding: 2px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
+
 /* Set the fixed height of the footer here */
 #footer {
   height: 40px;
