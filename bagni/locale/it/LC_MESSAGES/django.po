@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-16 18:31+0100\n"
+"POT-Creation-Date: 2015-03-10 11:30-0400\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -279,7 +279,7 @@ msgstr "con"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:224
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:235
 msgid "in"
 msgstr "a"
 
@@ -438,7 +438,35 @@ msgstr "pagina di ricerca"
 msgid "book_button"
 msgstr "Prenota l'ombrellone online!"
 
-#: templates/bagni/bagno_detail.html:228
+#: templates/bagni/bagno_detail.html:96
+msgid "Share on socials"
+msgstr "Condividi sui social"
+
+#: templates/bagni/bagno_detail.html:99
+msgid "Share on Facebook"
+msgstr "Condividi su Facebook"
+
+#: templates/bagni/bagno_detail.html:99
+msgid "Facebook logo"
+msgstr "Logo di Facebook"
+
+#: templates/bagni/bagno_detail.html:102
+msgid "Share on Twitter"
+msgstr "Condividi su Twitter"
+
+#: templates/bagni/bagno_detail.html:102
+msgid "Twitteri logo"
+msgstr "Logo di twitter"
+
+#: templates/bagni/bagno_detail.html:105
+msgid "Share on Google+"
+msgstr "Condividi su Google+"
+
+#: templates/bagni/bagno_detail.html:105
+msgid "Google+ logo"
+msgstr "Logo di google+"
+
+#: templates/bagni/bagno_detail.html:239
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -918,7 +946,9 @@ msgstr ""
 msgid ""
 "Thank you for your booking request. We will let you know the                 "
 "result as soon as possible"
-msgstr "Ti ringraziamo per la tua richiesta di prenotazione. Ti faremo sapere il risultato il prima possibile"
+msgstr ""
+"Ti ringraziamo per la tua richiesta di prenotazione. Ti faremo sapere il "
+"risultato il prima possibile"
 
 #: views/bagni.py:185
 msgid ""
