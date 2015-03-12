@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 08:11-0400\n"
+"POT-Creation-Date: 2015-03-12 10:54-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: settings.py:114
+#: settings.py:115
 msgid "English"
 msgstr "English"
 
-#: settings.py:115
+#: settings.py:116
 msgid "Italiano"
 msgstr "Italian"
 
@@ -68,24 +68,24 @@ msgstr ""
 msgid "edit"
 msgstr ""
 
-#: templates/base.html:12
+#: templates/base.html:116
 #, fuzzy
-msgid "account"
+msgid "Account"
 msgstr "^accounts/"
 
-#: templates/base.html:194
+#: templates/base.html:193
 msgid "BagniAlMare on Google+"
 msgstr ""
 
-#: templates/base.html:204
+#: templates/base.html:203
 msgid "BagniAlMare on Facebook"
 msgstr ""
 
-#: templates/base.html:212
+#: templates/base.html:211
 msgid "BagniAlMare on Twitter"
 msgstr ""
 
-#: templates/base.html:221
+#: templates/base.html:220
 msgid "terms_and_privacy"
 msgstr ""
 
