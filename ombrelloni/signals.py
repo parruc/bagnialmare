@@ -1,27 +1,13 @@
 # -*- coding: utf-8 -*-
 from django.db.models import signals
-from django.conf import settings
-from django.core.mail import send_mail
 from authauth.models import Manager
+from authauth.signals import mail_for_manager
 from bagni.models import Bagno
+from bagni.signals import mail_for_bagno
 from booking.models import Booking
 from booking.signals import mail_for_booking
 
-
-def mail_admin(sender, instance, created, **kwargs):
-    admin_emails = [email[1] for email in settings.ADMINS]
-    action = "modified"
-    if created:
-        action = "created"
-
-    subject = "[bagnialmare.com updates]"
-    message = "{model} {title} {action}".format(
-        model=instance._meta.verbose_name.title(),
-        title=repr(instance),
-        action=action)
-    send_mail(subject, message, "info@bagnialmare.com", admin_emails)
-
-signals.post_save.connect(mail_admin, sender=Manager)
-signals.post_save.connect(mail_admin, sender=Bagno)
+signals.post_save.connect(mail_for_manager, sender=Manager)
+signals.post_save.connect(mail_for_bagno, sender=Bagno)
 
 signals.post_save.connect(mail_for_booking, sender=Booking)
