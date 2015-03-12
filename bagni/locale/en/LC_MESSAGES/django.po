@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-10 11:30-0400\n"
+"POT-Creation-Date: 2015-03-12 06:44-0400\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -481,11 +481,15 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/bagni/bagno_edit.html:244
+#: templates/bagni/bagno_edit.html:65
+msgid "The url must start with 'http://' or 'https://'"
+msgstr ""
+
+#: templates/bagni/bagno_edit.html:245
 msgid "Save"
 msgstr ""
 
-#: templates/bagni/bagno_edit.html:249
+#: templates/bagni/bagno_edit.html:250
 #, python-format
 msgid ""
 "\n"
