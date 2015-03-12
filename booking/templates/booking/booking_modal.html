@@ -9,7 +9,13 @@
       <div class="modal-body">
        <form id="book-online-form" action="{{ bagno.get_booking_url }}" method="post" role="form">
           {% include "booking/form.html" %}
-          <button class="btn btn-primary" type="submit" >{% trans "Request a quote" %}</button>
+          <button class="btn btn-primary ga_click" 
+                  type="submit" 
+                  data-category="book"
+                  data-action="booked"
+                  data-label="{{ bagno.slug }}">
+              {% trans "Request a quote" %}
+          </button>
           <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
        </form>
       </div>
