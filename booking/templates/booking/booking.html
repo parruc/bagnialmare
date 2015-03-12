@@ -21,7 +21,13 @@
     <h1>{% trans "Booking details" %}</h1>
     <form method="post" enctype="multipart/form-data" role="form" id="booking-form">
       {% include "booking/form.html" %}
-      <button class="btn btn-primary" type="submit" >{% trans "Request a quote" %}</button>
+      <button class="btn btn-primary ga_click" 
+              type="submit" 
+              data-category="book"
+              data-action="booked"
+              data-label="">
+        {% trans "Request a quote" %}
+    </button>
     </form>
   </div>
 </div>
