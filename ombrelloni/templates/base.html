@@ -178,7 +178,7 @@
         {% if messages %}
           <div class="tab-pane" id="messages">
             {% for message in messages %}
-            <div class="alert{% if message.tags %} alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% endif %} alert-dismissable">
+            <div class="alert{% if message.tags %} alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}{% else %} alert-danger{% endif %} alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
               {{ message|safe }}
             </div>
@@ -190,7 +190,7 @@
       </div>
     </div>
     <div class="social-links">
-      <a title="BagniAlMare su Google+" 
+        <a title="{% trans 'BagniAlMare on Google+' %}" 
          href="https://plus.google.com/+Bagnialmare"
          target="_blank"
          class="ga_click"           
@@ -200,7 +200,7 @@
         <img src="{{ STATIC_URL }}img/google-plus.png"
              alt="G+ icon" />
       </a> &nbsp;|
-      <a title="Bagnialmare su facebook"
+      <a title="{% trans 'BagniAlMare on Facebook' %}"
          href="https://www.facebook.com/bagnialmare"
          target="_blank"
          class="ga_click"           
@@ -208,7 +208,7 @@
         <img src="{{ STATIC_URL }}img/facebook.png"
              alt="Facebook link">
       </a> &nbsp;|
-      <a title="Il nostro profilo twitter"
+      <a title="{% trans 'BagniAlMare on Twitter' %}"
          href="https://twitter.com/bagnialmare"
          target="_blank"
          class="ga_click"           

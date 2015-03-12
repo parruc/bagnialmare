@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-21 23:34+0200\n"
+"POT-Creation-Date: 2015-03-12 08:11-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: settings.py:110
+#: settings.py:114
 msgid "English"
 msgstr "Inglese"
 
-#: settings.py:111
+#: settings.py:115
 msgid "Italiano"
 msgstr "Italiano"
 
@@ -29,11 +29,15 @@ msgstr "Italiano"
 msgid "^contacts/"
 msgstr "^contatti/"
 
-#: urls.py:41 urls.py:43
+#: urls.py:38
+msgid "^newsletters/"
+msgstr ""
+
+#: urls.py:43 urls.py:45
 msgid "^accounts/"
 msgstr "^accounts/"
 
-#: urls.py:45
+#: urls.py:47
 msgid "^userfeedback/"
 msgstr ""
 
@@ -66,6 +70,21 @@ msgid "edit"
 msgstr ""
 
 #: templates/base.html:12
-#, fuzzy
 msgid "account"
 msgstr "^accounts/"
+
+#: templates/base.html:194
+msgid "BagniAlMare on Google+"
+msgstr "BagniAlMare su Google+"
+
+#: templates/base.html:204
+msgid "BagniAlMare on Facebook"
+msgstr "BagniAlMare su Facebook"
+
+#: templates/base.html:212
+msgid "BagniAlMare on Twitter"
+msgstr "BagniAlMare su Twitter"
+
+#: templates/base.html:221
+msgid "terms_and_privacy"
+msgstr ""

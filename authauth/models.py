@@ -20,6 +20,7 @@ class Manager(models.Model):
     user = models.OneToOneField(User,
                                 null=True,
                                 blank=True,
+                                on_delete=models.CASCADE,
     )
 
     bagni = models.ManyToManyField(Bagno,
