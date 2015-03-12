@@ -27152,12 +27152,12 @@
   "pk": 13150, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.campingmarepineta.com", 
+    "site": "http://www.campingmarepineta.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2494232654571533 44.6529859986204514)", 
-    "modified": "2014-12-11T16:56:27.338Z", 
-    "description_en": null, 
+    "modified": "2015-03-11T11:55:55.089Z", 
+    "description_en": "", 
     "number": "38", 
     "languages": [
       [
@@ -27169,22 +27169,22 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "gymnastics"
-      ], 
-      [
-        "five-a-side"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "acquagym"
+        "five-a-side"
       ], 
       [
-        "baby-park"
+        "petanque"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "acquagym"
       ], 
       [
         "beach-racket-court"
@@ -27193,12 +27193,12 @@
         "basketball"
       ], 
       [
-        "petanque"
+        "baby-park"
       ]
     ], 
     "address": "Via Spiaggia, 38", 
-    "description_it": null, 
-    "mail": "info@marepineta.com", 
+    "description_it": "", 
+    "mail": "info@campingmarepineta.com", 
     "accepts_booking": true, 
     "slug": "capanna", 
     "neighbourhood": [
@@ -57626,6 +57626,40 @@
   }
 },
 {
+  "pk": 12, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capanna"
+    ], 
+    "end": "2015-08-22", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-11T10:54:07.615Z", 
+    "modified": "2015-03-11T10:54:07.615Z", 
+    "start": "2015-08-02", 
+    "email": "francescasirna29@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 13, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "haiti"
+    ], 
+    "end": "2015-08-22", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-11T10:55:18.706Z", 
+    "modified": "2015-03-11T10:55:18.706Z", 
+    "start": "2015-08-02", 
+    "email": "francescairna29@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -71748,7 +71782,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-10T11:14:07.455Z", 
+    "last_login": "2015-03-11T19:34:12.931Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
