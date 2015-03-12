@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-21 23:34+0200\n"
+"POT-Creation-Date: 2015-03-12 08:11-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: settings.py:110
+#: settings.py:114
 msgid "English"
 msgstr "English"
 
-#: settings.py:111
+#: settings.py:115
 msgid "Italiano"
 msgstr "Italian"
 
@@ -28,11 +28,15 @@ msgstr "Italian"
 msgid "^contacts/"
 msgstr "^contacts/"
 
-#: urls.py:41 urls.py:43
+#: urls.py:38
+msgid "^newsletters/"
+msgstr ""
+
+#: urls.py:43 urls.py:45
 msgid "^accounts/"
 msgstr "^accounts/"
 
-#: urls.py:45
+#: urls.py:47
 msgid "^userfeedback/"
 msgstr ""
 
@@ -69,203 +73,39 @@ msgstr ""
 msgid "account"
 msgstr "^accounts/"
 
-#: templates/account/email_confirm.html:7
-#: templates/account/email_confirm.html:11
-#: templates/account/email/email_confirmation_subject.txt:3
-msgid "Confirm E-mail Address"
+#: templates/base.html:194
+msgid "BagniAlMare on Google+"
 msgstr ""
 
-#: templates/account/email_confirm.html:17
-#, python-format
-msgid ""
-"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
-"address for user %(user_display)s."
+#: templates/base.html:204
+msgid "BagniAlMare on Facebook"
 msgstr ""
 
-#: templates/account/email_confirm.html:21
-msgid "Confirm"
+#: templates/base.html:212
+msgid "BagniAlMare on Twitter"
 msgstr ""
 
-#: templates/account/email_confirm.html:28
-#, python-format
-msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a href="
-"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+#: templates/base.html:221
+msgid "terms_and_privacy"
 msgstr ""
 
-#: templates/account/login.html:7 templates/account/login.html.py:11
-#: templates/account/login.html:56
-msgid "Sign In"
-msgstr ""
+#~ msgid "signup"
+#~ msgstr "signup"
 
-#: templates/account/login.html:14
-#, python-format
-msgid ""
-"Please sign in with one\n"
-"of your existing third party accounts. Or, <a href=\"%(signup_url)s\" rel="
-"\"nofollow\">sign up</a>\n"
-"for a %(site_name)s account and sign in below:"
-msgstr ""
+#~ msgid "account signup intro"
+#~ msgstr "Why should you register?"
 
-#: templates/account/login.html:24
-msgid "or"
-msgstr ""
+#~ msgid "sign_up_button"
+#~ msgstr "sing up"
 
-#: templates/account/login.html:31
-#, python-format
-msgid ""
-"If you have not created an account yet, then please\n"
-"<a href=\"%(signup_url)s\" rel=\"nofollow\">sign up</a> first."
-msgstr ""
+#~ msgid "already_have_account"
+#~ msgstr "if you already have an account"
 
-#: templates/account/login.html:40
-msgid "Email address"
-msgstr ""
+#~ msgid "else_have_account"
+#~ msgstr "otherwise fill the form below"
 
-#: templates/account/login.html:48
-msgid "Remember Me"
-msgstr ""
+#~ msgid "sign_in"
+#~ msgstr "sign in"
 
-#: templates/account/login.html:55
-msgid "Forgot Password?"
-msgstr ""
-
-#: templates/account/signup.html:8 templates/account/signup.html.py:16
-msgid "signup"
-msgstr "signup"
-
-#: templates/account/signup.html:15
-msgid "account signup intro"
-msgstr "Why should you register?"
-
-#: templates/account/signup.html:17
-msgid "sign_up_button"
-msgstr "sing up"
-
-#: templates/account/signup.html:18
-msgid "already_have_account"
-msgstr "if you already have an account"
-
-#: templates/account/signup.html:19
-msgid "else_have_account"
-msgstr "otherwise fill the form below"
-
-#: templates/account/signup.html:20
-msgid "sign_in"
-msgstr "sign in"
-
-#: templates/account/signup.html:21
-msgid "accetto i"
-msgstr "I accept the"
-
-#: templates/account/signup.html:22
-msgid "close"
-msgstr ""
-
-#: templates/account/signup.html:23
-msgid "choose_neighbourhood"
-msgstr ""
-
-#: templates/account/signup.html:24 templates/account/signup.html.py:172
-msgid "choose_bagno"
-msgstr ""
-
-#: templates/account/signup.html:25
-msgid "label_accepts_booking"
-msgstr ""
-
-#: templates/account/signup.html:26
-msgid "help_accepts_booking"
-msgstr ""
-
-#: templates/account/signup.html:129
-msgid "tos_content"
-msgstr ""
-
-#: templates/account/signup.html:151
-msgid "privacy_content"
-msgstr ""
-
-#: templates/account/verification_sent.html:5
-#: templates/account/verification_sent.html:8
-msgid "Verify Your E-mail Address"
-msgstr ""
-
-#: templates/account/verification_sent.html:10
-msgid ""
-"We have sent an e-mail to you for verification. Follow the link provided to "
-"finalize the signup process. Please contact us if you do not receive it "
-"within a few minutes."
-msgstr ""
-
-#: templates/account/email/email_confirmation_message.txt:1
-#, python-format
-msgid ""
-"User %(user_display)s at %(site_name)s has given this as an email address.\n"
-"\n"
-"To confirm this is correct, go to %(activate_url)s\n"
-msgstr ""
-
-#: templates/account/email/password_reset_key_message.txt:1
-#, python-format
-msgid ""
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account at %(site_domain)s.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password.\n"
-"\n"
-"%(password_reset_url)s\n"
-"\n"
-"In case you forgot, your username is %(username)s.\n"
-"\n"
-"Thanks for using our site!\n"
-msgstr ""
-
-#: templates/account/email/password_reset_key_subject.txt:3
-msgid "Password Reset E-mail"
-msgstr ""
-
-#: templates/account/messages/cannot_delete_primary_email.txt:2
-#, python-format
-msgid "You cannot remove your primary e-mail address (%(email)s)."
-msgstr ""
-
-#: templates/account/messages/email_confirmation_sent.txt:2
-#, python-format
-msgid "Confirmation e-mail sent to %(email)s."
-msgstr ""
-
-#: templates/account/messages/email_confirmed.txt:2
-#, python-format
-msgid "You have confirmed %(email)s."
-msgstr ""
-
-#: templates/account/messages/email_deleted.txt:2
-#, python-format
-msgid "Removed e-mail address %(email)s."
-msgstr ""
-
-#: templates/account/messages/logged_in.txt:4
-#, python-format
-msgid "Successfully signed in as %(name)s."
-msgstr ""
-
-#: templates/account/messages/logged_out.txt:2
-msgid "You have signed out."
-msgstr ""
-
-#: templates/account/messages/password_changed.txt:2
-msgid "Password successfully changed."
-msgstr ""
-
-#: templates/account/messages/password_set.txt:2
-msgid "Password successfully set."
-msgstr ""
-
-#: templates/account/messages/primary_email_set.txt:2
-msgid "Primary e-mail address set."
-msgstr ""
-
-#: templates/account/messages/unverified_primary_email.txt:2
-msgid "Your primary e-mail address must be verified."
-msgstr ""
+#~ msgid "accetto i"
+#~ msgstr "I accept the"
