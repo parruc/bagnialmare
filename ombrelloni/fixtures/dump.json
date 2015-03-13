@@ -57054,9 +57054,9 @@
     "description": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
-    "modified": "2014-12-11T16:55:28.182Z", 
+    "modified": "2015-03-12T13:58:14.454Z", 
     "description_en": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
-    "number": "1", 
+    "number": "10", 
     "languages": [], 
     "services": [
       [
@@ -57085,6 +57085,9 @@
       ], 
       [
         "entertainment"
+      ], 
+      [
+        "dancing"
       ], 
       [
         "beach-soccer"
@@ -57124,6 +57127,9 @@
       ], 
       [
         "trampoline"
+      ], 
+      [
+        "games"
       ], 
       [
         "bicycles"
@@ -57196,15 +57202,9 @@
       ], 
       [
         "pizzeria"
-      ], 
-      [
-        "dancing"
-      ], 
-      [
-        "games"
       ]
     ], 
-    "address": "Riviera Adriatica, Estate 2014", 
+    "address": "Riviera Adriatica, Estate 2015", 
     "description_it": "<p>Benvenuti nel mondo di BagniAlMare.com. Questo &egrave; un esempio di vetrina ideale di uno stabilimento balneare. Per gestire e personalizzare la vetrina privata del tuo bagno baster&agrave; registrare il tuo account in pochi click a partire dall&#39;Area Gestori.</p>\r\n\r\n<p>Crea subito il tuo spazio su BagniAlMare.com!</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
@@ -57656,6 +57656,159 @@
     "modified": "2015-03-11T10:55:18.706Z", 
     "start": "2015-08-02", 
     "email": "francescairna29@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 14, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "i-delfini-beach-village"
+    ], 
+    "end": "2015-05-03", 
+    "sunbeds": 3, 
+    "mobile": "3404047366", 
+    "created": "2015-03-12T13:52:30.220Z", 
+    "modified": "2015-03-12T13:52:30.220Z", 
+    "start": "2015-05-01", 
+    "email": "marco.bartolini@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 15, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ideal"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-12T14:44:30.570Z", 
+    "modified": "2015-03-12T14:44:30.570Z", 
+    "start": "2015-07-01", 
+    "email": "ernestoborza@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 16, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-snoopy"
+    ], 
+    "end": "2015-06-29", 
+    "sunbeds": 2, 
+    "mobile": "3337525904", 
+    "created": "2015-03-12T15:04:21.557Z", 
+    "modified": "2015-03-12T15:04:21.557Z", 
+    "start": "2015-06-16", 
+    "email": "alicegelmi@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 17, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-pippo"
+    ], 
+    "end": "2015-06-29", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-12T15:06:15.153Z", 
+    "modified": "2015-03-12T15:06:15.153Z", 
+    "start": "2015-06-16", 
+    "email": "alicegelmi@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 18, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-adriana-birimbao-beach"
+    ], 
+    "end": "2015-06-29", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-12T15:11:17.817Z", 
+    "modified": "2015-03-12T15:11:17.817Z", 
+    "start": "2015-06-16", 
+    "email": "alicegelmi@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 19, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ideal"
+    ], 
+    "end": "2015-03-12", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-12T15:53:30.198Z", 
+    "modified": "2015-03-12T15:53:30.198Z", 
+    "start": "2015-03-12", 
+    "email": "asdas@asdasd.de", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 20, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ideal"
+    ], 
+    "end": "2015-03-12", 
+    "sunbeds": 2, 
+    "mobile": "1234", 
+    "created": "2015-03-12T15:58:46.124Z", 
+    "modified": "2015-03-12T15:58:46.124Z", 
+    "start": "2015-03-12", 
+    "email": "test@bagnialmare.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 21, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ideal"
+    ], 
+    "end": "2015-03-12", 
+    "sunbeds": 2, 
+    "mobile": "1234", 
+    "created": "2015-03-12T15:59:06.032Z", 
+    "modified": "2015-03-12T15:59:06.032Z", 
+    "start": "2015-03-12", 
+    "email": "TEST@ASDASD.DE", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 22, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ideal"
+    ], 
+    "end": "2015-03-12", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-12T16:05:20.457Z", 
+    "modified": "2015-03-12T16:05:20.457Z", 
+    "start": "2015-03-12", 
+    "email": "test@asdasd.de", 
     "umbrellas": 1
   }
 },
@@ -70320,16 +70473,6 @@
   }
 },
 {
-  "pk": 40, 
-  "model": "account.emailconfirmation", 
-  "fields": {
-    "email_address": 36, 
-    "key": "7aa579d4925d98c2607f9fcea8541d82ed3c9d942875497d821454d2b965162d", 
-    "sent": "2015-03-08T18:31:53.846Z", 
-    "created": "2015-03-08T18:31:53.752Z"
-  }
-},
-{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -71782,7 +71925,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-11T19:34:12.931Z", 
+    "last_login": "2015-03-12T13:56:26.049Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -71818,7 +71961,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-05T18:08:23.579Z", 
+    "last_login": "2015-03-12T13:57:41.896Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$pMFP9UrGappG$AeDiG5AAlOvwOob+k3JFhSPE3Tm7BIY7BNIp4aiqXN8=", 
@@ -71836,7 +71979,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-05T19:21:32.558Z", 
+    "last_login": "2015-03-12T11:04:14.216Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -72241,24 +72384,6 @@
   }
 },
 {
-  "pk": 40, 
-  "model": "auth.user", 
-  "fields": {
-    "username": "matchingworksheetmaker", 
-    "first_name": "Inge", 
-    "last_name": "Ingez", 
-    "is_active": true, 
-    "is_superuser": false, 
-    "is_staff": false, 
-    "last_login": "2015-03-08T18:46:34.520Z", 
-    "groups": [], 
-    "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$273n8w1Qdp5A$AU3ic8bNAKj3rpTchR2zE76X3LGe1LKno4cgWZ0JC/c=", 
-    "email": "matchingworksheetmaker@gmail.com", 
-    "date_joined": "2015-03-08T18:31:51.288Z"
-  }
-},
-{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -72564,18 +72689,6 @@
     ], 
     "primary": true, 
     "email": "boscolo.luisella@libero.it"
-  }
-},
-{
-  "pk": 36, 
-  "model": "account.emailaddress", 
-  "fields": {
-    "verified": true, 
-    "user": [
-      "matchingworksheetmaker"
-    ], 
-    "primary": true, 
-    "email": "matchingworksheetmaker@gmail.com"
   }
 },
 {
@@ -73113,26 +73226,6 @@
   }
 },
 {
-  "pk": 33, 
-  "model": "authauth.manager", 
-  "fields": {
-    "surname": "Ingez", 
-    "name": "Inge", 
-    "created": "2015-03-08T18:31:51.432Z", 
-    "tos": true, 
-    "privacy": true, 
-    "modified": "2015-03-08T18:31:52.989Z", 
-    "user": [
-      "matchingworksheetmaker"
-    ], 
-    "bagni": [
-      [
-        "solaria-beach"
-      ]
-    ]
-  }
-},
-{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -73390,16 +73483,6 @@
       "boscolo.luisella"
     ], 
     "old_email": "boscolo.luisella@libero.it"
-  }
-},
-{
-  "pk": 27, 
-  "model": "newsletters.newsletteruser", 
-  "fields": {
-    "user": [
-      "matchingworksheetmaker"
-    ], 
-    "old_email": "matchingworksheetmaker@gmail.com"
   }
 },
 {
