@@ -57813,6 +57813,23 @@
   }
 },
 {
+  "pk": 23, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-caesar"
+    ], 
+    "end": "2015-09-15", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-19T09:29:10.706Z", 
+    "modified": "2015-03-19T09:29:10.706Z", 
+    "start": "2015-05-15", 
+    "email": "vserra@regione.emilia-romagna.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -71961,7 +71978,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-12T13:57:41.896Z", 
+    "last_login": "2015-03-19T10:05:51.377Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$pMFP9UrGappG$AeDiG5AAlOvwOob+k3JFhSPE3Tm7BIY7BNIp4aiqXN8=", 
