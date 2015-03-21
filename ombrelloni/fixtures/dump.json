@@ -57830,6 +57830,23 @@
   }
 },
 {
+  "pk": 24, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "giorgio-3"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 2, 
+    "mobile": "3406774050", 
+    "created": "2015-03-20T13:52:04.097Z", 
+    "modified": "2015-03-20T13:52:04.097Z", 
+    "start": "2015-07-19", 
+    "email": "giorgia.volonteri@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
