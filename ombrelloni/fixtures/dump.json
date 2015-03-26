@@ -57847,6 +57847,40 @@
   }
 },
 {
+  "pk": 25, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-sottomarino-rivaverde"
+    ], 
+    "end": "2015-09-14", 
+    "sunbeds": 2, 
+    "mobile": "3292259928", 
+    "created": "2015-03-25T17:49:10.788Z", 
+    "modified": "2015-03-25T17:49:10.788Z", 
+    "start": "2015-06-01", 
+    "email": "anubi11@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 26, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-oscar-2"
+    ], 
+    "end": "2015-03-25", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-25T18:55:46.021Z", 
+    "modified": "2015-03-25T18:55:46.021Z", 
+    "start": "2015-03-25", 
+    "email": "robertoalbertarelli@yahoo.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -71995,7 +72029,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-19T10:05:51.377Z", 
+    "last_login": "2015-03-25T19:03:02.828Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$pMFP9UrGappG$AeDiG5AAlOvwOob+k3JFhSPE3Tm7BIY7BNIp4aiqXN8=", 
