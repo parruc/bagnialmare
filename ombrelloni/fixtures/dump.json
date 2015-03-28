@@ -57881,6 +57881,40 @@
   }
 },
 {
+  "pk": 27, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-mare-blu"
+    ], 
+    "end": "2015-08-31", 
+    "sunbeds": 2, 
+    "mobile": "3397777457", 
+    "created": "2015-03-27T07:32:18.930Z", 
+    "modified": "2015-03-27T07:32:18.930Z", 
+    "start": "2015-05-15", 
+    "email": "mlb2004@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 28, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "i-camini"
+    ], 
+    "end": "2015-06-27", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-03-28T00:10:51.227Z", 
+    "modified": "2015-03-28T00:10:51.227Z", 
+    "start": "2015-06-13", 
+    "email": "editnews@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
