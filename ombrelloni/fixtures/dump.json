@@ -18310,20 +18310,13 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagnoideal.it/", 
-    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 10<br />\r\n\twc: 3<br />\r\n\tombrelloni: 223<br />\r\n\tfronte mare: 35<br />\r\n\tlettini: 440<br />\r\n\tcabine: 6<br />\r\n\tdocce chiuse: 4<br />\r\n\tsuperficie complessiva spiaggia: 0<br />\r\n\tdocce aperte: 3</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 10<br />\r\nwc: 3<br />\r\nombrelloni: 223<br />\r\nfronte mare: 35<br />\r\nlettini: 440<br />\r\ncabine: 6<br />\r\ndocce chiuse: 4<br />\r\nsuperficie complessiva spiaggia: 0<br />\r\ndocce aperte: 3</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4327898025512695 44.1759099795010286)", 
-    "modified": "2014-07-04T12:20:26.104Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 10<br />\r\n\twc: 3<br />\r\n\tombrelloni: 223<br />\r\n\tfronte mare: 35<br />\r\n\tlettini: 440<br />\r\n\tcabine: 6<br />\r\n\tdocce chiuse: 4<br />\r\n\tsuperficie complessiva spiaggia: 0<br />\r\n\tdocce aperte: 3</p>", 
+    "point": "POINT (12.4327898025512678 44.1759099795010144)", 
+    "modified": "2015-03-30T18:18:39.128Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 10<br />\r\nwc: 3<br />\r\nombrelloni: 223<br />\r\nfronte mare: 35<br />\r\nlettini: 440<br />\r\ncabine: 6<br />\r\ndocce chiuse: 4<br />\r\nsuperficie complessiva spiaggia: 0<br />\r\ndocce aperte: 3</p>\r\n", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "bar"
@@ -18352,8 +18345,8 @@
     ], 
     "address": "Spiaggia Villamarina", 
     "description_it": "", 
-    "mail": "info@bagnoideal.it", 
-    "accepts_booking": true, 
+    "mail": "", 
+    "accepts_booking": false, 
     "slug": "bagno-ideal", 
     "neighbourhood": [
       "villamarina"
@@ -36768,23 +36761,16 @@
     "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2903284524000007 44.4562338571000026)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.2903284524000043 44.4562338571000026)", 
+    "modified": "2015-03-30T18:16:08.643Z", 
+    "description_en": "", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Viale Lungomare, 18/B", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
-    "accepts_booking": true, 
+    "accepts_booking": false, 
     "slug": "bagno-mare-blu", 
     "neighbourhood": [
       "punta-marina-terme"
@@ -57915,6 +57901,23 @@
   }
 },
 {
+  "pk": 29, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-marisol"
+    ], 
+    "end": "2015-09-13", 
+    "sunbeds": 2, 
+    "mobile": "3204684579", 
+    "created": "2015-03-30T09:40:52.349Z", 
+    "modified": "2015-03-30T09:40:52.349Z", 
+    "start": "2015-05-01", 
+    "email": "nija.sf@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -72081,7 +72084,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-12T11:04:14.216Z", 
+    "last_login": "2015-03-30T18:17:38.204Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
