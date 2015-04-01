@@ -57918,6 +57918,23 @@
   }
 },
 {
+  "pk": 30, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-adriana-birimbao-beach"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 3, 
+    "mobile": "3384421062", 
+    "created": "2015-03-31T16:11:48.780Z", 
+    "modified": "2015-03-31T16:11:48.780Z", 
+    "start": "2015-08-17", 
+    "email": "davide.beccagutti.97@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
