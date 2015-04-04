@@ -57952,6 +57952,23 @@
   }
 },
 {
+  "pk": 32, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-susanna"
+    ], 
+    "end": "2015-09-30", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-03T17:23:00.385Z", 
+    "modified": "2015-04-03T17:23:00.385Z", 
+    "start": "2015-06-01", 
+    "email": "r.mirri@assiromagna.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -72118,7 +72135,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-30T18:17:38.204Z", 
+    "last_login": "2015-04-03T20:22:41.977Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
