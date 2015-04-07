@@ -57969,6 +57969,40 @@
   }
 },
 {
+  "pk": 33, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-miramare-lido"
+    ], 
+    "end": "2015-09-30", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-06T11:23:16.549Z", 
+    "modified": "2015-04-06T11:23:16.549Z", 
+    "start": "2015-04-06", 
+    "email": "maicolferri75@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 34, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-stella"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3384918597", 
+    "created": "2015-04-06T21:35:15.411Z", 
+    "modified": "2015-04-06T21:35:15.411Z", 
+    "start": "2015-07-01", 
+    "email": "nives.nerini@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
