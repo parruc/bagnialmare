@@ -58003,6 +58003,23 @@
   }
 },
 {
+  "pk": 35, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-07-30", 
+    "sunbeds": 2, 
+    "mobile": "3402789168", 
+    "created": "2015-04-07T10:31:12.863Z", 
+    "modified": "2015-04-07T10:31:12.863Z", 
+    "start": "2015-07-01", 
+    "email": "francescabattaglia16@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
