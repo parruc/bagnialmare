@@ -58020,6 +58020,23 @@
   }
 },
 {
+  "pk": 36, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "calipso"
+    ], 
+    "end": "2015-07-25", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-08T20:07:17.916Z", 
+    "modified": "2015-04-08T20:07:17.916Z", 
+    "start": "2015-07-18", 
+    "email": "Antonellaetom@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
