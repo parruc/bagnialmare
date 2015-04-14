@@ -58037,6 +58037,40 @@
   }
 },
 {
+  "pk": 37, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "ippopotamus"
+    ], 
+    "end": "2015-08-25", 
+    "sunbeds": 4, 
+    "mobile": "3485606096", 
+    "created": "2015-04-13T07:51:38.148Z", 
+    "modified": "2015-04-13T07:51:38.148Z", 
+    "start": "2015-08-08", 
+    "email": "gianoglio_pusceddu@alice.it", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 38, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-susy-2"
+    ], 
+    "end": "2015-08-31", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-13T10:58:03.659Z", 
+    "modified": "2015-04-13T10:58:03.659Z", 
+    "start": "2015-06-01", 
+    "email": "keoma75@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
