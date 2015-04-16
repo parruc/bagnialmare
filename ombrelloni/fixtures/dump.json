@@ -58088,6 +58088,40 @@
   }
 },
 {
+  "pk": 40, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ferdinando"
+    ], 
+    "end": "2015-07-30", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-15T21:42:10.956Z", 
+    "modified": "2015-04-15T21:42:10.956Z", 
+    "start": "2015-07-10", 
+    "email": "larory79@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 41, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ferdinando"
+    ], 
+    "end": "2015-07-30", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-15T21:42:50.922Z", 
+    "modified": "2015-04-15T21:42:50.922Z", 
+    "start": "2015-07-10", 
+    "email": "larory79@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
