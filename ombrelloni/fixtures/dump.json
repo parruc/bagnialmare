@@ -58122,6 +58122,23 @@
   }
 },
 {
+  "pk": 42, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-marco"
+    ], 
+    "end": "2015-06-27", 
+    "sunbeds": 2, 
+    "mobile": "Alloggio al Riz", 
+    "created": "2015-04-16T11:45:43.422Z", 
+    "modified": "2015-04-16T11:45:43.422Z", 
+    "start": "2015-06-21", 
+    "email": "alicemalagutti@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
