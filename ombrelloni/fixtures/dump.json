@@ -58139,6 +58139,23 @@
   }
 },
 {
+  "pk": 43, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "a-sud-severino"
+    ], 
+    "end": "2015-08-24", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-18T16:05:09.198Z", 
+    "modified": "2015-04-18T16:05:09.198Z", 
+    "start": "2015-08-14", 
+    "email": "coriglianofra@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -58296,6 +58313,16 @@
     "name": "chaplyn resend", 
     "modified": "2014-07-18T11:50:36.996Z", 
     "slug": "chaplyn-resend"
+  }
+},
+{
+  "pk": 17, 
+  "model": "newsletters.newslettertarget", 
+  "fields": {
+    "created": "2015-04-18T14:15:41.298Z", 
+    "name": "pycon", 
+    "modified": "2015-04-18T14:15:41.298Z", 
+    "slug": "pycon"
   }
 },
 {
@@ -58890,6 +58917,28 @@
     "sent_count": 1, 
     "slug": "concorso-2014-chaplyn", 
     "subject": "Il tuo bagno in prima pagina!"
+  }
+},
+{
+  "pk": 27, 
+  "model": "newsletters.newsletter", 
+  "fields": {
+    "status": "sent", 
+    "name": "test", 
+    "created": "2015-04-18T14:17:14.654Z", 
+    "text": "Usucapire jdufufuf udufufuf", 
+    "modified": "2015-04-18T14:17:31.408Z", 
+    "sent_to": "parruc@gmail.com", 
+    "template": [
+      "standard-template"
+    ], 
+    "target": [
+      "pycon"
+    ], 
+    "sent_on": "16:17:31.367", 
+    "sent_count": 1, 
+    "slug": "test", 
+    "subject": "test subject"
   }
 },
 {
@@ -70245,6 +70294,17 @@
   }
 },
 {
+  "pk": 1051, 
+  "model": "newsletters.newslettersubscription", 
+  "fields": {
+    "hash_field": "d270c6b95d5a4b1bb5548e775ce8aba6", 
+    "email": "parruc@gmail.com", 
+    "target": [
+      "pycon"
+    ]
+  }
+},
+{
   "pk": 3, 
   "model": "userfeedback.userfeedback", 
   "fields": {
@@ -72251,7 +72311,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-12T13:56:26.049Z", 
+    "last_login": "2015-04-18T14:14:08.489Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
