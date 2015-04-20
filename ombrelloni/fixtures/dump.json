@@ -58156,6 +58156,40 @@
   }
 },
 {
+  "pk": 44, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "rosa"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 4, 
+    "mobile": "", 
+    "created": "2015-04-19T11:30:06.522Z", 
+    "modified": "2015-04-19T11:30:06.522Z", 
+    "start": "2015-07-25", 
+    "email": "lelkesirisz@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 45, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "rosa"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 4, 
+    "mobile": "", 
+    "created": "2015-04-19T11:34:24.862Z", 
+    "modified": "2015-04-19T11:34:24.862Z", 
+    "start": "2015-07-25", 
+    "email": "lelkesirisz@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
