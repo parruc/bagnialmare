@@ -57040,7 +57040,7 @@
     "description": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
-    "modified": "2015-03-12T13:58:14.454Z", 
+    "modified": "2015-04-21T12:42:58.732Z", 
     "description_en": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "number": "10", 
     "languages": [], 
@@ -57118,9 +57118,6 @@
         "games"
       ], 
       [
-        "bicycles"
-      ], 
-      [
         "nursery"
       ], 
       [
@@ -57133,13 +57130,7 @@
         "solarium"
       ], 
       [
-        "rowing-boats"
-      ], 
-      [
         "hot-showers"
-      ], 
-      [
-        "pet-friendly"
       ], 
       [
         "schoolchildren"
@@ -57166,9 +57157,6 @@
         "credit-cards-accepted"
       ], 
       [
-        "helmet-deposit"
-      ], 
-      [
         "barbecue-area"
       ], 
       [
@@ -57182,9 +57170,6 @@
       ], 
       [
         "double-sun-bed"
-      ], 
-      [
-        "refrigerators"
       ], 
       [
         "pizzeria"
@@ -58187,6 +58172,57 @@
     "start": "2015-07-25", 
     "email": "lelkesirisz@gmail.com", 
     "umbrellas": 2
+  }
+},
+{
+  "pk": 46, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-stefano"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3478500504", 
+    "created": "2015-04-21T10:31:18.606Z", 
+    "modified": "2015-04-21T10:31:18.606Z", 
+    "start": "2015-07-18", 
+    "email": "alessiacer76@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 47, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-kiwengwa"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3478500504", 
+    "created": "2015-04-21T10:51:23.766Z", 
+    "modified": "2015-04-21T10:51:23.766Z", 
+    "start": "2015-07-18", 
+    "email": "alessiacer76@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 48, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-andrea"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3478500504", 
+    "created": "2015-04-21T10:53:34.502Z", 
+    "modified": "2015-04-21T10:53:34.502Z", 
+    "start": "2015-07-18", 
+    "email": "alessiacer76@gmail.com", 
+    "umbrellas": 1
   }
 },
 {
@@ -72345,7 +72381,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-04-18T14:14:08.489Z", 
+    "last_login": "2015-04-21T13:07:14.973Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -72399,7 +72435,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-04-03T20:22:41.977Z", 
+    "last_login": "2015-04-21T12:42:07.263Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
