@@ -28379,54 +28379,47 @@
     "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2537362575531006 44.6454448544557820)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.2537362575530846 44.6454448544557678)", 
+    "modified": "2015-04-26T14:58:55.653Z", 
+    "description_en": "", 
     "number": "59", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
-      [
-        "gymnastics"
-      ], 
       [
         "catering"
       ], 
       [
-        "swimming-pool"
-      ], 
-      [
-        "acquagym"
+        "gymnastics"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "baby-park"
-      ], 
-      [
         "swimming-lessons"
       ], 
       [
-        "beach-racket-court"
+        "acquagym"
       ], 
       [
         "children-entertainment"
       ], 
       [
         "schoolchildren"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "swimming-pool"
+      ], 
+      [
+        "baby-park"
       ]
     ], 
     "address": "Via Spiaggia, 59", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
-    "accepts_booking": true, 
+    "accepts_booking": false, 
     "slug": "mirko", 
     "neighbourhood": [
       "lido-di-spina"
@@ -58226,6 +58219,57 @@
   }
 },
 {
+  "pk": 49, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "mirko"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-26T08:30:04.457Z", 
+    "modified": "2015-04-26T08:30:04.457Z", 
+    "start": "2015-07-04", 
+    "email": "manur82@hotmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 50, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "sport"
+    ], 
+    "end": "2015-07-30", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-26T11:55:13.716Z", 
+    "modified": "2015-04-26T11:55:13.716Z", 
+    "start": "2015-07-01", 
+    "email": "stefanosangiorg@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 51, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "tahiti"
+    ], 
+    "end": "2015-08-17", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-04-26T19:22:16.630Z", 
+    "modified": "2015-04-26T19:22:16.630Z", 
+    "start": "2015-08-09", 
+    "email": "siorir@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -72435,7 +72479,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-04-21T12:42:07.263Z", 
+    "last_login": "2015-04-26T14:58:35.475Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
