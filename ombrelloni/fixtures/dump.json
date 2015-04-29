@@ -58270,6 +58270,23 @@
   }
 },
 {
+  "pk": 52, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ulisse-3"
+    ], 
+    "end": "2015-08-20", 
+    "sunbeds": 3, 
+    "mobile": "", 
+    "created": "2015-04-28T17:18:58.179Z", 
+    "modified": "2015-04-28T17:18:58.179Z", 
+    "start": "2015-06-01", 
+    "email": "luciamontanari52@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
