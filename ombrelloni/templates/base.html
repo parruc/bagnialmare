@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 {% load i18n compress cache multilingual %}
 
-
-{% trans "contact" as t_contact %}
 {% trans "about_us" as t_about_us %}
 {% trans "are_you_manager" as t_are_you_manager %}
 {% trans "search" as t_search %}
@@ -67,7 +65,7 @@
   {% compress css %}
     {% block specific_css %}{% endblock specific_css %}
   {% endcompress %}
-    
+
 
   {% block extrahead %}
       {{ form.media }}
@@ -101,8 +99,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="{% url 'contact-form' %}"
-                 title="{{ t_contact }}">
-                {{ t_contact|title }}
+                 title="{% trans 'About us' %}">
+                {% trans 'About us' %}
               </a>
             </li>
             <li>
@@ -189,10 +187,10 @@
       </div>
     </div>
     <div class="social-links">
-        <a title="{% trans 'BagniAlMare on Google+' %}" 
+        <a title="{% trans 'BagniAlMare on Google+' %}"
          href="https://plus.google.com/+Bagnialmare"
          target="_blank"
-         class="ga_click"           
+         class="ga_click"
          data-category="social" data-action="Google+" data-label="{{ request.path }}">
 
 
@@ -202,7 +200,7 @@
       <a title="{% trans 'BagniAlMare on Facebook' %}"
          href="https://www.facebook.com/bagnialmare"
          target="_blank"
-         class="ga_click"           
+         class="ga_click"
          data-category="social" data-action="Facebook" data-label="{{ request.path }}">
         <img src="{{ STATIC_URL }}img/facebook.png"
              alt="Facebook link">
@@ -210,7 +208,7 @@
       <a title="{% trans 'BagniAlMare on Twitter' %}"
          href="https://twitter.com/bagnialmare"
          target="_blank"
-         class="ga_click"           
+         class="ga_click"
          data-category="social" data-action="Twitter" data-label="{{ request.path }}">
         <img src="{{ STATIC_URL }}img/twitter.png" alt="logo twitter">
       </a>

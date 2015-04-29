@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-28 20:56+0200\n"
+"POT-Creation-Date: 2015-04-29 01:04+0200\n"
 "PO-Revision-Date: 2014-04-02 19:58+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -28,31 +28,30 @@ msgstr "Il tuo indirizzo email"
 msgid "Message"
 msgstr "Messaggio"
 
-#: views.py:42
+#: views.py:22
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
-msgstr "Grazie per averci contattato, risponderemo al più presto all'indirizzo email fornitoci."
+msgstr ""
+"Grazie per averci contattato, risponderemo al più presto all'indirizzo email "
+"fornitoci."
 
-#: views.py:45
+#: views.py:59
+#, fuzzy
 msgid ""
-"Error sending the mail: Contact me at                    info at bagnialmare "
+"Error sending the mail: Contact us at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"
 msgstr ""
 "Errore di invio e-mail: Contattami a info at bagnialmare punto com per "
 "informarci dell'errore. Grazie."
 
-#: templates/contacts/contacts.html:9
-msgid "Want to drop us a line"
-msgstr "Vuoi mandarci un messaggio"
-
 #: templates/contacts/contacts.html:20
 msgid "contacts_pagetitle"
 msgstr "contatta il team di bagnialmare.com"
 
-#: templates/contacts/contacts.html:22
+#: templates/contacts/contacts.html:26
 msgid "contacts_page_description"
 msgstr "contatta il team di bagnialmare.com"
 
-#: templates/contacts/contacts.html:24
+#: templates/contacts/contacts.html:30
 msgid "Contacts"
 msgstr "Contatti"
 
@@ -64,25 +63,37 @@ msgstr "Invia il tuo messaggio"
 msgid "Close"
 msgstr "Chiudi"
 
-#: templates/contacts/info.html:2
-msgid "contacts_main_text"
-msgstr "Piacere di conoscerti, siamo il team di bagnialmare.com. In questo sito vogliamo organizzare e rendere accessibili online tutte le informazioni sugli stabilimenti balneari della Riviera Adriatica. Saremo lieti di rispondere alle tue domande ed ascoltare i tuoi suggerimenti: usa la form sottostante per scriverci un messaggio"
+#: templates/contacts/info.html:3
+msgid "About us"
+msgstr "Chi siamo"
 
-#~ msgid ""
-#~ "Nice to meet you, we are the bagnialmare.com team. In this website we "
-#~ "want to organise all the information about the beach resorts in the "
-#~ "Riviera Adriatica to make it accessible and useful. We are happy to "
-#~ "answer your questions and listen to your suggestions. Use the form below "
-#~ "to send us a message."
-#~ msgstr ""
-#~ "Piacere di conoscerti, siamo il team di bagnialmare.com . In questo sito "
-#~ "vogliamo organizzare e rendere accessibili a tutti le informazioni degli "
-#~ "stabilimenti balneari della Riviera Adriatica Saremo felici di rispondere "
-#~ "alle tue domande e raccogliere i tuoi suggerimenti: usa il form qui sotto "
-#~ "per scriverci un messaggio"
-
-#~ msgid "Subject"
-#~ msgstr "Oggetto"
-
-#~ msgid "Send a copy to your address"
-#~ msgstr "Invia una copia al tuo indirizzo"
+#: templates/contacts/info.html:5
+msgid ""
+"<p>Once upon a time there were four friends from Forlì that at the first "
+"sign of summer used to escape from the heat and the boredom of the city to "
+"the beaches on the Adriatic coast. The same beaches where only a \"few\" "
+"years earlier we used to play with buckets and spades.</p>\n"
+"<p>Summers of foosball, beach volley, table tennis, swimming, books, nights "
+"out and... we are still here! With the aim of supporting the tradition and "
+"the passion that make the beaches of our coast unique and overall.. a place "
+"that fits everyone's taste.</p>\n"
+"<p>Now enjoy the website and if you have any question or suggestion please "
+"let us know by using the form below.\n"
+"We are happy to answer you questions and listen to your opinions.</p>\n"
+"<p>The Bagnialmare team</p>"
+msgstr ""
+"<p>C'erano una volta quattro ragazzi di Forlì che alla comparsa del primo sole "
+"erano soliti fuggire dal caldo e dalla noia di città per raggiungere ad ogni "
+"costo il paradiso sulle spiagge della Riviera Adriatica... le stesse dove "
+"\"qualche\" anno prima facevano buche con palette e riempivano secchielli di "
+"acqua marina.</p>\n"
+"<p>Estati di giornate al mare, partite di beach volley e beach soccer, nuotate, "
+"letture spensierate al sole, mangiate, notti di divertimento e... siamo "
+"ancora qui! Con la voglia oggi di rendere omaggio alla tradizione e al "
+"mestiere che rendono le spiagge della nostra Riviera uniche a livello "
+"internazionale e soprattutto un luogo per tutti.</p>\n"
+"<p>Ora goditi il sito e se volessi chiederci qualcosa o avessi consigli da "
+"lasciarci scrivici compilando il form sottostante. Saremo felici di "
+"rispondere alle tue domande e prendere in considerazione i tuoi "
+"suggerimenti.</p>\n"
+"<p>Il team di Bagnialmare</p>"
