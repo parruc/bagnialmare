@@ -8,4 +8,6 @@
 
 {% trans "You will be contacted by the manager as soon as possible" %}.
 
+{% trans "In the absence of a reply within 3 days, we recommend you to recontact the property via telephone" %}
+
 {% trans "The team of Bagnialmare" %}

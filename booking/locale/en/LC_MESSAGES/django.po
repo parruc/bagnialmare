@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 16:16+0100\n"
+"POT-Creation-Date: 2015-04-29 03:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,11 +61,11 @@ msgstr ""
 msgid "Mobile"
 msgstr ""
 
-#: signals.py:29
+#: signals.py:41
 msgid "managed"
 msgstr ""
 
-#: signals.py:30
+#: signals.py:42
 msgid "not managed (WE HAVE TO CALL)"
 msgstr ""
 
@@ -87,27 +87,37 @@ msgstr ""
 
 #: templates/booking/admin_mail_message.txt:7
 #, python-format
-msgid "State: %(managed_state)s"
+msgid "url: %(bagno_url)s"
 msgstr ""
 
-#: templates/booking/admin_mail_message.txt:10
+#: templates/booking/admin_mail_message.txt:8
 #, python-format
-msgid "We can contact %(bagno_name)s"
+msgid "State: %(managed_state)s"
 msgstr ""
 
 #: templates/booking/admin_mail_message.txt:11
 #, python-format
-msgid "Calling: %(bagno_phones)s"
+msgid "We can contact %(bagno_name)s"
 msgstr ""
 
 #: templates/booking/admin_mail_message.txt:12
 #, python-format
-msgid "Mailing the manager: %(bagno_managers_mail)s"
+msgid "Calling: %(bagno_phones)s"
 msgstr ""
 
 #: templates/booking/admin_mail_message.txt:13
 #, python-format
+msgid "Mailing the manager: %(bagno_managers_mail)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:14
+#, python-format
 msgid "Mailing the beach resort: %(bagno_mail)s"
+msgstr ""
+
+#: templates/booking/admin_mail_message.txt:15
+#, python-format
+msgid "Registration url: %(bagno_registration_url)s"
 msgstr ""
 
 #: templates/booking/admin_mail_subject.txt:2
@@ -119,11 +129,11 @@ msgstr ""
 msgid "Booking details"
 msgstr ""
 
-#: templates/booking/booking.html:24 templates/booking/booking_modal.html:12
+#: templates/booking/booking.html:29 templates/booking/booking_modal.html:17
 msgid "Request a quote"
 msgstr ""
 
-#: templates/booking/booking_modal.html:13
+#: templates/booking/booking_modal.html:19
 msgid "Close"
 msgstr ""
 
@@ -187,7 +197,7 @@ msgid "Let the user hear from you as soon as possible."
 msgstr ""
 
 #: templates/booking/manager_mail_message.txt:11
-#: templates/booking/user_mail_message.txt:11
+#: templates/booking/user_mail_message.txt:13
 msgid "The team of Bagnialmare"
 msgstr ""
 
@@ -202,6 +212,12 @@ msgstr ""
 
 #: templates/booking/user_mail_message.txt:9
 msgid "You will be contacted by the manager as soon as possible"
+msgstr ""
+
+#: templates/booking/user_mail_message.txt:11
+msgid ""
+"In the absence of a reply within 3 days, we recommend you to recontact the "
+"property via telephone"
 msgstr ""
 
 #: templates/booking/user_mail_subject.txt:2
