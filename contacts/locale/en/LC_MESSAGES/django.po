@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-28 20:56+0200\n"
+"POT-Creation-Date: 2015-04-29 01:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,29 +27,25 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: views.py:42
+#: views.py:22
 msgid "Thanks for contacting us. We will asnwer you as soon as possible."
 msgstr ""
 
-#: views.py:45
+#: views.py:59
 msgid ""
-"Error sending the mail: Contact me at                    info at bagnialmare "
+"Error sending the mail: Contact us at                    info at bagnialmare "
 "dot com to inform                    us about the error. Thanks"
-msgstr ""
-
-#: templates/contacts/contacts.html:9
-msgid "Want to drop us a line"
 msgstr ""
 
 #: templates/contacts/contacts.html:20
 msgid "contacts_pagetitle"
 msgstr "contact the bagnialmare.com team"
 
-#: templates/contacts/contacts.html:22
+#: templates/contacts/contacts.html:26
 msgid "contacts_page_description"
 msgstr "contact the bagnialmare.com team"
 
-#: templates/contacts/contacts.html:24
+#: templates/contacts/contacts.html:30
 msgid "Contacts"
 msgstr ""
 
@@ -61,6 +57,22 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: templates/contacts/info.html:2
-msgid "contacts_main_text"
-msgstr "Nice to meet you, we are the bagnialmare.com team. In this website we want to organise all the information about the beach resorts in the Riviera Adriatica to make it accessible and useful. We are happy to answer your questions and listen to your suggestions. Use the form below to send us a message"
+#: templates/contacts/info.html:3
+msgid "About us"
+msgstr ""
+
+#: templates/contacts/info.html:5
+msgid ""
+"<p>Once upon a time there were four friends from Forlì that at the first "
+"sign of summer used to escape from the heat and the boredom of the city to "
+"the beaches on the Adriatic coast. The same beaches where only a \"few\" "
+"years earlier we used to play with buckets and spades.</p>\n"
+"<p>Summers of foosball, beach volley, table tennis, swimming, books, nights "
+"out and... we are still here! With the aim of supporting the tradition and "
+"the passion that make the beaches of our coast unique and overall.. a place "
+"that fits everyone's taste.</p>\n"
+"<p>Now enjoy the website and if you have any question or suggestion please "
+"let us know by using the form below.\n"
+"We are happy to answer you questions and listen to your opinions.</p>\n"
+"<p>The Bagnialmare team</p>"
+msgstr ""
