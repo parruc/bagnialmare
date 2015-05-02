@@ -58287,6 +58287,23 @@
   }
 },
 {
+  "pk": 53, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-molo"
+    ], 
+    "end": "2015-08-28", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-05-01T18:49:50.603Z", 
+    "modified": "2015-05-01T18:49:50.603Z", 
+    "start": "2015-06-04", 
+    "email": "luciamontanari52@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
