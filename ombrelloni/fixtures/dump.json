@@ -58304,6 +58304,23 @@
   }
 },
 {
+  "pk": 54, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "tipi-da-spiaggia"
+    ], 
+    "end": "2015-07-08", 
+    "sunbeds": 3, 
+    "mobile": "", 
+    "created": "2015-05-03T21:20:17.947Z", 
+    "modified": "2015-05-03T21:20:17.947Z", 
+    "start": "2015-06-29", 
+    "email": "massirewind@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
