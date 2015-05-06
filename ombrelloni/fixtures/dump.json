@@ -58321,6 +58321,23 @@
   }
 },
 {
+  "pk": 55, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-vittorio"
+    ], 
+    "end": "2015-06-29", 
+    "sunbeds": 2, 
+    "mobile": "338/4016403", 
+    "created": "2015-05-05T21:24:59.346Z", 
+    "modified": "2015-05-05T21:24:59.346Z", 
+    "start": "2015-05-31", 
+    "email": "laura.sma1980@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
