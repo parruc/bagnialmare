@@ -58338,6 +58338,23 @@
   }
 },
 {
+  "pk": 56, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "lido-san-giuliano-maestrale-tramontana-scirocco-e-"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-05-06T21:09:07.329Z", 
+    "modified": "2015-05-06T21:09:07.329Z", 
+    "start": "2015-05-16", 
+    "email": "francescomiglionico@hotmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
