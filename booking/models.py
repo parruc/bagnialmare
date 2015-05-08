@@ -20,8 +20,6 @@ class Booking(models.Model):
     email = models.EmailField(max_length=100,
                               verbose_name=_("Email"),)
     mobile = models.CharField(max_length=100,
-                              verbose_name=_("Mobile"),
-                              null=False,
-                              blank=True,)
+                              verbose_name=_("Mobile"),)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
