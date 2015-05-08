@@ -2,7 +2,7 @@
 
 {% blocktrans %}Hi {{ bagno_name }}{% endblocktrans %},
 
-     {% trans "We received a booking request for your beach resort Here the details" %}:
+     {% trans "We received a quotation request for your beach resort Here the details" %}:
 
 {% include 'booking/details.txt' %}
 

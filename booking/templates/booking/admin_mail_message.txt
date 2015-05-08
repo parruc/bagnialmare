@@ -1,5 +1,5 @@
 {% load i18n %}
-{% blocktrans %}The beach resort {{ bagno_name }} received a booking request.{% endblocktrans %}
+{% blocktrans %}The beach resort {{ bagno_name }} received a quotation request.{% endblocktrans %}
 
 {% trans "Here it is the details" %}:
 

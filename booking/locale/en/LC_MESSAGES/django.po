@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-29 03:43+0200\n"
+"POT-Creation-Date: 2015-05-08 05:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: templates/booking/admin_mail_message.txt:2
 #, python-format
-msgid "The beach resort %(bagno_name)s received a booking request."
+msgid "The beach resort %(bagno_name)s received a quotation request."
 msgstr ""
 
 #: templates/booking/admin_mail_message.txt:4
@@ -189,7 +189,7 @@ msgid "Hi %(bagno_name)s"
 msgstr ""
 
 #: templates/booking/manager_mail_message.txt:5
-msgid "We received a booking request for your beach resort Here the details"
+msgid "We received a quotation request for your beach resort Here the details"
 msgstr ""
 
 #: templates/booking/manager_mail_message.txt:9
@@ -202,12 +202,12 @@ msgid "The team of Bagnialmare"
 msgstr ""
 
 #: templates/booking/manager_mail_subject.txt:2
-msgid "[bagnialmare.com booking] You received a booking request"
+msgid "[bagnialmare.com booking] You received a quotation request"
 msgstr ""
 
 #: templates/booking/user_mail_message.txt:2
 #, python-format
-msgid "The beach resort %(bagno_name)s received your booking request."
+msgid "The beach resort %(bagno_name)s received your quotation request."
 msgstr ""
 
 #: templates/booking/user_mail_message.txt:9
@@ -222,5 +222,5 @@ msgstr ""
 
 #: templates/booking/user_mail_subject.txt:2
 #, python-format
-msgid "[bagnialmare.com booking] Booking request received for %(bagno_name)s"
+msgid "[bagnialmare.com booking] Quotation request received for %(bagno_name)s"
 msgstr ""
