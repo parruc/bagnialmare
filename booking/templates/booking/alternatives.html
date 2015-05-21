@@ -1,0 +1,18 @@
+{% load i18n %}
+<p>{% blocktrans %}The beach club {{ bagno.name  }} is not yet registered on BagniAlMare.<br />
+Here are some alternatives nearby that accept online reservations:{% endblocktrans %}</p>
+{% with bagni_alt=bagno.get_nearest_managed_alternatives %}
+{% if bagni_alt %}
+<ul>
+{% for bagno_alt in bagni_alt %}
+  <li>
+    <a href="{{ bagno_alt.get_absolute_url }}">{{ bagno_alt.name }}</a>
+    {% if bagno_alt.distance %}
+      <span class="badge">{{ bagno_alt.distance.km|floatformat:2 }}Km </span>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+<button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>

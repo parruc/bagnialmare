@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-08 05:58-0400\n"
+"POT-Creation-Date: 2015-05-22 00:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,16 +125,28 @@ msgstr ""
 msgid "[bagnialmare.com booking] %(bagno_name)s"
 msgstr ""
 
-#: templates/booking/booking.html:21 templates/booking/booking_modal.html:7
+#: templates/booking/alternatives.html:2
+#, python-format
+msgid ""
+"The beach club %(bagno.name)s is not yet registered on BagniAlMare.<br />\n"
+"Here are some alternatives nearby that accept online reservations:"
+msgstr ""
+
+#: templates/booking/alternatives.html:18
+#: templates/booking/booking_modal.html:24
+msgid "Close"
+msgstr ""
+
+#: templates/booking/booking.html:22 templates/booking/booking_modal.html:8
 msgid "Booking details"
 msgstr ""
 
-#: templates/booking/booking.html:29 templates/booking/booking_modal.html:17
+#: templates/booking/booking.html:30 templates/booking/booking_modal.html:22
 msgid "Request a quote"
 msgstr ""
 
-#: templates/booking/booking_modal.html:19
-msgid "Close"
+#: templates/booking/booking.html:34 templates/booking/booking_modal.html:10
+msgid "Booking alternatives"
 msgstr ""
 
 #: templates/booking/details.html:2 templates/booking/details.txt:1

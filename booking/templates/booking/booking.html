@@ -18,17 +18,22 @@
 {% block content %}
 <div class="row">
   <div class="col-xs-8 col-xs-offset-2">
-    <h1>{% trans "Booking details" %}</h1>
-    <form method="post" enctype="multipart/form-data" role="form" id="booking-form">
-      {% include "booking/form.html" %}
-      <button class="btn btn-primary ga_click" 
-              type="submit" 
-              data-category="book"
-              data-action="booked"
-              data-label="">
-        {% trans "Request a quote" %}
-    </button>
-    </form>
+    {% if bagno.is_managed %}
+      <h1>{% trans "Booking details" %}</h1>
+      <form method="post" enctype="multipart/form-data" role="form" id="booking-form">
+        {% include "booking/form.html" %}
+        <button class="btn btn-primary ga_click"
+                type="submit"
+                data-category="book"
+                data-action="booked"
+                data-label="">
+          {% trans "Request a quote" %}
+      </button>
+      </form>
+    {% else %}
+      <h1>{% trans "Booking alternatives" %}</h1>
+      {% include "booking/alternatives.html" %}
+    {% endif %}
   </div>
 </div>
 {% endblock %}

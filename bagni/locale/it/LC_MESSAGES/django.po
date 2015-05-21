@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 06:44-0400\n"
+"POT-Creation-Date: 2015-05-22 00:29+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -50,9 +50,8 @@ msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
 msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
 
 #: urls.py:19
-#, fuzzy
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/book/$"
-msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/prenota/$"
 
 #: urls.py:20
 msgid "^search/$"
@@ -279,7 +278,7 @@ msgstr "con"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:235
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:259
 msgid "in"
 msgstr "a"
 
@@ -442,31 +441,31 @@ msgstr "Prenota l'ombrellone online!"
 msgid "Share on socials"
 msgstr "Condividi sui social"
 
-#: templates/bagni/bagno_detail.html:99
+#: templates/bagni/bagno_detail.html:100
 msgid "Share on Facebook"
 msgstr "Condividi su Facebook"
 
-#: templates/bagni/bagno_detail.html:99
+#: templates/bagni/bagno_detail.html:106
 msgid "Facebook logo"
 msgstr "Logo di Facebook"
 
-#: templates/bagni/bagno_detail.html:102
+#: templates/bagni/bagno_detail.html:111
 msgid "Share on Twitter"
 msgstr "Condividi su Twitter"
 
-#: templates/bagni/bagno_detail.html:102
+#: templates/bagni/bagno_detail.html:117
 msgid "Twitteri logo"
 msgstr "Logo di twitter"
 
-#: templates/bagni/bagno_detail.html:105
+#: templates/bagni/bagno_detail.html:122
 msgid "Share on Google+"
 msgstr "Condividi su Google+"
 
-#: templates/bagni/bagno_detail.html:105
+#: templates/bagni/bagno_detail.html:128
 msgid "Google+ logo"
 msgstr "Logo di google+"
 
-#: templates/bagni/bagno_detail.html:239
+#: templates/bagni/bagno_detail.html:263
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -484,7 +483,7 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/bagni/bagno_edit.html:65
+#: templates/bagni/bagno_edit.html:64
 msgid "The url must start with 'http://' or 'https://'"
 msgstr "Il sito internet deve iniziare con 'http://' o 'https://'"
 

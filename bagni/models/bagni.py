@@ -122,3 +122,10 @@ class Bagno(BaseModel):
         except (ObjectDoesNotExist, AttributeError):
             can_edit = False
         return is_staff or can_edit
+
+    def get_nearest_managed_alternatives(self, count=2):
+        bagni_managed = Bagno.objects.filter(managers__isnull=False)
+        sorted_bagni = bagni_managed.distance(self.point).order_by('distance')
+        if len(sorted_bagni) > count:
+            return sorted_bagni[:count]
+        return sorted_bagni

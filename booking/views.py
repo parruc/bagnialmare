@@ -12,6 +12,6 @@ class BookingView(CreateView):
     template_name = "booking/booking.html"
 
 
-class BookingModalView(CreateView):
+class BookingModalView(BookingView):
     form_class = BookingForm
     template_name = "booking/booking_modal.html"

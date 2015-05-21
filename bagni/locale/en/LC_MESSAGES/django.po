@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 06:44-0400\n"
+"POT-Creation-Date: 2015-05-22 00:29+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -49,9 +49,8 @@ msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
 msgstr "^beach-resorts/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
 
 #: urls.py:19
-#, fuzzy
 msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/book/$"
-msgstr "^beach-resorts/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
+msgstr "^beach-resorts/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/book/$"
 
 #: urls.py:20
 msgid "^search/$"
@@ -278,7 +277,7 @@ msgstr "with"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:235
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:259
 msgid "in"
 msgstr "in"
 
@@ -439,31 +438,31 @@ msgstr "Book online"
 msgid "Share on socials"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:99
+#: templates/bagni/bagno_detail.html:100
 msgid "Share on Facebook"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:99
+#: templates/bagni/bagno_detail.html:106
 msgid "Facebook logo"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:102
+#: templates/bagni/bagno_detail.html:111
 msgid "Share on Twitter"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:102
+#: templates/bagni/bagno_detail.html:117
 msgid "Twitteri logo"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:105
+#: templates/bagni/bagno_detail.html:122
 msgid "Share on Google+"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:105
+#: templates/bagni/bagno_detail.html:128
 msgid "Google+ logo"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:239
+#: templates/bagni/bagno_detail.html:263
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
@@ -481,7 +480,7 @@ msgstr ""
 "di prova per monitorare l'interesse dei tuoi utenti a disporre di questa "
 "funzione. In futuro potrai sempre disabilitare questa opzione."
 
-#: templates/bagni/bagno_edit.html:65
+#: templates/bagni/bagno_edit.html:64
 msgid "The url must start with 'http://' or 'https://'"
 msgstr ""
 
