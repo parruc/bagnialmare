@@ -33048,47 +33048,40 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\twc disabili: 2<br />\n\tlettini: 400<br />\n\tcabine: 16<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 4</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 10<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nwc disabili: 2<br />\r\nlettini: 400<br />\r\ncabine: 16<br />\r\ndocce chiuse: 2<br />\r\ndocce aperte: 4</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2815010000000004 44.4983569999999986)", 
-    "modified": "2014-07-04T09:46:41.957Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\twc disabili: 2<br />\n\tlettini: 400<br />\n\tcabine: 16<br />\n\tdocce chiuse: 2<br />\n\tdocce aperte: 4</p>", 
+    "point": "POINT (12.2815010000000004 44.4983570000000128)", 
+    "modified": "2015-05-13T17:27:25.568Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 10<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nwc disabili: 2<br />\r\nlettini: 400<br />\r\ncabine: 16<br />\r\ndocce chiuse: 2<br />\r\ndocce aperte: 4</p>\r\n", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
         "catering"
       ], 
       [
-        "five-a-side"
-      ], 
-      [
         "beach-volley"
       ], 
       [
+        "five-a-side"
+      ], 
+      [
         "ping-pong"
+      ], 
+      [
+        "entertainment"
       ], 
       [
         "beach-racket-court"
       ], 
       [
         "theme-parties"
-      ], 
-      [
-        "entertainment"
       ]
     ], 
     "address": "Via Guerra Teseo, 27", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
-    "accepts_booking": true, 
+    "accepts_booking": false, 
     "slug": "bagno-mara", 
     "neighbourhood": [
       "porto-corsini"
@@ -58355,6 +58348,363 @@
   }
 },
 {
+  "pk": 57, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-05-08", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-05-08T09:40:52.535Z", 
+    "modified": "2015-05-08T09:40:52.535Z", 
+    "start": "2015-05-08", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 58, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-05-08", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-05-08T09:42:56.691Z", 
+    "modified": "2015-05-08T09:42:56.691Z", 
+    "start": "2015-05-08", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 59, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-05-08", 
+    "sunbeds": 2, 
+    "mobile": "", 
+    "created": "2015-05-08T10:01:07.839Z", 
+    "modified": "2015-05-08T10:01:07.839Z", 
+    "start": "2015-05-08", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 60, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-05-08", 
+    "sunbeds": 2, 
+    "mobile": "1234", 
+    "created": "2015-05-08T10:16:20.973Z", 
+    "modified": "2015-05-08T10:16:20.973Z", 
+    "start": "2015-05-08", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 61, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-stella"
+    ], 
+    "end": "2015-07-03", 
+    "sunbeds": 3, 
+    "mobile": "339441586", 
+    "created": "2015-05-09T08:54:47.533Z", 
+    "modified": "2015-05-09T08:54:47.533Z", 
+    "start": "2015-06-21", 
+    "email": "lavalti73@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 62, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "toni-william"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 6, 
+    "mobile": "3472690175", 
+    "created": "2015-05-09T17:26:04.842Z", 
+    "modified": "2015-05-09T17:26:04.842Z", 
+    "start": "2015-06-13", 
+    "email": "simonetta.uccelli@alice.it", 
+    "umbrellas": 3
+  }
+},
+{
+  "pk": 63, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-mara"
+    ], 
+    "end": "2015-08-31", 
+    "sunbeds": 2, 
+    "mobile": "3381361249", 
+    "created": "2015-05-11T18:32:57.609Z", 
+    "modified": "2015-05-11T18:32:57.609Z", 
+    "start": "2015-05-17", 
+    "email": "eliviacosta@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 64, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "kapogiro"
+    ], 
+    "end": "2015-05-17", 
+    "sunbeds": 2, 
+    "mobile": "3468061634", 
+    "created": "2015-05-12T15:57:46.989Z", 
+    "modified": "2015-05-12T15:57:46.989Z", 
+    "start": "2015-05-17", 
+    "email": "barbaragirotti93@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 65, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "a-sud-severino"
+    ], 
+    "end": "2015-07-11", 
+    "sunbeds": 1, 
+    "mobile": "3497666589", 
+    "created": "2015-05-12T20:01:20.658Z", 
+    "modified": "2015-05-12T20:01:20.658Z", 
+    "start": "2015-06-27", 
+    "email": "patrizia_trucchi@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 66, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ferdinando"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3332803795", 
+    "created": "2015-05-14T13:17:33.424Z", 
+    "modified": "2015-05-14T13:17:33.424Z", 
+    "start": "2015-07-10", 
+    "email": "larory79@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 67, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "anna-2"
+    ], 
+    "end": "2015-08-22", 
+    "sunbeds": 2, 
+    "mobile": "3924076077", 
+    "created": "2015-05-15T08:05:20.818Z", 
+    "modified": "2015-05-15T08:05:20.818Z", 
+    "start": "2015-08-09", 
+    "email": "gio.vigna62@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 68, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "giorgio-3"
+    ], 
+    "end": "2015-07-29", 
+    "sunbeds": 2, 
+    "mobile": "+41786064055", 
+    "created": "2015-05-15T10:04:51.448Z", 
+    "modified": "2015-05-15T10:04:51.448Z", 
+    "start": "2015-07-15", 
+    "email": "eveline.bronnenhuber@bluewin.ch", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 69, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-royal-beach"
+    ], 
+    "end": "2015-07-07", 
+    "sunbeds": 2, 
+    "mobile": "3286751180", 
+    "created": "2015-05-18T09:10:10.961Z", 
+    "modified": "2015-05-18T09:10:10.961Z", 
+    "start": "2015-06-25", 
+    "email": "primoaliprandi@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 70, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "chalet-del-mare"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3402410960", 
+    "created": "2015-05-18T19:05:21.128Z", 
+    "modified": "2015-05-18T19:05:21.128Z", 
+    "start": "2015-07-18", 
+    "email": "danielleit2001@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 71, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "cristallo"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3402410960", 
+    "created": "2015-05-18T19:08:46.263Z", 
+    "modified": "2015-05-18T19:08:46.264Z", 
+    "start": "2015-07-18", 
+    "email": "danielleit2001@gmail.com", 
+    "umbrellas": 15
+  }
+},
+{
+  "pk": 72, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-sole"
+    ], 
+    "end": "2015-07-03", 
+    "sunbeds": 2, 
+    "mobile": "3333159160", 
+    "created": "2015-05-19T16:12:55.511Z", 
+    "modified": "2015-05-19T16:12:55.511Z", 
+    "start": "2015-06-20", 
+    "email": "bborlini@virgilio.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 73, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "albatros"
+    ], 
+    "end": "2015-05-19", 
+    "sunbeds": 2, 
+    "mobile": "9849374907135", 
+    "created": "2015-05-19T19:33:52.065Z", 
+    "modified": "2015-05-19T19:33:52.065Z", 
+    "start": "2015-05-19", 
+    "email": "parru@gay.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 74, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-05-19", 
+    "sunbeds": 2, 
+    "mobile": "333457869", 
+    "created": "2015-05-19T19:37:38.752Z", 
+    "modified": "2015-05-19T19:37:38.752Z", 
+    "start": "2015-05-19", 
+    "email": "inge@gay.iy", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 75, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "solaria-beach"
+    ], 
+    "end": "2015-05-19", 
+    "sunbeds": 2, 
+    "mobile": "344455555", 
+    "created": "2015-05-19T19:54:30.839Z", 
+    "modified": "2015-05-19T19:54:30.839Z", 
+    "start": "2015-05-19", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 76, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "toni-william"
+    ], 
+    "end": "2015-07-04", 
+    "sunbeds": 2, 
+    "mobile": "3475714469", 
+    "created": "2015-05-21T17:56:21.605Z", 
+    "modified": "2015-05-21T17:56:21.605Z", 
+    "start": "2015-06-27", 
+    "email": "deluca.ruben@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 77, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-snoopy"
+    ], 
+    "end": "2015-09-12", 
+    "sunbeds": 3, 
+    "mobile": "3922513739", 
+    "created": "2015-05-21T19:37:02.408Z", 
+    "modified": "2015-05-21T19:37:02.408Z", 
+    "start": "2015-09-04", 
+    "email": "belleri.sonia@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -72510,7 +72860,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-04-21T13:07:14.973Z", 
+    "last_login": "2015-05-11T15:29:32.986Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -72546,7 +72896,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-25T19:03:02.828Z", 
+    "last_login": "2015-05-19T19:35:32.110Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$pMFP9UrGappG$AeDiG5AAlOvwOob+k3JFhSPE3Tm7BIY7BNIp4aiqXN8=", 
@@ -72564,7 +72914,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-04-26T14:58:35.475Z", 
+    "last_login": "2015-05-13T17:26:59.141Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
