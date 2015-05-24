@@ -29,7 +29,25 @@ body {
   /*background-color: #393C41;*/
   background: none;
 }
-
+.hp-guide h2
+{
+  color: #F9BF16;
+  text-align: center;
+}
+.hp-guide p
+{
+  color: white;
+}
+.hp-guide .glyphicon
+{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;

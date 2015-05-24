@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 00:29+0200\n"
+"POT-Creation-Date: 2015-05-23 21:44+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -278,7 +278,7 @@ msgstr "con"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:259
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:277
 msgid "in"
 msgstr "a"
 
@@ -378,7 +378,7 @@ msgstr "Modifica il tuo bagno"
 msgid "are_you_the_manager"
 msgstr "Sei il gestore?"
 
-#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:37
+#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:36
 msgid "image"
 msgstr "immagine"
 
@@ -465,7 +465,15 @@ msgstr "Condividi su Google+"
 msgid "Google+ logo"
 msgstr "Logo di google+"
 
-#: templates/bagni/bagno_detail.html:263
+#: templates/bagni/bagno_detail.html:132
+msgid "Booking alternatives"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:143 templates/bagni/search.html:257
+msgid "away"
+msgstr "di distanza"
+
+#: templates/bagni/bagno_detail.html:281
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -588,22 +596,46 @@ msgstr ""
 "Contatti, servizi e indirizzi di oltre <a href='%(search_url)s'>1000 "
 "stabilimenti balneari</a> da Cattolica a Ferrara"
 
-#: templates/bagni/homepage.html:99 templates/bagni/homepage.html.py:113
-#: templates/bagni/search.html:393
+#: templates/bagni/homepage.html:65
+msgid "Search"
+msgstr "Cerca"
+
+#: templates/bagni/homepage.html:66
+msgid "Search your ideal beach resort based on location and offered services"
+msgstr "Cerca il tuo stabilimento ideale per posizione e servizi offerti"
+
+#: templates/bagni/homepage.html:70
+msgid "Choose"
+msgstr "Scegli"
+
+#: templates/bagni/homepage.html:71
+msgid "Choose the beach resort you like more"
+msgstr "Scegli la soluzione che preferisci"
+
+#: templates/bagni/homepage.html:75
+msgid "Book"
+msgstr "Prenota"
+
+#: templates/bagni/homepage.html:76
+msgid "Book it, relax and prepare to enjoy... Aint't easy?"
+msgstr "Prenota l'ombrellone online e preparati a divertirti.. facile no?"
+
+#: templates/bagni/homepage.html:116 templates/bagni/homepage.html.py:130
+#: templates/bagni/search.html:392
 msgid "Close"
 msgstr "Chiudi"
 
-#: templates/bagni/homepage.html:136
+#: templates/bagni/homepage.html:153
 msgid "homepage_title"
 msgstr "bagnialmare: esplora i Bagni della Riviera Adriatica"
 
-#: templates/bagni/homepage.html:141
+#: templates/bagni/homepage.html:158
 msgid "homepage_description"
 msgstr ""
 "contatti, servizi offerti e indirizzi di oltre 1000 bagni a Riccione, "
 "Rimini, Cesenatico, Cervia e Ravenna."
 
-#: templates/bagni/homepage.html:146
+#: templates/bagni/homepage.html:163
 msgid "terms_and_privacy"
 msgstr "privacy e termini del servizio"
 
@@ -724,11 +756,7 @@ msgstr "ultimo"
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
-#: templates/bagni/search.html:36
-msgid "away"
-msgstr "di distanza"
-
-#: templates/bagni/search.html:289
+#: templates/bagni/search.html:288
 #, python-format
 msgid ""
 "\n"
@@ -737,11 +765,11 @@ msgstr ""
 "\n"
 "Pagina %(page)s di %(num_pages)s."
 
-#: templates/bagni/search.html:409
+#: templates/bagni/search.html:408
 msgid "search_pagetitle"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/search.html:414
+#: templates/bagni/search.html:413
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 

@@ -33,7 +33,6 @@
 {% trans "no_results_for_search" as t_no_results_for_search %}
 {% trans "geo_modal_text" as t_geo_modal_text %}
 {% trans "geo_modal_title" as t_geo_modal_title %}
-{% trans "away" as t_away %}
 {% trans "image" as t_image %}
 
 
@@ -177,7 +176,7 @@
                 {% else %}
                     <span class="hits-query">( {{ search_results.filters|length }} {{ t_active_filters }} )</span>
                 {% endif %}
-            {% endif %} 
+            {% endif %}
           </p>
           {% if hits %}
             <ul class="nav nav-tabs search-page-tabs" id="myTab">
@@ -254,20 +253,20 @@
                             {{ hit.address }} -
                             {{ hit|neighbourhood_municipality }} -
                             {{ hit.neighbourhood.municipality.district.name }}
-                            {% if hit.distance %}<span class="badge">{{ hit.distance.km|floatformat:2 }}Km {{ t_away }}</span>{% endif %}
+                            {% if hit.distance %}<span class="badge">{{ hit.distance.km|floatformat:2 }}Km {% trans "away" %}</span>{% endif %}
                           </p>
                         </div>
                         {% if hit.is_managed %}
                         <div class="col-xs-12 col-sm-9">
-                            <button id="contact-form-button" 
+                            <button id="contact-form-button"
                                     class="btn btn-primary contact-form-button ga_click"
                                     data-url="{{ hit.get_contactform_url }}"
-                                    data-category="contact" 
-                                    data-action="mail-popup" 
+                                    data-category="contact"
+                                    data-action="mail-popup"
                                     data-label="{{ hit.slug }} - search">
                               {{ t_contact_button }}
                             </button>
-                        </div> 
+                        </div>
                         {% endif %}
                       </div>
                     </a>

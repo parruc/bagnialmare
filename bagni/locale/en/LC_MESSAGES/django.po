@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 00:29+0200\n"
+"POT-Creation-Date: 2015-05-23 21:44+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -277,7 +277,7 @@ msgstr "with"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:259
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:277
 msgid "in"
 msgstr "in"
 
@@ -375,7 +375,7 @@ msgstr "Modify your beach resort data"
 msgid "are_you_the_manager"
 msgstr "are you the manager?"
 
-#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:37
+#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:36
 msgid "image"
 msgstr "image"
 
@@ -462,7 +462,15 @@ msgstr ""
 msgid "Google+ logo"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:263
+#: templates/bagni/bagno_detail.html:132
+msgid "Booking alternatives"
+msgstr ""
+
+#: templates/bagni/bagno_detail.html:143 templates/bagni/search.html:257
+msgid "away"
+msgstr "away"
+
+#: templates/bagni/bagno_detail.html:281
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
@@ -584,22 +592,47 @@ msgstr ""
 "Contacts, facilities and addresses of more than <a "
 "href='%(search_url)s'>1000 beach resorts</a> from Cattolica to Ferrara"
 
-#: templates/bagni/homepage.html:99 templates/bagni/homepage.html.py:113
-#: templates/bagni/search.html:393
+#: templates/bagni/homepage.html:65
+#, fuzzy
+msgid "Search"
+msgstr "Search"
+
+#: templates/bagni/homepage.html:66
+msgid "Search your ideal beach resort based on location, services offered etc"
+msgstr ""
+
+#: templates/bagni/homepage.html:70
+msgid "Choose"
+msgstr ""
+
+#: templates/bagni/homepage.html:71
+msgid "Choose the beach resort you like more"
+msgstr ""
+
+#: templates/bagni/homepage.html:75
+msgid "Book"
+msgstr ""
+
+#: templates/bagni/homepage.html:76
+msgid "Book it, relax and prepare to enjoy... Aint't easy?"
+msgstr ""
+
+#: templates/bagni/homepage.html:116 templates/bagni/homepage.html.py:130
+#: templates/bagni/search.html:392
 msgid "Close"
 msgstr "Close"
 
-#: templates/bagni/homepage.html:136
+#: templates/bagni/homepage.html:153
 msgid "homepage_title"
 msgstr "bagnialmare: find Italian beach resorts"
 
-#: templates/bagni/homepage.html:141
+#: templates/bagni/homepage.html:158
 msgid "homepage_description"
 msgstr ""
 "contacts, facilities and addresses of more than 1000 Italian beach resorts "
 "in Riccione, Rimini, Cesenatico, Cervia and Ravenna."
 
-#: templates/bagni/homepage.html:146
+#: templates/bagni/homepage.html:163
 msgid "terms_and_privacy"
 msgstr "terms of service and privacy"
 
@@ -717,11 +750,7 @@ msgstr ""
 msgid "no_results_for_search"
 msgstr "no results for the given search"
 
-#: templates/bagni/search.html:36
-msgid "away"
-msgstr "away"
-
-#: templates/bagni/search.html:289
+#: templates/bagni/search.html:288
 #, python-format
 msgid ""
 "\n"
@@ -730,11 +759,11 @@ msgstr ""
 "\n"
 "                      Page %(page)s of %(num_pages)s."
 
-#: templates/bagni/search.html:409
+#: templates/bagni/search.html:408
 msgid "search_pagetitle"
 msgstr "search results | bagnialmare.com"
 
-#: templates/bagni/search.html:414
+#: templates/bagni/search.html:413
 msgid "search_description"
 msgstr "search results | bagnialmare.com"
 

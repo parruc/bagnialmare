@@ -132,7 +132,8 @@ msgid ""
 "The beach club %(bagno.name)s is not yet registered on BagniAlMare.<br />\n"
 "Here are some alternatives nearby that accept online reservations:"
 msgstr ""
-"Lo stabilimento balneare %(bagno.name)s non è ancora registrato su BagniAlMare.<br />\n"
+"Lo stabilimento balneare %(bagno.name)s non si è ancora registrato su "
+"BagniAlMare, vuoi suggerirglielo tu?<br />\n"
 "Ecco alcune alternative nelle vicinanze che accettano prenotazioni on-line:"
 
 #: templates/booking/alternatives.html:18
