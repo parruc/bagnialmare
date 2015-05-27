@@ -20,7 +20,7 @@ MANAGER_UPDATE_TEMPLATE = """
 def get_manager_mail(instance, subject, template):
     subject = "[bagnialmare.com] new manager"
     name = instance.name
-    bagno = instance.bagni.objects.first()
+    bagno = instance.bagni.first()
     if bagno:
         message = template.format(
             name = name,

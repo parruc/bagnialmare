@@ -24,7 +24,7 @@ class NewsletterUser(models.Model):
     old_email = models.EmailField(editable=False)
 
     def __unicode__(self):
-        return self.name
+        return self.user.username
 
 class NewsletterTarget(BaseModel):
     """ The target for Newsletter objects
