@@ -48952,7 +48952,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5391354899999872 44.0888943200000014)", 
-    "modified": "2015-03-29T14:44:27.910Z", 
+    "modified": "2015-05-26T10:09:16.743Z", 
     "description_en": "", 
     "number": "29/30/31/32/33 nord", 
     "languages": [], 
@@ -48973,13 +48973,22 @@
         "children-entertainment"
       ], 
       [
+        "tv-area"
+      ], 
+      [
         "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
+        "music"
+      ], 
+      [
         "entertainment"
+      ], 
+      [
+        "acquagym"
       ], 
       [
         "pedal-boats"
@@ -48988,7 +48997,16 @@
         "beach-racket-court"
       ], 
       [
+        "theme-parties"
+      ], 
+      [
         "happy-hour"
+      ], 
+      [
+        "sports-tournaments"
+      ], 
+      [
+        "gymnastics"
       ], 
       [
         "wi-fi"
@@ -49012,6 +49030,9 @@
         "swimming-lessons"
       ], 
       [
+        "dance-classes"
+      ], 
+      [
         "hot-showers"
       ], 
       [
@@ -49019,6 +49040,9 @@
       ], 
       [
         "cocktail-bar"
+      ], 
+      [
+        "beach-rackets-courses"
       ], 
       [
         "beach-volley-courses"
@@ -58701,6 +58725,23 @@
     "modified": "2015-05-21T19:37:02.408Z", 
     "start": "2015-09-04", 
     "email": "belleri.sonia@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 78, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "playa-tamarindo"
+    ], 
+    "end": "2015-06-13", 
+    "sunbeds": 2, 
+    "mobile": "3479851744", 
+    "created": "2015-05-26T10:05:35.592Z", 
+    "modified": "2015-05-26T10:05:35.592Z", 
+    "start": "2015-06-06", 
+    "email": "unmaredaamare@hotmail.it", 
     "umbrellas": 1
   }
 },
@@ -72860,7 +72901,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-05-11T15:29:32.986Z", 
+    "last_login": "2015-05-26T13:23:16.125Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -73274,7 +73315,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2015-03-29T14:42:55.274Z", 
+    "last_login": "2015-05-26T10:07:26.085Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$I5HnuHHZEw1E$D5ZbPVDFjmdNKXHZ81O3teS4gf2BDJQnp146z6LM+0g=", 
