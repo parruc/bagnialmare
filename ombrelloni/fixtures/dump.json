@@ -8670,8 +8670,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3542382560000004 44.2780544000000020)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2015-05-27T09:19:41.212Z", 
+    "description_en": "", 
     "number": "267", 
     "languages": [
       [
@@ -8683,8 +8683,8 @@
     ], 
     "services": [], 
     "address": "Viale Forli - arenile demaniale 267", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "prova@matteoparrucci.it", 
     "accepts_booking": true, 
     "slug": "bagno-ancora", 
     "neighbourhood": [
@@ -15383,71 +15383,130 @@
   "pk": 12956, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 240<br />\n\tcabine: 17<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 4080<br />\n\tdocce aperte: 2</p>", 
+    "site": "http://www.fafin.it/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 40<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 34<br />\r\nlettini: 240<br />\r\ncabine: 17<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 4080<br />\r\ndocce aperte: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4084138870239258 44.1997127626680850)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 40<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 240<br />\n\tcabine: 17<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 4080<br />\n\tdocce aperte: 2</p>", 
+    "point": "POINT (12.4084138870239240 44.1997127626680637)", 
+    "modified": "2015-05-27T10:32:49.962Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 40<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 34<br />\r\nlettini: 240<br />\r\ncabine: 17<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 4080<br />\r\ndocce aperte: 2</p>\r\n", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
       [
-        "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "footvolley"
-      ], 
-      [
-        "beach-volley"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
+        "beach-volley"
       ], 
       [
-        "petanque"
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
       ], 
       [
         "tv-area"
       ], 
       [
-        "basketball"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
+        "music"
+      ], 
+      [
         "entertainment"
       ], 
       [
+        "acquagym"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
         "canoes"
+      ], 
+      [
+        "catering"
+      ], 
+      [
+        "sports-tournaments"
+      ], 
+      [
+        "gymnastics"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
+        "footvolley"
+      ], 
+      [
+        "bookstore"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "pilates"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "aperitif"
+      ], 
+      [
+        "swimming-lessons"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "yoga"
+      ], 
+      [
+        "bancomat"
+      ], 
+      [
+        "credit-cards-accepted"
+      ], 
+      [
+        "wellness-area"
       ]
     ], 
     "address": "Viale Bologna", 
-    "description_it": null, 
+    "description_it": "<h2 style=\"font-size: 14px; color: rgb(154, 213, 229); font-family: 'Trebuchet MS'; line-height: normal;\">3 stabilimenti balneari uniti in un&#39;unica struttura da quasi trent&#39;anni ci impegnamo<br />\r\nper rendere le vostre vacanze indimenticabili!</h2>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-adua", 
     "neighbourhood": [
       "cesenatico"
     ], 
-    "name": "Bagno adua"
+    "name": "Bagno fafin adua"
   }
 },
 {
@@ -17421,41 +17480,6 @@
       "cesenatico"
     ], 
     "name": "Bagno europa"
-  }
-},
-{
-  "pk": 12996, 
-  "model": "bagni.bagno", 
-  "fields": {
-    "site": "http://www.fafin.it", 
-    "description": "", 
-    "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4023950099945068 44.1994897042834438)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
-    "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
-    "services": [
-      [
-        "entertainment"
-      ]
-    ], 
-    "address": "Viale Bologna, 26", 
-    "description_it": null, 
-    "mail": "info@fafin.it", 
-    "accepts_booking": true, 
-    "slug": "bagno-fafin", 
-    "neighbourhood": [
-      "cesenatico"
-    ], 
-    "name": "Bagno fafin"
   }
 },
 {
@@ -57420,108 +57444,6 @@
   }
 },
 {
-  "pk": 1, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-07-05", 
-    "sunbeds": 2, 
-    "mobile": "3489032776", 
-    "created": "2015-02-16T18:36:19.159Z", 
-    "modified": "2015-02-16T18:36:19.159Z", 
-    "start": "2015-07-01", 
-    "email": "m.parrucci@unibo.it", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 2, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-02-17", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-02-17T14:41:06.055Z", 
-    "modified": "2015-02-17T14:41:06.055Z", 
-    "start": "2015-02-17", 
-    "email": "nicola.valentini@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 3, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-dallara"
-    ], 
-    "end": "2015-05-14", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-02-18T20:05:47.879Z", 
-    "modified": "2015-02-18T20:05:47.879Z", 
-    "start": "2015-05-12", 
-    "email": "marco.benvenuto1@gmail.com", 
-    "umbrellas": 0
-  }
-},
-{
-  "pk": 4, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-dallara"
-    ], 
-    "end": "2015-02-18", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-02-18T20:14:05.433Z", 
-    "modified": "2015-02-18T20:14:05.433Z", 
-    "start": "2015-02-18", 
-    "email": "marco.benvenuto1@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 5, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-02-20", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-02-18T20:42:26.959Z", 
-    "modified": "2015-02-18T20:42:26.959Z", 
-    "start": "2015-02-18", 
-    "email": "marco.bartolini@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 6, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-dallara"
-    ], 
-    "end": "2015-02-27", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-02-27T20:43:49.512Z", 
-    "modified": "2015-02-27T20:43:49.512Z", 
-    "start": "2015-02-27", 
-    "email": "nicolavalentini@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
   "pk": 7, 
   "model": "booking.booking", 
   "fields": {
@@ -57722,74 +57644,6 @@
     "modified": "2015-03-12T15:11:17.817Z", 
     "start": "2015-06-16", 
     "email": "alicegelmi@alice.it", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 19, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-ideal"
-    ], 
-    "end": "2015-03-12", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-03-12T15:53:30.198Z", 
-    "modified": "2015-03-12T15:53:30.198Z", 
-    "start": "2015-03-12", 
-    "email": "asdas@asdasd.de", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 20, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-ideal"
-    ], 
-    "end": "2015-03-12", 
-    "sunbeds": 2, 
-    "mobile": "1234", 
-    "created": "2015-03-12T15:58:46.124Z", 
-    "modified": "2015-03-12T15:58:46.124Z", 
-    "start": "2015-03-12", 
-    "email": "test@bagnialmare.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 21, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-ideal"
-    ], 
-    "end": "2015-03-12", 
-    "sunbeds": 2, 
-    "mobile": "1234", 
-    "created": "2015-03-12T15:59:06.032Z", 
-    "modified": "2015-03-12T15:59:06.032Z", 
-    "start": "2015-03-12", 
-    "email": "TEST@ASDASD.DE", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 22, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "bagno-ideal"
-    ], 
-    "end": "2015-03-12", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-03-12T16:05:20.457Z", 
-    "modified": "2015-03-12T16:05:20.457Z", 
-    "start": "2015-03-12", 
-    "email": "test@asdasd.de", 
     "umbrellas": 1
   }
 },
@@ -58372,74 +58226,6 @@
   }
 },
 {
-  "pk": 57, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-05-08", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-05-08T09:40:52.535Z", 
-    "modified": "2015-05-08T09:40:52.535Z", 
-    "start": "2015-05-08", 
-    "email": "parruc@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 58, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-05-08", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-05-08T09:42:56.691Z", 
-    "modified": "2015-05-08T09:42:56.691Z", 
-    "start": "2015-05-08", 
-    "email": "parruc@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 59, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-05-08", 
-    "sunbeds": 2, 
-    "mobile": "", 
-    "created": "2015-05-08T10:01:07.839Z", 
-    "modified": "2015-05-08T10:01:07.839Z", 
-    "start": "2015-05-08", 
-    "email": "parruc@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 60, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-05-08", 
-    "sunbeds": 2, 
-    "mobile": "1234", 
-    "created": "2015-05-08T10:16:20.973Z", 
-    "modified": "2015-05-08T10:16:20.973Z", 
-    "start": "2015-05-08", 
-    "email": "parruc@gmail.com", 
-    "umbrellas": 1
-  }
-},
-{
   "pk": 61, 
   "model": "booking.booking", 
   "fields": {
@@ -58640,40 +58426,6 @@
     "modified": "2015-05-19T16:12:55.511Z", 
     "start": "2015-06-20", 
     "email": "bborlini@virgilio.it", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 73, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "albatros"
-    ], 
-    "end": "2015-05-19", 
-    "sunbeds": 2, 
-    "mobile": "9849374907135", 
-    "created": "2015-05-19T19:33:52.065Z", 
-    "modified": "2015-05-19T19:33:52.065Z", 
-    "start": "2015-05-19", 
-    "email": "parru@gay.com", 
-    "umbrellas": 1
-  }
-},
-{
-  "pk": 74, 
-  "model": "booking.booking", 
-  "fields": {
-    "bagno": [
-      "test"
-    ], 
-    "end": "2015-05-19", 
-    "sunbeds": 2, 
-    "mobile": "333457869", 
-    "created": "2015-05-19T19:37:38.752Z", 
-    "modified": "2015-05-19T19:37:38.752Z", 
-    "start": "2015-05-19", 
-    "email": "inge@gay.iy", 
     "umbrellas": 1
   }
 },
@@ -71449,6 +71201,16 @@
   }
 },
 {
+  "pk": 45, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 41, 
+    "key": "5992f56d7172079e03cfafd5d8ef5be186d0fbd1205c605af66adab87ad744b0", 
+    "sent": "2015-05-27T10:25:35.227Z", 
+    "created": "2015-05-27T10:25:35.045Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -71862,6 +71624,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||a94d663c9d6397d6f693e513e86dc558", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/53/f3/53f306f5b15faddff5733fc68d92cfbf.jpg\", \"size\": [380, 254]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||aa338aaa53f6d5544eb62f92810d5b21", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -71880,6 +71649,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/pic-nic/bagno-pic-nic.JPG\", \"size\": [640, 480]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||b37565ae0a0253e3f53649aeb03f6cd0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/bagno-adua/la-nostra-spiaggia.jpg\", \"size\": [1310, 874]}"
   }
 },
 {
@@ -71953,6 +71729,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||ddaeb6f7f9d6d9aa4e3e98f5ba23dfcc", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/e7/bf/e7bf73a559213e6e723a824c77e1af94.jpg\", \"size\": [187, 125]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||dea988fec618347ac32b9fb7ee8d67be", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -72020,6 +71803,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/32/0a/320a0a784b82e0d0cb55ceaae8d6ac28.jpg\", \"size\": [200, 110]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||e84194b008a6411e6f26176cb63a7f26", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/43/47/43472426cb7eb8d7a16d4f7c309a8f3a.png\", \"size\": [192, 128]}"
   }
 },
 {
@@ -72174,6 +71964,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"37bdaa9745a1ac17609b4aea22977aeb\", \"7b5a7c53a620324acfe41828163846be\", \"5d17fe6f80d028366d99cc2271f2bc63\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||b37565ae0a0253e3f53649aeb03f6cd0", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"ddaeb6f7f9d6d9aa4e3e98f5ba23dfcc\", \"e84194b008a6411e6f26176cb63a7f26\", \"a94d663c9d6397d6f693e513e86dc558\"]"
   }
 },
 {
@@ -72955,7 +72752,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-05-24T13:32:01.345Z", 
+    "last_login": "2015-05-27T13:52:00.851Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
@@ -73360,6 +73157,24 @@
   }
 },
 {
+  "pk": 45, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info10", 
+    "first_name": "ilaria", 
+    "last_name": "meneghello", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2015-05-27T10:26:28.451Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$oY3LMdhEsvi2$k9/3cM/t5nnnD5zN8zS1uA9RPvz9FTbnVNRF/zy2U58=", 
+    "email": "info@fafin.it", 
+    "date_joined": "2015-05-27T10:25:33.148Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -73665,6 +73480,18 @@
     ], 
     "primary": true, 
     "email": "boscolo.luisella@libero.it"
+  }
+},
+{
+  "pk": 41, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info10"
+    ], 
+    "primary": true, 
+    "email": "info@fafin.it"
   }
 },
 {
@@ -74202,6 +74029,26 @@
   }
 },
 {
+  "pk": 38, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "meneghello", 
+    "name": "ilaria", 
+    "created": "2015-05-27T10:25:33.259Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2015-05-27T10:25:34.377Z", 
+    "user": [
+      "info10"
+    ], 
+    "bagni": [
+      [
+        "bagno-adua"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -74462,6 +74309,16 @@
   }
 },
 {
+  "pk": 32, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info10"
+    ], 
+    "old_email": "info@fafin.it"
+  }
+},
+{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -74680,6 +74537,19 @@
     "name": "Bagno Pic Nic", 
     "image": "images/bagni/pic-nic/bagno-pic-nic.JPG", 
     "slug": "bagno-pic-nic"
+  }
+},
+{
+  "pk": 19, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "bagno-adua"
+    ], 
+    "name": "la nostra spiaggia", 
+    "image": "images/bagni/bagno-adua/la-nostra-spiaggia.jpg", 
+    "slug": "la-nostra-spiaggia"
   }
 },
 {
@@ -77737,7 +77607,7 @@
     "bagno": [
       "bagno-adua"
     ], 
-    "number": "0547 81692", 
+    "number": "0547 83172", 
     "name": "tel", 
     "slug": "telephone-number-186"
   }
@@ -77749,7 +77619,7 @@
     "bagno": [
       "bagno-adua"
     ], 
-    "number": "0547 75758", 
+    "number": "0547 81722", 
     "name": "fax", 
     "slug": "fax-number-52"
   }
@@ -78388,30 +78258,6 @@
     "number": "0547 80256", 
     "name": "tel", 
     "slug": "telephone-number-221"
-  }
-},
-{
-  "pk": 2265, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "bagno-fafin"
-    ], 
-    "number": "0547 83172", 
-    "name": "tel", 
-    "slug": "telephone-number-222"
-  }
-},
-{
-  "pk": 2266, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "bagno-fafin"
-    ], 
-    "number": "0547 81772", 
-    "name": "fax", 
-    "slug": "fax-number-67"
   }
 },
 {
