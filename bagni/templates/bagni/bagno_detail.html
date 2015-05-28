@@ -13,7 +13,6 @@
 {% trans "website" as t_website %}
 {% trans "modify_bagno" as t_modify_bagno %}
 {% trans "are_you_the_manager" as t_are_you_the_manager %}
-{% trans "image" as t_image %}
 {% trans "no_images_for" as t_no_images_for %}
 {% trans "no_images_add" as t_no_images_add %}
 {% trans "facilities" as t_facilities %}
@@ -138,7 +137,7 @@
               {% for bagno_image in bagno_images %}
                   <div class="item{% if forloop.first %} active{% endif %}">
                       {% thumbnail bagno_image.image "380x260" as im %}
-                        <img class="img-responsive img-rounded" src="{{ im.url }}" alt="{{ object.name|safe }} {{ t_image }}" />
+                        <img class="img-responsive img-rounded" src="{{ im.url }}" alt="{{ object.name|safe }}" />
                       {% endthumbnail %}
                   </div>
               {% endfor %}
