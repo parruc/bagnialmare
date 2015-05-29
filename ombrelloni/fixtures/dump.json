@@ -15384,11 +15384,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.fafin.it/", 
-    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 40<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 34<br />\r\nlettini: 240<br />\r\ncabine: 17<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 4080<br />\r\ndocce aperte: 2</p>\r\n", 
+    "description": "<p>3 beach clubs united in a single structure for almost thirty years we are committed to make your holidays unforgettable!</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4084138870239240 44.1997127626680637)", 
-    "modified": "2015-05-27T10:32:49.962Z", 
-    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 40<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 34<br />\r\nlettini: 240<br />\r\ncabine: 17<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 4080<br />\r\ndocce aperte: 2</p>\r\n", 
+    "modified": "2015-05-28T09:48:37.312Z", 
+    "description_en": "<p>3 beach clubs united in a single structure for almost thirty years we are committed to make your holidays unforgettable!</p>\r\n", 
     "number": "", 
     "languages": [], 
     "services": [
@@ -15499,10 +15499,10 @@
       ]
     ], 
     "address": "Viale Bologna", 
-    "description_it": "<h2 style=\"font-size: 14px; color: rgb(154, 213, 229); font-family: 'Trebuchet MS'; line-height: normal;\">3 stabilimenti balneari uniti in un&#39;unica struttura da quasi trent&#39;anni ci impegnamo<br />\r\nper rendere le vostre vacanze indimenticabili!</h2>\r\n", 
+    "description_it": "<p>3 stabilimenti balneari uniti in un&#39;unica struttura da quasi trent&#39;anni ci impegnamo per rendere le vostre vacanze indimenticabili!</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
-    "slug": "bagno-adua", 
+    "slug": "bagno-fafin-adua", 
     "neighbourhood": [
       "cesenatico"
     ], 
@@ -74043,7 +74043,7 @@
     ], 
     "bagni": [
       [
-        "bagno-adua"
+        "bagno-fafin-adua"
       ]
     ]
   }
@@ -74545,7 +74545,7 @@
   "fields": {
     "description": "", 
     "bagno": [
-      "bagno-adua"
+      "bagno-fafin-adua"
     ], 
     "name": "la nostra spiaggia", 
     "image": "images/bagni/bagno-adua/la-nostra-spiaggia.jpg", 
@@ -77605,7 +77605,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-adua"
+      "bagno-fafin-adua"
     ], 
     "number": "0547 83172", 
     "name": "tel", 
@@ -77617,7 +77617,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagno-adua"
+      "bagno-fafin-adua"
     ], 
     "number": "0547 81722", 
     "name": "fax", 
