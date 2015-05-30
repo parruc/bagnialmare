@@ -42234,11 +42234,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 62<br />\r\n\tombrelloni: 224</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>cabine: 62<br />\r\nombrelloni: 224</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5779903030000000 44.0746867000000009)", 
-    "modified": "2014-07-07T13:03:55.464Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 62<br />\r\n\tombrelloni: 224</p>", 
+    "modified": "2015-05-29T17:34:37.896Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>cabine: 62<br />\r\nombrelloni: 224</p>\r\n", 
     "number": "14 sud", 
     "languages": [
       [
@@ -42261,7 +42261,7 @@
     ], 
     "address": "Lungomare Tintori", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "isaac14@hotmail.it", 
     "accepts_booking": true, 
     "slug": "isac", 
     "neighbourhood": [
@@ -42275,11 +42275,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>cabine: 40<br />\r\nombrelloni: 120</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5783511840000006 44.0743545999999995)", 
-    "modified": "2014-07-07T13:04:17.214Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 120</p>", 
+    "modified": "2015-05-29T17:35:13.184Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>cabine: 40<br />\r\nombrelloni: 120</p>\r\n", 
     "number": "15 sud", 
     "languages": [
       [
@@ -42296,7 +42296,7 @@
     ], 
     "address": "Lungomare Tintori", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "oasi15rimini@libero.it", 
     "accepts_booking": true, 
     "slug": "oasi", 
     "neighbourhood": [
@@ -42357,11 +42357,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 31<br />\r\n\tombrelloni: 120</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>cabine: 31<br />\r\nombrelloni: 120</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5790729460000001 44.0736903999999967)", 
-    "modified": "2014-07-07T13:04:01.512Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 31<br />\r\n\tombrelloni: 120</p>", 
+    "modified": "2015-05-29T17:36:43.450Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>cabine: 31<br />\r\nombrelloni: 120</p>\r\n", 
     "number": "17 sud", 
     "languages": [
       [
@@ -42384,13 +42384,13 @@
     ], 
     "address": "Lungomare Tintori", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "bagno17moai@gmail.com", 
     "accepts_booking": true, 
-    "slug": "la-spiaggia", 
+    "slug": "bagno-moai", 
     "neighbourhood": [
       "rimini"
     ], 
-    "name": "Bagno La Spiaggia"
+    "name": "Bagno Moai"
   }
 },
 {
@@ -43585,12 +43585,12 @@
   "pk": 13454, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti tornei delle varie attivit\u00e0\r\n- corsi di aquagymn e ginnastica</p>", 
+    "site": "http://www.spiaggiarimini.net/stabilimento/43", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>cabine: 35<br />\r\nombrelloni: 120</p>\r\n\r\n<p>Servizi offerti tornei delle varie attivit&agrave; - corsi di aquagymn e ginnastica</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5884558519999992 44.0650558000000032)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 35<br />\n\tombrelloni: 120</p>\n<p>Servizi offerti tornei delle varie attivit\u00e0\r\n- corsi di aquagymn e ginnastica</p>", 
+    "modified": "2015-05-29T18:00:42.925Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>cabine: 35<br />\r\nombrelloni: 120</p>\r\n\r\n<p>Servizi offerti tornei delle varie attivit&agrave; - corsi di aquagymn e ginnastica</p>\r\n", 
     "number": "43 sud", 
     "languages": [
       [
@@ -43608,15 +43608,15 @@
         "nursery"
       ], 
       [
-        "beach-volley"
+        "hot-showers"
       ], 
       [
-        "hot-showers"
+        "beach-volley"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "matteo-43@hotmail.it", 
     "accepts_booking": true, 
     "slug": "onda", 
     "neighbourhood": [
@@ -43671,11 +43671,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 170</p>\n<p>Servizi offerti tornei di beach volley</p>", 
+    "description": "<h3>&nbsp;</h3>\r\n\r\n<p><br />\r\n&nbsp;</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5891776140000005 44.0643916000000004)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 170</p>\n<p>Servizi offerti tornei di beach volley</p>", 
+    "modified": "2015-05-29T17:39:00.370Z", 
+    "description_en": "<h3>&nbsp;</h3>\r\n\r\n<p><br />\r\n&nbsp;</p>\r\n", 
     "number": "45 sud", 
     "languages": [
       [
@@ -43690,41 +43690,41 @@
         "credit-cards-accepted"
       ], 
       [
-        "beach-volley"
+        "baby-park"
       ], 
       [
-        "baby-park"
+        "beach-volley"
       ], 
       [
         "children-entertainment"
       ], 
       [
-        "basketball"
+        "hot-showers"
       ], 
       [
-        "hot-showers"
+        "basketball"
       ]
     ], 
     "address": "Lungomare Murri", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "donatiandreasas@gmail.com", 
     "accepts_booking": true, 
-    "slug": "amos-sud", 
+    "slug": "l-altra-spiaggia", 
     "neighbourhood": [
       "rimini"
     ], 
-    "name": "Bagno Amos sud"
+    "name": "L'Altra Spiaggia"
   }
 },
 {
   "pk": 13457, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.battigia46rimini.it/", 
+    "site": "http://www.45-6eastcoast.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5895384949999993 44.0640594999999990)", 
-    "modified": "2014-07-07T12:35:11.857Z", 
+    "modified": "2015-05-29T17:49:35.276Z", 
     "description_en": "", 
     "number": "46 sud", 
     "languages": [
@@ -43745,13 +43745,13 @@
     ], 
     "address": "Lungomare Murri", 
     "description_it": "", 
-    "mail": "madeinrimini@libero.it", 
+    "mail": "info@45-6eastcoast.it", 
     "accepts_booking": true, 
-    "slug": "bagno-46", 
+    "slug": "east-coast", 
     "neighbourhood": [
       "rimini"
     ], 
-    "name": "Bagno 46"
+    "name": "Bagno East Coast"
   }
 },
 {
@@ -43799,12 +43799,12 @@
   "pk": 13459, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.hotelbelsoggiornorimini.it/spiaggia.php", 
-    "description": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>", 
+    "site": "http://www.lespiaggerimini.it/bagni/zona-49-50/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>cabine: 40<br />\r\nombrelloni: 200</p>\r\n\r\n<p>Servizi offerti corsi di aquagymn e ginnastica - tornei di beach tennis e beach volley</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5906211379999995 44.0630632000000020)", 
-    "modified": "2014-07-07T12:58:43.065Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>cabine: 40<br />\r\n\tombrelloni: 200</p>\r\n<p>Servizi offerti corsi di aquagymn e ginnastica\r\n- tornei di beach tennis e beach volley</p>", 
+    "modified": "2015-05-29T17:56:45.415Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>cabine: 40<br />\r\nombrelloni: 200</p>\r\n\r\n<p>Servizi offerti corsi di aquagymn e ginnastica - tornei di beach tennis e beach volley</p>\r\n", 
     "number": "49 sud", 
     "languages": [
       [
@@ -43815,9 +43815,6 @@
       ]
     ], 
     "services": [
-      [
-        "fitness-area"
-      ], 
       [
         "children-entertainment"
       ], 
@@ -43831,12 +43828,15 @@
         "beach-racket-court"
       ], 
       [
+        "fitness-area"
+      ], 
+      [
         "nursery"
       ]
     ], 
     "address": "Lungomare Murri", 
     "description_it": "", 
-    "mail": "info@hotelbelsoggiornorimini.it", 
+    "mail": "info@lespiaggerimini.it", 
     "accepts_booking": true, 
     "slug": "giuseppe", 
     "neighbourhood": [
@@ -72716,7 +72716,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-03-08T18:49:34.416Z", 
+    "last_login": "2015-05-29T10:57:07.654Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
@@ -84855,7 +84855,7 @@
     "bagno": [
       "isac"
     ], 
-    "number": "339 1270783 (bagno)  0541/56415 (telefono del bar del bagno n 14)", 
+    "number": "339 1270783", 
     "name": "mob", 
     "slug": "mobile-number-87"
   }
@@ -84889,7 +84889,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "la-spiaggia"
+      "bagno-moai"
     ], 
     "number": "339 3185137", 
     "name": "mob", 
@@ -85321,9 +85321,9 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "amos-sud"
+      "l-altra-spiaggia"
     ], 
-    "number": "335 7062750", 
+    "number": "335 5917153", 
     "name": "mob", 
     "slug": "mobile-number-99"
   }
@@ -91866,6 +91866,42 @@
     "number": "0533 380344", 
     "name": "fax", 
     "slug": "fax-2"
+  }
+},
+{
+  "pk": 3433, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "l-altra-spiaggia"
+    ], 
+    "number": "347 8315635", 
+    "name": "mob", 
+    "slug": "mobile-number-999"
+  }
+},
+{
+  "pk": 3434, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "isac"
+    ], 
+    "number": "0541 56415", 
+    "name": "tel", 
+    "slug": "mobile-number-87-fisso"
+  }
+},
+{
+  "pk": 3435, 
+  "model": "bagni.telephone", 
+  "fields": {
+    "bagno": [
+      "east-coast"
+    ], 
+    "number": "0541 391252", 
+    "name": "tel", 
+    "slug": "east-coast-phone"
   }
 }
 ]
