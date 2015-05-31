@@ -16756,12 +16756,12 @@
   "pk": 12982, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 16<br />\n\twc: 5<br />\n\tombrelloni: 130<br />\n\tfronte mare: 34<br />\n\tlettini: 300<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3718<br />\n\tdocce aperte: 2</p>", 
+    "site": "http://www.bagnocasali.com/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 16<br />\r\nwc: 5<br />\r\nombrelloni: 130<br />\r\nfronte mare: 34<br />\r\nlettini: 300<br />\r\ncabine: 35<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 3718<br />\r\ndocce aperte: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4060106277465820 44.2022355711262591)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 16<br />\n\twc: 5<br />\n\tombrelloni: 130<br />\n\tfronte mare: 34<br />\n\tlettini: 300<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3718<br />\n\tdocce aperte: 2</p>", 
+    "modified": "2015-05-30T13:14:00.619Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 16<br />\r\nwc: 5<br />\r\nombrelloni: 130<br />\r\nfronte mare: 34<br />\r\nlettini: 300<br />\r\ncabine: 35<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 3718<br />\r\ndocce aperte: 2</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -16773,36 +16773,36 @@
     ], 
     "services": [
       [
-        "solarium"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "footvolley"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
+        "beach-volley"
       ], 
       [
         "tv-area"
       ], 
       [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
         "entertainment"
+      ], 
+      [
+        "footvolley"
+      ], 
+      [
+        "solarium"
       ]
     ], 
     "address": "Via Montenero, 53", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnocasali.com", 
     "accepts_booking": true, 
     "slug": "bagno-casali", 
     "neighbourhood": [
@@ -17425,11 +17425,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 30<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\tfronte mare: 25<br />\n\tlettini: 140<br />\n\tcabine: 25<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 3</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 30<br />\r\nwc: 3<br />\r\nombrelloni: 70<br />\r\nfronte mare: 25<br />\r\nlettini: 140<br />\r\ncabine: 25<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1750<br />\r\ndocce aperte: 3</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4038219451904297 44.2062349241234358)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 30<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\tfronte mare: 25<br />\n\tlettini: 140<br />\n\tcabine: 25<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 3</p>", 
+    "modified": "2015-05-30T13:22:16.997Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 30<br />\r\nwc: 3<br />\r\nombrelloni: 70<br />\r\nfronte mare: 25<br />\r\nlettini: 140<br />\r\ncabine: 25<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1750<br />\r\ndocce aperte: 3</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -17444,36 +17444,36 @@
         "catering"
       ], 
       [
-        "bicycles"
+        "baby-park"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "baby-park"
-      ], 
-      [
-        "pedal-boats"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
         "tv-area"
       ], 
       [
-        "canoes"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
         "entertainment"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "canoes"
       ]
     ], 
     "address": "Viale Piave, 71", 
-    "description_it": null, 
-    "mail": "greta.pericoli@hotmail.it", 
+    "description_it": "", 
+    "mail": "bagno.europa71@gmail.com", 
     "accepts_booking": true, 
     "slug": "bagno-europa", 
     "neighbourhood": [
@@ -17486,12 +17486,12 @@
   "pk": 12997, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnofaustina.it", 
-    "description": "<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\tfronte mare: 30<br />\n\tlettini: 210<br />\n\tcabine: 15<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 3300<br />\n\tdocce aperte: 4</p>", 
+    "site": "http://www.bagnofaustina.it/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>sdraio: 30<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 210<br />\r\ncabine: 15<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 3300<br />\r\ndocce aperte: 4</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4090147018432617 44.1990051262620227)", 
-    "modified": "2014-07-04T09:49:03.526Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 4<br />\n\tombrelloni: 120<br />\n\tfronte mare: 30<br />\n\tlettini: 210<br />\n\tcabine: 15<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 3300<br />\n\tdocce aperte: 4</p>", 
+    "modified": "2015-05-30T13:18:36.118Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>sdraio: 30<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 210<br />\r\ncabine: 15<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 3300<br />\r\ndocce aperte: 4</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -17506,7 +17506,28 @@
         "catering"
       ], 
       [
-        "five-a-side"
+        "baby-park"
+      ], 
+      [
+        "basketball"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "footvolley"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "bicycles"
       ], 
       [
         "lockers"
@@ -17515,36 +17536,15 @@
         "nursery"
       ], 
       [
-        "bicycles"
-      ], 
-      [
-        "footvolley"
+        "five-a-side"
       ], 
       [
         "beach-volley"
-      ], 
-      [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "basketball"
-      ], 
-      [
-        "entertainment"
       ]
     ], 
     "address": "Viale Carso, 42", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnofaustina.it", 
     "accepts_booking": true, 
     "slug": "bagno-faustina", 
     "neighbourhood": [
@@ -17675,12 +17675,12 @@
   "pk": 13000, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 25<br />\n\tlettini: 180<br />\n\tcabine: 38<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2338<br />\n\tdocce aperte: 2</p>", 
+    "site": "http://www.bagnoflorida.com/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 20<br />\r\nwc: 3<br />\r\nombrelloni: 90<br />\r\nfronte mare: 25<br />\r\nlettini: 180<br />\r\ncabine: 38<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 2338<br />\r\ndocce aperte: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4042940139770508 44.2042352815640456)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 90<br />\n\tfronte mare: 25<br />\n\tlettini: 180<br />\n\tcabine: 38<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 2338<br />\n\tdocce aperte: 2</p>", 
+    "modified": "2015-05-30T13:07:30.105Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 20<br />\r\nwc: 3<br />\r\nombrelloni: 90<br />\r\nfronte mare: 25<br />\r\nlettini: 180<br />\r\ncabine: 38<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 2338<br />\r\ndocce aperte: 2</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -17692,39 +17692,39 @@
     ], 
     "services": [
       [
-        "wi-fi"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "bicycles"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
       ], 
       [
         "tv-area"
-      ], 
-      [
-        "canoes"
       ], 
       [
         "ping-pong"
       ], 
       [
         "entertainment"
+      ], 
+      [
+        "bicycles"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "canoes"
       ]
     ], 
     "address": "Via Montegrappa, 66", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "info@bagnoflorida.com", 
     "accepts_booking": true, 
     "slug": "bagno-florida", 
     "neighbourhood": [
@@ -18262,12 +18262,12 @@
   "pk": 13010, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 100<br />\n\tfronte mare: 37<br />\n\tlettini: 200<br />\n\tcabine: 71<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3814<br />\n\tdocce aperte: 1</p>", 
+    "site": "http://www.bagno4venti.com/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nwc: 2<br />\r\nombrelloni: 100<br />\r\nfronte mare: 37<br />\r\nlettini: 200<br />\r\ncabine: 71<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 3814<br />\r\ndocce aperte: 1</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4050664901733398 44.2031585228398498)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 100<br />\n\tfronte mare: 37<br />\n\tlettini: 200<br />\n\tcabine: 71<br />\n\tdocce chiuse: 2<br />\n\tsuperficie complessiva spiaggia: 3814<br />\n\tdocce aperte: 1</p>", 
+    "modified": "2015-05-30T13:20:00.961Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nwc: 2<br />\r\nombrelloni: 100<br />\r\nfronte mare: 37<br />\r\nlettini: 200<br />\r\ncabine: 71<br />\r\ndocce chiuse: 2<br />\r\nsuperficie complessiva spiaggia: 3814<br />\r\ndocce aperte: 1</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -18279,34 +18279,19 @@
     ], 
     "services": [
       [
-        "solarium"
-      ], 
-      [
-        "baby-sitter"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "swimming-pool"
-      ], 
-      [
-        "footvolley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
-      ], 
-      [
-        "petanque"
+        "waterslide"
       ], 
       [
         "tv-area"
       ], 
       [
-        "canoes"
+        "petanque"
       ], 
       [
         "ping-pong"
@@ -18315,12 +18300,27 @@
         "entertainment"
       ], 
       [
-        "waterslide"
+        "footvolley"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "canoes"
+      ], 
+      [
+        "swimming-pool"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "solarium"
       ]
     ], 
     "address": "Viale Ferrara, 7", 
-    "description_it": null, 
-    "mail": "bagno4venti@gmail.com", 
+    "description_it": "", 
+    "mail": "info@bagno4venti.com", 
     "accepts_booking": true, 
     "slug": "bagno-i-4-venti", 
     "neighbourhood": [
@@ -18570,13 +18570,13 @@
   "pk": 13015, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "", 
+    "site": "http://www.bagnoitalia67.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (0.0000000000000000 -0.0000000000000035)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-05-30T12:43:39.266Z", 
     "description_en": "", 
-    "number": "", 
+    "number": "67", 
     "languages": [
       [
         "italian"
@@ -18622,7 +18622,7 @@
     ], 
     "address": "Viale Piave, 67", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "info@bagnoitalia67.it", 
     "accepts_booking": true, 
     "slug": "bagno-italia-levante", 
     "neighbourhood": [
@@ -20554,7 +20554,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4042081832885831 44.2039353293256099)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-05-30T13:12:45.445Z", 
     "description_en": "", 
     "number": "", 
     "languages": [
@@ -20567,9 +20567,6 @@
     ], 
     "services": [
       [
-        "wi-fi"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -20577,6 +20574,9 @@
       ], 
       [
         "beach-volley"
+      ], 
+      [
+        "wi-fi"
       ], 
       [
         "tv-area"
@@ -20602,7 +20602,7 @@
     ], 
     "address": "Via Spiaggia Levante, 64/65", 
     "description_it": "", 
-    "mail": "", 
+    "mail": "info@bagnoromeo.com", 
     "accepts_booking": true, 
     "slug": "bagno-romeo", 
     "neighbourhood": [
@@ -20851,12 +20851,12 @@
   "pk": 13052, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnosport70.it", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 40<br />\n\tfronte mare: 22<br />\n\tlettini: 100<br />\n\tcabine: 25<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1540<br />\n\tdocce aperte: 2</p>", 
+    "site": "http://www.bagnosport70.it/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 20<br />\r\nwc: 3<br />\r\nombrelloni: 40<br />\r\nfronte mare: 22<br />\r\nlettini: 100<br />\r\ncabine: 25<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1540<br />\r\ndocce aperte: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4038648605346680 44.2056273476016344)", 
-    "modified": "2014-07-04T09:49:07.534Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 40<br />\n\tfronte mare: 22<br />\n\tlettini: 100<br />\n\tcabine: 25<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1540<br />\n\tdocce aperte: 2</p>", 
+    "modified": "2015-05-30T13:11:32.942Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 20<br />\r\nwc: 3<br />\r\nombrelloni: 40<br />\r\nfronte mare: 22<br />\r\nlettini: 100<br />\r\ncabine: 25<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1540<br />\r\ndocce aperte: 2</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -20868,34 +20868,22 @@
     ], 
     "services": [
       [
-        "wi-fi"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "bicycles"
-      ], 
-      [
-        "bookstore"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
+        "beach-volley"
       ], 
       [
-        "petanque"
+        "wi-fi"
       ], 
       [
         "tv-area"
+      ], 
+      [
+        "petanque"
       ], 
       [
         "ping-pong"
@@ -20907,12 +20895,24 @@
         "footvolley"
       ], 
       [
+        "bicycles"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
         "canoes"
+      ], 
+      [
+        "bookstore"
       ]
     ], 
     "address": "Viale Piave, 70", 
-    "description_it": null, 
-    "mail": "", 
+    "description_it": "", 
+    "mail": "bagnosport70@gmail.com", 
     "accepts_booking": true, 
     "slug": "bagno-sport-70", 
     "neighbourhood": [
@@ -21810,12 +21810,12 @@
   "pk": 13068, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnoveneto.it", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 148<br />\n\tfronte mare: 37<br />\n\tlettini: 320<br />\n\tcabine: 35<br />\n\tsuperficie complessiva spiaggia: 3330<br />\n\tdocce aperte: 4</p>", 
+    "site": "http://www.bagnoveneto.it/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 10<br />\r\nwc: 4<br />\r\nombrelloni: 148<br />\r\nfronte mare: 37<br />\r\nlettini: 320<br />\r\ncabine: 35<br />\r\nsuperficie complessiva spiaggia: 3330<br />\r\ndocce aperte: 4</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4065041542053223 44.2014433593736769)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 4<br />\n\tombrelloni: 148<br />\n\tfronte mare: 37<br />\n\tlettini: 320<br />\n\tcabine: 35<br />\n\tsuperficie complessiva spiaggia: 3330<br />\n\tdocce aperte: 4</p>", 
+    "modified": "2015-05-30T13:15:01.965Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 10<br />\r\nwc: 4<br />\r\nombrelloni: 148<br />\r\nfronte mare: 37<br />\r\nlettini: 320<br />\r\ncabine: 35<br />\r\nsuperficie complessiva spiaggia: 3330<br />\r\ndocce aperte: 4</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -21830,35 +21830,35 @@
         "catering"
       ], 
       [
-        "footvolley"
+        "baby-park"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "baby-park"
-      ], 
-      [
-        "pedal-boats"
-      ], 
-      [
-        "petanque"
-      ], 
-      [
         "tv-area"
       ], 
       [
-        "canoes"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
         "entertainment"
+      ], 
+      [
+        "footvolley"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "canoes"
       ]
     ], 
     "address": "Piazza Andrea Costa, 1", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "bagnoveneto@virgilio.it", 
     "accepts_booking": true, 
     "slug": "bagno-veneto", 
