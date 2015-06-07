@@ -58498,6 +58498,23 @@
   }
 },
 {
+  "pk": 79, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2015-06-07", 
+    "sunbeds": 2, 
+    "mobile": "3478304042", 
+    "created": "2015-06-06T13:04:03.939Z", 
+    "modified": "2015-06-06T13:04:03.939Z", 
+    "start": "2015-06-07", 
+    "email": "cancro22671@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
