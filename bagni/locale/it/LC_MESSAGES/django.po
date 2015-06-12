@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-23 21:44+0200\n"
+"POT-Creation-Date: 2015-06-12 09:16-0400\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -278,7 +278,7 @@ msgstr "con"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:277
+#: templates/bagni/bagno_detail.html:35 templates/bagni/bagno_detail.html:261
 msgid "in"
 msgstr "a"
 
@@ -378,102 +378,79 @@ msgstr "Modifica il tuo bagno"
 msgid "are_you_the_manager"
 msgstr "Sei il gestore?"
 
-#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:36
-msgid "image"
-msgstr "immagine"
-
-#: templates/bagni/bagno_detail.html:17
+#: templates/bagni/bagno_detail.html:16
 msgid "no_images_for"
 msgstr "nessuna immagine per"
 
-#: templates/bagni/bagno_detail.html:18
+#: templates/bagni/bagno_detail.html:17
 msgid "no_images_add"
 msgstr "foto ancora non disponibili"
 
-#: templates/bagni/bagno_detail.html:19 templates/bagni/bagno_edit.html:7
+#: templates/bagni/bagno_detail.html:18 templates/bagni/bagno_edit.html:7
 #: templates/bagni/service_list.html:23 templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi offerti"
 
-#: templates/bagni/bagno_detail.html:20 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:19 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "servizio"
 
-#: templates/bagni/bagno_detail.html:21
+#: templates/bagni/bagno_detail.html:20
 msgid "facility_info_not_available"
 msgstr "informazioni non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:22
+#: templates/bagni/bagno_detail.html:21
 msgid "email_address"
 msgstr "Indirizzo email"
 
-#: templates/bagni/bagno_detail.html:23
+#: templates/bagni/bagno_detail.html:22
 msgid "phone_not_yet_available"
 msgstr "contatti telefonici non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:24
+#: templates/bagni/bagno_detail.html:23
 msgid "bagno_detail_desc_1"
 msgstr "Benvenuto nella pagina di"
 
-#: templates/bagni/bagno_detail.html:25
+#: templates/bagni/bagno_detail.html:24
 msgid "bagno_detail_desc_2"
 msgstr ""
 "qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questa "
 "struttura"
 
-#: templates/bagni/bagno_detail.html:26
+#: templates/bagni/bagno_detail.html:25
 msgid "bagno_detail_desc_3"
 msgstr "Se cerchi altri bagni a"
 
-#: templates/bagni/bagno_detail.html:27
+#: templates/bagni/bagno_detail.html:26
 msgid "bagno_detail_desc_4"
 msgstr "puoi farlo usando la nostra"
 
-#: templates/bagni/bagno_detail.html:28
+#: templates/bagni/bagno_detail.html:27
 msgid "bagno_detail_desc_5"
 msgstr "pagina di ricerca"
 
-#: templates/bagni/bagno_detail.html:46
+#: templates/bagni/bagno_detail.html:45
 msgid "book_button"
 msgstr "Prenota l'ombrellone online!"
 
-#: templates/bagni/bagno_detail.html:96
+#: templates/bagni/bagno_detail.html:95
 msgid "Share on socials"
 msgstr "Condividi sui social"
 
-#: templates/bagni/bagno_detail.html:100
-msgid "Share on Facebook"
-msgstr "Condividi su Facebook"
+#: templates/bagni/bagno_detail.html:99 templates/bagni/bagno_detail.html:106
+msgid "Share %(name)s on Facebook"
+msgstr "Condividi %(name)s su Facebook"
 
-#: templates/bagni/bagno_detail.html:106
-msgid "Facebook logo"
-msgstr "Logo di Facebook"
+#: templates/bagni/bagno_detail.html:111 templates/bagni/bagno_detail.html:118
+#, python-format
+msgid "Tweet about %(name)s"
+msgstr "Twitta su %(name)s"
 
-#: templates/bagni/bagno_detail.html:111
-msgid "Share on Twitter"
-msgstr "Condividi su Twitter"
+#: templates/bagni/bagno_detail.html:123 templates/bagni/bagno_detail.html:130
+msgid "Share %(name)s on Google+"
+msgstr "Condividi %(name) su Google+"
 
-#: templates/bagni/bagno_detail.html:117
-msgid "Twitteri logo"
-msgstr "Logo di twitter"
-
-#: templates/bagni/bagno_detail.html:122
-msgid "Share on Google+"
-msgstr "Condividi su Google+"
-
-#: templates/bagni/bagno_detail.html:128
-msgid "Google+ logo"
-msgstr "Logo di google+"
-
-#: templates/bagni/bagno_detail.html:132
-msgid "Booking alternatives"
-msgstr ""
-
-#: templates/bagni/bagno_detail.html:143 templates/bagni/search.html:257
-msgid "away"
-msgstr "di distanza"
-
-#: templates/bagni/bagno_detail.html:281
+#: templates/bagni/bagno_detail.html:265
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -756,6 +733,14 @@ msgstr "ultimo"
 msgid "no_results_for_search"
 msgstr "nessun risultato"
 
+#: templates/bagni/search.html:36
+msgid "image"
+msgstr "immagine"
+
+#: templates/bagni/search.html:257
+msgid "away"
+msgstr "di distanza"
+
 #: templates/bagni/search.html:288
 #, python-format
 msgid ""
@@ -993,6 +978,18 @@ msgstr ""
 #, python-format
 msgid "Cant find place '%s', sorting by relevance"
 msgstr "Impossibile trovare il luogo '%s', ordino per rilevanza"
+
+#~ msgid "Facebook logo"
+#~ msgstr "Logo di Facebook"
+
+#~ msgid "Share on Twitter"
+#~ msgstr "Condividi su Twitter"
+
+#~ msgid "Twitteri logo"
+#~ msgstr "Logo di twitter"
+
+#~ msgid "Google+ logo"
+#~ msgstr "Logo di google+"
 
 #~ msgid "book_modal_title"
 #~ msgstr "Richiedi un preventivo online"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-23 21:44+0200\n"
+"POT-Creation-Date: 2015-06-12 09:16-0400\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -277,7 +277,7 @@ msgstr "with"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:277
+#: templates/bagni/bagno_detail.html:35 templates/bagni/bagno_detail.html:261
 msgid "in"
 msgstr "in"
 
@@ -375,102 +375,81 @@ msgstr "Modify your beach resort data"
 msgid "are_you_the_manager"
 msgstr "are you the manager?"
 
-#: templates/bagni/bagno_detail.html:16 templates/bagni/search.html:36
-msgid "image"
-msgstr "image"
-
-#: templates/bagni/bagno_detail.html:17
+#: templates/bagni/bagno_detail.html:16
 msgid "no_images_for"
 msgstr "no images for"
 
-#: templates/bagni/bagno_detail.html:18
+#: templates/bagni/bagno_detail.html:17
 msgid "no_images_add"
 msgstr "no images available yet"
 
-#: templates/bagni/bagno_detail.html:19 templates/bagni/bagno_edit.html:7
+#: templates/bagni/bagno_detail.html:18 templates/bagni/bagno_edit.html:7
 #: templates/bagni/service_list.html:23 templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "Structure facilities"
 
-#: templates/bagni/bagno_detail.html:20 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:19 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "facility"
 
-#: templates/bagni/bagno_detail.html:21
+#: templates/bagni/bagno_detail.html:20
 msgid "facility_info_not_available"
 msgstr "facility informations yet not available"
 
-#: templates/bagni/bagno_detail.html:22
+#: templates/bagni/bagno_detail.html:21
 msgid "email_address"
 msgstr "Email address"
 
-#: templates/bagni/bagno_detail.html:23
+#: templates/bagni/bagno_detail.html:22
 msgid "phone_not_yet_available"
 msgstr "phone contacts not yet available"
 
-#: templates/bagni/bagno_detail.html:24
+#: templates/bagni/bagno_detail.html:23
 msgid "bagno_detail_desc_1"
 msgstr "Welcome to the page of"
 
-#: templates/bagni/bagno_detail.html:25
+#: templates/bagni/bagno_detail.html:24
 msgid "bagno_detail_desc_2"
 msgstr ""
 "here you can find the address, contacts and the list of facilities provided "
 "by this structure"
 
-#: templates/bagni/bagno_detail.html:26
+#: templates/bagni/bagno_detail.html:25
 msgid "bagno_detail_desc_3"
 msgstr "If you are lookin for more beach resorts in"
 
-#: templates/bagni/bagno_detail.html:27
+#: templates/bagni/bagno_detail.html:26
 msgid "bagno_detail_desc_4"
 msgstr " you can use our"
 
-#: templates/bagni/bagno_detail.html:28
+#: templates/bagni/bagno_detail.html:27
 msgid "bagno_detail_desc_5"
 msgstr "search page"
 
-#: templates/bagni/bagno_detail.html:46
+#: templates/bagni/bagno_detail.html:45
 msgid "book_button"
 msgstr "Book online"
 
-#: templates/bagni/bagno_detail.html:96
+#: templates/bagni/bagno_detail.html:95
 msgid "Share on socials"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:100
-msgid "Share on Facebook"
+#: templates/bagni/bagno_detail.html:99 templates/bagni/bagno_detail.html:106
+#, python-format
+msgid "Share %(name)s on Facebook"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:106
-msgid "Facebook logo"
+#: templates/bagni/bagno_detail.html:111 templates/bagni/bagno_detail.html:118
+#, python-format
+msgid "Tweet about %(name)s"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:111
-msgid "Share on Twitter"
+#: templates/bagni/bagno_detail.html:123 templates/bagni/bagno_detail.html:130
+#, python-format
+msgid "Share %(name)s on Google+"
 msgstr ""
 
-#: templates/bagni/bagno_detail.html:117
-msgid "Twitteri logo"
-msgstr ""
-
-#: templates/bagni/bagno_detail.html:122
-msgid "Share on Google+"
-msgstr ""
-
-#: templates/bagni/bagno_detail.html:128
-msgid "Google+ logo"
-msgstr ""
-
-#: templates/bagni/bagno_detail.html:132
-msgid "Booking alternatives"
-msgstr ""
-
-#: templates/bagni/bagno_detail.html:143 templates/bagni/search.html:257
-msgid "away"
-msgstr "away"
-
-#: templates/bagni/bagno_detail.html:281
+#: templates/bagni/bagno_detail.html:265
 msgid "bagno_detail_description"
 msgstr "informations, address and facilities of beach resort"
 
@@ -598,7 +577,7 @@ msgid "Search"
 msgstr "Search"
 
 #: templates/bagni/homepage.html:66
-msgid "Search your ideal beach resort based on location, services offered etc"
+msgid "Search your ideal beach resort based on location and offered services"
 msgstr ""
 
 #: templates/bagni/homepage.html:70
@@ -749,6 +728,14 @@ msgstr ""
 #: templates/bagni/search.html:33
 msgid "no_results_for_search"
 msgstr "no results for the given search"
+
+#: templates/bagni/search.html:36
+msgid "image"
+msgstr "image"
+
+#: templates/bagni/search.html:257
+msgid "away"
+msgstr "away"
 
 #: templates/bagni/search.html:288
 #, python-format
