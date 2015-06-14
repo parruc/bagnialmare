@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <br>
+        <h3>Non vuoi più ricevere prenotazioni dagli utenti di bagnialmare.com?</h3>
+        <br>
+        <form method="post" action="{% url 'booking_unsubscribe' %}">
+           {% csrf_token %}
+          <input type="hidden" name="e"  value="{{e}}">
+          <button class="btn btn-primary" type="submit">Non mandarmi più prenotazioni</button>
+        </form>
+      </div>
+  </div>
+{% endblock content %}

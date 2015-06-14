@@ -45,6 +45,8 @@ urlpatterns += i18n_patterns(
     url(_(r'^accounts/'), include('allauth.urls')),
 
     url(_(r'^userfeedback/'), include('userfeedback.urls')),
+
+    url(_(r'^booking/'), include('booking.urls')),
 )
 
 
