@@ -30,6 +30,23 @@ def _send_mail_by_template(template_prefix, details, recipients):
               "info@bagnialmare.com",
               recipients)
 
+def _get_booking_unsubscribe_url(bagno_email):
+    return "http://bagnialmare.com" + \
+           reverse("booking_unsubscribe") + \
+           "?e=%s" % (bagno_email)
+
+def _send_non_manager_mail(details, recipients):
+    text_template = get_template("booking/non_manager_booking_notification.txt")
+    html_template = get_template("booking/non_manager_booking_notification.html")
+    c = Context(details)
+    text_message = text_template.render(c).strip()
+    html_message = html_template.render(c).strip()
+
+    send_mail("Richiesta di prenotazione",
+              text_message,
+              "info@bagnialmare.com",
+              ["nicola.valentini@gmail.com"], html_message=html_message)
+
 
 def mail_for_booking(sender, instance, created, **kwargs):
     admin_emails = [email[1] for email in settings.ADMINS]
@@ -58,6 +75,10 @@ def mail_for_booking(sender, instance, created, **kwargs):
         manager_emails = [m.user.email for m in managers]
         booking_details["bagno_managers_mail"] = ", ".join(manager_emails)
         _send_mail_by_template("manager", booking_details, manager_emails)
+    elif instance.bagno.mail:
+        unsubscribe_link = _get_booking_unsubscribe_url(instance.bagno.mail)
+        booking_details["unsubscribe_link"] = unsubscribe_link
+        _send_non_manager_mail(booking_details, [instance.bagno.mail,])
 
     _send_mail_by_template("admin", booking_details, admin_emails)
     _send_mail_by_template("user", booking_details, [instance.email, ])
