@@ -3,7 +3,7 @@ from django.db.models import signals
 from django.conf import settings
 from django.core.mail import send_mail
 
-BAGNO_UPDATE_TEMPLATE = """
+BAGNO_UPDATE_TEMPLATE = u"""
 Bagno: {name}
 action: {action}
 url: {url}
