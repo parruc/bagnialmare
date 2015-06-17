@@ -4827,11 +4827,11 @@
   "pk": 12778, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagno169.com/", 
+    "site": "", 
     "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 4678<br />\r\n\tfronte mare: 43<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 3<br />\r\n\tdocce chiuse: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3642206570000006 44.2535901850000002)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:25.940Z", 
     "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 4678<br />\r\n\tfronte mare: 43<br />\r\n\tdocce aperte: 6<br />\r\n\twc: 3<br />\r\n\tdocce chiuse: 2</p>", 
     "number": "169", 
     "languages": [
@@ -4844,9 +4844,6 @@
     ], 
     "services": [
       [
-        "fitness-area"
-      ], 
-      [
         "catering"
       ], 
       [
@@ -4856,7 +4853,7 @@
         "beach-volley"
       ], 
       [
-        "wi-fi"
+        "table-football"
       ], 
       [
         "tennis"
@@ -4874,13 +4871,16 @@
         "beach-racket-court"
       ], 
       [
+        "fitness-area"
+      ], 
+      [
         "basketball"
       ], 
       [
         "five-a-side"
       ], 
       [
-        "table-football"
+        "wi-fi"
       ]
     ], 
     "address": "Lungomare Grazia Deledda - arenile demaniale 169", 
@@ -12516,12 +12516,12 @@
   "pk": 12913, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnosolaris.it/my-profile/", 
-    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 5<br />\r\n\tombrelloni: 150<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 40<br />\r\n\tlettini: 400<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 3</p>", 
+    "site": "http://www.bagnosolaris.it/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nwc: 5<br />\r\nombrelloni: 150<br />\r\nwc disabili: 1<br />\r\nfronte mare: 40<br />\r\nlettini: 400<br />\r\ncabine: 20<br />\r\ndocce chiuse: 3</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3742158660000001 44.2373496740000007)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\twc: 5<br />\r\n\tombrelloni: 150<br />\r\n\twc disabili: 1<br />\r\n\tfronte mare: 40<br />\r\n\tlettini: 400<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 3</p>", 
+    "modified": "2015-06-16T14:05:38.080Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nwc: 5<br />\r\nombrelloni: 150<br />\r\nwc disabili: 1<br />\r\nfronte mare: 40<br />\r\nlettini: 400<br />\r\ncabine: 20<br />\r\ndocce chiuse: 3</p>\r\n", 
     "number": "81", 
     "languages": [
       [
@@ -12536,37 +12536,37 @@
         "catering"
       ], 
       [
-        "theme-parties"
-      ], 
-      [
-        "bookstore"
-      ], 
-      [
-        "table-football"
+        "baby-park"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "baby-park"
-      ], 
-      [
-        "ping-pong"
-      ], 
-      [
-        "petanque"
+        "table-football"
       ], 
       [
         "tv-area"
       ], 
       [
-        "entertainment"
+        "petanque"
+      ], 
+      [
+        "ping-pong"
       ], 
       [
         "music"
       ], 
       [
+        "entertainment"
+      ], 
+      [
+        "bookstore"
+      ], 
+      [
         "beach-racket-court"
+      ], 
+      [
+        "theme-parties"
       ]
     ], 
     "address": "Arenile Demaniale 81 - 82", 
@@ -14931,11 +14931,11 @@
   "pk": 12949, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnojolly16tagliata.it/", 
+    "site": "", 
     "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1179<br />\r\n\tfronte mare: 16<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3814626400000005 44.2269685799999976)", 
-    "modified": "2014-07-05T14:51:35.927Z", 
+    "modified": "2015-06-16T15:40:23.069Z", 
     "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1179<br />\r\n\tfronte mare: 16<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 2</p>", 
     "number": "16", 
     "languages": [
@@ -15840,12 +15840,12 @@
   "pk": 12963, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnoangelineri.it", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 50<br />\n\twc: 5<br />\n\tombrelloni: 110<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 12<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1560<br />\n\tdocce aperte: 4</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 2<br />\r\nsdraio: 50<br />\r\nwc: 5<br />\r\nombrelloni: 110<br />\r\nfronte mare: 30<br />\r\nlettini: 200<br />\r\ncabine: 12<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1560<br />\r\ndocce aperte: 4</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4272966384887695 44.1806035966370914)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 50<br />\n\twc: 5<br />\n\tombrelloni: 110<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 12<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1560<br />\n\tdocce aperte: 4</p>", 
+    "modified": "2015-06-16T14:06:26.163Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 2<br />\r\nsdraio: 50<br />\r\nwc: 5<br />\r\nombrelloni: 110<br />\r\nfronte mare: 30<br />\r\nlettini: 200<br />\r\ncabine: 12<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1560<br />\r\ndocce aperte: 4</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -15857,38 +15857,38 @@
     ], 
     "services": [
       [
-        "fitness-area"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
-      ], 
-      [
-        "petanque"
+        "beach-volley"
       ], 
       [
         "tv-area"
       ], 
       [
-        "canoes"
+        "petanque"
       ], 
       [
         "ping-pong"
       ], 
       [
         "entertainment"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "canoes"
       ]
     ], 
     "address": "Viale Giosu\u00e8 Carducci, 10", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@bagnoangelineri.it", 
     "accepts_booking": true, 
     "slug": "bagno-angeli-neri", 
@@ -16110,11 +16110,11 @@
   "pk": 12968, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://costaverdehotel.it", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4328756332397461 44.1762023796776901)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:22.777Z", 
     "description_en": null, 
     "number": "", 
     "languages": [
@@ -16141,11 +16141,11 @@
   "pk": 12969, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://bagnobelvedere.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3958624587684199 44.2075487620542091)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:20.756Z", 
     "description_en": null, 
     "number": "", 
     "languages": [
@@ -16998,11 +16998,11 @@
   "pk": 12987, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.clipperbeach.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 16<br />\n\twc: 4<br />\n\tombrelloni: 90<br />\n\tfronte mare: 28<br />\n\tlettini: 150<br />\n\tcabine: 29<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1736<br />\n\tdocce aperte: 4</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3877716064453125 44.2187542197484191)", 
-    "modified": "2014-07-04T09:49:06.050Z", 
+    "modified": "2015-06-16T15:40:26.550Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 16<br />\n\twc: 4<br />\n\tombrelloni: 90<br />\n\tfronte mare: 28<br />\n\tlettini: 150<br />\n\tcabine: 29<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1736<br />\n\tdocce aperte: 4</p>", 
     "number": "", 
     "languages": [
@@ -17490,7 +17490,7 @@
     "description": "<h3>Details</h3>\r\n\r\n<p>sdraio: 30<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 210<br />\r\ncabine: 15<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 3300<br />\r\ndocce aperte: 4</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4090147018432617 44.1990051262620227)", 
-    "modified": "2015-05-30T13:18:36.118Z", 
+    "modified": "2015-06-16T15:07:54.416Z", 
     "description_en": "<h3>Details</h3>\r\n\r\n<p>sdraio: 30<br />\r\nwc: 4<br />\r\nombrelloni: 120<br />\r\nfronte mare: 30<br />\r\nlettini: 210<br />\r\ncabine: 15<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 3300<br />\r\ndocce aperte: 4</p>\r\n", 
     "number": "", 
     "languages": [
@@ -17544,7 +17544,7 @@
     ], 
     "address": "Viale Carso, 42", 
     "description_it": "", 
-    "mail": "info@bagnofaustina.it", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-faustina", 
     "neighbourhood": [
@@ -18635,11 +18635,11 @@
   "pk": 13016, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnoitaliacesenatico.com/", 
+    "site": "", 
     "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 6<br />\r\n\twc: 3<br />\r\n\tombrelloni: 100<br />\r\n\tfronte mare: 0<br />\r\n\tlettini: 200<br />\r\n\tcabine: 7<br />\r\n\tdocce chiuse: 0<br />\r\n\tsuperficie complessiva spiaggia: 0<br />\r\n\tdocce aperte: 3</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4306225776672363 44.1761869902308746)", 
-    "modified": "2014-07-04T12:16:35.022Z", 
+    "modified": "2015-06-16T15:40:26.327Z", 
     "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 6<br />\r\n\twc: 3<br />\r\n\tombrelloni: 100<br />\r\n\tfronte mare: 0<br />\r\n\tlettini: 200<br />\r\n\tcabine: 7<br />\r\n\tdocce chiuse: 0<br />\r\n\tsuperficie complessiva spiaggia: 0<br />\r\n\tdocce aperte: 3</p>", 
     "number": "", 
     "languages": [
@@ -19048,11 +19048,11 @@
   "pk": 13023, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnomagnani.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 5<br />\n\tombrelloni: 50<br />\n\tfronte mare: 25<br />\n\tlettini: 100<br />\n\tcabine: 22<br />\n\tdocce chiuse: 6<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4025344848632812 44.2058350010418408)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:21.164Z", 
     "description_en": "<h3>Details</h3>\n\t<p>sdraio: 10<br />\n\twc: 5<br />\n\tombrelloni: 50<br />\n\tfronte mare: 25<br />\n\tlettini: 100<br />\n\tcabine: 22<br />\n\tdocce chiuse: 6<br />\n\tsuperficie complessiva spiaggia: 1750<br />\n\tdocce aperte: 2</p>", 
     "number": "", 
     "languages": [
@@ -19107,11 +19107,11 @@
   "pk": 13024, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://bagnomarconi.com", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 100<br />\n\twc: 9<br />\n\tombrelloni: 600<br />\n\tfronte mare: 133<br />\n\tlettini: 1200<br />\n\tcabine: 70<br />\n\tdocce chiuse: 3<br />\n\tsuperficie complessiva spiaggia: 10441<br />\n\tdocce aperte: 8</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4139928817749023 44.1931360315880823)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:21.437Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 100<br />\n\twc: 9<br />\n\tombrelloni: 600<br />\n\tfronte mare: 133<br />\n\tlettini: 1200<br />\n\tcabine: 70<br />\n\tdocce chiuse: 3<br />\n\tsuperficie complessiva spiaggia: 10441<br />\n\tdocce aperte: 8</p>", 
     "number": "", 
     "languages": [
@@ -19124,46 +19124,25 @@
     ], 
     "services": [
       [
-        "fitness-area"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "solarium"
-      ], 
-      [
-        "baby-sitter"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "bookstore"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "pedal-boats"
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "tennis"
+      ], 
+      [
+        "five-a-side"
       ], 
       [
         "petanque"
-      ], 
-      [
-        "tv-area"
-      ], 
-      [
-        "canoes"
       ], 
       [
         "ping-pong"
@@ -19172,7 +19151,28 @@
         "entertainment"
       ], 
       [
-        "tennis"
+        "bookstore"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "tv-area"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "canoes"
+      ], 
+      [
+        "solarium"
       ]
     ], 
     "address": "Piazza Ginesio Marconi", 
@@ -19992,11 +19992,11 @@
   "pk": 13038, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnopinguino.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 0<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\tfronte mare: 30<br />\n\tlettini: 150<br />\n\tcabine: 12<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1230<br />\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3979425430297852 44.2074346770773516)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:21.679Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 0<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 70<br />\n\tfronte mare: 30<br />\n\tlettini: 150<br />\n\tcabine: 12<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1230<br />\n\tdocce aperte: 2</p>", 
     "number": "", 
     "languages": [
@@ -20851,11 +20851,11 @@
   "pk": 13052, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnosport70.it/", 
+    "site": "", 
     "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 20<br />\r\nwc: 3<br />\r\nombrelloni: 40<br />\r\nfronte mare: 22<br />\r\nlettini: 100<br />\r\ncabine: 25<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1540<br />\r\ndocce aperte: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4038648605346680 44.2056273476016344)", 
-    "modified": "2015-05-30T13:11:32.942Z", 
+    "modified": "2015-06-16T15:08:58.788Z", 
     "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 20<br />\r\nwc: 3<br />\r\nombrelloni: 40<br />\r\nfronte mare: 22<br />\r\nlettini: 100<br />\r\ncabine: 25<br />\r\ndocce chiuse: 1<br />\r\nsuperficie complessiva spiaggia: 1540<br />\r\ndocce aperte: 2</p>\r\n", 
     "number": "", 
     "languages": [
@@ -20912,7 +20912,7 @@
     ], 
     "address": "Viale Piave, 70", 
     "description_it": "", 
-    "mail": "bagnosport70@gmail.com", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-sport-70", 
     "neighbourhood": [
@@ -21261,11 +21261,11 @@
   "pk": 13059, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.hotelcroceselsud.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 11<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1290<br />\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3981356620788574 44.2073731518792883)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:21.834Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 100<br />\n\tfronte mare: 30<br />\n\tlettini: 200<br />\n\tcabine: 11<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1290<br />\n\tdocce aperte: 2</p>", 
     "number": "", 
     "languages": [
@@ -21278,31 +21278,31 @@
     ], 
     "services": [
       [
-        "solarium"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "ping-pong"
+        "beach-volley"
+      ], 
+      [
+        "tv-area"
       ], 
       [
         "petanque"
       ], 
       [
-        "tv-area"
+        "ping-pong"
       ], 
       [
         "entertainment"
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "solarium"
       ]
     ], 
     "address": "Viale Lungomare Ponente, 84", 
@@ -22231,11 +22231,11 @@
   "pk": 13075, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnosayonara.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2459363937377930 44.6732002803897359)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:23.467Z", 
     "description_en": null, 
     "number": "2", 
     "languages": [
@@ -22248,43 +22248,43 @@
     ], 
     "services": [
       [
-        "fitness-area"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "wi-fi"
-      ], 
-      [
-        "swimming-pool"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "acquagym"
       ], 
       [
         "baby-park"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
         "swimming-lessons"
       ], 
       [
-        "beach-racket-court"
+        "five-a-side"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "acquagym"
       ], 
       [
         "children-entertainment"
       ], 
       [
+        "beach-racket-court"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
         "basketball"
       ], 
       [
-        "pet-friendly"
+        "swimming-pool"
       ]
     ], 
     "address": "Via Spiaggia, 2", 
@@ -22851,12 +22851,12 @@
   "pk": 13084, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnosollevante.it", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2464621067047119 44.6687825851661700)", 
-    "modified": "2014-12-11T16:56:08.723Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T15:05:02.152Z", 
+    "description_en": "", 
     "number": "11", 
     "languages": [
       [
@@ -22868,28 +22868,28 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "swimming-pool"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "acquagym"
       ], 
       [
         "baby-park"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
         "swimming-lessons"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "acquagym"
+      ], 
+      [
+        "children-entertainment"
       ], 
       [
         "beach-racket-court"
@@ -22898,12 +22898,12 @@
         "nursery"
       ], 
       [
-        "children-entertainment"
+        "swimming-pool"
       ]
     ], 
     "address": "Via Spiaggia, 11", 
-    "description_it": null, 
-    "mail": "info@bagnosollevante.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "sol-levante", 
     "neighbourhood": [
@@ -23445,12 +23445,12 @@
   "pk": 13093, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnotequila.it", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2471648454666138 44.6646812281916468)", 
-    "modified": "2014-12-11T16:56:10.380Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T14:15:07.686Z", 
+    "description_en": "", 
     "number": "21", 
     "languages": [
       [
@@ -23462,29 +23462,29 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "five-a-side"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "beach-racket-court"
+        "beach-volley"
+      ], 
+      [
+        "five-a-side"
+      ], 
+      [
+        "entertainment"
       ], 
       [
         "pet-friendly"
+      ], 
+      [
+        "beach-racket-court"
       ]
     ], 
     "address": "Via Spiaggia, 21", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "bagnomarte@gmail.com", 
     "accepts_booking": true, 
     "slug": "marte", 
@@ -23810,12 +23810,12 @@
   "pk": 13099, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnoaragosta.it", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2476261854171753 44.6622393522770338)", 
-    "modified": "2014-12-11T16:56:10.868Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T15:05:47.062Z", 
+    "description_en": "", 
     "number": "27", 
     "languages": [
       [
@@ -23827,33 +23827,33 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
+        "children-entertainment"
+      ], 
+      [
         "ping-pong"
       ], 
       [
-        "beach-racket-court"
+        "entertainment"
       ], 
       [
         "schoolchildren"
+      ], 
+      [
+        "beach-racket-court"
       ]
     ], 
     "address": "Via Spiaggia, 27", 
-    "description_it": null, 
-    "mail": "info@bagnoaragosta.it", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "aragosta", 
     "neighbourhood": [
@@ -23925,11 +23925,11 @@
   "pk": 13101, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.ristoranteaquarama.com/", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2477763891220093 44.6611557368924181)", 
-    "modified": "2014-07-04T09:46:44.029Z", 
+    "modified": "2015-06-16T15:40:22.959Z", 
     "description_en": null, 
     "number": "29", 
     "languages": [
@@ -25847,11 +25847,11 @@
   "pk": 13130, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.icamini.org", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2416931390762329 44.7326080429677617)", 
-    "modified": "2014-12-11T16:56:21.854Z", 
+    "modified": "2015-06-16T15:40:23.732Z", 
     "description_en": null, 
     "number": "36", 
     "languages": [
@@ -26993,11 +26993,11 @@
   "pk": 13147, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.hotsand.info", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2482109069824219 44.6575727939519567)", 
-    "modified": "2014-12-11T16:56:26.781Z", 
+    "modified": "2015-06-16T15:40:23.967Z", 
     "description_en": null, 
     "number": "35", 
     "languages": [
@@ -27228,11 +27228,11 @@
   "pk": 13151, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.trocaderomare.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2494232654571533 44.6529859986204514)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:23.597Z", 
     "description_en": null, 
     "number": "39", 
     "languages": [
@@ -28111,12 +28111,12 @@
   "pk": 13165, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.malua.it", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2527062892913818 44.6472310035246807)", 
-    "modified": "2014-12-11T16:56:31.591Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T14:08:02.064Z", 
+    "description_en": "", 
     "number": "54", 
     "languages": [
       [
@@ -28128,29 +28128,29 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "beach-volley"
       ], 
       [
         "baby-park"
       ], 
       [
-        "beach-racket-court"
+        "beach-volley"
       ], 
       [
         "children-entertainment"
       ], 
       [
+        "entertainment"
+      ], 
+      [
         "pet-friendly"
+      ], 
+      [
+        "beach-racket-court"
       ]
     ], 
     "address": "Via Spiaggia, 54", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@malua.it", 
     "accepts_booking": true, 
     "slug": "malua", 
@@ -28164,11 +28164,11 @@
   "pk": 13166, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.sirenetta55.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2527062892913818 44.6472310035246807)", 
-    "modified": "2014-12-11T16:56:32.122Z", 
+    "modified": "2015-06-16T15:40:23.364Z", 
     "description_en": null, 
     "number": "55", 
     "languages": [
@@ -28279,12 +28279,12 @@
   "pk": 13168, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.marysolbagno57.it", 
+    "site": "http://www.spiaggiamarysol.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2537362575531006 44.6454448544557820)", 
-    "modified": "2014-12-11T16:56:32.600Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T15:07:06.147Z", 
+    "description_en": "", 
     "number": "57", 
     "languages": [
       [
@@ -28299,33 +28299,33 @@
         "catering"
       ], 
       [
+        "beach-volley"
+      ], 
+      [
         "wi-fi"
       ], 
       [
         "children-entertainment"
       ], 
       [
-        "beach-volley"
-      ], 
-      [
-        "beach-racket-court"
-      ], 
-      [
-        "schoolchildren"
-      ], 
-      [
-        "basketball"
+        "entertainment"
       ], 
       [
         "pet-friendly"
       ], 
       [
-        "entertainment"
+        "schoolchildren"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "basketball"
       ]
     ], 
     "address": "Via Spiaggia, 57", 
-    "description_it": null, 
-    "mail": "info@marysolbagno57.it", 
+    "description_it": "", 
+    "mail": "info@spiaggiamarysol.it", 
     "accepts_booking": true, 
     "slug": "mar-y-sol-bagno-57", 
     "neighbourhood": [
@@ -29442,7 +29442,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2637248039245605 44.7930055555609314)", 
-    "modified": "2014-11-13T14:20:18.755Z", 
+    "modified": "2015-06-16T15:33:53.721Z", 
     "description_en": "", 
     "number": "15", 
     "languages": [
@@ -29454,12 +29454,6 @@
       ]
     ], 
     "services": [
-      [
-        "music"
-      ], 
-      [
-        "entertainment"
-      ], 
       [
         "catering"
       ], 
@@ -29476,7 +29470,13 @@
         "ping-pong"
       ], 
       [
-        "schoolchildren"
+        "music"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "swimming-pool"
       ], 
       [
         "pedal-boats"
@@ -29488,7 +29488,7 @@
         "canoes"
       ], 
       [
-        "swimming-pool"
+        "schoolchildren"
       ], 
       [
         "sailing"
@@ -29502,7 +29502,7 @@
     ], 
     "address": "Via Lungomare del Parco, 17", 
     "description_it": "", 
-    "mail": "pinguino.volano@gmail.com", 
+    "mail": "cucciolo_mn@libero.it", 
     "accepts_booking": true, 
     "slug": "pinguino-2", 
     "neighbourhood": [
@@ -30055,11 +30055,11 @@
   "pk": 13199, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnovenere.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2412961721420288 44.6806119434226119)", 
-    "modified": "2014-07-04T09:49:04.968Z", 
+    "modified": "2015-06-16T15:40:20.212Z", 
     "description_en": null, 
     "number": "69", 
     "languages": [
@@ -30376,11 +30376,11 @@
   "pk": 13205, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.trattoriabagnobologna.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2427231073379517 44.6781211505965885)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:24.123Z", 
     "description_en": null, 
     "number": "76", 
     "languages": [
@@ -30476,11 +30476,11 @@
   "pk": 13207, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.bagnoesperia.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2429537773132324 44.6776100098845603)", 
-    "modified": "2014-12-11T16:56:35.088Z", 
+    "modified": "2015-06-16T15:40:24.282Z", 
     "description_en": null, 
     "number": "78", 
     "languages": [
@@ -30532,12 +30532,12 @@
   "pk": 13208, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.paginegialle.it/ristoranteduestelle", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2434365749359131 44.6771064937299229)", 
-    "modified": "2014-07-04T09:49:05.187Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T14:08:38.365Z", 
+    "description_en": "", 
     "number": "80", 
     "languages": [
       [
@@ -30552,29 +30552,29 @@
         "catering"
       ], 
       [
-        "swimming-pool"
+        "baby-park"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "jacuzzi"
-      ], 
-      [
         "acquagym"
       ], 
       [
-        "baby-park"
+        "schoolchildren"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "schoolchildren"
+        "swimming-pool"
+      ], 
+      [
+        "jacuzzi"
       ]
     ], 
     "address": "Piazzale Medaglie d'Oro D.L. Nav., 3", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "due-stelle", 
@@ -30656,11 +30656,11 @@
   "pk": 13210, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.paradisoristorante.it/", 
+    "site": "", 
     "description": " ", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2449117898941040 44.6760040832363288)", 
-    "modified": "2014-07-04T09:49:05.954Z", 
+    "modified": "2015-06-16T15:40:18.288Z", 
     "description_en": " ", 
     "number": "83", 
     "languages": [
@@ -33893,11 +33893,11 @@
   "pk": 13265, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.fandangobeach.it/", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 6<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 8<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2864208819999998 44.4731275299999993)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:24.442Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 6<br />\n\tombrelloni: 80<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 8<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>", 
     "number": "", 
     "languages": [
@@ -34005,11 +34005,11 @@
   "pk": 13267, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "Bagno Hookipa", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 20<br />\n\twc: 4<br />\n\tombrelloni: 180<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 32<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 5</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2854372739999995 44.4774282099999994)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:24.624Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 2<br />\n\tsdraio: 20<br />\n\twc: 4<br />\n\tombrelloni: 180<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 32<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 5</p>", 
     "number": "", 
     "languages": [
@@ -34022,40 +34022,19 @@
     ], 
     "services": [
       [
-        "bar"
-      ], 
-      [
-        "solarium"
-      ], 
-      [
         "catering"
       ], 
       [
-        "five-a-side"
-      ], 
-      [
-        "live-concerts"
-      ], 
-      [
-        "nursery"
-      ], 
-      [
-        "aperitif"
-      ], 
-      [
-        "footvolley"
-      ], 
-      [
-        "beach-volley"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
-        "beach-racket-court"
+        "beach-volley"
       ], 
       [
-        "theme-parties"
+        "five-a-side"
       ], 
       [
         "entertainment"
@@ -34064,7 +34043,28 @@
         "hot-showers"
       ], 
       [
+        "footvolley"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "aperitif"
+      ], 
+      [
         "themed-dinner"
+      ], 
+      [
+        "solarium"
+      ], 
+      [
+        "theme-parties"
+      ], 
+      [
+        "live-concerts"
       ]
     ], 
     "address": "Viale delle Nazioni, 32 (250)", 
@@ -34138,11 +34138,11 @@
   "pk": 13269, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnokontiki.com", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 45<br />\n\twc disabili: 1<br />\n\tlettini: 120<br />\n\tcabine: 26<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2877733429999996 44.4672140950000028)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:24.733Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 45<br />\n\twc disabili: 1<br />\n\tlettini: 120<br />\n\tcabine: 26<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>", 
     "number": "", 
     "languages": [
@@ -34614,11 +34614,11 @@
   "pk": 13277, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.marinamitu.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\tsdraio: 1015<br />\n\twc: 4<br />\n\tombrelloni: 190<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2850684210000001 44.4790409650000029)", 
-    "modified": "2014-12-11T16:55:43.618Z", 
+    "modified": "2015-06-16T15:40:26.769Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 4<br />\n\tsdraio: 1015<br />\n\twc: 4<br />\n\tombrelloni: 190<br />\n\twc disabili: 1<br />\n\tlettini: 600<br />\n\tcabine: 35<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 3</p>", 
     "number": "", 
     "languages": [
@@ -34631,43 +34631,43 @@
     ], 
     "services": [
       [
-        "dancing"
-      ], 
-      [
-        "fitness-area"
-      ], 
-      [
-        "solarium"
-      ], 
-      [
         "catering"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
-        "aperitif"
-      ], 
-      [
-        "footvolley"
-      ], 
-      [
-        "beach-volley"
-      ], 
-      [
-        "baby-park"
       ], 
       [
         "ping-pong"
       ], 
       [
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
+      ], 
+      [
+        "barbecue-area"
+      ], 
+      [
+        "footvolley"
+      ], 
+      [
+        "dancing"
+      ], 
+      [
         "beach-racket-court"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "aperitif"
       ], 
       [
         "themed-dinner"
       ], 
       [
-        "barbecue-area"
+        "theme-parties"
+      ], 
+      [
+        "solarium"
       ]
     ], 
     "address": "viale delle Nazioni, 28 (242/C)", 
@@ -35657,12 +35657,12 @@
   "pk": 13293, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnowaimea.it/", 
-    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 80<br />\r\n\twc: 3<br />\r\n\tombrelloni: 114<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 40<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 5</p>", 
+    "site": "http://www.bagnowaimea.com/", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 80<br />\r\nwc: 3<br />\r\nombrelloni: 114<br />\r\nwc disabili: 1<br />\r\nlettini: 300<br />\r\ncabine: 40<br />\r\ndocce chiuse: 2<br />\r\ndocce aperte: 5</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2843307149999994 44.4822664750000030)", 
-    "modified": "2014-12-11T16:55:57.734Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 80<br />\r\n\twc: 3<br />\r\n\tombrelloni: 114<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 40<br />\r\n\tdocce chiuse: 2<br />\r\n\tdocce aperte: 5</p>", 
+    "modified": "2015-06-16T14:16:51.871Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 80<br />\r\nwc: 3<br />\r\nombrelloni: 114<br />\r\nwc disabili: 1<br />\r\nlettini: 300<br />\r\ncabine: 40<br />\r\ndocce chiuse: 2<br />\r\ndocce aperte: 5</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -35673,9 +35673,6 @@
       ]
     ], 
     "services": [
-      [
-        "dancing"
-      ], 
       [
         "catering"
       ], 
@@ -35689,7 +35686,13 @@
         "five-a-side"
       ], 
       [
+        "barbecue-area"
+      ], 
+      [
         "footvolley"
+      ], 
+      [
+        "dancing"
       ], 
       [
         "beach-racket-court"
@@ -35714,9 +35717,6 @@
       ], 
       [
         "nursery"
-      ], 
-      [
-        "barbecue-area"
       ]
     ], 
     "address": "Viale dell Nazioni, 14", 
@@ -38044,11 +38044,11 @@
   "pk": 13335, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnowave.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2913912143000008 44.4540801428000023)", 
-    "modified": "2014-07-04T09:46:44.713Z", 
+    "modified": "2015-06-16T15:40:19.669Z", 
     "description_en": null, 
     "number": "", 
     "languages": [
@@ -38119,11 +38119,11 @@
   "pk": 13337, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.007beach.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 2<br />\n\tombrelloni: 200<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 16<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 1</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3102108420000000 44.4156604400000035)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:24.946Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 2<br />\n\tombrelloni: 200<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 16<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 1</p>", 
     "number": "", 
     "languages": [
@@ -38136,34 +38136,34 @@
     ], 
     "services": [
       [
-        "catering"
-      ], 
-      [
-        "theme-parties"
-      ], 
-      [
         "happy-hour"
       ], 
       [
-        "nursery"
-      ], 
-      [
-        "beach-volley"
+        "catering"
       ], 
       [
         "baby-park"
       ], 
       [
-        "petanque"
+        "basketball"
       ], 
       [
-        "basketball"
+        "petanque"
       ], 
       [
         "entertainment"
       ], 
       [
         "beach-racket-court"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "theme-parties"
+      ], 
+      [
+        "beach-volley"
       ]
     ], 
     "address": "Viale Petrarca, 240", 
@@ -38670,11 +38670,11 @@
   "pk": 13347, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.lidolaplage.it/home/", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 24<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 3</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3110691740000000 44.4138006800000014)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:20.465Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\twc disabili: 1<br />\n\tlettini: 400<br />\n\tcabine: 24<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 3</p>", 
     "number": "", 
     "languages": [
@@ -39121,11 +39121,11 @@
   "pk": 13357, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnopassatore.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 5<br />\n\tombrelloni: 300<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3197449999999993 44.3866149999999990)", 
-    "modified": "2014-07-04T09:46:45.343Z", 
+    "modified": "2015-06-16T15:40:25.056Z", 
     "description_en": "<h3>Details</h3>\n\t<p>sdraio: 30<br />\n\twc: 5<br />\n\tombrelloni: 300<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>", 
     "number": "", 
     "languages": [
@@ -39186,11 +39186,11 @@
   "pk": 13358, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnosmeraldo.it", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 5<br />\n\twc: 2<br />\n\tombrelloni: 50<br />\n\twc disabili: 1<br />\n\tlettini: 120<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 1</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3192939999999993 44.3872089999999986)", 
-    "modified": "2014-07-04T09:46:44.187Z", 
+    "modified": "2015-06-16T15:40:26.125Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 5<br />\n\twc: 2<br />\n\tombrelloni: 50<br />\n\twc disabili: 1<br />\n\tlettini: 120<br />\n\tcabine: 6<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 1</p>", 
     "number": "", 
     "languages": [
@@ -40407,12 +40407,12 @@
   "pk": 13382, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://facebook.com/bagnocavallinonuovagestione", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\tlettini: 160<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>", 
+    "site": "", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nwc: 2<br />\r\nombrelloni: 80<br />\r\nlettini: 160<br />\r\ndocce chiuse: 1<br />\r\ndocce aperte: 1</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3448340000000005 44.3102379999999982)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\twc: 2<br />\n\tombrelloni: 80<br />\n\tlettini: 160<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>", 
+    "modified": "2015-06-16T14:09:07.621Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nwc: 2<br />\r\nombrelloni: 80<br />\r\nlettini: 160<br />\r\ndocce chiuse: 1<br />\r\ndocce aperte: 1</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -40427,26 +40427,26 @@
         "catering"
       ], 
       [
-        "five-a-side"
+        "baby-park"
       ], 
       [
         "beach-volley"
       ], 
       [
-        "baby-park"
+        "five-a-side"
       ], 
       [
         "ping-pong"
       ], 
       [
-        "beach-racket-court"
+        "entertainment"
       ], 
       [
-        "entertainment"
+        "beach-racket-court"
       ]
     ], 
     "address": "Via Forl\u00ec, 0/b", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "ali_popescu@yahoo.com", 
     "accepts_booking": true, 
     "slug": "bagno-cavallino", 
@@ -40908,11 +40908,11 @@
   "pk": 13394, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnolescogliere.com/", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 130<br />\n\twc disabili: 1<br />\n\tlettini: 220<br />\n\tcabine: 3<br />\n\tdocce chiuse: 3<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3440399999999997 44.3131690000000020)", 
-    "modified": "2014-07-04T09:49:02.639Z", 
+    "modified": "2015-06-16T15:40:25.275Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 130<br />\n\twc disabili: 1<br />\n\tlettini: 220<br />\n\tcabine: 3<br />\n\tdocce chiuse: 3<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>", 
     "number": "", 
     "languages": [
@@ -41208,11 +41208,11 @@
   "pk": 13400, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.kontiki.fan-club.it/", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 134<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 7<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3468570000000000 44.3016480000000001)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:25.400Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 134<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 7<br />\n\tdocce chiuse: 2<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 2</p>", 
     "number": "", 
     "languages": [
@@ -42975,11 +42975,11 @@
   "pk": 13440, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.ristorantenettunorimini.it/", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5842259999999992 44.0680309999999977)", 
-    "modified": "2014-07-07T13:32:41.007Z", 
+    "modified": "2015-06-16T15:40:21.058Z", 
     "description_en": "", 
     "number": "", 
     "languages": [
@@ -43720,11 +43720,11 @@
   "pk": 13457, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.45-6eastcoast.it/", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5895384949999993 44.0640594999999990)", 
-    "modified": "2015-05-29T17:49:35.276Z", 
+    "modified": "2015-06-16T15:40:19.410Z", 
     "description_en": "", 
     "number": "46 sud", 
     "languages": [
@@ -43758,11 +43758,11 @@
   "pk": 13458, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.basilico4748.com", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 270</p>\n<p>Servizi offerti tornei organizzati tra i clienti</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5898993760000000 44.0637273999999977)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:22.258Z", 
     "description_en": "<h3>Details</h3>\n\t<p>cabine: 60<br />\n\tombrelloni: 270</p>\n<p>Servizi offerti tornei organizzati tra i clienti</p>", 
     "number": "47/48 sud", 
     "languages": [
@@ -45076,11 +45076,11 @@
   "pk": 13488, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagno80.com", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei delle varie attivit\u00e0\r\n- internet point a pagamento</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6018084490000000 44.0527681000000015)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:19.929Z", 
     "description_en": "<h3>Details</h3>\n\t<p>cabine: 50<br />\n\tombrelloni: 200</p>\n<p>Servizi offerti corsi di spinning e aquagymn\r\n- tornei delle varie attivit\u00e0\r\n- internet point a pagamento</p>", 
     "number": "80 sud", 
     "languages": [
@@ -45987,21 +45987,15 @@
   "pk": 13507, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagno99.com/", 
+    "site": "http://www.bagnoloretta99.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6077156860099446 44.0445167645529949)", 
-    "modified": "2014-12-11T16:56:03.866Z", 
+    "modified": "2015-06-16T14:09:53.018Z", 
     "description_en": "", 
     "number": "99", 
     "languages": [], 
     "services": [
-      [
-        "basketball"
-      ], 
-      [
-        "dancing"
-      ], 
       [
         "bar"
       ], 
@@ -46033,6 +46027,9 @@
         "entertainment"
       ], 
       [
+        "dancing"
+      ], 
+      [
         "acquagym"
       ], 
       [
@@ -46046,6 +46043,9 @@
       ], 
       [
         "fitness-area"
+      ], 
+      [
+        "basketball"
       ], 
       [
         "baby-sitter"
@@ -46127,7 +46127,7 @@
       ]
     ], 
     "address": "Lungomare di Vittorio 54/a", 
-    "description_it": "Il Bagno Loretta 99 \u00e8 il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi. ", 
+    "description_it": "<p>Il Bagno Loretta 99 &egrave; il primo stabilimento balneare di Marebello, con i suoi 6000 m2 di spiaggia, zona verde, parco giochi, wellness, attrazioni e spettacoli sempre nuovi.</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "loretta", 
@@ -48269,45 +48269,14 @@
   }
 },
 {
-  "pk": 13561, 
-  "model": "bagni.bagno", 
-  "fields": {
-    "site": "", 
-    "description": "", 
-    "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.5569620000000004 44.0777050000000017)", 
-    "modified": "2014-07-07T14:14:17.853Z", 
-    "description_en": "", 
-    "number": "5 nord", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
-    "services": [], 
-    "address": "Via Toscanelli", 
-    "description_it": "", 
-    "mail": "", 
-    "accepts_booking": true, 
-    "slug": "celli", 
-    "neighbourhood": [
-      "rivabella"
-    ], 
-    "name": "Bagno Celli"
-  }
-},
-{
   "pk": 13562, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnocelli.com", 
+    "site": "", 
     "description": "\n<p>Servizi offerti accessibile ai cani\u00a0\u00a0\u00a0 vedi informazioni dettagliate\n- corsi\u00a0e tornei\u00a0di burraco\r\nil burraco \u00e8 il gioco del momento, \"un gioco di carte apparentemente semplice, ma dai risvolti spesso imprevedibili e assolutamente coinvolgenti\". \r\npotrete imparare a giocare seguendo i corsi per principianti, tenuti dalle signore mirna e anna e partecipare ai nostri bellissimi tornei.</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5553310000000007 44.0783980000000000)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:25.538Z", 
     "description_en": "\n<p>Servizi offerti accessibile ai cani\u00a0\u00a0\u00a0 vedi informazioni dettagliate\n- corsi\u00a0e tornei\u00a0di burraco\r\nil burraco \u00e8 il gioco del momento, \"un gioco di carte apparentemente semplice, ma dai risvolti spesso imprevedibili e assolutamente coinvolgenti\". \r\npotrete imparare a giocare seguendo i corsi per principianti, tenuti dalle signore mirna e anna e partecipare ai nostri bellissimi tornei.</p>", 
     "number": "6 nord", 
     "languages": [
@@ -48320,16 +48289,19 @@
     ], 
     "services": [
       [
-        "nursery"
-      ], 
-      [
-        "ping-pong"
+        "picnic-area"
       ], 
       [
         "petanque"
       ], 
       [
-        "picnic-area"
+        "ping-pong"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "pet-friendly"
       ]
     ], 
     "address": "Via Toscanelli", 
@@ -48658,11 +48630,11 @@
   "pk": 13570, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.bagnocarlo17.com", 
+    "site": "", 
     "description": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 250</p>\n<p>Servizi offerti tutti i tipi di corsi\r\n- tornei di beach volley, bocce e ping-pong\r\n- dame e scacchi</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5471439300000007 44.0838082400000033)", 
-    "modified": "2014-07-04T09:49:00.436Z", 
+    "modified": "2015-06-16T15:40:25.763Z", 
     "description_en": "<h3>Details</h3>\n\t<p>cabine: 20<br />\n\tombrelloni: 250</p>\n<p>Servizi offerti tutti i tipi di corsi\r\n- tornei di beach volley, bocce e ping-pong\r\n- dame e scacchi</p>", 
     "number": "17 nord", 
     "languages": [
@@ -48675,16 +48647,16 @@
     ], 
     "services": [
       [
-        "five-a-side"
-      ], 
-      [
         "picnic-area"
       ], 
       [
-        "baby-park"
+        "five-a-side"
       ], 
       [
         "ping-pong"
+      ], 
+      [
+        "baby-park"
       ], 
       [
         "beach-racket-court"
@@ -51438,11 +51410,11 @@
   "pk": 13636, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggia33riccione.it/Homepage.htm", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6777092400000004 43.9935539599999998)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:20.858Z", 
     "description_en": null, 
     "number": "33", 
     "languages": [
@@ -51593,12 +51565,12 @@
   "pk": 13641, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.sorayahotel.it/sawasdee/gallery.php", 
+    "site": "http://www.sorayahotel.it/sawasdee", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6763155199999993 43.9944500800000000)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2015-06-16T14:00:42.664Z", 
+    "description_en": "", 
     "number": "37", 
     "languages": [
       [
@@ -51610,7 +51582,7 @@
     ], 
     "services": [], 
     "address": "Fontanelle Abissinia", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@sorayahotel.it", 
     "accepts_booking": true, 
     "slug": "sawasdee", 
@@ -52616,25 +52588,18 @@
   "pk": 13674, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.riccionespiaggia73.com/riccionespiaggia73/home.html", 
+    "site": "http://www.riccionespiaggia73.com/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6637720399999996 44.0025151600000015)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "point": "POINT (12.6637720400000049 44.0025151600000086)", 
+    "modified": "2015-06-16T13:55:32.647Z", 
+    "description_en": "", 
     "number": "73", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Riccione centro", 
-    "description_it": null, 
-    "mail": "info@riccionespiaggia73.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagni-agostino", 
     "neighbourhood": [
@@ -53229,13 +53194,13 @@
   "pk": 13694, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggia93.com/", 
+    "site": "http://www.battarraesettimio.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6553400000000007 44.0080952599999975)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
-    "number": "93", 
+    "modified": "2015-06-16T15:31:08.080Z", 
+    "description_en": "", 
+    "number": "93-94", 
     "languages": [
       [
         "italian"
@@ -53246,35 +53211,28 @@
     ], 
     "services": [], 
     "address": "Porto", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "info@battarraesettimio.it", 
     "accepts_booking": true, 
-    "slug": "bagni-battarra", 
+    "slug": "bagni-battarra-settimio", 
     "neighbourhood": [
       "riccione"
     ], 
-    "name": "Bagni Battarra"
+    "name": "Bagni Battarra e Settimio"
   }
 },
 {
   "pk": 13695, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.spiaggia94.com/", 
+    "site": "", 
     "description": "", 
-    "created": "2014-07-02T22:00:00Z", 
+    "created": "2015-06-16T15:40:22.425Z", 
     "point": "POINT (12.6549499999999995 44.0083728899999969)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-06-16T15:40:22.425Z", 
     "description_en": null, 
     "number": "94", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Porto", 
     "description_it": null, 
@@ -53590,11 +53548,11 @@
   "pk": 13704, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://www.103riccione.it/", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.6514399999999991 44.0108715599999982)", 
-    "modified": "2014-07-04T09:49:07.230Z", 
+    "modified": "2015-06-16T15:40:22.091Z", 
     "description_en": null, 
     "number": "103", 
     "languages": [
@@ -56373,11 +56331,11 @@
   "pk": 13793, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "http://bagnogino5960.it/", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4759259460000003 44.1408292703000029)", 
-    "modified": "2014-07-22T09:27:38.751Z", 
+    "modified": "2015-06-16T15:40:22.600Z", 
     "description_en": "", 
     "number": "59/60", 
     "languages": [
@@ -72732,7 +72690,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-05-26T13:23:16.125Z", 
+    "last_login": "2015-06-16T13:55:16.312Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -87215,7 +87173,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "celli"
+      "celli-2"
     ], 
     "number": "393 9791539", 
     "name": "mob", 
@@ -87227,7 +87185,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "celli"
+      "celli-2"
     ], 
     "number": "0541 23053", 
     "name": "win", 
@@ -89831,7 +89789,7 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagni-battarra"
+      "bagni-battarra-settimio"
     ], 
     "number": "0541.647374", 
     "name": "tel", 
@@ -89843,35 +89801,11 @@
   "model": "bagni.telephone", 
   "fields": {
     "bagno": [
-      "bagni-battarra"
+      "bagni-battarra-settimio"
     ], 
     "number": "328.3031429", 
     "name": "mob", 
     "slug": "mobile-number-227"
-  }
-},
-{
-  "pk": 3240, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "bagni-settimio"
-    ], 
-    "number": "0541.647374", 
-    "name": "tel", 
-    "slug": "telephone-number-813"
-  }
-},
-{
-  "pk": 3241, 
-  "model": "bagni.telephone", 
-  "fields": {
-    "bagno": [
-      "bagni-settimio"
-    ], 
-    "number": "328.3031429", 
-    "name": "mob", 
-    "slug": "mobile-number-228"
   }
 },
 {
