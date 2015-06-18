@@ -8,6 +8,7 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
+        pass
         # Adding field 'Neighbourhood.name_en'
 #        db.add_column(u'bagni_neighbourhood', 'name_en',
 #                      self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True),
@@ -40,6 +41,7 @@ class Migration(SchemaMigration):
 
 
     def backwards(self, orm):
+        pass
         # Deleting field 'Neighbourhood.name_en'
 #        db.delete_column(u'bagni_neighbourhood', 'name_en')
 

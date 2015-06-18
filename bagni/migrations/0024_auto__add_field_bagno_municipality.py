@@ -9,14 +9,16 @@ class Migration(SchemaMigration):
 
     def forwards(self, orm):
         # Adding field 'Bagno.municipality'
-        db.add_column(u'bagni_bagno', 'municipality',
-                      self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='bagni2', null=True, to=orm['bagni.Municipality']),
-                      keep_default=False)
+        pass
+#        db.add_column(u'bagni_bagno', 'municipality',
+#                      self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='bagni2', null=True, to=orm['bagni.Municipality']),
+#                      keep_default=False)
 
 
     def backwards(self, orm):
         # Deleting field 'Bagno.municipality'
-        db.delete_column(u'bagni_bagno', 'municipality_id')
+        pass
+#        db.delete_column(u'bagni_bagno', 'municipality_id')
 
 
     models = {
