@@ -9,54 +9,54 @@ class Migration(SchemaMigration):
 
     def forwards(self, orm):
         # Adding field 'Neighbourhood.name_en'
-        db.add_column(u'bagni_neighbourhood', 'name_en',
-                      self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True),
-                      keep_default=False)
-
+#        db.add_column(u'bagni_neighbourhood', 'name_en',
+#                      self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True),
+#                      keep_default=False)
+#
         # Adding field 'Neighbourhood.name_it'
-        db.add_column(u'bagni_neighbourhood', 'name_it',
-                      self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True),
-                      keep_default=False)
+#        db.add_column(u'bagni_neighbourhood', 'name_it',
+#                      self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True),
+#                      keep_default=False)
 
         # Adding field 'Neighbourhood.description_en'
-        db.add_column(u'bagni_neighbourhood', 'description_en',
-                      self.gf('django.db.models.fields.TextField')(max_length=2000, null=True, blank=True),
-                      keep_default=False)
+#        db.add_column(u'bagni_neighbourhood', 'description_en',
+#                      self.gf('django.db.models.fields.TextField')(max_length=2000, null=True, blank=True),
+#                      keep_default=False)
 
         # Adding field 'Neighbourhood.description_it'
-        db.add_column(u'bagni_neighbourhood', 'description_it',
-                      self.gf('django.db.models.fields.TextField')(max_length=2000, null=True, blank=True),
-                      keep_default=False)
+#        db.add_column(u'bagni_neighbourhood', 'description_it',
+#                      self.gf('django.db.models.fields.TextField')(max_length=2000, null=True, blank=True),
+#                      keep_default=False)
 
         # Adding field 'Neighbourhood.slug_en'
-        db.add_column(u'bagni_neighbourhood', 'slug_en',
-                      self.gf('autoslug.fields.AutoSlugField')(max_length=50, unique=True, null=True, blank=True),
-                      keep_default=False)
+#        db.add_column(u'bagni_neighbourhood', 'slug_en',
+#                      self.gf('autoslug.fields.AutoSlugField')(max_length=50, unique=True, null=True, blank=True),
+#                      keep_default=False)
 
         # Adding field 'Neighbourhood.slug_it'
-        db.add_column(u'bagni_neighbourhood', 'slug_it',
-                      self.gf('autoslug.fields.AutoSlugField')(max_length=50, unique=True, null=True, blank=True),
-                      keep_default=False)
+#        db.add_column(u'bagni_neighbourhood', 'slug_it',
+#                      self.gf('autoslug.fields.AutoSlugField')(max_length=50, unique=True, null=True, blank=True),
+#                      keep_default=False)
 
 
     def backwards(self, orm):
         # Deleting field 'Neighbourhood.name_en'
-        db.delete_column(u'bagni_neighbourhood', 'name_en')
+#        db.delete_column(u'bagni_neighbourhood', 'name_en')
 
         # Deleting field 'Neighbourhood.name_it'
-        db.delete_column(u'bagni_neighbourhood', 'name_it')
+#        db.delete_column(u'bagni_neighbourhood', 'name_it')
 
         # Deleting field 'Neighbourhood.description_en'
-        db.delete_column(u'bagni_neighbourhood', 'description_en')
+#        db.delete_column(u'bagni_neighbourhood', 'description_en')
 
         # Deleting field 'Neighbourhood.description_it'
-        db.delete_column(u'bagni_neighbourhood', 'description_it')
+#        db.delete_column(u'bagni_neighbourhood', 'description_it')
 
         # Deleting field 'Neighbourhood.slug_en'
-        db.delete_column(u'bagni_neighbourhood', 'slug_en')
+#        db.delete_column(u'bagni_neighbourhood', 'slug_en')
 
         # Deleting field 'Neighbourhood.slug_it'
-        db.delete_column(u'bagni_neighbourhood', 'slug_it')
+#        db.delete_column(u'bagni_neighbourhood', 'slug_it')
 
 
     models = {
