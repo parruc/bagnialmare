@@ -6,6 +6,7 @@ from django.template.loader import get_template
 from django.template import Context
 from django.utils.translation import ugettext as _
 from django.utils.translation import get_language, activate
+from django.core import signing
 from django.core.mail import EmailMultiAlternatives
 
 def _get_bagno_url(bagno):
@@ -34,11 +35,12 @@ def _send_mail_by_template(template_prefix, details, recipients):
               "info@bagnialmare.com",
               recipients)
 
+signer = signing.Signer('s2hdf73as5f')
 
 def _get_booking_unsubscribe_url(bagno_email):
     return "http://bagnialmare.com" + \
            reverse("booking_unsubscribe") + \
-           "?e=%s" % (bagno_email)
+           "?e=%s" % (signer.sign(bagno_email))
 
 
 def _send_no_manager_mail(details, recipients):
