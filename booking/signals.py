@@ -5,16 +5,20 @@ from django.conf import settings
 from django.template.loader import get_template
 from django.template import Context
 from django.utils.translation import ugettext as _
+from django.utils.translation import get_language, activate
+
 
 def _get_bagno_url(bagno):
     #TODO: shoudl we add settings.SITE_URL?
     return "http://bagnialmare.com" + bagno.get_absolute_url()
+
 
 def _get_bagno_registration_url(bagno_id):
     #TODO: shoudl we add settings.SITE_URL?
     return "http://bagnialmare.com" + \
            reverse("authauth_signup") + \
            "?selected=%d" % (bagno_id)
+
 
 def _send_mail_by_template(template_prefix, details, recipients):
     t = get_template("booking/" + template_prefix + "_mail_subject.txt")
@@ -30,19 +34,21 @@ def _send_mail_by_template(template_prefix, details, recipients):
               "info@bagnialmare.com",
               recipients)
 
+
 def _get_booking_unsubscribe_url(bagno_email):
     return "http://bagnialmare.com" + \
            reverse("booking_unsubscribe") + \
            "?e=%s" % (bagno_email)
 
+
 def _send_no_manager_mail(details, recipients):
     text_template = get_template("booking/no_manager_booking_notification.txt")
-    html_template = get_template("booking/no_manager_booking_notification.html")
+ #   html_template = get_template("booking/no_manager_booking_notification.html")
     c = Context(details)
     text_message = text_template.render(c).strip()
-    html_message = html_template.render(c).strip()
+#    html_message = html_template.render(c).strip()
 
-    send_mail("Richiesta di prenotazione",
+    send_mail(_("Richiesta di prenotazione"),
               text_message,
               "info@bagnialmare.com",
               ["the-4hm@googlegroups.com"])
@@ -69,7 +75,8 @@ def mail_for_booking(sender, instance, created, **kwargs):
                            email=instance.email,
                            mobile=instance.mobile,
                            managed_state=managed_state)
-
+    lang = get_language()
+    activate("it")
     if bagno_managed:
         managers = instance.bagno.managers.all()
         manager_emails = [m.user.email for m in managers]
@@ -78,7 +85,8 @@ def mail_for_booking(sender, instance, created, **kwargs):
     elif instance.bagno.mail:
         unsubscribe_link = _get_booking_unsubscribe_url(instance.bagno.mail)
         booking_details["unsubscribe_link"] = unsubscribe_link
-        _send_no_manager_mail(booking_details, [instance.bagno.mail,])
+        _send_no_manager_mail(booking_details, [instance.bagno.mail, ])
+    activate(lang)
 
     _send_mail_by_template("admin", booking_details, admin_emails)
     _send_mail_by_template("user", booking_details, [instance.email, ])
