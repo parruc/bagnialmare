@@ -6,7 +6,7 @@ from django.template.loader import get_template
 from django.template import Context
 from django.utils.translation import ugettext as _
 from django.utils.translation import get_language, activate
-
+from django.core.mail import EmailMultiAlternatives
 
 def _get_bagno_url(bagno):
     #TODO: shoudl we add settings.SITE_URL?
@@ -43,15 +43,14 @@ def _get_booking_unsubscribe_url(bagno_email):
 
 def _send_no_manager_mail(details, recipients):
     text_template = get_template("booking/no_manager_booking_notification.txt")
- #   html_template = get_template("booking/no_manager_booking_notification.html")
+    html_template = get_template("booking/no_manager_booking_notification.html")
     c = Context(details)
     text_message = text_template.render(c).strip()
-#    html_message = html_template.render(c).strip()
-
-    send_mail(_("Richiesta di prenotazione"),
-              text_message,
-              "info@bagnialmare.com",
-              ["the-4hm@googlegroups.com"])
+    html_message = html_template.render(c).strip()
+    subject, from_email, to = "Richiesta di prenotazione", "info@bagnialmare.com", "nicola.valentini@gmail.com"
+    msg = EmailMultiAlternatives(subject, text_message, from_email, [to])
+    msg.attach_alternative(html_message, "text/html")
+    msg.send()
 
 
 def mail_for_booking(sender, instance, created, **kwargs):
