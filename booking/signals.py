@@ -45,7 +45,7 @@ def _send_no_manager_mail(details, recipients):
     send_mail("Richiesta di prenotazione",
               text_message,
               "info@bagnialmare.com",
-              ["nicola.valentini@gmail.com"], html_message=html_message)
+              ["the-4hm@googlegroups.com"])
 
 
 def mail_for_booking(sender, instance, created, **kwargs):
