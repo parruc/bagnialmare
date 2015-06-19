@@ -35,9 +35,9 @@ def _get_booking_unsubscribe_url(bagno_email):
            reverse("booking_unsubscribe") + \
            "?e=%s" % (bagno_email)
 
-def _send_non_manager_mail(details, recipients):
-    text_template = get_template("booking/non_manager_booking_notification.txt")
-    html_template = get_template("booking/non_manager_booking_notification.html")
+def _send_no_manager_mail(details, recipients):
+    text_template = get_template("booking/no_manager_booking_notification.txt")
+    html_template = get_template("booking/no_manager_booking_notification.html")
     c = Context(details)
     text_message = text_template.render(c).strip()
     html_message = html_template.render(c).strip()
@@ -78,7 +78,7 @@ def mail_for_booking(sender, instance, created, **kwargs):
     elif instance.bagno.mail:
         unsubscribe_link = _get_booking_unsubscribe_url(instance.bagno.mail)
         booking_details["unsubscribe_link"] = unsubscribe_link
-        _send_non_manager_mail(booking_details, [instance.bagno.mail,])
+        _send_no_manager_mail(booking_details, [instance.bagno.mail,])
 
     _send_mail_by_template("admin", booking_details, admin_emails)
     _send_mail_by_template("user", booking_details, [instance.email, ])
