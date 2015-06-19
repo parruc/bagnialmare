@@ -13,7 +13,7 @@ Bagnialmare.com permette ai turisti di individuare lo stabilimento balneare che 
 Come ha fatto l'utente a richiedere una prenotazione nel nostro bagno?
 L'utente ha richiesto la prenotazione tramite la pagina con i dettagli del suo stabilimento balneare: {{bagno_url}}
 
-Cosa ci guadagna bagnialmare quando un utente prenota?
+Cosa ci guadagna bagnialmare.com quando un utente prenota?
 Nulla. Bagnialmare.com mette in contatto utenti e gestori gratuitamente.
 
 Come posso modificare contatti e foto del nostro stabilimento balneare su bagnialmare.com?
