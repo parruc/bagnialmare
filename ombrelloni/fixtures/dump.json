@@ -58490,6 +58490,176 @@
   }
 },
 {
+  "pk": 81, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-venezia"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-06-19T13:38:38.801Z", 
+    "modified": "2015-06-19T13:38:38.801Z", 
+    "start": "2015-06-19", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 82, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-venezia"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "asdasdasd", 
+    "created": "2015-06-19T13:40:01.713Z", 
+    "modified": "2015-06-19T13:40:01.713Z", 
+    "start": "2015-06-19", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 83, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "mar-y-sol-bagno-57"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "1234", 
+    "created": "2015-06-19T15:24:39.883Z", 
+    "modified": "2015-06-19T15:24:39.883Z", 
+    "start": "2015-06-19", 
+    "email": "test@bagnialmare.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 84, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "mar-y-sol-bagno-57"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "1324", 
+    "created": "2015-06-19T15:27:34.990Z", 
+    "modified": "2015-06-19T15:27:34.990Z", 
+    "start": "2015-06-19", 
+    "email": "test@matteoparrucci.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 85, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "mar-y-sol-bagno-57"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "1234", 
+    "created": "2015-06-19T15:33:19.929Z", 
+    "modified": "2015-06-19T15:33:19.929Z", 
+    "start": "2015-06-19", 
+    "email": "test@matteoparrucci.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 86, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-06-25", 
+    "sunbeds": 1, 
+    "mobile": "1234", 
+    "created": "2015-06-19T16:29:07.554Z", 
+    "modified": "2015-06-19T16:29:07.554Z", 
+    "start": "2015-06-19", 
+    "email": "test@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 87, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-06-23", 
+    "sunbeds": 1, 
+    "mobile": "35435", 
+    "created": "2015-06-19T16:38:07.212Z", 
+    "modified": "2015-06-19T16:38:07.212Z", 
+    "start": "2015-06-19", 
+    "email": "test@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 88, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-06-23", 
+    "sunbeds": 2, 
+    "mobile": "43524", 
+    "created": "2015-06-19T16:46:10.858Z", 
+    "modified": "2015-06-19T16:46:10.858Z", 
+    "start": "2015-06-19", 
+    "email": "test@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 89, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "123", 
+    "created": "2015-06-19T16:54:04.346Z", 
+    "modified": "2015-06-19T16:54:04.346Z", 
+    "start": "2015-06-19", 
+    "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 90, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-06-19", 
+    "sunbeds": 2, 
+    "mobile": "123", 
+    "created": "2015-06-19T16:54:37.245Z", 
+    "modified": "2015-06-19T16:54:37.245Z", 
+    "start": "2015-06-19", 
+    "email": "test@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
