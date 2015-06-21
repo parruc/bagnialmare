@@ -58660,6 +58660,40 @@
   }
 },
 {
+  "pk": 91, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-06-26", 
+    "sunbeds": 1, 
+    "mobile": "34534534", 
+    "created": "2015-06-20T19:45:19.879Z", 
+    "modified": "2015-06-20T19:45:19.879Z", 
+    "start": "2015-06-25", 
+    "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 92, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-olimpia-20"
+    ], 
+    "end": "2015-06-30", 
+    "sunbeds": 2, 
+    "mobile": "2234", 
+    "created": "2015-06-20T19:52:43.346Z", 
+    "modified": "2015-06-20T19:52:43.346Z", 
+    "start": "2015-06-25", 
+    "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
