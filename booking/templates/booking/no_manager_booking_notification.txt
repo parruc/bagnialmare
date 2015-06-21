@@ -1,0 +1,27 @@
+{% load i18n %}Un utente di bagnialmare.com è interessato a prenotare nel vostro stabilimento balneare: {{ bagno_name }}
+
+Quando:{% blocktrans %} dal {{ start }} al {{ end }}{% endblocktrans %}
+
+Cosa: {% blocktrans count counter=umbrellas %}{{ umbrellas }} ombrellone{% plural %}{{ umbrellas }} ombrelloni{% endblocktrans %} {% trans "and" %} {% blocktrans count counter=sunbeds %}{{ sunbeds }} lettino{% plural %}{{ sunbeds }} lettini{% endblocktrans %}
+
+Potete comunicare disponibilità e preventivo all'utente direttamente al: {{mobile}} oppure via email a: {{email}}
+
+
+Bagnialmare.com permette ai turisti di individuare lo stabilimento balneare che più si addice alle loro esigenze.
+
+
+Come ha fatto l'utente a richiedere una prenotazione nel nostro bagno?
+L'utente ha richiesto la prenotazione tramite la pagina con i dettagli del suo stabilimento balneare: {{bagno_url}}
+
+Cosa ci guadagna bagnialmare.com quando un utente prenota?
+Nulla. Bagnialmare.com mette in contatto utenti e gestori gratuitamente.
+
+Come posso modificare contatti e foto del nostro stabilimento balneare su bagnialmare.com?
+Può registrarsi gratuitamente usando questo link {{bagno_registration_url}} e modificare tutte le informazioni del vostro stabilimento balneare.
+
+
+Se non volete più ricevere prenotazioni dagli utenti di BagniAlMare potete cancellarvi usando questo link:
+{{unsubscribe_link}}
+
+
+Il team di BagniAlMare

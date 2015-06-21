@@ -11,7 +11,7 @@
         {% endif %}
       </div>
       <div class="modal-body">
-      {% if bagno.is_managed %}
+      {% if bagno.is_managed or bagno.mail%}
          <form id="book-online-form" action="{{ bagno.get_booking_url }}" method="post" role="form">
             {% include "booking/form.html" %}
             <button class="btn btn-primary ga_click"
