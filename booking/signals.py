@@ -49,8 +49,8 @@ def _send_no_manager_mail(details, recipients):
     c = Context(details)
     text_message = text_template.render(c).strip()
     html_message = html_template.render(c).strip()
-    subject, from_email, to = "Richiesta di prenotazione", "info@bagnialmare.com", "nicola.valentini@gmail.com"
-    msg = EmailMultiAlternatives(subject, text_message, from_email, [to])
+    subject, from_email, to = "Richiesta di prenotazione", "info@bagnialmare.com", recipients
+    msg = EmailMultiAlternatives(subject, text_message, from_email, to)
     msg.attach_alternative(html_message, "text/html")
     msg.send()
 
