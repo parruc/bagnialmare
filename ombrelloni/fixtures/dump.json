@@ -3954,11 +3954,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 4600<br />\n\tfronte mare: 40<br />\n\tdocce aperte: 4<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 4600<br />\r\nfronte mare: 40<br />\r\ndocce aperte: 4<br />\r\nwc: 4<br />\r\ndocce chiuse: 2</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3663374770000001 44.2494682849999990)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>superficie complessiva spiaggia: 4600<br />\n\tfronte mare: 40<br />\n\tdocce aperte: 4<br />\n\twc: 4<br />\n\tdocce chiuse: 2</p>", 
+    "modified": "2015-06-21T13:58:44.113Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 4600<br />\r\nfronte mare: 40<br />\r\ndocce aperte: 4<br />\r\nwc: 4<br />\r\ndocce chiuse: 2</p>\r\n", 
     "number": "149", 
     "languages": [
       [
@@ -3970,38 +3970,38 @@
     ], 
     "services": [
       [
-        "dancing"
-      ], 
-      [
-        "table-football"
-      ], 
-      [
-        "videogames"
-      ], 
-      [
-        "beach-volley"
+        "bar"
       ], 
       [
         "baby-park"
       ], 
       [
-        "ping-pong"
+        "beach-volley"
       ], 
       [
-        "petanque"
+        "videogames"
       ], 
       [
-        "tv-area"
+        "table-football"
       ], 
       [
         "children-entertainment"
       ], 
       [
-        "bar"
+        "tv-area"
+      ], 
+      [
+        "petanque"
+      ], 
+      [
+        "ping-pong"
+      ], 
+      [
+        "dancing"
       ]
     ], 
     "address": "Lungomare Grazia Deledda", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-olimpia", 
@@ -56998,11 +56998,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagno93.it/", 
-    "description": " ", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4924079999999993 44.1261810000000025)", 
-    "modified": "2014-07-03T17:15:34.276Z", 
-    "description_en": " ", 
+    "modified": "2015-06-21T13:12:08.905Z", 
+    "description_en": "", 
     "number": "93", 
     "languages": [
       [
@@ -57032,7 +57032,7 @@
     "description": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4078750593086742 44.1996141611217155)", 
-    "modified": "2015-04-21T12:42:58.732Z", 
+    "modified": "2015-06-21T14:04:05.023Z", 
     "description_en": "<p>Welcome to the world of BagniAlMare. This is just an example of an ideal resort window, you&#39;ll be able to personalize your private one as soon as your account is registered! Join BagniAlMare right now.</p>\r\n", 
     "number": "10", 
     "languages": [], 
@@ -57170,7 +57170,7 @@
     "address": "Riviera Adriatica, Estate 2015", 
     "description_it": "<p>Benvenuti nel mondo di BagniAlMare.com. Questo &egrave; un esempio di vetrina ideale di uno stabilimento balneare. Per gestire e personalizzare la vetrina privata del tuo bagno baster&agrave; registrare il tuo account in pochi click a partire dall&#39;Area Gestori.</p>\r\n\r\n<p>Crea subito il tuo spazio su BagniAlMare.com!</p>\r\n", 
     "mail": "", 
-    "accepts_booking": true, 
+    "accepts_booking": false, 
     "slug": "test", 
     "neighbourhood": [
       "villamarina"
@@ -58690,6 +58690,91 @@
     "modified": "2015-06-20T19:52:43.346Z", 
     "start": "2015-06-25", 
     "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 93, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-07-23", 
+    "sunbeds": 2, 
+    "mobile": "345678", 
+    "created": "2015-06-21T13:08:56.179Z", 
+    "modified": "2015-06-21T13:08:56.179Z", 
+    "start": "2015-06-25", 
+    "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 94, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-olimpia"
+    ], 
+    "end": "2015-07-28", 
+    "sunbeds": 2, 
+    "mobile": "34567", 
+    "created": "2015-06-21T13:54:36.122Z", 
+    "modified": "2015-06-21T13:54:36.122Z", 
+    "start": "2015-07-23", 
+    "email": "nicola.valentini@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 95, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "test"
+    ], 
+    "end": "2015-06-30", 
+    "sunbeds": 2, 
+    "mobile": "1234", 
+    "created": "2015-06-21T13:58:22.110Z", 
+    "modified": "2015-06-21T13:58:22.110Z", 
+    "start": "2015-06-26", 
+    "email": "test@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 96, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-susanna"
+    ], 
+    "end": "2015-07-18", 
+    "sunbeds": 2, 
+    "mobile": "3475670700", 
+    "created": "2015-06-21T16:25:58.147Z", 
+    "modified": "2015-06-21T16:25:58.147Z", 
+    "start": "2015-07-10", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 97, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-nariz"
+    ], 
+    "end": "2015-07-18", 
+    "sunbeds": 2, 
+    "mobile": "3475670700", 
+    "created": "2015-06-21T16:26:56.478Z", 
+    "modified": "2015-06-21T16:26:56.478Z", 
+    "start": "2015-07-11", 
+    "email": "marco.benvenuto1@gmail.com", 
     "umbrellas": 1
   }
 },
