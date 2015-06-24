@@ -58779,6 +58779,40 @@
   }
 },
 {
+  "pk": 98, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "vatikaki"
+    ], 
+    "end": "2015-06-26", 
+    "sunbeds": 2, 
+    "mobile": "33573321115", 
+    "created": "2015-06-23T19:30:48.641Z", 
+    "modified": "2015-06-23T19:30:48.641Z", 
+    "start": "2015-06-24", 
+    "email": "parasassi23@hotmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 99, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "tahiti"
+    ], 
+    "end": "2015-06-28", 
+    "sunbeds": 2, 
+    "mobile": "3402465535", 
+    "created": "2015-06-23T20:44:43.628Z", 
+    "modified": "2015-06-23T20:44:43.628Z", 
+    "start": "2015-06-28", 
+    "email": "luigi.bammacaro@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
