@@ -58813,6 +58813,40 @@
   }
 },
 {
+  "pk": 100, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-piera"
+    ], 
+    "end": "2015-07-05", 
+    "sunbeds": 2, 
+    "mobile": "3388146829", 
+    "created": "2015-06-24T09:33:56.028Z", 
+    "modified": "2015-06-24T09:33:56.028Z", 
+    "start": "2015-06-28", 
+    "email": "sabi.effe@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 101, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "vatikaki"
+    ], 
+    "end": "2015-07-14", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-06-24T12:19:43.714Z", 
+    "modified": "2015-06-24T12:19:43.714Z", 
+    "start": "2015-07-10", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
