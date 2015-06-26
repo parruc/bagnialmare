@@ -58847,6 +58847,40 @@
   }
 },
 {
+  "pk": 102, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2015-08-28", 
+    "sunbeds": 2, 
+    "mobile": "3493585382", 
+    "created": "2015-06-25T12:17:52.422Z", 
+    "modified": "2015-06-25T12:17:52.422Z", 
+    "start": "2015-08-24", 
+    "email": "lucaandrea.trombetta@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 103, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-chicco-beach"
+    ], 
+    "end": "2015-07-03", 
+    "sunbeds": 4, 
+    "mobile": "3887326223", 
+    "created": "2015-06-25T15:35:41.843Z", 
+    "modified": "2015-06-25T15:35:41.843Z", 
+    "start": "2015-06-27", 
+    "email": "fedeginna@libero.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -73101,7 +73135,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-05-27T13:52:00.851Z", 
+    "last_login": "2015-06-25T16:29:04.294Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
