@@ -58898,6 +58898,40 @@
   }
 },
 {
+  "pk": 105, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-06-28", 
+    "sunbeds": 2, 
+    "mobile": "3495879912", 
+    "created": "2015-06-27T13:10:15.067Z", 
+    "modified": "2015-06-27T13:10:15.067Z", 
+    "start": "2015-06-28", 
+    "email": "morenaquaranta95@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 106, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "flamingo"
+    ], 
+    "end": "2015-06-28", 
+    "sunbeds": 2, 
+    "mobile": "3356347119", 
+    "created": "2015-06-27T13:31:10.937Z", 
+    "modified": "2015-06-27T13:31:10.937Z", 
+    "start": "2015-06-28", 
+    "email": "olirossy@katamail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
