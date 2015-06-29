@@ -58932,6 +58932,91 @@
   }
 },
 {
+  "pk": 107, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "flamingo"
+    ], 
+    "end": "2015-06-28", 
+    "sunbeds": 3, 
+    "mobile": "3497726983", 
+    "created": "2015-06-28T06:13:48.119Z", 
+    "modified": "2015-06-28T06:13:48.119Z", 
+    "start": "2015-06-28", 
+    "email": "illigabue60@virgilio.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 108, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-07-11", 
+    "sunbeds": 2, 
+    "mobile": "3486534633", 
+    "created": "2015-06-28T12:50:00.477Z", 
+    "modified": "2015-06-28T12:50:00.477Z", 
+    "start": "2015-07-04", 
+    "email": "elisabetta.lindegg@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 109, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "tahiti"
+    ], 
+    "end": "2015-07-14", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-06-28T17:07:46.081Z", 
+    "modified": "2015-06-28T17:07:46.081Z", 
+    "start": "2015-07-10", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 110, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-piera"
+    ], 
+    "end": "2015-07-14", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-06-28T17:08:36.215Z", 
+    "modified": "2015-06-28T17:08:36.215Z", 
+    "start": "2015-07-10", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 111, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-chicco-beach"
+    ], 
+    "end": "2015-07-14", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-06-28T17:09:23.584Z", 
+    "modified": "2015-06-28T17:09:23.584Z", 
+    "start": "2015-07-10", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
