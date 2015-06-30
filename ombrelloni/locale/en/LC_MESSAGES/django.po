@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 10:54-0400\n"
+"POT-Creation-Date: 2015-06-30 09:50-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 
 #: settings.py:115
 msgid "English"
-msgstr "English"
+msgstr ""
 
 #: settings.py:116
 msgid "Italiano"
-msgstr "Italian"
+msgstr ""
 
 #: urls.py:36
 msgid "^contacts/"
-msgstr "^contacts/"
+msgstr ""
 
 #: urls.py:38
 msgid "^newsletters/"
@@ -34,44 +34,47 @@ msgstr ""
 
 #: urls.py:43 urls.py:45
 msgid "^accounts/"
-msgstr "^accounts/"
+msgstr ""
 
 #: urls.py:47
 msgid "^userfeedback/"
 msgstr ""
 
-#: templates/base.html:5
-msgid "contact"
-msgstr "contacts"
+#: urls.py:49
+msgid "^booking/"
+msgstr ""
 
-#: templates/base.html:6
+#: templates/base.html:4
 msgid "about_us"
 msgstr "about us"
 
-#: templates/base.html:7
+#: templates/base.html:5
 msgid "are_you_manager"
 msgstr "are you a manager?"
 
-#: templates/base.html:8
+#: templates/base.html:6
 msgid "search"
 msgstr ""
 
-#: templates/base.html:9
+#: templates/base.html:7
 msgid "login"
 msgstr ""
 
-#: templates/base.html:10
+#: templates/base.html:8
 msgid "logout"
 msgstr ""
 
-#: templates/base.html:11
+#: templates/base.html:9
 msgid "edit"
 msgstr ""
 
+#: templates/base.html:104 templates/base.html.py:105
+msgid "About us"
+msgstr ""
+
 #: templates/base.html:116
-#, fuzzy
 msgid "Account"
-msgstr "^accounts/"
+msgstr ""
 
 #: templates/base.html:193
 msgid "BagniAlMare on Google+"
@@ -87,7 +90,26 @@ msgstr ""
 
 #: templates/base.html:220
 msgid "terms_and_privacy"
+msgstr "terms of service and privacy"
+
+#: templates/base.html:229
+msgid ""
+"This website uses cookies, which could include third-party cookies, to "
+"ensure its technical functioning and analyse visitor information in "
+"aggregate form. By closing this banner or continuing the navigation you "
+"consent to the use of cookies"
 msgstr ""
+
+#: templates/base.html:231
+msgid "Continue"
+msgstr ""
+
+#: templates/base.html:232
+msgid "Learn more"
+msgstr ""
+
+#~ msgid "contact"
+#~ msgstr "contacts"
 
 #~ msgid "signup"
 #~ msgstr "signup"

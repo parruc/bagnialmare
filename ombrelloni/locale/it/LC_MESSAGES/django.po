@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 10:54-0400\n"
+"POT-Creation-Date: 2015-06-30 09:50-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,33 +41,37 @@ msgstr "^accounts/"
 msgid "^userfeedback/"
 msgstr ""
 
-#: templates/base.html:5
-msgid "contact"
-msgstr "contatti"
+#: urls.py:49
+msgid "^booking/"
+msgstr "^prenotazione/"
 
-#: templates/base.html:6
+#: templates/base.html:4
 msgid "about_us"
 msgstr "about us"
 
-#: templates/base.html:7
+#: templates/base.html:5
 msgid "are_you_manager"
 msgstr "sei un gestore?"
 
-#: templates/base.html:8
+#: templates/base.html:6
 msgid "search"
-msgstr ""
+msgstr "cerca"
+
+#: templates/base.html:7
+msgid "login"
+msgstr "entra"
+
+#: templates/base.html:8
+msgid "logout"
+msgstr "esci"
 
 #: templates/base.html:9
-msgid "login"
-msgstr ""
-
-#: templates/base.html:10
-msgid "logout"
-msgstr ""
-
-#: templates/base.html:11
 msgid "edit"
-msgstr ""
+msgstr "modifica"
+
+#: templates/base.html:104 templates/base.html.py:105
+msgid "About us"
+msgstr "Chi siamo"
 
 #: templates/base.html:116
 msgid "Account"
@@ -87,4 +91,24 @@ msgstr "BagniAlMare su Twitter"
 
 #: templates/base.html:220
 msgid "terms_and_privacy"
+msgstr "privacy e termini del servizio"
+
+#: templates/base.html:229
+msgid ""
+"This website uses cookies, which could include third-party cookies, to "
+"ensure its technical functioning and analyse visitor information in "
+"aggregate form. By closing this banner or continuing the navigation you "
+"consent to the use of cookies"
 msgstr ""
+"Questo sito usa i cookies, anche di terze parti, per il suo funzionamento "
+"tecnico e per l'analisi dei dati di navigazione in forma aggregata. "
+"Chiudendo questo banner o continuando la navigazione del sito consenti l'uso "
+" dei cookies."
+
+#: templates/base.html:231
+msgid "Continue"
+msgstr "Continua"
+
+#: templates/base.html:232
+msgid "Learn more"
+msgstr "Approfondisci"

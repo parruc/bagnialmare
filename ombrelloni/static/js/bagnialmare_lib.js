@@ -28,5 +28,13 @@ var ombrelloneIcon = L.icon({
 $(function(){
   $("a[href^='http']:not([href^='http://bagnialmare.com'])").addClass("external");
   $("a:not([href^='http']), a[href^='http://bagnialmare.com']").addClass("internal");
+  $.cookieCuttr( 
+  {
+    cookieAnalytics: false,
+    cookieNotificationLocationBottom: true,
+    cookieMessage: $("#cookieCuttr").data("message-body"),
+    cookieAcceptButtonText: $("#cookieCuttr").data("message-confirm"),
+    cookieDiscreetPosition: "bottomleft"
+  });
 });
 
