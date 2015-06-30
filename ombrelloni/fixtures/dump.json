@@ -59017,6 +59017,40 @@
   }
 },
 {
+  "pk": 112, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "giovanna"
+    ], 
+    "end": "2015-08-08", 
+    "sunbeds": 2, 
+    "mobile": "3297061888", 
+    "created": "2015-06-29T07:15:49.941Z", 
+    "modified": "2015-06-29T07:15:49.941Z", 
+    "start": "2015-08-01", 
+    "email": "chiarabettoni9905@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 113, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "la-spiaggia-146"
+    ], 
+    "end": "2015-08-20", 
+    "sunbeds": 3, 
+    "mobile": "3405194063", 
+    "created": "2015-06-29T17:14:57.849Z", 
+    "modified": "2015-06-29T17:14:57.849Z", 
+    "start": "2015-08-10", 
+    "email": "rinalda.rb@libero.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
