@@ -59051,6 +59051,23 @@
   }
 },
 {
+  "pk": 114, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marte"
+    ], 
+    "end": "2015-07-05", 
+    "sunbeds": 2, 
+    "mobile": "3288165467", 
+    "created": "2015-07-02T20:11:41.472Z", 
+    "modified": "2015-07-02T20:11:41.472Z", 
+    "start": "2015-07-04", 
+    "email": "ercolemangiavillano@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
