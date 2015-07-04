@@ -59068,6 +59068,23 @@
   }
 },
 {
+  "pk": 115, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2015-08-08", 
+    "sunbeds": 4, 
+    "mobile": "3200680718", 
+    "created": "2015-07-03T20:44:57.982Z", 
+    "modified": "2015-07-03T20:44:57.982Z", 
+    "start": "2015-08-01", 
+    "email": "antonello.1984@libero.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
