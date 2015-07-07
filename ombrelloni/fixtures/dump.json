@@ -18636,11 +18636,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 6<br />\r\n\twc: 3<br />\r\n\tombrelloni: 100<br />\r\n\tfronte mare: 0<br />\r\n\tlettini: 200<br />\r\n\tcabine: 7<br />\r\n\tdocce chiuse: 0<br />\r\n\tsuperficie complessiva spiaggia: 0<br />\r\n\tdocce aperte: 3</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 6<br />\r\nwc: 3<br />\r\nombrelloni: 100<br />\r\nfronte mare: 0<br />\r\nlettini: 200<br />\r\ncabine: 7<br />\r\ndocce chiuse: 0<br />\r\nsuperficie complessiva spiaggia: 0<br />\r\ndocce aperte: 3</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4306225776672363 44.1761869902308746)", 
-    "modified": "2015-06-16T15:40:26.327Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 6<br />\r\n\twc: 3<br />\r\n\tombrelloni: 100<br />\r\n\tfronte mare: 0<br />\r\n\tlettini: 200<br />\r\n\tcabine: 7<br />\r\n\tdocce chiuse: 0<br />\r\n\tsuperficie complessiva spiaggia: 0<br />\r\n\tdocce aperte: 3</p>", 
+    "modified": "2015-07-06T09:51:49.925Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>lavapiedi: 1<br />\r\nsdraio: 6<br />\r\nwc: 3<br />\r\nombrelloni: 100<br />\r\nfronte mare: 0<br />\r\nlettini: 200<br />\r\ncabine: 7<br />\r\ndocce chiuse: 0<br />\r\nsuperficie complessiva spiaggia: 0<br />\r\ndocce aperte: 3</p>\r\n", 
     "number": "", 
     "languages": [
       [
@@ -18660,7 +18660,7 @@
     ], 
     "address": "Spiaggia Villamarina", 
     "description_it": "", 
-    "mail": "info@bagnoitaliacesenatico.com", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-italia-villamarina", 
     "neighbourhood": [
@@ -59085,6 +59085,159 @@
   }
 },
 {
+  "pk": 116, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-italia-villamarina"
+    ], 
+    "end": "2015-07-25", 
+    "sunbeds": 4, 
+    "mobile": "3356058255", 
+    "created": "2015-07-06T09:44:08.291Z", 
+    "modified": "2015-07-06T09:44:08.291Z", 
+    "start": "2015-07-18", 
+    "email": "lauratomasoni@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 117, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-big-mama"
+    ], 
+    "end": "2015-07-25", 
+    "sunbeds": 2, 
+    "mobile": "3304578654", 
+    "created": "2015-07-06T10:02:33.680Z", 
+    "modified": "2015-07-06T10:02:33.680Z", 
+    "start": "2015-07-20", 
+    "email": "marco.bartolini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 118, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-07-25", 
+    "sunbeds": 2, 
+    "mobile": "34876876978", 
+    "created": "2015-07-06T10:03:20.915Z", 
+    "modified": "2015-07-06T10:03:20.915Z", 
+    "start": "2015-07-20", 
+    "email": "marco.bartolini@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 119, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "flamingo"
+    ], 
+    "end": "2015-07-24", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-07-06T14:39:17.694Z", 
+    "modified": "2015-07-06T14:39:17.694Z", 
+    "start": "2015-07-17", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 120, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "giovanna"
+    ], 
+    "end": "2015-07-24", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-07-06T14:44:43.718Z", 
+    "modified": "2015-07-06T14:44:43.718Z", 
+    "start": "2015-07-17", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 121, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "la-spiaggia-146"
+    ], 
+    "end": "2015-07-24", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-07-06T14:45:27.963Z", 
+    "modified": "2015-07-06T14:45:27.963Z", 
+    "start": "2015-07-17", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 122, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marte"
+    ], 
+    "end": "2015-07-24", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-07-06T14:46:31.603Z", 
+    "modified": "2015-07-06T14:46:31.603Z", 
+    "start": "2015-07-17", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 123, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "i-camini"
+    ], 
+    "end": "2015-07-24", 
+    "sunbeds": 2, 
+    "mobile": "3317359300", 
+    "created": "2015-07-06T16:38:44.729Z", 
+    "modified": "2015-07-06T16:38:44.729Z", 
+    "start": "2015-07-18", 
+    "email": "realsoundrecord@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 124, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-100-sole-caliente"
+    ], 
+    "end": "2015-08-19", 
+    "sunbeds": 2, 
+    "mobile": "334300237", 
+    "created": "2015-07-06T21:05:59.700Z", 
+    "modified": "2015-07-06T21:05:59.700Z", 
+    "start": "2015-08-15", 
+    "email": "mauri.paolo@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -73285,7 +73438,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-06-16T13:55:16.312Z", 
+    "last_login": "2015-07-06T09:49:08.836Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -73303,7 +73456,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-06-14T14:23:02.535Z", 
+    "last_login": "2015-07-06T11:16:27.314Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
