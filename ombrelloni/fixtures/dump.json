@@ -25851,8 +25851,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2416931390762329 44.7326080429677617)", 
-    "modified": "2015-06-16T15:40:23.732Z", 
-    "description_en": null, 
+    "modified": "2015-07-07T10:12:29.055Z", 
+    "description_en": "", 
     "number": "36", 
     "languages": [
       [
@@ -25864,25 +25864,28 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "catering"
       ], 
       [
-        "beach-racket-court"
+        "baby-park"
+      ], 
+      [
+        "beach-volley"
       ], 
       [
         "wi-fi"
       ], 
       [
-        "sailing"
+        "children-entertainment"
       ], 
       [
-        "schoolchildren"
+        "dance-classes"
       ], 
       [
-        "beach-volley"
+        "ping-pong"
+      ], 
+      [
+        "entertainment"
       ], 
       [
         "dancing"
@@ -25891,30 +25894,27 @@
         "acquagym"
       ], 
       [
-        "baby-park"
-      ], 
-      [
         "pedal-boats"
       ], 
       [
-        "petanque"
-      ], 
-      [
-        "children-entertainment"
-      ], 
-      [
-        "ping-pong"
+        "beach-racket-court"
       ], 
       [
         "canoes"
       ], 
       [
-        "dance-classes"
+        "schoolchildren"
+      ], 
+      [
+        "sailing"
+      ], 
+      [
+        "petanque"
       ]
     ], 
     "address": "Viale Egitto, 45", 
-    "description_it": null, 
-    "mail": "info@icamini.org", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "i-camini", 
     "neighbourhood": [
@@ -59234,6 +59234,57 @@
     "modified": "2015-07-06T21:05:59.700Z", 
     "start": "2015-08-15", 
     "email": "mauri.paolo@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 125, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-da-gigi"
+    ], 
+    "end": "2015-08-10", 
+    "sunbeds": 2, 
+    "mobile": "3312578984", 
+    "created": "2015-07-07T09:35:35.221Z", 
+    "modified": "2015-07-07T09:35:35.221Z", 
+    "start": "2015-08-08", 
+    "email": "matteo.geroldi@boglioli.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 126, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 2, 
+    "mobile": "3470679112", 
+    "created": "2015-07-07T13:14:21.470Z", 
+    "modified": "2015-07-07T13:14:21.470Z", 
+    "start": "2015-07-25", 
+    "email": "cprina20@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 127, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2015-08-28", 
+    "sunbeds": 2, 
+    "mobile": "3287199046", 
+    "created": "2015-07-07T16:39:10.054Z", 
+    "modified": "2015-07-07T16:39:10.054Z", 
+    "start": "2015-07-20", 
+    "email": "crystyn05@yahoo.it", 
     "umbrellas": 1
   }
 },
