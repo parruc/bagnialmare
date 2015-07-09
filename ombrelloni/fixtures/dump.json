@@ -57001,7 +57001,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4924079999999993 44.1261810000000025)", 
-    "modified": "2015-06-21T13:12:08.905Z", 
+    "modified": "2015-07-08T04:19:13.374Z", 
     "description_en": "", 
     "number": "93", 
     "languages": [
@@ -57016,7 +57016,7 @@
     "address": "Via A. Pinzon 231", 
     "description_it": "", 
     "mail": "michele@bagno93.it", 
-    "accepts_booking": true, 
+    "accepts_booking": false, 
     "slug": "bagno-da-gigi", 
     "neighbourhood": [
       "igea-marina"
