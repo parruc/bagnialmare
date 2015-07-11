@@ -59289,6 +59289,40 @@
   }
 },
 {
+  "pk": 128, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-picnic"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 2, 
+    "mobile": "3474283963", 
+    "created": "2015-07-10T13:55:01.355Z", 
+    "modified": "2015-07-10T13:55:01.355Z", 
+    "start": "2015-07-16", 
+    "email": "grbevin@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 129, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "sayonara"
+    ], 
+    "end": "2015-08-28", 
+    "sunbeds": 5, 
+    "mobile": "3492550273", 
+    "created": "2015-07-10T14:22:55.850Z", 
+    "modified": "2015-07-10T14:22:55.850Z", 
+    "start": "2015-08-16", 
+    "email": "pretiluca244@gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
