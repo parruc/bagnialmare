@@ -59323,6 +59323,40 @@
   }
 },
 {
+  "pk": 130, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "venere"
+    ], 
+    "end": "2015-07-11", 
+    "sunbeds": 2, 
+    "mobile": "3490944229", 
+    "created": "2015-07-11T09:32:52.161Z", 
+    "modified": "2015-07-11T09:32:52.161Z", 
+    "start": "2015-07-11", 
+    "email": "alicecervellati@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 131, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "jamaica"
+    ], 
+    "end": "2015-07-12", 
+    "sunbeds": 5, 
+    "mobile": "3802525665", 
+    "created": "2015-07-11T14:23:05.380Z", 
+    "modified": "2015-07-11T14:23:05.380Z", 
+    "start": "2015-07-12", 
+    "email": "giuliascaringi@hotmail.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
