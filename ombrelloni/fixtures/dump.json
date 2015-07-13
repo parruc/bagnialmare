@@ -22235,8 +22235,8 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2459363937377930 44.6732002803897359)", 
-    "modified": "2015-06-16T15:40:23.467Z", 
-    "description_en": null, 
+    "modified": "2015-07-12T08:33:32.378Z", 
+    "description_en": "", 
     "number": "2", 
     "languages": [
       [
@@ -22288,8 +22288,8 @@
       ]
     ], 
     "address": "Via Spiaggia, 2", 
-    "description_it": null, 
-    "mail": "info@bagnosayonara.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "sayonara", 
     "neighbourhood": [
@@ -57000,23 +57000,16 @@
     "site": "http://www.bagno93.it/", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.4924079999999993 44.1261810000000025)", 
-    "modified": "2015-07-08T04:19:13.374Z", 
+    "point": "POINT (12.4924079999999869 44.1261810000000025)", 
+    "modified": "2015-07-12T08:35:43.754Z", 
     "description_en": "", 
     "number": "93", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [], 
     "address": "Via A. Pinzon 231", 
     "description_it": "", 
-    "mail": "michele@bagno93.it", 
-    "accepts_booking": false, 
+    "mail": "", 
+    "accepts_booking": true, 
     "slug": "bagno-da-gigi", 
     "neighbourhood": [
       "igea-marina"
@@ -59354,6 +59347,108 @@
     "start": "2015-07-12", 
     "email": "giuliascaringi@hotmail.it", 
     "umbrellas": 2
+  }
+},
+{
+  "pk": 132, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "granchio"
+    ], 
+    "end": "2015-07-23", 
+    "sunbeds": 3, 
+    "mobile": "3457964262", 
+    "created": "2015-07-12T07:46:11.181Z", 
+    "modified": "2015-07-12T07:46:11.181Z", 
+    "start": "2015-07-14", 
+    "email": "massimotracchi@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 133, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "granchio"
+    ], 
+    "end": "2015-08-23", 
+    "sunbeds": 3, 
+    "mobile": "3457964262", 
+    "created": "2015-07-12T07:54:38.619Z", 
+    "modified": "2015-07-12T07:54:38.619Z", 
+    "start": "2015-08-14", 
+    "email": "massimotracchi@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 134, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-100-sole-caliente"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 3, 
+    "mobile": "3475670700", 
+    "created": "2015-07-12T08:49:00.947Z", 
+    "modified": "2015-07-12T08:49:00.947Z", 
+    "start": "2015-07-24", 
+    "email": "marco.benvenuto1@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 135, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-baloo"
+    ], 
+    "end": "2015-07-18", 
+    "sunbeds": 2, 
+    "mobile": "3313505817", 
+    "created": "2015-07-12T21:24:46.243Z", 
+    "modified": "2015-07-12T21:24:46.243Z", 
+    "start": "2015-07-18", 
+    "email": "valia980@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 136, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-bologna-2"
+    ], 
+    "end": "2015-07-18", 
+    "sunbeds": 2, 
+    "mobile": "3313505817", 
+    "created": "2015-07-12T21:26:19.155Z", 
+    "modified": "2015-07-12T21:26:19.155Z", 
+    "start": "2015-07-18", 
+    "email": "valia980@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 137, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-nautilus-beach"
+    ], 
+    "end": "2015-07-18", 
+    "sunbeds": 2, 
+    "mobile": "3313505817", 
+    "created": "2015-07-12T21:28:12.190Z", 
+    "modified": "2015-07-12T21:28:12.190Z", 
+    "start": "2015-07-18", 
+    "email": "valia980@tahoo.it", 
+    "umbrellas": 1
   }
 },
 {
@@ -73611,7 +73706,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-06-25T16:29:04.294Z", 
+    "last_login": "2015-07-12T08:25:55.620Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$Vmg9YYCx9P2L$EuB2NVB0dxU5az6f7GP+urxFkLa/gAPiYSK0myU42+o=", 
