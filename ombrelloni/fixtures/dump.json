@@ -59452,6 +59452,40 @@
   }
 },
 {
+  "pk": 138, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "campo-del-sole"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 2, 
+    "mobile": "3200448590", 
+    "created": "2015-07-13T06:32:45.670Z", 
+    "modified": "2015-07-13T06:32:45.670Z", 
+    "start": "2015-08-16", 
+    "email": "maria-bassano@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 139, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-luca"
+    ], 
+    "end": "2015-07-17", 
+    "sunbeds": 1, 
+    "mobile": "3472716458", 
+    "created": "2015-07-13T14:23:03.028Z", 
+    "modified": "2015-07-13T14:23:03.028Z", 
+    "start": "2015-07-14", 
+    "email": "morgan.zappaterra@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
