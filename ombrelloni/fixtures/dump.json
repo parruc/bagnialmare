@@ -59486,6 +59486,40 @@
   }
 },
 {
+  "pk": 140, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marisa"
+    ], 
+    "end": "2015-08-01", 
+    "sunbeds": 2, 
+    "mobile": "3394426576", 
+    "created": "2015-07-14T14:08:35.966Z", 
+    "modified": "2015-07-14T14:08:35.966Z", 
+    "start": "2015-07-18", 
+    "email": "haruko75@gmai.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 141, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-adriana-birimbao-beach"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 2, 
+    "mobile": "3319577363", 
+    "created": "2015-07-14T20:43:46.804Z", 
+    "modified": "2015-07-14T20:43:46.804Z", 
+    "start": "2015-08-22", 
+    "email": "Peppedemasi97@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
