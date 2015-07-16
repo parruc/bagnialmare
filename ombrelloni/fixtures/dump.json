@@ -59520,6 +59520,74 @@
   }
 },
 {
+  "pk": 142, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-marina-grande"
+    ], 
+    "end": "2015-07-19", 
+    "sunbeds": 2, 
+    "mobile": "3452573300", 
+    "created": "2015-07-15T04:13:46.467Z", 
+    "modified": "2015-07-15T04:13:46.467Z", 
+    "start": "2015-07-18", 
+    "email": "martina.tubini@Hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 143, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "egisto"
+    ], 
+    "end": "2015-07-19", 
+    "sunbeds": 2, 
+    "mobile": "3452573300", 
+    "created": "2015-07-15T04:15:58.157Z", 
+    "modified": "2015-07-15T04:15:58.157Z", 
+    "start": "2015-07-18", 
+    "email": "martina.tubini@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 144, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-palm-beach-2"
+    ], 
+    "end": "2015-07-19", 
+    "sunbeds": 4, 
+    "mobile": "3471523737", 
+    "created": "2015-07-15T14:02:44.316Z", 
+    "modified": "2015-07-15T14:02:44.316Z", 
+    "start": "2015-07-19", 
+    "email": "f0609@libero.it", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 145, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ventaglio"
+    ], 
+    "end": "2015-07-19", 
+    "sunbeds": 4, 
+    "mobile": "3471523737", 
+    "created": "2015-07-15T14:03:45.888Z", 
+    "modified": "2015-07-15T14:03:45.888Z", 
+    "start": "2015-07-19", 
+    "email": "f0609@libero.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
