@@ -59622,6 +59622,40 @@
   }
 },
 {
+  "pk": 148, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-07-18", 
+    "sunbeds": 2, 
+    "mobile": "3288491641", 
+    "created": "2015-07-17T08:42:05.748Z", 
+    "modified": "2015-07-17T08:42:05.748Z", 
+    "start": "2015-07-18", 
+    "email": "gigia82@icloud.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 149, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "flamingo"
+    ], 
+    "end": "2015-07-19", 
+    "sunbeds": 4, 
+    "mobile": "3381190746", 
+    "created": "2015-07-17T09:42:22.709Z", 
+    "modified": "2015-07-17T09:42:22.709Z", 
+    "start": "2015-07-19", 
+    "email": "legnago@soloaffitti.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
