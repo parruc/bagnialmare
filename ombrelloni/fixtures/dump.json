@@ -59656,6 +59656,23 @@
   }
 },
 {
+  "pk": 150, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "haiti"
+    ], 
+    "end": "2015-09-03", 
+    "sunbeds": 2, 
+    "mobile": "333 248 0283 ", 
+    "created": "2015-07-18T17:37:31.805Z", 
+    "modified": "2015-07-18T17:37:31.805Z", 
+    "start": "2015-08-25", 
+    "email": "elenafava79@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
