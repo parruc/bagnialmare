@@ -59673,6 +59673,23 @@
   }
 },
 {
+  "pk": 151, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "haiti"
+    ], 
+    "end": "2015-07-27", 
+    "sunbeds": 2, 
+    "mobile": "3312421903", 
+    "created": "2015-07-19T09:18:09.566Z", 
+    "modified": "2015-07-19T09:18:09.566Z", 
+    "start": "2015-07-20", 
+    "email": "ele_f86@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
