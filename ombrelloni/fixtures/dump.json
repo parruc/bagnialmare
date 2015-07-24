@@ -59690,6 +59690,23 @@
   }
 },
 {
+  "pk": 152, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "giovanna"
+    ], 
+    "end": "2015-08-14", 
+    "sunbeds": 3, 
+    "mobile": "339 6281126", 
+    "created": "2015-07-23T19:01:58.187Z", 
+    "modified": "2015-07-23T19:01:58.187Z", 
+    "start": "2015-08-09", 
+    "email": "giorgiapippo@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
