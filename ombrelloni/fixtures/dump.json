@@ -59707,6 +59707,23 @@
   }
 },
 {
+  "pk": 153, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-100-sole-caliente"
+    ], 
+    "end": "2015-07-26", 
+    "sunbeds": 2, 
+    "mobile": "3403017624", 
+    "created": "2015-07-24T08:48:20.455Z", 
+    "modified": "2015-07-24T08:48:20.455Z", 
+    "start": "2015-07-25", 
+    "email": "nunziaperla@hotmail.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
