@@ -59724,6 +59724,40 @@
   }
 },
 {
+  "pk": 154, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-papirriki"
+    ], 
+    "end": "2015-08-16", 
+    "sunbeds": 2, 
+    "mobile": "3358376731", 
+    "created": "2015-07-25T07:13:46.675Z", 
+    "modified": "2015-07-25T07:13:46.675Z", 
+    "start": "2015-08-08", 
+    "email": "aldo@tonotek.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 155, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marte"
+    ], 
+    "end": "2015-08-12", 
+    "sunbeds": 2, 
+    "mobile": "3423290226", 
+    "created": "2015-07-25T16:30:27.294Z", 
+    "modified": "2015-07-25T16:30:27.294Z", 
+    "start": "2015-08-03", 
+    "email": "almagno.valerio@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
