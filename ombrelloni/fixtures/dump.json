@@ -35555,7 +35555,7 @@
     "description": "<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 250<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tcabine: 24<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2869126860000009 44.4709771899999993)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2015-07-27T21:09:57.327Z", 
     "description_en": "<h3>Details</h3>\n\t<p>wc: 6<br />\n\tombrelloni: 250<br />\n\twc disabili: 1<br />\n\tlettini: 700<br />\n\tcabine: 24<br />\n\tdocce chiuse: 1<br />\n\tcabine disabili: 1<br />\n\tdocce aperte: 4</p>", 
     "number": "", 
     "languages": [
@@ -35588,7 +35588,7 @@
     ], 
     "address": "Viale dell Nazioni, 64", 
     "description_it": null, 
-    "mail": "toto@toto-beach.it", 
+    "mail": "sara.pagani@hotmail.it", 
     "accepts_booking": true, 
     "slug": "bagno-toto-beach-bar", 
     "neighbourhood": [
@@ -59758,6 +59758,40 @@
   }
 },
 {
+  "pk": 156, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "sport"
+    ], 
+    "end": "2015-08-29", 
+    "sunbeds": 2, 
+    "mobile": "3474483716", 
+    "created": "2015-07-27T16:33:35.715Z", 
+    "modified": "2015-07-27T16:33:35.715Z", 
+    "start": "2015-08-01", 
+    "email": "zmarisa.luminari@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 157, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "clodia"
+    ], 
+    "end": "2015-07-27", 
+    "sunbeds": 2, 
+    "mobile": "49123123456", 
+    "created": "2015-07-27T18:28:42.452Z", 
+    "modified": "2015-07-27T18:28:42.453Z", 
+    "start": "2015-07-27", 
+    "email": "a@hotmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -72471,6 +72505,26 @@
   }
 },
 {
+  "pk": 46, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 42, 
+    "key": "ddf52f2819d66dfd8d8056025b218de6f00e7d6a49386a023e5d91c753fe311c", 
+    "sent": "2015-07-27T21:09:58.237Z", 
+    "created": "2015-07-27T21:09:57.973Z"
+  }
+},
+{
+  "pk": 47, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 42, 
+    "key": "974387d00b177623a40f838a0344bc0d824c78d91292a93d48a8aee8893f2963", 
+    "sent": "2015-07-27T21:15:11.483Z", 
+    "created": "2015-07-27T21:15:11.288Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -74435,6 +74489,24 @@
   }
 },
 {
+  "pk": 46, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "sara.pagani", 
+    "first_name": "Sara", 
+    "last_name": "Pagani", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2015-07-27T21:09:56.609Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$gN7BtXHpcFkS$wmQZuFMKMHbOE57zo3KqLQeOZgdu5DQvpbXSSWme9TE=", 
+    "email": "sara.pagani@hotmail.it", 
+    "date_joined": "2015-07-27T21:09:56.609Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -74752,6 +74824,18 @@
     ], 
     "primary": true, 
     "email": "info@fafin.it"
+  }
+},
+{
+  "pk": 42, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "sara.pagani"
+    ], 
+    "primary": true, 
+    "email": "sara.pagani@hotmail.it"
   }
 },
 {
@@ -75309,6 +75393,26 @@
   }
 },
 {
+  "pk": 39, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Pagani", 
+    "name": "Sara", 
+    "created": "2015-07-27T21:09:56.755Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2015-07-27T21:09:57.080Z", 
+    "user": [
+      "sara.pagani"
+    ], 
+    "bagni": [
+      [
+        "bagno-toto-beach-bar"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -75576,6 +75680,16 @@
       "info10"
     ], 
     "old_email": "info@fafin.it"
+  }
+},
+{
+  "pk": 33, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "sara.pagani"
+    ], 
+    "old_email": "sara.pagani@hotmail.it"
   }
 },
 {
