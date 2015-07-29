@@ -27122,12 +27122,12 @@
   "pk": 13149, 
   "model": "bagni.bagno", 
   "fields": {
-    "site": "www.campingmarepineta.com", 
+    "site": "", 
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2486668825149536 44.6560121031508857)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": null, 
+    "modified": "2015-07-28T14:10:31.717Z", 
+    "description_en": "", 
     "number": "37", 
     "languages": [
       [
@@ -27139,24 +27139,24 @@
     ], 
     "services": [
       [
-        "entertainment"
-      ], 
-      [
         "five-a-side"
       ], 
       [
-        "beach-volley"
+        "petanque"
       ], 
       [
         "beach-racket-court"
       ], 
       [
-        "petanque"
+        "entertainment"
+      ], 
+      [
+        "beach-volley"
       ]
     ], 
     "address": "Via Spiaggia, 37", 
-    "description_it": null, 
-    "mail": "info@campingmarepineta.com", 
+    "description_it": "", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "haiti", 
     "neighbourhood": [
@@ -59792,6 +59792,431 @@
   }
 },
 {
+  "pk": 158, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-cerviamare"
+    ], 
+    "end": "2015-07-31", 
+    "sunbeds": 1, 
+    "mobile": "3480751412", 
+    "created": "2015-07-28T09:27:06.440Z", 
+    "modified": "2015-07-28T09:27:06.440Z", 
+    "start": "2015-07-29", 
+    "email": "hidekazu.tenore@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 159, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-cerviamare"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:43:08.253Z", 
+    "modified": "2015-07-28T09:43:08.253Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 160, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "clodia"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:43:48.152Z", 
+    "modified": "2015-07-28T09:43:48.152Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 161, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "sport"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:44:22.590Z", 
+    "modified": "2015-07-28T09:44:22.591Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 162, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marte"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:44:55.292Z", 
+    "modified": "2015-07-28T09:44:55.292Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 163, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-papirriki"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:45:21.506Z", 
+    "modified": "2015-07-28T09:45:21.506Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 164, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-100-sole-caliente"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:45:46.732Z", 
+    "modified": "2015-07-28T09:45:46.732Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 165, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "haiti"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:46:09.973Z", 
+    "modified": "2015-07-28T09:46:09.973Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 166, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "flamingo"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:46:30.547Z", 
+    "modified": "2015-07-28T09:46:30.547Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 167, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-ventaglio"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:46:50.831Z", 
+    "modified": "2015-07-28T09:46:50.831Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 168, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-palm-beach-2"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:47:16.423Z", 
+    "modified": "2015-07-28T09:47:16.423Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 169, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "egisto"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:47:44.023Z", 
+    "modified": "2015-07-28T09:47:44.023Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 170, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-marina-grande"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:48:06.365Z", 
+    "modified": "2015-07-28T09:48:06.365Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 171, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-adriana-birimbao-beach"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:48:28.533Z", 
+    "modified": "2015-07-28T09:48:28.534Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 172, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marisa"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:48:44.922Z", 
+    "modified": "2015-07-28T09:48:44.922Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 173, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-luca"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:49:03.422Z", 
+    "modified": "2015-07-28T09:49:03.422Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 174, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "campo-del-sole"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:49:19.835Z", 
+    "modified": "2015-07-28T09:49:19.835Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 175, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-nautilus-beach"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:49:36.493Z", 
+    "modified": "2015-07-28T09:49:36.493Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 176, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-bologna-2"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:49:52.543Z", 
+    "modified": "2015-07-28T09:49:52.543Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 177, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-baloo"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:50:09.314Z", 
+    "modified": "2015-07-28T09:50:09.314Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 178, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "granchio"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:50:25.914Z", 
+    "modified": "2015-07-28T09:50:25.914Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 179, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "jamaica"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:50:47.866Z", 
+    "modified": "2015-07-28T09:50:47.866Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 180, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "venere"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-07-28T09:51:04.512Z", 
+    "modified": "2015-07-28T09:51:04.512Z", 
+    "start": "2015-08-03", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 181, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "turquoise-beach-club"
+    ], 
+    "end": "2015-08-06", 
+    "sunbeds": 5, 
+    "mobile": "3405017407", 
+    "created": "2015-07-28T12:44:09.821Z", 
+    "modified": "2015-07-28T12:44:09.821Z", 
+    "start": "2015-08-03", 
+    "email": "chiaratasso@hotmail.it", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 182, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "prey-fun-beach"
+    ], 
+    "end": "2015-08-15", 
+    "sunbeds": 2, 
+    "mobile": "3475652481", 
+    "created": "2015-07-28T13:38:17.191Z", 
+    "modified": "2015-07-28T13:38:17.192Z", 
+    "start": "2015-08-08", 
+    "email": "cavallari.simonetta63@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -74012,7 +74437,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-07-06T09:49:08.836Z", 
+    "last_login": "2015-07-28T10:04:25.347Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
