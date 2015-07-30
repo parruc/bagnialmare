@@ -60217,6 +60217,40 @@
   }
 },
 {
+  "pk": 183, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-montanari-praia-do-jacare"
+    ], 
+    "end": "2015-08-21", 
+    "sunbeds": 2, 
+    "mobile": "3476573534", 
+    "created": "2015-07-29T08:18:26.170Z", 
+    "modified": "2015-07-29T08:18:26.171Z", 
+    "start": "2015-08-08", 
+    "email": "romina.renieri@generaspa.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 184, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-picnic"
+    ], 
+    "end": "2015-08-10", 
+    "sunbeds": 2, 
+    "mobile": "3401440709", 
+    "created": "2015-07-29T16:34:50.646Z", 
+    "modified": "2015-07-29T16:34:50.646Z", 
+    "start": "2015-08-09", 
+    "email": "giuliadelia1987@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
