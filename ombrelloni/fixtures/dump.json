@@ -60251,6 +60251,23 @@
   }
 },
 {
+  "pk": 185, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-lina"
+    ], 
+    "end": "2015-08-22", 
+    "sunbeds": 4, 
+    "mobile": "3382351661", 
+    "created": "2015-08-02T16:56:08.947Z", 
+    "modified": "2015-08-02T16:56:08.947Z", 
+    "start": "2015-08-15", 
+    "email": "manuelasintucci@Gmail.com", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
