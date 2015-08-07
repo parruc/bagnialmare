@@ -60268,6 +60268,91 @@
   }
 },
 {
+  "pk": 186, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-lina"
+    ], 
+    "end": "2015-08-23", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-06T09:59:17.517Z", 
+    "modified": "2015-08-06T09:59:17.517Z", 
+    "start": "2015-08-17", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 187, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-picnic"
+    ], 
+    "end": "2015-08-23", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-06T09:59:55.750Z", 
+    "modified": "2015-08-06T09:59:55.750Z", 
+    "start": "2015-08-17", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 188, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-montanari-praia-do-jacare"
+    ], 
+    "end": "2015-08-23", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-06T10:00:31.350Z", 
+    "modified": "2015-08-06T10:00:31.350Z", 
+    "start": "2015-08-17", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 189, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "prey-fun-beach"
+    ], 
+    "end": "2015-08-23", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-06T10:01:31.460Z", 
+    "modified": "2015-08-06T10:01:31.460Z", 
+    "start": "2015-08-17", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 190, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "turquoise-beach-club"
+    ], 
+    "end": "2015-08-23", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-06T10:01:53.166Z", 
+    "modified": "2015-08-06T10:01:53.166Z", 
+    "start": "2015-08-17", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
