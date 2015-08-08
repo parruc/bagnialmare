@@ -60353,6 +60353,23 @@
   }
 },
 {
+  "pk": 191, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-sara-beach"
+    ], 
+    "end": "2015-08-08", 
+    "sunbeds": 4, 
+    "mobile": "3483460961", 
+    "created": "2015-08-07T14:33:27.361Z", 
+    "modified": "2015-08-07T14:33:27.361Z", 
+    "start": "2015-08-08", 
+    "email": "fmichele73@alice.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
