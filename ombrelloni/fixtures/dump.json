@@ -60370,6 +60370,40 @@
   }
 },
 {
+  "pk": 192, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-garden-beach"
+    ], 
+    "end": "2015-08-09", 
+    "sunbeds": 6, 
+    "mobile": "3395415505", 
+    "created": "2015-08-09T08:36:50.664Z", 
+    "modified": "2015-08-09T08:36:50.664Z", 
+    "start": "2015-08-09", 
+    "email": "ag.calda@alice.it", 
+    "umbrellas": 3
+  }
+},
+{
+  "pk": 193, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "enrico"
+    ], 
+    "end": "2015-08-21", 
+    "sunbeds": 1, 
+    "mobile": "3208338082", 
+    "created": "2015-08-09T16:14:25.549Z", 
+    "modified": "2015-08-09T16:14:25.549Z", 
+    "start": "2015-08-16", 
+    "email": "marta.marenzana@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
