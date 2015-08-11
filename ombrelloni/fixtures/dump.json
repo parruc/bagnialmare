@@ -60404,6 +60404,57 @@
   }
 },
 {
+  "pk": 194, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "roma"
+    ], 
+    "end": "2015-08-21", 
+    "sunbeds": 2, 
+    "mobile": "3332955131", 
+    "created": "2015-08-10T09:23:27.337Z", 
+    "modified": "2015-08-10T09:23:27.337Z", 
+    "start": "2015-08-15", 
+    "email": "davoli.n@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 195, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "serena-2"
+    ], 
+    "end": "2015-08-10", 
+    "sunbeds": 6, 
+    "mobile": "3892064318 ", 
+    "created": "2015-08-10T12:00:41.298Z", 
+    "modified": "2015-08-10T12:00:41.298Z", 
+    "start": "2015-08-10", 
+    "email": "marco_pierobon@hotmail.it", 
+    "umbrellas": 2
+  }
+},
+{
+  "pk": 196, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "astor"
+    ], 
+    "end": "2015-08-28", 
+    "sunbeds": 2, 
+    "mobile": "3479284169", 
+    "created": "2015-08-10T14:10:35.077Z", 
+    "modified": "2015-08-10T14:10:35.077Z", 
+    "start": "2015-08-24", 
+    "email": "sordoteresa@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
