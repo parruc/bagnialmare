@@ -60591,6 +60591,57 @@
   }
 },
 {
+  "pk": 205, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "roma"
+    ], 
+    "end": "2015-08-29", 
+    "sunbeds": 2, 
+    "mobile": "3270326848", 
+    "created": "2015-08-16T13:34:18.286Z", 
+    "modified": "2015-08-16T13:34:18.286Z", 
+    "start": "2015-08-23", 
+    "email": "zecchinidonatella73@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 206, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "campo-del-sole"
+    ], 
+    "end": "2015-08-29", 
+    "sunbeds": 2, 
+    "mobile": "3270326848", 
+    "created": "2015-08-16T13:35:53.557Z", 
+    "modified": "2015-08-16T13:35:53.557Z", 
+    "start": "2015-08-23", 
+    "email": "zecchinidonatella73@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 207, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "m-31"
+    ], 
+    "end": "2015-08-29", 
+    "sunbeds": 2, 
+    "mobile": "3270326848", 
+    "created": "2015-08-16T13:41:28.499Z", 
+    "modified": "2015-08-16T13:41:28.499Z", 
+    "start": "2015-08-23", 
+    "email": "zecchinidonatella73@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
