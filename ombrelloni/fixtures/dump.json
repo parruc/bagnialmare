@@ -60642,6 +60642,91 @@
   }
 },
 {
+  "pk": 208, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "capri"
+    ], 
+    "end": "2015-08-28", 
+    "sunbeds": 2, 
+    "mobile": "3402843292", 
+    "created": "2015-08-18T11:31:08.608Z", 
+    "modified": "2015-08-18T11:31:08.608Z", 
+    "start": "2015-08-20", 
+    "email": "kikka09@hotmsil.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 209, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-chaplyn"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-18T11:48:06.847Z", 
+    "modified": "2015-08-18T11:48:06.847Z", 
+    "start": "2015-08-24", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 210, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "chalet-del-mare"
+    ], 
+    "end": "2015-08-18", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-18T11:48:43.460Z", 
+    "modified": "2015-08-18T11:48:43.460Z", 
+    "start": "2015-08-18", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 211, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-paparazzi"
+    ], 
+    "end": "2015-08-29", 
+    "sunbeds": 2, 
+    "mobile": "3348550800", 
+    "created": "2015-08-18T19:27:38.287Z", 
+    "modified": "2015-08-18T19:27:38.287Z", 
+    "start": "2015-08-24", 
+    "email": "miriamb62@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 212, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-stefano-beach"
+    ], 
+    "end": "2015-08-29", 
+    "sunbeds": 2, 
+    "mobile": "3348550800", 
+    "created": "2015-08-18T19:42:40.534Z", 
+    "modified": "2015-08-18T19:42:40.534Z", 
+    "start": "2015-08-24", 
+    "email": "miriamb62@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
