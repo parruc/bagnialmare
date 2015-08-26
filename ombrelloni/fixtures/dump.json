@@ -7454,11 +7454,11 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1500<br />\r\n\tfronte mare: 23<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>", 
+    "description": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 1500<br />\r\nfronte mare: 23<br />\r\ndocce aperte: 2<br />\r\nwc: 3</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.3566787980000008 44.2702752000000004)", 
-    "modified": "2014-07-04T13:38:24.877Z", 
-    "description_en": "<h3>Details</h3>\r\n\t<p>superficie complessiva spiaggia: 1500<br />\r\n\tfronte mare: 23<br />\r\n\tdocce aperte: 2<br />\r\n\twc: 3</p>", 
+    "modified": "2015-08-25T10:05:59.775Z", 
+    "description_en": "<h3>Details</h3>\r\n\r\n<p>superficie complessiva spiaggia: 1500<br />\r\nfronte mare: 23<br />\r\ndocce aperte: 2<br />\r\nwc: 3</p>\r\n", 
     "number": "241", 
     "languages": [
       [
@@ -7470,10 +7470,7 @@
     ], 
     "services": [
       [
-        "basketball"
-      ], 
-      [
-        "ping-pong"
+        "bar"
       ], 
       [
         "baby-park"
@@ -7506,10 +7503,13 @@
         "beach-soccer"
       ], 
       [
-        "bar"
+        "beach-racket-court"
       ], 
       [
-        "beach-racket-court"
+        "ping-pong"
+      ], 
+      [
+        "basketball"
       ], 
       [
         "theme-parties"
@@ -7517,7 +7517,7 @@
     ], 
     "address": "Viale Pietro Mascagni - arenile demaniale 241", 
     "description_it": "", 
-    "mail": "zanetti-fo@libero.it", 
+    "mail": "", 
     "accepts_booking": true, 
     "slug": "bagno-stefano-beach", 
     "neighbourhood": [
@@ -60727,6 +60727,108 @@
   }
 },
 {
+  "pk": 213, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "sirenetta"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 2, 
+    "mobile": "3389386412", 
+    "created": "2015-08-25T10:00:25.148Z", 
+    "modified": "2015-08-25T10:00:25.148Z", 
+    "start": "2015-08-29", 
+    "email": "g.koerner102@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 214, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "campo-del-sole"
+    ], 
+    "end": "2015-09-06", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-25T10:01:02.661Z", 
+    "modified": "2015-08-25T10:01:02.661Z", 
+    "start": "2015-08-31", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 215, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "m-31"
+    ], 
+    "end": "2015-09-06", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-25T10:01:23.019Z", 
+    "modified": "2015-08-25T10:01:23.019Z", 
+    "start": "2015-08-31", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 216, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-paparazzi"
+    ], 
+    "end": "2015-09-06", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-25T10:01:39.999Z", 
+    "modified": "2015-08-25T10:01:39.999Z", 
+    "start": "2015-08-31", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 217, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "roma"
+    ], 
+    "end": "2015-09-06", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-25T10:01:57.317Z", 
+    "modified": "2015-08-25T10:01:57.317Z", 
+    "start": "2015-08-31", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 218, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-stefano-beach"
+    ], 
+    "end": "2015-09-06", 
+    "sunbeds": 2, 
+    "mobile": "3489032776", 
+    "created": "2015-08-25T10:02:15.566Z", 
+    "modified": "2015-08-25T10:02:15.566Z", 
+    "start": "2015-08-31", 
+    "email": "parruc@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -74947,7 +75049,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-07-28T10:04:25.347Z", 
+    "last_login": "2015-08-25T10:05:25.976Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
