@@ -60829,6 +60829,40 @@
   }
 },
 {
+  "pk": 219, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-papirriki"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 6, 
+    "mobile": "3203493253", 
+    "created": "2015-08-27T08:04:47.405Z", 
+    "modified": "2015-08-27T08:04:47.405Z", 
+    "start": "2015-08-30", 
+    "email": "rekarvic@hotmail.com", 
+    "umbrellas": 5
+  }
+},
+{
+  "pk": 220, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-papirriki"
+    ], 
+    "end": "2015-08-30", 
+    "sunbeds": 6, 
+    "mobile": "3203493253", 
+    "created": "2015-08-27T08:05:39.569Z", 
+    "modified": "2015-08-27T08:05:39.569Z", 
+    "start": "2015-08-30", 
+    "email": "rekarvic@hotmail.it", 
+    "umbrellas": 5
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
