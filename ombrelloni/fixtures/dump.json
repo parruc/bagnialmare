@@ -60863,6 +60863,23 @@
   }
 },
 {
+  "pk": 221, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "tahiti"
+    ], 
+    "end": "2015-09-06", 
+    "sunbeds": 2, 
+    "mobile": "3338329437", 
+    "created": "2015-09-03T07:41:17.707Z", 
+    "modified": "2015-09-03T07:41:17.707Z", 
+    "start": "2015-09-06", 
+    "email": "mirellina888@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
