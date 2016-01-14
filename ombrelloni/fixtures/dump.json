@@ -60880,6 +60880,23 @@
   }
 },
 {
+  "pk": 222, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-bianconero"
+    ], 
+    "end": "2016-09-04", 
+    "sunbeds": 2, 
+    "mobile": "3403940966", 
+    "created": "2016-01-13T14:21:49.909Z", 
+    "modified": "2016-01-13T14:21:49.909Z", 
+    "start": "2016-08-23", 
+    "email": "giaonsimone@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
