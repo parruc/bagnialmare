@@ -60897,6 +60897,23 @@
   }
 },
 {
+  "pk": 223, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-007"
+    ], 
+    "end": "2016-09-15", 
+    "sunbeds": 2, 
+    "mobile": "3453475840", 
+    "created": "2016-01-26T08:10:03.827Z", 
+    "modified": "2016-01-26T08:10:03.827Z", 
+    "start": "2016-06-01", 
+    "email": "donatellazanotti70@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
