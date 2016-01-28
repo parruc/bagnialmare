@@ -60914,6 +60914,23 @@
   }
 },
 {
+  "pk": 224, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marte"
+    ], 
+    "end": "2016-08-05", 
+    "sunbeds": 3, 
+    "mobile": "3402294523", 
+    "created": "2016-01-27T16:45:57.958Z", 
+    "modified": "2016-01-27T16:45:57.958Z", 
+    "start": "2016-07-24", 
+    "email": "zaiamara55@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
