@@ -60931,6 +60931,57 @@
   }
 },
 {
+  "pk": 225, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "dorian"
+    ], 
+    "end": "2016-08-05", 
+    "sunbeds": 3, 
+    "mobile": "3402294523", 
+    "created": "2016-01-31T20:13:43.512Z", 
+    "modified": "2016-01-31T20:13:43.512Z", 
+    "start": "2016-07-24", 
+    "email": "zaiamara55@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 226, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marte"
+    ], 
+    "end": "2016-08-05", 
+    "sunbeds": 3, 
+    "mobile": "3402294523", 
+    "created": "2016-01-31T20:15:50.282Z", 
+    "modified": "2016-01-31T20:15:50.282Z", 
+    "start": "2016-07-24", 
+    "email": "zaiamara55@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 227, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "marfisa"
+    ], 
+    "end": "2016-08-05", 
+    "sunbeds": 3, 
+    "mobile": "3402294523", 
+    "created": "2016-01-31T20:18:33.582Z", 
+    "modified": "2016-01-31T20:18:33.582Z", 
+    "start": "2016-07-24", 
+    "email": "zaiamara55@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
