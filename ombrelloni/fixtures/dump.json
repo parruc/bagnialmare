@@ -60982,6 +60982,23 @@
   }
 },
 {
+  "pk": 228, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-sara-beach"
+    ], 
+    "end": "2016-07-29", 
+    "sunbeds": 2, 
+    "mobile": "32011100 02", 
+    "created": "2016-02-11T10:32:25.572Z", 
+    "modified": "2016-02-11T10:32:25.572Z", 
+    "start": "2016-07-02", 
+    "email": "ponna778@yahoo.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
