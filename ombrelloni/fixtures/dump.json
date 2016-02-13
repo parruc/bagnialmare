@@ -60999,6 +60999,23 @@
   }
 },
 {
+  "pk": 229, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "gabbiano"
+    ], 
+    "end": "2016-08-15", 
+    "sunbeds": 2, 
+    "mobile": "3488029906", 
+    "created": "2016-02-12T16:55:21.916Z", 
+    "modified": "2016-02-12T16:55:21.916Z", 
+    "start": "2016-08-01", 
+    "email": "cariello.giuseppe@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
