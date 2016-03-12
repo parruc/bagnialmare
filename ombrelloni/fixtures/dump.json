@@ -61016,6 +61016,40 @@
   }
 },
 {
+  "pk": 230, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "campo-del-sole"
+    ], 
+    "end": "2016-08-30", 
+    "sunbeds": 2, 
+    "mobile": "3939835834", 
+    "created": "2016-03-11T17:28:59.887Z", 
+    "modified": "2016-03-11T17:28:59.887Z", 
+    "start": "2016-07-01", 
+    "email": "tizianamarcibonetti@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 231, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-07-24", 
+    "sunbeds": 2, 
+    "mobile": "3477614487", 
+    "created": "2016-03-11T19:41:56.922Z", 
+    "modified": "2016-03-11T19:41:56.922Z", 
+    "start": "2016-06-05", 
+    "email": "ale_baby@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
