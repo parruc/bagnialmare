@@ -61050,6 +61050,23 @@
   }
 },
 {
+  "pk": 232, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-rapa-nui"
+    ], 
+    "end": "2016-08-31", 
+    "sunbeds": 2, 
+    "mobile": "3385651842", 
+    "created": "2016-03-21T09:27:49.011Z", 
+    "modified": "2016-03-21T09:27:49.011Z", 
+    "start": "2016-05-01", 
+    "email": "m.giovannini@kaosspa.net", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
