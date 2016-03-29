@@ -61067,6 +61067,23 @@
   }
 },
 {
+  "pk": 233, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-playa-del-carmen"
+    ], 
+    "end": "2016-07-31", 
+    "sunbeds": 3, 
+    "mobile": "3491297795", 
+    "created": "2016-03-28T09:09:15.452Z", 
+    "modified": "2016-03-28T09:09:15.452Z", 
+    "start": "2016-07-16", 
+    "email": "rita.bonsi10@tiscali.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
