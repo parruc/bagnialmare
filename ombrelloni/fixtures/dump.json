@@ -61084,6 +61084,23 @@
   }
 },
 {
+  "pk": 234, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "tahiti"
+    ], 
+    "end": "2016-08-13", 
+    "sunbeds": 1, 
+    "mobile": "3392797842", 
+    "created": "2016-03-30T18:53:24.694Z", 
+    "modified": "2016-03-30T18:53:24.694Z", 
+    "start": "2016-08-06", 
+    "email": "chi321@hotmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
