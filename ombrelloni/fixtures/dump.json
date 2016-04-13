@@ -61135,6 +61135,40 @@
   }
 },
 {
+  "pk": 237, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-genova"
+    ], 
+    "end": "2016-07-02", 
+    "sunbeds": 2, 
+    "mobile": "3206272457", 
+    "created": "2016-04-12T06:54:24.884Z", 
+    "modified": "2016-04-12T06:54:24.885Z", 
+    "start": "2016-06-18", 
+    "email": "francescamegna0@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 238, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-titanus"
+    ], 
+    "end": "2016-07-02", 
+    "sunbeds": 2, 
+    "mobile": "3206272457", 
+    "created": "2016-04-12T06:56:35.053Z", 
+    "modified": "2016-04-12T06:56:35.053Z", 
+    "start": "2016-06-18", 
+    "email": "francescamegna0@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
