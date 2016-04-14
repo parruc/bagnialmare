@@ -1164,12 +1164,12 @@
       "san-mauro-pascoli"
     ], 
     "slug_it": "san-mauro-mare", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "", 
-    "description_it": "", 
+    "modified": "2016-04-13T13:46:42.453Z", 
+    "description_en": "Find the best prices for your <a href=\"http://www.booking.com/searchresults.html?city=93561&aid=1134598\">hotel in San Mauro a Mare</a>", 
+    "description_it": "Trova i migliori prezzi per il tuo <a href=\"http://www.booking.com/searchresults.html?city=93561&aid=1134598\">hotel a San Mauro a Mare</a>", 
     "name_en": "San Mauro Mare", 
     "slug": "san-mauro-mare", 
-    "description": ""
+    "description": "Find the best prices for your <a href=\"http://www.booking.com/searchresults.html?city=93561&aid=1134598\">hotel in San Mauro a Mare</a>"
   }
 },
 {
@@ -75389,7 +75389,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2015-08-25T10:05:25.976Z", 
+    "last_login": "2016-04-13T13:18:20.062Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
