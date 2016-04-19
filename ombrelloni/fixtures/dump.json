@@ -61186,6 +61186,40 @@
   }
 },
 {
+  "pk": 240, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-06-25", 
+    "sunbeds": 2, 
+    "mobile": "3484104549", 
+    "created": "2016-04-18T10:01:20.754Z", 
+    "modified": "2016-04-18T10:01:20.754Z", 
+    "start": "2016-05-28", 
+    "email": "rita.pedron@icloud.com", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 241, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-06-18", 
+    "sunbeds": 2, 
+    "mobile": "3471341518", 
+    "created": "2016-04-18T12:24:46.799Z", 
+    "modified": "2016-04-18T12:24:46.799Z", 
+    "start": "2016-06-01", 
+    "email": "mickeypi75@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
