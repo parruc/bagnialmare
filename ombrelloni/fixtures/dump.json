@@ -18993,7 +18993,7 @@
     "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 230<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1659<br />\n\tdocce aperte: 3</p>", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.4315881729125977 44.1752482263789190)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2016-05-07T23:24:50.005Z", 
     "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 20<br />\n\twc: 3<br />\n\tombrelloni: 120<br />\n\tfronte mare: 34<br />\n\tlettini: 230<br />\n\tcabine: 10<br />\n\tdocce chiuse: 1<br />\n\tsuperficie complessiva spiaggia: 1659<br />\n\tdocce aperte: 3</p>", 
     "number": "", 
     "languages": [
@@ -19035,8 +19035,8 @@
     ], 
     "address": "Viale Giosu\u00e8 Carducci", 
     "description_it": null, 
-    "mail": "info@maebabeach.com", 
-    "accepts_booking": false, 
+    "mail": "info@maebabeach.it", 
+    "accepts_booking": true, 
     "slug": "bagno-maeba", 
     "neighbourhood": [
       "valverde"
@@ -73953,6 +73953,16 @@
   }
 },
 {
+  "pk": 48, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 43, 
+    "key": "ad57d60246d9ab53da3fa1ad37333c88e9501a01d36f7da30a158dc945d30b5d", 
+    "sent": "2016-05-07T23:24:50.756Z", 
+    "created": "2016-05-07T23:24:50.511Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -75935,6 +75945,24 @@
   }
 },
 {
+  "pk": 47, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info11", 
+    "first_name": "Matteo", 
+    "last_name": "Biondi", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2016-05-07T23:24:48.451Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$QViyW7tfjSpj$VAP4y6AuC0Z1sOq/e0WedUlEmFdzKEL4h3XhnyaTnFE=", 
+    "email": "info@maebabeach.it", 
+    "date_joined": "2016-05-07T23:24:48.451Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -76264,6 +76292,18 @@
     ], 
     "primary": true, 
     "email": "sara.pagani@hotmail.it"
+  }
+},
+{
+  "pk": 43, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "info11"
+    ], 
+    "primary": true, 
+    "email": "info@maebabeach.it"
   }
 },
 {
@@ -76841,6 +76881,26 @@
   }
 },
 {
+  "pk": 40, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Biondi", 
+    "name": "Matteo", 
+    "created": "2016-05-07T23:24:48.759Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2016-05-07T23:24:49.432Z", 
+    "user": [
+      "info11"
+    ], 
+    "bagni": [
+      [
+        "bagno-maeba"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -77118,6 +77178,16 @@
       "sara.pagani"
     ], 
     "old_email": "sara.pagani@hotmail.it"
+  }
+},
+{
+  "pk": 34, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info11"
+    ], 
+    "old_email": "info@maebabeach.it"
   }
 },
 {
