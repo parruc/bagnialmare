@@ -61220,6 +61220,23 @@
   }
 },
 {
+  "pk": 242, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-07-17", 
+    "sunbeds": 2, 
+    "mobile": "3888164768", 
+    "created": "2016-05-08T15:47:06.165Z", 
+    "modified": "2016-05-08T15:47:06.165Z", 
+    "start": "2016-07-03", 
+    "email": "bobospok@75gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
