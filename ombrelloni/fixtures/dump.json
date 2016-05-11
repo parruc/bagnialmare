@@ -76315,7 +76315,7 @@
   "pk": 43, 
   "model": "account.emailaddress", 
   "fields": {
-    "verified": false, 
+    "verified": true, 
     "user": [
       "info11"
     ], 
