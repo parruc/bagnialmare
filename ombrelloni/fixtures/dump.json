@@ -61237,6 +61237,23 @@
   }
 },
 {
+  "pk": 243, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-08-13", 
+    "sunbeds": 2, 
+    "mobile": "3385320891", 
+    "created": "2016-05-16T05:23:09.447Z", 
+    "modified": "2016-05-16T05:23:09.447Z", 
+    "start": "2016-08-06", 
+    "email": "sara.luciani@virgilio.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
