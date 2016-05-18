@@ -61254,6 +61254,23 @@
   }
 },
 {
+  "pk": 244, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-07-17", 
+    "sunbeds": 2, 
+    "mobile": "3888164768", 
+    "created": "2016-05-17T13:35:09.133Z", 
+    "modified": "2016-05-17T13:35:09.133Z", 
+    "start": "2016-07-03", 
+    "email": "paolataccardi76@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
@@ -75934,10 +75951,10 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2015-03-09T20:16:55.475Z", 
+    "last_login": "2016-05-17T14:44:31.774Z", 
     "groups": [], 
     "user_permissions": [], 
-    "password": "pbkdf2_sha256$12000$o6qx9J3FkuRb$uB8SxVornjUvGNw2QH09wkmm/eD6DWePPdo6kyqh5LU=", 
+    "password": "pbkdf2_sha256$12000$LPfMyXymQPF2$YKFaRrFNXfETXc9NxTgcgtFxeNl1wJi+47oNO+yg2PY=", 
     "email": "boscolo.luisella@libero.it", 
     "date_joined": "2015-03-08T09:21:26.602Z"
   }
