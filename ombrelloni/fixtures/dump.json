@@ -61271,6 +61271,23 @@
   }
 },
 {
+  "pk": 245, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-05-29", 
+    "sunbeds": 2, 
+    "mobile": "3394917993", 
+    "created": "2016-05-24T08:07:42.751Z", 
+    "modified": "2016-05-24T08:07:42.751Z", 
+    "start": "2016-05-28", 
+    "email": "barbara.marzano82@alice.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
