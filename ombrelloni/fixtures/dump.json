@@ -61288,6 +61288,23 @@
   }
 },
 {
+  "pk": 246, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-chaplyn"
+    ], 
+    "end": "2016-08-31", 
+    "sunbeds": 2, 
+    "mobile": "3478390527", 
+    "created": "2016-05-28T10:44:21.646Z", 
+    "modified": "2016-05-28T10:44:21.646Z", 
+    "start": "2016-06-01", 
+    "email": "amina.chonati@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
