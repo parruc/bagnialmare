@@ -56,6 +56,12 @@
             {% if can_edit %}
               <a href="{{ object.get_edit_url }}" class="btn btn-primary bagno-detail-button" rel="nofollow">{{ t_modify_bagno }}</a>
             {% endif %} 
+      {% elif not object.accepts_booking %}
+          <a id="hotel-button"
+                class="btn book-button"
+                target="_blank"
+                href="http://www.booking.com/searchresults.html?city={{booking_city_id}}&amp;aid=1134598"
+                >{% trans "Book your Hotel" %}!</a>
       {% endif %}
     </div>
   </div>
@@ -105,7 +111,7 @@
                <img src="{{ STATIC_URL }}/img/facebook-share.png"
                     alt="{% blocktrans with name=obj.name %}Share {{ name }} on Facebook{% endblocktrans %}" />
             </a>
- 
+
             <!-- Twitter -->
             <a href="http://twitter.com/share?url={{ request.build_absolute_uri|urlencode }}&text=@bagnialmare"
                 title="{% blocktrans with name=obj.name %}Tweet about {{ name }}{% endblocktrans %}"
@@ -117,7 +123,7 @@
                <img src="{{ STATIC_URL }}/img/twitter-share.png"
                     alt="{% blocktrans with name=obj.name %}Tweet about {{ name }}{% endblocktrans %}" />
             </a>
- 
+
             <!-- Google+ -->
             <a href="https://plus.google.com/share?url={{ request.build_absolute_uri|urlencode }}"
                 title="{% blocktrans with name=obj.name %}Share {{ name }} on Google+{% endblocktrans %}"
@@ -126,10 +132,10 @@
                 data-category="social"
                 data-action="google-share"
                 data-label="{{ object.slug }}">
-                <img src="{{ STATIC_URL }}/img/google-share.png" 
+                <img src="{{ STATIC_URL }}/img/google-share.png"
                      alt="{% blocktrans with name=obj.name %}Share {{ name }} on Google+{% endblocktrans %}" />
             </a>
-	</div> 
+	</div>
     </div>
     <div class="col-xs-12 col-sm-4">
       {% if object.images.count > 0 %}
