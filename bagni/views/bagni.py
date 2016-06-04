@@ -58,6 +58,50 @@ class BagniView(TemplateView):
         return context
 
 
+CITY_BOOKING_ID_BY_SLUG = {
+    'cervia': '-115207',
+    'tagliata': '-115207',
+    'milano-marittima': '-121733',
+    'pinarella': '-124859',
+    'lido-di-classe': '93840',
+    'lido-adriano': '93899',
+    'marina-romea': '93927',
+    'casal-borsetti': '-113712',
+    'lido-di-savio': '-120155',
+    'lido-di-dante': '93890',
+    'punta-marina-terme': '-125914',
+    'marina-di-ravenna': '-121120',
+    'porto-corsini': '-125534',
+    'zadina': '93612',
+    'villamarina': '93567',
+    'valverde': '93569',
+    'cesenatico': '-115252',
+    'gatteo-a-mare': '93565',
+    'san-mauro-mare': '93561',
+    'lido-di-spina': '94174',
+    'lido degli-estensi': '94180',
+    'porto-garibaldi': '-125548',
+    'lido-di-volano': '94217',
+    'lido-di-pomposa': '94182',
+    'lido-delle-nazioni': '94206',
+    'lido-degli-scacchi': '94181',
+    'marebello': '93673',
+    'rivabella': '93664',
+    'bellariva': '-126373',
+    'torre-pedrera': '93655',
+    'viserba': '1655',
+    'viserbella': '93656',
+    'miramare': '-126373',
+    'rivazzurra': '-126373',
+    'san-giuliano': '-126373',
+    'rimini': '-126373',
+    'misano-adriatico': '-121826',
+    'riccione': '-126305',
+    'igea-marina': '-119128',
+    'cattolica': '-114819'
+}
+
+
 class BagnoView(DetailView):
     """ Detail view for a single bagno
     """
@@ -73,6 +117,8 @@ class BagnoView(DetailView):
                 services_by_category[s.category] = []
             services_by_category[s.category].append(s)
         context['services_by_category'] = services_by_category
+        neighbourhood_slug = self.object.neighbourhood.slug
+        context['booking_city_id'] = CITY_BOOKING_ID_BY_SLUG[neighbourhood_slug]
         return context
 
 
