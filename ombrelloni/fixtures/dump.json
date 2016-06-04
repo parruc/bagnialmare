@@ -484,9 +484,9 @@
       "cesenatico"
     ], 
     "slug_it": "cesenatico", 
-    "modified": "2016-05-05T10:06:57.753Z", 
+    "modified": "2016-06-03T12:40:56.909Z", 
     "description_en": "Find the best prices for your <a href=\"http://www.booking.com/searchresults.html?city=-115252&aid=1134598\">hotel in Cesenatico</a>", 
-    "description_it": "Trova i migliori prezzi per il tuo <a http://www.booking.com/searchresults.html?city=-115252&aid=1134598=\"URL\">hotel a Cesenatico</a>", 
+    "description_it": "Trova i migliori prezzi per il tuo <a href=\"http://www.booking.com/searchresults.html?city=-115252&aid=1134598\">hotel a Cesenatico</a>", 
     "name_en": "Cesenatico", 
     "slug": "cesenatico", 
     "description": "Find the best prices for your <a href=\"http://www.booking.com/searchresults.html?city=-115252&aid=1134598\">hotel in Cesenatico</a>"
@@ -26111,7 +26111,7 @@
     "description": "", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.2407758235931396 44.7183802877949290)", 
-    "modified": "2014-07-02T22:00:00Z", 
+    "modified": "2016-06-03T17:25:21.903Z", 
     "description_en": null, 
     "number": "42", 
     "languages": [
@@ -26141,8 +26141,8 @@
     ], 
     "address": "Via Mare Adriatico, 1", 
     "description_it": null, 
-    "mail": "", 
-    "accepts_booking": false, 
+    "mail": "helly8373@gmail.com", 
+    "accepts_booking": true, 
     "slug": "roccas", 
     "neighbourhood": [
       "lido-di-pomposa"
@@ -74065,6 +74065,16 @@
   }
 },
 {
+  "pk": 49, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 44, 
+    "key": "ba1651af85f9f391113822399bde61c8645c2a37e97ea440f016d2163691face", 
+    "sent": "2016-06-03T17:25:22.943Z", 
+    "created": "2016-06-03T17:25:22.687Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -75552,7 +75562,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2016-05-05T09:30:18.559Z", 
+    "last_login": "2016-06-03T12:40:23.368Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$VTdE29XVKtmL$ja8gVFYm+y/rpPVnNzY0PkeYhfQiAZsBR4kkiBQSVX0=", 
@@ -75570,7 +75580,7 @@
     "is_active": true, 
     "is_superuser": true, 
     "is_staff": true, 
-    "last_login": "2016-04-14T17:25:27.080Z", 
+    "last_login": "2016-06-03T15:52:59.369Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$AKm5O1Z5pHsi$lo4fFI3EdNeMekGte7jW89PU+ioqOgPWm2SWqEuHA3o=", 
@@ -76065,6 +76075,24 @@
   }
 },
 {
+  "pk": 48, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "helly8373", 
+    "first_name": "elisa ", 
+    "last_name": "travaglia", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2016-06-03T17:25:20.771Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$JytAWnOLZDVy$756CyBrApdFfF5VpfgwZzCN7FBf+C8gq2EWdY99ieo8=", 
+    "email": "helly8373@gmail.com", 
+    "date_joined": "2016-06-03T17:25:20.771Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -76406,6 +76434,18 @@
     ], 
     "primary": true, 
     "email": "info@maebabeach.it"
+  }
+},
+{
+  "pk": 44, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": false, 
+    "user": [
+      "helly8373"
+    ], 
+    "primary": true, 
+    "email": "helly8373@gmail.com"
   }
 },
 {
@@ -77003,6 +77043,26 @@
   }
 },
 {
+  "pk": 41, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "travaglia", 
+    "name": "elisa ", 
+    "created": "2016-06-03T17:25:20.914Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2016-06-03T17:25:21.575Z", 
+    "user": [
+      "helly8373"
+    ], 
+    "bagni": [
+      [
+        "roccas"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -77290,6 +77350,16 @@
       "info11"
     ], 
     "old_email": "info@maebabeach.it"
+  }
+},
+{
+  "pk": 35, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "helly8373"
+    ], 
+    "old_email": "helly8373@gmail.com"
   }
 },
 {
