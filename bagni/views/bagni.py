@@ -79,7 +79,7 @@ CITY_BOOKING_ID_BY_SLUG = {
     'gatteo-a-mare': '93565',
     'san-mauro-mare': '93561',
     'lido-di-spina': '94174',
-    'lido degli-estensi': '94180',
+    'lido-degli-estensi': '94180',
     'porto-garibaldi': '-125548',
     'lido-di-volano': '94217',
     'lido-di-pomposa': '94182',
