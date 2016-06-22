@@ -61339,6 +61339,40 @@
   }
 },
 {
+  "pk": 249, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-playa-del-carmen"
+    ], 
+    "end": "2016-09-03", 
+    "sunbeds": 1, 
+    "mobile": "3386009727", 
+    "created": "2016-06-21T13:20:29.887Z", 
+    "modified": "2016-06-21T13:20:29.887Z", 
+    "start": "2016-08-16", 
+    "email": "ACANUTO@COOPANSALONI.IT", 
+    "umbrellas": 1
+  }
+},
+{
+  "pk": 250, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "roccas"
+    ], 
+    "end": "2016-08-31", 
+    "sunbeds": 4, 
+    "mobile": "3662692757", 
+    "created": "2016-06-21T19:00:08.808Z", 
+    "modified": "2016-06-21T19:00:08.808Z", 
+    "start": "2016-08-01", 
+    "email": "antonella.valente70@virgilio.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
