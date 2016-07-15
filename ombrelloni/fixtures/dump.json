@@ -61373,6 +61373,23 @@
   }
 },
 {
+  "pk": 251, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "pic-nic"
+    ], 
+    "end": "2016-08-26", 
+    "sunbeds": 3, 
+    "mobile": "3483673629", 
+    "created": "2016-07-14T08:22:23.094Z", 
+    "modified": "2016-07-14T08:22:23.094Z", 
+    "start": "2016-08-16", 
+    "email": "family.stendardi@alice.it", 
+    "umbrellas": 2
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
