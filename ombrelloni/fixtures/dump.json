@@ -61390,6 +61390,23 @@
   }
 },
 {
+  "pk": 252, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "roccas"
+    ], 
+    "end": "2016-09-09", 
+    "sunbeds": 2, 
+    "mobile": "3383520977", 
+    "created": "2016-07-16T12:08:15.782Z", 
+    "modified": "2016-07-16T12:08:15.782Z", 
+    "start": "2016-08-30", 
+    "email": "patrizia_77.pc@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
