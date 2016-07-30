@@ -61407,6 +61407,23 @@
   }
 },
 {
+  "pk": 253, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "roccas"
+    ], 
+    "end": "2016-08-16", 
+    "sunbeds": 2, 
+    "mobile": "3498458280", 
+    "created": "2016-07-29T07:05:43.069Z", 
+    "modified": "2016-07-29T07:05:43.069Z", 
+    "start": "2016-08-13", 
+    "email": "cicciodoh@gmail.com", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
