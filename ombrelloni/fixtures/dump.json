@@ -61424,6 +61424,23 @@
   }
 },
 {
+  "pk": 254, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "mexico"
+    ], 
+    "end": "2016-08-20", 
+    "sunbeds": 3, 
+    "mobile": "333 25 90385", 
+    "created": "2016-08-07T10:05:59.655Z", 
+    "modified": "2016-08-07T10:05:59.655Z", 
+    "start": "2016-08-13", 
+    "email": "giovannasorge@libero.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
