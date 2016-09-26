@@ -37067,27 +37067,14 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "", 
-    "description": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 108<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>", 
+    "description": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 10<br />\r\n\twc: 3<br />\r\n\tombrelloni: 108<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 1<br />\r\n\tdocce aperte: 1</p>", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.2961736428999995 44.4443884285999999)", 
-    "modified": "2014-07-02T22:00:00Z", 
-    "description_en": "<h3>Details</h3>\n\t<p>lavapiedi: 1<br />\n\tsdraio: 10<br />\n\twc: 3<br />\n\tombrelloni: 108<br />\n\twc disabili: 1<br />\n\tlettini: 300<br />\n\tcabine: 20<br />\n\tdocce chiuse: 1<br />\n\tdocce aperte: 1</p>", 
+    "point": "POINT (12.2961736428999959 44.4443884285999573)", 
+    "modified": "2016-09-25T13:58:27.645Z", 
+    "description_en": "<h3>Details</h3>\r\n\t<p>lavapiedi: 1<br />\r\n\tsdraio: 10<br />\r\n\twc: 3<br />\r\n\tombrelloni: 108<br />\r\n\twc disabili: 1<br />\r\n\tlettini: 300<br />\r\n\tcabine: 20<br />\r\n\tdocce chiuse: 1<br />\r\n\tdocce aperte: 1</p>", 
     "number": "", 
-    "languages": [
-      [
-        "italian"
-      ], 
-      [
-        "english"
-      ]
-    ], 
+    "languages": [], 
     "services": [
-      [
-        "theme-parties"
-      ], 
-      [
-        "entertainment"
-      ], 
       [
         "catering"
       ], 
@@ -37095,18 +37082,27 @@
         "baby-park"
       ], 
       [
+        "entertainment"
+      ], 
+      [
         "beach-racket-court"
+      ], 
+      [
+        "themed-dinner"
+      ], 
+      [
+        "theme-parties"
       ]
     ], 
     "address": "Piazza Saffi Aurelio, 10", 
-    "description_it": null, 
+    "description_it": "", 
     "mail": "", 
-    "accepts_booking": false, 
+    "accepts_booking": true, 
     "slug": "bagno-miramare-lido", 
     "neighbourhood": [
       "punta-marina-terme"
     ], 
-    "name": "Bagno Miramare Lido"
+    "name": "Bagno mirella"
   }
 },
 {
@@ -74194,6 +74190,16 @@
   }
 },
 {
+  "pk": 50, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 45, 
+    "key": "06698a32b081b0711f5d9caaed02af184f942a1f229c73d56685dff6760ad4a5", 
+    "sent": "2016-09-25T13:50:15.115Z", 
+    "created": "2016-09-25T13:50:14.929Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -76212,6 +76218,24 @@
   }
 },
 {
+  "pk": 49, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "loremont1", 
+    "first_name": "Lorenzo ", 
+    "last_name": "Monterumici", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2016-09-25T13:52:31.389Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$kynVYrDDLPeH$KTCXtaaspzm1T6cP7SsjLFKgiAQ0JPJysden09z3jcQ=", 
+    "email": "Loremont1@libero.it", 
+    "date_joined": "2016-09-25T13:50:12.396Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -76565,6 +76589,18 @@
     ], 
     "primary": true, 
     "email": "helly8373@gmail.com"
+  }
+},
+{
+  "pk": 45, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "loremont1"
+    ], 
+    "primary": true, 
+    "email": "Loremont1@libero.it"
   }
 },
 {
@@ -77182,6 +77218,26 @@
   }
 },
 {
+  "pk": 42, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Monterumici", 
+    "name": "Lorenzo ", 
+    "created": "2016-09-25T13:50:12.588Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2016-09-25T13:50:13.187Z", 
+    "user": [
+      "loremont1"
+    ], 
+    "bagni": [
+      [
+        "bagno-miramare-lido"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -77479,6 +77535,16 @@
       "helly8373"
     ], 
     "old_email": "helly8373@gmail.com"
+  }
+},
+{
+  "pk": 36, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "loremont1"
+    ], 
+    "old_email": "Loremont1@libero.it"
   }
 },
 {
