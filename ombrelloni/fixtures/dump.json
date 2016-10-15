@@ -45126,22 +45126,16 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://www.bagno81rimini.it/", 
-    "description": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- DOG BEACH - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n- noleggio pedal\u00f2, canoa", 
+    "description": "", 
     "created": "2014-07-02T22:00:00Z", 
-    "point": "POINT (12.6021693300000059 44.0524360000000001)", 
-    "modified": "2014-07-12T19:00:29.044Z", 
-    "description_en": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- DOG BEACH - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n- noleggio pedal\u00f2, canoa", 
-    "number": "81 sud", 
+    "point": "POINT (12.5992886375172599 44.0519347923162172)", 
+    "modified": "2016-10-14T10:51:35.337Z", 
+    "description_en": "", 
+    "number": "81 sud e 82 sud", 
     "languages": [], 
     "services": [
       [
-        "hot-showers"
-      ], 
-      [
-        "pet-friendly"
-      ], 
-      [
-        "lockers"
+        "bar"
       ], 
       [
         "baby-park"
@@ -45150,7 +45144,10 @@
         "beach-volley"
       ], 
       [
-        "pedal-boats"
+        "table-football"
+      ], 
+      [
+        "children-entertainment"
       ], 
       [
         "petanque"
@@ -45159,18 +45156,90 @@
         "ping-pong"
       ], 
       [
+        "music"
+      ], 
+      [
+        "entertainment"
+      ], 
+      [
+        "acquagym"
+      ], 
+      [
+        "beach-soccer"
+      ], 
+      [
+        "pedal-boats"
+      ], 
+      [
+        "beach-racket-court"
+      ], 
+      [
+        "fitness-area"
+      ], 
+      [
+        "baby-sitter"
+      ], 
+      [
+        "theme-parties"
+      ], 
+      [
+        "sports-tournaments"
+      ], 
+      [
+        "wi-fi"
+      ], 
+      [
+        "cabins"
+      ], 
+      [
         "footvolley"
+      ], 
+      [
+        "bookstore"
+      ], 
+      [
+        "games"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "nursery"
+      ], 
+      [
+        "pool"
+      ], 
+      [
+        "rowing-boats"
+      ], 
+      [
+        "hot-showers"
+      ], 
+      [
+        "pet-friendly"
+      ], 
+      [
+        "schoolchildren"
+      ], 
+      [
+        "helmet-deposit"
+      ], 
+      [
+        "private-functions"
+      ], 
+      [
+        "picnic-area"
       ]
     ], 
-    "address": "Lungomare di Vittorio - Bellariva", 
-    "description_it": "cabine: 40<br />\r\nombrelloni: 200\r\nServizi offerti tornei di ping-pong e delle varie attivit\u00e0\r\n- baby sitter gratuita 6 ore al giorno\r\n- feste in spiaggia\r\n- parcheggi scooter e biciclette e deposito per caschi \r\n- DOG BEACH - vedi informazioni dettagliate\r\n\r\naltri servizi\r\n- love boat, il pedal\u00f2 dell'amore\r\n- noleggio pedal\u00f2, canoa", 
+    "address": "Lungomare Giuseppe di Vittorio 28 e 28/a", 
+    "description_it": "<p>Bagno 81 No Problem : la spiaggia di Rimini per chi desidera un&#39;oasi di relax<br />\r\n<br />\r\nRimini Dog No Problem : la dog beach del Bagno 81 che si trova presso il Bagno 82 con ombrelloni recintati (le Suite) e non recintati anche in riva al mare, area gioco - sgambamento e corsi gratuiti con addestratrice cinofila</p>\r\n", 
     "mail": "", 
-    "accepts_booking": false, 
+    "accepts_booking": true, 
     "slug": "no-problem-rimini-dog-no-problem", 
     "neighbourhood": [
       "rimini"
     ], 
-    "name": "Bagni No Problem e Rimini Dog No Problem"
+    "name": "Bagno 81 No Problem e Rimini Dog No Problem"
   }
 },
 {
@@ -74200,6 +74269,16 @@
   }
 },
 {
+  "pk": 51, 
+  "model": "account.emailconfirmation", 
+  "fields": {
+    "email_address": 46, 
+    "key": "6ce8df12e67bd23077f1d281476e1ddb88770eabee1f77c2185a92cf8b48eb6f", 
+    "sent": "2016-10-14T09:27:30.935Z", 
+    "created": "2016-10-14T09:27:30.480Z"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||00cd4da465a78e889d9bef8bad616e95", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -74246,6 +74325,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/7f/3a/7f3a59f995ce4efb5d6d41592b4ef7b9.jpg\", \"size\": [167, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||07f9c77fd766e8bd1542cb59d7dd5dfd", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/9f/59/9f59f400f157e001043d2b3b3c0d39a0.png\", \"size\": [210, 128]}"
   }
 },
 {
@@ -74613,6 +74699,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||a7c721e696afc5f16f80a53a88991714", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"images/bagni/no-problem-rimini-dog-no-problem/bagno-81-no-problem.jpg\", \"size\": [973, 592]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||a94d663c9d6397d6f693e513e86dc558", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -74816,6 +74909,13 @@
   }
 },
 {
+  "pk": "sorl-thumbnail||image||f91319bf24a8c9f2cbbecba9e375ea5e", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/bf/5d/bf5d88dd725f3c9a5516bf19cca9d5d8.jpg\", \"size\": [380, 231]}"
+  }
+},
+{
   "pk": "sorl-thumbnail||image||f9da74e4170fe398cbf506d90a495b03", 
   "model": "thumbnail.kvstore", 
   "fields": {
@@ -74827,6 +74927,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/ca/18/ca182560b1974bf0fac64f0b079477db.jpg\", \"size\": [222, 125]}"
+  }
+},
+{
+  "pk": "sorl-thumbnail||image||fc7593da3e460139598b1568150e8d76", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/78/b0/78b033b2104e8a19e7001a85055eef07.jpg\", \"size\": [205, 125]}"
   }
 },
 {
@@ -74946,6 +75053,13 @@
   "model": "thumbnail.kvstore", 
   "fields": {
     "value": "[\"e5e1d2d3d2877b5418ec81be72e59f88\", \"e52f4565e1284f77affec22a50ae0fc7\"]"
+  }
+},
+{
+  "pk": "sorl-thumbnail||thumbnails||a7c721e696afc5f16f80a53a88991714", 
+  "model": "thumbnail.kvstore", 
+  "fields": {
+    "value": "[\"07f9c77fd766e8bd1542cb59d7dd5dfd\", \"fc7593da3e460139598b1568150e8d76\", \"f91319bf24a8c9f2cbbecba9e375ea5e\"]"
   }
 },
 {
@@ -76236,6 +76350,24 @@
   }
 },
 {
+  "pk": 50, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "info12", 
+    "first_name": "Marco", 
+    "last_name": "Agostini", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2016-10-14T10:29:23.039Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$oADDOH5fMgwZ$TySgGe9Jwdl/1lDXt2q7P5fFHh8N31HgCrVqfxxwonM=", 
+    "email": "info@bagno81rimini.it", 
+    "date_joined": "2016-10-14T09:27:27.482Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -76601,6 +76733,18 @@
     ], 
     "primary": true, 
     "email": "Loremont1@libero.it"
+  }
+},
+{
+  "pk": 46, 
+  "model": "account.emailaddress", 
+  "fields": {
+    "verified": true, 
+    "user": [
+      "info12"
+    ], 
+    "primary": true, 
+    "email": "info@bagno81rimini.it"
   }
 },
 {
@@ -77238,6 +77382,26 @@
   }
 },
 {
+  "pk": 43, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "Agostini", 
+    "name": "Marco", 
+    "created": "2016-10-14T09:27:28.564Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2016-10-14T09:27:29.484Z", 
+    "user": [
+      "info12"
+    ], 
+    "bagni": [
+      [
+        "no-problem-rimini-dog-no-problem"
+      ]
+    ]
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -77548,6 +77712,16 @@
   }
 },
 {
+  "pk": 37, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "info12"
+    ], 
+    "old_email": "info@bagno81rimini.it"
+  }
+},
+{
   "pk": 2, 
   "model": "bagni.image", 
   "fields": {
@@ -77779,6 +77953,19 @@
     "name": "la nostra spiaggia", 
     "image": "images/bagni/bagno-adua/la-nostra-spiaggia.jpg", 
     "slug": "la-nostra-spiaggia"
+  }
+},
+{
+  "pk": 20, 
+  "model": "bagni.image", 
+  "fields": {
+    "description": "", 
+    "bagno": [
+      "no-problem-rimini-dog-no-problem"
+    ], 
+    "name": "Bagno 81 No Problem", 
+    "image": "images/bagni/no-problem-rimini-dog-no-problem/bagno-81-no-problem.jpg", 
+    "slug": "bagno-81-no-problem"
   }
 },
 {
