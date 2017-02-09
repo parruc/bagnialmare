@@ -61506,6 +61506,23 @@
   }
 },
 {
+  "pk": 255, 
+  "model": "booking.booking", 
+  "fields": {
+    "bagno": [
+      "bagno-playa-del-carmen"
+    ], 
+    "end": "2017-09-15", 
+    "sunbeds": 3, 
+    "mobile": "3281778269", 
+    "created": "2017-02-08T09:07:53.221Z", 
+    "modified": "2017-02-08T09:07:53.221Z", 
+    "start": "2017-04-30", 
+    "email": "pippo.dulja@outlook.it", 
+    "umbrellas": 1
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newslettertarget", 
   "fields": {
