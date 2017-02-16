@@ -42843,20 +42843,14 @@
   "model": "bagni.bagno", 
   "fields": {
     "site": "http://bagno28otello.com/", 
-    "description": "Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.", 
+    "description": "<p>Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.</p>\r\n", 
     "created": "2014-07-02T22:00:00Z", 
     "point": "POINT (12.5830426370000126 44.0700372999999956)", 
-    "modified": "2016-04-14T17:49:32.711Z", 
-    "description_en": "Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.", 
+    "modified": "2017-02-15T11:54:08.245Z", 
+    "description_en": "<p>Bagno Otello offers also:, deckchairs with cushion, dog access www.comitatobagninirimini.it, 40 changing rooms, 160 beach umbrellas.</p>\r\n", 
     "number": "28 sud", 
     "languages": [], 
     "services": [
-      [
-        "music"
-      ], 
-      [
-        "fitness-area"
-      ], 
       [
         "baby-park"
       ], 
@@ -42868,6 +42862,9 @@
       ], 
       [
         "ping-pong"
+      ], 
+      [
+        "music"
       ], 
       [
         "entertainment"
@@ -42882,10 +42879,25 @@
         "beach-racket-court"
       ], 
       [
+        "fitness-area"
+      ], 
+      [
+        "surf"
+      ], 
+      [
         "wi-fi"
       ], 
       [
         "cabins"
+      ], 
+      [
+        "games"
+      ], 
+      [
+        "lockers"
+      ], 
+      [
+        "jacuzzi"
       ], 
       [
         "rowing-boats"
@@ -42906,11 +42918,11 @@
         "credit-cards-accepted"
       ], 
       [
-        "surf"
+        "helmet-deposit"
       ]
     ], 
     "address": "Lungomare Tintori", 
-    "description_it": "Il Bagno Otello vi offre anche: lettino con cuscino, accesso ai cani dog beach, ingresso per  disabili, 40 cabine, 160 ombrelloni-Wifi free.\r\nTroverete tutte le informazione su prezzi e servizi andando nel nostro sito.\r\n", 
+    "description_it": "<p>Il Bagno Otello vi offre anche: lettino con cuscino, accesso ai cani dog beach, ingresso per disabili, 40 cabine, 160 ombrelloni-Wifi free. Troverete tutte le informazione su prezzi e servizi andando nel nostro sito.</p>\r\n", 
     "mail": "", 
     "accepts_booking": true, 
     "slug": "otello", 
@@ -76106,7 +76118,7 @@
     "is_active": true, 
     "is_superuser": false, 
     "is_staff": false, 
-    "last_login": "2014-07-10T11:38:02.501Z", 
+    "last_login": "2017-02-15T11:49:22.949Z", 
     "groups": [], 
     "user_permissions": [], 
     "password": "pbkdf2_sha256$12000$JXaFzrXdNlbz$4V79rilgGxVM8cp1n/sSAbRNvHoxnP6xIrX8eoVZ4rY=", 
@@ -95212,8 +95224,8 @@
     "bagno": [
       "otello"
     ], 
-    "number": "0541/721766", 
-    "name": "win", 
+    "number": "366/4814360", 
+    "name": "mob", 
     "slug": "win-2"
   }
 },
