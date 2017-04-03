@@ -76397,6 +76397,24 @@
   }
 },
 {
+  "pk": 51, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "befi.je", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2017-04-02T08:43:33.362Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$zXKM1aTqOQ3Z$trLRCmCUSIzzWpmIEWAbKh3XDpKkP5ifuN5URUSaSsA=", 
+    "email": "befi.je@libero.it", 
+    "date_joined": "2017-04-02T08:43:33.362Z"
+  }
+},
+{
   "pk": 1, 
   "model": "sites.site", 
   "fields": {
@@ -77431,6 +77449,22 @@
   }
 },
 {
+  "pk": 44, 
+  "model": "authauth.manager", 
+  "fields": {
+    "surname": "", 
+    "name": "", 
+    "created": "2017-04-02T08:43:33.563Z", 
+    "tos": true, 
+    "privacy": true, 
+    "modified": "2017-04-02T08:43:33.563Z", 
+    "user": [
+      "befi.je"
+    ], 
+    "bagni": []
+  }
+},
+{
   "pk": 1, 
   "model": "newsletters.newsletteruser", 
   "fields": {
@@ -77748,6 +77782,16 @@
       "info12"
     ], 
     "old_email": "info@bagno81rimini.it"
+  }
+},
+{
+  "pk": 38, 
+  "model": "newsletters.newsletteruser", 
+  "fields": {
+    "user": [
+      "befi.je"
+    ], 
+    "old_email": "befi.je@libero.it"
   }
 },
 {
