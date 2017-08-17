@@ -5,10 +5,10 @@
 /dbutils/*
 /.coverage
 /htmlcov
-/ombrelloni/whoosh_index
-/ombrelloni/whoosh_index_test
-/ombrelloni/settings.py
-/ombrelloni/settings_test.py
+/bagnialmare/whoosh_index
+/bagnialmare/whoosh_index_test
+/bagnialmare/settings.py
+/bagnialmare/settings_test.py
 /uwsgi.ini
 /wsgi.py
 /ghostdriver.log

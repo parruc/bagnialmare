@@ -1,4 +1,4 @@
-from ombrelloni.common.sitemaps import StaticLocalesSitemap
+from bagnialmare.common.sitemaps import StaticLocalesSitemap
 
 class ContactStatic(StaticLocalesSitemap):
     def items(self):

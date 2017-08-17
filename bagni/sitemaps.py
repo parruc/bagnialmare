@@ -3,7 +3,7 @@ from django.core.cache import cache
 from models.bagni import Bagno
 from models.services import Service
 
-from ombrelloni.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
+from bagnialmare.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
 
 from django.core.urlresolvers import reverse
 from django.utils.translation import get_language

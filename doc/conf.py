@@ -18,7 +18,7 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('../'))
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ombrelloni.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bagnialmare.settings")
 
 # -- General configuration -----------------------------------------------------
 
@@ -218,7 +218,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'ombrelloni', u'Ombrelloni Documentation',
+    ('index', 'bagnialmare', u'Bagnialmare Documentation',
      [u'T4HM'], 1)
 ]
 
