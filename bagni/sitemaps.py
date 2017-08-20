@@ -1,7 +1,7 @@
 from django.core.cache import cache
 
-from models.bagni import Bagno
-from models.services import Service
+from bagni.models.bagni import Bagno
+from bagni.models.services import Service
 
 from bagnialmare.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
 

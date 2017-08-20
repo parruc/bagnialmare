@@ -42,14 +42,14 @@ class Bagno(BaseModel):
         services = self.index_services(field="name").split("#")
         elems.extend(cities)
         elems.extend(services)
-        return unicode(" ".join(elems))
+        return str(" ".join(elems))
 
     def index_services(self, field='slug', sep="#"):
         """ Returns a string representing all the bagno services separated by
             the sep val.
             Needed to index the services as listid in whoosh and have facets
         """
-        return unicode(sep.join([getattr(s, field) for s in self.services.all()]))
+        return str(sep.join([getattr(s, field) for s in self.services.all()]))
 
 
     def index_languages(self, field='slug', sep="#"):
@@ -57,7 +57,7 @@ class Bagno(BaseModel):
             the sep val.
             Needed to index the languages as listid in whoosh and have facets
         """
-        return unicode(sep.join([getattr(l, field) for l in self.languages.all()]))
+        return str(sep.join([getattr(l, field) for l in self.languages.all()]))
 
     def index_cities(self, sep="#", field="slug"):
         cities = []
@@ -67,13 +67,13 @@ class Bagno(BaseModel):
                 cities.append(getattr(self.neighbourhood.municipality, field))
                 if self.neighbourhood.municipality.district:
                     cities.append(getattr(self.neighbourhood.municipality.district, field))
-        return unicode(sep.join(cities))
+        return str(sep.join(cities))
 
     def index_features(self):
         """ Returns a dictionary representing the whoosh entry for
             the current object in the index
         """
-        return dict(id=unicode(self.id),
+        return dict(id=str(self.id),
                     text=self.index_text(),
                     services=self.index_services(),
                     languages=self.index_languages(),

@@ -2,6 +2,7 @@
 from django.db.models import signals
 from django.conf import settings
 from django.core.mail import send_mail
+from authauth.models import Manager
 
 MANAGER_CREATION_TEMPLATE = """
     We have a new regeistered manager!
@@ -48,3 +49,4 @@ def mail_for_manager(sender, instance, created, **kwargs):
                          MANAGER_UPDATE_TEMPLATE)
     send_mail(subject, message, "info@bagnialmare.com", admin_emails)
 
+signals.post_save.connect(mail_for_manager, sender=Manager)

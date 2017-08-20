@@ -14,10 +14,10 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if not options['operation']:
-            print "-o or --operation parameter required"
+            print("-o or --operation parameter required")
 
         if not options['language']:
-            print "applying to all active languages"
+            print("applying to all active languages")
             kwargs = {}
         else:
             kwargs = {'langs': [options['language']]}
@@ -33,10 +33,10 @@ class Command(BaseCommand):
         elif options['operation'] == 'rebuild':
             search.recreate_all(**kwargs)
         else:
-            print """Choose an operation using the -o parameter:
+            print("""Choose an operation using the -o parameter:
 	            'create' to rebuild index schema (empty)
                 'delete' to remove index schema and data
                 'recreate' to delete and rebuild the index schema (empty)
                 'rebuild' to remove and recreate both index and data
-                """
+                """)
                 #'reindex' to reindex data in existing schema

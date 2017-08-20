@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from django.db.models import signals
 from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.conf import settings
@@ -8,6 +9,7 @@ from django.utils.translation import ugettext as _
 from django.utils.translation import get_language, activate
 from django.core import signing
 from django.core.mail import EmailMultiAlternatives
+from booking.models import Booking
 
 def _get_bagno_url(bagno):
     #TODO: shoudl we add settings.SITE_URL?
@@ -91,3 +93,5 @@ def mail_for_booking(sender, instance, created, **kwargs):
 
     _send_mail_by_template("admin", booking_details, admin_emails)
     _send_mail_by_template("user", booking_details, [instance.email, ])
+
+signals.post_save.connect(mail_for_booking, sender=Booking)

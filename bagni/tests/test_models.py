@@ -33,7 +33,7 @@ class BagnoModelTest(TestCase):
         b = Bagno.objects.all()[0]
         self.assertTrue(hasattr(b, 'index_features'))
         features = b.index_features()
-        self.assertEqual(features['id'], unicode(b.id))
+        self.assertEqual(features['id'], str(b.id))
         self.assertTrue(features.has_key('text'))
         self.assertTrue(features.has_key('services'))
 

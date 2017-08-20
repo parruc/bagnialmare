@@ -4,7 +4,6 @@ from django import forms
 from django.forms.util import flatatt
 from django.forms.models import inlineformset_factory, ModelFormMetaclass
 from django.utils.html import conditional_escape
-from django.utils.encoding import StrAndUnicode, force_unicode
 from django.utils.safestring import mark_safe
 from django.contrib.gis.forms import ModelForm, OSMWidget
 from django.utils import six
@@ -19,6 +18,15 @@ logging.getLogger(__name__)
 
 IMAGE_THUMB_HEIGHT = 128  # in pixels
 NO_PHOTO_IMAGE_PATH = '/static/img/no_images.png'
+
+try:
+    from django.utils.encoding import StrAndUnicode
+except ImportError:
+    from django.utils.encoding import python_2_unicode_compatible
+    @python_2_unicode_compatible
+    class StrAndUnicode(object):
+        def __str__(self):
+            return self.CodeType
 
 
 class ThumbnailImageWidget(forms.FileInput):
@@ -67,12 +75,12 @@ class CheckboxInput(forms.widgets.SubWidget):
     def __init__(self, name, value, attrs, choice, index):
         self.name, self.value = name, value
         self.attrs = attrs
-        self.choice_value = force_unicode(choice[0])
-        self.choice_label = force_unicode(choice[1])
+        self.choice_value = choice[0]
+        self.choice_label = choice[1]
         self.attrs.update({'cat_name': choice[2]})
         self.index = index
 
-    def __unicode__(self):
+    def __str__(self):
         return self.render()
 
     def render(self, name=None, value=None, attrs=None, choices=()):
@@ -84,7 +92,7 @@ class CheckboxInput(forms.widgets.SubWidget):
             label_for = ' for="%s_%s"' % (self.attrs['id'], self.index)
         else:
             label_for = ''
-        choice_label = conditional_escape(force_unicode(self.choice_label))
+        choice_label = conditional_escape(self.choice_label)
         return mark_safe(u'<label%s>%s %s</label>' % (label_for, self.tag(), choice_label))
 
     def is_checked(self):
@@ -112,13 +120,13 @@ class CheckboxRenderer(StrAndUnicode):
         choice = self.choices[idx] # Let the IndexError propogate
         return CheckboxInput(self.name, self.value, self.attrs.copy(), choice, idx)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.render()
 
     def render(self):
         """Outputs a <ul> for this set of checkbox fields."""
         return mark_safe(u'<ul>\n%s\n</ul>' % u'\n'.join([u'<li>%s</li>'
-                % force_unicode(w) for w in self]))
+                % w for w in self]))
 
 
 class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
@@ -134,7 +142,7 @@ class CheckboxSelectMultipleIter(forms.CheckboxSelectMultiple):
         choices_ = [(c.pk, c.name, c.category.name) for c in self.choices.queryset]
 
         if value is None: value = ''
-        str_values = set([force_unicode(v) for v in value]) # Normalize to string.
+        str_values = set([v for v in value]) # Normalize to string.
         if attrs is None:
             attrs = {}
         if 'id' not in attrs:
@@ -174,7 +182,7 @@ class TranslationModelFormMetaclass(ModelFormMetaclass):
 class TranslationModelForm(six.with_metaclass(TranslationModelFormMetaclass, ModelForm)):
     def __init__(self, *args, **kwargs):
         super(TranslationModelForm, self).__init__(*args, **kwargs)
-        for field_name, field in self.fields.iteritems():
+        for field_name, field in self.fields.items():
             if field_name in self.Meta.translations:
                 # This field is relative to a translation.
                 # You can add your code here to customize the translated fields.

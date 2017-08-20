@@ -54,7 +54,7 @@ class Manager(models.Model):
     def get_by_natural_key(self, email):
         return self.get(user__email=email)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 def display_user(user):

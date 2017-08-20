@@ -61,7 +61,7 @@ class Telephone(models.Model):
     def get_by_natural_key(self, slug):
         return self.get(slug=slug)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -102,6 +102,6 @@ class Image(models.Model):
     def get_by_natural_key(self, slug):
         return self.get(slug=slug)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 

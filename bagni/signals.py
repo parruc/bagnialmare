@@ -2,6 +2,7 @@
 from django.db.models import signals
 from django.conf import settings
 from django.core.mail import send_mail
+from bagni.models import Bagno
 
 BAGNO_UPDATE_TEMPLATE = u"""
 Bagno: {name}
@@ -26,3 +27,6 @@ def mail_for_bagno(sender, instance, created, **kwargs):
     )
     send_mail(subject, message, "info@bagnialmare.com", admin_emails)
 
+
+
+signals.post_save.connect(mail_for_bagno, sender=Bagno)

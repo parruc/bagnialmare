@@ -168,13 +168,13 @@ class BagnoEdit(UpdateView):
                 instance=self.object)
         if not telephone_formset.is_valid() or not image_formset.is_valid() or not form.is_valid():
             for index, t_error in enumerate(telephone_formset.errors):
-                for field, error_messages in t_error.iteritems():
+                for field, error_messages in t_error.items():
                     for error_message in error_messages:
                         _msg = "Telephone: %d field: %s error: %s" % (index, field, error_message)
                         messages.add_message(self.request, messages.ERROR, _msg)
                         logger.error(_msg)
             for index, i_error in enumerate(image_formset.errors):
-                for field, error_messages in i_error.iteritems():
+                for field, error_messages in i_error.items():
                     for error_message in error_messages:
                         _msg = "Image: %d field: %s error: %s" % (index, field, error_message)
                         messages.add_message(self.request, messages.ERROR, _msg)

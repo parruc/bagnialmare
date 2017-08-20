@@ -1,5 +1,5 @@
 from django import http
-from urlparse import urlparse
+from urllib import parse as urlparse
 from django.conf import settings
 from django.utils.translation import check_for_language, activate
 from django.core.urlresolvers import resolve, reverse

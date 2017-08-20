@@ -86,19 +86,19 @@ def setUpTestFactory(test_dimension=10):
     """
     search.recreate_index()
     districts = []
-    for i in xrange(2):
+    for i in range(2):
         districts.append(DistrictFactory())
     municipalities = []
-    for i in xrange(test_dimension):
+    for i in range(test_dimension):
         municipalities.append(MunicipalityFactory(district = districts[i%2]))
     service_categories = []
-    for i in xrange(3):
+    for i in range(3):
         service_categories.append(ServiceCategoryFactory())
     services = []
-    for i in xrange(test_dimension * 2):
+    for i in range(test_dimension * 2):
         services.append(ServiceFactory(category = service_categories[i%3]))
     bagni = []
-    for i in xrange(test_dimension):
+    for i in range(test_dimension):
         bagno = BagnoFactory()
         bagno.municipality = municipalities[i]
         bagno.services = random.sample(services, 4)

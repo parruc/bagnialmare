@@ -195,7 +195,7 @@ def search(q, filters, groups, query_string, max_facets=5):
                             del(facet_groups[group_slug]['facets'])
                     else:
                         facet_groups[group_slug]['facets'].append(facet_dict)
-        facets = OrderedDict(sorted(facet_groups.iteritems(),
+        facets = OrderedDict(sorted(facet_groups.items(),
                              key=lambda x: (x[1]['order'], x[1]['name'])))
 
     return hits, facets, active_facets

@@ -18,7 +18,7 @@ from .basesettings import TEMPLATES_DIRS
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': DB_NAME,
         'USER': DB_USER,
         'PASSWORD': DB_PASSWORD,
@@ -184,8 +184,6 @@ TEMPLATE_LOADERS = (
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.contrib.auth.context_processors.auth',
-    'allauth.account.context_processors.account',
-    'allauth.socialaccount.context_processors.socialaccount',
     'django.core.context_processors.debug',
     'django.core.context_processors.i18n',
     'django.core.context_processors.media',
@@ -197,14 +195,14 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 TEMPLATE_DIRS = TEMPLATES_DIRS
 
 LOCALE_PATHS = (
-    '/var/www/ombrelloni.it/django/ombrelloni/locale/',
-    '/var/www/ombrelloni.it/django/authauth/locale/',
-    '/var/www/ombrelloni.it/django/bagni/locale/',
-    '/var/www/ombrelloni.it/django/booking/locale/',
-    '/var/www/ombrelloni.it/django/contacts/locale/',
+    '/project/bagnialmare/bagnialmare/locale/',
+    '/project/bagnialmare/authauth/locale/',
+    '/project/bagnialmare/bagni/locale/',
+    '/project/bagnialmare/booking/locale/',
+    '/project/bagnialmare/contacts/locale/',
 )
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'bagni',
     'booking',
     'newsletters',
@@ -212,7 +210,6 @@ INSTALLED_APPS = (
     'authauth',
     'contacts',
     'userfeedback',
-    'debug_toolbar',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -221,7 +218,6 @@ INSTALLED_APPS = (
     'ckeditor',
     'modeltranslation',
     'sorl.thumbnail',
-    'south',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -233,8 +229,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.webdesign',
-)
-
+]
+if DEVELOPMENT:
+    INSTALLED_APPS.append('debug_toolbar')
 # South specific configuration to exclude migrations from tests
 SKIP_SOUTH_TESTS = True
 SOUTH_TESTS_MIGRATE = False
@@ -245,7 +242,7 @@ if DEVELOPMENT:
     MASS_EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
     MASS_EMAIL_TEST_BACKEND  = 'django.core.mail.backends.filebased.EmailBackend'
     EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-    EMAIL_FILE_PATH = '{{ django.logs_path }}/mail.log'
+    EMAIL_FILE_PATH = "/var/log/django/email"
 else:
     MANDRILL_API_KEY = "oqrObEV8ZI_4hvxcNwbDcQ"
     MANDRILL_API_TEST_KEY = "9A8CJujchIFopMGY0Xry8A"
@@ -295,3 +292,10 @@ LOGGING = {
     },
 }
 
+if DEVELOPMENT:
+    LOGGING["handlers"]["file"] = {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': '/var/log/django/django.log',
+    }
+    LOGGING["loggers"]["django"]["handlers"].append("file")

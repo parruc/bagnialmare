@@ -23,7 +23,7 @@ class NewsletterUser(models.Model):
     user = models.OneToOneField(User, related_name='newsletter_user')
     old_email = models.EmailField(editable=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.user.username
 
 class NewsletterTarget(BaseModel):
@@ -33,7 +33,7 @@ class NewsletterTarget(BaseModel):
         verbose_name = _('Newsletter target')
         verbose_name_plural = _('Newsletter targets')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -46,7 +46,7 @@ class NewsletterTemplate(BaseModel):
 
     path = models.CharField(max_length=100, verbose_name=_("Path"))
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -66,7 +66,7 @@ class Newsletter(BaseModel):
     target = models.ForeignKey("NewsletterTarget", related_name="newsletters", verbose_name=_("Target"),)
     template = models.ForeignKey("NewsletterTemplate", related_name="newsletters", verbose_name=_("Template"),)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.subject
 
 class NewsletterSubscription(models.Model):
