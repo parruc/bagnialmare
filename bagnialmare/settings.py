@@ -52,7 +52,7 @@ ROOT_URLCONF = DJANGO_ROOT_URL
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = DJANGO_WSGI_APPLICATION
 
-DEFAULT_FROM_EMAIL = "marco@bagnialmare.com"
+DEFAULT_FROM_EMAIL = "info@bagnialmare.com"
 ACCOUNT_SIGNUP_FORM_CLASS = "authauth.forms.ManagerSignupForm"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
@@ -250,12 +250,13 @@ else:
     MASS_EMAIL_TEST_BACKEND = "newsletters.mail.backends.mandrill.MandrillTestBackend"
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = SMTP_HOST
-EMAIL_PORT = 587
+EMAIL_PORT = 465
 EMAIL_HOST_USER = SMTP_USER
 EMAIL_HOST_PASSWORD = SMTP_PASSWORD
-EMAIL_USE_TLS = True
 EMAIL_USE_SSL = True
-MAILOFFLOADER_SOCKET = "ipc:///tmp/mailoffloader.ipc"
+
+# TODO: Configurare il mule uwsgi per fare questo lavoro
+# MAILOFFLOADER_SOCKET = "ipc:///tmp/mailoffloader.ipc"
 
 #this must be defined but ckeditor uploads are disabled
 #without this variable django will not work thus
