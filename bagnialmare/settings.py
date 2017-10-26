@@ -12,7 +12,6 @@ from .basesettings import HOST_NAME
 from .basesettings import SMTP_HOST
 from .basesettings import SMTP_PASSWORD
 from .basesettings import SMTP_USER
-from .basesettings import TEMPLATES_DIRS
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
@@ -192,7 +191,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
 )
 
-TEMPLATE_DIRS = TEMPLATES_DIRS
+TEMPLATE_DIRS = (
+    '/project/bagnialmare/bagnialmare/templates',
+)
 
 LOCALE_PATHS = (
     '/project/bagnialmare/bagnialmare/locale/',
