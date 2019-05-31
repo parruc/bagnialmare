@@ -9,7 +9,6 @@ logging.basicConfig()
 logger = logging.getLogger("bagni.console")
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list
 
     def handle(self, *args, **options):
         logger.info("loading bagni objects from json files")

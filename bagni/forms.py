@@ -1,7 +1,7 @@
 from itertools import chain
 
 from django import forms
-from django.forms.util import flatatt
+from django.forms.utils import flatatt
 from django.forms.models import inlineformset_factory, ModelFormMetaclass
 from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
@@ -67,7 +67,7 @@ class OmbrelloniOLWidget(OSMWidget):
                 'all' : ('/static/css/openlayers.tidy.css',),
               }
 
-class CheckboxInput(forms.widgets.SubWidget):
+class CheckboxInput(forms.widgets.Widget):
     """
     An object used by CheckboxRenderer that represents a single
     <input type='checkbox'>.

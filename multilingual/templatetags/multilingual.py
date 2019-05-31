@@ -1,4 +1,4 @@
-from django.core.urlresolvers import resolve, reverse
+from django.urls import reverse, resolve
 from django.utils.translation import activate, get_language
 from django import template
 

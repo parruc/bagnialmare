@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 09:50-0400\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,97 +16,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: settings.py:115
-msgid "English"
+#: templates/userfeedback/form.html:4
+msgid "Are you interested in the booking feature? Leave us your mail address"
 msgstr ""
 
-#: settings.py:116
-msgid "Italiano"
+#: templates/userfeedback/form.html:10
+msgid "email (optional)"
 msgstr ""
 
-#: urls.py:36
-msgid "^contacts/"
+#: templates/userfeedback/form.html:13
+msgid "Submit"
 msgstr ""
 
-#: urls.py:38
-msgid "^newsletters/"
-msgstr ""
+#~ msgid "about_us"
+#~ msgstr "about us"
 
-#: urls.py:43 urls.py:45
-msgid "^accounts/"
-msgstr ""
+#~ msgid "are_you_manager"
+#~ msgstr "are you a manager?"
 
-#: urls.py:47
-msgid "^userfeedback/"
-msgstr ""
-
-#: urls.py:49
-msgid "^booking/"
-msgstr ""
-
-#: templates/base.html:4
-msgid "about_us"
-msgstr "about us"
-
-#: templates/base.html:5
-msgid "are_you_manager"
-msgstr "are you a manager?"
-
-#: templates/base.html:6
-msgid "search"
-msgstr ""
-
-#: templates/base.html:7
-msgid "login"
-msgstr ""
-
-#: templates/base.html:8
-msgid "logout"
-msgstr ""
-
-#: templates/base.html:9
-msgid "edit"
-msgstr ""
-
-#: templates/base.html:104 templates/base.html.py:105
-msgid "About us"
-msgstr ""
-
-#: templates/base.html:116
-msgid "Account"
-msgstr ""
-
-#: templates/base.html:193
-msgid "BagniAlMare on Google+"
-msgstr ""
-
-#: templates/base.html:203
-msgid "BagniAlMare on Facebook"
-msgstr ""
-
-#: templates/base.html:211
-msgid "BagniAlMare on Twitter"
-msgstr ""
-
-#: templates/base.html:220
-msgid "terms_and_privacy"
-msgstr "terms of service and privacy"
-
-#: templates/base.html:229
-msgid ""
-"This website uses cookies, which could include third-party cookies, to "
-"ensure its technical functioning and analyse visitor information in "
-"aggregate form. By closing this banner or continuing the navigation you "
-"consent to the use of cookies"
-msgstr ""
-
-#: templates/base.html:231
-msgid "Continue"
-msgstr ""
-
-#: templates/base.html:232
-msgid "Learn more"
-msgstr ""
+#~ msgid "terms_and_privacy"
+#~ msgstr "terms of service and privacy"
 
 #~ msgid "contact"
 #~ msgstr "contacts"

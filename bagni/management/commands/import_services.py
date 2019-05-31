@@ -8,11 +8,8 @@ logger = logging.getLogger("bagni.console")
 
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list + (
-        make_option("-l", "--limit",
-                    action="store", type="int",
-                    dest="limit"),
-    )
+        def add_arguments(self, parser):
+            parser.add_argument('--limit', '-l', type=int)
 
     def handle(self, *args, **options):
         Service.objects.all().delete()

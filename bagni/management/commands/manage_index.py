@@ -3,14 +3,10 @@ from bagni import search
 from optparse import make_option
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list + (
-        make_option("-o", "--operation",
-                    action="store", type="string",
-                    dest="operation"),
-        make_option("-l", "--language",
-                    action="store", type="string",
-                    dest="language"),
-        )
+
+    def add_arguments(self, parser):
+        parser.add_argument('--operation', '-o', type=str)
+        parser.add_argument('--language', '-l', type=str)
 
     def handle(self, *args, **options):
         if not options['operation']:

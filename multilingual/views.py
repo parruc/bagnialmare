@@ -2,7 +2,7 @@ from django import http
 from urllib import parse as urlparse
 from django.conf import settings
 from django.utils.translation import check_for_language, activate
-from django.core.urlresolvers import resolve, reverse
+from django.urls import reverse, resolve
 from django.utils.http import is_safe_url
 
 def set_language(request):

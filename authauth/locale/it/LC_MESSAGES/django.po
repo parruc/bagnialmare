@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 07:30-0400\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: 2014-04-02 20:00+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -30,27 +30,69 @@ msgstr "Nome"
 msgid "Surname"
 msgstr "Cognome"
 
-#: models.py:32
+#: models.py:33
 msgid "Privacy terms"
 msgstr "termini della privacy"
 
-#: models.py:33
+#: models.py:34
 msgid "Privacy terms definition"
 msgstr "definizione dei termini della privacy"
 
-#: models.py:38
+#: models.py:39
 msgid "Terms of service "
 msgstr "termini del servizio"
 
-#: models.py:39
+#: models.py:40
 msgid "Terms of service definition"
 msgstr "Definizione dei termini del servizio"
 
+#: templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"User %(user_display)s at %(site_name)s has given this as an email address.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
+"L'utente %(user_display)s di %(site_name)s ha fornito questo indirizzo mail "
+"come credenziale.\n"
+"\n"
+"Per confermare che questo è l'indirizzo corretto, vai a %(activate_url)s\n"
+
+#: templates/account/email/email_confirmation_subject.txt:3
 #: templates/account/email_confirm.html:7
 #: templates/account/email_confirm.html:11
-#: templates/account/email/email_confirmation_subject.txt:3
 msgid "Confirm E-mail Address"
 msgstr "Conferma il tuo indirizzo di posta elettronica"
+
+#: templates/account/email/password_reset_key_message.txt:1
+#, python-format
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+msgstr ""
+"Hai ricevuto queso messaggio e-mail perchè tu o qualcun'altro ha richiesto "
+"di resettare la password per il tuo account sul sito %(site_domain)s.\n"
+"Puoi tranquillamente ignoare questo messaggio se non hai richiesto tu il "
+"reset della password. Clicca il link sottostante per resettare la tua "
+"password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"Nel caso ti fossi dimenticato, il tuo username è %(username)s.\n"
+"\n"
+"A presto, dal team di %(site_domain)s\n"
+
+#: templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr "Ti è stata inviata una mail con cui puoi resettare la password"
 
 #: templates/account/email_confirm.html:17
 #, python-format
@@ -74,12 +116,12 @@ msgstr ""
 "Questo link per la conferma dell'indirizzo email è scaduto o non valido. Per "
 "favore <a href=\"%(email_url)s\">richiedi una nuova email di attivazione</a>."
 
-#: templates/account/login.html:7 templates/account/login.html.py:23
-#: templates/account/login.html:69
+#: templates/account/login.html:7 templates/account/login.html:27
+#: templates/account/login.html:73
 msgid "Sign In"
 msgstr "Entra"
 
-#: templates/account/login.html:26
+#: templates/account/login.html:30
 #, python-format
 msgid ""
 "Please sign in with one\n"
@@ -88,11 +130,11 @@ msgid ""
 "        for a %(site_name)s account and sign in below:"
 msgstr ""
 
-#: templates/account/login.html:36
+#: templates/account/login.html:40
 msgid "or"
 msgstr ""
 
-#: templates/account/login.html:43
+#: templates/account/login.html:47
 #, python-format
 msgid ""
 "If you have not created an account yet, then please\n"
@@ -101,17 +143,62 @@ msgstr ""
 "Se non hai ancora creato una account per favore prima\n"
 "<a href=\"%(signup_url)s\" rel=\"nofollow\">Registrati</a>."
 
-#: templates/account/login.html:52
+#: templates/account/login.html:56
 msgid "Email address"
 msgstr "Indirizzo email"
 
-#: templates/account/login.html:60
+#: templates/account/login.html:64
 msgid "Remember Me"
 msgstr "Ricordami"
 
-#: templates/account/login.html:67
+#: templates/account/login.html:71
 msgid "Forgot Password?"
 msgstr "Hai dimenticato la password?"
+
+#: templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "Non puoi rimuovere il tuo indirizzo mail (%(email)s)."
+
+#: templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr "E' stata spedita una email di conferma a %(email)s"
+
+#: templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "Hai confermato il tuo indirizzo email %(email)s"
+
+#: templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr "Rimosso indirizzo mail %(email)s."
+
+#: templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr "Hai effettuato il login con successo come %(name)s."
+
+#: templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr "Hai effettuato il logout"
+
+#: templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr "La password è stata modificata con successo"
+
+#: templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr "Password modificata con successo"
+
+#: templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr "Abbiamo inserito il tuo indirizzo mail primario"
+
+#: templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr "Il tuo indirizzo mail deve essere verificato."
 
 #: templates/account/password_reset.html:7
 #: templates/account/password_reset.html:11
@@ -183,7 +270,7 @@ msgstr "cambia la password"
 msgid "Your password is now changed."
 msgstr "La password è stata modificata con successo"
 
-#: templates/account/signup.html:8 templates/account/signup.html.py:15
+#: templates/account/signup.html:8 templates/account/signup.html:15
 msgid "signup"
 msgstr "registrati"
 
@@ -223,7 +310,7 @@ msgstr "Seleziona la località e il nome del tuo bagno"
 msgid "choose_neighbourhood"
 msgstr "scegli la località"
 
-#: templates/account/signup.html:25 templates/account/signup.html.py:209
+#: templates/account/signup.html:25 templates/account/signup.html:209
 msgid "choose_bagno"
 msgstr "scegli il bagno"
 
@@ -321,93 +408,6 @@ msgstr ""
 "Ti abbiamo inviato un messagio e-mail di conferma. Segui il link fornito per "
 "finalizzare il processo di signup. Ti preghiamo di contattarci per qualsiasi "
 "problema"
-
-#: templates/account/email/email_confirmation_message.txt:1
-#, python-format
-msgid ""
-"User %(user_display)s at %(site_name)s has given this as an email address.\n"
-"\n"
-"To confirm this is correct, go to %(activate_url)s\n"
-msgstr ""
-"L'utente %(user_display)s di %(site_name)s ha fornito questo indirizzo mail "
-"come credenziale.\n"
-"\n"
-"Per confermare che questo è l'indirizzo corretto, vai a %(activate_url)s\n"
-
-#: templates/account/email/password_reset_key_message.txt:1
-#, python-format
-msgid ""
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account at %(site_domain)s.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password.\n"
-"\n"
-"%(password_reset_url)s\n"
-"\n"
-"In case you forgot, your username is %(username)s.\n"
-"\n"
-"Thanks for using our site!\n"
-msgstr ""
-"Hai ricevuto queso messaggio e-mail perchè tu o qualcun'altro ha richiesto "
-"di resettare la password per il tuo account sul sito %(site_domain)s.\n"
-"Puoi tranquillamente ignoare questo messaggio se non hai richiesto tu il "
-"reset della password. Clicca il link sottostante per resettare la tua "
-"password.\n"
-"\n"
-"%(password_reset_url)s\n"
-"\n"
-"Nel caso ti fossi dimenticato, il tuo username è %(username)s.\n"
-"\n"
-"A presto, dal team di %(site_domain)s\n"
-
-#: templates/account/email/password_reset_key_subject.txt:3
-msgid "Password Reset E-mail"
-msgstr "Ti è stata inviata una mail con cui puoi resettare la password"
-
-#: templates/account/messages/cannot_delete_primary_email.txt:2
-#, python-format
-msgid "You cannot remove your primary e-mail address (%(email)s)."
-msgstr "Non puoi rimuovere il tuo indirizzo mail (%(email)s)."
-
-#: templates/account/messages/email_confirmation_sent.txt:2
-#, python-format
-msgid "Confirmation e-mail sent to %(email)s."
-msgstr "E' stata spedita una email di conferma a %(email)s"
-
-#: templates/account/messages/email_confirmed.txt:2
-#, python-format
-msgid "You have confirmed %(email)s."
-msgstr "Hai confermato il tuo indirizzo email %(email)s"
-
-#: templates/account/messages/email_deleted.txt:2
-#, python-format
-msgid "Removed e-mail address %(email)s."
-msgstr "Rimosso indirizzo mail %(email)s."
-
-#: templates/account/messages/logged_in.txt:4
-#, python-format
-msgid "Successfully signed in as %(name)s."
-msgstr "Hai effettuato il login con successo come %(name)s."
-
-#: templates/account/messages/logged_out.txt:2
-msgid "You have signed out."
-msgstr "Hai effettuato il logout"
-
-#: templates/account/messages/password_changed.txt:2
-msgid "Password successfully changed."
-msgstr "La password è stata modificata con successo"
-
-#: templates/account/messages/password_set.txt:2
-msgid "Password successfully set."
-msgstr "Password modificata con successo"
-
-#: templates/account/messages/primary_email_set.txt:2
-msgid "Primary e-mail address set."
-msgstr "Abbiamo inserito il tuo indirizzo mail primario"
-
-#: templates/account/messages/unverified_primary_email.txt:2
-msgid "Your primary e-mail address must be verified."
-msgstr "Il tuo indirizzo mail deve essere verificato."
 
 #~ msgid ""
 #~ "<p>Thank you for the attention, we invite you to contact us for any "

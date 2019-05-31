@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib.gis.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.urls import reverse
 
 from . import BaseModel
 
@@ -15,9 +16,8 @@ class District(BaseModel):
 
     description = models.TextField(max_length=2000, blank=True)
 
-    @models.permalink
     def get_absolute_url(self):
-        return ("district", [self.slug, ])
+        return reverse("district", [self.slug, ])
 
 
 class Municipality(BaseModel):
@@ -30,10 +30,10 @@ class Municipality(BaseModel):
         app_label = 'bagni'
 
     description = models.TextField(max_length=2000, blank=True)
-    district = models.ForeignKey(District, related_name="municipalities", verbose_name=_("District"),)
-    @models.permalink
+    district = models.ForeignKey(District, related_name="municipalities", verbose_name=_("District"), on_delete=models.CASCADE, )
+
     def get_absolute_url(self):
-        return ("municipality", [self.slug, ])
+        return reverse("municipality", [self.slug, ])
 
 
 class Neighbourhood(BaseModel):
@@ -45,8 +45,7 @@ class Neighbourhood(BaseModel):
         app_label = 'bagni'
 
     description = models.TextField(max_length=2000, blank=True)
-    municipality = models.ForeignKey(Municipality, related_name='neighbourhoods', verbose_name=_("Municipality"), )
+    municipality = models.ForeignKey(Municipality, related_name='neighbourhoods', verbose_name=_("Municipality"), on_delete=models.CASCADE, )
 
-    @models.permalink
     def get_absolute_url(self):
-        return ("neighbourhood", [self.slug, ])
+        return reverse("neighbourhood", [self.slug, ])

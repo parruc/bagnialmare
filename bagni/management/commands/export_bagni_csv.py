@@ -12,7 +12,6 @@ SEPARATOR = u";"
 DATEFMT = "%d/%m/%Y %H:%M"
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list
 
     def handle(self, *args, **options):
         counter = 0

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 00:35+0200\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,11 +62,11 @@ msgstr ""
 msgid "Mobile"
 msgstr "Cellulare"
 
-#: signals.py:41
+#: signals.py:67
 msgid "managed"
 msgstr "gestito"
 
-#: signals.py:42
+#: signals.py:68
 msgid "not managed (WE HAVE TO CALL)"
 msgstr "non gestito (DOBBIAMO TELEFONARE)"
 
@@ -171,6 +171,8 @@ msgstr[0] "%(umbrellas)s ombrellone"
 msgstr[1] "%(umbrellas)s ombrelloni"
 
 #: templates/booking/details.html:3 templates/booking/details.txt:2
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:5
 msgid "and"
 msgstr "e"
 
@@ -222,6 +224,33 @@ msgstr "Il team di Bagnialmare"
 #: templates/booking/manager_mail_subject.txt:2
 msgid "[bagnialmare.com booking] You received a quotation request"
 msgstr "[bagnialmare.com booking] Hai ricevuto una richiesta di preventivo"
+
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:3
+#, fuzzy, python-format
+#| msgid "When: from %(start)s to %(end)s"
+msgid " dal %(start)s al %(end)s"
+msgstr "Quando: dal %(start)s al %(end)s"
+
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:5
+#, fuzzy, python-format
+#| msgid "%(umbrellas)sumbrella"
+#| msgid_plural "%(umbrellas)s umbrellas"
+msgid "%(umbrellas)s ombrellone"
+msgid_plural "%(umbrellas)s ombrelloni"
+msgstr[0] "%(umbrellas)s ombrellone"
+msgstr[1] "%(umbrellas)s ombrelloni"
+
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:5
+#, fuzzy, python-format
+#| msgid "%(sunbeds)s sunbed"
+#| msgid_plural "%(sunbeds)s sunbeds"
+msgid "%(sunbeds)s lettino"
+msgid_plural "%(sunbeds)s lettini"
+msgstr[0] "%(sunbeds)s lettino"
+msgstr[1] "%(sunbeds)s lettini"
 
 #: templates/booking/user_mail_message.txt:2
 #, python-format

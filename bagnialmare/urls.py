@@ -1,57 +1,50 @@
-from django.conf.urls import patterns, include, url
+from django.urls import path, re_path, include
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
+from django.conf.urls.static import static
 from django.utils.translation import ugettext_lazy as _
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib.gis import admin
+from django.contrib.sitemaps.views import sitemap
+from django.contrib.auth.views import LogoutView
 from bagnialmare.common.sitemaps import get_sitemaps
 
 SITEMAPS = get_sitemaps(['bagni', 'contacts'])
 
 admin.autodiscover()
 
-urlpatterns = patterns(
-    '',
+
+urlpatterns = [
     # Uncomment the admin/doc line below to enable admin documentation:
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    url(r'^i18n/', include('multilingual.urls')),
-
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
+    path('i18n/', include('multilingual.urls')),
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
-
+    path('admin/', admin.site.urls),
     #enables the sitemaps framework
-    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps' : SITEMAPS}),
-
+    path('sitemap.xml', sitemap, {'sitemaps': SITEMAPS}, name='django.contrib.sitemaps.views.sitemap'),
     #enables rich text editing
-    (r'^ckeditor/', include('ckeditor.urls')),
-)
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+]
 
 urlpatterns += i18n_patterns(
-    '',
     # Bagni urls
-    url(r'^', include('bagni.urls')),
-
-    url(_(r'^contacts/'), include('contacts.urls')),
-
-    url(_(r'^newsletters/'), include('newsletters.urls')),
-
+    path('', include('bagni.urls')),
+    re_path(_(r'^contacts/'), include('contacts.urls')),
+    re_path(_(r'^newsletters/'), include('newsletters.urls')),
     #exclude logout confirmation step
-    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+    re_path(r'^accounts/logout/$', LogoutView.as_view(), {'next_page': '/'}, name='django.contrib.auth.views.logout'),
     # Authauth rewrites signup view
-    url(_(r'^accounts/'), include('authauth.urls')),
+    re_path(_(r'^accounts/'), include('authauth.urls')),
     # Authentication initial path
-    url(_(r'^accounts/'), include('allauth.urls')),
-
-    url(_(r'^userfeedback/'), include('userfeedback.urls')),
-
-    url(_(r'^booking/'), include('booking.urls')),
+    re_path(_(r'^accounts/'), include('allauth.urls')),
+    re_path(_(r'^userfeedback/'), include('userfeedback.urls')),
+    re_path(_(r'^booking/'), include('booking.urls')),
+    prefix_default_language=True,
 )
-
 
 if settings.DEBUG:
     import debug_toolbar
-    urlpatterns += patterns('',
-    url(r'^__debug__/', include(debug_toolbar.urls)),
-)
+    urlpatterns += [ path('__debug__/', include(debug_toolbar.urls)), ]
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 class Booking(models.Model):
 
     bagno = models.ForeignKey("bagni.Bagno", related_name='bookings',
-                              verbose_name=_("Bagno"),)
+                              verbose_name=_("Bagno"), on_delete=models.CASCADE)
     start = models.DateField(verbose_name=_("From"),
                              default=date.today)
     end = models.DateField(verbose_name=_("To"),

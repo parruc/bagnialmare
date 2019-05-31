@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db.models import signals
 from django.core.mail import send_mail
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.conf import settings
 from django.template.loader import get_template
 from django.template import Context

@@ -53,7 +53,7 @@ class Telephone(models.Model):
 
     number = models.CharField(max_length=100, blank=True,  verbose_name=_("Number"))
 
-    bagno = models.ForeignKey("Bagno", related_name="telephones", verbose_name=_("Bagno"),)
+    bagno = models.ForeignKey("Bagno", related_name="telephones", verbose_name=_("Bagno"), on_delete=models.CASCADE)
 
     def natural_key(self):
         return (self.slug,)
@@ -94,7 +94,7 @@ class Image(models.Model):
 
     description = models.TextField(max_length=2000, blank=True, verbose_name=_("Description"))
     image = ImageField(upload_to=_define_filename, verbose_name=_("Image"),)
-    bagno = models.ForeignKey("Bagno", related_name="images", verbose_name=_("Bagno"),)
+    bagno = models.ForeignKey("Bagno", related_name="images", verbose_name=_("Bagno"), on_delete=models.CASCADE)
 
     def natural_key(self):
         return (self.slug,)

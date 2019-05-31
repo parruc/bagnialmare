@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-12 09:16-0400\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -17,170 +17,69 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Book your Hotel"
-msgstr "Prenota il tuo Hotel"
-
-#: urls.py:11
-msgid "^concorso2014/$"
-msgstr ""
-
-#: urls.py:12
-msgid "^terms/$"
-msgstr ""
-
-#: urls.py:13
-msgid "^privacy/$"
-msgstr ""
-
-#: urls.py:14
-msgid "^conditions/$"
-msgstr ""
-
-#: urls.py:15
-msgid "^bagni/$"
-msgstr ""
-
-#: urls.py:16
-msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
-msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
-
-#: urls.py:17
-msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
-msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
-
-#: urls.py:18
-msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
-msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
-
-#: urls.py:19
-msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/book/$"
-msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/prenota/$"
-
-#: urls.py:20
-msgid "^search/$"
-msgstr "^cerca/$"
-
-#: urls.py:21
-msgid "^service-categories/$"
-msgstr "^categorie-servizi/$"
-
-#: urls.py:22
-msgid "^service-category/(?P<slug>[-\\w]+)/$"
-msgstr "^categoria-servizi/(?P<slug>[-\\w]+)/$"
-
-#: urls.py:24
-msgid "^services/(?P<slug>[-\\w]+)/$"
-msgstr "^servizi/(?P<slug>[-\\w]+)/$"
-
-#: urls.py:25
-msgid ""
-"^stabilimenti-balneari/services/(?P<facility_slug>[-\\w]+)/(?"
-"P<neighbourhood_slug>[-\\w]+)/$"
-msgstr ""
-"^stabilimenti-balneari/servizi/(?P<facility_slug>[-\\w]+)/(?"
-"P<neighbourhood_slug>[-\\w]+)/$"
-
-#: urls.py:26
-msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
-msgstr "^localita/(?P<slug>[-\\w]+)/$"
-
-#: urls.py:28
-msgid "^municipality/(?P<slug>[-\\w]+)/$"
-msgstr "^comune/(?P<slug>[-\\w]+)/$"
-
-#: urls.py:29
-msgid "^municipalities/$"
-msgstr "^comuni/$"
-
-#: urls.py:30
-msgid "^district/(?P<slug>[-\\w]+)/$"
-msgstr "^provincia/(?P<slug>[-\\w]+)/$"
-
-#: urls.py:31
-msgid "^districts/$"
-msgstr "^province/$"
-
-#: urls.py:32
-msgid "^json/autocomplete/places$"
-msgstr ""
-
-#: urls.py:33
-msgid "^json/autocomplete/searchterms$"
-msgstr ""
-
-#: urls.py:34
-msgid "^json/neighbourhood/(?P<id>\\d+)/$"
-msgstr "^json/localita/(?P<id>\\d+)/$"
-
-#: urls.py:35
-msgid ""
-"^json/bbox/(?P<x1>[\\.\\-\\+\\d]+)/(?P<y1>[\\.\\-\\+\\d]+)/(?P<x2>[\\.\\-\\+"
-"\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
-msgstr ""
-
-#: management/commands/restore_telephones.py:36 models/bagni_details.py:26
+#: management/commands/restore_telephones.py:32 models/bagni_details.py:26
 #: models/bagni_details.py:32
 msgid "Telephone number"
 msgstr "Numero di telefono"
 
-#: management/commands/restore_telephones.py:36 models/bagni_details.py:31
+#: management/commands/restore_telephones.py:32 models/bagni_details.py:31
 msgid "Mobile number"
 msgstr "Numero di cellulare"
 
-#: management/commands/restore_telephones.py:36 models/bagni_details.py:34
+#: management/commands/restore_telephones.py:32 models/bagni_details.py:34
 msgid "Winter number"
 msgstr "Contatto invernale"
 
-#: management/commands/restore_telephones.py:36 models/bagni_details.py:33
+#: management/commands/restore_telephones.py:32 models/bagni_details.py:33
 msgid "Fax number"
 msgstr "Numero di fax"
 
-#: models/bagni.py:18 models/bagni_details.py:56 models/bagni_details.py:97
+#: models/bagni.py:16 models/bagni_details.py:56 models/bagni_details.py:97
 msgid "Bagno"
 msgstr ""
 
-#: models/bagni.py:19
+#: models/bagni.py:17
 msgid "Bagni"
 msgstr ""
 
-#: models/bagni.py:22 models/bagni_details.py:18 models/bagni_details.py:95
-#: models/services.py:20 models/services.py:37
+#: models/bagni.py:20 models/bagni_details.py:18 models/bagni_details.py:95
+#: models/services.py:22 models/services.py:38
 msgid "Description"
 msgstr "Descrizione del bagno"
 
-#: models/bagni.py:24 models/bagni_details.py:54
+#: models/bagni.py:22 models/bagni_details.py:54
 msgid "Number"
 msgstr "Numero del bagno"
 
-#: models/bagni.py:25
+#: models/bagni.py:23
 msgid "Languages"
 msgstr "Lingue parlate"
 
-#: models/bagni.py:26
+#: models/bagni.py:24
 msgid "Facilities"
 msgstr "servizi"
 
-#: models/bagni.py:27
+#: models/bagni.py:25
 msgid "Address"
 msgstr "Indirizzo"
 
-#: models/bagni.py:28 models/places.py:43
+#: models/bagni.py:26 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Localita"
 
-#: models/bagni.py:29
+#: models/bagni.py:27
 msgid "Mail"
 msgstr "Indirizzo mail"
 
-#: models/bagni.py:30
+#: models/bagni.py:28
 msgid "Website"
 msgstr "Sito internet"
 
-#: models/bagni.py:31
+#: models/bagni.py:29
 msgid "Coordinates"
 msgstr "Coordinate"
 
-#: models/bagni.py:33
+#: models/bagni.py:31
 msgid "Accept booking"
 msgstr "Interessato a prenotazioni online?"
 
@@ -204,8 +103,8 @@ msgstr "Telefono"
 msgid "Slug"
 msgstr ""
 
-#: models/bagni_details.py:73 models/bagni_details.py:96 models/services.py:22
-#: models/services.py:43
+#: models/bagni_details.py:73 models/bagni_details.py:96 models/services.py:24
+#: models/services.py:44
 msgid "Image"
 msgstr "Immagine"
 
@@ -221,11 +120,11 @@ msgstr "Titolo"
 msgid "Name"
 msgstr "Nome"
 
-#: models/places.py:12 models/places.py:33
+#: models/places.py:13 models/places.py:33
 msgid "District"
 msgstr "Provincia"
 
-#: models/places.py:13
+#: models/places.py:14
 msgid "Districts"
 msgstr "Province"
 
@@ -243,19 +142,19 @@ msgstr "Comuni"
 msgid "Neighbourhoods"
 msgstr "Località"
 
-#: models/services.py:16 models/services.py:17
+#: models/services.py:18 models/services.py:19
 msgid "Service Category"
 msgstr "Categoria di servizi"
 
-#: models/services.py:33
+#: models/services.py:34
 msgid "Service"
 msgstr "Servizio"
 
-#: models/services.py:34
+#: models/services.py:35
 msgid "Services"
 msgstr "Servizi"
 
-#: models/services.py:42
+#: models/services.py:43
 msgid "Category"
 msgstr "Categoria"
 
@@ -268,8 +167,7 @@ msgstr "Stabilimenti balneari"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/service_detail.html:9
-#: templates/bagni/service_detail.html:18
+#: templates/bagni/service_detail.html:9 templates/bagni/service_detail.html:18
 #: templates/bagni/service_detail.html:37
 #: templates/bagni/service_detail.html:45
 #: templates/bagni/service_detail.html:60
@@ -281,7 +179,7 @@ msgstr "con"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:35 templates/bagni/bagno_detail.html:261
+#: templates/bagni/bagno_detail.html:35 templates/bagni/bagno_detail.html:267
 msgid "in"
 msgstr "a"
 
@@ -436,24 +334,30 @@ msgstr "pagina di ricerca"
 msgid "book_button"
 msgstr "Prenota l'ombrellone online!"
 
-#: templates/bagni/bagno_detail.html:95
+#: templates/bagni/bagno_detail.html:64
+msgid "Book your Hotel"
+msgstr "Prenota il tuo Hotel"
+
+#: templates/bagni/bagno_detail.html:101
 msgid "Share on socials"
 msgstr "Condividi sui social"
 
-#: templates/bagni/bagno_detail.html:99 templates/bagni/bagno_detail.html:106
+#: templates/bagni/bagno_detail.html:105 templates/bagni/bagno_detail.html:112
+#, python-format
 msgid "Share %(name)s on Facebook"
 msgstr "Condividi %(name)s su Facebook"
 
-#: templates/bagni/bagno_detail.html:111 templates/bagni/bagno_detail.html:118
+#: templates/bagni/bagno_detail.html:117 templates/bagni/bagno_detail.html:124
 #, python-format
 msgid "Tweet about %(name)s"
 msgstr "Twitta su %(name)s"
 
-#: templates/bagni/bagno_detail.html:123 templates/bagni/bagno_detail.html:130
+#: templates/bagni/bagno_detail.html:129 templates/bagni/bagno_detail.html:136
+#, python-format
 msgid "Share %(name)s on Google+"
 msgstr "Condividi %(name) su Google+"
 
-#: templates/bagni/bagno_detail.html:265
+#: templates/bagni/bagno_detail.html:271
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -493,7 +397,7 @@ msgstr ""
 msgid "no_bagno"
 msgstr "nessun bagno"
 
-#: templates/bagni/bagno_list.html:19 templates/bagni/bagno_list.html.py:24
+#: templates/bagni/bagno_list.html:19 templates/bagni/bagno_list.html:24
 msgid "bagni"
 msgstr "bagni"
 
@@ -600,7 +504,7 @@ msgstr "Prenota"
 msgid "Book it, relax and prepare to enjoy... Aint't easy?"
 msgstr "Prenota l'ombrellone online e preparati a divertirti.. facile no?"
 
-#: templates/bagni/homepage.html:116 templates/bagni/homepage.html.py:130
+#: templates/bagni/homepage.html:116 templates/bagni/homepage.html:130
 #: templates/bagni/search.html:392
 msgid "Close"
 msgstr "Chiudi"
@@ -961,7 +865,105 @@ msgid ""
 "</div>\n"
 msgstr ""
 
-#: views/bagni.py:160
+#: urls.py:10
+msgid "^concorso2014/$"
+msgstr ""
+
+#: urls.py:11
+msgid "^terms/$"
+msgstr ""
+
+#: urls.py:12
+msgid "^privacy/$"
+msgstr ""
+
+#: urls.py:13
+msgid "^conditions/$"
+msgstr ""
+
+#: urls.py:14
+msgid "^bagni/$"
+msgstr ""
+
+#: urls.py:15
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:16
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/edit/$"
+
+#: urls.py:17
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contacts/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/contatti/$"
+
+#: urls.py:18
+msgid "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/book/$"
+msgstr "^bagni/(?P<neighbourhood>[-\\w]+)/(?P<slug>[-\\w]+)/prenota/$"
+
+#: urls.py:19
+msgid "^search/$"
+msgstr "^cerca/$"
+
+#: urls.py:20
+msgid "^service-categories/$"
+msgstr "^categorie-servizi/$"
+
+#: urls.py:21
+msgid "^service-category/(?P<slug>[-\\w]+)/$"
+msgstr "^categoria-servizi/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:23
+msgid "^services/(?P<slug>[-\\w]+)/$"
+msgstr "^servizi/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:24
+msgid ""
+"^stabilimenti-balneari/services/(?P<facility_slug>[-\\w]+)/(?"
+"P<neighbourhood_slug>[-\\w]+)/$"
+msgstr ""
+"^stabilimenti-balneari/servizi/(?P<facility_slug>[-\\w]+)/(?"
+"P<neighbourhood_slug>[-\\w]+)/$"
+
+#: urls.py:25
+msgid "^neighbourhood/(?P<slug>[-\\w]+)/$"
+msgstr "^localita/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:27
+msgid "^municipality/(?P<slug>[-\\w]+)/$"
+msgstr "^comune/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:28
+msgid "^municipalities/$"
+msgstr "^comuni/$"
+
+#: urls.py:29
+msgid "^district/(?P<slug>[-\\w]+)/$"
+msgstr "^provincia/(?P<slug>[-\\w]+)/$"
+
+#: urls.py:30
+msgid "^districts/$"
+msgstr "^province/$"
+
+#: urls.py:31
+msgid "^json/autocomplete/places$"
+msgstr ""
+
+#: urls.py:32
+msgid "^json/autocomplete/searchterms$"
+msgstr ""
+
+#: urls.py:33
+msgid "^json/neighbourhood/(?P<id>\\d+)/$"
+msgstr "^json/localita/(?P<id>\\d+)/$"
+
+#: urls.py:34
+msgid ""
+"^json/bbox/(?P<x1>[\\.\\-\\+\\d]+)/(?P<y1>[\\.\\-\\+\\d]+)/(?P<x2>[\\.\\-\\+"
+"\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
+msgstr ""
+
+#: views/bagni.py:206
 msgid ""
 "Thank you for your booking request. We will let you know the                 "
 "result as soon as possible"
@@ -969,7 +971,7 @@ msgstr ""
 "Ti ringraziamo per la tua richiesta di prenotazione. Ti faremo sapere il "
 "risultato il prima possibile"
 
-#: views/bagni.py:185
+#: views/bagni.py:231
 msgid ""
 "We forwarded your message to the beach resort. As soon as possible you'll "
 "receive a feedback to the email address provided."

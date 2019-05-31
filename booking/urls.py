@@ -1,7 +1,6 @@
-from django.conf.urls import patterns, url
+from django.urls import path
 from . import views
 
-urlpatterns = patterns(
-        '',
-        url(r"^booking-unsubscribe/$", views.booking_unsubscribe_view, name="booking_unsubscribe"),
-)
+urlpatterns = [
+        path("booking-unsubscribe", views.booking_unsubscribe_view, name="booking_unsubscribe"),
+]

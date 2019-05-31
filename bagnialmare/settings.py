@@ -154,15 +154,21 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
     'django.middleware.gzip.GZipMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-)
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+
+if DEBUG:
+    MIDDLEWARE.insert(1, 'debug_toolbar.middleware.DebugToolbarMiddleware')
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -173,26 +179,24 @@ FIXTURE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'fixtures'),
 )
 
-# List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-)
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.core.context_processors.request',
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.media',
-    'django.core.context_processors.static',
-    'django.core.context_processors.tz',
-    'django.contrib.messages.context_processors.messages',
-)
-
-TEMPLATE_DIRS = (
-    '/project/bagnialmare/bagnialmare/templates',
-)
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(PROJ_DIR, 'templates'), ],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    }
+]
 
 LOCALE_PATHS = (
     '/project/bagnialmare/bagnialmare/locale/',
@@ -228,13 +232,9 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'django.contrib.sites',
     'django.contrib.sitemaps',
-    'django.contrib.webdesign',
 ]
 if DEVELOPMENT:
     INSTALLED_APPS.append('debug_toolbar')
-# South specific configuration to exclude migrations from tests
-SKIP_SOUTH_TESTS = True
-SOUTH_TESTS_MIGRATE = False
 
 if DEVELOPMENT:
     MANDRILL_API_KEY = "oqrObEV8ZI_4hvxcNwbDcQ"

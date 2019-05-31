@@ -5,7 +5,7 @@ from bagni.models.services import Service
 
 from bagnialmare.common.sitemaps import LocalesSitemap, StaticLocalesSitemap
 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.utils.translation import get_language
 
 class BagnoSitemap(LocalesSitemap):

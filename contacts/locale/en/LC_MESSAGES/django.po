@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-29 01:04+0200\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,16 +25,6 @@ msgstr ""
 #: forms.py:8 templates/contacts/form.html:12
 #: templates/contacts/form_popup.html:11
 msgid "Message"
-msgstr ""
-
-#: views.py:22
-msgid "Thanks for contacting us. We will asnwer you as soon as possible."
-msgstr ""
-
-#: views.py:59
-msgid ""
-"Error sending the mail: Contact us at                    info at bagnialmare "
-"dot com to inform                    us about the error. Thanks"
 msgstr ""
 
 #: templates/contacts/contacts.html:20
@@ -75,4 +65,14 @@ msgid ""
 "let us know by using the form below.\n"
 "We are happy to answer you questions and listen to your opinions.</p>\n"
 "<p>The Bagnialmare team</p>"
+msgstr ""
+
+#: views.py:22
+msgid "Thanks for contacting us. We will asnwer you as soon as possible."
+msgstr ""
+
+#: views.py:59
+msgid ""
+"Error sending the mail: Contact us at                    info at bagnialmare "
+"dot com to inform                    us about the error. Thanks"
 msgstr ""

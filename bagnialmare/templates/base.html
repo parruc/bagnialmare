@@ -8,15 +8,13 @@
 {% trans "logout" as t_logout %}
 {% trans "edit" as t_edit %}
 
-{% load url from future %}
-
 <html lang="{{LANGUAGE_CODE}}">
 <head>
   <meta name="robots" content="{% block robot %}index, follow{% endblock %}" />
   <meta name="description" content="{% block description %}bagnialmare.com{% endblock %}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>{%block pagetitle %}bagnialmare.com{% endblock %}</title>
+  <title>{% block pagetitle %}bagnialmare.com{% endblock %}</title>
 
   {% for lang in LANGUAGES %}
     {% with lang.0 as lang_code %}

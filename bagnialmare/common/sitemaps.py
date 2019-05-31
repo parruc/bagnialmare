@@ -1,8 +1,8 @@
 from django.conf import settings
 from django.contrib.sitemaps import Sitemap
 from django.utils.translation import activate
-from django.core.urlresolvers import reverse
-from django.utils.importlib import import_module
+from django.urls import reverse
+from importlib import import_module
 
 all = ["LocalesSitemap", "StaticLocalesSitemap", "get_sitemaps"]
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 09:50-0400\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,98 +17,79 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: settings.py:115
-msgid "English"
-msgstr "Inglese"
-
-#: settings.py:116
-msgid "Italiano"
-msgstr "Italiano"
-
-#: urls.py:36
-msgid "^contacts/"
-msgstr "^contatti/"
-
-#: urls.py:38
-msgid "^newsletters/"
+#: templates/userfeedback/form.html:4
+msgid "Are you interested in the booking feature? Leave us your mail address"
 msgstr ""
 
-#: urls.py:43 urls.py:45
-msgid "^accounts/"
-msgstr "^accounts/"
-
-#: urls.py:47
-msgid "^userfeedback/"
+#: templates/userfeedback/form.html:10
+msgid "email (optional)"
 msgstr ""
 
-#: urls.py:49
-msgid "^booking/"
-msgstr "^prenotazione/"
-
-#: templates/base.html:4
-msgid "about_us"
-msgstr "about us"
-
-#: templates/base.html:5
-msgid "are_you_manager"
-msgstr "sei un gestore?"
-
-#: templates/base.html:6
-msgid "search"
-msgstr "cerca"
-
-#: templates/base.html:7
-msgid "login"
-msgstr "entra"
-
-#: templates/base.html:8
-msgid "logout"
-msgstr "esci"
-
-#: templates/base.html:9
-msgid "edit"
-msgstr "modifica"
-
-#: templates/base.html:104 templates/base.html.py:105
-msgid "About us"
-msgstr "Chi siamo"
-
-#: templates/base.html:116
-msgid "Account"
+#: templates/userfeedback/form.html:13
+msgid "Submit"
 msgstr ""
 
-#: templates/base.html:193
-msgid "BagniAlMare on Google+"
-msgstr "BagniAlMare su Google+"
+#~ msgid "English"
+#~ msgstr "Inglese"
 
-#: templates/base.html:203
-msgid "BagniAlMare on Facebook"
-msgstr "BagniAlMare su Facebook"
+#~ msgid "Italiano"
+#~ msgstr "Italiano"
 
-#: templates/base.html:211
-msgid "BagniAlMare on Twitter"
-msgstr "BagniAlMare su Twitter"
+#~ msgid "about_us"
+#~ msgstr "about us"
 
-#: templates/base.html:220
-msgid "terms_and_privacy"
-msgstr "privacy e termini del servizio"
+#~ msgid "are_you_manager"
+#~ msgstr "sei un gestore?"
 
-#: templates/base.html:229
-msgid ""
-"This website uses cookies, which could include third-party cookies, to "
-"ensure its technical functioning and analyse visitor information in "
-"aggregate form. By closing this banner or continuing the navigation you "
-"consent to the use of cookies"
-msgstr ""
-"Questo sito usa i cookies, anche di terze parti, per il suo funzionamento "
-"tecnico e per l'analisi dei dati di navigazione in forma aggregata. "
-"Chiudendo questo banner o continuando la navigazione del sito consenti l'uso "
-" dei cookies."
+#~ msgid "search"
+#~ msgstr "cerca"
 
-#: templates/base.html:231
-msgid "Continue"
-msgstr "Continua"
+#~ msgid "login"
+#~ msgstr "entra"
 
-#: templates/base.html:232
-msgid "Learn more"
-msgstr "Approfondisci"
+#~ msgid "logout"
+#~ msgstr "esci"
+
+#~ msgid "edit"
+#~ msgstr "modifica"
+
+#~ msgid "About us"
+#~ msgstr "Chi siamo"
+
+#~ msgid "BagniAlMare on Google+"
+#~ msgstr "BagniAlMare su Google+"
+
+#~ msgid "BagniAlMare on Facebook"
+#~ msgstr "BagniAlMare su Facebook"
+
+#~ msgid "BagniAlMare on Twitter"
+#~ msgstr "BagniAlMare su Twitter"
+
+#~ msgid "terms_and_privacy"
+#~ msgstr "privacy e termini del servizio"
+
+#~ msgid ""
+#~ "This website uses cookies, which could include third-party cookies, to "
+#~ "ensure its technical functioning and analyse visitor information in "
+#~ "aggregate form. By closing this banner or continuing the navigation you "
+#~ "consent to the use of cookies"
+#~ msgstr ""
+#~ "Questo sito usa i cookies, anche di terze parti, per il suo funzionamento "
+#~ "tecnico e per l'analisi dei dati di navigazione in forma aggregata. "
+#~ "Chiudendo questo banner o continuando la navigazione del sito consenti "
+#~ "l'uso  dei cookies."
+
+#~ msgid "Continue"
+#~ msgstr "Continua"
+
+#~ msgid "Learn more"
+#~ msgstr "Approfondisci"
+
+#~ msgid "^contacts/"
+#~ msgstr "^contatti/"
+
+#~ msgid "^accounts/"
+#~ msgstr "^accounts/"
+
+#~ msgid "^booking/"
+#~ msgstr "^prenotazione/"

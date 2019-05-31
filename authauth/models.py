@@ -24,7 +24,7 @@ class Manager(models.Model):
     )
 
     bagni = models.ManyToManyField(Bagno,
-                                   null=True, blank=True,
+                                   blank=True,
                                    related_name='managers',
     )
 

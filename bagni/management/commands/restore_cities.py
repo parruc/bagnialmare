@@ -12,14 +12,9 @@ logger = logging.getLogger("bagni.console")
 #logger.setLevel(logging.WARNING)
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list + (
-        make_option("-l", "--limit",
-                    action="store", type="int",
-                    dest="limit"),
-        make_option("-s", "--startfrom",
-                    action="store", type="int",
-                    dest="startfrom"),
-    )
+    def add_arguments(self, parser):
+            parser.add_argument('--startfrom', '-s', type=int)
+            parser.add_argument('--limit', '-l', type=int)
 
     def handle(self, *args, **options):
         logger.info("Restoring Neighbourhood Municipalities Districts")

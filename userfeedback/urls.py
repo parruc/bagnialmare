@@ -1,9 +1,6 @@
-from django.conf.urls import patterns, url
+from django.urls import path
 from . import views
 
-urlpatterns = patterns(
-    '',
-    url(r'^$',
-        views.UserFeedbackFormView.as_view(),
-        name="user-feedback-form",),
-)
+urlpatterns = [
+    path('', views.UserFeedbackFormView.as_view(), name="user-feedback-form",),
+]

@@ -20,7 +20,7 @@ class NewsletterUser(models.Model):
         verbose_name = _('Newsletter user')
         verbose_name_plural = _('Newsletter users')
 
-    user = models.OneToOneField(User, related_name='newsletter_user')
+    user = models.OneToOneField(User, related_name='newsletter_user', on_delete=models.CASCADE,)
     old_email = models.EmailField(editable=False)
 
     def __str__(self):
@@ -63,8 +63,8 @@ class Newsletter(BaseModel):
     sent_on = models.TimeField(editable=False, null=True, blank=True)
     sent_count = models.IntegerField(editable=False, null=True, blank=True)
     status = models.CharField(editable=False, default=NewsletterStatus.NEW, max_length=10, verbose_name=_("Status"))
-    target = models.ForeignKey("NewsletterTarget", related_name="newsletters", verbose_name=_("Target"),)
-    template = models.ForeignKey("NewsletterTemplate", related_name="newsletters", verbose_name=_("Template"),)
+    target = models.ForeignKey("NewsletterTarget", related_name="newsletters", verbose_name=_("Target"), on_delete=models.PROTECT, )
+    template = models.ForeignKey("NewsletterTemplate", related_name="newsletters", verbose_name=_("Template"), on_delete=models.PROTECT, )
 
     def __str__(self):
         return self.subject
@@ -76,7 +76,7 @@ class NewsletterSubscription(models.Model):
         unique_together = ("email", "target", )
 
     email = models.EmailField(verbose_name=_("Email"))
-    target = models.ForeignKey("NewsletterTarget", related_name="subscribers", verbose_name=_("Targets"))
+    target = models.ForeignKey("NewsletterTarget", related_name="subscribers", verbose_name=_("Targets"), on_delete=models.PROTECT, )
     hash_field = models.CharField(editable=False, blank=True, max_length=40, unique=True)
 
     def save(self, *args, **kwargs):

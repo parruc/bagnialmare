@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-22 00:35+0200\n"
+"POT-Creation-Date: 2019-05-30 16:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,11 +61,11 @@ msgstr ""
 msgid "Mobile"
 msgstr ""
 
-#: signals.py:41
+#: signals.py:67
 msgid "managed"
 msgstr ""
 
-#: signals.py:42
+#: signals.py:68
 msgid "not managed (WE HAVE TO CALL)"
 msgstr ""
 
@@ -167,6 +167,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: templates/booking/details.html:3 templates/booking/details.txt:2
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:5
 msgid "and"
 msgstr ""
 
@@ -216,6 +218,28 @@ msgstr ""
 #: templates/booking/manager_mail_subject.txt:2
 msgid "[bagnialmare.com booking] You received a quotation request"
 msgstr ""
+
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:3
+#, python-format
+msgid " dal %(start)s al %(end)s"
+msgstr ""
+
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:5
+#, python-format
+msgid "%(umbrellas)s ombrellone"
+msgid_plural "%(umbrellas)s ombrelloni"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/booking/no_manager_booking_notification.html:1
+#: templates/booking/no_manager_booking_notification.txt:5
+#, python-format
+msgid "%(sunbeds)s lettino"
+msgid_plural "%(sunbeds)s lettini"
+msgstr[0] ""
+msgstr[1] ""
 
 #: templates/booking/user_mail_message.txt:2
 #, python-format

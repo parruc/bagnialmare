@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
 from django.contrib.gis.db import models
-from django.db import models as django_models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.validators import MaxLengthValidator
 from ckeditor.fields import RichTextField
+from django.urls import reverse
 
 
 from . import BaseModel
@@ -25,14 +24,13 @@ class Bagno(BaseModel):
     languages = models.ManyToManyField("Language", blank=True, related_name='bagni', verbose_name=_("Languages"))
     services = models.ManyToManyField("Service", blank=True, related_name='bagni', verbose_name=_("Facilities"))
     address = models.CharField(max_length=100, blank=True, verbose_name=_("Address"))
-    neighbourhood = models.ForeignKey("Neighbourhood", null=True, related_name='bagni', verbose_name=_("Neighbourhood"), on_delete=django_models.SET_NULL)
+    neighbourhood = models.ForeignKey("Neighbourhood", null=True, related_name='bagni', verbose_name=_("Neighbourhood"), on_delete=models.SET_NULL)
     mail = models.EmailField(max_length=50, blank=True, verbose_name=_("Mail"))
     site = models.URLField(max_length=75, blank=True, verbose_name=_("Website"))
     point = models.PointField(null=True, blank=True, verbose_name=_("Coordinates"))
     accepts_booking = models.BooleanField(null=False, blank=False,
                                           default=True, verbose_name=_("Accept booking"))
 
-    objects = models.GeoManager()
 
     def index_text(self):
         """ Text indexed for fulltext search (the what field)
@@ -95,21 +93,17 @@ class Bagno(BaseModel):
         res += " - %s" % self.address
         return res
 
-    @models.permalink
     def get_absolute_url(self):
-        return ("bagno", [self.neighbourhood.slug, self.slug])
+        return reverse("bagno", args=[self.neighbourhood.slug, self.slug])
 
-    @models.permalink
     def get_edit_url(self):
-        return ("bagno-edit", [self.neighbourhood.slug, self.slug])
+        return reverse("bagno-edit", args=[self.neighbourhood.slug, self.slug])
 
-    @models.permalink
     def get_contactform_url(self):
-        return ("bagno-contacts", [self.neighbourhood.slug, self.slug])
+        return reverse("bagno-contacts", args=[self.neighbourhood.slug, self.slug])
 
-    @models.permalink
     def get_booking_url(self):
-        return ("bagno-booking", [self.neighbourhood.slug, self.slug])
+        return reverse("bagno-booking", args=[self.neighbourhood.slug, self.slug])
 
     def is_managed(self):
         return len(self.managers.all()) > 0

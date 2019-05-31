@@ -3,7 +3,7 @@ from random import randrange
 import factory
 from factory.fuzzy import FuzzyText
 
-from django.contrib.webdesign import lorem_ipsum
+from django.utils import lorem_ipsum
 from django.contrib.auth import models as auth_models
 
 from . import models as newsletters_models

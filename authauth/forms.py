@@ -1,4 +1,4 @@
-from django.utils.datastructures import MultiValueDict, MergeDict
+from django.utils.datastructures import MultiValueDict
 from django.utils.translation import ugettext_lazy as _
 
 from django import forms
@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 class M2MSelect(forms.Select):
     def value_from_datadict(self, data, files, name):
-        if isinstance(data, (MultiValueDict, MergeDict)):
+        if isinstance(data, MultiValueDict):
             return data.getlist(name)
         return data.get(name, None)
 
@@ -33,7 +33,7 @@ class ManagerSignupForm(forms.ModelForm):
         user.first_name = self.cleaned_data['name']
         user.last_name = self.cleaned_data['surname']
         m = Manager.objects.create(user=user)
-        m.bagni = self.cleaned_data['bagni']
+        m.bagni.set(self.cleaned_data['bagni'])
         m.privacy = self.cleaned_data['privacy']
         m.name = self.cleaned_data['name']
         m.surname = self.cleaned_data['surname']
