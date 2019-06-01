@@ -65,9 +65,9 @@ if not DEVELOPMENT:
         'default': {
             'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
             'LOCATION': 'memcached:11211',
-            'OPTIONS': {
-                'MAX_ENTRIES': 2000
-            }
+#            'OPTIONS': {
+#                'MAX_ENTRIES': 2000
+#            }
         }
     }
 else:
@@ -79,9 +79,6 @@ else:
 
 ADMINS = (
     ("Matteo Parrucci", "parruc@gmail.com", ),
-    ("Nicola Valentini", "nicola.valentini@gmail.com", ),
-    ("Marco Bartolini", "marcobartolini@gmail.com", ),
-    ("Marco Benvenuto", "marco.benvenuto1@gmail.com", ),
     ("Bagnialmare", "info@bagnialmare.com", ),
 )
 
