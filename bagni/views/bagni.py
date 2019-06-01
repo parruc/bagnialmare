@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from collections import OrderedDict
 
+import bottlenose
 from django.http import Http404
 from django.core.exceptions import PermissionDenied
 from django.core.exceptions import ObjectDoesNotExist
@@ -13,6 +14,8 @@ from django.utils.translation import ugettext_lazy as _
 from contacts.views import ContactView
 from contacts.forms import ContactForm
 from booking.views import BookingModalView
+import random
+from django.conf import settings
 
 from ..models import Bagno, ServiceCategory, District, Service, Neighbourhood
 from ..forms import BagnoForm, TelephoneFormSet, ImageFormSet
@@ -21,6 +24,23 @@ import logging
 logging.basicConfig()
 logger = logging.getLogger("bagni.console")
 
+AMAZON_KEYWORDS = [
+    ["formine spiaggia", "piscinetta", "mulinello spiaggia"],
+    ["borsa mare", "infradito", "pareo", "boxer mare"],
+    ["ombrellone mare", "telo mare", "tenda spiaggia", "sdraio spiaggia"],
+    ["bocce spiaggia", "palla mare", "racchettoni"],
+    ["crema solare", "crema abbronzante", "doposole"],
+    ["cavalcabile mare", "maschera mare", "canotto mare", "materassino"],
+]
+
+AMAZON_PRODUCTS = [
+    ["B00YSU01ES", "B07CL45716", "B07BRVS8R2", "B01MU4RFF7", ],
+    ["B07CSND5KQ", "B073P88SYS", "B007WPOB38", "B00M17LFWM", "B07N66ZND4", "B07PM26YXT", ],
+    ["B06ZXXSHY8", "B073RL9JK1", "B07MT9QWPP", "B00URK01BQ", ],
+    ["B00E7GP4EU", "B002VZGPG0", "B00D6C90NM", ],
+    ["B00E4L4840", "B0009R14XQ", "B00B4TN436", "B00E4KZ2KK", ],
+    ["B01MR054CS", "B079GRSZV9", "B005DUW6RM", "B000KHZ044", "B0006N01BO"],
+]
 
 class BagniByFacilityAndNeighbourhoodView(TemplateView):
     """ List of bagni in the neighbourhood offering the facility
@@ -107,6 +127,21 @@ class BagnoView(DetailView):
     """
     model = Bagno
     queryset = Bagno.objects.prefetch_related("services", "services__category")
+
+    @property
+    def amazon_items(self):
+        categories = AMAZON_PRODUCTS[:]
+        for count in range(6):
+            category = random.choice(categories)
+            categories.remove(category)
+            yield random.choice(category)
+    
+
+    def get_amazon_products(self):
+        amazon = bottlenose.Amazon(
+            settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
+        response = amazon.ItemLookup(ItemId="B007OZNUCE")
+
 
     def get_context_data(self, **kwargs):
         context = super(BagnoView, self).get_context_data(**kwargs)

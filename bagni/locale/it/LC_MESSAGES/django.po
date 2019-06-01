@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bagnialmare.com\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-30 16:16+0200\n"
+"POT-Creation-Date: 2019-06-01 02:14+0200\n"
 "PO-Revision-Date: 2014-04-02 19:54+0100\n"
 "Last-Translator: Marco Bartolini <marco.bartolini@gmail.com>\n"
 "Language-Team: bagnialmare.com <info@bagnialmare.com>\n"
@@ -34,52 +34,52 @@ msgstr "Contatto invernale"
 msgid "Fax number"
 msgstr "Numero di fax"
 
-#: models/bagni.py:16 models/bagni_details.py:56 models/bagni_details.py:97
+#: models/bagni.py:17 models/bagni_details.py:56 models/bagni_details.py:97
 msgid "Bagno"
 msgstr ""
 
-#: models/bagni.py:17
+#: models/bagni.py:18
 msgid "Bagni"
 msgstr ""
 
-#: models/bagni.py:20 models/bagni_details.py:18 models/bagni_details.py:95
+#: models/bagni.py:21 models/bagni_details.py:18 models/bagni_details.py:95
 #: models/services.py:22 models/services.py:38
 msgid "Description"
 msgstr "Descrizione del bagno"
 
-#: models/bagni.py:22 models/bagni_details.py:54
+#: models/bagni.py:23 models/bagni_details.py:54
 msgid "Number"
 msgstr "Numero del bagno"
 
-#: models/bagni.py:23
+#: models/bagni.py:24
 msgid "Languages"
 msgstr "Lingue parlate"
 
-#: models/bagni.py:24
+#: models/bagni.py:25
 msgid "Facilities"
 msgstr "servizi"
 
-#: models/bagni.py:25
+#: models/bagni.py:26
 msgid "Address"
 msgstr "Indirizzo"
 
-#: models/bagni.py:26 models/places.py:43
+#: models/bagni.py:27 models/places.py:43
 msgid "Neighbourhood"
 msgstr "Localita"
 
-#: models/bagni.py:27
+#: models/bagni.py:28
 msgid "Mail"
 msgstr "Indirizzo mail"
 
-#: models/bagni.py:28
+#: models/bagni.py:29
 msgid "Website"
 msgstr "Sito internet"
 
-#: models/bagni.py:29
+#: models/bagni.py:30
 msgid "Coordinates"
 msgstr "Coordinate"
 
-#: models/bagni.py:31
+#: models/bagni.py:32
 msgid "Accept booking"
 msgstr "Interessato a prenotazioni online?"
 
@@ -167,10 +167,10 @@ msgstr "Stabilimenti balneari"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/service_detail.html:9 templates/bagni/service_detail.html:18
-#: templates/bagni/service_detail.html:37
-#: templates/bagni/service_detail.html:45
-#: templates/bagni/service_detail.html:60
+#: templates/bagni/service_detail.html:8 templates/bagni/service_detail.html:17
+#: templates/bagni/service_detail.html:36
+#: templates/bagni/service_detail.html:44
+#: templates/bagni/service_detail.html:59
 msgid "with"
 msgstr "con"
 
@@ -179,7 +179,7 @@ msgstr "con"
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:29
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:34
-#: templates/bagni/bagno_detail.html:35 templates/bagni/bagno_detail.html:267
+#: templates/bagni/bagno_detail.html:36 templates/bagni/bagno_detail.html:276
 msgid "in"
 msgstr "a"
 
@@ -202,7 +202,7 @@ msgid "bagni_by_facility_and_neighbourhood_other_places"
 msgstr "Ma puoi trovarne in queste località"
 
 #: templates/bagni/bagni-by-facility-and-neighbourhood.html:32
-#: templates/bagni/service_detail.html:25
+#: templates/bagni/service_detail.html:24
 msgid "service_detail_no_result"
 msgstr "Non abbiamo trovato nessuno stabilimento balneare"
 
@@ -268,96 +268,100 @@ msgid "details"
 msgstr "Dettagli"
 
 #: templates/bagni/bagno_detail.html:13
+msgid "amazon_title"
+msgstr "Consigli per la spiaggia"
+
+#: templates/bagni/bagno_detail.html:14
 msgid "website"
 msgstr "website"
 
-#: templates/bagni/bagno_detail.html:14
+#: templates/bagni/bagno_detail.html:15
 msgid "modify_bagno"
 msgstr "Modifica il tuo bagno"
 
-#: templates/bagni/bagno_detail.html:15
+#: templates/bagni/bagno_detail.html:16
 msgid "are_you_the_manager"
 msgstr "Sei il gestore?"
 
-#: templates/bagni/bagno_detail.html:16
+#: templates/bagni/bagno_detail.html:17
 msgid "no_images_for"
 msgstr "nessuna immagine per"
 
-#: templates/bagni/bagno_detail.html:17
+#: templates/bagni/bagno_detail.html:18
 msgid "no_images_add"
 msgstr "foto ancora non disponibili"
 
-#: templates/bagni/bagno_detail.html:18 templates/bagni/bagno_edit.html:7
+#: templates/bagni/bagno_detail.html:19 templates/bagni/bagno_edit.html:7
 #: templates/bagni/service_list.html:23 templates/bagni/service_list.html:28
 msgid "facilities"
 msgstr "servizi offerti"
 
-#: templates/bagni/bagno_detail.html:19 templates/bagni/service_list.html:7
+#: templates/bagni/bagno_detail.html:20 templates/bagni/service_list.html:7
 msgid "facility"
 msgstr "servizio"
 
-#: templates/bagni/bagno_detail.html:20
+#: templates/bagni/bagno_detail.html:21
 msgid "facility_info_not_available"
 msgstr "informazioni non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:21
+#: templates/bagni/bagno_detail.html:22
 msgid "email_address"
 msgstr "Indirizzo email"
 
-#: templates/bagni/bagno_detail.html:22
+#: templates/bagni/bagno_detail.html:23
 msgid "phone_not_yet_available"
 msgstr "contatti telefonici non ancora disponibili"
 
-#: templates/bagni/bagno_detail.html:23
+#: templates/bagni/bagno_detail.html:24
 msgid "bagno_detail_desc_1"
 msgstr "Benvenuto nella pagina di"
 
-#: templates/bagni/bagno_detail.html:24
+#: templates/bagni/bagno_detail.html:25
 msgid "bagno_detail_desc_2"
 msgstr ""
 "qui puoi trovare indrizzo, contatti e la lista dei servizi offerti da questa "
 "struttura"
 
-#: templates/bagni/bagno_detail.html:25
+#: templates/bagni/bagno_detail.html:26
 msgid "bagno_detail_desc_3"
 msgstr "Se cerchi altri bagni a"
 
-#: templates/bagni/bagno_detail.html:26
+#: templates/bagni/bagno_detail.html:27
 msgid "bagno_detail_desc_4"
 msgstr "puoi farlo usando la nostra"
 
-#: templates/bagni/bagno_detail.html:27
+#: templates/bagni/bagno_detail.html:28
 msgid "bagno_detail_desc_5"
 msgstr "pagina di ricerca"
 
-#: templates/bagni/bagno_detail.html:45
+#: templates/bagni/bagno_detail.html:46
 msgid "book_button"
 msgstr "Prenota l'ombrellone online!"
 
-#: templates/bagni/bagno_detail.html:64
+#: templates/bagni/bagno_detail.html:65
 msgid "Book your Hotel"
 msgstr "Prenota il tuo Hotel"
 
-#: templates/bagni/bagno_detail.html:101
+#: templates/bagni/bagno_detail.html:102
 msgid "Share on socials"
 msgstr "Condividi sui social"
 
-#: templates/bagni/bagno_detail.html:105 templates/bagni/bagno_detail.html:112
+#: templates/bagni/bagno_detail.html:106 templates/bagni/bagno_detail.html:113
 #, python-format
 msgid "Share %(name)s on Facebook"
 msgstr "Condividi %(name)s su Facebook"
 
-#: templates/bagni/bagno_detail.html:117 templates/bagni/bagno_detail.html:124
+#: templates/bagni/bagno_detail.html:118 templates/bagni/bagno_detail.html:125
 #, python-format
 msgid "Tweet about %(name)s"
 msgstr "Twitta su %(name)s"
 
-#: templates/bagni/bagno_detail.html:129 templates/bagni/bagno_detail.html:136
+#: templates/bagni/bagno_detail.html:130 templates/bagni/bagno_detail.html:137
 #, python-format
 msgid "Share %(name)s on Google+"
 msgstr "Condividi %(name) su Google+"
 
-#: templates/bagni/bagno_detail.html:271
+#: templates/bagni/bagno_detail.html:280
 msgid "bagno_detail_description"
 msgstr "informazioni, indirizzo e servizi del bagno"
 
@@ -665,19 +669,19 @@ msgstr "risultati della ricerca | bagnialmare.com"
 msgid "search_description"
 msgstr "risultati della ricerca | bagnialmare.com"
 
-#: templates/bagni/service_detail.html:8
+#: templates/bagni/service_detail.html:7
 msgid "service_detail_pagetitle"
 msgstr "Dove trovare stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:14
+#: templates/bagni/service_detail.html:13
 msgid "service_detail_desc"
 msgstr "Indirizzi e contatti degli stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:23
+#: templates/bagni/service_detail.html:22
 msgid "service_detail_header"
 msgstr "Dove trovare stabilimenti balneari"
 
-#: templates/bagni/service_detail.html:24
+#: templates/bagni/service_detail.html:23
 msgid "service_detail_sub_header"
 msgstr "questo è l'elenco delle località che che hanno stabilimenti balneari"
 
@@ -963,7 +967,7 @@ msgid ""
 "\\d]+)/(?P<y2>[\\.\\-\\+\\d]+)$"
 msgstr ""
 
-#: views/bagni.py:206
+#: views/bagni.py:241
 msgid ""
 "Thank you for your booking request. We will let you know the                 "
 "result as soon as possible"
@@ -971,7 +975,7 @@ msgstr ""
 "Ti ringraziamo per la tua richiesta di prenotazione. Ti faremo sapere il "
 "risultato il prima possibile"
 
-#: views/bagni.py:231
+#: views/bagni.py:266
 msgid ""
 "We forwarded your message to the beach resort. As soon as possible you'll "
 "receive a feedback to the email address provided."

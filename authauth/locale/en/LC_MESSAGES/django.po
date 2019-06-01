@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-30 16:16+0200\n"
+"POT-Creation-Date: 2019-06-01 02:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,8 +53,8 @@ msgid ""
 msgstr ""
 
 #: templates/account/email/email_confirmation_subject.txt:3
-#: templates/account/email_confirm.html:7
-#: templates/account/email_confirm.html:11
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
 msgid "Confirm E-mail Address"
 msgstr ""
 
@@ -77,30 +77,30 @@ msgstr ""
 msgid "Password Reset E-mail"
 msgstr ""
 
-#: templates/account/email_confirm.html:17
+#: templates/account/email_confirm.html:16
 #, python-format
 msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
 
-#: templates/account/email_confirm.html:21
+#: templates/account/email_confirm.html:20
 msgid "Confirm"
 msgstr ""
 
-#: templates/account/email_confirm.html:28
+#: templates/account/email_confirm.html:27
 #, python-format
 msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
 
-#: templates/account/login.html:7 templates/account/login.html:27
-#: templates/account/login.html:73
+#: templates/account/login.html:6 templates/account/login.html:26
+#: templates/account/login.html:72
 msgid "Sign In"
 msgstr ""
 
-#: templates/account/login.html:30
+#: templates/account/login.html:29
 #, python-format
 msgid ""
 "Please sign in with one\n"
@@ -109,26 +109,26 @@ msgid ""
 "        for a %(site_name)s account and sign in below:"
 msgstr ""
 
-#: templates/account/login.html:40
+#: templates/account/login.html:39
 msgid "or"
 msgstr ""
 
-#: templates/account/login.html:47
+#: templates/account/login.html:46
 #, python-format
 msgid ""
 "If you have not created an account yet, then please\n"
 "        <a href=\"%(signup_url)s\" rel=\"nofollow\">sign up</a> first."
 msgstr ""
 
-#: templates/account/login.html:56
+#: templates/account/login.html:55
 msgid "Email address"
 msgstr ""
 
-#: templates/account/login.html:64
+#: templates/account/login.html:63
 msgid "Remember Me"
 msgstr ""
 
-#: templates/account/login.html:71
+#: templates/account/login.html:70
 msgid "Forgot Password?"
 msgstr ""
 
@@ -177,24 +177,24 @@ msgstr ""
 msgid "Your primary e-mail address must be verified."
 msgstr ""
 
-#: templates/account/password_reset.html:7
-#: templates/account/password_reset.html:11
+#: templates/account/password_reset.html:6
+#: templates/account/password_reset.html:10
 #: templates/account/password_reset_done.html:6
 #: templates/account/password_reset_done.html:9
 msgid "Password Reset"
 msgstr ""
 
-#: templates/account/password_reset.html:16
+#: templates/account/password_reset.html:15
 msgid ""
 "Forgotten your password? Enter your e-mail address below, and we'll send you "
 "an e-mail allowing you to reset it."
 msgstr ""
 
-#: templates/account/password_reset.html:24
+#: templates/account/password_reset.html:23
 msgid "Reset My Password"
 msgstr ""
 
-#: templates/account/password_reset.html:27
+#: templates/account/password_reset.html:26
 msgid "Please contact us if you have any trouble resetting your password."
 msgstr ""
 
@@ -204,18 +204,18 @@ msgid ""
 "within a few minutes."
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:5
-#: templates/account/password_reset_from_key.html:8
-#: templates/account/password_reset_from_key_done.html:5
-#: templates/account/password_reset_from_key_done.html:8
+#: templates/account/password_reset_from_key.html:4
+#: templates/account/password_reset_from_key.html:7
+#: templates/account/password_reset_from_key_done.html:4
+#: templates/account/password_reset_from_key_done.html:7
 msgid "Change Password"
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:8
+#: templates/account/password_reset_from_key.html:7
 msgid "Bad Token"
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:12
+#: templates/account/password_reset_from_key.html:11
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -223,86 +223,86 @@ msgid ""
 "a>."
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:18
+#: templates/account/password_reset_from_key.html:17
 msgid "New Password"
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:23
+#: templates/account/password_reset_from_key.html:22
 msgid "New Password (again)"
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:27
+#: templates/account/password_reset_from_key.html:26
 msgid "change password"
 msgstr ""
 
-#: templates/account/password_reset_from_key.html:30
-#: templates/account/password_reset_from_key_done.html:9
+#: templates/account/password_reset_from_key.html:29
+#: templates/account/password_reset_from_key_done.html:8
 msgid "Your password is now changed."
 msgstr ""
 
-#: templates/account/signup.html:8 templates/account/signup.html:15
+#: templates/account/signup.html:6 templates/account/signup.html:13
 msgid "signup"
 msgstr ""
 
-#: templates/account/signup.html:16
+#: templates/account/signup.html:14
 msgid "are_you_manager"
 msgstr ""
 
-#: templates/account/signup.html:17
+#: templates/account/signup.html:15
 msgid "sign_up_button"
 msgstr "sign up"
 
-#: templates/account/signup.html:18
+#: templates/account/signup.html:16
 msgid "already_have_account"
 msgstr "already have an account"
 
-#: templates/account/signup.html:19
+#: templates/account/signup.html:17
 msgid "else_have_account"
 msgstr "otherwise"
 
-#: templates/account/signup.html:20
+#: templates/account/signup.html:18
 msgid "sign_in"
 msgstr "sign in"
 
-#: templates/account/signup.html:21
+#: templates/account/signup.html:19
 msgid "accetto i"
 msgstr ""
 
-#: templates/account/signup.html:22
+#: templates/account/signup.html:20
 msgid "close"
 msgstr ""
 
-#: templates/account/signup.html:23
+#: templates/account/signup.html:21
 msgid "bagno_and_neighbourhood_hint"
 msgstr "Select the neighbourhood and the name of your beach resort"
 
-#: templates/account/signup.html:24
+#: templates/account/signup.html:22
 msgid "choose_neighbourhood"
 msgstr ""
 
-#: templates/account/signup.html:25 templates/account/signup.html:209
+#: templates/account/signup.html:23 templates/account/signup.html:207
 msgid "choose_bagno"
 msgstr ""
 
-#: templates/account/signup.html:26
+#: templates/account/signup.html:24
 msgid "label_accepts_booking"
 msgstr "Interested in online booking?"
 
-#: templates/account/signup.html:27
+#: templates/account/signup.html:25
 msgid "help_email_signup"
 msgstr "BagniAlMare will send messages from users to this email address"
 
-#: templates/account/signup.html:28
+#: templates/account/signup.html:26
 msgid "help_accepts_booking"
 msgstr ""
 "Activate this option if you wish to keep a test button on your page to "
 "monitor users' interest."
 
-#: templates/account/signup.html:33
+#: templates/account/signup.html:31
 msgid "Where our collaboration starts!"
 msgstr ""
 
-#: templates/account/signup.html:43
+#: templates/account/signup.html:41
 #, fuzzy, python-format
 msgid ""
 "<p>Nice to meet you and a warm welcome from the <a href=\"/\">bagnialmare."
@@ -355,7 +355,7 @@ msgstr ""
 "<p>Beh, quando lo ritieni puoi già regalare alla tua struttura un nuovo "
 "raggio di sole grazie a bagnialmare.com.</p>"
 
-#: templates/account/signup.html:83
+#: templates/account/signup.html:81
 #, python-format
 msgid ""
 "Se non trovi il tuo bagno o la tua località in questo elenco, <a href="

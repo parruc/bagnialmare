@@ -10,6 +10,7 @@
 {% trans "contact_button" as t_contact_button %}
 {% trans "contacts" as t_contacts %}
 {% trans "details" as t_details %}
+{% trans "amazon_title" as t_amazon %}
 {% trans "website" as t_website %}
 {% trans "modify_bagno" as t_modify_bagno %}
 {% trans "are_you_the_manager" as t_are_you_the_manager %}
@@ -190,6 +191,18 @@
                        data-y="{{ object.point.y|unlocalize }}"
                        data-name="{{ object.name }}"
                        data-address="{{ object.address }}"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="bagno-detail-sub-header">{{ t_amazon }}</h2>
+      <div class="row" style="text-align: center;">
+        {% for amazon_item in view.amazon_items %}
+          <div class="col-xs-6 col-sm-4 col-lg-2">
+            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=parruc-21&language=it_IT&o=29&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins={{ amazon_item }}"></iframe>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
   <div class="row">
