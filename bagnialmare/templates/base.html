@@ -239,8 +239,7 @@
     });
     window.focus();
     window.addEventListener('blur', function(e){
-      if(jQuery.inArray( $(':focus'), $("iframe.ga_click") )
-      {
+      if(jQuery.inArray( $(':focus'), $("iframe.ga_click") )){
         ga("send", "event", $(':focus').data("category"), $(':focus').data("action"), $(':focus').data("label"));
       }
     }
