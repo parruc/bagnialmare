@@ -59,9 +59,12 @@
             {% endif %} 
       {% elif not object.accepts_booking %}
           <a id="hotel-button"
-                class="btn book-button"
-                target="_blank"
-                href="http://www.booking.com/searchresults.html?city={{booking_city_id}}&amp;aid=1134598"
+             class="btn book-button ga_click"
+             data-category="affiliate"
+             data-label="booking"
+             data-action="click"
+             target="_blank"
+             href="http://www.booking.com/searchresults.html?city={{booking_city_id}}&amp;aid=1134598"
                 >{% trans "Book your Hotel" %}!</a>
       {% endif %}
     </div>
@@ -199,7 +202,17 @@
       <div class="row" style="text-align: center;">
         {% for amazon_item in view.amazon_items %}
           <div class="col-xs-6 col-sm-4 col-lg-2">
-            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=parruc-21&language=it_IT&o=29&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins={{ amazon_item }}"></iframe>
+            <iframe class="ga_click"
+                    data-category="affiliate"
+                    data-label="amazon"
+                    data-action="click"
+                    style="width:120px;height:240px;"
+                    marginwidth="0"
+                    marginheight="0"
+                    scrolling="no"
+                    frameborder="0"
+                    src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=parruc-21&language=it_IT&o=29&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins={{ amazon_item }}">
+            </iframe>
           </div>
         {% endfor %}
       </div>
