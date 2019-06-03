@@ -235,8 +235,17 @@
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
     $("body").on("click", ".ga_click", function(){
-      ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"))
+      ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"));
     });
+    window.focus();
+    window.addEventListener('blur', function(e){
+      if(jQuery.inArray( $(':focus'), $("iframe.ga_click") )
+      {
+        ga("send", "event", $(':focus').data("category"), $(':focus').data("action"), $(':focus').data("label"));
+      }
+    }
+});
+
     {% endblock %}
   </script>
 </body>
