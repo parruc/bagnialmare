@@ -240,7 +240,7 @@
     });
     $(function() {
       $('iframe.ga_click').iframeTracker({
-        blurCallback: function(){
+        blurCallback: function(this){
           ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"));
         }
       });
