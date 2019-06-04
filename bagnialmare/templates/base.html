@@ -240,9 +240,17 @@
     });
     $(function() {
       $('iframe.ga_click').iframeTracker({
-        blurCallback: function(this){
-          ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"));
-        }
+        blurCallback: function(el){
+          var $el = this.$_element;
+          ga("send", "event", $el.data("category"), $el.data("action"), $el.data("label"));
+        },
+        overCallback: function(element, event) {
+          this.$_element = $(element); // Saving the iframe wrapper id
+        },
+        outCallback: function(element, event) {
+          this.$_element = null; // Reset hover iframe wrapper id
+        },
+        $_element: null
       });
     });
     {% endblock %}
