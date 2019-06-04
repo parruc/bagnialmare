@@ -41,9 +41,9 @@
               <a id="book-button"
                 class="btn book-button ga_click"
                 data-url="{{ object.get_booking_url }}"
-                data-category="book"
+                data-category="booking"
                 data-action="request"
-                data-label="{{ object.slug }} - book-button" >{% trans "book_button" %}</a>
+                data-label="{{ object.slug }}" >{% trans "book_button" %}</a>
       {% endif %}
       {% if object.is_managed %}
             <button id="contact-form-button"
@@ -51,18 +51,18 @@
                     data-url="{{ object.get_contactform_url }}"
                     data-category="contact"
                     data-action="mail-popup"
-                    data-label="{{ object.slug }} - detail">
+                    data-label="{{ object.slug }}">
                 {{ t_contact_button }}
              </button>
             {% if can_edit %}
               <a href="{{ object.get_edit_url }}" class="btn btn-primary bagno-detail-button" rel="nofollow">{{ t_modify_bagno }}</a>
             {% endif %} 
-      {% elif not object.accepts_booking %}
+        {% endif %}
           <a id="hotel-button"
              class="btn book-button ga_click"
              data-category="affiliate"
-             data-label="booking"
-             data-action="click"
+             data-label={{ object.slug }}
+             data-action="booking"
              target="_blank"
              href="http://www.booking.com/searchresults.html?city={{booking_city_id}}&amp;aid=1134598"
                 >{% trans "Book your Hotel" %}!</a>
@@ -204,8 +204,8 @@
           <div class="col-xs-6 col-sm-4 col-lg-2">
             <iframe class="ga_click"
                     data-category="affiliate"
-                    data-label="amazon"
-                    data-action="click"
+                    data-label="{{ object.slug }}"
+                    data-action="amazon"
                     style="width:120px;height:240px;"
                     marginwidth="0"
                     marginheight="0"
