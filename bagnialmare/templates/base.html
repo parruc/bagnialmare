@@ -238,10 +238,12 @@
     $("body").on("click", ".ga_click", function(){
       ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"));
     });
-    $('iframe.ga_click').iframeTracker({
-      blurCallback: function(){
-        ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"));
-      }
+    $(function() {
+      $('iframe.ga_click').iframeTracker({
+        blurCallback: function(){
+          ga("send", "event", $(this).data("category"), $(this).data("action"), $(this).data("label"));
+        }
+      });
     });
     {% endblock %}
   </script>
