@@ -141,7 +141,8 @@ def search(q, filters, groups, query_string, max_facets=5):
                                                        'category__order')
         querysets['languages'] = Language.objects
         for group in groups:
-            sorted_facets = sorted(hits.groups(group).items(),
+            items = [(k, v) for k, v in hits.groups(group).items() if k and v] 
+            sorted_facets = sorted(items,
                                    key=operator.itemgetter(1, 0),
                                    reverse=True)
             for facet_slug, facet_value in sorted_facets:

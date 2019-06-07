@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from geopy import geocoders
+from geopy.exc import GeocoderQueryError, GeocoderQuotaExceeded
 
 from django.core import paginator
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count
 from django.views.generic import TemplateView
 from django.contrib import messages
+from django.contrib.gis.db.models.functions import Distance
 from django.contrib.gis.geos import Point
 from django.utils.translation import ugettext as _
 
@@ -43,19 +45,19 @@ class SearchView(TemplateView):
         place = point = None
         if loc == _("near_me") and "," in coords:
             lat,lng = coords.split(",")
-            point = Point(float(lng), float(lat))
+            point = Point(float(lng), float(lat), srid=4326)
         elif loc:
-            g = geocoders.GoogleV3(domain='maps.google.it')
+            g = geocoders.OpenMapQuest(api_key="mT6OVf3XpNah5OAuxSJ7vzG3GjpYjs9V")
             try:
                 matches = g.geocode(loc + ", Emilia Romagna", exactly_one=False)
                 # TODO: if len(matches) > 1 prompt the user a choice between matches
                 place, (lat, lng) = matches[0]
-                point = Point(lng, lat)
-            except geocoders.googlev3.GeocoderQueryError as e:
+                point = Point(lng, lat, srid=4326)
+            except GeocoderQueryError as e:
                 messages.add_message(self.request, messages.INFO,
                                      _("Cant find place '%s', sorting by relevance" % loc))
                 logger.warning("cant find %s, error %s" % (loc, e))
-            except geocoders.googlev3.GeocoderQuotaExceeded as e:
+            except GeocoderQuotaExceeded as e:
                 logger.warning("abbiamo sforato il numero massimo di richieste a google per il geocoding")
                 #TODO: falback to another backend
             except Exception as e:
@@ -79,7 +81,7 @@ class SearchView(TemplateView):
         hits = Bagno.objects.prefetch_related("services", "services__category", "neighbourhood", "neighbourhood__municipality", "managers", "images").filter(id__in=[h['id'] for h in raw_hits]).exclude(slug="test")
         hits = hits.annotate(num_managers=Count("managers"), num_images=Count("images")).order_by("-num_managers", "-num_images", "name")
         if point:
-            hits = hits.distance(point).order_by('distance')
+            hits = hits.annotate(distance=Distance('point', point)).order_by('distance')
         hits_paginator = paginator.Paginator(hits, per_page)
         num_pages = hits_paginator.num_pages
         try:
